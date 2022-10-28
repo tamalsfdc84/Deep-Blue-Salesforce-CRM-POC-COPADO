@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Path --></label>
+        <name>tffa__Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- REST Handler Class --></label>
+        <name>tffa__RESTHandlerClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Url --></label>
+        <name>tffa__ResourceUrl__c</name>
+    </fields>
+</CustomObjectTranslation>

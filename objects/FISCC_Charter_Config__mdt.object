@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for all the configs related to FISCC_Charter_Config</description>
+    <fields>
+        <fullName>Application_Scope__c</fullName>
+        <description>Application Scope</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Application Scope</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <description>Brand</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Brand</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConsumerKey__c</fullName>
+        <description>Consumer Key</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Consumer Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConsumerSecret__c</fullName>
+        <description>Consumer Secret</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Consumer Secret</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomerId__c</fullName>
+        <description>Customer Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>CustomerId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EncryptionKey__c</fullName>
+        <description>Encryption Key</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Encryption Key</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointURLDSS__c</fullName>
+        <description>This contains base url for API explicitly to handle DSS</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>EndpointURLDSS</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointUrlCBAuth__c</fullName>
+        <description>This field contains base url for API explicitly to handle CB services</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>EndpointUrlCBAuth</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointUrlCB__c</fullName>
+        <description>This field contains base url for API explicitly to handle CB auth</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>EndpointUrlCB</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointUrlCEB__c</fullName>
+        <description>This contains base url for API explicitly to handle CEB</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>EndpointUrlCEB</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointUrlFCM__c</fullName>
+        <description>FCM URL</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Endpoint FCM URL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndpointUrl__c</fullName>
+        <description>Endpoint Url</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>EndpointUrl</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FCMConsumerKey__c</fullName>
+        <description>FCM Consumer Key</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FCM Consumer Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FCMConsumerSecret__c</fullName>
+        <description>FCM Consumer Secret</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FCM Consumer Secret</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FCMEntityId__c</fullName>
+        <description>FCM Entity Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FCM Entity Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FCMEntityToken__c</fullName>
+        <description>FCM Entity Token (Username and Password)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FCM Entity Token</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISIcEncSk1__c</fullName>
+        <description>FISIcEncSk1</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FISIcEncSk1</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISIcEncSk2__c</fullName>
+        <description>FISIcEncSk2</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FISIcEncSk2</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISIcEncX5ts256__c</fullName>
+        <description>FISIcEncX5ts256</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FISIcEncX5ts256</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grant_type__c</fullName>
+        <description>Grant Type</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Grant type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBSAuthorization__c</fullName>
+        <description>IBS-Authorization is not required for the sandbox environment. When provided, base64 encode the string in the format &quot;userid:password&quot;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>IBSAuthorization.</inlineHelpText>
+        <label>IBSAuthorization</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LocationId__c</fullName>
+        <description>Location Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>LocationId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrganizationId__c</fullName>
+        <description>FIS processing organization ID</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>OrganizationId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecurityTokenTypeDSS__c</fullName>
+        <description>Security Token Type for DSS</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SecurityTokenTypeDSS</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecurityTokenType__c</fullName>
+        <description>SecurityToken Type</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SecurityTokenType</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceURL__c</fullName>
+        <description>It contains named credential having base url only</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ServiceURL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceIdDSS__c</fullName>
+        <description>Source Id for DSS</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SourceIdDSS</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceId__c</fullName>
+        <description>Source Id (also known as the Connectware vendor ID)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SourceId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Validity_Period__c</fullName>
+        <description>It contains validity of access token</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Validity Period</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>FISCC_Charter_Config</label>
+    <listViews>
+        <fullName>DetailVIew</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>FCMConsumerKey__c</columns>
+        <columns>FCMConsumerSecret__c</columns>
+        <columns>ConsumerKey__c</columns>
+        <columns>ConsumerSecret__c</columns>
+        <columns>CustomerId__c</columns>
+        <columns>LocationId__c</columns>
+        <columns>FISIcEncX5ts256__c</columns>
+        <columns>OrganizationId__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>DetailVIew</label>
+    </listViews>
+    <pluralLabel>FISCC_Charter_Config</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

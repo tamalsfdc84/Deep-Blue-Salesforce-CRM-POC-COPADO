@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EMBEDDED</fullName>
+        <default>false</default>
+        <label>Embedded</label>
+    </customValue>
+    <customValue>
+        <fullName>PRINT</fullName>
+        <default>false</default>
+        <label>Print</label>
+    </customValue>
+    <customValue>
+        <fullName>REMOTE</fullName>
+        <default>false</default>
+        <label>Remote</label>
+    </customValue>
+    <description>Enumerates different delivery modes of disclosures</description>
+    <masterLabel>DisclosureDeliveryType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

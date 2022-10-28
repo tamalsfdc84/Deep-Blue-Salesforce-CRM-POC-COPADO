@@ -1,0 +1,11 @@
+global with sharing class CZMDMIndSearchMockClass implements HttpCalloutMock {
+  global HttpResponse respond(HttpRequest req) {
+    String validResponse = '{"first_record":1,"page_size":10,"total_record_count":7,"individualInfo":[{"mdmPartyId":"1001863","frstNm":"JAMES","lstNm":"GUGLIELMO","ssnNum":"8022","address1":"2216 LAKEDALE DR","cityNm":"FAYETTEVILLE","stateCd":"NC","zip4Cd":"3168","zip5Cd":"28306","countryNm":"United States of America","countryCd":"USA","phoneNum":"(910) 494-0187"},{"mdmPartyId":"2469483","frstNm":"JOAN F","lstNm":"GUGLIELMO","ssnNum":"0204","address1":"101 WOODLAND TRAILS DR","cityNm":"COLLINSVILLE","stateCd":"IL","zip4Cd":"5873","zip5Cd":"62234","countryNm":"United States of America","countryCd":"USA","phoneNum":""},{"mdmPartyId":"932890","frstNm":"ALEXANDRA","lstNm":"GUGLIELMO","ssnNum":"8594","address1":"429 W BRIAR PL APT 1W","cityNm":"CHICAGO","stateCd":"IL","zip4Cd":"4768","zip5Cd":"60657","countryNm":"United States of America","countryCd":"USA","phoneNum":"(847) 767-3562"},{"mdmPartyId":"1724639","frstNm":"TINA","lstNm":"GUGLIELMO","ssnNum":"9427","address1":"640 BRIGHTON DR","cityNm":"WHEATON","stateCd":"IL","zip4Cd":"8106","zip5Cd":"60189","countryNm":"United States of America","countryCd":"USA","phoneNum":"(630) 752-0439"},{"mdmPartyId":"2409904","frstNm":"JAMES","lstNm":"GUGLIELMO","ssnNum":"2944","address1":"6 S641 AVON CT","cityNm":"NAPERVILLE","stateCd":"IL","zip4Cd":"","zip5Cd":"","countryNm":"United States of America","countryCd":"USA","phoneNum":"(630) 369-5751"},{"mdmPartyId":"2358480","frstNm":"ANTHONY P","lstNm":"GUGLIELMO","ssnNum":"6401","address1":"101 WOODLAND TRAILS DR","cityNm":"COLLINSVILLE","stateCd":"IL","zip4Cd":"5873","zip5Cd":"62234","countryNm":"United States of America","countryCd":"USA","phoneNum":"(618) 345-5310"},{"mdmPartyId":"51962","frstNm":"MARK","lstNm":"GUGLIELMO","ssnNum":"0596","address1":"425 S BODIN ST","cityNm":"HINSDALE","stateCd":"IL","zip4Cd":"3914","zip5Cd":"60521","countryNm":"United States of America","countryCd":"USA","phoneNum":"(630) 654-4954"}]}';
+    HttpResponse res = new HttpResponse();
+
+    res.setBody(validResponse);
+    res.setStatusCode(200);
+
+    return res;
+  }
+}

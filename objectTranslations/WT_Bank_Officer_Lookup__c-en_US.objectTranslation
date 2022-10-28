@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bank Officer Lookup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bank Officer Lookups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>WT_Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is User Active --></label>
+        <name>WT_Is_User_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Officer Code --></label>
+        <name>WT_Officer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System --></label>
+        <name>WT_Source_System__c</name>
+        <picklistValues>
+            <masterLabel>Encompass</masterLabel>
+            <translation><!-- Encompass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIS</masterLabel>
+            <translation><!-- FIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth</masterLabel>
+            <translation><!-- Wealth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Officer Code (Text) --></label>
+        <name>WT_Unique_Officer_Code_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Officer Code --></label>
+        <name>WT_Unique_Officer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Full Name (Formula) --></label>
+        <name>WT_User_Full_Name_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Full Name (Text) --></label>
+        <name>WT_User_Full_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>WT_User__c</name>
+        <relationshipLabel><!-- Bank Officer Lookups --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

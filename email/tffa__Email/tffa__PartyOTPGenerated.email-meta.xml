@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <available>true</available>
+    <description>Email for applicant to authenticate</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PartyOTPGenerated</name>
+    <packageVersions>
+        <majorNumber>9</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>tffa</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>Your Terafina Inc application</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

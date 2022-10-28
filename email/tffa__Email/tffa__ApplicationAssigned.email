@@ -1,0 +1,120 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Application transferred to you" recipientType="User" relatedToType="tffa__Application__c">
+  <messaging:htmlEmailBody >
+    <html xmlns="https://www.w3.org/1999/xhtml">
+
+    <head>
+      <meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Terafina</title>
+    </head>
+
+    <body spellcheck="none" style="padding: 0; margin: 0;">
+      <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="563" valign="top">
+            <table width="516" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="7">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7">
+                  <a href="http://terafinainc.com" target="_blank"></a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" height="30"></td>
+              </tr>
+              <tr>
+                <td colspan="7" valign="top">
+                  <table width="563" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="20" height="170"></td>
+                      <td width="543" valign="top">
+                        <table width="495" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td colspan="7" height="10" >
+                              <c:DocumentImage documentImageName="Salesforce_Branding_Resources/north_logo" width="200" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+
+                          <tr>
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#404041; line-height: 14px;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+                          <tr>
+
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#404041; line-height: 14px;">
+                              <br/>
+                              <br/>Application {!RelatedTo.Name} has been assigned to you. Please click on the link below to view
+                              the application.
+                              <br/>
+                              <br/>
+                              <apex:outputLink value="{!$Setup.tffa__EnvironmentConfiguration__c.tffa__BaseUrl__c}/{!RelatedTo.Id}" id="app"> click here</apex:outputLink>
+                              <br/>
+                              <br/>Best regards,
+                              <br/>
+                              <br/>Terafina
+                              <br/>Banking Solutions Center
+                              <br/>
+                              <br/>
+                              <br/>
+                            </td>
+
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+                          <tr>
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 11px;"></td>
+                          </tr>
+                          <tr>
+                            <td height="40"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td width="22"></td>
+                <td colspan="6" style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 15px;">© Terafina 2014. 248.890.7916</td>
+              </tr>
+              <tr>
+                <td colspan="7"></td>
+
+              </tr>
+              <tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+                <td width="22"></td>
+                <td width="368" style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 11px;" />
+                <br/>
+                <td width="100" style="text-align: right;">&nbsp;</td>
+                <td width="46" style="text-align: right;">
+                  <a href="#" target="_blank" />
+                </td>
+                <td width="31" style="text-align: right;">
+                  <a href="http://terafinainc.com" target="_blank"></a>
+                </td>
+                <td width="24" style="text-align: right;">
+                  <a href="http://terafinainc.com" target="_blank"></a>
+                </td>
+                <td width="12" style="text-align: right;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </body>
+
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

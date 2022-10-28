@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AdobeCampaign</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AdobeCampaign</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adobe Field Name --></label>
+        <name>AdobeFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdobeSchemaName --></label>
+        <name>AdobeSchemaName__c</name>
+    </fields>
+    <fields>
+        <label><!-- TerafinaFieldName --></label>
+        <name>TerafinaFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- TerafinaObjectName --></label>
+        <name>TerafinaObjectName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

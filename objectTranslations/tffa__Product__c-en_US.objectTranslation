@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CZDeluxeProgram --></label>
+        <name>CZDeluxeProgram__c</name>
+    </fields>
+    <fields>
+        <label><!-- IOLTA-IBRETA TIN --></label>
+        <name>CZIoltaIbretaTIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Type --></label>
+        <name>CZRateType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Starter Check Count --></label>
+        <name>CZStarterCheckCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starter Check Start Number --></label>
+        <name>CZStarterCheckStartNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default FIS Branch Code --></label>
+        <name>DefaultFISBranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Plan Code --></label>
+        <name>InterestPlanCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custodian Product --></label>
+        <name>IsCustodianProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsMoneyMarketProduct --></label>
+        <name>IsMoneyMarketProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNowProduct --></label>
+        <name>IsNowProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student Product --></label>
+        <name>IsStudentProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Age (In Years) --></label>
+        <name>MaxAgeInYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Age (In Years) --></label>
+        <name>MinAgeInYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Cost Centre of Default Branch --></label>
+        <name>UseDefaultBranchCostCenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Beneficiary --></label>
+        <name>tffa__AllowBeneficiary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Joint Applicant --></label>
+        <name>tffa__AllowJointApplicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated - Allowed Channel Type --></label>
+        <name>tffa__AllowedChannelType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated - Allowed funding type --></label>
+        <name>tffa__AllowedFundingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Interest Payout Frequency --></label>
+        <name>tffa__AllowedInterestPayoutFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Interest Payout Modes --></label>
+        <name>tffa__AllowedInterestPayoutMode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Account Type --></label>
+        <name>tffa__AllowedInvestmentAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Investment Contribution Type --></label>
+        <name>tffa__AllowedInvestmentContributionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Investment Plan Type --></label>
+        <name>tffa__AllowedInvestmentPlanType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Account Purposes --></label>
+        <name>tffa__AllowedPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Renewal Instruction Types --></label>
+        <name>tffa__AllowedRenewalInstructionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Loan Processing Method --></label>
+        <name>tffa__BusinessLoanProcessingMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>tffa__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto currency --></label>
+        <name>tffa__CryptoCurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto custodian --></label>
+        <name>tffa__CryptoCustodian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto master account number --></label>
+        <name>tffa__CryptoMasterAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto program id --></label>
+        <name>tffa__CryptoProgramId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto program name --></label>
+        <name>tffa__CryptoProgramName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable AutoPay --></label>
+        <name>tffa__EnableAutomaticRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Settlement Instructions --></label>
+        <name>tffa__EnableSettlementInstruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External url --></label>
+        <name>tffa__ExternalUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- External --></label>
+        <name>tffa__External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full description --></label>
+        <name>tffa__FullDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon class --></label>
+        <name>tffa__IconClass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of image file. Upload image under Salesforce Classic &gt;  Documents &gt; Images folder --></help>
+        <label><!-- Image name --></label>
+        <name>tffa__ImageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Image --></label>
+        <name>tffa__ImageUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info URL --></label>
+        <name>tffa__InfoUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if the product is not meant to be shown (and selected) in the product selector screen. Such products are applied internally based on some business logic. --></help>
+        <label><!-- Is Internal --></label>
+        <name>tffa__Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the product belongs to business category --></help>
+        <label><!-- Is Business Product --></label>
+        <name>tffa__IsBusiness__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, multiple account information can be captured under a single application. Useful in scenarios where the intention is to open multiple accounts of same product with same set of owners and signers. --></help>
+        <label><!-- Enable multiple account capture per app --></label>
+        <name>tffa__IsCloningSupported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is employee Product? --></label>
+        <name>tffa__IsEmployee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable CD laddering. --></label>
+        <name>tffa__IsLadderSupported__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the product category belongs to lending --></help>
+        <label><!-- Is Lending Product --></label>
+        <name>tffa__IsLending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Individual Applicant Count --></label>
+        <name>tffa__MaxIndividualApplicantCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max number of CD accounts per ladder app --></label>
+        <name>tffa__MaxLadderSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max number of accounts per application --></label>
+        <name>tffa__MaxNumberOfClones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Organization Applicant Count --></label>
+        <name>tffa__MaxOrganizationApplicantCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum quantity --></label>
+        <name>tffa__MaximumQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Services Provider --></label>
+        <name>tffa__MerchantServicesProvider__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Popular --></label>
+        <name>tffa__Popular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revolving --></label>
+        <name>tffa__Revolving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secured --></label>
+        <name>tffa__Secured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term unit --></label>
+        <name>tffa__TermUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- A brokerage account is an arrangement in which an investor deposits money with a licensed brokerage firm, which places trades on
+        behalf of the customer. --></description>
+        <label><!-- Brokerage Account --></label>
+        <name>tffa__BROKERAGE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Business Certificate --></label>
+        <name>tffa__BUSINESS_CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Business Checking --></label>
+        <name>tffa__BUSINESS_CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the business  to borrow funds. --></description>
+        <label><!-- Business Credit Card --></label>
+        <name>tffa__BUSINESS_CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Business IRA is a type of Traditional IRA for self-employed people or small business owners. A small business owner with one employee or more, or anyone with a freelance income can open a business IRA. --></description>
+        <label><!-- Business Retirement Account --></label>
+        <name>tffa__BUSINESS_IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business line of credit provides flexibility that a regular business loan doesn’t. With a business line of credit, you can borrow up to a certain limit  and pay interest only on the portion of money that you borrow. --></description>
+        <label><!-- Business Line of Credit --></label>
+        <name>tffa__BUSINESS_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Business Money Market --></label>
+        <name>tffa__BUSINESS_MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A commercial real estate loan is a mortgage secured by a lien on commercial property as opposed to residential property --></description>
+        <label><!-- Business Real Estate Loan --></label>
+        <name>tffa__BUSINESS_REALESTATE_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business safe deposit box is a secured container—usually a metal box—that stays in the safe or vault of a federally insured bank
+        or credit union. Safe deposit boxes are used to keep valuables, important documents for the business --></description>
+        <label><!-- Business Safe Deposit Box --></label>
+        <name>tffa__BUSINESS_SAFE_DEPOSIT_BOX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that  limit the number of withdrawals --></description>
+        <label><!-- Business Savings --></label>
+        <name>tffa__BUSINESS_SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A traditional business term loan is a lump sum of capital that you pay back with regular repayments at a fixed interest rate. Most business owners use the proceeds of term loans to finance a specific, one-off investment for their small business. --></description>
+        <label><!-- Business Term Loan --></label>
+        <name>tffa__BUSINESS_TERM_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Certificate --></label>
+        <name>tffa__CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Checking --></label>
+        <name>tffa__CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the cardholder to borrow funds. --></description>
+        <label><!-- Credit Card --></label>
+        <name>tffa__CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An account which allows buying/selling cryptocurrency via a custodian (e.g. NYDIG). --></description>
+        <label><!-- Crypto Custodial --></label>
+        <name>tffa__CRYPTO_CUSTODIAL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An education loan is money borrowed to finance education or school related expenses. Payments are often deferred while in school and for a six-month grace period after graduation --></description>
+        <label><!-- Education Loan --></label>
+        <name>tffa__EDUCATION_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Coverdell education savings account (also known as an education savings account, a Coverdell ESA, a Coverdell account, or just an ESA, and formerly known as an education individual retirement account), is a tax-advantaged investment account in the U.S --></description>
+        <label><!-- Education Savings Account --></label>
+        <name>tffa__ESA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A home equity line of credit (HELOC) is a loan in which the lender agrees to lend a maximum amount within an agreed period, where the collateral is the borrowers equity in his/her house (similar to a second mortgage) --></description>
+        <label><!-- Home Equity Line of Credit --></label>
+        <name>tffa__HELOC</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Health Savings Account (HSA) is a tax-advantaged account created for individuals who are covered under high-deductible health plans (HDHPs) to save for medical expenses that HDHPs do not cover --></description>
+        <label><!-- Health Savings Account --></label>
+        <name>tffa__HSA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An individual retirement account (IRA) is a tax-advantaged investing tool that individuals use to earmark funds for retirement savings. --></description>
+        <label><!-- Individual Retirement Account --></label>
+        <name>tffa__IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Merchant services is a broad category of financial services that enables a business to accept a transaction payment through a secure
+        (encrypted) channel using the customer&apos;s credit card or debit card or NFC/RFID enabled device. --></description>
+        <label><!-- Merchant Services Account --></label>
+        <name>tffa__MERCHANT_SERVICES</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Money Market --></label>
+        <name>tffa__MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A mortgage is a debt instrument, secured by the collateral of specified real estate property, that the borrower is obliged to pay back with a predetermined set of payments --></description>
+        <label><!-- Mortgage --></label>
+        <name>tffa__MORTGAGE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A line of credit (LOC ) is preset borrowing limit that can be used at any time. The borrower can take money out as needed until the limit is reached. --></description>
+        <label><!-- Personal Line of Credit --></label>
+        <name>tffa__PERSONAL_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An unsecured loan is a loan that is issued and supported only by the borrower&apos;s creditworthiness --></description>
+        <label><!-- Personal Loan --></label>
+        <name>tffa__PERSONAL_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A safe deposit box is a secured container—usually a metal box—that stays in the safe or vault of a federally insured bank
+        or credit union. Safe deposit boxes are used to keep valuables, important documents for the individual --></description>
+        <label><!-- Safe Deposit Box --></label>
+        <name>tffa__SAFE_DEPOSIT_BOX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that limit the number of withdrawals --></description>
+        <label><!-- Savings --></label>
+        <name>tffa__SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SBA loans are business loans guaranteed by the Small Business Administration.SBA loan programs let you borrow money for working capital, purchasing inventory or equipment, refinancing other debts, or buying real estate—through these SBA-guaranteed loans. --></description>
+        <label><!-- SBA Loan --></label>
+        <name>tffa__SBA_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A vehicle loan  is a short-term loan in which the borrower&apos;s vehicle  title is used as collateral --></description>
+        <label><!-- Vehicle Loan --></label>
+        <name>tffa__VEHICLE_LOAN</name>
+    </recordTypes>
+</CustomObjectTranslation>

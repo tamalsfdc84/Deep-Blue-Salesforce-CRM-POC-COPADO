@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Captures employment information of the applicant. Employment is a relationship between two parties, usually based on a contract where work is paid for, where one party, which may be a corporation, for profit, not-for-profit organization, co-operative or other entity is the employer and the other is the employee.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>OccupationType__c</fullName>
+        <description>Occupation of the candidate</description>
+        <externalId>false</externalId>
+        <label>OccupationType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Occupation</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Employment address</description>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <referenceTo>tffa__Address__c</referenceTo>
+        <relationshipLabel>Employments</relationshipLabel>
+        <relationshipName>Employments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Bonus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Employers have the opportunity to distribute bonus pay randomly as the company can afford to pay employees a bonus or the amount of the bonus pay can be specified by a contract.</description>
+        <externalId>false</externalId>
+        <label>Bonus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Commission__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Commission as an extra incentive. Many industries, such as retail, utilise a system whereby employees are paid an hourly wage or annual salary but also have the ability to earn greater amounts through a commission scheme which pays a percentage of the employees&apos; sales</description>
+        <externalId>false</externalId>
+        <label>Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployeeCompositeAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Employee Composite address in a single line</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employee Composite address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployeeName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the employee.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employee Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployeeVerificationStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Employee Verification status</description>
+        <externalId>false</externalId>
+        <label>Employee Verification Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EmploymentVerificationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerContactEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary email of the Employer Contact/owner</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Contact Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerContactFirstName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>First Name of the Employer Contact/owner</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Contact First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerContactLastName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Name of the Employer Contact/owner</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Contact Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerContactMiddleName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Middle Name of the Employer Contact/owner</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Contact Middle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerContactPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary phone number of the Employer Contact/Owner</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Contact Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerIdentificationNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Employer Identification Number (EIN), also known as the Federal Employer Identification Number (FEIN) or the Federal Tax Identification Number, is a unique nine-digit number assigned by the Internal Revenue Service (IRS) to business entities operating in the United States for the purposes of identification.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer identification number (EIN)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the company where the person is employed. Apple, Google etc.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerOrganizationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of Employer Organization</description>
+        <externalId>false</externalId>
+        <label>Employer Organization Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__OrganizationType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__EmployerRelationshipIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When true, indicates that the borrower is employed by a family member, property seller, real estate agent/broker, or other party to the transaction.</description>
+        <externalId>false</externalId>
+        <label>Employer relationship indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which the person left the job. This could be blank if the employment is current. The date here is a ISO 8601 string in the format YYYY-MM-DD</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MilitaryStatusType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies duty status of current or former military personnel.</description>
+        <externalId>false</externalId>
+        <label>Military status type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__MilitaryStatusType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyIncome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The monthly total amount for the specified Income Item</description>
+        <externalId>false</externalId>
+        <label>Monthly income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthsEmployed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of complete months the applicant has been employed in the line of work or type of business.</description>
+        <externalId>false</externalId>
+        <label>Months employed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Occupation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The industry or the function of the employment. For example, Mining, Marketing, Software are potential occupations</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Occupation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Overtime__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Overtime laws require employers to pay employees a wage rate that is greater than their regular rate for hours worked beyond a designated threshold.</description>
+        <externalId>false</externalId>
+        <label>Overtime</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__OwnershipInterestType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the percentage of the total business of the borrower&apos;s self-owned business.</description>
+        <externalId>false</externalId>
+        <label>Ownership interest type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__OwnershipInterestType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__OwnershipShare__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Percentage of Ownership share</description>
+        <externalId>false</externalId>
+        <label>Ownership share</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to party object</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Employments</relationshipLabel>
+        <relationshipName>Employments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__PrefillSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The source of employment prefill data, for example it could be a linkedin handle</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Prefill source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Prefilled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>true, if employment details was prefilled from emplopyment sources like linkedIn</description>
+        <externalId>false</externalId>
+        <label>Prefilled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Controls the relative order of the item in a list.</description>
+        <externalId>false</externalId>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SpousalVABenefitsEligibilityIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When true, indicates that the individual is a surviving spouse of a Veteran who served and was Missing In Action (MIA) /Killed In Action (KIA), a Veteran who died of a condition or impairment connected to his/her service in the Armed Forces (as determined by VA or DoD), or a Veteran whose service connected disability/impairment, they believe, entitles them to benefits from the VA.</description>
+        <externalId>false</externalId>
+        <label>Spousal veteran benefits indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__StartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which the person started the job. The date here is a ISO 8601 string in the format YYYY-MM-DD</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates status if the employment</description>
+        <externalId>false</externalId>
+        <label>Employment status type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EmploymentStatusType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The designation of the employee. Could be Senior Manager, Director, VP etc.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TotalDeduction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Any Deduction information found on a paystub.</description>
+        <externalId>false</externalId>
+        <label>Total Deductions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the employment</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EmploymentType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__VerificationStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Employment Verification status</description>
+        <externalId>false</externalId>
+        <label>Verification Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EmploymentVerificationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__YearsEmployed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of complete years the applicant has been employed in the line of work or type of business.</description>
+        <externalId>false</externalId>
+        <label>Years employed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Employment</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Employment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Employments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

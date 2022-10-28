@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRODUCT</fullName>
+        <default>false</default>
+        <label>Product</label>
+    </customValue>
+    <customValue>
+        <fullName>BUNDLE</fullName>
+        <default>false</default>
+        <label>Bundle</label>
+    </customValue>
+    <description>Type of product, which determines its behavior in the application. e.g. Product - standard product, Bundle - Product that groups multiple products together</description>
+    <masterLabel>ProductType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

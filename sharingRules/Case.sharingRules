@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Compliance_Case</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compliance Case</label>
+        <sharedTo>
+            <group>Compliance_Case_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compliance Complaint</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Banking</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Banking</label>
+        <sharedTo>
+            <role>Banking</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Banking</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_CCPA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - CCPA</label>
+        <sharedTo>
+            <role>CCPA</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>CCPA</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Case_Management</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Case Management</label>
+        <sharedTo>
+            <role>Case_Management</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Case_Management</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Complaint_Manger</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Complaint Manger</label>
+        <sharedTo>
+            <role>Complaint_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Complaint_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Compliance_Report_Processor</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Compliance Report Processor</label>
+        <sharedTo>
+            <role>Complaince_Report_Processor</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Complaince_Report_Processor</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Deposit_Application</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Deposit Application</label>
+        <sharedTo>
+            <role>Deposit_Application</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Deposit_Application</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_HR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - HR</label>
+        <sharedTo>
+            <role>HR</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HR</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

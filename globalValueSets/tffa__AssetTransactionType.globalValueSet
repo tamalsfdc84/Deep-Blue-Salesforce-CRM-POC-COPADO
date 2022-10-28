@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SALE_DEED</fullName>
+        <default>false</default>
+        <label>Sale Deed</label>
+    </customValue>
+    <description>Indicates the transaction type for the asset</description>
+    <masterLabel>AssetTransactionType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

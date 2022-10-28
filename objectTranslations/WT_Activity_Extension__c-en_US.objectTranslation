@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Activity Extension</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Activity Extensions</value>
+    </caseValues>
+    <fields>
+        <label><!-- 14 Day TM Onboarding Call --></label>
+        <name>WT_14Day_TMOnboarding_Call__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 60 Day TM Onboarding Call --></label>
+        <name>WT_60Day_TMOnboarding_Call__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account activity same as initially said? --></label>
+        <name>WT_Account_Activity_As_Initially_Said__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>WT_Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Appointment</masterLabel>
+            <translation><!-- Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call</masterLabel>
+            <translation><!-- Phone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Administrator Attendees --></label>
+        <name>WT_Admin_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Sales or AUA --></label>
+        <name>WT_Annual_Sales_Or_AUA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any changes over the last 60 days? --></label>
+        <name>WT_Any_Changes_Over_Last_60_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are the fees set up correctly? --></label>
+        <name>WT_Are_Fees_Set_Up_Correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>WT_Assigned_To__c</name>
+        <relationshipLabel><!-- Activity Extensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BSA Attendees --></label>
+        <name>WT_BSA_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain AML policy/procedure changes --></label>
+        <name>WT_Changes_To_AML_Policies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain Fund Sending Changes (Wires) --></label>
+        <name>WT_Changes_To_Client_Fund_Transfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior management changes? --></label>
+        <name>WT_Changes_To_Senior_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Changes to target market --></label>
+        <name>WT_Changes_To_Target_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>WT_Contact_Status__c</name>
+        <picklistValues>
+            <masterLabel>Activity Not Executed</masterLabel>
+            <translation><!-- Activity Not Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow Up Appointment Scheduled</masterLabel>
+            <translation><!-- Follow Up Appointment Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow Up Call Scheduled</masterLabel>
+            <translation><!-- Follow Up Call Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goal Met</masterLabel>
+            <translation><!-- Goal Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goal Not Met</masterLabel>
+            <translation><!-- Goal Not Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Message Left</masterLabel>
+            <translation><!-- Message Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer, No Message Left</masterLabel>
+            <translation><!-- No Answer, No Message Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number on File</masterLabel>
+            <translation><!-- Wrong Number on File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dashboard Comments --></label>
+        <name>WT_Dashboard_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did you customize DB, views &amp; panels? --></label>
+        <name>WT_Did_You_Customize_DB_Views_Panels__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Digital Products Comments --></label>
+        <name>WT_Digital_Products_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direction --></label>
+        <name>WT_Direction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documentation timeline satisfactory? --></label>
+        <name>WT_Doc_Timeline_Satisfact__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Comments --></label>
+        <name>WT_Document_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you accept in-kind Contributions? --></label>
+        <name>WT_Does_Accept_In_Kind_Contributions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>WT_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>WT_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is it easy to use our digital products? --></label>
+        <name>WT_Easy_To_Use_Our_Digital_Products__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EventId --></label>
+        <name>WT_EventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Planning Notes --></label>
+        <name>WT_External_Planning_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Dashboard Panel --></label>
+        <name>WT_Favorite_Dashboard_Panel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees Comments --></label>
+        <name>WT_Fees_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign &amp; Domestic Correspondent Account --></label>
+        <name>WT_Foreign_Domestic_Corresp_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign owned on fgn land/private Inv. --></label>
+        <name>WT_Foreign_owned_on_fgn_land_private_Inv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intend to trade Cryptocurrency? --></label>
+        <name>WT_Has_Intent_To_Trade_In_Cryptocurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intend to trade MRB (Marijuana)? --></label>
+        <name>WT_Has_Intent_To_Trade_In_MRB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated SOC1/SSAE16 report (get copy)? --></label>
+        <name>WT_Has_Report_On_Internal_Control__c</name>
+    </fields>
+    <fields>
+        <label><!-- How would you rate the training? --></label>
+        <name>WT_How_Would_You_Rate_Training__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If yes, please explain: --></label>
+        <name>WT_If_Yes_Please_Explain_MRB__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes to Foreign Domiciled business: --></label>
+        <name>WT_If_Yes_To_Foreign_Domiciled_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesalers Accepting 3rd Party Check --></label>
+        <name>WT_Is_Accepting_Third_Party_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual administrator call? --></label>
+        <name>WT_Is_Annual_Admin_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual review addendum call? --></label>
+        <name>WT_Is_Annual_Review_Addendum_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brokers Dealers --></label>
+        <name>WT_Is_Brokers_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Casinos (land or riverboat, OTBs) --></label>
+        <name>WT_Is_Casinos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cryptocurrency Exchanges --></label>
+        <name>WT_Is_Cryptocurrency_Exchanges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Brokers --></label>
+        <name>WT_Is_Deposit_Brokers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embassy, Foreign Consulate/Mission Accts --></label>
+        <name>WT_Is_Foreign_Misson_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Politically Exposed (PEPs) --></label>
+        <name>WT_Is_Foreign_Politically_Exposed_Cust__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming (Race Tracks, Gaming Machine) --></label>
+        <name>WT_Is_Gaming_Track_Machine_Establishment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Gambling --></label>
+        <name>WT_Is_Internet_Gambling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lending/PayDay Finance Businesses --></label>
+        <name>WT_Is_Lending_PayDay_Finance_Businesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Money Service Businesses (MSBs) --></label>
+        <name>WT_Is_Money_Service_Businesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precious Metal Dealers (PMDs) --></label>
+        <name>WT_Is_Precious_Metal_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Banking (def by US Patriot Act) --></label>
+        <name>WT_Is_Private_Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk Cash Shipment Services --></label>
+        <name>WT_Is_Providing_Bulk_Cash_Shipment_Svcs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shell &amp; Intl Private Investment Company --></label>
+        <name>WT_Is_Shell_And_Private_Investment_Comp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_Is_Third_Party_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- List all exchanges or counterparties --></label>
+        <name>WT_List_All_Exchanges_Or_CounterParties__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Clients --></label>
+        <name>WT_Number_Of_Clients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Employees --></label>
+        <name>WT_Number_Of_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboard Investors/Managers --></label>
+        <name>WT_Onboard_Investors_Managers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other products &amp; services to discuss? --></label>
+        <name>WT_Other_Products_Services_To_Discuss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Notes --></label>
+        <name>WT_Outcome_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>WT_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Planning Notes --></label>
+        <name>WT_Planning_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling party on pooled investments --></label>
+        <name>WT_Pooled_Investment_Controlling_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>WT_Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Objective of the Call --></label>
+        <name>WT_Primary_Objective_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>WT_Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>WT_Related_Account__c</name>
+        <relationshipLabel><!-- Activity Extensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Retail Call Type --></label>
+        <name>WT_Retail_Call_Type__c</name>
+        <picklistValues>
+            <masterLabel>Collection Call</masterLabel>
+            <translation><!-- Collection Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maturing CD</masterLabel>
+            <translation><!-- Maturing CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OD Call</masterLabel>
+            <translation><!-- OD Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnBoarding Call</masterLabel>
+            <translation><!-- OnBoarding Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Past Due Loan</masterLabel>
+            <translation><!-- Past Due Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Call</masterLabel>
+            <translation><!-- Sales Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Call</masterLabel>
+            <translation><!-- Service Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>WT_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Onboarding Call --></label>
+        <name>WT_TM_Onboarding_Call__c</name>
+        <picklistValues>
+            <masterLabel>14 Days</masterLabel>
+            <translation><!-- 14 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Days</masterLabel>
+            <translation><!-- 60 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TM Onboarding Due Date --></label>
+        <name>WT_TM_Onboarding_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talking Points --></label>
+        <name>WT_Talking_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskId --></label>
+        <name>WT_TaskId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Comments --></label>
+        <name>WT_Training_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training --></label>
+        <name>WT_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trends --></label>
+        <name>WT_Trends__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Attendees --></label>
+        <name>WT_WFG_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- What can we improve on? --></label>
+        <name>WT_What_Can_We_Improve_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- What did we do really well? --></label>
+        <name>WT_What_Did_We_Do_Really_Well__c</name>
+    </fields>
+    <fields>
+        <label><!-- What do we need to improve upon? --></label>
+        <name>WT_What_Do_We_Need_To_Improve_Upon__c</name>
+    </fields>
+    <fields>
+        <label><!-- What has improved since we last spoke? --></label>
+        <name>WT_What_Has_Improved_Since_We_Last_Spoke__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner structure of investment (private) --></label>
+        <name>WT_What_Is_Ownership_Structure_Of_Invest__c</name>
+    </fields>
+    <fields>
+        <label><!-- What other products and services should --></label>
+        <name>WT_What_Other_Products_Services_Should__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of  portfolio that is foreign? --></label>
+        <name>WT_What_Percent_Portfolio_Is_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which country(ies) plan to invest? --></label>
+        <name>WT_Which_Country_You_Plan_To_Invest_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan to invest in what industries? --></label>
+        <name>WT_Which_Industries_You_Plan_To_Invest__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Created as part of 852 --></description>
+        <label><!-- TM Call --></label>
+        <name>TM_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRA Call --></label>
+        <name>WT_CRA_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRA Event --></label>
+        <name>WT_CRA_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event --></label>
+        <name>WT_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Call --></label>
+        <name>WT_Standard_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Task --></label>
+        <name>WT_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of DBFCRM 1332 --></description>
+        <label><!-- WFG Call --></label>
+        <name>WT_WFG_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wintrust Event --></label>
+        <name>WT_Wintrust_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wintrust Task --></label>
+        <name>WT_Wintrust_Task</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

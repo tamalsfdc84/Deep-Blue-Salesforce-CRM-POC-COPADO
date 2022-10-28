@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BTC</fullName>
+        <default>false</default>
+        <label>Bitcoin</label>
+    </customValue>
+    <customValue>
+        <fullName>ETH</fullName>
+        <default>false</default>
+        <label>Ethereum</label>
+    </customValue>
+    <customValue>
+        <fullName>LITECOIN</fullName>
+        <default>false</default>
+        <label>Litecoin</label>
+    </customValue>
+    <description>Crypto currency types</description>
+    <masterLabel>CryptoCurrencyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

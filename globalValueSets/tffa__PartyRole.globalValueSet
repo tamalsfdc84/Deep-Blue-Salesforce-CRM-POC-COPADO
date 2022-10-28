@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CUSTOMER</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>PROSPECT</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </customValue>
+    <customValue>
+        <fullName>AGENT</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>ADD_ON_CARD_HOLDER</fullName>
+        <default>false</default>
+        <label>Add-on Card Holder</label>
+    </customValue>
+    <description>The role played by the party in the bank. This is different from applicant role which is specific to an application.</description>
+    <masterLabel>PartyRole</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EMPLOYMENT</fullName>
+        <default>false</default>
+        <label>Employment Proofs</label>
+    </customValue>
+    <customValue>
+        <fullName>FINANCIALS</fullName>
+        <default>false</default>
+        <label>Financial Statements</label>
+    </customValue>
+    <customValue>
+        <fullName>IDENTITY</fullName>
+        <default>false</default>
+        <label>Identity Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIZATION_IDENTITY</fullName>
+        <default>false</default>
+        <label>Organization Identity Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>VEHICLE_IDENTITY</fullName>
+        <default>false</default>
+        <label>Vehicle Identification Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>REALESTATE</fullName>
+        <default>false</default>
+        <label>Real Estate Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>ADDRESS</fullName>
+        <default>false</default>
+        <label>Address Proofs</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other type of documents</label>
+    </customValue>
+    <customValue>
+        <fullName>DISCLOSURE</fullName>
+        <default>false</default>
+        <label>Disclosure Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>CRYPTO_ORDER</fullName>
+        <default>false</default>
+        <label>Crypto Currency Order</label>
+    </customValue>
+    <description>List of Allowed document types in the application.</description>
+    <masterLabel>DocumentType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

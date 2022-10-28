@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- OccupationType --></label>
+        <name>OccupationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Employments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bonus --></label>
+        <name>tffa__Bonus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission --></label>
+        <name>tffa__Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Composite address --></label>
+        <name>tffa__EmployeeCompositeAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Name --></label>
+        <name>tffa__EmployeeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Verification Status --></label>
+        <name>tffa__EmployeeVerificationStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contact Email Address --></label>
+        <name>tffa__EmployerContactEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contact First Name --></label>
+        <name>tffa__EmployerContactFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contact Last Name --></label>
+        <name>tffa__EmployerContactLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contact Middle Name --></label>
+        <name>tffa__EmployerContactMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contact Phone --></label>
+        <name>tffa__EmployerContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer identification number (EIN) --></label>
+        <name>tffa__EmployerIdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Name --></label>
+        <name>tffa__EmployerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Organization Type --></label>
+        <name>tffa__EmployerOrganizationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer relationship indicator --></label>
+        <name>tffa__EmployerRelationshipIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Military status type --></label>
+        <name>tffa__MilitaryStatusType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly income --></label>
+        <name>tffa__MonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months employed --></label>
+        <name>tffa__MonthsEmployed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>tffa__Occupation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime --></label>
+        <name>tffa__Overtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership interest type --></label>
+        <name>tffa__OwnershipInterestType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership share --></label>
+        <name>tffa__OwnershipShare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Employments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prefill source --></label>
+        <name>tffa__PrefillSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefilled --></label>
+        <name>tffa__Prefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spousal veteran benefits indicator --></label>
+        <name>tffa__SpousalVABenefitsEligibilityIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment status type --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>tffa__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Deductions --></label>
+        <name>tffa__TotalDeduction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Status --></label>
+        <name>tffa__VerificationStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years employed --></label>
+        <name>tffa__YearsEmployed__c</name>
+    </fields>
+</CustomObjectTranslation>

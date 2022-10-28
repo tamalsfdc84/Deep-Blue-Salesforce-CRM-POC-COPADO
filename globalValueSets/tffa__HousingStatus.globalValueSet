@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OWNED_FREE_AND_CLEAR</fullName>
+        <default>false</default>
+        <label>Owned</label>
+    </customValue>
+    <customValue>
+        <fullName>Rented</fullName>
+        <default>false</default>
+        <label>Rented</label>
+    </customValue>
+    <customValue>
+        <fullName>NO_EXPENSE</fullName>
+        <default>false</default>
+        <label>No primary housing expense</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Parents_Relatives</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parents Relatives</label>
+    </customValue>
+    <customValue>
+        <fullName>Mortgage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>RENT_FREE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Living Rent Free</label>
+    </customValue>
+    <description>Type that specifies the basis on which the borrower lives/lived at the indicated address.</description>
+    <masterLabel>HousingStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Success</fullName>
+        <default>false</default>
+        <label>Success</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending</fullName>
+        <default>true</default>
+        <label>Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>Failure</fullName>
+        <default>false</default>
+        <label>Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>Resend</fullName>
+        <default>false</default>
+        <label>Resend</label>
+    </customValue>
+    <customValue>
+        <fullName>Created</fullName>
+        <default>false</default>
+        <label>Created</label>
+    </customValue>
+    <customValue>
+        <fullName>No Document</fullName>
+        <default>false</default>
+        <label>No Document</label>
+    </customValue>
+    <masterLabel>FileTransferStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

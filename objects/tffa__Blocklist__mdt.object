@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A blocklist is a list of items in a set that are not accepted. Depending on the nature of the set, a blocklist may be used to exclude certain SSN(s), TIN(s) or ITIN(s) from the application. This list is exclusionary, confirming that the value being tested is not acceptable.</description>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional information about the blocklist. Can include possible usage areas.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Marks the blocklist as unavailable for consumption</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Disabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ErrorCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The error code to be used when the blocklist is hit (value matches one of the blocklist items).</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The error code to be used when the blocklist is hit (value matches one of the blocklist items).</inlineHelpText>
+        <label>Error Code</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ErrorMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The error message to be displayed when the blocklist is hit (value matches one of the blocklist items).</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The error message to be displayed when the blocklist is hit (value matches one of the blocklist items).</inlineHelpText>
+        <label>Error Message</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Items1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;]</inlineHelpText>
+        <label>Items 1</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Items2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;]</inlineHelpText>
+        <label>Items 2</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Items3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;]</inlineHelpText>
+        <label>Items 3</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Items4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;]</inlineHelpText>
+        <label>Items 4</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Blocklist</label>
+    <pluralLabel>Blocklists</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SENT</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>SIGNED</fullName>
+        <default>false</default>
+        <label>Signed</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLETED</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>GENERATED</fullName>
+        <default>false</default>
+        <label>Generated</label>
+    </customValue>
+    <customValue>
+        <fullName>VOIDED</fullName>
+        <default>false</default>
+        <label>Voided</label>
+    </customValue>
+    <customValue>
+        <fullName>OVERRIDDEN</fullName>
+        <default>false</default>
+        <label>Overridden</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLINED</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </customValue>
+    <description>Indicates different status values for disclosure envelope</description>
+    <masterLabel>DisclosureEnvelopeStatusType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

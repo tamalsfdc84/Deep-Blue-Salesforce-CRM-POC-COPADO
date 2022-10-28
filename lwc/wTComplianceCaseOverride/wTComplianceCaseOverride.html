@@ -1,0 +1,265 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-26-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   05-26-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+<template>
+	<template if:true={loaded}>
+	</template>
+	<template if:false={loaded}>
+		<lightning-spinner alternative-text="Loading"></lightning-spinner>
+	</template>
+	<lightning-card icon-name="standard:case" title="New Case : Compliance Case">
+		<lightning-record-edit-form object-api-name="Case" onsubmit={handleSubmit} onerror={handleError} onsuccess={handleSuccess} record-type-id={recordTypeId}>
+			<div class="slds-clearfix">
+				<div class="slds-align_absolute-center">
+					<lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+					<lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToParentRefresh}></lightning-button>
+				</div>
+			</div>
+			<lightning-messages></lightning-messages>
+			<!--<div class="slds-hide">-->
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Request Information">Request Information</span>
+				</h4>
+				<!--<div aria-hidden="false" class="slds-section__content">-->
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+						<!--<lightning-input-field field-name="OwnerId" data-field="caseOwner"></lightning-input-field>-->	
+							<lightning-input-field field-name="Status" data-field="Status" required disabled></lightning-input-field>
+							<lightning-input-field field-name="WT_Related_Case__c"></lightning-input-field>
+						</span>
+					</div>
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="Priority" required></lightning-input-field>
+							<lightning-input-field field-name="WT_Latest_Reassigned_Date__c" disabled></lightning-input-field>
+						</span>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<!--</div>-->
+			<!--<div class="slds-hide">-->
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Case Details">Case Details</span>
+				</h4>
+				<!--<div aria-hidden="false" class="slds-section__content">-->
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="Type" data-field="Type" required disabled></lightning-input-field>
+							<lightning-input-field field-name="WT_Date_Received__c" data-field="WT_Date_Received__c" required></lightning-input-field>
+							<lightning-input-field field-name="WT_Bank_Entity__c" data-field="WT_Bank_Entity__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Product_Type__c" data-field="WT_Product_Type__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Issue_Category__c" data-field="WT_Issue_Category__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Applicable_Law_Regulation__c" data-field="WT_Product_Type__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Feedback__c" data-field="WT_Feedback__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Restitution__c" data-field="WT_Restitution__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_In_Litigation__c" data-field="WT_In_Litigation__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Referred_to_Legal__c" data-field="WT_Referred_to_Legal__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Referred_for_Fair_Lending_risk__c" data-field="WT_Referred_for_Fair_Lending_risk__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Name_of_Employee_Involved_applicable__c" data-field="WT_Name_of_Employee_Involved_applicable__c"></lightning-input-field>
+						</span>
+					</div>
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="WT_Created_On__c" data-field="Created On" disabled></lightning-input-field>
+							<lightning-input-field field-name="CaseNumber" data-field="CaseNumber"></lightning-input-field>
+							<lightning-input-field field-name="WT_Method_Received__c" data-field="WT_Method_Received__c" required></lightning-input-field>
+							<lightning-input-field field-name="WT_Sub_Product_Type__c" data-field="WT_Sub_Product_Type__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Sub_Issue_Category__c" data-field="WT_Sub_Issue_Category__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Applicable_Law_or_Regulation2__c" data-field="WT_Applicable_Law_or_Regulation2__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Was_Claim_Substantiated__c" data-field="WT_Was_Claim_Substantiated__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Restitution_Paid__c" data-field="WT_Restitution_Paid__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Vendor_Issue__c" data-field="WT_Vendor_Issue__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Referred_for_UDAAP_risk__c" data-field="WT_Referred_for_UDAAP_risk__c"></lightning-input-field>
+							<lightning-input-field field-name="WT_Potential_Trend__c" data-field="WT_Potential_Trend__c"></lightning-input-field>
+						</span>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<!--</div>-->
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Recipient Of Complaints">Recipient Of Complaints</span>
+				</h4>
+		
+			<div aria-hidden="false" class="slds-section__content">
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="WT_Recipient__c" data-field="WT_Recipient__c"></lightning-input-field>
+						</span>
+					</div>
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+						<lightning-input-field field-name="WT_Recipient_Non_CRM__c" data-field="WT_Recipient_Non_CRM__c"></lightning-input-field>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Business Line Contact">Business Line Contact</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Business_Line_Contact__c"></lightning-input-field>
+                                
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Contact_non_CRM_User__c"></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Who is Complaining?">Who is Complaining? Fill out appropriate field.</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+							    <lightning-input-field field-name="WT_Customer_Name_CRM__c" value={accountId} data-field="WT_Customer_Name_CRM__c" onchange={setCustomerToTitle}></lightning-input-field>
+                                <lightning-input-field field-name="WT_Non_Customer_Complainant__c" onchange={updateCaseTitle}></lightning-input-field>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+								<lightning-input-field field-name="WT_Customer_Name_non_CRM__c" data-field="WT_Customer_Name_non_CRM__c"></lightning-input-field>	
+								<lightning-input-field field-name="WT_Case_Title__c" data-field="WT_Case_Title__c" value={titleName} required></lightning-input-field>
+							</span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Complainant Details">Complainant Details</span>
+				</h4>
+				<!--<div aria-hidden="false" class="slds-section__content">-->
+					<div class="slds-grid slds-gutters">
+						<div class="slds-col slds-size_1-of-2">
+							<span>
+								<lightning-input-field field-name="FinServ__FinancialAccount__c" data-field="FinServ__FinancialAccount__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_Email_Address__c" data-field="WT_Email_Address__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_Address2__c" data-field="WT_Address2__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_State__c" data-field="WT_State__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_Census_Tract__c" data-field="WT_Census_Tract__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_HighMinorityCensusTract__c" data-field="WT_HighMinorityCensusTract__c"></lightning-input-field>
+							</span>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<span>			
+								<lightning-input-field field-name="WT_Account_Ref__c" data-field="WT_Account_Ref__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_Address1__c" data-field="WT_Address1__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_City__c" data-field="WT_City__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_PostalCode__c" data-field="WT_PostalCode__c"></lightning-input-field>
+								<lightning-input-field field-name="WT_LoworModerateIncomeCensusTract__c" data-field="WT_LoworModerateIncomeCensusTract__c"></lightning-input-field>
+    							</span>
+						</div>
+					</div>
+					<!-- </div> -->
+			</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Description">Description</span>
+				</h4>
+			</div>
+			<div class="slds-col slds-size_1-of-2">
+				<span>
+					<lightning-input-field field-name="Description" data-field="Description" required></lightning-input-field>
+				</span>
+			</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Response Due Date">Response Due Date</span>
+				</h4>
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="WT_Respond_By__c" value={reportdate} data-field="WT_Respond_By__c" disabled></lightning-input-field>
+						</span>
+					</div>
+					<div class="slds-col slds-size_1-of-2">
+						<span>
+							<lightning-input-field field-name="WT_Exception__c" data-field="WT_Exception__c"></lightning-input-field>	
+						</span>
+					</div>
+			</div>
+			</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Resolution">Resolution</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Resolution_Type__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Root_Cause__c" ></lightning-input-field>
+                                <lightning-input-field field-name="WT_Root_Cause_Type_2__c" ></lightning-input-field>
+                                <lightning-input-field field-name="WT_Management_Reviewed_and_Closed__c" ></lightning-input-field>
+                                <lightning-input-field field-name="WT_Responded_On__c" ></lightning-input-field>
+        					</span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Resolution__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Root_Cause_Type__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Gravity_of_Issue__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Redisclosure__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Date__c" disabled></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="slds-section slds-is-open" >
+				<h4 class="slds-section__title slds-theme_shade">
+					<span class="slds-truncate slds-p-horizontal_small" title="Corrective Action">Corrective Action</span>
+				</h4>
+				<div aria-hidden="false" class="slds-section__content">
+					<div class="slds-grid slds-gutters">
+						<div class="slds-col slds-size_1-of-2">
+							<span>
+								<lightning-input-field field-name="WT_Corrective_Action__c" value="No"></lightning-input-field>
+								
+							</span>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<span>
+								<lightning-input-field field-name="WT_Corrective_Action_Ref__c"></lightning-input-field>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+            <div class="slds-clearfix">
+				<div class="slds-align_absolute-center">
+					<lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+					<lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToParentRefresh}></lightning-button>
+				</div>
+			</div>
+		</lightning-record-edit-form>
+	</lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<apex:page showHeader="false" controller="tffa.PaymentCallbackController" action="{!init}" lightningStylesheets="true">
+  <apex:pageMessages />
+  <apex:outputPanel rendered="{!approved}" layout="block" style="font-size:1rem; width:min-content; margin:4rem auto;">
+    <h1 style="display:block;text-align:center;color: green;text-transform: uppercase;">{!$Label.tffa__PAYMENT_APPROVED_TITLE}</h1>
+    <pre>{!receipt}</pre>
+    <script>
+      const data = { event: 'fundingrequest_authorized', data: '{!JSENCODE(responseJson)}' };
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage(data, window.parent.location);
+      }
+      if (window.opener && window.opener !== window) {
+        window.opener.postMessage(data, window.opener.location);
+      }
+    </script>
+  </apex:outputPanel>
+</apex:page>

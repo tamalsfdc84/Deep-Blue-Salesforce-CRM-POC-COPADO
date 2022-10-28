@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>tffa__ApplicationFact__c$tffa__Value__c</field>
+    </columns>
+    <description>Displays the overall value delivered across all opened accounts. Value here refers to the lifetime value (perceived) of an account. This is different from the money value captured as funding or requested amount on the application</description>
+    <filter>
+        <criteriaItems>
+            <column>tffa__ApplicationFact__c$tffa__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ACCOUNT_OPENED,FUNDED,DISBURSED</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>tffa__ApplicationFact__c$tffa__ProductCategory__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Application Value Report</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>tffa__ApplicationFact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>tffa__ApplicationFact__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

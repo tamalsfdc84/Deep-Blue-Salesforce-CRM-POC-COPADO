@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AUTHORIZED SIGNER</masterLabel>
+        <translation><!-- AUTHORIZED SIGNER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>All</masterLabel>
+        <translation><!-- All --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BENEFICIAL OWNER</masterLabel>
+        <translation><!-- BENEFICIAL OWNER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH USER</masterLabel>
+        <translation><!-- BRANCH USER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTROLLING PARTY</masterLabel>
+        <translation><!-- CONTROLLING PARTY --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTODIAN</masterLabel>
+        <translation><!-- CUSTODIAN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Joint</masterLabel>
+        <translation><!-- Joint --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MEMBER</masterLabel>
+        <translation><!-- MEMBER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NATURAL PERSON</masterLabel>
+        <translation><!-- NATURAL PERSON --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORGANIZATION</masterLabel>
+        <translation><!-- ORGANIZATION --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Primary</masterLabel>
+        <translation><!-- Primary --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOLE OWNER</masterLabel>
+        <translation><!-- SOLE OWNER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TIN CERTIFIER</masterLabel>
+        <translation><!-- TIN CERTIFIER --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

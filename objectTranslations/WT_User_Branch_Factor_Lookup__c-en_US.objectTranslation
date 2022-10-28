@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Branch Factor Lookup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Users Branch Factor Lookup</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch Factor --></label>
+        <name>WT_Branch_Factor__c</name>
+        <relationshipLabel><!-- Users Branch Factor Lookup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>WT_User__c</name>
+        <relationshipLabel><!-- Users Branch Factor Lookup --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INFLOW</fullName>
+        <default>false</default>
+        <label>Inflow</label>
+    </customValue>
+    <customValue>
+        <fullName>OUTFLOW</fullName>
+        <default>false</default>
+        <label>Outflow</label>
+    </customValue>
+    <description>Possible types of Financing items involved in the lending application. Loosely based on the source of the preference.</description>
+    <masterLabel>FinancingItemType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

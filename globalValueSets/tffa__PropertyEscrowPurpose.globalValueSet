@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PROPERTY_TAX</fullName>
+        <default>false</default>
+        <label>Property Tax</label>
+    </customValue>
+    <customValue>
+        <fullName>HAZARD_INSURANCE</fullName>
+        <default>false</default>
+        <label>Hazard Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>FLOOD_INSURANCE</fullName>
+        <default>false</default>
+        <label>Flood Insurance</label>
+    </customValue>
+    <description>Possible types of Property Escrow Account purpose to collect dues for taxes, insurance, fees.</description>
+    <masterLabel>PropertyEscrowPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>REGULAR</fullName>
+        <default>false</default>
+        <label>Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>ROLLOVER</fullName>
+        <default>false</default>
+        <label>Rollover Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSFER</fullName>
+        <default>false</default>
+        <label>Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP</fullName>
+        <default>false</default>
+        <label>Catchup</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP_CURRENT_YEAR</fullName>
+        <default>false</default>
+        <label>Catch Up Current Year</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP_PREVIOUS_YEAR</fullName>
+        <default>false</default>
+        <label>Catch Up Previous Year</label>
+    </customValue>
+    <customValue>
+        <fullName>CONVERSION_TO_ROTH</fullName>
+        <default>false</default>
+        <label>Conversion To Roth IRA</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER_SEP</fullName>
+        <default>false</default>
+        <label>Employer&apos;s SEP Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER_SIMPLE</fullName>
+        <default>false</default>
+        <label>Employer&apos;s SIMPLE Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>RECHARACTERIZATION</fullName>
+        <default>false</default>
+        <label>Re-characterization Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>REGULAR_SPOUSAL_CURRENT</fullName>
+        <default>false</default>
+        <label>Current Year Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>REGULAR_SPOUSAL_PREVIOUS</fullName>
+        <default>false</default>
+        <label>Previous Year Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>ANNUAL_AMOUNT</fullName>
+        <default>false</default>
+        <label>Annual Amount</label>
+    </customValue>
+    <customValue>
+        <fullName>INTERNAL_TRANSFER</fullName>
+        <default>false</default>
+        <label>Internal Transfer Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>EXTERNAL_TRANSFER</fullName>
+        <default>false</default>
+        <label>External Transfer Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>DIVORCE</fullName>
+        <default>false</default>
+        <label>Divorce Transfer Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>INHERITED_TRANSFER</fullName>
+        <default>false</default>
+        <label>Inherited IRA Transfer Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>DIRECTROLLOVER</fullName>
+        <default>false</default>
+        <label>Direct Rollover</label>
+    </customValue>
+    <customValue>
+        <fullName>SEP_EMPLOYER_CY</fullName>
+        <default>false</default>
+        <label>SEP Employer Current Year</label>
+    </customValue>
+    <customValue>
+        <fullName>SEP_EMPLOYER_PY</fullName>
+        <default>false</default>
+        <label>SEP Employer Previous Year</label>
+    </customValue>
+    <customValue>
+        <fullName>REIMBURSEMENT_DEPOSIT</fullName>
+        <default>false</default>
+        <label>Reimbursement Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>ROTH_CY_CONTRIBUTION</fullName>
+        <default>false</default>
+        <label>Roth Current Year Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>ROTH_PY_CONTRIBUTION</fullName>
+        <default>false</default>
+        <label>Roth Prior Year Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>ROTH_CONVERSION_CONTRIBUTION</fullName>
+        <default>false</default>
+        <label>Roth Conversion Contribution</label>
+    </customValue>
+    <description>Different investment contribution types.</description>
+    <masterLabel>InvestmentContributionType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

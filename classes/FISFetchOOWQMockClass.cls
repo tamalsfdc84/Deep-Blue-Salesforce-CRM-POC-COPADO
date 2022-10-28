@@ -1,0 +1,11 @@
+global with sharing class FISFetchOOWQMockClass implements HttpCalloutMock {
+  global HttpResponse respond(HttpRequest req) {
+    String validResponse = '{"idaQuestion1":{"answer1Id":"04358472","answer1Text":"JOE ANDERSON","answer2Id":"67143168","answer2Text":"A VIRAY","answer3Id":"04425090","answer3Text":"ERIC WALTORS","answer4Id":"05244674","answer4Text":"STEVE. REIFEL","answer5Id":"01148040","answer5Text":"None of the above","answer6Id":null,"answer6Text":null,"id":"04425472","questionText":"From whom did you purchase the property at 222333 PEACHTREE PLACE?"},"idaQuestion2":{"answer1Id":"01245634","answer1Text":"VACCA","answer2Id":"72451658","answer2Text":"VOGEL","answer3Id":"71337090","answer3Text":"VERNER","answer4Id":"04425096","answer4Text":"VADEN","answer5Id":"05243336","answer5Text":"None of the above","answer6Id":null,"answer6Text":null,"id":"01147200","questionText":"With which name are you associated?"},"idaQuestion3":{"answer1Id":"05407168","answer1Text":"September 2004","answer2Id":"04227528","answer2Text":"December 2006","answer3Id":"01181250","answer3Text":"December 2009","answer4Id":"01214024","answer4Text":"January 2010","answer5Id":"67273674","answer5Text":"None of the above","answer6Id":null,"answer6Text":null,"id":"05308672","questionText":"When did you purchase or lease your Ford Expedition?"},"idaQuestion4":{"answer1Id":"00165696","answer1Text":"2005","answer2Id":"68321418","answer2Text":"2006","answer3Id":"05440066","answer3Text":"2007","answer4Id":"68388232","answer4Text":"2008","answer5Id":"71303488","answer5Text":"None of the above","answer6Id":null,"answer6Text":null,"id":"71370248","questionText":"What year is your Ford Expedition?"},"idaQuestion5":null,"idaQuestion6":null,"idaQuestion7":null,"idaQuestion8":null,"idaQuestion9":null,"quizId":"DISC:PEN:2148340393","quizRemain":"","quizTime":"","transId":"3355968544","userReferenceText1":null,"userReferenceText2":null,"userReferenceText3":null}';
+    HttpResponse res = new HttpResponse();
+
+    res.setBody(validResponse);
+    res.setStatusCode(200);
+
+    return res;
+  }
+}

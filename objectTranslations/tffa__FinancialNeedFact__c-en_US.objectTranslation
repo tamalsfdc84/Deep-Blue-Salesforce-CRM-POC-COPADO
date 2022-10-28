@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accepted --></label>
+        <name>tffa__Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Financial Need Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Device Browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Need --></label>
+        <name>tffa__FinancialNeed__c</name>
+        <relationshipLabel><!-- Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last synced on --></label>
+        <name>tffa__LastSyncedOn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- Financial needs --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Sync --></label>
+        <name>tffa__OutOfSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Age Group --></label>
+        <name>tffa__PartyAgeGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product segment --></label>
+        <name>tffa__ProductSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire name --></label>
+        <name>tffa__QuestionnaireName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire --></label>
+        <name>tffa__Questionnaire__c</name>
+        <relationshipLabel><!-- Financial Need Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>tffa__Submitted__c</name>
+    </fields>
+</CustomObjectTranslation>

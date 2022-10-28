@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FISDSSConfig</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FISDSSConfig</value>
+    </caseValues>
+    <fields>
+        <label><!-- AcquirerId --></label>
+        <name>AcquirerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- AqrCustomerId --></label>
+        <name>AqrCustomerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aqr --></label>
+        <name>Aqr__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChexSystemsVersionNbr --></label>
+        <name>ChexSystemsVersionNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConfigKey --></label>
+        <name>ConfigKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerId --></label>
+        <name>CustomerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncludeChexSystems --></label>
+        <name>IncludeChexSystems__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncludeIdentityManager --></label>
+        <name>IncludeIdentityManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncludeOfac --></label>
+        <name>IncludeOfac__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncludeQualifile --></label>
+        <name>IncludeQualifile__c</name>
+    </fields>
+    <fields>
+        <label><!-- IndustryMarketCode --></label>
+        <name>IndustryMarketCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- InquiryId --></label>
+        <name>InquiryId__c</name>
+    </fields>
+    <fields>
+        <label><!-- InstanceCd --></label>
+        <name>InstanceCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsStaging --></label>
+        <name>IsStaging__c</name>
+    </fields>
+    <fields>
+        <label><!-- LocationId --></label>
+        <name>LocationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- MsgUuid --></label>
+        <name>MsgUuid__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductCd --></label>
+        <name>ProductCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductVersion --></label>
+        <name>ProductVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- QualifileVersionNbr --></label>
+        <name>QualifileVersionNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReportDataType --></label>
+        <name>ReportDataType__c</name>
+    </fields>
+    <fields>
+        <label><!-- StrategyTypeId --></label>
+        <name>StrategyTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserDefinedTransTextOne --></label>
+        <name>UserDefinedTransTextOne__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserDefinedTransTextThree --></label>
+        <name>UserDefinedTransTextThree__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserDefinedTransTextTwo --></label>
+        <name>UserDefinedTransTextTwo__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserDefinedTransText --></label>
+        <name>UserDefinedTransactionText__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

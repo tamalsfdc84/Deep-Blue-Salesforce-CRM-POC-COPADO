@@ -1,0 +1,99 @@
+<template>
+  <lightning-record-edit-form
+    record-id={recordId}
+    record-type-id={recordTypeId}
+    object-api-name={schema.tffa__Application__c}
+    onsubmit={onSubmit}
+  >
+    <article if:true={currentOutcome} class="slds-card">
+      <div class="slds-page-header">
+        <div class="slds-page-header__row">
+          <div class="slds-page-header__col-title">
+            <div class="slds-media slds-m-bottom_x-small">
+              <div class="slds-media__figure">
+                <lightning-icon
+                  icon-name="standard:decision"
+                  size="small"
+                  alternative-text={labels.KYC_DECISION_LABEL}
+                  title={labels.KYC_DECISION_LABEL}
+                ></lightning-icon>
+              </div>
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    <h1>
+                      <span class="slds-page-header__title slds-truncate">{labels.KYC_DECISION_LABEL} • {currentOutcome}</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="slds-page-header__name-meta">
+              <!-- lightning-badge has issue with icon color -->
+              <span class="slds-badge slds-theme_error">
+                <lightning-icon
+                  icon-name="utility:warning"
+                  class="slds-badge__icon slds-badge__icon_left"
+                  size="xx-small"
+                  variant="inverse"
+                ></lightning-icon>
+                <span>{labels.ACTION_REQUIRED_LABEL}</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slds-card__body slds-card__body_inner">
+        <lightning-spinner if:true={pending} alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+
+        <lightning-input-field field-name={schema.tffa__Application__c.tffa__AutoKYCDecisionRemarks__c} disabled> </lightning-input-field>
+
+        <lightning-combobox
+          name="tffa__KYCDecisionOutcome__c"
+          label={labels.OVERRIDE_KYC_DECISION_LABEL}
+          value={decision}
+          placeholder={labels.OVERRIDE_KYC_DECISION_LABEL}
+          options={decisionOptions}
+          onchange={onOverrideDecision}
+          variant="label-stacked"
+        >
+        </lightning-combobox>
+
+        <div if:true={decision} class="slds-m-top_medium">
+          <lightning-input-field
+            if:true={isDecisionApproved}
+            class="slds-form-element_stacked"
+            field-name={schema.tffa__Application__c.tffa__KYCApprovalReason__c}
+            required
+          >
+          </lightning-input-field>
+          <lightning-input-field
+            if:true={isDecisionDeclined}
+            class="slds-form-element_stacked"
+            field-name={schema.tffa__Application__c.tffa__KYCDeclinedReason__c}
+            required
+          >
+          </lightning-input-field>
+          <lightning-input-field
+            class="slds-form-element_stacked"
+            field-name={schema.tffa__Application__c.tffa__KYCDecisionOverrideComments__c}
+            required={isCommentsRequired}
+          >
+          </lightning-input-field>
+          <template if:true={isDecisionCounterOffer}>
+            <lightning-input-field class="slds-form-element_stacked" field-name={schema.tffa__Application__c.tffa__CounterOfferProduct__c} required>
+            </lightning-input-field>
+            <lightning-input-field class="slds-form-element_stacked" field-name={schema.tffa__Application__c.tffa__CounterOfferComments__c} required>
+            </lightning-input-field>
+          </template>
+        </div>
+      </div>
+
+      <footer if:true={isDirty} class="slds-card__footer">
+        <lightning-button type="button" label={labels.RECORD_CANCEL_LABEL} onclick={onCancel} disabled={pending}> </lightning-button>
+        <lightning-button type="submit" class="slds-m-left_x-small" variant="brand" label={labels.RECORD_SAVE_LABEL} disabled={pending}>
+        </lightning-button>
+      </footer>
+    </article>
+  </lightning-record-edit-form>
+</template>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_77925872</developerName>
+        <masterLabel>Referral Status Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead$Status</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New - Overdue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Working - Contacted</sourceValue>
+            </sourceValues>
+            <value># Pending</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Not Qualified</sourceValue>
+            </sourceValues>
+            <value># Not Qual</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Qualified - Converted</sourceValue>
+            </sourceValues>
+            <value># Qual</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Lead$FinServ__ExpressedInterest__c</field>
+    </columns>
+    <columns>
+        <field>Lead$FinServ__ReferredByUser__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Referred_To__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Date_Qualified__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$WT_Amount_Referred__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$WT_Amount_Funded__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Description</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lead$FinServ__ExpressedInterest__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Wintrust Wealth Management</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$CreatedBy.WT_Charter__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_77925872</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FV Draft WM Top Charter (WT_Referrals)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WT_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Lead$FinServ__ConversionDateTime__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>Post no Checks</label>
+    </customValue>
+    <customValue>
+        <fullName>T</fullName>
+        <default>false</default>
+        <label>Post No Transactions</label>
+    </customValue>
+    <customValue>
+        <fullName>Y</fullName>
+        <default>false</default>
+        <label>Post No Debits</label>
+    </customValue>
+    <customValue>
+        <fullName>E</fullName>
+        <default>false</default>
+        <label>Funds Transfer Authority</label>
+    </customValue>
+    <customValue>
+        <fullName>I</fullName>
+        <default>false</default>
+        <label>Suppress 1099</label>
+    </customValue>
+    <customValue>
+        <fullName>J</fullName>
+        <default>false</default>
+        <label>Do not pay on Uncollected</label>
+    </customValue>
+    <customValue>
+        <fullName>L</fullName>
+        <default>false</default>
+        <label>Loan Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Q</fullName>
+        <default>false</default>
+        <label>Refer to Supervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>S</fullName>
+        <default>false</default>
+        <label>Do Not Provide Credit Bureau Info</label>
+    </customValue>
+    <customValue>
+        <fullName>U</fullName>
+        <default>false</default>
+        <label>Do Not Close</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>Founder Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>OAC-no signature on file</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>Free CC &amp; MO</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>On Us 3rd Party Except</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>Identity Theft-Check ID</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>Dup Accts Across Affiliates</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>Maxsafe</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>Minor Account- Check ID</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>See Remarks</label>
+    </customValue>
+    <description>list of Account Status Code.</description>
+    <masterLabel>AccountStatusCode</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

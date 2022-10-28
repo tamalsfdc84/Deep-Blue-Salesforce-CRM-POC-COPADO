@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ALL --></label>
+        <name>tffa__ALL</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Referrer Score --></label>
+        <name>FinServ__ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- User LOB matched --></label>
+        <name>User_LOB_matched__c</name>
+    </fields>
+    <fields>
+        <label><!-- BB/CB Scorecard Access --></label>
+        <name>WT_BB_CB_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BB Scorecard End Date --></label>
+        <name>WT_BB_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BB Scorecard Start Date --></label>
+        <name>WT_BB_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank # --></label>
+        <name>WT_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch # --></label>
+        <name>WT_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Factor --></label>
+        <name>WT_Business_Unit_Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Access --></label>
+        <name>WT_CRE_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard End Date --></label>
+        <name>WT_CRE_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Exception End Date --></label>
+        <name>WT_CRE_Scorecard_Exception_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Exception Start Date --></label>
+        <name>WT_CRE_Scorecard_Exception_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Start Date --></label>
+        <name>WT_CRE_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Team --></label>
+        <name>WT_CRE_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter --></label>
+        <name>WT_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Scorecard --></label>
+        <name>WT_Current_Scorecard__c</name>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Welcome Email Sent --></label>
+        <name>WT_Date_Welcome_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>WT_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is the Duplicate Rule Inactive? --></label>
+        <name>WT_Is_the_Duplicate_Rule_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>WT_Line_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>ABL</masterLabel>
+            <translation><!-- ABL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agricultural Lending</masterLabel>
+            <translation><!-- Agricultural Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Administrator</masterLabel>
+            <translation><!-- Business Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Banking</masterLabel>
+            <translation><!-- Business Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCPA</masterLabel>
+            <translation><!-- CCPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charter Leadership</masterLabel>
+            <translation><!-- Charter Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Support</masterLabel>
+            <translation><!-- Commercial Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Banking</masterLabel>
+            <translation><!-- Community Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint Management</masterLabel>
+            <translation><!-- Complaint Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Center</masterLabel>
+            <translation><!-- Contact Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Application</masterLabel>
+            <translation><!-- Deposit Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Insurance</masterLabel>
+            <translation><!-- First Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Group</masterLabel>
+            <translation><!-- Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Funds</masterLabel>
+            <translation><!-- Government Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Administrator</masterLabel>
+            <translation><!-- IT Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAD - Managed Assets Division</masterLabel>
+            <translation><!-- MAD - Managed Assets Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyHR</masterLabel>
+            <translation><!-- MyHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Client Group</masterLabel>
+            <translation><!-- Private Client Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Practice Group</masterLabel>
+            <translation><!-- Professional Practice Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Role</masterLabel>
+            <translation><!-- Support Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndication/Capital Markets</masterLabel>
+            <translation><!-- Syndication/Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management</masterLabel>
+            <translation><!-- Treasury Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tricom</masterLabel>
+            <translation><!-- Tricom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Leadership</masterLabel>
+            <translation><!-- WTFC Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Operations - Compliance</masterLabel>
+            <translation><!-- WTFC Operations - Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Operations - Credit</masterLabel>
+            <translation><!-- WTFC Operations - Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - CDEC</masterLabel>
+            <translation><!-- Wealth - CDEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Chicago Trust</masterLabel>
+            <translation><!-- Wealth - Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Great Lakes Advisors</masterLabel>
+            <translation><!-- Wealth - Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Wintrust Investments</masterLabel>
+            <translation><!-- Wealth - Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Management</masterLabel>
+            <translation><!-- Wealth Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Chicago Trust</masterLabel>
+            <translation><!-- Wealth – Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Retirement Benefit Advisors</masterLabel>
+            <translation><!-- Wealth – Retirement Benefit Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Wintrust Investments</masterLabel>
+            <translation><!-- Wealth – Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Funds Group</masterLabel>
+            <translation><!-- Wintrust Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Mortgage</masterLabel>
+            <translation><!-- Wintrust Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Code --></label>
+        <name>WT_Location_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>WT_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Record ID --></label>
+        <name>WT_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Access --></label>
+        <name>WT_MM_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard End Date --></label>
+        <name>WT_MM_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Exception End Date --></label>
+        <name>WT_MM_Scorecard_Exception_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Exception Start Date --></label>
+        <name>WT_MM_Scorecard_Exception_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Start Date --></label>
+        <name>WT_MM_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Team --></label>
+        <name>WT_MM_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-AD Title --></label>
+        <name>WT_Non_AD_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Officer Number --></label>
+        <name>WT_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>WT_Referrals_Type__c</name>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago Deferred Exchange</masterLabel>
+            <translation><!-- Chicago Deferred Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Banking</masterLabel>
+            <translation><!-- Commercial Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Credit Card</masterLabel>
+            <translation><!-- Corporate Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Processing</masterLabel>
+            <translation><!-- Merchant Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Referral</masterLabel>
+            <translation><!-- Other Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum Adventures</masterLabel>
+            <translation><!-- Platinum Adventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Client Group</masterLabel>
+            <translation><!-- Private Client Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Banking</masterLabel>
+            <translation><!-- Retail Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Lending</masterLabel>
+            <translation><!-- Small Business Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaps/Derivatives</masterLabel>
+            <translation><!-- Swaps/Derivatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMIS - Treasury Management Inside Sales</masterLabel>
+            <translation><!-- TMIS - Treasury Management Inside Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing &amp; Training Referral</masterLabel>
+            <translation><!-- Testing &amp; Training Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Mortgage</masterLabel>
+            <translation><!-- Wintrust Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Wealth Management</masterLabel>
+            <translation><!-- Wintrust Wealth Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>WT_User_Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Access --></label>
+        <name>WT_WS_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard End Date --></label>
+        <name>WT_WS_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Start Date --></label>
+        <name>WT_WS_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Team --></label>
+        <name>WT_WS_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch (Location) Code --></label>
+        <name>tffa__BranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Lender Id --></label>
+        <name>tffa__MortgageLenderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skill --></label>
+        <name>tffa__Skill__c</name>
+    </fields>
+</CustomObjectTranslation>

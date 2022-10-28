@@ -1,0 +1,326 @@
+<apex:page applyBodyTag="false" renderAs="pdf" standardController="tffa__Party__c" extensions="AdverseActionLetterExtension"
+  applyHtmlTag="false" showHeader="false">
+
+  <head>
+    <style>
+      @page {
+        size: A4 portrait;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      .paras {
+        padding-top: 30;
+      }
+
+      .ChexAddress {
+        text-align: center;
+      }
+
+      .qualtable {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      .colname {
+        width: 20%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .coldata {
+        width: 30% padding-top: 9px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #000;
+        white-space: nowrap;
+      }
+
+      .reastable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        vertical-align: text-top;
+      }
+
+      .colreason {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        vertical-align: text-top;
+      }
+
+      .colspace {
+        width: 16%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .innercoltable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        vertical-align: text-top;
+      }
+
+      .dynreastable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .dyncolreason {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        border: 1px solid #000;
+      }
+
+      .dyncolreason2 {
+        width: 42%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .dyncolreason3 {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .dyncolspace {
+        width: 16%;
+        padding-top: 9px;
+        padding: 5px;
+      }
+
+      .addrtable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .addrname {
+        text-align: left;
+        width: 40%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .addrdtl {
+        text-align: left;
+        width: 60%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #000;
+      }
+
+      .outputtextcss {
+        border-bottom: 1px solid blue;
+        width: 100%;
+        display: block;
+      }
+
+      th {
+
+        text-align: center;
+        font-weight: bold;
+
+      }
+
+      td {
+
+        text-align: center;
+        font-size: 14px;
+
+      }
+
+      .table-bordered {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        font-size: .7em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .addrtable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .addrname {
+        width: 40%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .addrdtl {
+        width: 60%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #000;
+      }
+    </style>
+  </head>
+  <apex:pageBlock title="Notice of Adverse Action">
+    <apex:pageBlockSection >
+      <apex:outputText value="Notice Date: {0, date, MM'/'dd'/'yyyy}">
+        <apex:param value="{!NOW()}" />
+      </apex:outputText>
+      <br></br>
+    </apex:pageBlockSection>
+
+  </apex:pageBlock>
+
+  <apex:outputpanel rendered="{!chexSystem}">
+
+    <p class="paras">
+      We are sorry but we are unable to accommodate your request to open a deposit account with our financial institution at this
+      time. Our decision was based in whole or in part on information obtained in a report from the consumer reporting agency
+      listed below. You have a right under the Fair Credit Reporting Act to know the information contained in your file at
+      the consumer reporting agency. The reporting agency played no part in our decision and is unable to supply specific
+      reasons why we have denied your request to open a deposit account in our institution. You also have a right to a free
+      copy of your report from the reporting agency, if you request it no later than 60 days after you receive this notice.
+      In addition, if you find that any information contained in the report you receive is inaccurate or incomplete, you
+      have the right to dispute the matter with the reporting agency.
+    </p>
+
+    <div class="ChexAddress">
+      <br>Chex Systems, Inc. </br>
+      <br>Attn: Consumer Relations </br>
+      <br>PO Box 583399</br>
+      <br>Minneapolis, MN 55458</br>
+      <br>Telephone: 800-428-9623 </br>
+      <br>Fax: 602-659-2197 </br>
+      <br>Web: www.chexsystems.com</br>
+    </div>
+
+  </apex:outputpanel>
+  <apex:outputpanel rendered="{!!chexSystem}">
+
+    <p class="paras">We are sorry but we are unable to accommodate your request to open a deposit account with our financial institution at
+      this time. Our decision was based in whole or in part on information obtained in a report from the consumer reporting
+      agencies listed below. This application was denied for
+      <b>Suspected Fraud
+      </b>.</p>
+
+    <p class="Paras"> You have a right under the Fair Credit Reporting Act to know the information contained in your files at the consumer
+      reporting agencies. The reporting agencies played no part in our decision and is unable to supply specific reasons
+      why we have denied your request to open a deposit account in our institution. You also have a right to a free copy
+      of your reports from the reporting agencies, if you request it no later than 60 days after you receive this notice.
+      In addition, if you find that any information contained in the report you receive is inaccurate or incomplete, you
+      have the right to dispute the matter with the reporting agency.
+    </p>
+    <br/>
+    <center>
+      <table border="1" width="100%" class="table-bordered">
+        <tr>
+          <td width="40%">Chex Systems, Inc.
+            <br/> Attn: Consumer Relations
+            <br/> P.O. Box 583399
+            <br/> Minneapolis, MN 55458
+          </td>
+          <td style="text-align:left;">
+            Telephone: 800-428-9623
+            <br/> Fax: 602-659-2197
+            <br/> Web: www.chexsystems.com
+          </td>
+        </tr>
+
+        <tr>
+          <td>LexisNexis Risk Solutions Consumer Center
+            <br/> P.O. Box 105108
+            <br/> Atlanta, GA 30348-5108
+          </td>
+          <td style="text-align:left;">
+            Telephone: 1-866-897-8126
+            <br/> Lexis Consumer Request Form Link:
+            <a href="https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call%20to%20speak%20t
+                   o,.documents%40LexisNexis.com.">https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call%20to%20speak%20t o,.documents%40LexisNexis.com.
+            </a>
+            <br/>
+          </td>
+        </tr>
+
+      </table>
+    </center>
+    <br/>
+    <p>If you believe you are a victim of identity theft or fraud, we have provided some resources to assist you:</p>
+
+    <ul>
+      <li>File an Identity Theft Report with law enforcement</li>
+      <li>Contact each of the three major credit bureaus – For a free copy of your credit report:
+        <a href="www.annualcreditreport.com">www.annualcreditreport.com</a>
+      </li>
+      <li>Ask the bureaus to place an extended fraud alert on your credit file (See credit bureaus below)</li>
+      <li>US Department of Justice Identity theft resource page:
+        <a href="https://www.justice.gov/criminal-fraud/identity-theft/identity-theft-and-identity-fraud">https://www.justice.gov/criminal-fraud/identity-theft/identity-theft-and-identity-fraud </a>
+      </li>
+      <li>US Federal Trade Commission – Report Fraud :
+        <a href="https://reportfraud.ftc.gov/#">https://reportfraud.ftc.gov/#</a>
+      </li>
+    </ul>
+
+    <br/>
+    <table border="1" width="100%" class="table-bordered">
+      <tr>
+        <td width="40%">Equifax Information Services LLC
+          <br/> P.O. Box 105069
+          <br/> Atlanta, GA 30348-5069
+        </td>
+        <td style="text-align:left;">
+          1-888-Equifax (1-888-378-4329)
+          <br/> Web:
+          <a href="https://www.equifax.com">https://www.equifax.com </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Experian 955 American Lane Schaumburg, IL 60173
+        </td>
+        <td style="text-align:left;">
+          1-888-397-3742
+          <br/> Web:
+          <a href="www.experian.com">www.experian.com </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Transunion P.O. Box 2000
+          <br/> Chester, PA 19016-2000
+        </td>
+        <td style="text-align:left;">
+          1-800-916-8800
+          <br/> Web:
+          <a href="www.transunion.com">www.transunion.com </a>
+        </td>
+      </tr>
+    </table>
+
+  </apex:outputpanel>
+  <apex:pageBlock >
+    <p>If you have any other questions regarding this notice, you should contact:</p>
+
+    <table class="addrtable">
+      <tr>
+        <td class="addrname">Financial Institution name: </td>
+        <td class="addrdtl">{!brandName}</td>
+      </tr>
+      <tr>
+        <td class="addrname">Financial Institution address: </td>
+        <td class="addrdtl">{!brandAddress}</td>
+      </tr>
+      <tr>
+        <td class="addrname">Financial Institution telephone number: </td>
+        <td class="addrdtl">{!brandPhoneNumber}</td>
+      </tr>
+    </table>
+
+  </apex:pageBlock>
+</apex:page>

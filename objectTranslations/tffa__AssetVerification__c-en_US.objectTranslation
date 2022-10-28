@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agency code --></label>
+        <name>tffa__AgencyCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency name --></label>
+        <name>tffa__AgencyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Verifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiry date --></label>
+        <name>tffa__ExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>tffa__Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>tffa__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified on --></label>
+        <name>tffa__VerifiedOn__c</name>
+    </fields>
+</CustomObjectTranslation>

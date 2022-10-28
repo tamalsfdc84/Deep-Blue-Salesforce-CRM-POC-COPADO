@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ADD_ON_SERVICE</fullName>
+        <default>false</default>
+        <label>Add-on service</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Possible types of additional preferences. Loosely based on the source of the preference.</description>
+    <masterLabel>AdditionalPreferenceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

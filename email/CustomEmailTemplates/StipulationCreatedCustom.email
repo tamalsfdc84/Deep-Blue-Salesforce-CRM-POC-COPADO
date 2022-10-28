@@ -1,0 +1,269 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Documents Required: Your {brandName} application" recipientType="User" relatedToType="tffa__Application__c">
+  <messaging:htmlEmailBody >
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<title>Documents Required: Your {brandName} application</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+<meta name="format-detection" content="telephone=no"/>
+<style type="text/css">
+body { margin: 0 auto !important; padding: 0; -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !important; }
+img { border: 0 !important; outline: none !important; }
+p { Margin: 0px !important; Padding: 0px !important; }
+table { border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; }
+td, a, span { border-collapse: collapse; mso-line-height-rule: exactly; }
+.ExternalClass * { line-height: 100%; }
+.em_defaultlink a { color: inherit; text-decoration: none; }
+.em_g_img + div { display: none; }
+a[x-apple-data-detectors], u + .em_body a, #MessageViewBody a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
+ul, li { margin-top: 0px !important; margin-bottom: 0px !important; margin-left: 17px !important; margin-right: 0px !important; padding-top: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; padding-right: 0px !important; }
+.em_mnone li { margin-top: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; margin-right: 0px !important; padding-top: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; padding-right: 0px !important; }
+.em_black a { text-decoration: none; color: #000000; }
+.em_white a { text-decoration: none; color: #ffffff; }
+.em_show481 { display: none !important; }
+.em_show375 { display: none !important; }
+.em_show320 { display: none !important; }
+center table { width: 100% !important; }
+@media only screen and (min-width:481px) and (max-width:667px) {
+.em_main_table { width: 481px!important; }
+.em_wrapper { width: 100%!important; }
+.em_aside15 { padding-left: 15px !important; padding-right: 15px !important; }
+.em_hide { display: none!important; }
+.em_full_img img { width: 100%!important; height: auto!important; max-width: 100%!important; }
+.em_side55 { width: 55px!important; }
+.em_pbottom { padding-bottom: 20px!important; }
+u+.em_body .em_full_wrap { width: 100%!important; width: 100vw!important; }
+.em_p22_20 { padding: 22px 20px!important; }
+.em_pad1 { padding: 25px 20px!important; }
+.em_pb10 { padding-bottom: 10px!important; }
+.em_pb15 { padding-bottom: 15px!important; }
+.em_pt25 { padding-top: 25px!important; }
+.em_pb25 { padding-bottom: 25px!important; }
+.em_font_24 { text-align: center!important; }
+.em_pb35 { padding-bottom: 35px!important; }
+.em_h45 { height: 45px!important; }
+.em_h7 { height: 7px!important; font-size: 0px!important; line-height: 0px!important; }
+.em_pad3 { padding: 20px!important; }
+.em_side14 { width: 14px!important; }
+.em_w173 { width: 173px!important; }
+.em_tbl { clear: none !important; float: left !important; }
+.em_tbl2 { clear: none !important; float: right !important; }
+.em_clear1 { clear: both!important; width: 100%!important; display: block!important; }
+.em_show481 { display: table !important; float: none !important; width: 100% !important; overflow: visible !important; height: auto !important; }
+.em_show375 { display: none !important; }
+.em_show320 { display: none !important; }
+.em_clear { clear: both!important; width: 100%!important; display: block!important; float: left !important; }
+.em_center { text-align: center !important; }
+}
+@media only screen and (min-width:375px) and (max-width:480px) {
+.em_main_table { width: 375px!important; }
+.em_wrapper { width: 100%!important; }
+.em_aside15 { padding-left: 15px !important; padding-right: 15px !important; }
+.em_hide { display: none!important; }
+.em_full_img img { width: 100%!important; height: auto!important; max-width: 100%!important; }
+.em_side55 { width: 10px!important; }
+.em_pbottom { padding-bottom: 20px!important; }
+u+.em_body .em_full_wrap { width: 100%!important; width: 100vw!important; }
+.em_p22_20 { padding: 22px 20px!important; }
+.em_pad1 { padding: 25px 20px!important; }
+.em_pb10 { padding-bottom: 10px!important; }
+.em_pb15 { padding-bottom: 15px!important; }
+.em_pt25 { padding-top: 25px!important; }
+.em_pb25 { padding-bottom: 25px!important; }
+.em_pb35 { padding-bottom: 35px!important; }
+.em_h45 { height: 45px!important; }
+.em_h7 { height: 7px!important; font-size: 0px!important; line-height: 0px!important; }
+.em_pad3 { padding: 20px!important; }
+.em_side14 { width: 14px!important; }
+.em_font_24 { font-size: 30px!important; line-height: 33px!important; text-align: center!important; }
+.em_font_11 { font-size: 12px!important; line-height: 14px!important; }
+.em_font_16 { font-size: 16px!important; line-height: 19px!important; padding-bottom: 40px; }
+.em_font_10 { font-size: 13px!important; line-height: 16px!important; }
+.em_w173 { width: 170px!important; }
+.em_center1 { text-align: center !important; }
+.em_pt35 { padding-top: 35px!important; }
+.em_clear { clear: both!important; width: 100%!important; display: block!important; float: left !important; }
+.em_mob_block { display: block!important; }
+.em_pbottom10 { padding-bottom: 10px !important; }
+.em_show481 { display: none !important; }
+.em_show375 { display: table !important; float: none !important; width: 100% !important; overflow: visible !important; height: auto !important; }
+.em_show320 { display: none !important; }
+.em_center { text-align: center !important; }
+}
+@media screen and (max-width:374px) {
+.em_main_table { width: 320px!important; }
+.em_wrapper { width: 100%!important; }
+.em_hide { display: none!important; }
+.em_aside15 { padding-left: 15px !important; padding-right: 15px !important; }
+.em_full_img img { width: 100%!important; height: auto!important; max-width: 100%!important; }
+.em_side55 { width: 10px!important; }
+.em_pbottom { padding-bottom: 20px!important; }
+u+.em_body .em_full_wrap { width: 100%!important; width: 100vw!important; }
+.em_p22_20 { padding: 22px 20px!important; }
+.em_pad1 { padding: 25px 20px!important; }
+.em_pb10 { padding-bottom: 10px!important; }
+.em_pb15 { padding-bottom: 15px!important; }
+.em_pt25 { padding-top: 25px!important; }
+.em_pb25 { padding-bottom: 25px!important; }
+.em_pb35 { padding-bottom: 35px!important; }
+.em_h45 { height: 45px!important; }
+.em_h7 { height: 7px!important; font-size: 0px!important; line-height: 0px!important; }
+.em_pad3 { padding: 20px!important; }
+.em_side14 { width: 14px!important; }
+.em_font_24 { font-size: 24px!important; line-height: 27px!important; text-align: center!important; }
+.em_font_11 { font-size: 11px!important; line-height: 13px!important; }
+.em_font_10 { font-size: 10px!important; line-height: 13px!important; }
+.em_font_16 { font-size: 16px!important; line-height: 19px!important; padding-bottom: 40px; }
+.em_w173 { width: 135px!important; }
+.em_mob_block { display: block!important; }
+.em_pbottom10 { padding-bottom: 10px !important; }
+.em_center1 { text-align: center !important; }
+.em_pt35 { padding-top: 35px!important; }
+.em_clear { clear: both!important; width: 100%!important; display: block!important; }
+.em_show481 { display: none !important; }
+.em_show375 { display: none !important; }
+.em_show320 { display: table !important; float: none !important; width: 100% !important; overflow: visible !important; height: auto !important; }
+.em_center { text-align: center !important; }
+}
+</style>
+<!--[if gte mso 9]>
+<style>
+li {
+text-indent: -1em; / Normalise space between bullets and text /
+}
+</style>
+<![endif]-->
+</head>
+
+<body class="em_body" style="margin: 0 auto !important; padding: 0; -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !important;" bgcolor="#ffffff">
+ 
+
+<!-- == Single Image With Blue Bg Section == -->
+
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_full_wrap" width="100%">
+ 
+  <tr>
+   <td align="center" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:800px; table-layout:fixed;" width="800">
+     
+      <tr>
+       <td align="center" bgcolor="#003e7e" style="background-color:#003e7e; padding:16px 20px;" valign="top">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+         
+          <tr>
+           <td align="center" valign="top">
+            <a alias="" conversion="false" data-linkto="other" href="{bankUrl}" style="text-decoration:none;" target="_blank" title="">
+				<img alt="A Wintrust Community Bank" data-assetid="134556" height="57" src="{logoUrl}" style="display: block; max-width: 165px; font-size: 20px; color: #FFFFFF; font-family: Arial, sans-serif; line-height: 25px; padding: 0px; text-align: center; height: 57px; width: 165px;" width="165"></img>
+			   </a>
+			  </td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+
+<!-- ==// Single Image With Blue Bg Section == --> 
+
+<!-- == Two Col Image With Blue Bg Section == -->
+
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!-- ==Gray Content Section == --><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_full_wrap" width="100%">
+ 
+  <tr>
+   <td align="center" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:800px; table-layout:fixed;" width="800">
+     
+      <tr>
+       <td align="center" bgcolor="#f6f6f6" class="em_aside15" style="padding:20px 100px; background-color:#f6f6f6;" valign="top">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width:600px;" width="100%">
+         
+          <tr>
+           <td align="left" class="em_defaultlink" style="font-family: Verdana, Geneva, sans-serif; font-size:13px; line-height:20px; color:#000000;" valign="top">
+            <div style="text-align: center;">
+             <b>{subBranchHeading}</b></div><div style="text-align: center;">
+             {subBrandName}
+             <br/>
+			 </div></td></tr></table></td></tr></table></td></tr></table><!-- ==//Gray Content Section == --></td></tr></table>
+
+<!-- ==// Two Col Image With Blue Bg Section == --> 
+
+<!-- ==Section 2 Banner Section == -->
+
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 0px; " class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_full_wrap" width="100%">
+ 
+  <tr>
+   <td align="center" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:800px; table-layout:fixed;" width="800">
+     
+      <tr>
+       <td align="center" style="padding:10px 20px 5px 20px;" valign="top">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width:596px;" width="596">
+         
+          <tr>
+           <td align="left" class="em_black" style="font-size:13px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
+            Dear&nbsp;{PartyName},<br/>
+            <br/>
+            Thank you for choosing {brandName} family of Wintrust Community Banks. We are looking forward to serving your financial needs. <br/><br/>
+            During a review of your application, it has been determined we need additional documentation in order to process your request. 
+            <br/><br/>
+            {Banker_Comments}
+            <br/><br/>
+		        Please <u><a alias="click here" conversion="false" data-linkto="http://" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:none;" title="click here">click here</a></u> and upload a copy of the required document(s).<br/><br/>
+            If you have any questions, please reach out to {brandName} at <a style="color: #003e7e; text-decoration: underline;" href="mailto:{email}">{email}</a>.<br/><br/>
+            Your confirmation number is {ConfirmationNumber}.
+			</td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+
+<!-- ==// Section 2 Banner Section == --> 
+
+<!-- ==Left Content Right Image Section 01 == -->
+
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_full_wrap" width="100%">
+ 
+  <tr>
+   <td align="center" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:800px; table-layout:fixed;" width="800">
+     
+      <tr>
+       <td>
+        <table align="center" bgcolor="#003e7e" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:800px; table-layout:fixed; background-color:#003e7e;" width="800">
+         
+          <tr>
+           <td align="center" class="em_pad1" style="padding:42px 0px 37px;" valign="top">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width:596px;" width="596">
+             
+              <tr>
+               <td align="center" class="em_white em_font_11" style="font-family:Verdana, Geneva, sans-serif; font-size:15px;line-height:20px;color:#ffffff;padding-bottom:20px;" valign="top">
+                {address} | {city}, {state} {zip}<br/>
+                {phoneNo} | <a alias="" conversion="false" data-linkto="https://" href="{bankUrl}" style="color:#ffffff;text-decoration:none;" target="_blank" title="">{bankUrl}</a></td></tr><tr>
+               <td align="center" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                 
+                  <tr>
+                   <br/>
+					</tr></table></td></tr><tr>
+              </tr><tr>
+               <td align="center" valign="top">
+                <img alt="Member FDIC | Equal Housing Lender" data-assetid="129655" height="25" src="https://www.wintrust.com/content/dam/wintrust/emails/bank-logos/member-fdic-equal-housing-lender.png" style="font-family: Arial, sans-serif; font-size: 12px; line-height: 20px; color: #FFFFFF; display: block; max-width: 60px; padding: 0px; text-align: center; height: 25px; width: 60px;" width="60"></img></td></tr><tr>
+               <td align="left" class="em_white" style="font-family:Verdana, Geneva, sans-serif; font-size:10px;line-height:14px;color:#ffffff; padding-top: 30px;" valign="top">
+                {footerBrand}
+			
+				</td></tr></table></td></tr></table></td></tr>
+		<!--
+		<tr>
+       <td class="em_h7" height="25" style="height:25px;">
+        <img alt="" border="0" height="1" src="images/spacer.gif" style="display:block;" width="1"></td></tr>
+		-->
+	   
+	   </table></td></tr></table></td></tr></table>
+
+
+	
+
+
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

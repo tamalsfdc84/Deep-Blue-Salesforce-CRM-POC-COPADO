@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__QueryParams</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Addendums Attached --></label>
+        <name>CZAddendumsAttached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Participant Count --></label>
+        <name>CZDisclosureParticipantCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Set --></label>
+        <name>CZDisclosureSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Disclosure Code --></label>
+        <name>CZParentDisclosureCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applications Linked --></label>
+        <name>CZRelatedApplication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted on --></label>
+        <name>tffa__AcceptedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted --></label>
+        <name>tffa__Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Preference --></label>
+        <name>tffa__AccountPreference__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action text --></label>
+        <name>tffa__ActionText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Preference --></label>
+        <name>tffa__AdditionalPreference__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant role (set) --></label>
+        <name>tffa__ApplicantRoleSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applicable to External url. ensure CORS policy allows  site url --></help>
+        <label><!-- CORS Enabled ? --></label>
+        <name>tffa__CorsEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device os --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device orientation --></label>
+        <name>tffa__DeviceOrientation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device pixel ratio --></label>
+        <name>tffa__DevicePixelRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document name --></label>
+        <name>tffa__DocumentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document url --></label>
+        <name>tffa__DocumentUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic signature provider --></label>
+        <name>tffa__ElectronicSignatureProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Envelope Id --></label>
+        <name>tffa__EnvelopeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Envelope --></label>
+        <name>tffa__Envelope__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event name --></label>
+        <name>tffa__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution required --></label>
+        <name>tffa__ExecutionRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Document Id --></label>
+        <name>tffa__ExternalDocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External reference id --></label>
+        <name>tffa__ExternalReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Need --></label>
+        <name>tffa__FinancialNeed__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Funding Request --></label>
+        <name>tffa__FundingRequest__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group code --></label>
+        <name>tffa__GroupCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ip address --></label>
+        <name>tffa__IpAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is External --></label>
+        <name>tffa__IsExternal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is remote captured --></label>
+        <name>tffa__IsRemoteCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>tffa__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__LinkedApplication__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Locale --></label>
+        <name>tffa__Locale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long label --></label>
+        <name>tffa__LongLabel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Template --></label>
+        <name>tffa__ParentTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Process Id --></label>
+        <name>tffa__ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process State --></label>
+        <name>tffa__ProcessState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process url --></label>
+        <name>tffa__ProcessViewerURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>tffa__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Disclosures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Template label --></label>
+        <name>tffa__TemplateLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template --></label>
+        <name>tffa__Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User agent --></label>
+        <name>tffa__UserAgent__c</name>
+    </fields>
+</CustomObjectTranslation>

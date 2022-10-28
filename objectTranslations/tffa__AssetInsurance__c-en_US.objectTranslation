@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agency code --></label>
+        <name>tffa__AgencyCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency name --></label>
+        <name>tffa__AgencyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance agent email --></label>
+        <name>tffa__AgentEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance agent name --></label>
+        <name>tffa__AgentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance agent phone --></label>
+        <name>tffa__AgentPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Insurances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured value --></label>
+        <name>tffa__InsuredValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy name --></label>
+        <name>tffa__PolicyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy number --></label>
+        <name>tffa__PolicyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revision date --></label>
+        <name>tffa__RevisionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+</CustomObjectTranslation>

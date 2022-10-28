@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed vehicle categories --></label>
+        <name>tffa__AllowedVehicleCategories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed vehicle loan purpose --></label>
+        <name>tffa__AllowedVehicleLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Vehicle Makes --></label>
+        <name>tffa__AllowedVehicleMakes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank deposit type --></label>
+        <name>tffa__BankDepositType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is add on vehicle supported --></label>
+        <name>tffa__IsAddOnVehicleSupported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Used Vehicle Supported --></label>
+        <name>tffa__IsUsedVehicleSupported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Vehicle Customization allowed --></label>
+        <name>tffa__IsVehicleCustomizationAllowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum age --></label>
+        <name>tffa__MaximumAge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum collateral value --></label>
+        <name>tffa__MaximumCollateralValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Loan to Value (LTV) Ratio --></label>
+        <name>tffa__MaximumLoanToValueRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum quantity --></label>
+        <name>tffa__MaximumQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum vehicle length --></label>
+        <name>tffa__MaximumVehicleLength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum vehicle mileage --></label>
+        <name>tffa__MaximumVehicleMileage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted vehicle makes --></label>
+        <name>tffa__RestrictedVehicleMakes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use as residence --></label>
+        <name>tffa__UseAsResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle type --></label>
+        <name>tffa__VehicleType__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Bank deposit account used as collateral arrangement to secure the lending application --></description>
+        <label><!-- Bank Deposit --></label>
+        <name>tffa__BANK_DEPOSIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Vehicle used as a collateral arrangement to secure the lending application --></description>
+        <label><!-- Vehicle --></label>
+        <name>tffa__VEHICLE</name>
+    </recordTypes>
+</CustomObjectTranslation>

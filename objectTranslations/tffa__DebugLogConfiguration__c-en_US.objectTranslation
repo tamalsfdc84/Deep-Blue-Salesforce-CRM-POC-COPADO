@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Define the logging level upper limit to be persisted into database table --></help>
+        <label><!-- Database Logging Level --></label>
+        <name>tffa__DatabaseLoggingLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debug Call Stack --></label>
+        <name>tffa__DebugCallStack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Database and System Logging --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- If log masking is enabled when calling logger methods --></help>
+        <label><!-- Automatic Log Masking Enabled --></label>
+        <name>tffa__MaskingEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Define the regex masking pattern with pipes. The matching text will be replaced with *** --></help>
+        <label><!-- Masking Pattern --></label>
+        <name>tffa__MaskingPattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- System debug logs older than this period will be purged from the system. --></help>
+        <label><!-- Log retention period in days --></label>
+        <name>tffa__RetentionPeriod__c</name>
+    </fields>
+</CustomObjectTranslation>

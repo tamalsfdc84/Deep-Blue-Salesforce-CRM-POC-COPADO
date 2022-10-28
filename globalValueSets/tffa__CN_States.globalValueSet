@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FUJIAN</fullName>
+        <default>false</default>
+        <label>Fujian</label>
+    </customValue>
+    <customValue>
+        <fullName>GUANGDONG</fullName>
+        <default>false</default>
+        <label>Guangdong</label>
+    </customValue>
+    <description>States of China</description>
+    <masterLabel>CN_States</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

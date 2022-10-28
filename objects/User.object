@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>User_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>User_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <label>User Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>PersonalInfo_EPIM</fullName>
+        <description>Fieldset for User Field Masking</description>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>EmployeeNumber</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>GeocodeAccuracy</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Division</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Signature</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FederationIdentifier</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AboutMe</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Alias</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Username</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MobilePhone</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ManagerId</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CompanyName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Department</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BadgeText</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Longitude</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SenderEmail</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Latitude</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>City</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Fax</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PostalCode</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Street</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SenderName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Extension</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Country</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Title</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>PersonalInfo_EPIM</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>tffa__ALL</fullName>
+        <description>to select user fields in User Repository</description>
+        <displayedFields>
+            <field>Alias</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsActive</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ProfileId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MobilePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CommunityNickname</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Username</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TimeZoneSidKey</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ALL</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>tffa__Facts</fullName>
+        <description>Set of fields that act as facts for finding a suitable users.</description>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Facts</label>
+    </fieldSets>
+    <fields>
+        <fullName>Email</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>FinServ__ReferrerScore__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Referrer Score</description>
+        <externalId>false</externalId>
+        <label>Referrer Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>User_LOB_matched__c</fullName>
+        <description>This field is created as part of reports. If the logged in user&apos;s LOB is equal to the users LOB, display only those records</description>
+        <externalId>false</externalId>
+        <formula>IF ( TEXT(WT_Line_of_Business__c ) = TEXT( $User.WT_Line_of_Business__c ) , 1 , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User LOB matched</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_BB_CB_Scorecard_Access__c</fullName>
+        <externalId>false</externalId>
+        <label>BB/CB Scorecard Access</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Manager/Team Lead</fullName>
+                    <default>false</default>
+                    <label>Manager/Team Lead</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Support User</fullName>
+                    <default>false</default>
+                    <label>Support User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_BB_Scorecard_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>BB Scorecard End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_BB_Scorecard_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>BB Scorecard Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_Bank__c</fullName>
+        <description>Bank number of the Employee</description>
+        <externalId>false</externalId>
+        <label>Bank #</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>WT_Fusion_Feed_Bank</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Branch__c</fullName>
+        <description>Branch Number of the User</description>
+        <externalId>false</externalId>
+        <label>Branch #</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>WT_Fusion_Feed_Branch</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Business_Unit_Entity__c</fullName>
+        <description>reference to Business Unit Entity</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Branch Factor</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Access__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Access</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Manager/Team Lead</fullName>
+                    <default>false</default>
+                    <label>Manager/Team Lead</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Support User</fullName>
+                    <default>false</default>
+                    <label>Support User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CRE Scorecard End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Exception_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Exception End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Exception_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Exception Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Team__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Team</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Charter__c</fullName>
+        <description>Charter</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Charter</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Current_Scorecard__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <externalId>false</externalId>
+        <label>Current Scorecard</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BB</fullName>
+                    <default>false</default>
+                    <label>BB</label>
+                </value>
+                <value>
+                    <fullName>CB</fullName>
+                    <default>false</default>
+                    <label>CB</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>MM</fullName>
+                    <default>false</default>
+                    <label>MM</label>
+                </value>
+                <value>
+                    <fullName>WS</fullName>
+                    <default>false</default>
+                    <label>WS</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CRM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Date_Welcome_Email_Sent__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Date Welcome Email Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_Employee_ID__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Employee ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Is_the_Duplicate_Rule_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>For Integration User must be Inactive.</description>
+        <externalId>false</externalId>
+        <label>Is the Duplicate Rule Inactive?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Line_of_Business__c</fullName>
+        <description>Created as a part of DBFSCRM-707</description>
+        <externalId>false</externalId>
+        <label>Line of Business</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABL</fullName>
+                    <default>false</default>
+                    <label>ABL</label>
+                </value>
+                <value>
+                    <fullName>Agricultural Lending</fullName>
+                    <default>false</default>
+                    <label>Agricultural Lending</label>
+                </value>
+                <value>
+                    <fullName>Business Administrator</fullName>
+                    <default>false</default>
+                    <label>Business Administrator</label>
+                </value>
+                <value>
+                    <fullName>Business Banking</fullName>
+                    <default>false</default>
+                    <label>Business Banking</label>
+                </value>
+                <value>
+                    <fullName>CCPA</fullName>
+                    <default>false</default>
+                    <label>CCPA</label>
+                </value>
+                <value>
+                    <fullName>Charter Leadership</fullName>
+                    <default>false</default>
+                    <label>Charter Leadership</label>
+                </value>
+                <value>
+                    <fullName>Commercial Support</fullName>
+                    <default>false</default>
+                    <label>Commercial Support</label>
+                </value>
+                <value>
+                    <fullName>Community Advantage</fullName>
+                    <default>false</default>
+                    <label>Community Advantage</label>
+                </value>
+                <value>
+                    <fullName>Community Banking</fullName>
+                    <default>false</default>
+                    <label>Community Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Impact</fullName>
+                    <default>false</default>
+                    <label>Community Impact</label>
+                </value>
+                <value>
+                    <fullName>Complaint Management</fullName>
+                    <default>false</default>
+                    <label>Complaint Management</label>
+                </value>
+                <value>
+                    <fullName>Consumer Lending</fullName>
+                    <default>false</default>
+                    <label>Consumer Lending</label>
+                </value>
+                <value>
+                    <fullName>Contact Center</fullName>
+                    <default>false</default>
+                    <label>Contact Center</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>Deposit Application</fullName>
+                    <default>false</default>
+                    <label>Deposit Application</label>
+                </value>
+                <value>
+                    <fullName>First Insurance</fullName>
+                    <default>false</default>
+                    <label>First Insurance</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+                <value>
+                    <fullName>Funds Group</fullName>
+                    <default>false</default>
+                    <label>Funds Group</label>
+                </value>
+                <value>
+                    <fullName>Government Funds</fullName>
+                    <default>false</default>
+                    <label>Government Funds</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>IT Administrator</fullName>
+                    <default>false</default>
+                    <label>IT Administrator</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>MAD - Managed Assets Division</fullName>
+                    <default>false</default>
+                    <label>MAD - Managed Assets Division</label>
+                </value>
+                <value>
+                    <fullName>Middle Market</fullName>
+                    <default>false</default>
+                    <label>Middle Market</label>
+                </value>
+                <value>
+                    <fullName>MyHR</fullName>
+                    <default>false</default>
+                    <label>MyHR</label>
+                </value>
+                <value>
+                    <fullName>Private Client Group</fullName>
+                    <default>false</default>
+                    <label>Private Client Group</label>
+                </value>
+                <value>
+                    <fullName>Professional Practice Group</fullName>
+                    <default>false</default>
+                    <label>Professional Practice Group</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Support Role</fullName>
+                    <default>false</default>
+                    <label>Support Role</label>
+                </value>
+                <value>
+                    <fullName>Swap</fullName>
+                    <default>false</default>
+                    <label>Swap</label>
+                </value>
+                <value>
+                    <fullName>Syndication/Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Syndication/Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management</fullName>
+                    <default>false</default>
+                    <label>Treasury Management</label>
+                </value>
+                <value>
+                    <fullName>Tricom</fullName>
+                    <default>false</default>
+                    <label>Tricom</label>
+                </value>
+                <value>
+                    <fullName>Wealth - CDEC</fullName>
+                    <default>false</default>
+                    <label>Wealth - CDEC</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Chicago Trust</fullName>
+                    <default>false</default>
+                    <label>Wealth - Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Great Lakes Advisors</fullName>
+                    <default>false</default>
+                    <label>Wealth - Great Lakes Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth Management</fullName>
+                    <default>false</default>
+                    <label>Wealth Management</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Retirement Benefit Advisors</fullName>
+                    <default>false</default>
+                    <label>Wealth – Retirement Benefit Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Wintrust Investments</fullName>
+                    <default>false</default>
+                    <label>Wealth - Wintrust Investments</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Funds Group</fullName>
+                    <default>false</default>
+                    <label>Wintrust Funds Group</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Mortgage</fullName>
+                    <default>false</default>
+                    <label>Wintrust Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Receivables Finance</fullName>
+                    <default>false</default>
+                    <label>Wintrust Receivables Finance</label>
+                </value>
+                <value>
+                    <fullName>WTFC Leadership</fullName>
+                    <default>false</default>
+                    <label>WTFC Leadership</label>
+                </value>
+                <value>
+                    <fullName>WTFC Operations - Compliance</fullName>
+                    <default>false</default>
+                    <label>WTFC Operations - Compliance</label>
+                </value>
+                <value>
+                    <fullName>WTFC Operations - Credit</fullName>
+                    <default>false</default>
+                    <label>WTFC Operations - Credit</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Wintrust Investments</fullName>
+                    <default>false</default>
+                    <label>Wealth – Wintrust Investments</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Chicago Trust</fullName>
+                    <default>false</default>
+                    <label>Wealth – Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>ABL,</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ABL,</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management, Wealth - Chicago Trust</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Treasury Management, Wealth - Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth Management, Wealth Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth Management, Wealth Services</label>
+                </value>
+                <value>
+                    <fullName>Wealth Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Location_Code__c</fullName>
+        <description>Location code for the user</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Location Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Location__c</fullName>
+        <description>Location of the user</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MDM_Record_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>MDM Record ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Access__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <externalId>false</externalId>
+        <label>MM Scorecard Access</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Manager/Team Lead</fullName>
+                    <default>false</default>
+                    <label>Manager/Team Lead</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Support User</fullName>
+                    <default>false</default>
+                    <label>Support User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MM Scorecard End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Exception_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MM Scorecard Exception End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Exception_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MM Scorecard Exception Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MM Scorecard Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Team__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MM Scorecard Team</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MSD_Record_ID__c</fullName>
+        <description>MSD Record ID</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>MSD Record ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Non_AD_Title__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Non-AD Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Officer_Number__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Officer Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Referrals_Type__c</fullName>
+        <description>Additional Referral Type</description>
+        <externalId>false</externalId>
+        <label>Referral Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chicago Deferred Exchange</fullName>
+                    <default>false</default>
+                    <label>Chicago Deferred Exchange</label>
+                </value>
+                <value>
+                    <fullName>Commercial Banking</fullName>
+                    <default>false</default>
+                    <label>Commercial Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Advantage</fullName>
+                    <default>false</default>
+                    <label>Community Advantage</label>
+                </value>
+                <value>
+                    <fullName>Community Impact</fullName>
+                    <default>false</default>
+                    <label>Community Impact</label>
+                </value>
+                <value>
+                    <fullName>Consumer Lending</fullName>
+                    <default>false</default>
+                    <label>Consumer Lending</label>
+                </value>
+                <value>
+                    <fullName>Corporate Credit Card</fullName>
+                    <default>false</default>
+                    <label>Corporate Credit Card</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>Merchant Processing</fullName>
+                    <default>false</default>
+                    <label>Merchant Processing</label>
+                </value>
+                <value>
+                    <fullName>Other Referral</fullName>
+                    <default>false</default>
+                    <label>Other Referral</label>
+                </value>
+                <value>
+                    <fullName>Platinum Adventures</fullName>
+                    <default>false</default>
+                    <label>Platinum Adventures</label>
+                </value>
+                <value>
+                    <fullName>Retail Banking</fullName>
+                    <default>false</default>
+                    <label>Retail Banking</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Small Business Lending</fullName>
+                    <default>false</default>
+                    <label>Small Business Lending</label>
+                </value>
+                <value>
+                    <fullName>Swaps/Derivatives</fullName>
+                    <default>false</default>
+                    <label>Swaps/Derivatives</label>
+                </value>
+                <value>
+                    <fullName>Testing &amp; Training Referral</fullName>
+                    <default>false</default>
+                    <label>Testing &amp; Training Referral</label>
+                </value>
+                <value>
+                    <fullName>TMIS - Treasury Management Inside Sales</fullName>
+                    <default>false</default>
+                    <label>TMIS - Treasury Management Inside Sales</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Wealth Management</fullName>
+                    <default>false</default>
+                    <label>Wintrust Wealth Management</label>
+                </value>
+                <value>
+                    <fullName>Private Client Group</fullName>
+                    <default>false</default>
+                    <label>Private Client Group</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Mortgage</fullName>
+                    <default>false</default>
+                    <label>Wintrust Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Receivables Finance</fullName>
+                    <default>false</default>
+                    <label>Wintrust Receivables Finance</label>
+                </value>
+                <value>
+                    <fullName>Wealth Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth Services</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Chicago Trust</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth – Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Corporate Plan Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth – Corporate Plan Services</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Great Lakes Advisors</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth – Great Lakes Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Wayne Hummer Investments</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth – Wayne Hummer Investments</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>WT_User_Domain__c</fullName>
+        <description>Added to capture the user Domain shyam 3/30/21 based on Sita request</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Domain</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_WS_Scorecard_Access__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <externalId>false</externalId>
+        <label>WS Scorecard Access</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Manager/Team Lead</fullName>
+                    <default>false</default>
+                    <label>Manager/Team Lead</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Support User</fullName>
+                    <default>false</default>
+                    <label>Support User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_WS_Scorecard_End_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>WS Scorecard End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_WS_Scorecard_Start_Date__c</fullName>
+        <description>Created as a part of DBSFCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>WS Scorecard Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_WS_Scorecard_Team__c</fullName>
+        <description>Created as a part of DBFSCRM-707</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>WS Scorecard Team</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BranchCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The current geographical location of the user&apos;s workplace. It is expressed as a code (picklist value) that maps to the actual location object. Useful when assigning applications by location</description>
+        <externalId>false</externalId>
+        <label>Branch (Location) Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__LocationCode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Channel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The channel of operation of the current user. This will be used to default to the submission</description>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__SubmissionChannelType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__LocationCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The current geographical location of the user&apos;s workplace. It is expressed as a code (picklist value) that maps to the actual location object. Useful when assigning applications by location.</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__Location</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__MortgageLenderId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The identifier of the license or certificate issued to the user (MLO)</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mortgage Lender Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Skill__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures list of skills than can be associated with an user in the system. Skills can be name of the product categories or product names or any other relevant information to filter list of users best skilled to perform certain function</description>
+        <externalId>false</externalId>
+        <label>Skill</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__UserSkill</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

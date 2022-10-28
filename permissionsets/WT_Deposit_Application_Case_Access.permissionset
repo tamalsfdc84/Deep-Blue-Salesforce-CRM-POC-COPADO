@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>WT_CasesNewOverrideController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>WT_CasesNewOverrideController_T</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Allow users with this permission set to create and edit Deposit Application Cases even when their profile does not allow for it.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WT Deposit Application Case Access</label>
+    <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Case.WT_Deposit_Application</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <tabSettings>
+        <tab>standard-Case</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

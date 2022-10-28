@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created as a part of DBSFCRM-593</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>WT_Case__c</fullName>
+        <description>Created as a part of DBSFCRM-593</description>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Case Notes</relationshipLabel>
+        <relationshipName>Case_Notes1</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>WT_Email_Address__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MSD_Record_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>MSD Record ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Note_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Note Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Called Customer</fullName>
+                    <default>false</default>
+                    <label>Called Customer</label>
+                </value>
+                <value>
+                    <fullName>E-mailed Customer</fullName>
+                    <default>false</default>
+                    <label>E-mailed Customer</label>
+                </value>
+                <value>
+                    <fullName>Memo</fullName>
+                    <default>false</default>
+                    <label>Memo</label>
+                </value>
+                <value>
+                    <fullName>Status Update</fullName>
+                    <default>false</default>
+                    <label>Status Update</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Notes__c</fullName>
+        <description>Created as a part of DBSFCRM-593</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>3000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>WT_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Case_Notes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Send_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-593</description>
+        <externalId>false</externalId>
+        <label>Send Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Type__c</fullName>
+        <description>Created as a part of DBSFCRM-593</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>WT_Note_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Resolving</fullName>
+                    <default>false</default>
+                    <label>Resolving</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Customer</fullName>
+                    <default>false</default>
+                    <label>Waiting for Customer</label>
+                </value>
+                <value>
+                    <fullName>Cancellation</fullName>
+                    <default>false</default>
+                    <label>Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Fulfillment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Fulfillment</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Status Update</controllingFieldValue>
+                <valueName>Resolving</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Status Update</controllingFieldValue>
+                <valueName>Waiting for Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Status Update</controllingFieldValue>
+                <valueName>Cancellation</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Case Note</label>
+    <nameField>
+        <displayFormat>Note-{00000}</displayFormat>
+        <label>Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Notes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>WT_Note_Cannot_be_Created</fullName>
+        <active>true</active>
+        <description>Created as part of story- 419</description>
+        <errorConditionFormula>AND(
+$Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c,NOT(OR($Profile.Name = &apos;WT Business Administrator&apos; , $Profile.Name = &apos;WT Technical Administrator&apos;, $Profile.Name = &apos;System Administrator&apos; ) ),
+$UserRole.Name != &apos;Complaint Manager&apos;,
+ISPICKVAL(WT_Case__r.Status,&apos;Awaiting Approval&apos;),
+WT_Case__r.RecordType.Name =&apos;Compliance Complaint&apos;)</errorConditionFormula>
+        <errorMessage>Only Compliant Manager can Create or Edit Notes for Compliance Complaint case</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Notes_Required</fullName>
+        <active>false</active>
+        <description>created as part of DBSFCRM-783</description>
+        <errorConditionFormula>AND(
+ ISPICKVAL( WT_Note_Category__c , &apos;Status Update&apos;),
+ OR(
+    ISPICKVAL(  WT_Type__c , &apos;Resolving&apos;),
+    ISPICKVAL(  WT_Type__c , &apos;Waiting For Customer&apos;),
+    ISPICKVAL(  WT_Type__c , &apos;Cancellation&apos;)
+   ),
+ ISBLANK(WT_Notes__c) 
+)</errorConditionFormula>
+        <errorDisplayField>WT_Notes__c</errorDisplayField>
+        <errorMessage>Notes is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Restrict_Note_Category_Change</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c ,
+ ISCHANGED( WT_Note_Category__c ) )</errorConditionFormula>
+        <errorDisplayField>WT_Note_Category__c</errorDisplayField>
+        <errorMessage>Note Category Cannot Be Changed Once Note is Created</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Restrict_Send_Email_CCPA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c ,
+ WT_Send_Email__c ,
+ WT_Case__r.RecordType.DeveloperName == &apos;WT_CCPA&apos;
+)</errorConditionFormula>
+        <errorDisplayField>WT_Send_Email__c</errorDisplayField>
+        <errorMessage>Send Email is not available for CCPA Case</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Restrict_Send_Email_Compliance_Case</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c ,
+ WT_Send_Email__c ,
+ WT_Case__r.RecordType.DeveloperName == &apos;WT_Compliance_Complaint&apos;
+)</errorConditionFormula>
+        <errorDisplayField>WT_Send_Email__c</errorDisplayField>
+        <errorMessage>Send Email is not available for Compliance Case</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Restrict_Status_Update_Values_CCPA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c,
+WT_Case__r.RecordType.DeveloperName == &apos;WT_CCPA&apos;,
+ISPICKVAL(WT_Type__c ,&apos;Waiting for Customer&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>WT_Type__c</errorDisplayField>
+        <errorMessage>Waiting for Customer Status is not available for CCPA Case</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Restrict_Status_Values_ComplianceCase</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c,
+WT_Case__r.RecordType.DeveloperName == &apos;WT_Compliance_Complaint&apos;,
+ISPICKVAL(WT_Type__c ,&apos;Waiting for Customer&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>WT_Type__c</errorDisplayField>
+        <errorMessage>Waiting for Customer Status is not available for Compliance Case</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

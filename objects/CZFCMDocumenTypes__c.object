@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>FCM Document Types</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DocumentType__c</fullName>
+        <description>Document Type</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Document Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsCustomerlevelDoc__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is Customer level Doc</description>
+        <externalId>false</externalId>
+        <label>Is Customer level Doc?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUploadRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is upload Required</description>
+        <externalId>false</externalId>
+        <label>Is upload Required?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>FCM Document Types</label>
+    <listViews>
+        <fullName>DetailView</fullName>
+        <columns>NAME</columns>
+        <columns>DocumentType__c</columns>
+        <columns>IsUploadRequired__c</columns>
+        <columns>IsCustomerlevelDoc__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>DetailView</label>
+        <language>en_US</language>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

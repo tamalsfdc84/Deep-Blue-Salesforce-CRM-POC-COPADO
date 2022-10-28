@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ASSIGNED</fullName>
+        <default>false</default>
+        <label>Assigned</label>
+    </customValue>
+    <customValue>
+        <fullName>FULFILLED</fullName>
+        <default>false</default>
+        <label>Fulfilled</label>
+    </customValue>
+    <description>Enumerates the various status in the lifecycle of a reward.</description>
+    <masterLabel>RewardStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

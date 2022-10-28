@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ALIMONY_CHILD-SUPPORT</fullName>
+        <default>false</default>
+        <label>Alimony / Child-support</label>
+    </customValue>
+    <customValue>
+        <fullName>Annuity</fullName>
+        <default>false</default>
+        <label>Annuity</label>
+    </customValue>
+    <customValue>
+        <fullName>DEFERRED_COMPENSATION</fullName>
+        <default>false</default>
+        <label>Deferred Compensation</label>
+    </customValue>
+    <customValue>
+        <fullName>RSU</fullName>
+        <default>false</default>
+        <label>Restricted Stock Units</label>
+    </customValue>
+    <customValue>
+        <fullName>INTEREST_DIVIDENDS</fullName>
+        <default>false</default>
+        <label>Interest / Dividends</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <description>Display the list of types of other income.</description>
+    <masterLabel>OtherIncomeType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

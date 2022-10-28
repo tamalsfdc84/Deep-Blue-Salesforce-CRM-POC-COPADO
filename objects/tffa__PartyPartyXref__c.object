@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A relationship between 2 applicants of a submission. 
+Personal relationship could be SPOUSE, PARENT, FRIENDS.
+Business relationship between a company and an individual could be DIRECTOR, OWNER, EXECUTIVE, PARTNER etc. In additional the ownership percentage can be captured for OWNER type of relationship. 
+Relationship between 2 company type applicants can also be captured such as PARENT and SUBSIDIARY.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CZFisRelnshipCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to check if FIS Relnship is created</description>
+        <externalId>false</externalId>
+        <label>FIS Relnship Created</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZIsCertifyingIndividual__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is Certifying Individual</description>
+        <externalId>false</externalId>
+        <label>Is Certifying Individual</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ControllingParty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the individual (related party) has significant responsibility to control, manage, or direct the legal entity or organization (party). Applicable to business relationships.</description>
+        <externalId>false</externalId>
+        <label>Controlling party</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FinanciallyDependent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the related party is financially dependent on the party in a personal type relationship.</description>
+        <externalId>false</externalId>
+        <label>Financially dependent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OwnershipPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Percentage ownership of related party in the party (an Organization) in a business ownership type relationship.</description>
+        <externalId>false</externalId>
+        <label>Ownership percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Party managing the relationship</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Related To</relationshipLabel>
+        <relationshipName>PartyXrefs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__RelatedParty__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related party in the relationship</description>
+        <externalId>false</externalId>
+        <label>Related Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Related As</relationshipLabel>
+        <relationshipName>RelatedPartyXrefs</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RelationCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Kind of relation. e.g PERSONAL, BUSINESS. Derived from the relation code.</description>
+        <externalId>false</externalId>
+        <label>Relation category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyRelationCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__RelationCodeValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value of the relation code.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Relation code value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RelationCode__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Captures how Related Party related to Party.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures how Related Party related to Party.</inlineHelpText>
+        <label>Relation Code</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Relation code not active.</errorMessage>
+            <filterItems>
+                <field>tffa__PartyRelationCode__c.tffa__Disabled__c</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__PartyRelationCode__c</referenceTo>
+        <relationshipLabel>Party Party Relationships</relationshipLabel>
+        <relationshipName>PartyPartyXrefs</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Controls the relative order of the item in a list.</description>
+        <externalId>false</externalId>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The designation of the related party w.r.t to the party (organization). Could be Senior Manager, Director, VP, CIO, CEO etc. Usually captured in addition to the main relationship - Owner, Signer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Party Party Relationship</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Relation Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Party Party Relationships</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>tffa__ValidateRelationCode</fullName>
+        <active>true</active>
+        <description>Validates whether the relation code selected is appropriate for the party - related party combination.</description>
+        <errorConditionFormula>TEXT(tffa__Party__r.tffa__Type__c) != TEXT(tffa__RelationCode__r.tffa__PartyType__c) || TEXT(tffa__RelatedParty__r.tffa__Type__c) != TEXT(tffa__RelationCode__r.tffa__RelatedPartyType__c)</errorConditionFormula>
+        <errorDisplayField>tffa__RelationCode__c</errorDisplayField>
+        <errorMessage>The relation is invalid for the associated parties.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

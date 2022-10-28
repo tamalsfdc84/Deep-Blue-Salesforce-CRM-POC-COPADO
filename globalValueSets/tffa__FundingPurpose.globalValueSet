@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DEPOSIT</fullName>
+        <default>true</default>
+        <label>Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>INTEREST_PAYOUT</fullName>
+        <default>false</default>
+        <label>CD Interest Payout</label>
+    </customValue>
+    <customValue>
+        <fullName>MATURITY</fullName>
+        <default>false</default>
+        <label>CD Maturity Instruction</label>
+    </customValue>
+    <customValue>
+        <fullName>DISBURSEMENT</fullName>
+        <default>false</default>
+        <label>Disbursement Instruction</label>
+    </customValue>
+    <customValue>
+        <fullName>REPAYMENT</fullName>
+        <default>false</default>
+        <label>Auto Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSING_COST</fullName>
+        <default>false</default>
+        <label>Closing Cost</label>
+    </customValue>
+    <customValue>
+        <fullName>RENEWAL</fullName>
+        <default>false</default>
+        <label>Renewal</label>
+    </customValue>
+    <description>Captures the purpose of the funding request. Useful for cases other usual Deposit Funding</description>
+    <masterLabel>FundingPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,4019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>tffa__CallLog</fullName>
+        <fields>Subject</fields>
+        <fields>Status</fields>
+        <fields>Priority</fields>
+        <fields>CallDisposition</fields>
+        <fields>ActivityDate</fields>
+        <label>Call Log</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>CompletedDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encryptionScheme>None</encryptionScheme>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>IsReminderSet</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>All_Task</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Task</label>
+    </listViews>
+    <listViews>
+        <fullName>CompletedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_CompletedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>DelegatedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Delegated</filterScope>
+        <label>ENCODED:{!FilterNames.Task_DelegatedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OpenTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OpenTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OverdueTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OverdueTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>RecurringTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_RecurringTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.z_TodaysTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>UnscheduledTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>WT_My_Completed_Tasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>STATUS</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>My Completed Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>WT_My_Completed_Tasks_last_3_months</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>STATUS</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>WT_Activity_Completed_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_90_DAYS</value>
+        </filters>
+        <label>My Completed Tasks in last 3 months</label>
+    </listViews>
+    <listViews>
+        <fullName>WT_My_Open_Task</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>STATUS</field>
+            <operation>equals</operation>
+            <value>Open,Scheduled</value>
+        </filters>
+        <label>My Open Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>WT_My_Team_s_Completed_Tasks_last_3_months</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>STATUS</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>WT_Activity_Completed_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_90_DAYS</value>
+        </filters>
+        <label>My Team’s Completed Tasks last 3 months</label>
+    </listViews>
+    <listViews>
+        <fullName>WT_My_Team_s_Open_Tasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>STATUS</field>
+            <operation>equals</operation>
+            <value>Open,Scheduled</value>
+        </filters>
+        <label>My Team&apos;s Open Tasks</label>
+    </listViews>
+    <recordTypes>
+        <fullName>FinServ__AdvisorTask</fullName>
+        <active>true</active>
+        <description>Default task record type for Advisor profile</description>
+        <label>Advisor Task</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Task</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FinServ__ClientAssociateTask</fullName>
+        <active>true</active>
+        <description>Default task record type for Client Associate profile</description>
+        <label>Client Associate Task</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Task</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_CRA_Call</fullName>
+        <active>true</active>
+        <label>CRA Call</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Add Subject</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_Standard_Call</fullName>
+        <active>true</active>
+        <label>Standard Call</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Add Subject</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_Task</fullName>
+        <active>true</active>
+        <label>Task</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Add Subject</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Task</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_WFG_Call</fullName>
+        <active>true</active>
+        <label>WFG Call</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Add Subject</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_Wintrust_Task</fullName>
+        <active>true</active>
+        <label>Wintrust Task</label>
+        <picklistValues>
+            <picklist>FinServ__Regarding__c</picklist>
+            <values>
+                <fullName>Client Retention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Add Subject</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Activity_Type__c</picklist>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Task</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Areas_where_we_can_be_more_helpful__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_CRA_Reportable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Call_Duration__c</picklist>
+            <values>
+                <fullName>1 day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45 minutes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E5 hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 hours</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Status__c</picklist>
+            <values>
+                <fullName>Activity Not Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Call Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goal Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer%2C No Message Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number on File</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Contact_Type__c</picklist>
+            <values>
+                <fullName>COI%2FReferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Networking Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsored Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Credit_Needs_Not_Being_Met_By_Bank__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Current_Wintrust_Customer__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Direction__c</picklist>
+            <values>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Marketing_Missing_Areas_Of_Community__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Product_Partner_Joint_Call__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Corporate Plan Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Retail_Call_Type__c</picklist>
+            <values>
+                <fullName>Collection Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maturing CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OnBoarding Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Task_Subtype__c</picklist>
+            <values>
+                <fullName>%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Who_Initiated_Contact__c</picklist>
+            <values>
+                <fullName>Bank Initiated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Initiated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>ContactStatusIsMandatoryOnTask</fullName>
+        <active>true</active>
+        <description>CRM Person with Retail Profile, when I am moving Status of an Activity as Complete, then the Contact Status must be mandatory.</description>
+        <errorConditionFormula>AND( $Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c ,$Profile.Name == &quot;WT Retail&quot; ,
+OR(RecordType.Name == &quot;Wintrust Task&quot; ,RecordType.Name == &quot;Task&quot; ,RecordType.Name == &quot;Standard Call&quot;  ,RecordType.Name == &quot;WFG Call&quot; ,RecordType.Name == &quot;CRA Call&quot; ) , ISPICKVAL(Status,&quot;Completed&quot;) , ISPICKVAL(WT_Contact_Status__c , &quot;&quot;) )</errorConditionFormula>
+        <errorMessage>Please enter contact status for successfully completing this activity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OutcomeNotesAreMandatoryOnTask</fullName>
+        <active>false</active>
+        <description>Outcome notes are only required when an activity is being completed.</description>
+        <errorConditionFormula>AND($Setup.WT_Switch_Settings__c.WT_Is_Validation_Rule_Active__c , OR(RecordType.Name == &quot;Wintrust Task&quot; , RecordType.Name == &quot;CRA Call&quot; 
+ , RecordType.Name == &quot;Standard Call&quot; ,RecordType.Name == &quot;WFG Call&quot;), ISPICKVAL( Status ,&quot;Completed&quot;) , ISBLANK(WT_Outcome_Notes__c ))</errorConditionFormula>
+        <errorMessage>Outcome Notes** field should be mandatory.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- ensure to extend AbstractBatchJob --></help>
+        <label><!-- ApexClass --></label>
+        <name>tffa__ApexClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>tffa__BatchSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- The format is read as - Seconds, Minutes, Hours, Day_of_month, Month, Day_of_week. --></help>
+        <label><!-- CronExpression --></label>
+        <name>tffa__CronExpression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default is -1 . Add a value between 2-40 --></help>
+        <label><!-- Schedule Interval In Minutes --></label>
+        <name>tffa__ScheduleIntervalInMinutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Job? --></label>
+        <name>tffa__System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+        <picklistValues>
+            <masterLabel>Adhoc</masterLabel>
+            <translation><!-- Adhoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Batch size cannot be more than 200 --></errorMessage>
+        <name>tffa__BatchSize</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CronExpression is mandatory if Type is scheduled --></errorMessage>
+        <name>tffa__Cron_Expression</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Schedule Interval In Minutes  should be between 5 and 30 and a factor of 60 --></errorMessage>
+        <name>tffa__ScheduleIntervalInMinutesValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

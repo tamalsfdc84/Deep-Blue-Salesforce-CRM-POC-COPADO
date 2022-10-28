@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Phone call Details</value>
+        </caseValues>
+        <name>task_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>FinServ__Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>FinServ__NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>FinServ__Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>FinServ__Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Completed Date --></label>
+        <name>WT_Activity_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>WT_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas where we can be more helpful? --></label>
+        <name>WT_Areas_where_we_can_be_more_helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Charter --></label>
+        <name>WT_Assigned_To_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned to Line of Business --></label>
+        <name>WT_Assigned_to_Line_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buisness Location --></label>
+        <name>WT_Buisness_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRA Reportable --></label>
+        <name>WT_CRA_Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>WT_Call_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Email --></label>
+        <name>WT_Case_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>WT_Case__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>WT_Contact_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>WT_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit needs not being met by the bank? --></label>
+        <name>WT_Credit_Needs_Not_Being_Met_By_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Wintrust Customer --></label>
+        <name>WT_Current_Wintrust_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direction --></label>
+        <name>WT_Direction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming (race tracks, gaming machines) --></label>
+        <name>WT_Gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, where can we be more helpful? --></label>
+        <name>WT_If_Yes_Where_Can_We_Be_More_Helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Planning Notes --></label>
+        <name>WT_Internal_Planning_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD MDM Record ID --></label>
+        <name>WT_MSD_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing missing areas of community? --></label>
+        <name>WT_Marketing_Missing_Areas_Of_Community__c</name>
+    </fields>
+    <fields>
+        <label><!-- Money Service Businesses (MSBs) --></label>
+        <name>WT_Money_Service_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation/Function of Person/Group --></label>
+        <name>WT_Occupation_Function_Person_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer --></label>
+        <name>WT_Organizer_User__c</name>
+        <relationshipLabel><!-- Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outcome Notes** --></label>
+        <name>WT_Outcome_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override DNC --></label>
+        <name>WT_Override_DNC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>WT_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner Joint Call? --></label>
+        <name>WT_Product_Partner_Joint_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Follow-up --></label>
+        <name>WT_Recommended_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Location --></label>
+        <name>WT_Residence_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Call Type --></label>
+        <name>WT_Retail_Call_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email ? --></label>
+        <name>WT_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Activity --></label>
+        <name>WT_TM_Activity_Lkp__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>WT_Task_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Subtype --></label>
+        <name>WT_Task_Subtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_Third_Party_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the major bank related needs? --></label>
+        <name>WT_What_Are_Major_Bank_Related_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- What was discussed? --></label>
+        <name>WT_What_Was_Discussed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which industries do you plan to invest? --></label>
+        <name>WT_Which_Industries_Plan_To_Invest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Initiated Contact? --></label>
+        <name>WT_Who_Initiated_Contact__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Default task record type for Advisor profile --></description>
+        <label><!-- Advisor Task --></label>
+        <name>FinServ__AdvisorTask</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default task record type for Client Associate profile --></description>
+        <label><!-- Client Associate Task --></label>
+        <name>FinServ__ClientAssociateTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRA Call --></label>
+        <name>WT_CRA_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Call --></label>
+        <name>WT_Standard_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Task --></label>
+        <name>WT_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WFG Call --></label>
+        <name>WT_WFG_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wintrust Task --></label>
+        <name>WT_Wintrust_Task</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter contact status for successfully completing this activity. --></errorMessage>
+        <name>ContactStatusIsMandatoryOnTask</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Outcome Notes** field should be mandatory. --></errorMessage>
+        <name>OutcomeNotesAreMandatoryOnTask</name>
+    </validationRules>
+</CustomObjectTranslation>

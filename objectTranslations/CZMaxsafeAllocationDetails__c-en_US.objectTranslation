@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MaxsafeAllocationDetails</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MaxsafeAllocationDetailses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allocation Amount --></label>
+        <name>AllocationAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation Type --></label>
+        <name>AllocationType__c</name>
+        <picklistValues>
+            <masterLabel>Decrease Allocation</masterLabel>
+            <translation><!-- Decrease Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase Allocation</masterLabel>
+            <translation><!-- Increase Allocation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- MaxsafeAllocationDetailse --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Max Allocation --></label>
+        <name>IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Selected ? --></label>
+        <name>IsSelected__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

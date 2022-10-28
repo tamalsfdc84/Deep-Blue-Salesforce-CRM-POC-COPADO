@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>KYC</fullName>
+        <default>false</default>
+        <label>KYC</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT</fullName>
+        <default>false</default>
+        <label>Credit</label>
+    </customValue>
+    <description>Types of decisioning. Each type serves a different purpose and may apply to different use cases depending on the type of Party. e.g. KYC type decisioning.</description>
+    <masterLabel>PartyDecisionType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ACH Report Generated --></label>
+        <name>ACHReportGenerated__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountBalance --></label>
+        <name>AccountBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Transaction Reference --></label>
+        <name>ApprovalTransRefId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source Account Brand for Internal Transfer. --></help>
+        <label><!-- Source Account Brand --></label>
+        <name>CZSourceAccountBrand__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source Account status for Internal Transfer. --></help>
+        <label><!-- Source Account Status --></label>
+        <name>CZSourceAccountStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core Entry Flag --></label>
+        <name>IsCoreEntryComplete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Obsolete Flag --></label>
+        <name>IsObsolete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Amount --></label>
+        <name>MembershipAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- MicroDepositGUID --></label>
+        <name>MicroDepositGUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value sent in Approval API call to Elavon. Y means to use partial funds and keep remaining funds in Auth Only state. --></help>
+        <label><!-- Partial shipment indicator --></label>
+        <name>MultiPartialFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reversal Retry Count --></label>
+        <name>ReversalRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TraceNo --></label>
+        <name>TraceNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Title --></label>
+        <name>tffa__AccountTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountType --></label>
+        <name>tffa__AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>tffa__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>tffa__BillingAddress__c</name>
+        <relationshipLabel><!-- Funding Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancellable --></label>
+        <name>tffa__Cancellable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card expiry month (MM) --></label>
+        <name>tffa__CardExpiryMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card expiry year (YY) --></label>
+        <name>tffa__CardExpiryYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card holder name --></label>
+        <name>tffa__CardHolderName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card number --></label>
+        <name>tffa__CardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed on --></label>
+        <name>tffa__CompletedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto Amount --></label>
+        <name>tffa__CryptoAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto currency price --></label>
+        <name>tffa__CryptoCurrencyPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto currency --></label>
+        <name>tffa__CryptoCurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto order quote id --></label>
+        <name>tffa__CryptoOrderQuoteId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto order status --></label>
+        <name>tffa__CryptoOrderStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device os --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure reason Code --></label>
+        <name>tffa__FailureReasonCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure reason --></label>
+        <name>tffa__FailureReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees --></label>
+        <name>tffa__Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution name --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding direction --></label>
+        <name>tffa__FundingDirection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ip address --></label>
+        <name>tffa__IpAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is authorized --></label>
+        <name>tffa__IsAuthorized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Identity Mismatch ? --></label>
+        <name>tffa__IsIdentityMismatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is remote captured --></label>
+        <name>tffa__IsRemoteCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Syncpoint id --></label>
+        <name>tffa__LastSyncpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__LinkedApplication__c</name>
+        <relationshipLabel><!-- Funding Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>tffa__MaskedAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount --></label>
+        <name>tffa__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overridden --></label>
+        <name>tffa__Overridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Comments --></label>
+        <name>tffa__OverrideComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override reason --></label>
+        <name>tffa__OverrideReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider System Id --></label>
+        <name>tffa__ProviderSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Access token(Encrypted) --></label>
+        <name>tffa__ProviderSystemToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary email --></label>
+        <name>tffa__SecondaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary phone --></label>
+        <name>tffa__SecondaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Consolidated Funding Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submitted on --></label>
+        <name>tffa__SubmittedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trace Number --></label>
+        <name>tffa__TraceNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction date --></label>
+        <name>tffa__TransactionDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reference number generated at the time of Pre-Auth. --></help>
+        <label><!-- Transaction reference id --></label>
+        <name>tffa__TransactionReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Url --></label>
+        <name>tffa__Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Date --></label>
+        <name>tffa__ValueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Provider --></label>
+        <name>tffa__VerificationProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Status --></label>
+        <name>tffa__VerificationStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>tffa__VerificationToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified on --></label>
+        <name>tffa__VerifiedOn__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- BANK BOX --></description>
+        <label><!-- BANK BOX --></label>
+        <name>BANK_BOX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- PRINT INVOICE --></description>
+        <label><!-- PRINT INVOICE --></label>
+        <name>PRINT_INVOICE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Waive Fee --></description>
+        <label><!-- Waive Fee --></label>
+        <name>WAIVE_FEE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wire Transfer --></description>
+        <label><!-- WIRE --></label>
+        <name>WIRE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ACH payments are electronic payments that are created when the customer gives an originating institution, corporation, or other customer (originator) authorization to debit directly from the customer&apos;s checking or saving account --></description>
+        <label><!-- ACH --></label>
+        <name>tffa__ACH</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using Apple Pay to provide funds to a new financial account --></description>
+        <label><!-- Apple Pay --></label>
+        <name>tffa__APPLE_PAY</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using cash payment to provide funds to new financial account. --></description>
+        <label><!-- Cash --></label>
+        <name>tffa__CASH</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using cheque instrument to provide funds for a new financial account. --></description>
+        <label><!-- Check --></label>
+        <name>tffa__CHECK</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using credit card account to provide funds to a new financial account --></description>
+        <label><!-- Credit Card --></label>
+        <name>tffa__CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using debit card account to provide funds to a new financial account --></description>
+        <label><!-- Debit Card --></label>
+        <name>tffa__DEBIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using Google Pay to provide funds to a new financial account --></description>
+        <label><!-- Google Pay --></label>
+        <name>tffa__GOOGLE_PAY</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using internal bank account to provide funds to a new financial account --></description>
+        <label><!-- Internal Transfer --></label>
+        <name>tffa__INTERNAL_TRANSFER</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using Paypal to provide funds for a new financial account. --></description>
+        <label><!-- Paypal --></label>
+        <name>tffa__PAYPAL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using wire payment to provide funds to new financial account. --></description>
+        <label><!-- Wire --></label>
+        <name>tffa__WIRE</name>
+    </recordTypes>
+</CustomObjectTranslation>

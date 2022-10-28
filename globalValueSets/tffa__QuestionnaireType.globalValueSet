@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OOW</fullName>
+        <default>true</default>
+        <label>OOW</label>
+    </customValue>
+    <customValue>
+        <fullName>ELIGIBILITY</fullName>
+        <default>false</default>
+        <label>Eligibility</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLARATION</fullName>
+        <default>false</default>
+        <label>Declaration</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPECTED_ACTIVITY</fullName>
+        <default>false</default>
+        <label>Expected Activity</label>
+    </customValue>
+    <customValue>
+        <fullName>CDD</fullName>
+        <default>false</default>
+        <label>CDD</label>
+    </customValue>
+    <customValue>
+        <fullName>FINANCIAL_NEED</fullName>
+        <default>false</default>
+        <label>Financial Need</label>
+    </customValue>
+    <description>The list of  supported use cases for dynamic questions.</description>
+    <masterLabel>QuestionnaireType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

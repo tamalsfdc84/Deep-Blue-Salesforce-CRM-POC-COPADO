@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>WT_Case__c</name>
+        <relationshipLabel><!-- Case Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>WT_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Category --></label>
+        <name>WT_Note_Category__c</name>
+        <picklistValues>
+            <masterLabel>Called Customer</masterLabel>
+            <translation><!-- Called Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mailed Customer</masterLabel>
+            <translation><!-- E-mailed Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memo</masterLabel>
+            <translation><!-- Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status Update</masterLabel>
+            <translation><!-- Status Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>WT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>WT_Owner__c</name>
+        <relationshipLabel><!-- Case Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send Email --></label>
+        <name>WT_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>WT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving</masterLabel>
+            <translation><!-- Resolving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Customer</masterLabel>
+            <translation><!-- Waiting for Customer --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only Compliant Manager can Create or Edit Notes for Compliance Complaint case --></errorMessage>
+        <name>WT_Note_Cannot_be_Created</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Notes is required. --></errorMessage>
+        <name>WT_Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Note Category Cannot Be Changed Once Note is Created --></errorMessage>
+        <name>WT_Restrict_Note_Category_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Send Email is not available for CCPA Case --></errorMessage>
+        <name>WT_Restrict_Send_Email_CCPA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Send Email is not available for Compliance Case --></errorMessage>
+        <name>WT_Restrict_Send_Email_Compliance_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Waiting for Customer Status is not available for CCPA Case --></errorMessage>
+        <name>WT_Restrict_Status_Update_Values_CCPA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Waiting for Customer Status is not available for Compliance Case --></errorMessage>
+        <name>WT_Restrict_Status_Values_ComplianceCase</name>
+    </validationRules>
+</CustomObjectTranslation>

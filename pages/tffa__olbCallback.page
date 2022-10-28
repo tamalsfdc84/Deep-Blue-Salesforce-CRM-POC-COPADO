@@ -1,0 +1,27 @@
+<apex:page applyBodyTag="false" showHeader="false" sidebar="false" controller="tffa.OlbController" action="{!initCallback}">
+  <head>
+    <link rel="stylesheet" href="{!URLFOR($Resource['sales_styles'], 'styles.css')}"></link>
+  </head>
+  <body>
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+      <div class="text-center">
+        <div class="d-block mb-3">
+          <span class="fal fa-check-circle fa-9x text-success"></span>
+        </div>
+        <h1 class="display-1 d-block">{!$Label.OLB_CALLBACK_SUCCESS_TITLE}</h1>
+        <p class="display-6">{!$Label.OLB_CALLBACK_SUCCESS}</p>
+      </div>
+    </div>
+    <script>
+      document.body.onload = function () {
+        window.parent.postMessage(
+          {
+            event: 'Olb_authenticated',
+            ...JSON.parse('{!JSENCODE(callbackArgs)}')
+          },
+          window.parent.location
+        );
+      };
+    </script>
+  </body>
+</apex:page>

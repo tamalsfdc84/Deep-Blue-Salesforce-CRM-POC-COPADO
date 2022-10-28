@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRIVATE</fullName>
+        <default>false</default>
+        <label>Private</label>
+    </customValue>
+    <customValue>
+        <fullName>PUBLIC_STATE</fullName>
+        <default>false</default>
+        <label>Public State</label>
+    </customValue>
+    <description>Level of authority of the license issuer.</description>
+    <masterLabel>UserLicenseType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

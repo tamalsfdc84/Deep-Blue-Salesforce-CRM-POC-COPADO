@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HOME</fullName>
+        <default>true</default>
+        <label>Home</label>
+    </customValue>
+    <customValue>
+        <fullName>PREVIOUS_HOME</fullName>
+        <default>false</default>
+        <label>Previous Home</label>
+    </customValue>
+    <customValue>
+        <fullName>MAILING</fullName>
+        <default>false</default>
+        <label>Mailing</label>
+    </customValue>
+    <customValue>
+        <fullName>PERMANENT</fullName>
+        <default>false</default>
+        <label>Permanent</label>
+    </customValue>
+    <customValue>
+        <fullName>REGISTERED</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </customValue>
+    <customValue>
+        <fullName>WORK</fullName>
+        <default>false</default>
+        <label>Work</label>
+    </customValue>
+    <customValue>
+        <fullName>PREVIOUS_REGISTERED</fullName>
+        <default>false</default>
+        <label>Previous Registered</label>
+    </customValue>
+    <customValue>
+        <fullName>ALTERNATE</fullName>
+        <default>false</default>
+        <label>Alternate</label>
+    </customValue>
+    <description>Classification of the address</description>
+    <masterLabel>AddressType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

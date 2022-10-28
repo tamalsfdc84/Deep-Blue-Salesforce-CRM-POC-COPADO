@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual fee --></label>
+        <name>tffa__AnnualFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto pay discount --></label>
+        <name>tffa__AutoPayDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Footer description --></label>
+        <name>tffa__FooterDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full description --></label>
+        <name>tffa__FullDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon class --></label>
+        <name>tffa__IconClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Image --></label>
+        <name>tffa__ImageUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max amount --></label>
+        <name>tffa__MaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max loan to value ratio --></label>
+        <name>tffa__MaxLoanToValueRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min amount --></label>
+        <name>tffa__MinAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min loan to value ratio --></label>
+        <name>tffa__MinLoanToValueRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Origination fee --></label>
+        <name>tffa__OriginationFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepayment fee --></label>
+        <name>tffa__PrepaymentFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product must be active and should of same category as product category. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion description --></label>
+        <name>tffa__PromotionDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship discount --></label>
+        <name>tffa__RelationshipDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+</CustomObjectTranslation>

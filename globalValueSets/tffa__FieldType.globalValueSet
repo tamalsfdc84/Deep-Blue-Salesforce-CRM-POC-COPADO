@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>TEXT</fullName>
+        <default>false</default>
+        <label>Text</label>
+    </customValue>
+    <customValue>
+        <fullName>CHECKBOX</fullName>
+        <default>false</default>
+        <label>Checkbox</label>
+    </customValue>
+    <customValue>
+        <fullName>LOV</fullName>
+        <default>false</default>
+        <label>LOV</label>
+    </customValue>
+    <customValue>
+        <fullName>NUMBER</fullName>
+        <default>false</default>
+        <label>Number</label>
+    </customValue>
+    <customValue>
+        <fullName>LABEL</fullName>
+        <default>false</default>
+        <label>Label</label>
+    </customValue>
+    <customValue>
+        <fullName>PERCENT</fullName>
+        <default>false</default>
+        <label>Percent</label>
+    </customValue>
+    <customValue>
+        <fullName>CURRENCY</fullName>
+        <default>false</default>
+        <label>Currency</label>
+    </customValue>
+    <description>Type of field. Determines the nature of data captured.</description>
+    <masterLabel>FieldType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

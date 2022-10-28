@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Each Applicant of the submission can play different roles in the application and the eventual account.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CZBusinessResolutionPower__c</fullName>
+        <description>Business Resolution Power</description>
+        <externalId>false</externalId>
+        <label>Business Resolution Power</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FullPower</fullName>
+                    <default>false</default>
+                    <label>Full Power</label>
+                </value>
+                <value>
+                    <fullName>LimitedPower</fullName>
+                    <default>false</default>
+                    <label>Limited Power</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CZDeputyCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Deputy Created</description>
+        <externalId>false</externalId>
+        <label>CZDeputyCreated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZFISRelationshipCode__c</fullName>
+        <description>FIS Relationship Code</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>FIS Relationship Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZFisRelnshipCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to check if FIS Relnship is created</description>
+        <externalId>false</externalId>
+        <label>FIS Relnship Created</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZUserCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to check if app party is created by user on account details page</description>
+        <externalId>false</externalId>
+        <label>User Created Application Party</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PartyLegalName__c</fullName>
+        <description>This field has the legal name which can be used in case of Organisation Name</description>
+        <externalId>false</externalId>
+        <formula>tffa__Party__r.tffa__LegalName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PartyLegalName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PartyPersonName__c</fullName>
+        <description>This field has the first name and last name of party</description>
+        <externalId>false</externalId>
+        <formula>UPPER(LEFT( tffa__Party__r.tffa__FirstName__c,1 ))&amp;LOWER(Mid( tffa__Party__r.tffa__FirstName__c, 2, Len( tffa__Party__r.tffa__FirstName__c )-1))&amp; &quot;, &quot; &amp; UPPER(LEFT( tffa__Party__r.tffa__LastName__c,1 ))&amp;LOWER(Mid( tffa__Party__r.tffa__LastName__c, 2, Len( tffa__Party__r.tffa__LastName__c)-1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PartyPersonName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ApplicantRole__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The role played by the party in the application. Finally translates to role on opened account.</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <referenceTo>tffa__ApplicantRole__c</referenceTo>
+        <relationshipLabel>Application Parties</relationshipLabel>
+        <relationshipName>ApplicationPartyXrefs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Application__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to application object</description>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>Parties</relationshipLabel>
+        <relationshipName>PartyXrefs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__ExistingCustomer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the current applicant is an existing customer of the bank. Derived from party reference.</description>
+        <externalId>false</externalId>
+        <label>Existing Customer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsAccountAddressSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifies the applicant as the one whose mailing address will used as the primary account address.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Party__c = tffa__Application__r.tffa__AddressPrefillSourceId__c</formula>
+        <label>Is account address source</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsTINCertifier__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifies the applicant as the one who is qualified to sign TIN certifications or similar tax-related documents for the account</description>
+        <externalId>false</externalId>
+        <formula>tffa__Party__c = tffa__Application__r.tffa__TINCertifierId__c</formula>
+        <label>Is TIN Certifier</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to party</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Applications</relationshipLabel>
+        <relationshipName>Applications</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Identifies primary point of contact in a business application. This is different from primary field which identifies the primary applicant. e.g. The primary applicant in a business application is a business. Defaults to SubmissionPartyXref.PrimaryContact.</description>
+        <externalId>false</externalId>
+        <label>Primary contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the current applicant is primary applicant of the application.</description>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RoleAuthority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A semicolon delimited list of account authority powers which can be assigned to each applicant on the account.</description>
+        <externalId>false</externalId>
+        <label>Role Authority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicantRoleAuthority</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__RoleCategory__c</fullName>
+        <defaultValue>&quot;OWNER&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denormalized category field of applicant role.</description>
+        <externalId>false</externalId>
+        <label>Role category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicantRoleCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__RoleCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized code field of applicant role.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Role code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RoleName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized name field of applicant role.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Role name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Role__c</fullName>
+        <defaultValue>&quot;OWNER&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The applicant role with respect to this application. Values could be BORROWER,CO-SIGNER,GUARDIAN,AUTHORIZEDSIGNATORY,OTHER,OWNER,JOINTOWNER, GUARANTOR</description>
+        <externalId>false</externalId>
+        <label>Role (deprecated)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicantRole</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls the relative order of the item in a list.</description>
+        <externalId>false</externalId>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the party. Allowed values are - INDIVIDUAL, ORGANIZATION</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyType</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Application Party</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Application Parties</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,34 @@
+<apex:page docType="html-5.0" applyHtmlTag="false" applyBodyTag="false" showHeader="false" cache="false" standardStylesheets="false" >
+  <head>
+    <meta charset="utf-8">
+  </meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </meta>
+  <meta name="theme-color" content="#1976d2">
+  </meta>
+  <title>Error</title>
+  <base href="/">
+  </base>
+  <link rel="icon" type="image/x-icon" href="{!URLFOR($Resource['sales_styles'], 'favicon.ico')}">
+  </link>
+    <link rel="stylesheet" href="{!URLFOR($Resource['sales_styles'], 'styles.css')}" />
+  </head>
+  <body>
+    <apex:form >
+      <apex:variable var="code" value=" {!$CurrentPage.Parameters.code}" />
+      <apex:variable var="message" value=" {!$CurrentPage.Parameters.message}" />
+      <div aria-live="assertive" aria-atomic="true" class="tf-toast tf-toast-error toast show w-100">
+        <div class="toast-header">
+            <span aria-hidden="true" class="me-4 fa-4x fal fa-exclamation-triangle"> </span>
+            <span aria-label="This is General Info" class="h2">{!$Label.SYSTEM_FATAL_ERROR}</span>
+          </div>
+          <div class="toast-body text-start">
+            <apex:outputText rendered="{!IF(CONTAINS(code,'INVALID_BRAND'), true, false)}" >
+              <span class="h3">{!message}</span>
+            </apex:outputText>
+            <span class="h3">{!$Label.tffa__CONTACT_US_TEXT_LABEL}</span>
+          </div>
+      </div>
+    </apex:form>
+  </body>
+</apex:page>

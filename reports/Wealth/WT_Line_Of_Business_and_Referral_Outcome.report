@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_88477083</developerName>
+        <masterLabel>Referral</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead$Status</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Qualified - Converted</sourceValue>
+            </sourceValues>
+            <value>Qualified-Converted</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New - Overdue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Working - Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Qualified</sourceValue>
+            </sourceValues>
+            <value>Except Converted</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$WT_Amount_Bank_Funded__c</field>
+    </columns>
+    <description>Wealth Partnership  Referrals by Line Of Business and Referral Outcome</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$WT_Product_Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_88477083</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$WT_Product_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Line Of Business and Referral Outcome</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WT_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Lead$FinServ__ConversionDateTime__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

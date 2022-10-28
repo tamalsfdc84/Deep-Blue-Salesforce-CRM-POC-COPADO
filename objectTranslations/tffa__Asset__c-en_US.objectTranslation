@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Real Estates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Age of construction --></label>
+        <name>tffa__AgeOfConstruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement value --></label>
+        <name>tffa__AgreementValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Balance --></label>
+        <name>tffa__Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial designator type --></label>
+        <name>tffa__CommercialDesignatorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial usage type --></label>
+        <name>tffa__CommercialUsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designator type --></label>
+        <name>tffa__DesignatorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposition status type --></label>
+        <name>tffa__DispositionStatusType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated value --></label>
+        <name>tffa__EstimatedValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle make --></label>
+        <name>tffa__ExchangeVehicleMake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle market value --></label>
+        <name>tffa__ExchangeVehicleMarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle model --></label>
+        <name>tffa__ExchangeVehicleModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle monthly payment --></label>
+        <name>tffa__ExchangeVehicleMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle outstanding balance --></label>
+        <name>tffa__ExchangeVehicleOutstandingBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle type --></label>
+        <name>tffa__ExchangeVehicleType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle year --></label>
+        <name>tffa__ExchangeVehicleYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing mortgage --></label>
+        <name>tffa__ExistingMortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External reference id --></label>
+        <name>tffa__ExternalReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift asset type --></label>
+        <name>tffa__GiftAssetType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift source type --></label>
+        <name>tffa__GiftSourceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has add on vehicle --></label>
+        <name>tffa__HasAddOnVehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Insurance --></label>
+        <name>tffa__HasInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has vehicle customizations --></label>
+        <name>tffa__HasVehicleCustomizations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing expense type --></label>
+        <name>tffa__HousingExpenseType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Included in asset indicator --></label>
+        <name>tffa__IncludedInAssetIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is exchange vehicle captured --></label>
+        <name>tffa__IsExchangeVehicleCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Exclude From Asset Report? --></label>
+        <name>tffa__IsExcludedFromAssetReport__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether vehicle is already selected before applying --></help>
+        <label><!-- Vehicle Selected --></label>
+        <name>tffa__IsVehicleSelected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used Vehicle --></label>
+        <name>tffa__IsVehicleUsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market value --></label>
+        <name>tffa__MarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Masked Account Number --></label>
+        <name>tffa__MaskedAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly expense --></label>
+        <name>tffa__MonthlyExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly housing expense --></label>
+        <name>tffa__MonthlyHousingExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly rental income --></label>
+        <name>tffa__MonthlyRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- MortgageAmount --></label>
+        <name>tffa__MortgageAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net rental income --></label>
+        <name>tffa__NetRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMortgages --></label>
+        <name>tffa__NumberOfMortgages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupancy percentage --></label>
+        <name>tffa__OccupancyPercentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owned --></label>
+        <name>tffa__Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Name --></label>
+        <name>tffa__ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed --></label>
+        <name>tffa__Proposed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage type --></label>
+        <name>tffa__UsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used As Collateral --></label>
+        <name>tffa__UsedAsCollateral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Additional Details --></label>
+        <name>tffa__VehicleAdditionalDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle identifier --></label>
+        <name>tffa__VehicleIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle MSRP value --></label>
+        <name>tffa__VehicleMSRPValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle make --></label>
+        <name>tffa__VehicleMake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle mileage --></label>
+        <name>tffa__VehicleMileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle model --></label>
+        <name>tffa__VehicleModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle region code --></label>
+        <name>tffa__VehicleRegionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle retail value --></label>
+        <name>tffa__VehicleRetailValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle sub model --></label>
+        <name>tffa__VehicleSubModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle type --></label>
+        <name>tffa__VehicleType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle usage type --></label>
+        <name>tffa__VehicleUsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle use as residence --></label>
+        <name>tffa__VehicleUseAsResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle year --></label>
+        <name>tffa__VehicleYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vin --></label>
+        <name>tffa__Vin__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Financial asset owned by the party in the form of Bank Deposit --></description>
+        <label><!-- Bank Deposit --></label>
+        <name>tffa__BANK_DEPOSIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Financial asset owned by the party in the form of real estate --></description>
+        <label><!-- Real Estate --></label>
+        <name>tffa__REAL_ESTATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Financial asset owned by the party in the form of vehicle --></description>
+        <label><!-- Vehicle --></label>
+        <name>tffa__VEHICLE</name>
+    </recordTypes>
+</CustomObjectTranslation>

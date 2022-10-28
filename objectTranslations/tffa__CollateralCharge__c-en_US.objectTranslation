@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Charges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collateral Arrangement --></label>
+        <name>tffa__CollateralArrangement__c</name>
+        <relationshipLabel><!-- Collateral Charges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is registration required --></label>
+        <name>tffa__IsRegistrationRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of units --></label>
+        <name>tffa__NumberOfUnits__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration amount --></label>
+        <name>tffa__RegistrationAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration authority --></label>
+        <name>tffa__RegistrationAuthority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration number --></label>
+        <name>tffa__RegistrationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source system id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

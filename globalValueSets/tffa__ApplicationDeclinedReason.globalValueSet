@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>KYC_DECLINED</fullName>
+        <default>false</default>
+        <label>KYC declined</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_DECLINED</fullName>
+        <default>false</default>
+        <label>Credit declined</label>
+    </customValue>
+    <customValue>
+        <fullName>KYC_FAILURE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KYC failure</label>
+    </customValue>
+    <description>A list of possible reasons for declining an application. Helps in standardizing reasons which can be later used in reporting.</description>
+    <masterLabel>ApplicationDeclinedReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

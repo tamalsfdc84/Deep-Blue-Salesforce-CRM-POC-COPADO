@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Alergies --></label>
+        <name>CZAlergies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Created --></label>
+        <name>CZAllAliasCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Update Retry Count --></label>
+        <name>CZBatchUpdateRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Update Status --></label>
+        <name>CZBatchUpdateStatus__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED</masterLabel>
+            <translation><!-- COMPLETED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAILED</masterLabel>
+            <translation><!-- FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REQUIRED</masterLabel>
+            <translation><!-- REQUIRED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Board Meeting Date --></label>
+        <name>CZBoardMeetingDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certifying Individual First Name --></label>
+        <name>CZCertifyingIndividualFN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certifying Individual Last Name --></label>
+        <name>CZCertifyingIndividualLN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certifying Individual Title --></label>
+        <name>CZCertifyingIndividualTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Info Updated --></label>
+        <name>CZContactInfoUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custodian --></label>
+        <name>CZCustodian__c</name>
+        <relationshipLabel><!-- Custodian --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Updated --></label>
+        <name>CZCustomerUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographics Info Updated --></label>
+        <name>CZDemographicsUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Reminder Date --></label>
+        <name>CZDocusignReminderDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Not Available --></label>
+        <name>CZEmailNotAvailable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Name --></label>
+        <name>CZEmergencyContactName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Number --></label>
+        <name>CZEmergencyContactNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Info Updated --></label>
+        <name>CZEmploymentInfoUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Cell Nbr Effective Date --></label>
+        <name>CZFisCellNbrEffDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Cell Number --></label>
+        <name>CZFisCellNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Customer Codes --></label>
+        <name>CZFisCustCodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Email Effective Date --></label>
+        <name>CZFisEmailEffDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Email --></label>
+        <name>CZFisEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Home Nbr Effective Date --></label>
+        <name>CZFisHomeNbrEffDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Home Number --></label>
+        <name>CZFisHomeNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Work Nbr Effective Date --></label>
+        <name>CZFisWorkNbrEffDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Work Number --></label>
+        <name>CZFisWorkNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Customer Form --></label>
+        <name>CZForeignCustomerForm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Tax ID --></label>
+        <name>CZForeignTaxID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Certification Date --></label>
+        <name>CZFormCertificationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Duplicate TaxId --></label>
+        <name>CZHasDuplicateTaxId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Junior Membership? --></label>
+        <name>CZHasJuniorMembership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Platinum Membership? --></label>
+        <name>CZHasPlatinumMembership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identification Info Updated --></label>
+        <name>CZIdentificationInfoUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Phone Nbr Created --></label>
+        <name>CZIntPhnNbrCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Phone Number --></label>
+        <name>CZInternationalPhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is CIP Exempt --></label>
+        <name>CZIsCIPExempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person Only --></label>
+        <name>CZIsContactPersonOnly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Founder? --></label>
+        <name>CZIsFounder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OLB Enroll Completed --></label>
+        <name>CZIsOLBEnrollCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Owner --></label>
+        <name>CZIsOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Partially Excluded Entity ? --></label>
+        <name>CZIsPartiallyExcludedEntity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Retry Required ? --></label>
+        <name>CZIsRetryRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Signer --></label>
+        <name>CZIsSigner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>CZLocation__c</name>
+        <relationshipLabel><!-- CZLocation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MDM Global ID --></label>
+        <name>CZMDMPartyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Natural Person --></label>
+        <name>CZNaturalPerson__c</name>
+        <relationshipLabel><!-- Natural Person --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- All Owner Relnship Created --></label>
+        <name>CZOwnerRelnCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Company Name --></label>
+        <name>CZParentCompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Info Updated --></label>
+        <name>CZPartyInfoUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Info Updated --></label>
+        <name>CZPersonalInfoUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer --></label>
+        <name>CZPrimaryOfficer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public Depositor Of --></label>
+        <name>CZPublicDepositorOf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Officer --></label>
+        <name>CZSecondaryOfficer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spouse Name --></label>
+        <name>CZSpouseName__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Of --></label>
+        <name>CZStateOf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell phone --></label>
+        <name>CellPhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost center --></label>
+        <name>CostCenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Branch Code --></label>
+        <name>FISBranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Birth date --></label>
+        <name>FISDob__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS LastName --></label>
+        <name>FISLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authenticated Customer --></label>
+        <name>IsAuthenticatedCustomer__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer is not having an existing realtionship with this charter but has a relationship in another charter. --></help>
+        <label><!-- CrossCharter Customer --></label>
+        <name>IsCrossCharterCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB Match (KYC) --></label>
+        <name>IsDobMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB Missing in IBS --></label>
+        <name>IsDobMissing__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailId Missing in IBS --></label>
+        <name>IsEmailIdMissing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exception plan is not required to be set for new accounts for existing customers who have transactional accounts older than 30 days. --></help>
+        <label><!-- ExceptionPlan Required --></label>
+        <name>IsExceptionPlanRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsFisDueDiligenceCreated --></label>
+        <name>IsFisDueDiligenceCreated__c</name>
+    </fields>
+    <fields>
+        <help><!-- For authenticated customers, Is KYC required to be done? --></help>
+        <label><!-- KYC Required --></label>
+        <name>IsKYCRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- If customer has already enrolled for OLB, he/she will not be given an option to enroll again. --></help>
+        <label><!-- OLB Already Enrolled --></label>
+        <name>IsOLBEnrolled__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Number Missing in IBS --></label>
+        <name>IsPhoneNumberMissing__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN Match(KYC) --></label>
+        <name>IsSsnMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Fraud Text --></label>
+        <name>KYCFraudText__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Upload Retry Count --></label>
+        <name>MDMUploadRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Upload Status --></label>
+        <name>MDMUploadStatus__c</name>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation><!-- FAILURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NumberOfInquires --></label>
+        <name>NumberOfInquires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Contact Type --></label>
+        <name>PreferredContactNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secret Word Hint --></label>
+        <name>SecretWordHint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secret Word --></label>
+        <name>SecretWord__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer Sequence --></label>
+        <name>SignerSequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing Status --></label>
+        <name>SigningStatus__c</name>
+        <picklistValues>
+            <masterLabel>Done</masterLabel>
+            <translation><!-- Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TotalAmountApplicantOwes --></label>
+        <name>TotalAmountApplicantOwes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounting data provider status --></label>
+        <name>tffa__AccountingDataProviderStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounting data provider --></label>
+        <name>tffa__AccountingDataProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounting data source id --></label>
+        <name>tffa__AccountingDataSourceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounting data source --></label>
+        <name>tffa__AccountingDataSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adverse action notice required --></label>
+        <name>tffa__AdverseActionNoticeRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of dependents --></label>
+        <name>tffa__AgeOfDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>tffa__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate first name --></label>
+        <name>tffa__AlternateFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate full name --></label>
+        <name>tffa__AlternateFullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate last name --></label>
+        <name>tffa__AlternateLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate middle name --></label>
+        <name>tffa__AlternateMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual revenue --></label>
+        <name>tffa__AnnualRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Audit Copy Token --></label>
+        <name>tffa__AssetReportAuditCopyToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Auditor Id --></label>
+        <name>tffa__AssetReportAuditorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Report Requested Days --></label>
+        <name>tffa__AssetReportDaysRequested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Report Id --></label>
+        <name>tffa__AssetReportId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Report Generated On --></label>
+        <name>tffa__AssetReportOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Asset Report Provider --></label>
+        <name>tffa__AssetReportProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Report Status --></label>
+        <name>tffa__AssetReportStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Report Token --></label>
+        <name>tffa__AssetReportToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Tokens --></label>
+        <name>tffa__AssetToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authentication token --></label>
+        <name>tffa__AuthenticationToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Credit Decision outcome --></label>
+        <name>tffa__AutoCreditDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Matrix Row --></label>
+        <name>tffa__AutoCreditDecisionRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto KYC Decision outcome --></label>
+        <name>tffa__AutoKYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Remarks --></label>
+        <name>tffa__AutoKYCDecisionRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- BackPhotoId --></label>
+        <name>tffa__BackPhotoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birth date --></label>
+        <name>tffa__BirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>tffa__BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business description --></label>
+        <name>tffa__BusinessDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDD Status --></label>
+        <name>tffa__CDDStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citizenship --></label>
+        <name>tffa__Citizenship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>tffa__CostCenterCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country of citizenship --></label>
+        <name>tffa__CountryOfCitizenship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau score --></label>
+        <name>tffa__CreditBureauScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Bureau status --></label>
+        <name>tffa__CreditBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision outcome --></label>
+        <name>tffa__CreditDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Overridden --></label>
+        <name>tffa__CreditDecisionOverridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Strategy --></label>
+        <name>tffa__CreditDecisionStrategy__c</name>
+        <relationshipLabel><!-- Credit Decisioned Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit facility type --></label>
+        <name>tffa__CreditFacilityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- D-U-N-S Number --></label>
+        <name>tffa__DUNSNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Bureau score --></label>
+        <name>tffa__DebitBureauScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Bureau status --></label>
+        <name>tffa__DebitBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic capture method --></label>
+        <name>tffa__DemographicCaptureMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device status --></label>
+        <name>tffa__DeviceStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not call --></label>
+        <name>tffa__DoNotCall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not email --></label>
+        <name>tffa__DoNotEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not text --></label>
+        <name>tffa__DoNotText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doing business as --></label>
+        <name>tffa__DoingBusinessAs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic relationship indicator --></label>
+        <name>tffa__DomesticRelationshipIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic relationship state code --></label>
+        <name>tffa__DomesticRelationshipStateCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic relationship type description --></label>
+        <name>tffa__DomesticRelationshipTypeDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic relationship type --></label>
+        <name>tffa__DomesticRelationshipType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Establishment date --></label>
+        <name>tffa__EstablishmentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__EstablishmentState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity manually determined --></label>
+        <name>tffa__EthnicityManuallyDetermined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity origin type other --></label>
+        <name>tffa__EthnicityOriginTypeOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity origin type --></label>
+        <name>tffa__EthnicityOriginType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity type --></label>
+        <name>tffa__EthnicityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- External crypto customer id --></label>
+        <name>tffa__ExternalCryptoCustomerId__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the ID of the customer in core banking system. --></help>
+        <label><!-- Core Customer ID --></label>
+        <name>tffa__ExternalCustomerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fico score --></label>
+        <name>tffa__FicoScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial information as of --></label>
+        <name>tffa__FinancialInformationAsOf__c</name>
+    </fields>
+    <fields>
+        <label><!-- First name --></label>
+        <name>tffa__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign TIN Unavailable Reason --></label>
+        <name>tffa__ForeignTINUnavailableReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign TIN --></label>
+        <name>tffa__ForeignTIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Status --></label>
+        <name>tffa__FraudStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- FrontPhotoId --></label>
+        <name>tffa__FrontPhotoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender manually determined --></label>
+        <name>tffa__GenderManuallyDetermined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>tffa__Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasDependents --></label>
+        <name>tffa__HasDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasDifferentMailingAddress --></label>
+        <name>tffa__HasDifferentMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Foreign TIN? --></label>
+        <name>tffa__HasForeignTIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing status --></label>
+        <name>tffa__HousingStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA status --></label>
+        <name>tffa__IDAStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDV Status --></label>
+        <name>tffa__IDVStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report generated on --></label>
+        <name>tffa__IncomeReportGeneratedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report id --></label>
+        <name>tffa__IncomeReportId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report provider --></label>
+        <name>tffa__IncomeReportProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report token expires on --></label>
+        <name>tffa__IncomeReportTokenExpiresOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report token --></label>
+        <name>tffa__IncomeReportToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income report type --></label>
+        <name>tffa__IncomeReportType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry classification name --></label>
+        <name>tffa__IndustryClassificationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry classification type --></label>
+        <name>tffa__IndustryClassificationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry classification value --></label>
+        <name>tffa__IndustryClassificationValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is asset not applicable --></label>
+        <name>tffa__IsAssetNotApplicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is employee --></label>
+        <name>tffa__IsEmployee__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsExistingCustomer --></label>
+        <name>tffa__IsExistingCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is gift not applicable --></label>
+        <name>tffa__IsGiftNotApplicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is income not applicable --></label>
+        <name>tffa__IsIncomeNotApplicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is liability not applicable --></label>
+        <name>tffa__IsLiabilityNotApplicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Minor --></label>
+        <name>tffa__IsMinor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is real estate not applicable --></label>
+        <name>tffa__IsRealEstateNotApplicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>tffa__KYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Overridden --></label>
+        <name>tffa__KYCDecisionOverridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Strategy --></label>
+        <name>tffa__KYCDecisionStrategy__c</name>
+        <relationshipLabel><!-- KYC Decisioned Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- KYC Report --></label>
+        <name>tffa__KYCReportLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Report url --></label>
+        <name>tffa__KYCReportUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 4 of National identifier value --></label>
+        <name>tffa__Last4NationalIdentifierValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last name --></label>
+        <name>tffa__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 4 of National identifier value --></label>
+        <name>tffa__LastnNationalIdentifierValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Identifier (LEI) --></label>
+        <name>tffa__LegalEntityIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal name --></label>
+        <name>tffa__LegalName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marital status --></label>
+        <name>tffa__MaritalStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle name --></label>
+        <name>tffa__MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPayment --></label>
+        <name>tffa__MonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mother&apos;s Maiden Name --></label>
+        <name>tffa__MothersMaidenName__c</name>
+    </fields>
+    <fields>
+        <label><!-- National identifier type --></label>
+        <name>tffa__NationalIdentifierType__c</name>
+    </fields>
+    <fields>
+        <label><!-- National identifier value --></label>
+        <name>tffa__NationalIdentifierValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nick name --></label>
+        <name>tffa__NickName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Assets --></label>
+        <name>tffa__NumberOfAssets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Declarations --></label>
+        <name>tffa__NumberOfDeclarations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of dependents --></label>
+        <name>tffa__NumberOfDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of employees --></label>
+        <name>tffa__NumberOfEmployees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Employments --></label>
+        <name>tffa__NumberOfEmployments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Expenses --></label>
+        <name>tffa__NumberOfExpenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Financial Accounts --></label>
+        <name>tffa__NumberOfFinancialAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Financial Statements --></label>
+        <name>tffa__NumberOfFinancialStatements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Incomes --></label>
+        <name>tffa__NumberOfIncomes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Liabilities --></label>
+        <name>tffa__NumberOfLiabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Status --></label>
+        <name>tffa__OFACStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLB authentication retry count --></label>
+        <name>tffa__OLBAuthenticationRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLB enrolled --></label>
+        <name>tffa__OLBEnrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Time Token expires on --></label>
+        <name>tffa__OTPExpiresOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP generation retry count --></label>
+        <name>tffa__OTPGenerationRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP Locked --></label>
+        <name>tffa__OTPLocked__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP retry count --></label>
+        <name>tffa__OTPRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP Status --></label>
+        <name>tffa__OTPStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Time Confirmation token --></label>
+        <name>tffa__OTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboarding date --></label>
+        <name>tffa__OnboardingDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization sub type --></label>
+        <name>tffa__OrganizationSubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization type --></label>
+        <name>tffa__OrganizationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Politically Exposed Person --></label>
+        <name>tffa__PoliticallyExposedPerson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred address country --></label>
+        <name>tffa__PreferredAddressCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred address state --></label>
+        <name>tffa__PreferredAddressState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred contact method --></label>
+        <name>tffa__PreferredContactMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred language --></label>
+        <name>tffa__PreferredLanguage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred time to call --></label>
+        <name>tffa__PreferredTimeToCall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounting data provider --></label>
+        <name>tffa__PrefillProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefill source --></label>
+        <name>tffa__PrefillSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefill Token --></label>
+        <name>tffa__PrefillToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefilled --></label>
+        <name>tffa__Prefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefix --></label>
+        <name>tffa__Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email type --></label>
+        <name>tffa__PrimaryEmailType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email Verification Method --></label>
+        <name>tffa__PrimaryEmailVerificationMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email Verified on --></label>
+        <name>tffa__PrimaryEmailVerifiedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone type --></label>
+        <name>tffa__PrimaryPhoneType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Phone Verification Method --></label>
+        <name>tffa__PrimaryPhoneVerificationMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Phone Verified on --></label>
+        <name>tffa__PrimaryPhoneVerifiedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process id --></label>
+        <name>tffa__ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process progress --></label>
+        <name>tffa__ProcessProgress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process state --></label>
+        <name>tffa__ProcessState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process status --></label>
+        <name>tffa__ProcessStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- QualiFile Status --></label>
+        <name>tffa__QualiFileStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race designation asian type --></label>
+        <name>tffa__RaceDesignationAsianType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race designation other asian --></label>
+        <name>tffa__RaceDesignationOtherAsian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race designation other pacific islander --></label>
+        <name>tffa__RaceDesignationOtherPacificIslander__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race designation pacific islander type --></label>
+        <name>tffa__RaceDesignationPacificIslanderType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race manually determined --></label>
+        <name>tffa__RaceManuallyDetermined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race type additional description --></label>
+        <name>tffa__RaceTypeAdditionalDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race type --></label>
+        <name>tffa__RaceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record ids --></label>
+        <name>tffa__RecordIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Location state --></label>
+        <name>tffa__RegistrationLocationState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>tffa__Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary email type --></label>
+        <name>tffa__SecondaryEmailType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Email Verification Method --></label>
+        <name>tffa__SecondaryEmailVerificationMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Email Verified on --></label>
+        <name>tffa__SecondaryEmailVerifiedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary email --></label>
+        <name>tffa__SecondaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary phone type --></label>
+        <name>tffa__SecondaryPhoneType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Phone Verification Method --></label>
+        <name>tffa__SecondaryPhoneVerificationMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Phone Verified on --></label>
+        <name>tffa__SecondaryPhoneVerifiedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary phone --></label>
+        <name>tffa__SecondaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>tffa__Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session expired --></label>
+        <name>tffa__SessionExpired__c</name>
+    </fields>
+    <fields>
+        <label><!-- SessionExpiresOn --></label>
+        <name>tffa__SessionExpiresOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session token --></label>
+        <name>tffa__SessionToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spousal vabenefits eligibility indicator --></label>
+        <name>tffa__SpousalVABenefitsEligibilityIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>tffa__Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- UX Theme --></label>
+        <name>tffa__Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total asset value --></label>
+        <name>tffa__TotalAssetValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total liability value --></label>
+        <name>tffa__TotalLiabilityValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total monthly expense --></label>
+        <name>tffa__TotalMonthlyExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total monthly income --></label>
+        <name>tffa__TotalMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust type --></label>
+        <name>tffa__TrustType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL fragment --></label>
+        <name>tffa__UrlFragment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Url --></label>
+        <name>tffa__Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>tffa__Website__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- A person who interacts with the bank for financial accounts and services --></description>
+        <label><!-- Individual --></label>
+        <name>tffa__INDIVIDUAL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A  legal entity formed by a group of individuals to engage in and operate a business enterprise. It may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction. --></description>
+        <label><!-- Organization --></label>
+        <name>tffa__ORGANIZATION</name>
+    </recordTypes>
+</CustomObjectTranslation>

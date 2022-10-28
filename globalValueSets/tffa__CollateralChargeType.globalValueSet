@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>LIEN</fullName>
+        <default>false</default>
+        <label>Lien</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE</fullName>
+        <default>false</default>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>HYPOTHECATION</fullName>
+        <default>false</default>
+        <label>Hypothecation</label>
+    </customValue>
+    <description>Indicates the Collateral charge Type</description>
+    <masterLabel>CollateralChargeType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>UNKNOWN</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>VERIFIED</fullName>
+        <default>true</default>
+        <label>Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>UNVERIFIED</fullName>
+        <default>false</default>
+        <label>Unverified</label>
+    </customValue>
+    <customValue>
+        <fullName>NEEDS_INFO</fullName>
+        <default>false</default>
+        <label>Needs Info</label>
+    </customValue>
+    <customValue>
+        <fullName>UNABLE_TO_VERIFY</fullName>
+        <default>false</default>
+        <label>Unable to Verify</label>
+    </customValue>
+    <description>Verification Status of employment</description>
+    <masterLabel>EmploymentVerificationStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

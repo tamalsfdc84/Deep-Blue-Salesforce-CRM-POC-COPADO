@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apex Class --></label>
+        <name>tffa__ApexClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apex Method --></label>
+        <name>tffa__ApexMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context ID --></label>
+        <name>tffa__ContextId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Hour --></label>
+        <name>tffa__CreatedHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity --></label>
+        <name>tffa__Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Call Count --></label>
+        <name>tffa__FutureCallCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>tffa__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Count --></label>
+        <name>tffa__QueryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Time In Milliseconds --></label>
+        <name>tffa__SelfTimeInMilliseconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Time In Seconds --></label>
+        <name>tffa__SelfTimeInSeconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time in Milliseconds --></label>
+        <name>tffa__TimeInMilliseconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time in Seconds --></label>
+        <name>tffa__TimeInSeconds__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- BulkDeletePerformanceLogs --></label>
+        <name>tffa__BulkDeletePerformanceLogs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Configuration --></label>
+        <name>tffa__Configuration</name>
+    </webLinks>
+</CustomObjectTranslation>

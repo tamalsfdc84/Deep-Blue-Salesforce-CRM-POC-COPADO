@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BORROWER</fullName>
+        <default>false</default>
+        <label>At least one borrower lives in a community property state</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY</fullName>
+        <default>false</default>
+        <label>The property is in a community property state</label>
+    </customValue>
+    <description>Captures details about community property state</description>
+    <masterLabel>CommunityPropertyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

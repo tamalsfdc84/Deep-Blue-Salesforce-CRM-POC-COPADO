@@ -1,0 +1,3 @@
+<apex:page standardController="tffa__AgentDetail__c" recordSetVar="records" extensions="tffa.UserController"  action="{!createAgentsFromUsers}" lightningStylesheets="true">
+  <apex:pageMessages />
+</apex:page>

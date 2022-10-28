@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Card Address Type --></label>
+        <name>CZCardAddressType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debitcard Issue Method --></label>
+        <name>CZDebitCardIssueMethod__c</name>
+        <picklistValues>
+            <masterLabel>Expedite Shipping</masterLabel>
+            <translation><!-- Expedite Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue Instant Card</masterLabel>
+            <translation><!-- Issue Instant Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Shipping</masterLabel>
+            <translation><!-- Standard Shipping --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Multiple Account --></label>
+        <name>CZHasMultipleAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Starter Check Printing required --></label>
+        <name>CZIsStarterCheckRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Account Addition Flag --></label>
+        <name>CZSecAccountAdditionFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waive Expedite Shipping Fee --></label>
+        <name>CZWaiveExpediteShippingFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Saving Account Number --></label>
+        <name>PriSavingAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Saving Application ID --></label>
+        <name>PriSavingApplicationId__c</name>
+        <relationshipLabel><!-- PriSavingApplication --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Checking Account Number --></label>
+        <name>SecDDAAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Checking Application ID --></label>
+        <name>SecDDAApplicationId__c</name>
+        <relationshipLabel><!-- SecDDAApplication --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Saving Account Number --></label>
+        <name>SecSavingAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Saving Application ID --></label>
+        <name>SecSavingApplicationId__c</name>
+        <relationshipLabel><!-- SecSavingApplication --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SourceApplication --></label>
+        <name>SourceApplication__c</name>
+        <relationshipLabel><!-- SourceApplication --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Starter Check Job ID --></label>
+        <name>StarterCheckJobID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account name --></label>
+        <name>tffa__AccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountType --></label>
+        <name>tffa__AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add-on service type --></label>
+        <name>tffa__AddOnServiceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Account Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>tffa__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Account Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Bank Identification Number (“BIN”) or Issuer identification number (“IIN”) is beneficial to identify a card brand, issuing institution or bank, country of issuance, card type and category of cards. --></help>
+        <label><!-- Card BIN Code --></label>
+        <name>tffa__CardBINCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card number --></label>
+        <name>tffa__CardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>tffa__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Quantity --></label>
+        <name>tffa__DeviceQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embossed business name --></label>
+        <name>tffa__EmbossedBusinessName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embossed name --></label>
+        <name>tffa__EmbossedName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group code --></label>
+        <name>tffa__GroupCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Account Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

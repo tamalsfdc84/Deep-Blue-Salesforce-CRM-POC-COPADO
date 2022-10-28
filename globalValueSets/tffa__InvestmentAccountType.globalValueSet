@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SAVINGS</fullName>
+        <default>true</default>
+        <label>Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>CERTIFICATE</fullName>
+        <default>false</default>
+        <label>Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>MONEY_MARKET</fullName>
+        <default>false</default>
+        <label>Money Market</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_SAVINGS</fullName>
+        <default>false</default>
+        <label>Business Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_CERTIFICATE</fullName>
+        <default>false</default>
+        <label>Business Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_MONEY_MARKET</fullName>
+        <default>false</default>
+        <label>Business Money Market</label>
+    </customValue>
+    <description>Different investment account types.</description>
+    <masterLabel>InvestmentAccountType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

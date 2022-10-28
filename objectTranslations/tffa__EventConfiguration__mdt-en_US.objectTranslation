@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- App Notification Template --></label>
+        <name>tffa__AppNotificationTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Notification Type --></label>
+        <name>tffa__AppNotificationType__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of Email address to send BCC to every email seperated by semi colon (;) --></help>
+        <label><!-- Default BCC Email Address --></label>
+        <name>tffa__DefaultBCCEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of Email address to send CC to every email seperated by semi colon (;) --></help>
+        <label><!-- Default CC Email Address --></label>
+        <name>tffa__DefaultCCEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email address to which mail should be sent. Blank if email is to be sent to applicant. --></help>
+        <label><!-- Default Receiver Email Address --></label>
+        <name>tffa__DefaultReceiverEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email address that receives the message when a recipient replies --></help>
+        <label><!-- Default Reply To Email Address --></label>
+        <name>tffa__DefaultReplyToEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sender Email Address --></label>
+        <name>tffa__DefaultSenderEmailAddressAlt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sender Email Address(DEPRECATED) --></label>
+        <name>tffa__DefaultSenderEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>tffa__EmailTemplateAlt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template (DEPRECATED) --></label>
+        <name>tffa__EmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Class --></label>
+        <name>tffa__ExtensionClassAlt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Class (DEPRECATED) --></label>
+        <name>tffa__ExtensionClass__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the email should be saved as activity --></help>
+        <label><!-- Save Email As Activity --></label>
+        <name>tffa__SaveEmailAsActivity__c</name>
+    </fields>
+    <fields>
+        <help><!-- If set, email notifications are only sent to the (designated) primary contact of the event. --></help>
+        <label><!-- Send Email to Primary Contact only --></label>
+        <name>tffa__SendEmailToPrimaryContactOnly__c</name>
+    </fields>
+</CustomObjectTranslation>

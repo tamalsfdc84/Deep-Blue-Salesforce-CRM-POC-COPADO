@@ -1,0 +1,318 @@
+<apex:page standardStylesheets="false"
+  showHeader="false"
+  sidebar="false"
+  applyHtmlTag="false"
+  applyBodyTag="false"
+  controller="tffa.KYCReportController"
+  action="{!init}"
+  renderAs="{!$CurrentPage.parameters.renderAs}"
+>
+  <html
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    class="render-as-{!BLANKVALUE($CurrentPage.parameters.renderAs, 'html')}"
+  >
+    <head>
+      <apex:stylesheet value="{!URLFOR($Resource.tffa__slds_styles, 'styles.css')}" />
+      <style>
+        .fw-normal {
+          font-weight: normal;
+        }
+        .slds-has-dividers_bottom-space > .slds-item:last-child {
+          border-bottom: none;
+        }
+        .render-as-html body {
+          padding: 12px;
+        }
+        @media print {
+           body {
+            padding: 0;
+          }
+        }
+        .render-as-pdf .slds-badge.tag-check::before {
+          content: '✔';
+          color: white;
+          background-color: #00c600;
+          padding: 0 2px;
+          margin-right: 1px;
+          font-size: 9px;
+        }
+        .render-as-pdf .slds-badge.tag-cross::before {
+          content: '✖';
+          color: red;
+          margin-right: 1px;
+          font-size: 14px;
+        }
+
+      </style>
+      <title>{!pageTitle}</title>
+    </head>
+
+    <body class="slds-scope">
+      <div class="slds-page-header slds-page-header_record-home slds-m-bottom_small">
+        <div class="slds-page-header__row">
+          <div class="slds-page-header__col-title">
+            <div class="slds-media">
+              <div class="slds-media__figure slds-no-print">
+                <span class="slds-icon_container slds-icon-custom-custom15" title="Party">
+                  <svg class="slds-icon" aria-hidden="true">
+                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/custom-sprite/svg/symbols.svg#custom15')}"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Party</span>
+                </span>
+              </div>
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    <h1>
+                      <span class="slds-page-header__title slds-truncate" title="{!party.Name}">{!party.Name}</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slds-page-header__row slds-page-header__row_gutters">
+          <div class="slds-page-header__col-details">
+            <ul class="slds-page-header__detail-row">
+              <li class="slds-page-header__detail-block">
+                <div class="slds-text-title slds-truncate">{!labels['Status__c']}</div>
+                <div class="slds-truncate">{!statusLabel}</div>
+              </li>
+              <li class="slds-page-header__detail-block">
+                <div class="slds-text-title slds-truncate">{!labels['CreatedDate']}</div>
+                <div class="slds-truncate">{!idv.CreatedDate}</div>
+              </li>
+              <li class="slds-page-header__detail-block">
+                <div class="slds-text-title slds-truncate">{!labels['ExternalUrl__c']}</div>
+                <div class="slds-truncate">
+                  <a href="{!idv.ExternalUrl__c}" target="_blank" rel="noopener noreferrer">{!idv.Provider__c}</a>
+                </div>
+              </li>
+              <li class="slds-page-header__detail-block">
+                <div class="slds-text-title slds-truncate">{!labels['ConversationId__c']}</div>
+                <div class="slds-truncate">{!idv.ConversationId__c}</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-2">
+          <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">{!$Label.KYC_REPORT_MATCHED_DATA_TITLE}</h2>
+                  <apex:outputPanel rendered="{!idv.tffa__Score__c != null}" styleClass="slds-page-header__name-meta" layout="block">
+                    {!$Label.tffa__KYC_REPORT_OVERALL_SCORE_LABEL} {!idv.tffa__Score__c}
+                  </apex:outputPanel>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+              <ul class="slds-has-dividers_bottom-space">
+                <apex:repeat value="{!matchedData}" var="item">
+                  <li class="slds-item" title="{!item.data.tffa__Label__c}">
+                    <div class="slds-grid slds-gutters">
+                      <div class="slds-col slds-size_4-of-12">
+                        <strong class="slds-text-color_weak">{!item.data.tffa__Label__c}</strong>
+                        <p>{!item.data.tffa__Description__c}</p>
+                      </div>
+                      <div class="slds-col slds-size_2-of-12">{!item.data.tffa__ValueName__c}</div>
+                      <div class="slds-col slds-size_6-of-12">
+                        <apex:repeat value="{!item.tags}" var="tag">
+                          <span
+                            class="slds-badge slds-m-around_xx-small {!CASE(LEFT(tag,1),$Label.CHECK_ICON_LABEL,'tag-check',$Label.CROSS_ICON_LABEL,'tag-cross','')}"
+                            >{!tag}</span
+                          >
+                        </apex:repeat>
+                      </div>
+                    </div>
+                  </li>
+                </apex:repeat>
+              </ul>
+            </div>
+          </article>
+
+          <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_REASON_CODES_TITLE}</h2>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+              <ul class="slds-has-dividers_bottom-space">
+                <apex:repeat value="{!reasonCodes}" var="key">
+                  <li class="slds-item" title="{!key}">
+                    <h3><b>{!key}</b></h3>
+                    <apex:repeat value="{!reasonCodes[key]}" var="item">
+                      <p><strong class="slds-text-color_weak slds-m-right_xx-small">{!item.Value__c}:</strong>{!item.ValueName__c}</p>
+                    </apex:repeat>
+                  </li>
+                </apex:repeat>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_TAGS_TITLE}</h2>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+              <apex:repeat value="{!tags}" var="tag">
+                <span class="slds-badge slds-m-around_xx-small {!CASE(LEFT(tag,1),$Label.tffa__CHECK_ICON_LABEL,'tag-check',$Label.tffa__CROSS_ICON_LABEL,'tag-cross','')}">{!tag}</span>
+              </apex:repeat>
+            </div>
+          </article>
+
+          <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_WATCH_LISTS_TITLE}</h2>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+              <ul class="slds-has-dividers_bottom-space">
+                <apex:repeat value="{!watchLists}" var="item">
+                  <li class="slds-item" title="{!item.tffa__Label__c}">
+                    <div class="slds-grid slds-gutters">
+                      <div class="slds-col slds-size_4-of-12">
+                        <strong class="slds-text-color_weak">{!item.tffa__Label__c}</strong>
+                        <p>{!item.tffa__Description__c}</p>
+                      </div>
+                      <div class="slds-col slds-size_2-of-12">{!item.tffa__ValueName__c}</div>
+                      <div class="slds-col slds-size_6-of-12">
+                        <span class="slds-badge slds-m-around_xx-small">{!item.tffa__Tags__c}</span>
+                      </div>
+                    </div>
+                  </li>
+                </apex:repeat>
+              </ul>
+            </div>
+          </article>
+
+          <apex:outputPanel rendered="{!fraud != null}" layout="none">
+            <article class="slds-card">
+              <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_FRAUD_TITLE}</h2>
+                    <apex:outputPanel rendered="{!fraud.tffa__Score__c != null}" styleClass="slds-page-header__name-meta" layout="block">
+                      {!$Label.tffa__KYC_REPORT_OVERALL_SCORE_LABEL} {!fraud.tffa__Score__c}
+                    </apex:outputPanel>
+                  </div>
+                </header>
+              </div>
+              <div class="slds-card__body slds-card__body_inner">
+                <ul class="slds-has-dividers_bottom-space">
+                  <apex:repeat value="{!fraud.Items__r}" var="item">
+                    <li class="slds-item" title="{!item.tffa__Label__c}">
+                      <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_4-of-12">
+                          <strong class="slds-text-color_weak">{!item.tffa__Label__c}</strong>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12">{!item.tffa__ValueName__c}</div>
+                        <div class="slds-col slds-size_6-of-12">
+                          <span class="slds-badge slds-m-around_xx-small">{!item.tffa__Tags__c}</span>
+                        </div>
+                      </div>
+                    </li>
+                  </apex:repeat>
+                </ul>
+              </div>
+            </article>
+          </apex:outputPanel>
+
+          <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_FINANCIALS_TITLE}</h2>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+              <ul class="slds-has-dividers_bottom-space">
+                <apex:repeat value="{!financials}" var="dd">
+                  <li class="slds-item" title="{!dd.tffa__Source__c}">
+                    <div class="slds-grid slds-gutters">
+                      <div class="slds-col slds-size_4-of-12">
+                        <strong class="slds-text-color_weak">{!dd.tffa__Source__c}</strong>
+                      </div>
+                      <div class="slds-col slds-size_2-of-12">{!dd.tffa__Score__c}</div>
+                      <div class="slds-col slds-size_6-of-12">
+                        <a href="{!dd.tffa__ReportUrl__c}?id={!dd.Id}" target="_self">{!dd.tffa__ReportName__c}</a>
+                      </div>
+                    </div>
+                  </li>
+                </apex:repeat>
+              </ul>
+            </div>
+          </article>
+
+          <apex:outputPanel rendered="{!!idas.empty}" layout="none">
+            <article class="slds-card">
+              <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_IDA_TITLE}</h2>
+                  </div>
+                </header>
+              </div>
+              <div class="slds-card__body slds-card__body_inner">
+                <ul class="slds-has-dividers_bottom-space">
+                  <apex:repeat value="{!idas}" var="dd">
+                    <li class="slds-item" title="{!dd.Source__c}">
+                      <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_4-of-12">
+                          <strong class="slds-text-color_weak">{!dd.Source__c}</strong>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12">{!dd.Score__c}</div>
+                        <div class="slds-col slds-size_6-of-12"></div>
+                      </div>
+                    </li>
+                  </apex:repeat>
+                </ul>
+              </div>
+            </article>
+          </apex:outputPanel>
+
+          <apex:outputPanel rendered="{!device != null}" layout="none">
+            <article class="slds-card">
+              <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">{!$Label.tffa__KYC_REPORT_DEVICE_DETAILS_TITLE}</h2>
+                  </div>
+                </header>
+              </div>
+              <div class="slds-card__body slds-card__body_inner">
+                <apex:repeat value="{!device.Items__r}" var="item">
+                  <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_4-of-12">
+                      <strong class="slds-text-color_weak">{!item.tffa__Label__c}</strong>
+                    </div>
+                    <div class="slds-col slds-size_8-of-12">{!item.tffa__ValueName__c}</div>
+                  </div>
+                </apex:repeat>
+              </div>
+            </article>
+          </apex:outputPanel>
+        </div>
+      </div>
+    </body>
+  </html>
+</apex:page>

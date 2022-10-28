@@ -1,0 +1,52 @@
+public with sharing class CZDocusignConstants {
+  public static final String GENERATE_DRAFT_MODE = 'created';
+  public static final String GENERATE_ENVELOPE_MODE = 'sent';
+  public static final String DOCUSIGN = 'Docusign';
+  public static final String SIGNATURE = 'Party Signature';
+  public static final String BIRTH_DATE_FORMAT = 'MM/dd/yyyy';
+  public static final String DOCUMENT_STANDARD_DATE_FORMAT = 'MM/dd/yyyy';
+
+  public static final String PLATINUM_ADVENTURE_MEMBERSHIP = 'PLATINUM-ADVENTURE-MEMBERSHIP';
+  public static final String JUNIOR_SAVER_MEMBERSHIP = 'JUNIOR-SAVER-MEMBERSHIP';
+  public static final String OD_FOR_LINE_OF_CREDIT = 'OD_FOR_LINE_OF_CREDIT';
+  public static final String OD_FOR_STANDARD_TRANSACTIONS = 'OD_FOR_STANDARD_TRANSACTIONS';
+  public static final String OD_FOR_ATM_AND_DEBIT_CARD_TRANSACTIONS = 'OD_FOR_ATM_AND_DEBIT_CARD_TRANSACTIONS';
+
+  public static final Integer MAX_DOCS_IN_DOCUSIGN_ENVELOPE = 20;
+
+  public static final Set<String> TRADITIONAL_IRA_TEMPLATE = new Set<String>{ 'TRAD_IRA_DISC_CUSTODIAN', 'TIRACUSTACCNT' };
+  public static final Set<String> ROTH_IRA_TEMPLATE = new Set<String>{ 'ROTH_IRA_DISC_CUSTODIAN', 'RIRACUSTACCNT' };
+  public static final Set<String> OD_LINE_OF_CREDIT_TEMPLATE = new Set<String>{
+    '118SMLBUSODAGMT',
+    '158SMLBUSODAGMT',
+    '167SMLBUSODAGMT',
+    '289SMLBUSODAGMT',
+    '291SMLBUSODAGMT',
+    '318SMLBUSODAGMT',
+    '380SMLBUSODAGMT',
+    '495SMLBUSODAGMT',
+    '529SMLBUSODAGMT',
+    '600SMLBUSODAGMT',
+    '629SMLBUSODAGMT',
+    '669SMLBUSODAGMT',
+    '870SMLBUSODAGMT',
+    '919SMLBUSODAGMT',
+    '924SMLBUSODAGMT',
+    '158ODPRCTAGMNTDISC',
+    '167ODPRCTAGMNTDISC',
+    '289ODPRCTAGMNTDISC',
+    '291ODPRCTAGMNTDISC',
+    '318ODPRCTAGMNTDISC',
+    '380ODPRCTAGMNTDISC',
+    '495ODPRCTAGMNTDISC',
+    '529ODPRCTAGMNTDISC',
+    '600ODPRCTAGMNTDISC',
+    '629ODPRCTAGMNTDISC',
+    '669ODPRCTAGMNTDISCWI',
+    '919ODPRCTAGMNTDISC',
+    '924ODPRCTAGMNTDISC',
+    '118ODPROLCADISCWI',
+    '669ODPROLCADISCIL',
+    '870ODPROLCADISC'
+  };
+}

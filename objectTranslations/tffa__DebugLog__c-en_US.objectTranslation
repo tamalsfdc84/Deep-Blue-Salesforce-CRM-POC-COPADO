@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Execution context id --></help>
+        <label><!-- Context Id --></label>
+        <name>tffa__ContextId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Hour --></label>
+        <name>tffa__CreatedHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedOn --></label>
+        <name>tffa__CreatedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity --></label>
+        <name>tffa__Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- The logging level --></help>
+        <label><!-- Level --></label>
+        <name>tffa__Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- The message of the log --></help>
+        <label><!-- Message --></label>
+        <name>tffa__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Configuration --></label>
+        <name>tffa__Configuration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DeleteSelected --></label>
+        <name>tffa__DeleteSelected</name>
+    </webLinks>
+</CustomObjectTranslation>

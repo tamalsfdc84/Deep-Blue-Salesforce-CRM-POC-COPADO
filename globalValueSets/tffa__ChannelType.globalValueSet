@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BRANCH</fullName>
+        <default>true</default>
+        <label>Branch</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL</fullName>
+        <default>false</default>
+        <label>Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>CALL_CENTER</fullName>
+        <default>false</default>
+        <label>Call center</label>
+    </customValue>
+    <customValue>
+        <fullName>AGENT</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>ONLINE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Online</label>
+    </customValue>
+    <description>Type of the channel from which the application has been originated.</description>
+    <masterLabel>ChannelType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

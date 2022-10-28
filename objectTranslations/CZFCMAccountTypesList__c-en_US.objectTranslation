@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FCM Account Types</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FCM Account Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Type Id --></label>
+        <name>AccountTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

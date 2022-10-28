@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PartyAlias</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PartyAlias</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alias First Name --></label>
+        <name>AliasFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Last Name --></label>
+        <name>AliasLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Type --></label>
+        <name>AliasType__c</name>
+        <picklistValues>
+            <masterLabel>INDIVIDUAL</masterLabel>
+            <translation><!-- INDIVIDUAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORGANIZATION</masterLabel>
+            <translation><!-- ORGANIZATION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete Alia --></label>
+        <name>IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>Party__c</name>
+        <relationshipLabel><!-- PartyAlias --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SortOrder --></label>
+        <name>SortOrder__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,242 @@
+<apex:page applyBodyTag="false" renderAs="pdf" standardController="tffa__Party__c" extensions="AdverseActionLetterExtensionOldFormat"
+  applyHtmlTag="false" showHeader="false">
+
+  <head>
+    <style>
+      @page {
+        size: A4 portrait;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      .paras {
+        padding-top: 30;
+      }
+
+      .ChexAddress {
+        text-align: center;
+      }
+
+      .qualtable {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      .colname {
+        width: 20%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .coldata {
+        width: 30% padding-top: 9px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #000;
+        white-space: nowrap;
+      }
+
+      .reastable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        vertical-align: text-top;
+      }
+
+      .colreason {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        vertical-align: text-top;
+      }
+
+      .colspace {
+        width: 16%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .innercoltable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        vertical-align: text-top;
+      }
+
+      .dynreastable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .dyncolreason {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        border: 1px solid #000;
+      }
+
+      .dyncolreason2 {
+        width: 42%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .dyncolreason3 {
+        width: 42%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .dyncolspace {
+        width: 16%;
+        padding-top: 9px;
+        padding: 5px;
+      }
+
+      .addrtable {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .addrname {
+        width: 40%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+      }
+
+      .addrdtl {
+        width: 60%;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #000;
+      }
+
+      .outputtextcss {
+        border-bottom: 1px solid blue;
+        width: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+  <apex:pageBlock title="Notice of Adverse Action">
+    <apex:pageBlockSection >
+      <apex:outputText value="Notice Date: {0, date, MM'/'dd'/'yyyy}">
+        <apex:param value="{!NOW()}" />
+      </apex:outputText>
+      <br></br>
+    </apex:pageBlockSection>
+    <p class="paras">We are sorry but we are unable to accommodate your request to open a deposit account with our financial institution at
+      this time. Our decision was based in whole or in part on information obtained in a report from the consumer reporting
+      agency listed below. You have a right under the Fair Credit Reporting Act to know the information contained in your
+      file at the consumer reporting agency. The reporting agency played no part in our decision and is unable to supply
+      specific reasons why we have denied your request to open a deposit account in our institution. You also have a right
+      to a free copy of your report from the reporting agency, if you request it no later than 60 days after you receive
+      this notice. In addition, if you find that any information contained in the report you receive is inaccurate or incomplete,
+      you have the right to dispute the matter with the reporting agency.
+    </p>
+  </apex:pageBlock>
+
+  <apex:pageBlock >
+    <div class="ChexAddress">
+      <br>Chex Systems, Inc. </br>
+      <br>Attn: Consumer Relations </br>
+      <br>PO Box 583399</br>
+      <br>Minneapolis, MN 55458</br>
+      <br></br>
+      <br>Telephone: 800-428-9623 </br>
+      <br>Fax: 602-659-2197 </br>
+      <br>Web: www.chexsystems.com</br>
+    </div>
+  </apex:pageBlock>
+
+
+  <apex:pageBlock >
+    <p class="paras">We also obtained your Qualifile score from this consumer reporting agency and used it in making our decision ro open
+      your account. Qualifile score is a number that reflects the information in your consumer report. Your Qualifile score
+      can change, depending on how the information in your consumer report changes.</p>
+  </apex:pageBlock>
+
+  <apex:pageBlock >
+    <table class="qualtable">
+      <tr>
+        <td class="colname">Qualifile Score:</td>
+        <td class="coldata">{!debitBureauScore}</td>
+        <td class="colname">Score Date:</td>
+        <td class="coldata">{!scoreDate}</td>
+      </tr>
+    </table>
+
+    <p class="paras">Scores range from a low of 100 to a high of 899</p>
+
+    <p class="paras">Key factors that adversely affected your score:</p>
+
+
+
+
+    <apex:variable var="k" value="{!0}" />
+    <apex:variable var="l" value="{!0}" />
+    <table class="reastable">
+      <tr>
+        <td class="colreason">
+          <apex:repeat value="{!reasons}" var="reas" first="0">
+            <table class="innercoltable">
+              <tr>
+                <td class="dyncolreason2">
+                  <apex:outputText value="{!reas}" rendered="{! IF((mod(k,2)) == 0, true, false)}" style="border-bottom:1px solid #000;width:100%;display:block;padding-bottom:5px;"
+                  />
+                  <apex:variable var="k" value="{!k+1}" />
+                </td>
+              </tr>
+            </table>
+          </apex:repeat>
+        </td>
+        <td class="colspace"></td>
+        <td class="colreason">
+          <apex:repeat value="{!reasons}" var="reas" first="1">
+            <table class="innercoltable">
+              <tr>
+                <td class="dyncolreason2">
+                  <apex:outputText value="{!reas}" rendered="{! IF((mod(l,2)) == 0, true, false)}" style="border-bottom:1px solid #000;width:100%;display:block;padding-bottom:5px;"
+                  />
+                  <apex:variable var="l" value="{!l+1}" />
+                </td>
+              </tr>
+            </table>
+          </apex:repeat>
+        </td>
+      </tr>
+    </table>
+
+
+    <p>If you have any questions regarding your score, you should contact the consumer reporting agency using the contact information
+      above.
+    </p>
+
+    <p>If you have any other questions regarding this notice, you should contact:</p>
+
+    <table class="addrtable">
+      <tr>
+        <td class="addrname">Financial Institution name: </td>
+        <td class="addrdtl">{!brandName}</td>
+      </tr>
+      <tr>
+        <td class="addrname">Financial Institution address: </td>
+        <td class="addrdtl">{!brandAddress}</td>
+      </tr>
+      <tr>
+        <td class="addrname">Financial Institution telephone number: </td>
+        <td class="addrdtl">{!brandPhoneNumber}</td>
+      </tr>
+    </table>
+
+  </apex:pageBlock>
+
+
+</apex:page>

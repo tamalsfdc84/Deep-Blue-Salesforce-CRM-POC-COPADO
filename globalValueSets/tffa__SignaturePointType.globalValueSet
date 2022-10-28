@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ANCHOR_TEXT</fullName>
+        <default>false</default>
+        <label>Anchor Text</label>
+    </customValue>
+    <customValue>
+        <fullName>FIXED_POSITION</fullName>
+        <default>false</default>
+        <label>Fixed Position</label>
+    </customValue>
+    <description>Types of Signature Point in Disclosure Participant for placing signing tabs</description>
+    <masterLabel>SignaturePointType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

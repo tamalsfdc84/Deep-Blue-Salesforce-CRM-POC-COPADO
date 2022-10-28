@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Content Document Id --></label>
+        <name>tffa__ContentDocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content document name --></label>
+        <name>tffa__ContentDocumentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Document Type --></label>
+        <name>tffa__ContentDocumentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Year --></label>
+        <name>tffa__FinancialYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Financial Statements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Period name --></label>
+        <name>tffa__PeriodName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process id --></label>
+        <name>tffa__ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process progress --></label>
+        <name>tffa__ProcessProgress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process state --></label>
+        <name>tffa__ProcessState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process status --></label>
+        <name>tffa__ProcessStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source party id --></label>
+        <name>tffa__SourcePartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

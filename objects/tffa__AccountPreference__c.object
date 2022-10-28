@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>List of account preferences/additional services applied along with the application. Example values are ATM_CARD, INTERNET_BANKING, CHECKBOOK</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CZCardAddressType__c</fullName>
+        <description>Card Address Type</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Card Address Type</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZDebitCardIssueMethod__c</fullName>
+        <description>Debitcard Issue Method</description>
+        <externalId>false</externalId>
+        <label>Debitcard Issue Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ISSUE_INSTANT_CARD</fullName>
+                    <default>false</default>
+                    <label>Issue Instant Card</label>
+                </value>
+                <value>
+                    <fullName>EXPEDITE_SHIPPING</fullName>
+                    <default>false</default>
+                    <label>Expedite Shipping</label>
+                </value>
+                <value>
+                    <fullName>STANDARD_SHIPPING</fullName>
+                    <default>false</default>
+                    <label>Standard Shipping</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CZHasMultipleAccount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Has Multiple account linked for debit card</description>
+        <externalId>false</externalId>
+        <label>Has Multiple Account</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZIsStarterCheckRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to check Starter checks are requried to be printed</description>
+        <externalId>false</externalId>
+        <label>Is Starter Check Printing required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZSecAccountAdditionFlag__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Secondary Account Addition Flag</description>
+        <externalId>false</externalId>
+        <label>Secondary Account Addition Flag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CZWaiveExpediteShippingFee__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Waive Expedite Shipping Fee</description>
+        <externalId>false</externalId>
+        <label>Waive Expedite Shipping Fee</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PriSavingAccountNumber__c</fullName>
+        <description>Primary Saving Account Number</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Primary Saving Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriSavingApplicationId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Primary Saving Application ID</description>
+        <externalId>false</externalId>
+        <label>Primary Saving Application ID</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>PriSavingApplication</relationshipLabel>
+        <relationshipName>PriSavingApplication</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SecDDAAccountNumber__c</fullName>
+        <description>Secondary Checking Account Number</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Secondary Checking Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecDDAApplicationId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Secondary Checking Application ID</description>
+        <externalId>false</externalId>
+        <label>Secondary Checking Application ID</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>SecDDAApplication</relationshipLabel>
+        <relationshipName>SecDDAApplication</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SecSavingAccountNumber__c</fullName>
+        <description>Secondary Saving Account Number</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Secondary Saving Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecSavingApplicationId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Secondary Saving Application ID</description>
+        <externalId>false</externalId>
+        <label>Secondary Saving Application ID</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>SecSavingApplication</relationshipLabel>
+        <relationshipName>SecSavingApplication</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SourceApplication__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Source Application ID</description>
+        <externalId>false</externalId>
+        <label>SourceApplication</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>SourceApplication</relationshipLabel>
+        <relationshipName>SourceApplication</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StarterCheckJobID__c</fullName>
+        <description>Starter Check Job ID</description>
+        <displayFormat>{000000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Starter Check Job ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AccountName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the account linked in the account preference</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AccountNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Account number. e.g. Account number captured for Balance Transfer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AccountType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of account linked in the account preference</description>
+        <externalId>false</externalId>
+        <label>AccountType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__AddOnServiceType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures the type of applied add-on service.</description>
+        <externalId>false</externalId>
+        <label>Add-on service type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AddOnServiceType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Address associated with the preference. e.g Payment address captured for Balance Transfer.</description>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <referenceTo>tffa__Address__c</referenceTo>
+        <relationshipLabel>Account Preferences</relationshipLabel>
+        <relationshipName>AccountPreferences</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Amount. e.g. Transfer amount captured for Balance Transfer.</description>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Application__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to parent application</description>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>Account Preferences</relationshipLabel>
+        <relationshipName>AccountPreferences</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__CardBINCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Bank Identification Number (“BIN”) or Issuer identification number (“IIN”) is the first six digits of a bank card number or payment
+        cards number and it is part of ISO/IEC 7812.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <inlineHelpText>Bank Identification Number (“BIN”) or Issuer identification number (“IIN”) is beneficial to identify a card brand, issuing institution or bank, country of issuance, card type and category of cards.</inlineHelpText>
+        <label>Card BIN Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CardNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card number (of applied debit card)</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Card number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique identifier for the preference or service opted for.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional notes captured.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A summary of the preference or service offered.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures total number of devices applied</description>
+        <externalId>false</externalId>
+        <label>Device Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmbossedBusinessName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of business as it would appear on a card. e.g. Add-on Card.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Embossed business name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmbossedName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name as it would appear on a card. e.g. Add-on Card.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Embossed name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Stores whether the preference or service was opted for.</description>
+        <externalId>false</externalId>
+        <label>Enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FinancialInstitution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the financial institution in which an account is held. e.g. Account details captured for Balance Transfer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Financial institution</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__GroupCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique group code used for grouping similar add-on service preferences. If not set, grouping happens on the basis of add-on service type.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Group code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to related party.</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Account Preferences</relationshipLabel>
+        <relationshipName>AccountPreferences</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RoutingNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Routing number of the account assoiciated with the account preference.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Routing number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Relative order w.r.t others in the list.</description>
+        <externalId>false</externalId>
+        <label>Sort order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__State__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current state (of processing) of the account preference.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current status (of processing) of the account preference.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AccountPreferenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Nature of the preference.</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AccountPreferenceType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures any additional detail related to the preference. If more details are required custom fields may be added.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Preference</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Account Preferences</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

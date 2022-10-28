@@ -1,0 +1,105 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Your application is initiated" recipientType="User" >
+  <messaging:htmlEmailBody >
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Terafina</title>
+    </head>
+
+    <body spellcheck="none" style="padding: 0; margin: 0;">
+      <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="563" valign="top">
+            <table width="516" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="7" height="30">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" valign="top">
+                  <table width="563" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="20" height="170"></td>
+                      <td width="543" valign="top">
+                        <table width="495" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td colspan="7" height="10" >
+                              <c:DocumentImage documentImageName="Salesforce_Branding_Resources/north_logo" width="200" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+                          <tr>
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#404041; line-height: 14px;"></td>
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+                          <tr>
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#404041; line-height: 14px;">Dear {PartyName},
+                              <br/>
+                              <br/>You have been added as a co-applicant for the application. When you’re ready to complete your
+                              application, just
+
+
+                              <a href="{SubmissionQueryParam}" id="sales">click here</a> to complete your application securely.
+                              <br/>
+                              <br/> For authentication, an one time password is sent to you in a separate email.
+                              <br/>
+                              <br/>If you do not complete your application within 60 days, you’ll need to start over again.
+                              <br/>
+                              <br/>We’re glad you selected Terafina for your financial needs, and if there is anything we can
+                              do to help, just give us a call at 248.890.7916 or email us at info@terafinainc.com.
+                              <br/>
+                              <br/>Best regards,
+                              <br/>
+                              <br/>
+                              <br/>Terafina Inc.
+                              <br/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15"></td>
+                          </tr>
+                          <tr>
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 11px;"></td>
+                          </tr>
+                          <tr>
+                            <td height="40"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td width="22"></td>
+                <td colspan="6" style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 15px;">© Terafina Inc 2019. 248.890.7916</td>
+              </tr>
+
+              <tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+                <td width="22"></td>
+                <td width="368" style="font-family: Arial, Helvetica, sans-serif; font-size: 8px; color:#404041; line-height: 11px;">
+                  <br />
+                </td>
+                <td width="100" style="text-align: right;">&nbsp;</td>
+                <td width="46" style="text-align: right;">
+                  <a href="#" target="_blank" />
+                </td>
+                <td width="12" style="text-align: right;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </body>
+
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A referral code is a unique code that is assigned to the participants (referrers) of a referral program. The code could be a random set of alphanumeric characters, or even complete words containing the name of the referrer. During a referral program, a referrer shares their referral code with friends, family and colleagues (referees) via email, sms, social, etc. The referee then uses the referral code to apply for a product included in the scope of the referral program. In case of agent referrers, the referees mainly include potential customers (prospects) who have walked into a branch or contacted the agent over phone, email, etc. Every referrer is assigned a referral code only once per referral program. The most important function of referral codes is that they are used to identify, track, and measure the impact the referrers create so that you can provide them with the rewards they have earned based on that data.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>tffa__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reports whether the referral code is active for consumption. Derived from disabled and referral program active state.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Disabled__c = False &amp;&amp; tffa__Program__r.tffa__Active__c = True</formula>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AgentUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Denormalized field of Agent.</description>
+        <externalId>false</externalId>
+        <label>Agent User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Referral Codes</relationshipLabel>
+        <relationshipName>ReferralCodes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The agent (or banker) holding the referral code.</description>
+        <externalId>false</externalId>
+        <label>Agent</label>
+        <referenceTo>tffa__AgentDetail__c</referenceTo>
+        <relationshipLabel>Referral Codes</relationshipLabel>
+        <relationshipName>ReferralCodes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__BrandCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unique code of the Brand the referrer (party or agent) is associated with. Derived from party or agent.</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(tffa__Party__r.tffa__BrandCode__c, tffa__Agent__r.tffa__BrandCode__c)</formula>
+        <label>Brand Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Campaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The individual campaign name, slogan, promo code associated with the referral program. Derived from referral program.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The unique code of the referral code entity. During a referral program, a referrer shares this code (or link containing the code) with friends, family and colleagues (referees) via email, sms, social, etc.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Code</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Captures explicit disabling of the referral code independent of referral program.</description>
+        <externalId>false</externalId>
+        <label>Disabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Exhausted__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the number of referrals submitted has exceeded the maximum limit.</description>
+        <externalId>false</externalId>
+        <formula>tffa__MaxNumberOfReferrals__c&gt;0 &amp;&amp; tffa__NumberOfReferrals__c &gt;= tffa__MaxNumberOfReferrals__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exhausted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalPartyId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Id of Party in an external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>External Party ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsRelatedToCurrentUser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral code is related to the current (contextual) User.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Agent__r.tffa__User__c = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Related to Current User</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastRemindedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time of last reminder sent to the referrer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last reminded on</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastSyncedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of last synchronization of the referral code (with referral records).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last synced on</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxNumberOfReferrals__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum number of referrals that can be submitted using the referral code. Configured in referral program.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Program__r.tffa__MaxNumberOfReferralsPerCode__c</formula>
+        <inlineHelpText>Maximum number of referrals that can be submitted using the referral code. Configured in referral program.</inlineHelpText>
+        <label>Maximum number of Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfConvertedReferrals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of referrals converted out of submitted ones using the referral code.</description>
+        <externalId>false</externalId>
+        <label>Number of Converted Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfDeclinedReferrals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of referrals declined out of submitted ones using the referral code.</description>
+        <externalId>false</externalId>
+        <label>Number of Declined Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfOpenReferrals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of open (not yet acted upon) referrals submitted using the referral code.</description>
+        <externalId>false</externalId>
+        <label>Number of Open Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfReferralsRequiredForNextReward__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of referrals required for earning next reward. Tracks remaining required.</description>
+        <externalId>false</externalId>
+        <label>Referrals required for next reward</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfReferralsRewarded__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of (converted) referrals rewarded.</description>
+        <externalId>false</externalId>
+        <label>Number of referrals rewarded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfReferrals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of referrals submitted using the referral code.</description>
+        <externalId>false</externalId>
+        <label>Number of Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfReferredVisitors__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Tracks the number of visitors who were referred directly or indirectly by the referrer.</description>
+        <externalId>false</externalId>
+        <label>Referred Visitors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfRewardsEarned__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Total number of rewards earned so far.</description>
+        <externalId>false</externalId>
+        <label>Number of rewards earned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>Referrers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OutOfSync__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if the referral code requires synchronization (with referral records).</description>
+        <externalId>false</externalId>
+        <formula>NOT(ISNULL(tffa__SyncPendingOn__c)) &amp;&amp; (ISNULL(tffa__LastSyncedOn__c) || tffa__SyncPendingOn__c &gt; tffa__LastSyncedOn__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Out of Sync</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The person holding the referral code.</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Party must be an individual</errorMessage>
+            <filterItems>
+                <field>tffa__Party__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Individual</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Referral Codes</relationshipLabel>
+        <relationshipName>ReferralCodes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ProgramCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unique code of the referral program.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Program__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The parent referral program.</description>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Referral program is not active</errorMessage>
+            <filterItems>
+                <field>tffa__ReferralProgram__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__ReferralProgram__c</referenceTo>
+        <relationshipLabel>Referral Codes</relationshipLabel>
+        <relationshipName>ReferralCodes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__QRCodeUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to access QR code that can be scanned to get the referral url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QR Code Url</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Referrer email. Derived from party/agent email.</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(tffa__Party__r.tffa__PrimaryEmail__c, tffa__Agent__r.tffa__UserEmail__c)</formula>
+        <label>Referrer email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Referrer name. Derived from party/agent name.</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(tffa__Party__r.Name, tffa__Agent__r.Name)</formula>
+        <label>Referrer Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures count of reminder emails sent to referrer.</description>
+        <externalId>false</externalId>
+        <label>Reminder count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures next date on which reminder email will be sent to referrer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Reminder date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Schedule (frequency in days) for reminder emails sent to referrer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Derived from Referral program</inlineHelpText>
+        <label>Reminder schedule</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ShareLinkText__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A summarized description, meant to provide a quick overview about the referral. Used as message text when sharing the referral link using native sharing mechanisms like whatsapp, facebook, twitter, etc. Derived from referral program.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Program__r.tffa__ShareLinkText__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Share link text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ShareLinkTitle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Message title used when sharing the referral link using native sharing mechanisms like whatsapp, facebook, twitter, etc. Derived from referral program.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Program__r.tffa__ShareLinkTitle__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Share link title</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ShareLinks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Key value pairs of share links. Meant to be transient and generated runtime.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Share links</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__SharingOptions__c</fullName>
+        <defaultValue>&quot;DIRECT&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The different ways referrers can share their referral links with their friends and family under the referral program. Derived from referral program.</description>
+        <externalId>false</externalId>
+        <label>Sharing options</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ReferralSharingOption</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__SyncPendingOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when the referral code was marked pending for synchronization (with referral records).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Sync pending on</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TotalRewardCreditsEarned__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sum of reward credits earned so far.</description>
+        <externalId>false</externalId>
+        <label>Total reward credits earned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TotalRewardPointsEarned__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sum of reward points earned so far.</description>
+        <externalId>false</externalId>
+        <label>Total reward points earned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__UnsubscribeUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A link for the referrer to unsubscribe themself from reminder emails.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Unsubscribe url</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Referral link containing the referral code. Usually points to sales application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referral Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Referral Code</label>
+    <listViews>
+        <fullName>tffa__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__MyReferralCodes</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Code__c</columns>
+        <columns>tffa__Program__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__IsRelatedToCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Referral Codes</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Referral Codes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>tffa__MaxNumberOfReferrals</fullName>
+        <active>true</active>
+        <description>NumberOfReferrals cannot exceed MaxNumberOfReferrals</description>
+        <errorConditionFormula>NOT(ISNULL(tffa__MaxNumberOfReferrals__c)) &amp;&amp; tffa__NumberOfReferrals__c &gt; tffa__MaxNumberOfReferrals__c</errorConditionFormula>
+        <errorMessage>Number of referral exceeds the maximum limit set in the referral program</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

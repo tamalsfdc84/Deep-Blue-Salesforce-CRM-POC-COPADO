@@ -1,0 +1,4 @@
+<aura:component implements="lightning:isUrlAddressable">
+    <aura:attribute name="isLoad" type="Boolean" default="true"/>
+    <c:wt_DatePaidAutomation isLoad="{!v.isLoad}"/>
+</aura:component>

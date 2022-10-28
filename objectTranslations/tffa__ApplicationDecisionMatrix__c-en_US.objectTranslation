@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Credit Facts --></label>
+        <name>tffa__CreditFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KYC Facts --></label>
+        <name>tffa__KYCFacts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Assign To Queue --></label>
+        <name>CZAssignToQueue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Status --></label>
+        <name>CZFraudStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Decision Outcome --></label>
+        <name>CZPartyDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Amount Exceeded? --></label>
+        <name>ChargeAmountExceeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Customer DOB Match? --></label>
+        <name>ExistingCustomerDOBMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Customer Last Name Match ? --></label>
+        <name>ExistingCustomerLastNameMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA Status --></label>
+        <name>IDAStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inquiry Count Exceeded? --></label>
+        <name>InquiryCountExceeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Authenticated Customer? --></label>
+        <name>IsAuthenticatedCustomer__c</name>
+    </fields>
+    <fields>
+        <help><!-- If any other applicant in the submission is authenticated --></help>
+        <label><!-- Is Authenticated Flow? --></label>
+        <name>IsAuthenticatedFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB Match in IDV? --></label>
+        <name>IsDobMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Existing Customer? --></label>
+        <name>IsExistingCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ID Uploaded? --></label>
+        <name>IsIDUploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is KYC Required? --></label>
+        <name>IsKYCRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Minor? --></label>
+        <name>IsMinor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Primary Applicant? --></label>
+        <name>IsPrimaryApplicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Rejected with Fraud Reason? --></label>
+        <name>IsRejectedWithFraudReasons__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN Match in IDV? --></label>
+        <name>IsSsnMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Student Product? --></label>
+        <name>IsStudentProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Status --></label>
+        <name>OFACStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adverse action notice required --></label>
+        <name>tffa__AdverseActionNoticeRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow removal of parties that led to the outcome. If set, the user gets an option to remove the parties that led to declined/counter offer decision outcome of the application. --></help>
+        <label><!-- Allow removal of affected parties --></label>
+        <name>tffa__AllowAffectedPartyRemoval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (from) --></label>
+        <name>tffa__AmountFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (to) --></label>
+        <name>tffa__AmountTo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;BUNDLECHECKING; --></help>
+        <label><!-- Bundle code (set) --></label>
+        <name>tffa__BundleCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel (set) --></label>
+        <name>tffa__ChannelSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citizenship (set) --></label>
+        <name>tffa__CitizenshipSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau score (from) --></label>
+        <name>tffa__CreditBureauScoreFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau score (to) --></label>
+        <name>tffa__CreditBureauScoreTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit bureau reason code (set) --></label>
+        <name>tffa__DebitBureauReasonCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit bureau score (from) --></label>
+        <name>tffa__DebitBureauScoreFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit bureau score (to) --></label>
+        <name>tffa__DebitBureauScoreTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Bureau status --></label>
+        <name>tffa__DebitBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <lookupFilter>
+            <errorMessage><!-- Strategies configured for Application Decision Matrix can only be selected. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Application Decision Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Identity Mismatch (is) --></label>
+        <name>tffa__FundingIdentityMismatchIs__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDV status --></label>
+        <name>tffa__IDVStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor (is) --></label>
+        <name>tffa__MinorIs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>tffa__Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party KYC Status --></label>
+        <name>tffa__PartyKYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary (is) --></label>
+        <name>tffa__PrimaryIs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- ApplicationDecisionMatrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term (from) --></label>
+        <name>tffa__TermFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term (to) --></label>
+        <name>tffa__TermTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Decision Strategy purpose must match the Application Decision Matrix type. --></errorMessage>
+        <name>tffa__DecisionStrategy</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MassClone --></label>
+        <name>tffa__MassClone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassDelete --></label>
+        <name>tffa__MassDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

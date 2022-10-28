@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Ticket Submitted Email Template</name>
+    <style>freeForm</style>
+    <subject>CCPA Ticket Submitted - Customer</subject>
+    <textOnly>A new CCPA request has been assigned to you. You can access the record in the system by clicking the link below :
+
+Click here {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

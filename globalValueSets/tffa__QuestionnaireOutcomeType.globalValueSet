@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRODUCT</fullName>
+        <default>true</default>
+        <label>Product</label>
+    </customValue>
+    <description>List of possible outcome types that can resolved using information captured by a questionnaire.</description>
+    <masterLabel>QuestionnaireOutcomeType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DOCUSIGN</fullName>
+        <default>false</default>
+        <label>Docusign</label>
+    </customValue>
+    <customValue>
+        <fullName>EXTERNAL_URL</fullName>
+        <default>false</default>
+        <label>External url</label>
+    </customValue>
+    <customValue>
+        <fullName>TEXT</fullName>
+        <default>false</default>
+        <label>Text</label>
+    </customValue>
+    <customValue>
+        <fullName>INTERNAL_CONTENT</fullName>
+        <default>false</default>
+        <label>Internal Content</label>
+    </customValue>
+    <customValue>
+        <fullName>INTERNAL_CONTENT_HTML</fullName>
+        <default>false</default>
+        <label>Internal HTML Content</label>
+    </customValue>
+    <customValue>
+        <fullName>WKFS</fullName>
+        <default>false</default>
+        <label>WKFS</label>
+    </customValue>
+    <customValue>
+        <fullName>CSI</fullName>
+        <default>false</default>
+        <label>CSI</label>
+    </customValue>
+    <description>Types of disclosure.</description>
+    <masterLabel>DisclosureType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

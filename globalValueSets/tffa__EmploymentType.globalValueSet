@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SALARIED</fullName>
+        <default>false</default>
+        <label>Salaried</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTRACTOR</fullName>
+        <default>false</default>
+        <label>Contractor</label>
+    </customValue>
+    <customValue>
+        <fullName>SELF_EMPLOYED</fullName>
+        <default>false</default>
+        <label>Self employed</label>
+    </customValue>
+    <customValue>
+        <fullName>FULLTIME</fullName>
+        <default>false</default>
+        <label>Full Time</label>
+    </customValue>
+    <customValue>
+        <fullName>PARTTIME</fullName>
+        <default>false</default>
+        <label>Part Time</label>
+    </customValue>
+    <customValue>
+        <fullName>RETIRED</fullName>
+        <default>false</default>
+        <label>Retired</label>
+    </customValue>
+    <customValue>
+        <fullName>STUDENT</fullName>
+        <default>false</default>
+        <label>Student</label>
+    </customValue>
+    <customValue>
+        <fullName>HOMEMAKER</fullName>
+        <default>false</default>
+        <label>Homemaker</label>
+    </customValue>
+    <customValue>
+        <fullName>UNEMPLOYED</fullName>
+        <default>false</default>
+        <label>Unemployed</label>
+    </customValue>
+    <customValue>
+        <fullName>MILITARY</fullName>
+        <default>false</default>
+        <label>Military</label>
+    </customValue>
+    <customValue>
+        <fullName>Test</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Test</label>
+    </customValue>
+    <description>Type of the employment, Valid values are SALARIED,CONTRACTOR,SELF_EMPLOYED,RETIRED,STUDENT,UNEMPLOYED,MILITARY</description>
+    <masterLabel>EmploymentType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

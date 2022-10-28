@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>tffa__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution code --></label>
+        <name>tffa__InstitutionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution name --></label>
+        <name>tffa__InstitutionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- State code --></label>
+        <name>tffa__StateCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supported Grades --></label>
+        <name>tffa__SupportedGrades__c</name>
+    </fields>
+</CustomObjectTranslation>

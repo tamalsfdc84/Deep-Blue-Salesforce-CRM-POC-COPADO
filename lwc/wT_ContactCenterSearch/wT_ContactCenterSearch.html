@@ -1,0 +1,344 @@
+<template>
+  <article class="slds-card">
+    <div class="slds-box">
+      <div class="slds-box">
+        <div class="slds-grid slds-gutters">
+          <div class="slds-col">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="phoneNumber"> Phone Number </label>
+              <div class="slds-form-element__control">
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" value={phoneNumber}
+                  onchange={inputValueOnChange} class="slds-input" />
+              </div>
+            </div>
+          </div>
+          <div class="slds-col">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="firstName"> First Name </label>
+              <div class="slds-form-element__control">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" value={firstName}
+                  onchange={inputValueOnChange} class="slds-input" />
+              </div>
+            </div>
+          </div>
+          <div class="slds-col">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="lastName"> Last Name </label>
+              <div class="slds-form-element__control">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" value={lastName}
+                  onchange={inputValueOnChange} class="slds-input" />
+              </div>
+            </div>
+          </div>
+          <div class="slds-col">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="ssn"> SSN </label>
+              <div class="slds-form-element__control">
+                <input type="text" id="ssn" name="ssn" placeholder="SSN" value={ssn} onchange={inputValueOnChange}
+                  class="slds-input" />
+              </div>
+            </div>
+          </div>
+          <div class="slds-col">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="accountNumber"> Account Number </label>
+              <div class="slds-form-element__control">
+                <input type="text" id="accountNumber" name="accountNumber" placeholder="Account #" value={accountNumber}
+                  onchange={inputValueOnChange} class="slds-input" />
+              </div>
+            </div>
+          </div>
+          <div class="slds-col search-padding">
+            <lightning-button variant="brand" label="Search" title="Search" onclick={handleSearchButtonClick}
+              class="slds-m-left_x-small"></lightning-button>
+          </div>
+        </div>
+      </div>
+      <!-- Container for main search results -->
+      <div class="slds-grid slds-gutters slds-m-top_large">
+        <div class="slds-col slds-size_1-of-2">
+          <div class="slds-box main-search-min-height">
+            <article class="slds-card">
+              <div class="
+                  slds-card__header
+                  slds-grid
+                  slds-p-bottom_medium
+                  slds-border_bottom
+                ">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <lightning-icon icon-name="standard:account" alternative-text="Accounts" title="Accounts">
+                  </lightning-icon>
+                  <div class="slds-media__body slds-p-left_medium">
+                    <h2 class="slds-card__header-title">
+                      <span>Accounts</span>
+                    </h2>
+                  </div>
+                </header>
+              </div>
+              <div class="slds-card__body slds-card__body_inner slds-scrollable_y search-result-max-height">
+                <template if:false={isLoadingSearchResult}>
+                  <template if:true={searchHasNoResult}>
+                    <p class="text-center">No search results found</p>
+                  </template>
+                  <template if:false={searchHasNoResult}>
+                    <template for:each={listSearchResult} for:item="searchResult">
+                      <div class="slds-box slds-m-bottom_small search-result-box" key={searchResult.AccountId}
+                        data-item={searchResult.AccountId} onclick={handleSearchResultClick}>
+                        <article class="slds-card search-result-box-article">
+                          <div class="slds-card__header slds-grid">
+                            <header class="
+                            slds-media slds-media_center
+                            slds-has-flexi-truncate
+                          ">
+                              <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                  <lightning-icon icon-name="standard:person_account" alternative-text="Person Account"
+                                    title="Person Account" size="small" class="slds-m-right_medium">
+                                  </lightning-icon>
+                                  <a href="#" class="slds-card__header-link slds-truncate" title={searchResult.Name}
+                                    onclick={accountNameClicked} data-item={searchResult.AccountId}>
+                                    <span class="account-name">{searchResult.Name}</span>
+                                  </a>
+                                </h2>
+                              </div>
+                            </header>
+                          </div>
+                          <div class="slds-card__body slds-card__body_inner">
+                            <div class="slds-grid slds-gutters">
+                              <div class="slds-col">
+                                <div class="slds-tile__detail">
+                                  <dl class="slds-list_horizontal slds-wrap">
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Home Phone"> Home Phone: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      <lightning-formatted-phone value={searchResult.HomePhone} disabled>
+                                      </lightning-formatted-phone>
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Mobile Phone"> Mobile Phone: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      <lightning-formatted-phone value={searchResult.MobilePhone} disabled>
+                                      </lightning-formatted-phone>
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Business Phone"> Business Phone: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      <lightning-formatted-phone value={searchResult.BusinessPhone} disabled>
+                                      </lightning-formatted-phone>
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Other Phone"> Other Phone: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      <lightning-formatted-phone value={searchResult.OtherPhone} disabled>
+                                      </lightning-formatted-phone>
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Assistant Phone"> Assistant Phone: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      <lightning-formatted-phone value={searchResult.AssistantPhone} disabled>
+                                      </lightning-formatted-phone>
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Driver's License"> Driver's License: </dt>
+                                    <template if:false={searchResult.HasReturnedMulesoftResult}>
+                                      <dd class="slds-item_detail slds-truncate" title="">
+                                        <i class="c-inline-spinner"></i>
+                                      </dd>
+                                    </template>
+                                    <template if:true={searchResult.HasReturnedMulesoftResult}>
+                                      <dd class="slds-item_detail slds-truncate" title=""> {searchResult.DriversLicense}
+                                      </dd>
+                                    </template>
+                                  </dl>
+                                </div>
+                              </div>
+                              <div class="slds-col">
+                                <div class="slds-tile__detail">
+                                  <dl class="slds-list_horizontal slds-wrap">
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Date of Birth"> Date of Birth: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title={searchResult.Name}>
+                                      {searchResult.DateOfBirth} </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Last 4 of Social"> Last 4 of Social: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title=""> {searchResult.Last4OfSocial}
+                                    </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Email"> Email: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title=""> {searchResult.Email} </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Mother's Maiden Name"> Mother's Maiden Name: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title="">
+                                      {searchResult.MothersMaidenName} </dd>
+                                    <dt class="
+                                    slds-item_label
+                                    slds-text-color_weak
+                                    slds-truncate
+                                  " title="Last 8 of Debit Card"> Last 8 of Debit Card: </dt>
+                                    <dd class="slds-item_detail slds-truncate" title=""> {searchResult.Last8OfDebitCard}
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <!-- Password section goes here -->
+                              <div class="slds-grid slds-wrap password-table">
+                                <div class="slds-col slds-size_1-of-2 password-table-cell"> Password Clue </div>
+                                <div class="slds-col slds-size_1-of-2"> Password Answer </div>
+                              </div>
+                              <template if:false={searchResult.HasReturnedMulesoftResult}>
+                                <div class="slds-grid slds-wrap password-table-cell-wrapper">
+                                  <div class="slds-col slds-size_1-of-2 password-table-cell"> <i
+                                      class="c-inline-spinner"></i> </div>
+                                  <div class="slds-col slds-size_1-of-2"> <i class="c-inline-spinner"></i> </div>
+                                </div>
+                              </template>
+                              <template if:true={searchResult.HasReturnedMulesoftResult}>
+                                <template if:true={searchResult.HasOneOrMorePasswordResult}>
+                                  <template for:each={searchResult.ListPassword} for:item="passwordResult">
+                                    <div class="slds-grid slds-wrap password-table-cell-wrapper"
+                                      key={passwordResult.RecordCount}>
+                                      <div class="slds-col slds-size_1-of-2 password-table-cell">
+                                        {passwordResult.PasswordQuestion} </div>
+                                      <div class="slds-col slds-size_1-of-2"> {passwordResult.PasswordAnswer} </div>
+                                    </div>
+                                  </template>
+                                </template>
+                                <template if:false={searchResult.HasOneOrMorePasswordResult}>
+                                  <div class="slds-grid slds-wrap password-table-cell-wrapper">
+                                    <div class="slds-col slds-size_1-of-2 password-table-cell"> --- </div>
+                                    <div class="slds-col slds-size_1-of-2"> --- </div>
+                                  </div>
+                                </template>
+                              </template>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </template>
+                  </template>
+                </template>
+                <template if:true={isLoadingSearchResult}>
+                  <div class="loader"></div>
+                </template>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <div class="slds-grid slds-grid_vertical right-panel-margin">
+            <div class="slds-col slds-m-bottom_medium">
+              <div class="slds-box sub-search-min-height">
+                <article class="slds-card">
+                  <div class="
+                      slds-card__header
+                      slds-grid
+                      slds-p-bottom_medium
+                      slds-border_bottom
+                    ">
+                    <header class="
+                        slds-media slds-media_center
+                        slds-has-flexi-truncate
+                      ">
+                      <lightning-icon icon-name="custom:custom16" alternative-text="Financial Accounts"
+                        title="Financial Accounts"></lightning-icon>
+                      <div class="slds-media__body slds-p-left_medium">
+                        <h2 class="slds-card__header-title">
+                          <span>Financial Accounts</span>
+                        </h2>
+                      </div>
+                    </header>
+                  </div>
+                  <div class="
+                      slds-card__body slds-card__body_inner
+                      slds-scrollable_y  
+                      right-panel-max-height                    
+                    ">
+                    <template if:true={hasListFinancialAccount}>
+                      <lightning-datatable hide-checkbox-column key-field="FinancialAccountId"
+                        data={listFinancialAccount} columns={financialAccountColumns}>
+                      </lightning-datatable>
+                    </template>
+                    <template if:true={isLoadingAdditionalSearchResult}>
+                      <div class="loader financial-account-loader"></div>
+                    </template>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="slds-col">
+              <div class="slds-box sub-search-min-height">
+                <article class="slds-card">
+                  <div class="
+                      slds-card__header
+                      slds-grid
+                      slds-p-bottom_medium
+                      slds-border_bottom
+                    ">
+                    <header class="
+                        slds-media slds-media_center
+                        slds-has-flexi-truncate
+                      ">
+                      <lightning-icon icon-name="standard:home" alternative-text="Residences" title="Residences">
+                      </lightning-icon>
+                      <div class="slds-media__body slds-p-left_medium">
+                        <h2 class="slds-card__header-title">
+                          <span>Residences</span>
+                        </h2>
+                      </div>
+                    </header>
+                  </div>
+                  <div class="
+                      slds-card__body slds-card__body_inner
+                      slds-scrollable_y
+                      right-panel-max-height
+                    ">
+                    <template if:true={hasListResidence}>
+                      <lightning-datatable hide-checkbox-column key-field="RecordKey" data={listResidence}
+                        columns={residenceColumns}>
+                      </lightning-datatable>
+                    </template>
+                    <template if:true={isLoadingAdditionalSearchResult}>
+                      <div class="loader residence-loader"></div>
+                    </template>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>

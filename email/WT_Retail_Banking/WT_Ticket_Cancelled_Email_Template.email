@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[CCPA request for&nbsp;{!Case.00N2C000001eQRF} has been canceled.<div>You can access the record in the system by clicking link below:</div><div><br></div><div>Click here&nbsp;{!Case.Link}&nbsp;</div>]]></td>
+</tr>
+</table>

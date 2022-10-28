@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The HTTP Method for the relation --></help>
+        <label><!-- HTTP Method --></label>
+        <name>tffa__Method__c</name>
+        <picklistValues>
+            <masterLabel>DELETE</masterLabel>
+            <translation><!-- DELETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GET</masterLabel>
+            <translation><!-- GET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATCH</masterLabel>
+            <translation><!-- PATCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POST</masterLabel>
+            <translation><!-- POST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUT</masterLabel>
+            <translation><!-- PUT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>tffa__ObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Path --></label>
+        <name>tffa__Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Relation --></label>
+        <name>tffa__Relation__c</name>
+    </fields>
+</CustomObjectTranslation>

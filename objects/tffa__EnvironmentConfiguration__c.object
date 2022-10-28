@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Manage environment attributes</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AllowedOwnershipCodesForDeficitTransfer__c</fullName>
+        <description>Allowed Ownership Codes For DeficitTransfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Ownership Code: DeficitTransfer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AllowedOwnershipCodesForInitialFunding__c</fullName>
+        <description>Allowed Ownership Codes For Initial Funding</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Ownership Code: Initial Funding</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AllowedProductsForDeficitTransfer__c</fullName>
+        <description>Allowed Products For Defict Transfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Products For Deficit Transfer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AllowedProductsForInitialFunding__c</fullName>
+        <description>Allowed Products For Initial Funding</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Products For Initial Funding</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedBusinessProdsForTransfer__c</fullName>
+        <description>Business Products For Deficit Transfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Business Products For Deficit Transfer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedBusinessProductsForCardIssuance__c</fullName>
+        <description>Business Products For Debit Cards</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Business Products For Debit Cards</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedDebitCardRelnship__c</fullName>
+        <description>Allowed Debit Card Relationship</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Debit Card Relationship</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedOwnershipCodesDeficitTransfer__c</fullName>
+        <description>Allowed Ownership Codes For DeficitTransfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Ownership Code: DeficitTransfer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedOwnershipCodesForCardIssuance__c</fullName>
+        <description>Relationships For Debit Cards Both Business And Consumer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Relationships For Debit Cards</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedOwnershipCodesForExtAccounts__c</fullName>
+        <description>Interest payout ownership codes both Business and Consumer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Interest Payout Ownership Codes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedOwnershipCodesInitialFunding__c</fullName>
+        <description>Allowed Ownership Codes For Initial Funding</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Ownership Code: Initial Funding</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedProductsForCardIssuance__c</fullName>
+        <description>Consumer Product Codes For Debit Cards</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Consumer Product Codes For Debit Cards</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedProductsForDeficitTransfer__c</fullName>
+        <description>Allowed Products For Defict Transfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Products For Deficit Transfer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedProductsForInitialFunding__c</fullName>
+        <description>Allowed Products For Initial Funding</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Allowed Products For Initial Funding</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZAllowedProductsForInterestPayout__c</fullName>
+        <description>Interest payout product code list account list</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Interest payout productCode list</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZHSAProductCodes__c</fullName>
+        <description>HSA Product Codes For Debit Cards</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>HSA Product Codes For Debit Cards</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZOLBEligibleBusinessProductCode__c</fullName>
+        <description>Business Product codes eligible for OLB</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Business Product codes eligible for OLB</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZRequiredProductsForIOLTAIBRETA__c</fullName>
+        <description>Required Products For IOLTAIBRETA</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Required Products For IOLTAIBRETA</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AllowJointCollaboration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether joint applicant collaboration flow is enabled</description>
+        <externalId>false</externalId>
+        <label>Allow joint collaboration</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AllowedDisclosureDeliveryType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allowed options of disclosure delivery types configured in the system.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure the type, with each type separated by a semicolon ;. Example - EMBEDDED;PRINT;REMOTE</inlineHelpText>
+        <label>Allowed Disclosure Delivery Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AppleMobileAppUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Url to the apple app app store to download the banks app</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Apple Mobile App Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ApplicationLinkValidityDuration__c</fullName>
+        <defaultValue>1440</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time in minutes after which an application link gets expired.</description>
+        <externalId>false</externalId>
+        <label>Application Validity Duration (mins)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ApplicationRetentionPeriod__c</fullName>
+        <defaultValue>730</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time after which an application record is deleted from the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This should be greather than the expiration duration</inlineHelpText>
+        <label>Application Retention Period in days</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BaseUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce instance base Url</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Base Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__BicCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>BIC stands for Bank Identifier Code. It is an international bank code that identifies particular banks worldwide. Same as SWIFT Code</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>BIC stands for Bank Identifier Code. It is an international bank code that identifies particular banks worldwide. Same as SWIFT Code</inlineHelpText>
+        <label>BIC/SWIFT Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ClientCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A logical identifier for the client. Usually an abbreviated version of the client name.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Client code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ContactAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contact Address for Instituition in a Single Line</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Address for Instituition in a Single Line</inlineHelpText>
+        <label>Contact Address (Single line)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ContactEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contact Email for Instituition</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Contact Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ContactPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contact Phone for Institution</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Contact Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contact Address for Debit Bureau in a Single Line</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Address for Debit Bureau in a Single Line</inlineHelpText>
+        <label>Debit Bureau Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the debit bureau as identified in the application</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Debit Bureau Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contact Phone Number for Debit Bureau</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Debit Bureau Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultBrandCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If Multi Brand is enabled , then use this field for the default brand if none is passed</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>If Multi Brand is enabled , then use this field for the default brand if none is passed</inlineHelpText>
+        <label>Default Brand Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultCountry__c</fullName>
+        <defaultValue>&quot;US&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The default country or country of installation of the application. Use ISO 3166-1 Alpha-2 country code only e.g. US.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The default country or country of installation of the application. Use ISO 3166-1 Alpha-2 country code only e.g. US.</inlineHelpText>
+        <label>Default Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultLocale__c</fullName>
+        <defaultValue>&quot;en-US&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The default locale of the application. Use values from Language picklist only e.g. en-US.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The default locale of the application. Use values from Language picklist only e.g. en-US.</inlineHelpText>
+        <label>Default Locale</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultReplyToEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Institution wide email address that receives the message when a recipient replies</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The Institution wide email address that receives the message when a recipient replies</inlineHelpText>
+        <label>Default Reply To Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultSenderEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Org wide sender email Address for this Institution</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Org wide sender email Address for this Instituition</inlineHelpText>
+        <label>Default Sender Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DisclosureReminderSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Disclosure signing reminder frequency in Days.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure Disclosure signing reminder schedule in number of days, with each number separated by a semicolon ; 
+        Example - 5;15;30</inlineHelpText>
+        <label>Disclosure Reminder Schedule</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableBeneficiaryOFACCheck__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, OFAC check is performed on beneficiaries added to the application.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, OFAC check is performed on beneficiaries added to the application.</inlineHelpText>
+        <label>Enable Beneficiary OFAC check</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableBrand__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether Multi Brands are enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether Multi Brands are enabled</inlineHelpText>
+        <label>Enable Multi Brands</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableConsolidatedFunding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, all deposit accounts are can be funded together using a single funding request.</description>
+        <externalId>false</externalId>
+        <label>Enable Consolidated Funding</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableCryptoServices__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if crypto custodial services are enabled in the system</description>
+        <externalId>false</externalId>
+        <label>Enable Crypto Services</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableEstatedValuation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if estated is enabled for property details fetch</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if estated is enabled for property details</inlineHelpText>
+        <label>Enable Estated Property Details</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableExperimentalJsonSerializationApi__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables the new performant JSON serialization API for SObject(s). Currently available for opt-in. In the next release this will become the default.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables the new performant JSON serialization API for SObject(s). Currently available for opt-in. In the next release this will become the default.</inlineHelpText>
+        <label>Enable experimental JSON serializn API</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableGeoFencing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If geo fencing is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If geo fencing is enabled</inlineHelpText>
+        <label>Enable Geo Fencing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableIovationDeviceFingerprinting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, Iovation is used to capture device fingerprint.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, Iovation is used to capture device fingerprint.</inlineHelpText>
+        <label>Enable Iovation Device Fingerprinting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableMultiFactorAuthentication__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If multi factor authentication is enabled</description>
+        <externalId>false</externalId>
+        <label>Enable Multi Factor Authentication</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableMultipleAccountExternalDisclosure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True, if the external disclosures are to be generated for the multiple applications in one transaction. Default value is set to false to generate the external disclosures per application. Flag is added to optimize the performance of disclosure document generation process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, the external disclosures are to be generated for the multiple applications in one transaction. Default value is set to false to generate the external disclosures per application. Flag is added to optimize the performance of disclosure document generation
+        process.</inlineHelpText>
+        <label>Enable Multiple Account Disclosure</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidAssets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid assets is enabled for fetching assets</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid assets is enabled for fetching assets</inlineHelpText>
+        <label>Enable Plaid assets</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidAuthIdentity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid identity is enabled for applicant verification</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid identity is enabled for applicant verification</inlineHelpText>
+        <label>Enable Plaid Auth Verify Identity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidAuthItemAutoRemove__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid auth item is removed automatically</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid auth item is removed automatically</inlineHelpText>
+        <label>Enable Plaid Auth Item Automatic Removal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidAuth__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid auth is enabled for ach transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid auth is enabled for ach transfer</inlineHelpText>
+        <label>Enable Plaid Auth</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidBalance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid balance is enabled for refreshing the real time balances</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid balance is enabled for refreshing the real time balances</inlineHelpText>
+        <label>Enable Plaid balance</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidBankTransfers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid bank transfers is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid bank transfers is enabled</inlineHelpText>
+        <label>Enable Plaid Bank Transfers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidDepositSwitch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid deposit switch is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid deposit switch is enabled</inlineHelpText>
+        <label>Enable Plaid Deposit Switch</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidIdentity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid identity prefill is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid identity prefill is enabled</inlineHelpText>
+        <label>Enable Plaid Identity Prefill</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidIncomeVerification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid income verification is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid income verification is enabled</inlineHelpText>
+        <label>Enable Plaid Income Verification</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnablePlaidLiabilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if plaid liabilities is enabled for fetching liabilities</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if plaid liabilities is enabled for fetching liabilities</inlineHelpText>
+        <label>Enable Plaid liabilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableReCaptcha__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if reCAPTCHA is enabled for web fraud detection</description>
+        <externalId>false</externalId>
+        <label>Enable reCAPTCHA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableRemoteFunding__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If remote funding mode is enabled</description>
+        <externalId>false</externalId>
+        <label>Enable Remote Funding</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableSchemaCaching__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables caching of schema information for Guest sessions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables caching of schema information for Guest sessions.</inlineHelpText>
+        <label>Enable Schema Caching</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnableUXStrategy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether UX Strategies for A/B Testing is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether UX Strategies for A/B Testing is enabled</inlineHelpText>
+        <label>Enable UX Experiments</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ErrorOnGeoFencingThreatLevelHigh__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If geo fencing error is thrown if threat level is high or is TOR or is Proxy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If geo fencing error is thrown if threat level is high or is TOR or is Proxy</inlineHelpText>
+        <label>Enable Geo Fencing Error on Threat Level</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FinancialInstitutionName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full Name of the Financial Instituition</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Short Name of the Financial Instituition</inlineHelpText>
+        <label>FI Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FinancialInstitutionShortName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Short Name of the Financial Instituition</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Short Name of the Financial Instituition</inlineHelpText>
+        <label>FI Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__GenericErrorPage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The route to be used for navigating to the a generic error page</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The route to be used for navigating to the a generic error page</inlineHelpText>
+        <label>Generic Error Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__GoogleMobileAppUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A url to google mobile app store link for download. Will be used to show in confirmation page</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Google Mobile App Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IncludeAllDisclosuresInEnvelope__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True, if all the generated disclosure documents are to be included in the disclosure envelope for signing/viewing purpose. Default is false, which includes only the signable disclosure documents in the envelope.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True, if all the generated disclosure documents are to be included in the disclosure envelope for signing/viewing purpose. Default is false, which includes only the signable disclosure documents in the envelope.</inlineHelpText>
+        <label>Include All Disclosures In Envelope</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__InfoUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of additional resource about the Instituition as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Info URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsCreditUnion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True , if the Financial Instituition is a  credit union</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True , if the Financial Instituition is a  credit union</inlineHelpText>
+        <label>Is FI a Credit Union ?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsSandbox__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if current organization is a sandbox. Value should be set equal to Organization.IsSandbox.</description>
+        <externalId>false</externalId>
+        <label>Is Sandbox</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Key__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Key used by system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cipher Key</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__LocationResolutionRange__c</fullName>
+        <defaultValue>20</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The maximum distance (in miles) allowed when resolving the nearest location (branch) for a submission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum distance (in miles) allowed when resolving the nearest location (branch) for a submission.</inlineHelpText>
+        <label>Location Resolution Range (miles)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxApplicationCount__c</fullName>
+        <defaultValue>20</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of applications possible in a single submission. Translates to maximum number of products that can be applied in a single session.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of applications possible in a single submission or maximum number of products that can be applied in a single session.</inlineHelpText>
+        <label>Maximum Application Count</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxBeneficiaryCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of beneficiaries that can be captured for a party.</description>
+        <externalId>false</externalId>
+        <label>Maximum Beneficiary Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxIndividualApplicantCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of Individual type of applicants.</description>
+        <externalId>false</externalId>
+        <label>Maximum Individual Applicant Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxNumberOfDisclosuresInEnvelope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum number of disclosure documents allowed in a single envelope.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of disclosure documents allowed in a single envelope. System will split the set of documents into multiple envelopes if the count is more than the configured threshold.</inlineHelpText>
+        <label>Max Number Of Disclosures In Envelope</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxOLBAuthenticationRetryCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper bound on count of OLB authentication attempts.</description>
+        <externalId>false</externalId>
+        <label>Max OLB authentication retry count</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxOTPGenerationRetryCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper bound on count of OTP generation attempts.</description>
+        <externalId>false</externalId>
+        <label>Max OTP generation retry count</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxOTPRetryCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper bound on count of OTP validation attempts.</description>
+        <externalId>false</externalId>
+        <label>Max OTP retry count</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxOrganizationApplicantCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of Organization type of applicants.</description>
+        <externalId>false</externalId>
+        <label>Maximum Organization Applicant Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxOtherIncomeCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of other type of incomes that can be captured for a party.</description>
+        <externalId>false</externalId>
+        <label>Maximum Other Income Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxPreviousAddressCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of previous addresses that can be captured for a party.</description>
+        <externalId>false</externalId>
+        <label>Maximum Previous Address Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxPreviousEmployerCount__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of previous employers that can be captured for a party.</description>
+        <externalId>false</externalId>
+        <label>Maximum Previous Employer Count</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MinAddressHistoryInYears__c</fullName>
+        <defaultValue>2</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Minimum years of address history to be captured for a party.</description>
+        <externalId>false</externalId>
+        <label>Minimum Years of Address History</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MinorAgeThreshold__c</fullName>
+        <defaultValue>18</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In law, a minor is a person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood. The age of majority depends upon jurisdiction and application, but it is generally 18.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In law, a minor is a person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood. The age of majority depends upon jurisdiction and application, but it is generally 18.</inlineHelpText>
+        <label>Minor Age Threshold</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NotificationEnabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If notifications are enabled</description>
+        <externalId>false</externalId>
+        <label>Notification enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__OTPValidityDuration__c</fullName>
+        <defaultValue>43200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time in minutes after which a OTP is expired .</description>
+        <externalId>false</externalId>
+        <label>OTP Validity duration in mins</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OnlineBankingEntityId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Core banking entity id as identified by the Online banking provider system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Online Banking Entity Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OnlineBankingLoginUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Login Url to the Online Banking Url</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Login Url to the Online Banking Url for authentication</inlineHelpText>
+        <label>Online Banking Login Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__OnlineBankingProvider__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Online banking provider system. e.g. NCRD3, NCRDI</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Online Banking Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OnlineBankingUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Url to the Online Banking Url</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Online Banking Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PlaidBankTransferACHClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the use case of the transfer.  Required for transfers on an ACH network.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Possible values: arc, cbr, ccd, cie, cor, ctx, iat, mte, pbr, pop, pos, ppd, rck, tel, web</inlineHelpText>
+        <label>Plaid Bank Transfer ACH class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PlaidBankTransferNetwork__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The network or rails used for the transfer. Valid options are ach, same-day-ach, or wire.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Possible values: ach, same-day-ach, wire</inlineHelpText>
+        <label>Plaid Bank Transfer Network</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PlaidBankTransferOriginationAccountId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>unique identifier for the origination account for this transfer</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Plaid Bank Transfer Origination Account</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PrequalReminderSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Prequal reminder frequency in Days.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure Mortgage prequal reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30</inlineHelpText>
+        <label>Prequal reminder schedule</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReCaptchaErrorScoreThreshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ReCaptcha error score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ReCaptcha error score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot.</inlineHelpText>
+        <label>reCAPTCHA error score threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReCaptchaWarningScoreThreshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ReCaptcha warning score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ReCaptcha warning score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot.</inlineHelpText>
+        <label>reCAPTCHA warning score threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ResumeSubmissionPath__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The route to be used when resuming a saved/abandoned submission</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Resume Submission url</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RoutingNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Routing number of the Instituition. An identification number assigned to the banking institution.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Routing number of the Instituition. An identification number assigned to the banking institution.</inlineHelpText>
+        <label>Routing number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SessionIdleDuration__c</fullName>
+        <defaultValue>18</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time in minutes in which the user does not perform any action on the UI . This should be used to display warning to the user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This should be less than the session validity duration</inlineHelpText>
+        <label>Session Idle warning duration in minutes</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SessionKeepAliveDuration__c</fullName>
+        <defaultValue>5</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The time duration for UI to keep alive the user session . This will help in extending the session when user is interacting with the UI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Duration in minutes</inlineHelpText>
+        <label>Session Keep Alive duration in minutes</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SessionValidityDuration__c</fullName>
+        <defaultValue>20</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The duration in minutes for which the user session will be considered valid</description>
+        <externalId>false</externalId>
+        <label>Session validity duration in minutes</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionAbandonmentDuration__c</fullName>
+        <defaultValue>60</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time in minutes after which a submission is abandoned if not worked upon by the user. Abandoned submission can be inquired and resumed from application tracker.</description>
+        <externalId>false</externalId>
+        <label>Submission Abandonment duration in mins</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionExpirationDuration__c</fullName>
+        <defaultValue>4</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the duration of time after which an abandoned submission is expired and cannot be resumed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This should be greather than the submissions abandonment duration</inlineHelpText>
+        <label>Submission expiration duration in days</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionReminderSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Submission reminder frequency in Days.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure Submission reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30</inlineHelpText>
+        <label>Submission reminder schedule</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionTrackerPath__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The route to be used for navigating to the submission/application tracker</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Submission Tracker Url</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmittedPollingCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum number of times application status may be enquired after submission. Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of times application status may be enquired after submission. Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page.</inlineHelpText>
+        <label>Submitted polling count</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmittedPollingIntervalInSeconds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Interval between successive requests to enquire application status after submission.  Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interval between successive requests to enquire application status after submission.  Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page.</inlineHelpText>
+        <label>Submitted polling interval in seconds</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SuccessOnGeoFencingCalloutError__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true , then continue even if Geo Callout error or null IP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true , then continue even if Geo Callout error or null IP</inlineHelpText>
+        <label>Success on Geo Fencing Callout Error</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TaxContributionCutoffDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Cutoff date in MM/DD for tax favored account contribution</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Tax Contribution Cutoff Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Environment Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>

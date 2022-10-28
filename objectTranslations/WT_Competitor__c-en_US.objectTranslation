@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Web Site --></label>
+        <name>WT_Web_Site__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

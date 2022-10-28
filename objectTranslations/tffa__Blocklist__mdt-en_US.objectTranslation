@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The error code to be used when the blocklist is hit (value matches one of the blocklist items). --></help>
+        <label><!-- Error Code --></label>
+        <name>tffa__ErrorCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- The error message to be displayed when the blocklist is hit (value matches one of the blocklist items). --></help>
+        <label><!-- Error Message --></label>
+        <name>tffa__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;] --></help>
+        <label><!-- Items 1 --></label>
+        <name>tffa__Items1__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;] --></help>
+        <label><!-- Items 2 --></label>
+        <name>tffa__Items2__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;] --></help>
+        <label><!-- Items 3 --></label>
+        <name>tffa__Items3__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of entries in the blocklist expressed as a JSON string. Each entry could be a string or regex value. A regex value is expected to begin and end with &apos;/&apos; characters. A test value is said to match the item when it equals the string value or it matches the regex value. e.g. [&quot;123456789&quot;, &quot;000000000&quot;, &quot;/^000....../&quot;, &quot;/^...00..../&quot;] --></help>
+        <label><!-- Items 4 --></label>
+        <name>tffa__Items4__c</name>
+    </fields>
+</CustomObjectTranslation>

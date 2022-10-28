@@ -1,0 +1,19 @@
+<apex:page standardController="tffa__ApplicationDecisionMatrix__c" recordSetVar="records" extensions="tffa.MassActionController" lightningStylesheets="true">
+  <apex:slds />
+  <apex:pageMessages />
+  <apex:actionStatus id="deleteRecords">
+    <apex:facet name="start">
+      <div class="slds-spinner_container">
+        <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+          <span class="slds-assistive-text">Loading</span>
+          <div class="slds-spinner__dot-a"></div>
+          <div class="slds-spinner__dot-b"></div>
+        </div>
+      </div>
+    </apex:facet>
+  </apex:actionStatus>
+  <apex:form >
+    <apex:actionFunction action="{!deleteRecords}" name="deleteRecords" status="deleteRecords" rerender="deleteRecords"></apex:actionFunction>
+  </apex:form>
+  <script>window.onload=deleteRecords</script>
+</apex:page>

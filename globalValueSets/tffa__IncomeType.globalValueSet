@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Salaried</fullName>
+        <default>false</default>
+        <label>Salaried</label>
+    </customValue>
+    <customValue>
+        <fullName>MILITARY_PAY</fullName>
+        <default>false</default>
+        <label>Military Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>INDEPENDENT_CONTRACTOR</fullName>
+        <default>false</default>
+        <label>Independent Contractor</label>
+    </customValue>
+    <customValue>
+        <fullName>RENTAL_INCOME</fullName>
+        <default>false</default>
+        <label>Rental Income</label>
+    </customValue>
+    <customValue>
+        <fullName>SOCIAL_SECURITY</fullName>
+        <default>false</default>
+        <label>Social Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Pension</fullName>
+        <default>false</default>
+        <label>Pension</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_SELF-EMPLOYED</fullName>
+        <default>false</default>
+        <label>Business / Self-employed</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>FOREIGN</fullName>
+        <default>false</default>
+        <label>Foreign</label>
+    </customValue>
+    <customValue>
+        <fullName>UNEMPLOYMENT_BENEFIT</fullName>
+        <default>false</default>
+        <label>Unemployment Benefits</label>
+    </customValue>
+    <description>Specifies the type of income or fee that may be received for services rendered.</description>
+    <masterLabel>IncomeType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

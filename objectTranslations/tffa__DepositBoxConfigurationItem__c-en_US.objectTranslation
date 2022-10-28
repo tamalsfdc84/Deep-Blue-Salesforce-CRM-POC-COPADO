@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Special Program Rental Fee Amount --></label>
+        <name>CZSpecialRentalFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration --></label>
+        <name>tffa__Configuration__c</name>
+        <relationshipLabel><!-- Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internal (Bank Box) --></label>
+        <name>tffa__Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key deposit amount --></label>
+        <name>tffa__KeyDepositAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max number of keys --></label>
+        <name>tffa__MaxNumberOfKeys__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Duration (Months) --></label>
+        <name>tffa__RenewalDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental fee amount --></label>
+        <name>tffa__RentalFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>tffa__Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+</CustomObjectTranslation>

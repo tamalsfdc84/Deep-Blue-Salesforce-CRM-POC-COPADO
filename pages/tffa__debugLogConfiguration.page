@@ -1,0 +1,38 @@
+<!--
+  @Page Name          : debugLogConfiguration.page
+  debug log configuration page
+-->
+<apex:page docType="html-5.0" title="{!$ObjectType.tffa__DebugLogConfiguration__c.Label}" standardController="tffa__DebugLog__c" recordSetVar="logs"
+  extensions="tffa.DebugLogController" lightningStylesheets="true" action="{!getConfiguration}" showHeader="false" applyHtmlTag="false">
+  <apex:outputPanel id="error">
+    <apex:pageMessages />
+  </apex:outputPanel>
+  <apex:form >
+    <apex:pageBlock id="pb1" title="{!$ObjectType.tffa__DebugLogConfiguration__c.Label}" mode="edit">
+      <apex:pageBlockButtons location="top">
+        <apex:commandButton action="{!saveConfiguration}" value="Save" rerender="pb1,error" />
+        <apex:commandButton action="{!cancel}" value="Cancel" />
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection columns="2" title="{!$Label.tffa__DEBUGLOG_CONFIGURATION_DETAILS}">
+        <apex:inputField value="{!config.tffa__Enabled__c}" id="enabled">
+          <apex:actionSupport event="onchange" reRender="pb1" />
+        </apex:inputField>
+        <div></div>
+        <apex:pageblocksectionItem rendered="{!config.tffa__Enabled__c}">
+          <apex:outputLabel value="{!$ObjectType.tffa__DebugLogConfiguration__c.fields.tffa__DatabaseLoggingLevel__c.Label}" for="dblogging" />
+          <apex:selectList id="dblogging" value="{!config.tffa__DatabaseLoggingLevel__c}" multiselect="false" size="1">
+            <apex:selectOptions value="{!optionLevelList}" />
+          </apex:selectList>
+        </apex:pageblocksectionItem>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" type="number" id="RetentionPeriod" value="{!config.tffa__RetentionPeriod__c}">
+        </apex:inputField>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" id="DebugCallStack" value="{!config.tffa__DebugCallStack__c}">
+        </apex:inputField>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" id="MaskingPattern__c" value="{!config.tffa__MaskingPattern__c}">
+        </apex:inputField>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" id="MaskingEnabled" value="{!config.tffa__MaskingEnabled__c}">
+        </apex:inputField>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

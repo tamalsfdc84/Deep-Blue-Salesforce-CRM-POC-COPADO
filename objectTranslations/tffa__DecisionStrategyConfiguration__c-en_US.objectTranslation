@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Key --></label>
+        <name>tffa__EntityKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity purpose --></label>
+        <name>tffa__EntityPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Cannot edit this field --></errorMessage>
+        <name>tffa__EntityPurpose</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit this field --></errorMessage>
+        <name>tffa__EntityType</name>
+    </validationRules>
+</CustomObjectTranslation>

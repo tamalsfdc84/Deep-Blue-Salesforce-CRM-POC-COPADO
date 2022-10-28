@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Collateral Arrangement --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Charge type --></label>
+        <name>tffa__ChargeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exposure type --></label>
+        <name>tffa__ExposureType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grace days --></label>
+        <name>tffa__GraceDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Haircut --></label>
+        <name>tffa__Haircut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is charge registration required --></label>
+        <name>tffa__IsChargeRegistrationRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>tffa__Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of units --></label>
+        <name>tffa__NumberOfUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Amount --></label>
+        <name>tffa__ValuationAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation date --></label>
+        <name>tffa__ValuationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation source --></label>
+        <name>tffa__ValuationSource__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ASSUMED_NAME_CERT</fullName>
+        <default>false</default>
+        <label>Assumed Name Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>NONE</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>CERT_OF_FORMATION</fullName>
+        <default>false</default>
+        <label>Certificate of Formation</label>
+    </customValue>
+    <customValue>
+        <fullName>ARTICLES_OF_INCORPORATION</fullName>
+        <default>false</default>
+        <label>Articles of Incorporation</label>
+    </customValue>
+    <customValue>
+        <fullName>CERT_OF_LIMITED_PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>Certificate of Limited Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_LICENSE</fullName>
+        <default>false</default>
+        <label>Business License</label>
+    </customValue>
+    <description>Supported identification document type</description>
+    <masterLabel>BusinessIdentificationType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

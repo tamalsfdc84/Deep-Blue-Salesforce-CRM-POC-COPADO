@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for all the configs related to MX</description>
+    <fields>
+        <fullName>Accept__c</fullName>
+        <description>accept to be passed in MX APIs</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Accept</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ApiKey__c</fullName>
+        <description>API Key</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>APl Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientId__c</fullName>
+        <description>stores client id for MX flow</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Client Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContentType__c</fullName>
+        <description>Content type passed in MX APIs</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Content Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndPoint__c</fullName>
+        <description>Endpoint url of the requests</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>End Point</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LogRequest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked http request body will be logged in &apos;Debug Logs&apos;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked http request body will be logged in &apos;Debug Logs&apos;.</inlineHelpText>
+        <label>Log Request</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LogResponse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked response from http will be logged in &apos;Debug Logs&apos;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked response from http will be logged in &apos;Debug Logs&apos;.</inlineHelpText>
+        <label>Log Response</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Timeout__c</fullName>
+        <description>Timeout for the request . Default set to 20ms</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Timeout</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>MX Configuration</label>
+    <pluralLabel>MX Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

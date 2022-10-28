@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>WELLSFARGO</fullName>
+        <default>false</default>
+        <label>Wells Fargo</label>
+    </customValue>
+    <customValue>
+        <fullName>EAST_WEST_BANK</fullName>
+        <default>false</default>
+        <label>East West Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>US_BANK</fullName>
+        <default>false</default>
+        <label>U.S. Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>CHASE</fullName>
+        <default>false</default>
+        <label>Chase</label>
+    </customValue>
+    <customValue>
+        <fullName>BANK_OF_AMERICA</fullName>
+        <default>false</default>
+        <label>Bank of America</label>
+    </customValue>
+    <customValue>
+        <fullName>CITI</fullName>
+        <default>false</default>
+        <label>Citi</label>
+    </customValue>
+    <customValue>
+        <fullName>CAPITAL_ONE</fullName>
+        <default>false</default>
+        <label>Capital One</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Names of financial institutions/banks maintained in the system</description>
+    <masterLabel>FinancialInstitution</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

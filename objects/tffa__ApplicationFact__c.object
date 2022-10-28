@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Characteristics of an application, relevant for reporting and analytics. A subset of the actual information contained in an application. Comparable to a fact table in a star schema.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>tffa__AbandonedRoutingDecisionStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Decision Strategy of Routing Matrix when the application was in Abandoned status. Can be used for analysing the efficacy of the strategy during Champion/Challenger testing. e.g. does the new strategy involving new set of routing rules (based on new facts) yield better results.</description>
+        <externalId>false</externalId>
+        <label>Abandoned Routing Decision Strategy</label>
+        <referenceTo>tffa__DecisionStrategy__c</referenceTo>
+        <relationshipLabel>Abandoned Application Facts</relationshipLabel>
+        <relationshipName>AbandonedApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Abandoned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the application was abandoned (status=ABANDONED). Useful in reporting. e.g. report conversion rate for abandoned Application(s).</description>
+        <externalId>false</externalId>
+        <label>Abandoned</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AccountOpenedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when the account was opened (in core) for the application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account opened on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AccountPurpose__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specialised Account Purpose</description>
+        <externalId>false</externalId>
+        <label>Account purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AccountPurpose</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__AddOnServices__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of selected add-on services.</description>
+        <externalId>false</externalId>
+        <label>Add-on Services</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AddOnServiceType</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures certificate amount for certificate application and requested amount for lending application.</description>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Application__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to Application.</description>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>Facts</relationshipLabel>
+        <relationshipName>Facts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ApprovedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of approval of the application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Approved on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__BrandEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The current brand of the application</description>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <referenceTo>tffa__Brand__c</referenceTo>
+        <relationshipLabel>ApplicationFacts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Brand__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Brand code of the Brand for the application if applicable</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Brand Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BundleCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique product bundle code maintained in the system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Bundle code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BundleName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique product bundle name maintained in the system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Bundle name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Bundle__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Bundle code identifier</description>
+        <externalId>false</externalId>
+        <label>Bundle</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Product Bundle not valid.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Bundled Applications Facts</relationshipLabel>
+        <relationshipName>BundledApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Campaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The individual campaign name, slogan, promo code associated with the Submission.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CancellationReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reason why the application was cancelled.</description>
+        <externalId>false</externalId>
+        <label>Cancellation reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationCancellationReason</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CancelledBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The user who cancelled the application.</description>
+        <externalId>false</externalId>
+        <label>Cancelled by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>CancelledApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Channel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the channel from which the application has been originated.</description>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__SubmissionChannelType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CreditDecisionOutcome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Outcome of the Credit decisioning process.</description>
+        <externalId>false</externalId>
+        <label>Credit Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationDecisionOutcome</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CreditDecisionStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Decision Strategy of related (Credit) Matrix. Can be used for analysing the efficacy of the strategy during Champion/Challenger testing. e.g. does the new strategy involving new set of rules (based on new facts) yield better results.</description>
+        <externalId>false</externalId>
+        <label>Credit Decision Strategy</label>
+        <referenceTo>tffa__DecisionStrategy__c</referenceTo>
+        <relationshipLabel>Credit Decisioned Application Facts</relationshipLabel>
+        <relationshipName>CreditDecisionedApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CrossChannel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the application was submitted from a channel different from the originating channel.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(tffa__Channel__c) &lt;&gt; TEXT(tffa__SubmittedChannel__c)</formula>
+        <label>Cross Channel</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CrossSellSourceProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized category field of the cross sell source product.</description>
+        <externalId>false</externalId>
+        <label>Cross sell source product category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CrossSellSourceProductCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized code field of the cross sell source product.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cross sell source product code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CrossSellSourceProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to product that resulted in the cross sell application.</description>
+        <externalId>false</externalId>
+        <label>Cross sell source product</label>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Cross Sell Application Facts</relationshipLabel>
+        <relationshipName>CrossSellApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CrossSell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether current application is due to cross-sell of product</description>
+        <externalId>false</externalId>
+        <label>Cross sell</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DeclinedReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reason why the application was declined.</description>
+        <externalId>false</externalId>
+        <label>Declined reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationDeclinedReason</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceBrowser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The browser of the client creating the application</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Browser</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationCity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The city of the device</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationContinent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The continent where device located</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location Continent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The country where device located</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationState__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The state (address) where the device resides.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the precise geolocation of the device from which application was made. A device&apos;s IP can be used to derive this value within some degree of confidence.</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Device Location</label>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceOS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The OS of the client creating the application</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device OS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Device__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifier of the device from which application is created</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External identifier. Stores the identifier of the associated application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FinancialNeedFact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to financial need (fact) acting as the source of the recommendation that resulted in the application.</description>
+        <externalId>false</externalId>
+        <label>Financial Need Fact</label>
+        <referenceTo>tffa__FinancialNeedFact__c</referenceTo>
+        <relationshipLabel>Applications</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__FundedAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount funded for the account opened in the current application. This will be sum of all amounts from successfully completed funding requests.</description>
+        <externalId>false</externalId>
+        <label>Funded Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__FundingStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Funding status of the application.</description>
+        <externalId>false</externalId>
+        <label>Funding status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__FundingStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__FundingType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of funding selected for the application.</description>
+        <externalId>false</externalId>
+        <label>Funding type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__FundingType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__IsBusiness__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if business type of product is selected</description>
+        <externalId>false</externalId>
+        <label>Is Business</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsCloned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, the application contains multiple accounts. Each account is represented by an application term.</description>
+        <externalId>false</externalId>
+        <label>Has multiple accounts</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsLadder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, the application contains multiple CD accounts for the purpose of laddering. Each account is represented by an application term.</description>
+        <externalId>false</externalId>
+        <label>Is CD ladder</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsLending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the product category belongs to lending</description>
+        <externalId>false</externalId>
+        <label>Is Lending</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsMultiProductSubmission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the application is part of a multi-product submission.</description>
+        <externalId>false</externalId>
+        <label>Is multi-product submission</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__KYCDecisionOutcome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Outcome of the KYC decisioning process.</description>
+        <externalId>false</externalId>
+        <label>KYC Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationDecisionOutcome</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__KYCDecisionStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Decision Strategy of related (KYC) Matrix. Can be used for analysing the efficacy of the strategy during Champion/Challenger testing. e.g. does the new strategy involving new set of rules (based on new facts) yield better results.</description>
+        <externalId>false</externalId>
+        <label>KYC Decision Strategy</label>
+        <referenceTo>tffa__DecisionStrategy__c</referenceTo>
+        <relationshipLabel>KYC Decisioned Application Facts</relationshipLabel>
+        <relationshipName>KYCDecisionedApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastSavedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time on which application was last saved as draft (status=SAVED).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Saved on</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastSyncedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of last synchronization with application record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last synced on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LocationCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized code field of related Location (branch).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Location code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The current geographical location of the application. This will be computed and be useful for regulations.</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <referenceTo>tffa__Location__c</referenceTo>
+        <relationshipLabel>ApplicationFacts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Medium__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The advertising, marketing or traffic medium associated with the Submission.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfCustomers__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of existing customers in the application.</description>
+        <externalId>false</externalId>
+        <formula>tffa__NumberOfParties__c - tffa__NumberOfProspects__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfIndividuals__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of parties of type INDIVIDUAL in the application.</description>
+        <externalId>false</externalId>
+        <label>Individuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfOrganizations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of parties of type ORGANIZATION in the application.</description>
+        <externalId>false</externalId>
+        <label>Organizations</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfParties__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of parties in the application.</description>
+        <externalId>false</externalId>
+        <label>Parties</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfProspects__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of prospects in the application. A prospect is a party who is not a customer of the bank.</description>
+        <externalId>false</externalId>
+        <label>Prospects</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfTerms__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of terms (or accounts) captured under the application.</description>
+        <externalId>false</externalId>
+        <label>Number of Accounts / Terms</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, useful for reporting</inlineHelpText>
+        <label>Applications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OrganizationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Organization type of primary party.</description>
+        <externalId>false</externalId>
+        <label>Organization type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__OrganizationType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__OutOfSync__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if the record is out of sync with the application record.</description>
+        <externalId>false</externalId>
+        <formula>ISNULL( tffa__LastSyncedOn__c )  || tffa__Application__r.LastModifiedDate  &gt;  tffa__LastSyncedOn__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Out of Sync</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyAge__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Age of the primary party (individual) in the application.</description>
+        <externalId>false</externalId>
+        <label>Party age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyCity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>City of the primary party in the application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Party city</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Country of the primary party in the application.</description>
+        <externalId>false</externalId>
+        <label>Party country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AddressCountry</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyCreditBureauScore__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a credit bureau (e.g. Equifax, TransUnion) to the primary party. It is a reflection of the party&apos;s credit worthiness.</description>
+        <externalId>false</externalId>
+        <label>Party Credit bureau score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyDebitBureauScore__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a debit bureau (e.g. ChexSystems) to the primary party. e.g. QualiFile score. It is a reflection of the party&apos;s banking behavour.</description>
+        <externalId>false</externalId>
+        <label>Party Debit Bureau score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyFICOScore__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The FICO score of the primary party (individual) in the application.</description>
+        <externalId>false</externalId>
+        <label>Party FICO score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyGender__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Gender of the primary party (individual) in the application.</description>
+        <externalId>false</externalId>
+        <label>Party gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__Gender</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyRole__c</fullName>
+        <defaultValue>&quot;PROSPECT&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The role played by the primary party in the bank - CUSTOMER, PROSPECT.  This is different from applicant role which is specific to an application. Represents a fact.</description>
+        <externalId>false</externalId>
+        <label>Party role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyRole</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PartySegment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures different groups of people or organizations an enterprise aims to reach and serve. This field captures segment code. In case of multiple parties, segment of primary party is used.</description>
+        <externalId>false</externalId>
+        <label>Party Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartySegment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyState__c</fullName>
+        <deprecated>false</deprecated>
+        <description>State (address) of the primary party in the application.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Party state</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyTenure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The tenure of the primary party (at the financial institution). Calculated as period in years since onboarding date.</description>
+        <externalId>false</externalId>
+        <label>Party tenure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Party__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to primary party in the application.</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryPurpose__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary purpose of the lending application</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Primary purpose</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Different product category supported by system. This classifies the flow of account opening, the underlying data model and the servicing components about an account.</description>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized code field of related Product.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product code identifier.</description>
+        <externalId>false</externalId>
+        <label>Financial Product</label>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PromotionCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A promotion code which was part of a marketing campaign.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Promotion code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Promotion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>A promotion which was part of a marketing campaign that resulted in the application.</description>
+        <externalId>false</externalId>
+        <label>Promotion</label>
+        <referenceTo>tffa__Promotion__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RateLockExpiryDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiry date of the rate lock validity</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Rate lock expiry date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RateLockStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates the current status of rate lock request</description>
+        <externalId>false</externalId>
+        <label>Rate lock status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__RateLockStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__RecommendationFact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to recommendation (fact) that resulted in the application.</description>
+        <externalId>false</externalId>
+        <label>Recommendation Fact</label>
+        <referenceTo>tffa__RecommendationFact__c</referenceTo>
+        <relationshipLabel>Applications</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferralCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The referral code that was applied on the submission.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referral code (value)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Referral__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The referral acting as the source of the application.</description>
+        <externalId>false</externalId>
+        <label>Referral</label>
+        <referenceTo>tffa__Referral__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Reopened__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the application was reopened. Useful in reporting.</description>
+        <externalId>false</externalId>
+        <label>Reopened</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the application was in review (status=REVIEW). Useful in reporting. e.g. report conversion rate for review Application(s).</description>
+        <externalId>false</externalId>
+        <label>Review</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The source of the Submission. This could be Online banking, Walk-in, Promotion</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__State__c</fullName>
+        <defaultValue>&quot;Init&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The stage of the application in context of the product applied. This will be different for each product and is more granular than the status field.
+
+This field will be updated on the state transition the application in the origination workflow.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates current status of the application</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized id field of related submission. Used as a reference to the submission in the absence of the original record (generally purged).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Submission id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmissionName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalized name field of related submission.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Submission name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Submission__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to related submission.</description>
+        <externalId>false</externalId>
+        <label>Submission</label>
+        <referenceTo>tffa__Submission__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicatioFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmittedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The user who submitted the application.</description>
+        <externalId>false</externalId>
+        <label>Submitted By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmittedChannel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be same as created channel unless a different channel was used to submit the application.</description>
+        <externalId>false</externalId>
+        <label>Submitted Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__SubmissionChannelType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SubmittedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when the related submission was submitted.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Submitted on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the related submission was submitted(status=SUBMITTED).</description>
+        <externalId>false</externalId>
+        <label>Submitted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Theme__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The UX theme applied for the related submission, useful for tracking.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>UX Theme</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__UXStrategyCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The UX strategy applied for this submission, useful for tracking</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>UX Strategy Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__UXStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>UX strategy applied for the related submission.</description>
+        <externalId>false</externalId>
+        <label>UX Strategy</label>
+        <referenceTo>tffa__UXStrategy__c</referenceTo>
+        <relationshipLabel>Application Facts</relationshipLabel>
+        <relationshipName>ApplicationFacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The lifetime value (perceived) of the account. An important metric that indicates the total revenue the bank can reasonably expect from the account. Derived from product and other facts.</description>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Application Fact</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Application Facts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

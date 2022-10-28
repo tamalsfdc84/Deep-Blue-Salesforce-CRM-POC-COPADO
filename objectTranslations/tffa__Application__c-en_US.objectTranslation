@@ -1,0 +1,1876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Preference Retry Count --></label>
+        <name>AccPrefRetryCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes Customer creation, Account opening, Beneficiary creation, Update customer missing information,Account funding, Funding hold --></help>
+        <label><!-- Account Opening Status --></label>
+        <name>AccountOpeningStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes both OD Protection and E-Statement --></help>
+        <label><!-- Account Preference Status --></label>
+        <name>AccountPreference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Opening Retry Count --></label>
+        <name>AcctOpenRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>CZAccountAddress__c</name>
+        <relationshipLabel><!-- CZAccountAddress --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Opening Date --></label>
+        <name>CZAccountOpeningDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Processing Error Message --></label>
+        <name>CZApplicationProcessingErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Mode --></label>
+        <name>CZBillingMode__c</name>
+        <picklistValues>
+            <masterLabel>AUTO DEBIT</masterLabel>
+            <translation><!-- AUTO DEBIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANK BOX</masterLabel>
+            <translation><!-- BANK BOX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRINT INVOICE</masterLabel>
+            <translation><!-- PRINT INVOICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAIVE FEE</masterLabel>
+            <translation><!-- WAIVE FEE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Type --></label>
+        <name>CZCautionCode1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Discount Type --></label>
+        <name>CZCautionCode2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caution Code 3 --></label>
+        <name>CZCautionCode3__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>CZCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>CZCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payout Account Number --></label>
+        <name>CZInterestPayoutAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payout Charter Code --></label>
+        <name>CZInterestPayoutCharterCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payout Routing Number --></label>
+        <name>CZInterestPayoutRoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person DOB --></label>
+        <name>CZInvestmentDeceasedPersonBirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person DOD --></label>
+        <name>CZInvestmentDeceasedPersonDeathDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person First Name --></label>
+        <name>CZInvestmentDeceasedPersonFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person Last Name --></label>
+        <name>CZInvestmentDeceasedPersonLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person Tax ID Number --></label>
+        <name>CZInvestmentDeceasedPersonTaxIDNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased Person Tax ID Type --></label>
+        <name>CZInvestmentDeceasedPersonTaxIDType__c</name>
+        <picklistValues>
+            <masterLabel>SSN</masterLabel>
+            <translation><!-- SSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIN</masterLabel>
+            <translation><!-- TIN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount Applies for First Year Only --></label>
+        <name>CZIsDiscountForFirstYearOnly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fund Later Selected --></label>
+        <name>CZIsFundLaterSelected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Large Dollar Hold --></label>
+        <name>CZIsLargeDollarHold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OD Atm Processed --></label>
+        <name>CZIsODAtmProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Outcome Queue Name --></label>
+        <name>CZKYCOutcomeQueueName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line1 --></label>
+        <name>CZLine1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line 2 --></label>
+        <name>CZLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Hold Amount --></label>
+        <name>CZLoanHoldAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Hold Expiry Date --></label>
+        <name>CZLoanHoldExpiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>CZLocation__c</name>
+        <relationshipLabel><!-- Location --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer --></label>
+        <name>CZPrimaryOfficer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Billing Mode --></label>
+        <name>CZRenewalBillingMode__c</name>
+        <picklistValues>
+            <masterLabel>AUTO DEBIT</masterLabel>
+            <translation><!-- AUTO DEBIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANK BOX</masterLabel>
+            <translation><!-- BANK BOX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRINT INVOICE</masterLabel>
+            <translation><!-- PRINT INVOICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAIVE FEE</masterLabel>
+            <translation><!-- WAIVE FEE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution Certifier 1 --></label>
+        <name>CZResolutionCertifier1__c</name>
+        <relationshipLabel><!-- CZResultionCertifier1 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resolution Certifier 2 --></label>
+        <name>CZResolutionCertifier2__c</name>
+        <relationshipLabel><!-- CZResultionCertifier2 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resolution Certifier --></label>
+        <name>CZResultionCertifier__c</name>
+        <relationshipLabel><!-- CZResultionCertifier --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SDB Discount Reason --></label>
+        <name>CZSDBDiscountReasonTxt__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDB Rate Applied --></label>
+        <name>CZSDBRateApplied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Officer --></label>
+        <name>CZSecondaryOfficer__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>CZState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 1 Expiry Date --></label>
+        <name>CZStatusCode1ExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 1 --></label>
+        <name>CZStatusCode1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 2 Expiry Date --></label>
+        <name>CZStatusCode2ExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 2 --></label>
+        <name>CZStatusCode2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 3 Expiry Date --></label>
+        <name>CZStatusCode3ExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code 3 --></label>
+        <name>CZStatusCode3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Successor Custodian --></label>
+        <name>CZSuccessorCustodian__c</name>
+    </fields>
+    <fields>
+        <label><!-- TIN Certifier --></label>
+        <name>CZTINCertifier__c</name>
+        <relationshipLabel><!-- CZTINCertifier --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title 1 --></label>
+        <name>CZTitle1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title 2 --></label>
+        <name>CZTitle2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title 3 --></label>
+        <name>CZTitle3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title 4 --></label>
+        <name>CZTitle4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title 5 --></label>
+        <name>CZTitle5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>CZZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost center --></label>
+        <name>CostCenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Number --></label>
+        <name>DPTDId__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the BIN pre-selected from the URL Parameter --></help>
+        <label><!-- Debit Card BIN --></label>
+        <name>DebitCardBIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Card Issuance Status --></label>
+        <name>DebitCardIssuanceStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Card Issue Retry Count --></label>
+        <name>DebitCardIssueRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCM Upload Retry Count --></label>
+        <name>FCMUploadRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCM Upload Status --></label>
+        <name>FCMUploadStatus__c</name>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation><!-- FAILURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORE INFO</masterLabel>
+            <translation><!-- MORE INFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FIS Branch Code --></label>
+        <name>FISBranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- InterestPlanCode --></label>
+        <name>InterestPlanCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCurrentIterAccOpen --></label>
+        <name>IsAccAlreadyOpened__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCounterOffer --></label>
+        <name>IsCounterOffer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Routing Required --></label>
+        <name>IsRoutingRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Upload Retry Count --></label>
+        <name>MDMUploadRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Upload Status --></label>
+        <name>MDMUploadStatus__c</name>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation><!-- FAILURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Party Name --></label>
+        <name>PrimaryPartyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmissionName --></label>
+        <name>SubmissionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- APR --></label>
+        <name>tffa__APR__c</name>
+    </fields>
+    <fields>
+        <label><!-- APY --></label>
+        <name>tffa__APY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abandoned Routing Decision Strategy --></label>
+        <name>tffa__AbandonedRoutingDecisionStrategy__c</name>
+        <relationshipLabel><!-- Abandoned Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account opened on --></label>
+        <name>tffa__AccountOpenedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account purpose --></label>
+        <name>tffa__AccountPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Title --></label>
+        <name>tffa__AccountTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual closing date --></label>
+        <name>tffa__ActualClosingDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual closing disclosure date --></label>
+        <name>tffa__ActualClosingDisclosureDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual credit decision date --></label>
+        <name>tffa__ActualCreditDecisionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual loan estimate date --></label>
+        <name>tffa__ActualLoanEstimateDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique identifier of the source entity (party) used for prefilling the account address. --></help>
+        <label><!-- Address Prefill source id --></label>
+        <name>tffa__AddressPrefillSourceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Prefilled --></label>
+        <name>tffa__AddressPrefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adverse action notice required --></label>
+        <name>tffa__AdverseActionNoticeRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>tffa__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved amount --></label>
+        <name>tffa__ApprovedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved credit limit --></label>
+        <name>tffa__ApprovedCreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved term --></label>
+        <name>tffa__ApprovedTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Credit Decision outcome --></label>
+        <name>tffa__AutoCreditDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Matrix Row --></label>
+        <name>tffa__AutoCreditDecisionRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto KYC Decision outcome --></label>
+        <name>tffa__AutoKYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Remarks --></label>
+        <name>tffa__AutoKYCDecisionRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon amount --></label>
+        <name>tffa__BalloonAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon indicator --></label>
+        <name>tffa__BalloonIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon term --></label>
+        <name>tffa__BalloonTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base rate type --></label>
+        <name>tffa__BaseRateType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>tffa__Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle Code --></label>
+        <name>tffa__BundleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle name --></label>
+        <name>tffa__BundleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product Bundle not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Bundle__c</name>
+        <relationshipLabel><!-- Bundled Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business line of credit purpose --></label>
+        <name>tffa__BusinessLineOfCreditPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Loan Processing Method --></label>
+        <name>tffa__BusinessLoanProcessingMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Loan purpose --></label>
+        <name>tffa__BusinessLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business refinance loan purpose --></label>
+        <name>tffa__BusinessRefinanceLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDD Status --></label>
+        <name>tffa__CDDStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation comments --></label>
+        <name>tffa__CancellationComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation reason --></label>
+        <name>tffa__CancellationReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity Comments --></label>
+        <name>tffa__CapacityComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Comments --></label>
+        <name>tffa__CapitalComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashout purpose business --></label>
+        <name>tffa__CashoutPurposeBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashout purpose personal --></label>
+        <name>tffa__CashoutPurposePersonal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashout purpose --></label>
+        <name>tffa__CashoutPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Character Comments --></label>
+        <name>tffa__CharacterComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Comments --></label>
+        <name>tffa__CollateralComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>tffa__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Comments --></label>
+        <name>tffa__ConditionComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cosigner Exists --></label>
+        <name>tffa__CosignerExists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>tffa__CostCenterCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional information about the counter offer for the applicant to view. --></help>
+        <label><!-- Counter Offer comments --></label>
+        <name>tffa__CounterOfferComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer expires on --></label>
+        <name>tffa__CounterOfferExpiresOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer product name --></label>
+        <name>tffa__CounterOfferProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Counter offer product must be of same category as original product --></errorMessage>
+        </lookupFilter>
+        <name>tffa__CounterOfferProduct__c</name>
+        <relationshipLabel><!-- Counter Offer Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer proposed on --></label>
+        <name>tffa__CounterOfferProposedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer rejected comments --></label>
+        <name>tffa__CounterOfferRejectedComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Offer status --></label>
+        <name>tffa__CounterOfferStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter offers --></label>
+        <name>tffa__CounterOffers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credi card rejected comments --></label>
+        <name>tffa__CrediCardRejectedComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Approval Reason --></label>
+        <name>tffa__CreditApprovalReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Bureau Status --></label>
+        <name>tffa__CreditBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card liability type --></label>
+        <name>tffa__CreditCardLiabilityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card purpose --></label>
+        <name>tffa__CreditCardPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit decision next action --></label>
+        <name>tffa__CreditDecisionNextAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision outcome --></label>
+        <name>tffa__CreditDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Overridden --></label>
+        <name>tffa__CreditDecisionOverridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Override Comments --></label>
+        <name>tffa__CreditDecisionOverrideComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Strategy --></label>
+        <name>tffa__CreditDecisionStrategy__c</name>
+        <relationshipLabel><!-- Credit Decisioned Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Declined Reason --></label>
+        <name>tffa__CreditDeclinedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cross sell --></label>
+        <name>tffa__CrossSell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto account status --></label>
+        <name>tffa__CryptoAccountStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto currency balance --></label>
+        <name>tffa__CryptoCurrencyBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto currency --></label>
+        <name>tffa__CryptoCurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto custodian --></label>
+        <name>tffa__CryptoCustodian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto master account number --></label>
+        <name>tffa__CryptoMasterAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto program id --></label>
+        <name>tffa__CryptoProgramId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto program name --></label>
+        <name>tffa__CryptoProgramName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crypto symbol --></label>
+        <name>tffa__CryptoSymbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Bureau Status --></label>
+        <name>tffa__DebitBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Service Coverage Ratio (DSCR) --></label>
+        <name>tffa__DebtServiceCoverageRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt to Asset Ratio --></label>
+        <name>tffa__DebtToAssetRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt to Income Ratio (DTI) --></label>
+        <name>tffa__DebtToIncomeRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents birth date --></label>
+        <name>tffa__DecedentsBirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents death date --></label>
+        <name>tffa__DecedentsDeathDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents first name --></label>
+        <name>tffa__DecedentsFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents last name --></label>
+        <name>tffa__DecedentsLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents middle name --></label>
+        <name>tffa__DecedentsMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decedents SSN --></label>
+        <name>tffa__DecedentsSSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>tffa__DecedentsSuffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined comments --></label>
+        <name>tffa__DeclinedComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined reason --></label>
+        <name>tffa__DeclinedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box account number --></label>
+        <name>tffa__DepositBoxAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box code --></label>
+        <name>tffa__DepositBoxCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box description --></label>
+        <name>tffa__DepositBoxDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box expiration date --></label>
+        <name>tffa__DepositBoxExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Box Expiration Term --></label>
+        <name>tffa__DepositBoxExpirationTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box key deposit amount --></label>
+        <name>tffa__DepositBoxKeyDepositAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Box Location (Branch) Code --></label>
+        <name>tffa__DepositBoxLocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Box Rental Discount --></label>
+        <name>tffa__DepositBoxRentalDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box rental fee --></label>
+        <name>tffa__DepositBoxRentalFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit box size --></label>
+        <name>tffa__DepositBoxSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Box Start Date --></label>
+        <name>tffa__DepositBoxStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Add Ons Price --></label>
+        <name>tffa__DeviceAddOnsPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Billing Frequency --></label>
+        <name>tffa__DeviceBillingFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Purchase Price --></label>
+        <name>tffa__DevicePurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Quantity --></label>
+        <name>tffa__DeviceQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Rental Fees --></label>
+        <name>tffa__DeviceRentalFees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount points --></label>
+        <name>tffa__DiscountPoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Down payment percentage --></label>
+        <name>tffa__DownPaymentPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Down payment --></label>
+        <name>tffa__DownPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education Completion date --></label>
+        <name>tffa__EducationCompletionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education End date --></label>
+        <name>tffa__EducationEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education grade --></label>
+        <name>tffa__EducationGrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education major --></label>
+        <name>tffa__EducationMajor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education Start date --></label>
+        <name>tffa__EducationStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective rate --></label>
+        <name>tffa__EffectiveRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated closing cost --></label>
+        <name>tffa__EstimatedClosingCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle make --></label>
+        <name>tffa__ExchangeVehicleMake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle market value --></label>
+        <name>tffa__ExchangeVehicleMarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle model --></label>
+        <name>tffa__ExchangeVehicleModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle monthly payment --></label>
+        <name>tffa__ExchangeVehicleMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle outstanding balance --></label>
+        <name>tffa__ExchangeVehicleOutstandingBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle type --></label>
+        <name>tffa__ExchangeVehicleType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vehicle year --></label>
+        <name>tffa__ExchangeVehicleYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange vin --></label>
+        <name>tffa__ExchangeVin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Card Number --></label>
+        <name>tffa__ExistingCardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Closing Date --></label>
+        <name>tffa__ExpectedClosingDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected closing disclosure date --></label>
+        <name>tffa__ExpectedClosingDisclosureDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected credit decision date --></label>
+        <name>tffa__ExpectedCreditDecisionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected loan estimate date --></label>
+        <name>tffa__ExpectedLoanEstimateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry date --></label>
+        <name>tffa__ExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External facility id --></label>
+        <name>tffa__ExternalFacilityId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External mortgage --></label>
+        <name>tffa__ExternalMortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fact ID --></label>
+        <name>tffa__Fact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Need --></label>
+        <name>tffa__FinancialNeed__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fraud Status --></label>
+        <name>tffa__FraudStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funded Amount --></label>
+        <name>tffa__FundedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Heloc Purpose --></label>
+        <name>tffa__HELOCPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has add on vehicle --></label>
+        <name>tffa__HasAddOnVehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has beneficiary --></label>
+        <name>tffa__HasBeneficiary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has External Disclosures --></label>
+        <name>tffa__HasExternalDisclosure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has External Disclosures (DEPRECATED) --></label>
+        <name>tffa__HasExternalDisclosures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has vehicle customizations --></label>
+        <name>tffa__HasVehicleCustomizations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has vehicle insurance --></label>
+        <name>tffa__HasVehicleInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Insurance Plan Coverage Type --></label>
+        <name>tffa__HealthInsurancePlanCoverageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest degree obtained --></label>
+        <name>tffa__HighestDegreeObtained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Expense Ratio --></label>
+        <name>tffa__HousingExpenseRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hull identification number --></label>
+        <name>tffa__HullIdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA Status --></label>
+        <name>tffa__IDAStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDV Status --></label>
+        <name>tffa__IDVStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indexed rate --></label>
+        <name>tffa__IndexedRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate adjustment duration --></label>
+        <name>tffa__InitialRateAdjustmentDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest only indicator --></label>
+        <name>tffa__InterestOnlyIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest only term --></label>
+        <name>tffa__InterestOnlyTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payout Frequency --></label>
+        <name>tffa__InterestPayoutFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payout Modes --></label>
+        <name>tffa__InterestPayoutMode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Account Type --></label>
+        <name>tffa__InvestmentAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment contribution source type --></label>
+        <name>tffa__InvestmentContributionSourceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment contribution Tax Year --></label>
+        <name>tffa__InvestmentContributionTaxYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Contribution Type --></label>
+        <name>tffa__InvestmentContributionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Plan Number --></label>
+        <name>tffa__InvestmentPlanNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Plan Type --></label>
+        <name>tffa__InvestmentPlanType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business --></label>
+        <name>tffa__IsBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has multiple accounts --></label>
+        <name>tffa__IsCloned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is deposit box discount applied --></label>
+        <name>tffa__IsDepositBoxDiscountApplied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is deposit box fee waived --></label>
+        <name>tffa__IsDepositBoxFeeWaived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is deposit box renewal captured --></label>
+        <name>tffa__IsDepositBoxRenewalCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is disbursement account captured --></label>
+        <name>tffa__IsDisbursementAccountCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Disclosure Document Generated --></label>
+        <name>tffa__IsDisclosureDocumentGenerated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Disclosure Signed --></label>
+        <name>tffa__IsDisclosureSigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Disclosure Signing Required --></label>
+        <name>tffa__IsDisclosureSigningRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is exchange vehicle captured --></label>
+        <name>tffa__IsExchangeVehicleCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Existing Investment Plan --></label>
+        <name>tffa__IsExistingInvestmentPlan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Captured ? --></label>
+        <name>tffa__IsFundingCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Funding Identity Mismatch ? --></label>
+        <name>tffa__IsFundingIdentityMismatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Existing Investment Inherited Plan --></label>
+        <name>tffa__IsInheritedInvestmentPlan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is CD ladder --></label>
+        <name>tffa__IsLadder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lending --></label>
+        <name>tffa__IsLending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Owned by Current User --></label>
+        <name>tffa__IsOwnedByCurrentUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Queue Owned --></label>
+        <name>tffa__IsQueueOwned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is rate lock captured --></label>
+        <name>tffa__IsRateLockCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is remote funding captured --></label>
+        <name>tffa__IsRemoteFundingCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is repayment account captured --></label>
+        <name>tffa__IsRepaymentAccountCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Approval Reason --></label>
+        <name>tffa__KYCApprovalReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC decision affected party ids --></label>
+        <name>tffa__KYCDecisionAffectedPartyIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC decision affected party names --></label>
+        <name>tffa__KYCDecisionAffectedPartyNames__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Next Action --></label>
+        <name>tffa__KYCDecisionNextAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>tffa__KYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Overridden --></label>
+        <name>tffa__KYCDecisionOverridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Override Comments --></label>
+        <name>tffa__KYCDecisionOverrideComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Strategy --></label>
+        <name>tffa__KYCDecisionStrategy__c</name>
+        <relationshipLabel><!-- KYC Decisioned Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If set, the user gets an option to remove the parties that led to declined/counter offer decision outcome of the application. --></help>
+        <label><!-- KYC decision supports removal of parties --></label>
+        <name>tffa__KYCDecisionSupportsAffectedPartyRemoval__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Declined Reason --></label>
+        <name>tffa__KYCDeclinedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ladder Plan code --></label>
+        <name>tffa__LadderPlanCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lien priority --></label>
+        <name>tffa__LienPriority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan To Value Ratio (LTV) --></label>
+        <name>tffa__LoanToValueRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>tffa__Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>tffa__Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>tffa__MaskedAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity date --></label>
+        <name>tffa__MaturityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max delinquency duration --></label>
+        <name>tffa__MaxDelinquencyDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max delinquent limit percentage --></label>
+        <name>tffa__MaxDelinquentLimitPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Services Provider --></label>
+        <name>tffa__MerchantServicesProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly repayment amount --></label>
+        <name>tffa__MonthlyRepaymentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage loan purpose --></label>
+        <name>tffa__MortgageLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage repayment type --></label>
+        <name>tffa__MortgageRepaymentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage type --></label>
+        <name>tffa__MortgageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negative amortization indicator --></label>
+        <name>tffa__NegativeAmortizationIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of cards --></label>
+        <name>tffa__NumberOfCards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customers --></label>
+        <name>tffa__NumberOfCustomers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of deposit box keys --></label>
+        <name>tffa__NumberOfDepositBoxKeys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Individuals --></label>
+        <name>tffa__NumberOfIndividuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Organizations --></label>
+        <name>tffa__NumberOfOrganizations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Parties --></label>
+        <name>tffa__NumberOfParties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Prospects --></label>
+        <name>tffa__NumberOfProspects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Stipulations --></label>
+        <name>tffa__NumberOfStipulations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts / Terms --></label>
+        <name>tffa__NumberOfTerms__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Status --></label>
+        <name>tffa__OFACStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Code --></label>
+        <name>tffa__OfferCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Term code --></label>
+        <name>tffa__OfferTermCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <name>tffa__Offer__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity item id --></label>
+        <name>tffa__OpportunityItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original product --></label>
+        <name>tffa__OriginalProduct__c</name>
+        <relationshipLabel><!-- Original Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originated By --></label>
+        <name>tffa__OriginatedBy__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other purpose --></label>
+        <name>tffa__OtherPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding balance --></label>
+        <name>tffa__OutstandingBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>tffa__Parent__c</name>
+        <relationshipLabel><!-- Children --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Personal loc purpose --></label>
+        <name>tffa__PersonalLineOfCreditPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal loan purpose --></label>
+        <name>tffa__PersonalLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre approved reference id --></label>
+        <name>tffa__PreApprovedReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre approved --></label>
+        <name>tffa__PreApproved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepayment penalty indicator --></label>
+        <name>tffa__PrepaymentPenaltyIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepayment penalty term --></label>
+        <name>tffa__PrepaymentPenaltyTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal expired --></label>
+        <name>tffa__PrequalExpired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal expiry date --></label>
+        <name>tffa__PrequalExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal reminder count --></label>
+        <name>tffa__PrequalReminderCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal reminder date --></label>
+        <name>tffa__PrequalReminderDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal validity duration --></label>
+        <name>tffa__PrequalValidityDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal --></label>
+        <name>tffa__Prequal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary purpose --></label>
+        <name>tffa__PrimaryPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>tffa__Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Progress --></label>
+        <name>tffa__Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion code --></label>
+        <name>tffa__PromotionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>tffa__Promotion__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property escrow purpose --></label>
+        <name>tffa__PropertyEscrowPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase price --></label>
+        <name>tffa__PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock cancelled comments --></label>
+        <name>tffa__RateLockCancelledComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock cancelled reason --></label>
+        <name>tffa__RateLockCancelledReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock comments --></label>
+        <name>tffa__RateLockComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock date --></label>
+        <name>tffa__RateLockDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock declined comments --></label>
+        <name>tffa__RateLockDeclinedComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock declined reason --></label>
+        <name>tffa__RateLockDeclinedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock duration --></label>
+        <name>tffa__RateLockDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock expiry date --></label>
+        <name>tffa__RateLockExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock status --></label>
+        <name>tffa__RateLockStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate type --></label>
+        <name>tffa__RateType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>tffa__Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation id --></label>
+        <name>tffa__RecommendationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation item id --></label>
+        <name>tffa__RecommendationItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral code (value) --></label>
+        <name>tffa__ReferralCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>tffa__Referral__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refinance Mortgage purpse --></label>
+        <name>tffa__RefinanceLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refinance program description --></label>
+        <name>tffa__RefinanceProgramDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refinance program type --></label>
+        <name>tffa__RefinanceProgramType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renwal Interest Type --></label>
+        <name>tffa__RenewalInstructionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reopening comments --></label>
+        <name>tffa__ReopeningComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment Amount Captured --></label>
+        <name>tffa__RepaymentAmountCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment amount type --></label>
+        <name>tffa__RepaymentAmountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>tffa__RequestedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested cash limit percentage --></label>
+        <name>tffa__RequestedCashLimitPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested cash limit --></label>
+        <name>tffa__RequestedCashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Credit Limit --></label>
+        <name>tffa__RequestedCreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested daily cash limit --></label>
+        <name>tffa__RequestedDailyCashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested limit utilization percentage --></label>
+        <name>tffa__RequestedLimitUtilizationPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Rate --></label>
+        <name>tffa__RequestedRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Term --></label>
+        <name>tffa__RequestedTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>tffa__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted merchant category set --></label>
+        <name>tffa__RestrictedMerchantCategorySet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revolving --></label>
+        <name>tffa__Revolving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Location State --></label>
+        <name>tffa__SchoolLocationState__c</name>
+    </fields>
+    <fields>
+        <label><!-- School name --></label>
+        <name>tffa__SchoolName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>tffa__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary purpose --></label>
+        <name>tffa__SecondaryPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secured --></label>
+        <name>tffa__Secured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spread --></label>
+        <name>tffa__Spread__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subsequent rate adjustment duration --></label>
+        <name>tffa__SubsequentRateAdjustmentDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the applicant as the one who is qualified to sign TIN certifications or similar tax-related documents for the account. --></help>
+        <label><!-- TIN Certifier Id --></label>
+        <name>tffa__TINCertifierId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term code --></label>
+        <name>tffa__TermCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term deposit rate --></label>
+        <name>tffa__TermDepositRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term unit --></label>
+        <name>tffa__TermUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>tffa__Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total cost --></label>
+        <name>tffa__TotalCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total education aid --></label>
+        <name>tffa__TotalEducationAid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total education cost --></label>
+        <name>tffa__TotalEducationCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total fees --></label>
+        <name>tffa__TotalFees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Additional Details --></label>
+        <name>tffa__VehicleAdditionalDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle identifier --></label>
+        <name>tffa__VehicleIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance agent email --></label>
+        <name>tffa__VehicleInsuranceAgentEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance agent name --></label>
+        <name>tffa__VehicleInsuranceAgentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance agent phone --></label>
+        <name>tffa__VehicleInsuranceAgentPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance expiry date --></label>
+        <name>tffa__VehicleInsuranceExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance issue date --></label>
+        <name>tffa__VehicleInsuranceIssueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance policy number --></label>
+        <name>tffa__VehicleInsurancePolicyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle insurance provider --></label>
+        <name>tffa__VehicleInsuranceProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehichle loan purpose --></label>
+        <name>tffa__VehicleLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle MSRP value --></label>
+        <name>tffa__VehicleMSRPValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle make --></label>
+        <name>tffa__VehicleMake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle mileage --></label>
+        <name>tffa__VehicleMileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle model --></label>
+        <name>tffa__VehicleModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle prefill source --></label>
+        <name>tffa__VehiclePrefillSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle region code --></label>
+        <name>tffa__VehicleRegionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle retail value --></label>
+        <name>tffa__VehicleRetailValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether vehicle is already selected before applying --></help>
+        <label><!-- VehicleSelected --></label>
+        <name>tffa__VehicleSelected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle sub model --></label>
+        <name>tffa__VehicleSubModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle type --></label>
+        <name>tffa__VehicleType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle usage type --></label>
+        <name>tffa__VehicleUsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle use as residence --></label>
+        <name>tffa__VehicleUseAsResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used Vehicle --></label>
+        <name>tffa__VehicleUsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle year --></label>
+        <name>tffa__VehicleYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vin --></label>
+        <name>tffa__Vin__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- A brokerage account is an arrangement in which an investor deposits money with a licensed brokerage firm, which places trades on
+        behalf of the customer. --></description>
+        <label><!-- Brokerage Account --></label>
+        <name>tffa__BROKERAGE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Business Certificate --></label>
+        <name>tffa__BUSINESS_CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Business Checking --></label>
+        <name>tffa__BUSINESS_CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the business to borrow funds. --></description>
+        <label><!-- Business Credit Card --></label>
+        <name>tffa__BUSINESS_CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Business IRA is a type of Traditional IRA for self-employed people or small business owners. A small business owner with one employee or more, or anyone with a freelance income can open a business IRA. --></description>
+        <label><!-- Business Retirement Account --></label>
+        <name>tffa__BUSINESS_IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business line of credit provides flexibility that a regular business loan doesn’t. With a business line of credit, you can borrow up to a certain limit  and pay interest only on the portion of money that you borrow. --></description>
+        <label><!-- Business Line of Credit --></label>
+        <name>tffa__BUSINESS_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Business Money Market --></label>
+        <name>tffa__BUSINESS_MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A commercial real estate loan is a mortgage secured by a lien on commercial property as opposed to residential property --></description>
+        <label><!-- Business Real Estate Loan --></label>
+        <name>tffa__BUSINESS_REALESTATE_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business safe deposit box is a secured container—usually a metal box—that stays in the safe or vault of a federally insured bank
+        or credit union. Safe deposit boxes are used to keep valuables, important documents for the business --></description>
+        <label><!-- Business Safe Deposit Box --></label>
+        <name>tffa__BUSINESS_SAFE_DEPOSIT_BOX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that limit the number of withdrawals --></description>
+        <label><!-- Business Savings --></label>
+        <name>tffa__BUSINESS_SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A traditional business term loan is a lump sum of capital that you pay back with regular repayments at a fixed interest rate. Most business owners use the proceeds of term loans to finance a specific, one-off investment for their small business. --></description>
+        <label><!-- Business Term Loan --></label>
+        <name>tffa__BUSINESS_TERM_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Certificate --></label>
+        <name>tffa__CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Checking --></label>
+        <name>tffa__CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the cardholder to borrow funds. --></description>
+        <label><!-- Credit Card --></label>
+        <name>tffa__CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An account which allows buying/selling cryptocurrency via a custodian (e.g. NYDIG). --></description>
+        <label><!-- Crypto Custodial --></label>
+        <name>tffa__CRYPTO_CUSTODIAL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An education loan is money borrowed to finance education or school related expenses. Payments are often deferred while in school and for a six-month grace period after graduation --></description>
+        <label><!-- Education Loan --></label>
+        <name>tffa__EDUCATION_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Coverdell education savings account (also known as a Coverdell ESA, a Coverdell account, or just an ESA, and formerly known as an education individual retirement account), is a tax-advantaged investment account in the U.S --></description>
+        <label><!-- Education Savings Account --></label>
+        <name>tffa__ESA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A home equity line of credit (HELOC) is a loan in which the lender agrees to lend a maximum amount within an agreed period, where the collateral is the borrowers equity in his/her house (similar to a second mortgage) --></description>
+        <label><!-- Home Equity Line of Credit --></label>
+        <name>tffa__HELOC</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Health Savings Account (HSA) is a tax-advantaged account created for individuals who are covered under high-deductible health plans (HDHPs) to save for medical expenses that HDHPs do not cover --></description>
+        <label><!-- Health Savings Account --></label>
+        <name>tffa__HSA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An individual retirement account (IRA) is a tax-advantaged investing tool that individuals use to earmark funds for retirement savings --></description>
+        <label><!-- Individual Retirement Account --></label>
+        <name>tffa__IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Merchant services is a broad category of financial services that enables a business to accept a transaction payment through a secure
+        (encrypted) channel using the customer&apos;s credit card or debit card or NFC/RFID enabled device. --></description>
+        <label><!-- Merchant Services Account --></label>
+        <name>tffa__MERCHANT_SERVICES</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Money Market --></label>
+        <name>tffa__MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A mortgage is a debt instrument, secured by the collateral of specified real estate property, that the borrower is obliged to pay back with a predetermined set of payments --></description>
+        <label><!-- Mortgage --></label>
+        <name>tffa__MORTGAGE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A line of credit (LOC ) is preset borrowing limit that can be used at any time. The borrower can take money out as needed until the limit is reached. --></description>
+        <label><!-- Personal Line of Credit --></label>
+        <name>tffa__PERSONAL_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An unsecured loan is a loan that is issued and supported only by the borrower&apos;s creditworthiness --></description>
+        <label><!-- Personal Loan --></label>
+        <name>tffa__PERSONAL_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A safe deposit box is a secured container—usually a metal box—that stays in the safe or vault of a federally insured bank
+        or credit union. Safe deposit boxes are used to keep valuables, important documents for the individual --></description>
+        <label><!-- Safe Deposit Box --></label>
+        <name>tffa__SAFE_DEPOSIT_BOX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that limit the number of withdrawals --></description>
+        <label><!-- Savings --></label>
+        <name>tffa__SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SBA loans are business loans guaranteed by the Small Business Administration.SBA loan programs let you borrow money for working capital, purchasing inventory or equipment, refinancing other debts, or buying real estate. --></description>
+        <label><!-- SBA Loan --></label>
+        <name>tffa__SBA_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A vehicle loan  is a short-term loan in which the borrower&apos;s vehicle  title is used as collateral --></description>
+        <label><!-- Vehicle Loan --></label>
+        <name>tffa__VEHICLE_LOAN</name>
+    </recordTypes>
+</CustomObjectTranslation>

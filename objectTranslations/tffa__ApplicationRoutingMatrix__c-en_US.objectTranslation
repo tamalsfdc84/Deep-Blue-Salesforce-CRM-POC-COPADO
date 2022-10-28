@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Opening Status(Set) --></label>
+        <name>AccountOpeningStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountPreference Status(Set) --></label>
+        <name>AccountPreference__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Outcome Queue Name --></label>
+        <name>CZKYCOutcomeQueueName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Card Issuance Status(Set) --></label>
+        <name>DebitCardIssuanceStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent --></label>
+        <name>tffa__Agent__c</name>
+        <relationshipLabel><!-- Application Routing Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount (from) --></label>
+        <name>tffa__AmountFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (to) --></label>
+        <name>tffa__AmountTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignee type --></label>
+        <name>tffa__AssigneeType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel (set) --></label>
+        <name>tffa__ChannelSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <lookupFilter>
+            <errorMessage><!-- Strategies configured for Application Routing Matrix can only be selected. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Application Routing Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;XXX;B01; --></help>
+        <label><!-- Location code (set) --></label>
+        <name>tffa__LocationCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Offer Code Set --></label>
+        <name>tffa__OfferCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party segment (set) --></label>
+        <name>tffa__PartySegmentSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Product code (set) --></label>
+        <name>tffa__ProductCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;PROMO-01;PROMO-02; --></help>
+        <label><!-- Promotion code (set) --></label>
+        <name>tffa__PromotionCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue name --></label>
+        <name>tffa__QueueName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (from) --></label>
+        <name>tffa__ScoreFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (to) --></label>
+        <name>tffa__ScoreTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status duration (from) (hrs) --></label>
+        <name>tffa__StatusDurationFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status duration (to) (hrs) --></label>
+        <name>tffa__StatusDurationTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status (set) --></label>
+        <name>tffa__StatusSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>tffa__User__c</name>
+        <relationshipLabel><!-- Application Routing Matrices --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Agent is required --></errorMessage>
+        <name>tffa__AgentIsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Queue name is required --></errorMessage>
+        <name>tffa__QueueNameIsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- User is required --></errorMessage>
+        <name>tffa__UserIsRequired</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MassClone --></label>
+        <name>tffa__MassClone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassDelete --></label>
+        <name>tffa__MassDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

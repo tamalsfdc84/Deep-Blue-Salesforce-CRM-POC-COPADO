@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- VerifyFunding --></label>
+        <name>VerifyFunding</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel (set) --></label>
+        <name>tffa__ChannelSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, applications in current submission can be used as source accounts for internal transfer. The applications are filtered by the product categories specified in Internal Transfer Allowed Account Category. --></help>
+        <label><!-- Internal transfer allow new accounts --></label>
+        <name>tffa__InternalTransferAllowNewAccounts__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of allowed product categories (semicolon separated) for source accounts available for internal transfer. --></help>
+        <label><!-- Internal Xfer allowed account category --></label>
+        <name>tffa__InternalTransferAllowedAccountCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is remote funding captured --></label>
+        <name>tffa__IsRemoteCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max amount --></label>
+        <name>tffa__MaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min amount --></label>
+        <name>tffa__MinAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Funding Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type (outcome) --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

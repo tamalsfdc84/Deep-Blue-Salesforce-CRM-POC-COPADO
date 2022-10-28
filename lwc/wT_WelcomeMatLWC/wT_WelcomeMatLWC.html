@@ -1,0 +1,168 @@
+<template>
+    <template if:true={isRetail}>
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="welcome-mat-13-label" aria-describedby="welcome-mat-13-content" aria-modal="true">
+        <div class="slds-modal__container">
+            <div class="slds-modal__content" id="welcome-mat-13-content">
+                <div class="slds-welcome-mat">
+                    <div class="slds-welcome-mat__content slds-grid">
+                        <div class="slds-welcome-mat__info slds-size_1-of-2">
+                            <div class="slds-welcome-mat__info-content">
+                                <h2 class="slds-welcome-mat__info-title" id="welcome-mat-13-label">Salesforce is here!</h2>
+                                <div class="slds-welcome-mat__info-description slds-text-longform">
+                                    <p>
+                                        Our investment in this best-in-class Customer Relationship Management platform will enable you to better deliver on Wintrust’s commitment to being Chicago's Bank and Wisconsin's Bank. Salesforce was designed to keep the customer at the forefront of our business processes and better help our clients meet their financial goals. In Salesforce, you will be able to see a customer's full relationship across all Wintrust entities, improve referral close rates to our Line of Business partners, and deepen customer relationships by generating customized outbound calling lists.
+                                    </p><br/>
+                                    <p>   
+                                        Training materials can be found in Wintrust University by simply searching Salesforce or on our Salesforce SharePoint page.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="slds-welcome-mat__tiles slds-size_1-of-2">
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to navigate dashboards and your home page</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleClickDB} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to search for a customer or prospect</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleClickSearch} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to create a prospect</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleCreateProspect} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to create a referral</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleCreateReferral} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to qualify a referral</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleQualifyReferral} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slds-welcome-mat__tile">
+                                <a href="#" class="slds-box slds-box_link slds-media">
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">How to Log an Activity</h3><br/>
+                                            <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleActivity} class="slds-m-left_x-small"></lightning-button></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><br/><br/>
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isWealth}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="welcome-mat-13-label" aria-describedby="welcome-mat-13-content" aria-modal="true">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content" id="welcome-mat-14-content">
+                    <div class="slds-welcome-mat">
+                        <div class="slds-welcome-mat__content slds-grid">
+                            <div class="slds-welcome-mat__info slds-size_1-of-2">
+                                <div class="slds-welcome-mat__info-content">
+                                    <h2 class="slds-welcome-mat__info-title" id="welcome-mat-14-label">Salesforce is here!</h2>
+                                    <div class="slds-welcome-mat__info-description slds-text-longform">
+                                        <p>
+                                            Our investment in this best-in-class Customer Relationship Management platform will enable you to better deliver on Wintrust’s commitment to being Chicago's Bank and Wisconsin's Bank. Salesforce was designed to keep the customer at the forefront of our business processes and better help our clients meet their financial goals. In Salesforce, you will be able to see a customer's full relationship across all Wintrust entities, improve referral close rates to our Line of Business partners, and deepen customer relationships by generating customized outbound calling lists.
+                                        </p><br/>
+                                        <p>   
+                                            Training materials can be found in Wintrust University by simply searching Salesforce or on our Salesforce SharePoint page.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="slds-welcome-mat__tiles slds-size_1-of-2">
+                                <li class="slds-welcome-mat__tile">
+                                    <a href="#" class="slds-box slds-box_link slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-welcome-mat__tile-body">
+                                                <h3 class="slds-welcome-mat__tile-title">How to navigate dashboards and your home page</h3><br/>
+                                                <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleClickDB} class="slds-m-left_x-small"></lightning-button></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slds-welcome-mat__tile">
+                                    <a href="#" class="slds-box slds-box_link slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-welcome-mat__tile-body">
+                                                <h3 class="slds-welcome-mat__tile-title">How to search for a customer or prospect</h3><br/>
+                                                <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleClickSearch} class="slds-m-left_x-small"></lightning-button></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slds-welcome-mat__tile">
+                                    <a href="#" class="slds-box slds-box_link slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-welcome-mat__tile-body">
+                                                <h3 class="slds-welcome-mat__tile-title">How to create a prospect</h3><br/>
+                                                <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleCreateProspect} class="slds-m-left_x-small"></lightning-button></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slds-welcome-mat__tile">
+                                    <a href="#" class="slds-box slds-box_link slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-welcome-mat__tile-body">
+                                                <h3 class="slds-welcome-mat__tile-title">How to create a referral</h3><br/>
+                                                <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleCreateReferral} class="slds-m-left_x-small"></lightning-button></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slds-welcome-mat__tile">
+                                    <a href="#" class="slds-box slds-box_link slds-media">
+                                        <div class="slds-media__body">
+                                            <div class="slds-welcome-mat__tile-body">
+                                                <h3 class="slds-welcome-mat__tile-title">How to qualify a referral</h3><br/>
+                                                <p class="slds-welcome-mat__tile-description"><lightning-button variant="brand" label="Open SharePoint URL" title="Open SharePoint URL" onclick={handleQualifyReferral} class="slds-m-left_x-small"></lightning-button></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><br/><br/>                 
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+</template>

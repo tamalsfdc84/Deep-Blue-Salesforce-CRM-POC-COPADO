@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>GREATER_THAN_25</fullName>
+        <default>false</default>
+        <label>Greather Than or Equal to 25%</label>
+    </customValue>
+    <customValue>
+        <fullName>LESS_THAN_25</fullName>
+        <default>false</default>
+        <label>Less Than 25%</label>
+    </customValue>
+    <description>Specifies the percentage of the total business of the borrower&apos;s self-owned business.</description>
+    <masterLabel>OwnershipInterestType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

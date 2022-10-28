@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account type --></label>
+        <name>tffa__AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application0 --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Business Card Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cash limit --></label>
+        <name>tffa__CashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily cash limit --></label>
+        <name>tffa__DailyCashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has cash access --></label>
+        <name>tffa__HasCashAccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is deleted --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is employee details captured --></label>
+        <name>tffa__IsEmployeeDetailsCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is foreign transaction allowed --></label>
+        <name>tffa__IsForeignTransactionAllowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is limit captured --></label>
+        <name>tffa__IsLimitCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level code --></label>
+        <name>tffa__LevelCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level name --></label>
+        <name>tffa__LevelName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master level name --></label>
+        <name>tffa__MasterLevelName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max daily spend limit --></label>
+        <name>tffa__MaxDailySpendLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max delinquency duration --></label>
+        <name>tffa__MaxDelinquencyDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max spend limit --></label>
+        <name>tffa__MaxSpendLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of cards --></label>
+        <name>tffa__NumberOfCards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent level name --></label>
+        <name>tffa__ParentLevelName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>tffa__Parent__c</name>
+        <relationshipLabel><!-- Children --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Restricted merchant category set --></label>
+        <name>tffa__RestrictedMerchantCategorySet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total cash limit --></label>
+        <name>tffa__TotalCashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total daily cash limit --></label>
+        <name>tffa__TotalDailyCashLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total delinquent limit --></label>
+        <name>tffa__TotalDelinquentLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total spend limit --></label>
+        <name>tffa__TotalSpendLimit__c</name>
+    </fields>
+</CustomObjectTranslation>

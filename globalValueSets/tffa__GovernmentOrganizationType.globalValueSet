@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DEPARTMENT_OR_AGENCY</fullName>
+        <default>false</default>
+        <label>A US government department or agency</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVERNMENT_AUTHORITY</fullName>
+        <default>false</default>
+        <label>One that exercises governmental authority on behalf of the US</label>
+    </customValue>
+    <customValue>
+        <fullName>NON_COMMERCIAL</fullName>
+        <default>false</default>
+        <label>A non-commercial non-US government department or agency</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Type of Government Organization. This governs the structure of the business.</description>
+    <masterLabel>GovernmentOrganizationType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

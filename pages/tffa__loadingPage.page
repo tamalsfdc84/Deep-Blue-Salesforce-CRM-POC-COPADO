@@ -1,0 +1,13 @@
+<apex:page applyBodyTag="false" showHeader="false" controller="tffa.SessionController" action="{!initializeLoadingPage}">
+  <head>
+    <link rel="stylesheet" href="{!URLFOR(loadingPageStylesUrl, 'styles.css')}"></link>
+    <style>:root { {!JSENCODE(loadingPageCSSVars)} }</style>
+  </head>
+  <body>
+    <div class="tf-spinner-overlay">
+      <span class="tf-spinner-image">
+        <img></img>
+      </span>
+    </div>    
+  </body>
+</apex:page>

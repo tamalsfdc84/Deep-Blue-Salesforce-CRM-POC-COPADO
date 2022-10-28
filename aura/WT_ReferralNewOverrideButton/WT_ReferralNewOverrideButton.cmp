@@ -1,0 +1,4 @@
+<aura:component implements="force:hasRecordId,lightning:actionOverride" >	
+    <aura:attribute name="objectApiName" type="String" default="Lead" />     
+    <c:wT_ReferralNewOverrideLWC varObjectApiName="{!v.objectApiName}" />   
+</aura:component>

@@ -1,0 +1,19 @@
+<apex:page standardController="tffa__PartyDecisionMatrix__c" recordSetVar="records" extensions="tffa.MassActionController" lightningStylesheets="true">
+  <apex:slds />
+  <apex:pageMessages />
+  <apex:actionStatus id="cloneRecords">
+    <apex:facet name="start">
+      <div class="slds-spinner_container">
+        <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+          <span class="slds-assistive-text">Loading</span>
+          <div class="slds-spinner__dot-a"></div>
+          <div class="slds-spinner__dot-b"></div>
+        </div>
+      </div>
+    </apex:facet>
+  </apex:actionStatus>
+  <apex:form >
+    <apex:actionFunction action="{!cloneRecords}" name="cloneRecords" status="cloneRecords" rerender="cloneRecords"></apex:actionFunction>
+  </apex:form>
+  <script>window.onload=cloneRecords</script>
+</apex:page>

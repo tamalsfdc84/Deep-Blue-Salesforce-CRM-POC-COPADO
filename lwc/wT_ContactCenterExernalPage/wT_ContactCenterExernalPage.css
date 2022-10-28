@@ -1,0 +1,136 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+.container {
+    width: 100%;
+    margin-top: 0px !important;
+}
+
+.inner-div {
+    width: 200px;
+    float: left;
+    padding: 0px 10px;
+    margin-left: 25px !important;
+    border-radius: 5px;
+    height: 300px;
+}
+
+    .inner-div p {
+        word-break: break-word;
+        width: 100%;
+    }
+
+    .inner-div > a {
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+.image-link {
+    height: inherit;
+    width: inherit;
+}
+
+.img-container {
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #0D417E;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px #0D417E solid;
+    -moz-transition: all 1s ease; /* Firefox */
+    -webkit-transition: all 1s ease; /* WebKit */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; /* Standard */
+}
+
+    .img-container:hover {
+        width: inherit;
+        height: inherit !important;
+        /*-moz-transform: rotate(360deg); /* WebKit */
+        /*-webkit-transform: rotate(360deg); /* Opera */
+        /*-o-transform: rotate(360deg); /* Standard */
+        /*transform: rotate(360deg);*/
+        border: 3px #FFF solid;
+        box-shadow: 0px 0px 60px #000000;
+    }
+
+    .block-container {
+        width: 170px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        color: #0D417E;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 3px #0D417E solid;
+        -moz-transition: all 1s ease; /* Firefox */
+        -webkit-transition: all 1s ease; /* WebKit */
+        -o-transition: all 1s ease; /* Opera */
+        transition: all 1s ease; /* Standard */
+    }
+    
+        .block-container:hover {
+            width: 180px;
+            height: 170px !important;
+            /*-moz-transform: rotate(360deg); /* WebKit */
+            /*-webkit-transform: rotate(360deg); /* Opera */
+            /*-o-transform: rotate(360deg); /* Standard */
+            /*transform: rotate(360deg);*/
+            border: 3px #FFF solid;
+            box-shadow: 0px 0px 60px #000000;
+        }
+.linkTitle {
+    color: #0D417E !important;
+}
+/*-----------------Bootstrap Classes---------------------------*/
+    .row:before,
+    .row:after {
+        display: table;
+        content: " ";
+    }
+
+    .row:after {
+        clear: both;
+    }
+
+    .row:before,
+    .row:after {
+        display: table;
+        content: " ";
+    }
+
+    .row:after {
+        clear: both;
+    }
+/*------------------Card Holder CSS-----------------------------*/
+.card-holder {
+    background: #EAEAEA;
+    border: 1px solid #CCC;
+}
+
+    .card-holder .card-header {
+        background-color: rgba(186, 186, 186, 0.70);
+        color: #000;
+        padding: 7px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #cccccc;
+    }
+
+.card-body {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

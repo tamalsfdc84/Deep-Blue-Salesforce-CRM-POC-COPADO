@@ -1,0 +1,7 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="ACH File Transfer Report" recipientType="User" relatedToType="ContentVersion">
+<messaging:plainTextEmailBody >
+Hi,
+File transfer report for ACH files is generated.
+Please find the attached list of the files.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

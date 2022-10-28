@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MALE</fullName>
+        <default>false</default>
+        <label>Male</label>
+    </customValue>
+    <customValue>
+        <fullName>FEMALE</fullName>
+        <default>false</default>
+        <label>Female</label>
+    </customValue>
+    <customValue>
+        <fullName>DND</fullName>
+        <default>false</default>
+        <label>I do not wish to provide this information</label>
+    </customValue>
+    <description>Display gender info</description>
+    <masterLabel>Gender</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

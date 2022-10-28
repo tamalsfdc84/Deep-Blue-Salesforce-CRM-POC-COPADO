@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MAD</fullName>
+        <default>false</default>
+        <label>Minimum Amount Due</label>
+    </customValue>
+    <customValue>
+        <fullName>TAD</fullName>
+        <default>false</default>
+        <label>Total Amount Due</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Preferred due amount repayment option</description>
+    <masterLabel>RepaymentAmountType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

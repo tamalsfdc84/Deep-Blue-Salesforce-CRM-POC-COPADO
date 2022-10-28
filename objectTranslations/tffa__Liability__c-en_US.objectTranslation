@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Liabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Balance --></label>
+        <name>tffa__Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit limit --></label>
+        <name>tffa__CreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creditor --></label>
+        <name>tffa__Creditor__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>tffa__InterestRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Exclude From Asset Report? --></label>
+        <name>tffa__IsExcludedFromAssetReport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is over due --></label>
+        <name>tffa__IsOverDue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is paid off --></label>
+        <name>tffa__IsPaidOff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>tffa__MaskedAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity date --></label>
+        <name>tffa__MaturityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly payment --></label>
+        <name>tffa__MonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage type --></label>
+        <name>tffa__MortgageType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding balance --></label>
+        <name>tffa__OutstandingBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Liabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payoff status indicator --></label>
+        <name>tffa__PayoffStatusIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Name --></label>
+        <name>tffa__ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Property --></label>
+        <name>tffa__PurchaseProperty__c</name>
+        <relationshipLabel><!-- Liabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remaining term --></label>
+        <name>tffa__RemainingTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

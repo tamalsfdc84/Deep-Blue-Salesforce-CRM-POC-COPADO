@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>LOW_CREDIT_SCORE</fullName>
+        <default>false</default>
+        <label>Low Credit Score</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_VALUE_NOT_MATCHING</fullName>
+        <default>false</default>
+        <label>Property Value Not Matching</label>
+    </customValue>
+    <customValue>
+        <fullName>LOW_LTV</fullName>
+        <default>false</default>
+        <label>Low LTV</label>
+    </customValue>
+    <customValue>
+        <fullName>MISSING_INFORMATION</fullName>
+        <default>false</default>
+        <label>Missing information</label>
+    </customValue>
+    <customValue>
+        <fullName>UNSTABLE_EMPLOYMENT_HISTORY</fullName>
+        <default>false</default>
+        <label>Unstable Employment History</label>
+    </customValue>
+    <customValue>
+        <fullName>HIGH_DEBT_TO_INCOME</fullName>
+        <default>false</default>
+        <label>High Debt to Income</label>
+    </customValue>
+    <customValue>
+        <fullName>LOW_CAPACITY_TO_REPAY</fullName>
+        <default>false</default>
+        <label>Low Capacity to Repay</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Possible reasons for declining an application in Credit decisioning stage.</description>
+    <masterLabel>CreditDeclinedReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

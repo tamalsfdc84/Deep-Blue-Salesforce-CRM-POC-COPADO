@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OPEN</fullName>
+        <default>false</default>
+        <label>⚠️Open</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>false</default>
+        <label>🔶In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>REVIEW</fullName>
+        <default>false</default>
+        <label>⚠️Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CANCELLED</fullName>
+        <default>false</default>
+        <label>❌Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>CONVERTED</fullName>
+        <default>false</default>
+        <label>👍Converted</label>
+    </customValue>
+    <customValue>
+        <fullName>APPROVED</fullName>
+        <default>false</default>
+        <label>✅Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLINED</fullName>
+        <default>false</default>
+        <label>❌Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>INVALID</fullName>
+        <default>false</default>
+        <label>❌Invalid</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPIRED</fullName>
+        <default>false</default>
+        <label>❌Expired</label>
+    </customValue>
+    <description>Enumerates the various statuses of the referral. Useful for tracking progress of a referral.</description>
+    <masterLabel>ReferralStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

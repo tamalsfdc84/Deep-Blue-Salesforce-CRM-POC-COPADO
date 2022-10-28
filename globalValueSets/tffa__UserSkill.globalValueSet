@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MORTGAGE</fullName>
+        <default>false</default>
+        <label>Mortgages</label>
+    </customValue>
+    <customValue>
+        <fullName>HELOC</fullName>
+        <default>false</default>
+        <label>Home Equity Line of Credit</label>
+    </customValue>
+    <description>List of skills than can be associated with an user in the system. Skills can be name of the product categories or product names or any other relevant information to filter list of users best skilled to perform certain function.</description>
+    <masterLabel>UserSkill</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

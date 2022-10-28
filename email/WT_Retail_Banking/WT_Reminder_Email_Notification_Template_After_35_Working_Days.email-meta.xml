@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Reminder Email Notification Template After 35 Working Days</name>
+    <style>freeForm</style>
+    <subject>Ticket due soon</subject>
+    <textOnly>The CCPA request assigned to you is due in 10 days. You can access the record in the system by clicking link below:
+
+Click here {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

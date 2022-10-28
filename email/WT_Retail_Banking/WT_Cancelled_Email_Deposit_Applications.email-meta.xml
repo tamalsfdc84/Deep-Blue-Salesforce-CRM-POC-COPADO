@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Cancelled Email Deposit Applications</name>
+    <style>freeForm</style>
+    <subject>Case {!Case.CaseNumber} has been cancelled-Deposit Applications Team Request</subject>
+    <textOnly>Dear {!Case.WT_Requester_s_Name__c}
+
+Your Case {!Case.CaseNumber} regarding {!Case.Subject} has been cancelled.
+
+Case ID: {!Case.CaseNumber}
+Submitted by: {!Case.CreatedBy}
+Request Type: {!Case.WT_Request_Type__c}
+Summary: {!Case.Subject}
+Description: {!Case.Description}
+
+Notes:
+
+{!Case.WT_Resolution_Notes__c}
+
+You can view the details of your request using the link below:
+
+{!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Prequal Facts --></label>
+        <name>tffa__PrequalFacts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel (set) --></label>
+        <name>tffa__ChannelSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau grade (set) --></label>
+        <name>tffa__CreditBureauGradeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau score (from) --></label>
+        <name>tffa__CreditBureauScoreFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit bureau score (to) --></label>
+        <name>tffa__CreditBureauScoreTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card purpose (set) --></label>
+        <name>tffa__CreditCardPurposeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- HELOC purpose (set) --></label>
+        <name>tffa__HELOCPurposeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer (outcome) --></label>
+        <lookupFilter>
+            <errorMessage><!-- Offer must be active and should of same purpose and product category. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Offer__c</name>
+        <relationshipLabel><!-- Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party segment (set) --></label>
+        <name>tffa__PartySegmentSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal loan purpose set --></label>
+        <name>tffa__PersonalLoanPurposeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle loan purpose set --></label>
+        <name>tffa__VehicleLoanPurposeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle type set --></label>
+        <name>tffa__VehicleTypeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle used (is) --></label>
+        <name>tffa__VehicleUsedIs__c</name>
+    </fields>
+</CustomObjectTranslation>

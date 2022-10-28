@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Defines rules for computing age related party attributes. e.g. &quot;is minor&quot; - a party under the age of 18, &quot;is major (or super minor)&quot; - a party who is 16 or over but under the age of 18. These attributes are generally computed based on age only. Additional complexity arises when the bounds used for computing these vary by region - country, state, etc.</description>
+    <motif>Custom90: Scales</motif>
+</CustomTab>

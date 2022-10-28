@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Allocated Amount --></label>
+        <name>tffa__AllocatedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocated percentage --></label>
+        <name>tffa__AllocatedPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Deposit Switches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Completed on --></label>
+        <name>tffa__CompletedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Name --></label>
+        <name>tffa__EmployerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Multiple Allocations? --></label>
+        <name>tffa__HasMultipleAllocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Remainder Allocated ? --></label>
+        <name>tffa__IsAllocatedRemainder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method --></label>
+        <name>tffa__Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Account ID --></label>
+        <name>tffa__ProviderAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Employer Id --></label>
+        <name>tffa__ProviderEmployerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Financial institution ID --></label>
+        <name>tffa__ProviderFinancialInstitutionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Item ID --></label>
+        <name>tffa__ProviderItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session ID --></label>
+        <name>tffa__SessionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted on --></label>
+        <name>tffa__SubmittedOn__c</name>
+    </fields>
+</CustomObjectTranslation>

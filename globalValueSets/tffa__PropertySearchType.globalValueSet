@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NOT_STARTED</fullName>
+        <default>false</default>
+        <label>Not Started</label>
+    </customValue>
+    <customValue>
+        <fullName>STILL_LOOKING</fullName>
+        <default>false</default>
+        <label>Still Looking</label>
+    </customValue>
+    <customValue>
+        <fullName>FOUND</fullName>
+        <default>false</default>
+        <label>Found</label>
+    </customValue>
+    <description>Describing the applicant&apos;s search stage of property selection for applying mortgage</description>
+    <masterLabel>PropertySearchType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

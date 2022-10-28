@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Conventional</fullName>
+        <default>false</default>
+        <label>Conventional</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>RURAL_HOUSING_DEVELOPMENT</fullName>
+        <default>false</default>
+        <label>Rural Housing Developement</label>
+    </customValue>
+    <customValue>
+        <fullName>FHA</fullName>
+        <default>false</default>
+        <label>Federal Housing Administration Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>VA</fullName>
+        <default>false</default>
+        <label>Veterans Benefits Administration Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>Jumbo</fullName>
+        <default>false</default>
+        <label>Jumbo</label>
+    </customValue>
+    <customValue>
+        <fullName>HELOC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Home Equity Lines of Credit</label>
+    </customValue>
+    <description>Type of the mortgage applications supported</description>
+    <masterLabel>MortgageType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

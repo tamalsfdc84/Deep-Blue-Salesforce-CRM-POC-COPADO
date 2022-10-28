@@ -1,0 +1,47 @@
+<template>
+  <lightning-record-edit-form record-id={recordId} object-api-name={schema.tffa__Submission__c} onsubmit={onSubmit}>
+    <article class="slds-card">
+      <div class="slds-page-header">
+        <div class="slds-page-header__row">
+          <div class="slds-page-header__col-title">
+            <div class="slds-media slds-m-bottom_x-small">
+              <div class="slds-media__figure">
+                <lightning-icon icon-name="standard:decision" size="small" title="Process Applications"></lightning-icon>
+              </div>
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    <h1>
+                      <span class="slds-page-header__title slds-truncate">{labelValue}</span>
+                    </h1>
+                  </div>
+                </div>
+                <lightning-button
+                  label={labels.DECISION_RERUN_LABEL}
+                  title={labels.DECISION_RERUN_LABEL}
+                  icon-name="utility:refresh"
+                  onclick={refreshWindow}
+                  style="float: right"
+                ></lightning-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>
+        <span>Total Applications: {totalApps}</span>&nbsp; &nbsp;
+        <span> Current Status: {currentStatus}</span>
+      </h2>
+      <footer if:true={showProcessButton} class="slds-card__footer">
+        <lightning-button
+          type="submit"
+          label="PROCESS APPLICATIONS"
+          class="slds-m-left_x-small"
+          variant="brand"
+          disabled={checkSubWidgetStatus}
+        >
+        </lightning-button>
+      </footer>
+    </article>
+  </lightning-record-edit-form>
+</template>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>JointWithOtherThanSpouse</fullName>
+        <default>false</default>
+        <label>Joint With Other Than Spouse</label>
+    </customValue>
+    <customValue>
+        <fullName>JointWithSpouse</fullName>
+        <default>false</default>
+        <label>Joint With Spouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Sole</fullName>
+        <default>false</default>
+        <label>Sole</label>
+    </customValue>
+    <description>List that specifies how the borrower held title to the property.</description>
+    <masterLabel>PropertyTitleType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

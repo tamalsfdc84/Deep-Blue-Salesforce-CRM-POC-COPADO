@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Welcome Email (Internal)</name>
+    <style>none</style>
+    <subject>Welcome to Salesforce!</subject>
+    <textOnly>Salesforce is here!
+
+Our investment in this best-in-class Customer Relationship Management platform 													will better enable you to continuously help our customers achieve their financial goals. 													Salesforce is designed to keep the customer at the forefront of everything we do, 													from managing interactions and opportunities with potential customers; 													identifying ways to deepen relationships with existing customers; 													and introducing customers to our Retail Partners who can help with long-term wealth management or homeownership as those opportunities arise.
+
+Access Salesforce by clicking on the link below. You must access 													Salesforce in Google Chrome, which IT has installed on all PCs. If 													your computer does not default to opening Salesforce in chrome, you 													will need to copy and paste this link into Google Chrome. 													Additionally, we are utilizing single sign-on functionality for 													Salesforce, so when you log into the Wintrust network, you are 													automatically logged into Salesforce! If you have any issues logging in, 													please contact the helpdesk at (630) 741-7111 													for assistance.
+
+Links to Salesforce will exist on SharePoint; however, we advise 													bookmarking this link in Google Chrome as well.
+
+You should have received an email over the weekend to complete the 													Salesforce Training in Wintrust University. Simply search 													&quot;Salesforce&quot; within Wintrust U or on our Salesforce SharePoint page 													to get started! Thank you for your part in this journey to always 													provide the best customer service possible!
+
+To easily log in later, save this URL: 													https://wintrustbank.my.salesforce.com
+
+Again, welcome to Salesforce!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <available>false</available>
+    <description>Email for disclosures</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DisclosureGenerated</name>
+    <packageVersions>
+        <majorNumber>14</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>tffa</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>We need some additional disclosures!</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

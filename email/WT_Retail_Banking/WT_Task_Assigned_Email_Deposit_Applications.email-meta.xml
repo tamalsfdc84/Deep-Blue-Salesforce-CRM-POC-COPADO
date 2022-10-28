@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Task Assigned Email Deposit Applications</name>
+    <style>freeForm</style>
+    <subject>Task {!Task.WT_Task_Number__c}   has been assigned to you</subject>
+    <textOnly>The following task has been created and assigned to you
+
+Task:{!Task.WT_Task_Number__c}
+Parent Case ID: {!Case.CaseNumber}
+Request Type :{!Case.WT_Request_Type__c}
+Summary:{!Case.Subject}
+Description: {!Case.Description}
+
+You can view the details of this task using the link below:
+{!Task.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Incomes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment indicator --></label>
+        <name>tffa__EmploymentIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment --></label>
+        <name>tffa__Employment__c</name>
+        <relationshipLabel><!-- Incomes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial year --></label>
+        <name>tffa__FinancialYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross annual amount --></label>
+        <name>tffa__GrossAnnualAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income verification id --></label>
+        <name>tffa__IncomeVerificationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Verification Status --></label>
+        <name>tffa__IncomeVerificationStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>tffa__IncomeVerificationToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly amount --></label>
+        <name>tffa__MonthlyAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Income Type --></label>
+        <name>tffa__OtherType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Incomes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pay Frequency --></label>
+        <name>tffa__PayFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payer identification number (FIN) --></label>
+        <name>tffa__PayerIdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payer Name --></label>
+        <name>tffa__PayerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefilled --></label>
+        <name>tffa__Prefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- YTD Gross amount --></label>
+        <name>tffa__YTDGrossAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- YTD Net amount --></label>
+        <name>tffa__YTDNetAmount__c</name>
+    </fields>
+</CustomObjectTranslation>

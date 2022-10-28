@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Add-on service type --></label>
+        <name>tffa__AddOnServiceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online banking authority --></label>
+        <name>tffa__OnlineBankingAuthority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking MFA --></label>
+        <name>tffa__OnlineBankingMFA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online banking provider --></label>
+        <name>tffa__OnlineBankingProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Additional Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Party --></label>
+        <name>tffa__RelatedParty__c</name>
+        <relationshipLabel><!-- Related Additional Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Additional Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

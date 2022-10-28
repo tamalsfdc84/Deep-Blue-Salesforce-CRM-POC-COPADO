@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accepted --></label>
+        <name>tffa__Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Account Purposes --></label>
+        <name>tffa__AllowedAccountPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum quantity --></label>
+        <name>tffa__MaximumQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Code --></label>
+        <name>tffa__OfferCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <lookupFilter>
+            <errorMessage><!-- Offer is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Offer__c</name>
+        <relationshipLabel><!-- Recommendation Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not active. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Recommendation Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion code --></label>
+        <name>tffa__PromotionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <lookupFilter>
+            <errorMessage><!-- Promotion not active. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Promotion__c</name>
+        <relationshipLabel><!-- Recommendation Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recommendation --></label>
+        <name>tffa__Recommendation__c</name>
+        <relationshipLabel><!-- Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source id --></label>
+        <name>tffa__SourceId__c</name>
+    </fields>
+</CustomObjectTranslation>

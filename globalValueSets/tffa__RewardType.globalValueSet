@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CREDIT</fullName>
+        <default>false</default>
+        <label>Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>DISCOUNT</fullName>
+        <default>false</default>
+        <label>Discount</label>
+    </customValue>
+    <customValue>
+        <fullName>POINT</fullName>
+        <default>false</default>
+        <label>Point</label>
+    </customValue>
+    <customValue>
+        <fullName>COUPON</fullName>
+        <default>false</default>
+        <label>Coupon</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Enumerates the different types of rewards that can be captured in the system. These offer a broad classification of the rewards.</description>
+    <masterLabel>RewardType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

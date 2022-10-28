@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRIMARY</fullName>
+        <default>true</default>
+        <label>Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTINGENT</fullName>
+        <default>false</default>
+        <label>Contingent</label>
+    </customValue>
+    <description>Type of the Beneficiary</description>
+    <masterLabel>BeneficiaryType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,60 @@
+<apex:page docType="html-5.0"
+  showHeader="false"
+  controller="tffa.SubscriptionController"
+  action="{!init}"
+  standardStylesheets="false"
+  applyBodyTag="false"
+>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{!URLFOR($Resource['sales_styles'], 'styles.css')}" />
+  </head>
+
+  <body class="d-flex flex-column">
+    <nav class="navbar navbar-tertiary bg-tertiary text-tertiary-contrast">
+      <div class="container">
+        <span class="navbar-brand">
+          <span class="fad fa-tags mr-2" aria-hidden="true"></span>
+          {!$Label.SUBSCRIPTION_UNSUBSCRIBE_ACTION}
+        </span>
+      </div>
+    </nav>
+    <div class="container flex-grow-1 bg-white">
+      <apex:pageMessages id="showmsg"></apex:pageMessages>
+      <apex:actionStatus id="unsubscribeStatus">
+        <apex:facet name="stop">
+          <apex:outputPanel styleClass="text-center">
+            <apex:outputPanel rendered="{!!unsubscribed}">
+              <apex:form >
+                <div class="mb-3 my-5">
+                  <h1 class="d-block mb-3">{!$Label.tffa__SUBSCRIPTION_UNSUBSCRIBE_CONFIRMATION}</h1>
+                  <h5>{!$Label.tffa__SUBSCRIPTION_UNSUBSCRIBE_EMAIL_LABEL} {!email}</h5>
+                </div>
+                <apex:commandButton value="Unsubscribe"
+                  action="{!unsubscribe}"
+                  status="unsubscribeStatus"
+                  reRender="unsubscribeStatus"
+                  styleClass="btn btn-primary btn-lg"
+                />
+              </apex:form>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!unsubscribed}">
+              <div class="mb-3 my-5">
+                <h1>{!$Label.tffa__SUBSCRIPTION_UNSUBSCRIBE_CONFIRMATION_SUCCESS}</h1>
+              </div>
+            </apex:outputPanel>
+          </apex:outputPanel>
+        </apex:facet>
+        <apex:facet name="start">
+          <apex:outputPanel >
+            <div class="tf-spinner-overlay">
+              <span class="tf-spinner-image" aria-label="Please wait while your page is being loaded">
+                <img />
+              </span>
+            </div>
+          </apex:outputPanel>
+        </apex:facet>
+      </apex:actionStatus>
+    </div>
+  </body>
+</apex:page>

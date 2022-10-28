@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RETAIL</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE</fullName>
+        <default>false</default>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>WEALTH</fullName>
+        <default>false</default>
+        <label>Wealth</label>
+    </customValue>
+    <description>A segment typically captures the traits or preferences common to a group of subscribers of a location. 
+LocationSegment enumerates segments supported by the system.</description>
+    <masterLabel>LocationSegment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

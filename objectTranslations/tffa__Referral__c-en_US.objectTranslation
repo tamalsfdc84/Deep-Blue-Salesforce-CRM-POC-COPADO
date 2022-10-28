@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address state --></label>
+        <name>tffa__AddressState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>tffa__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>tffa__BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <name>tffa__Bundle__c</name>
+        <relationshipLabel><!-- Bundle Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tffa__Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>tffa__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>tffa__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted --></label>
+        <name>tffa__Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>tffa__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location City --></label>
+        <name>tffa__DeviceLocationCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location Continent --></label>
+        <name>tffa__DeviceLocationContinent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location Country --></label>
+        <name>tffa__DeviceLocationCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location State --></label>
+        <name>tffa__DeviceLocationState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location Zip code --></label>
+        <name>tffa__DeviceLocationZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired --></label>
+        <name>tffa__Expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expires on --></label>
+        <name>tffa__ExpiresOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- First name --></label>
+        <name>tffa__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ip address --></label>
+        <name>tffa__IpAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Referred by Current User --></label>
+        <name>tffa__IsReferredByCurrentUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capture Party? --></label>
+        <name>tffa__IsReferredPartyCaptured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last name --></label>
+        <name>tffa__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last reminded on --></label>
+        <name>tffa__LastRemindedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last synced on --></label>
+        <name>tffa__LastSyncedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Medium --></label>
+        <name>tffa__Medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage loan purpose --></label>
+        <name>tffa__MortgageLoanPurpose__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- Referrals --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Sync --></label>
+        <name>tffa__OutOfSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal --></label>
+        <name>tffa__Prequal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Product Category --></label>
+        <name>tffa__PrimaryProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Financial Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Primary product is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__PrimaryProduct__c</name>
+        <relationshipLabel><!-- Primary Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program Code --></label>
+        <name>tffa__ProgramCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program name --></label>
+        <name>tffa__ProgramName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>tffa__Program__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <lookupFilter>
+            <errorMessage><!-- Promotion is inactive. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Promotion__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- QR Code Url --></label>
+        <name>tffa__QRCodeUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Code --></label>
+        <name>tffa__ReferralCodeEntity__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral code (value) --></label>
+        <name>tffa__ReferralCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred Party --></label>
+        <name>tffa__ReferredParty__c</name>
+        <relationshipLabel><!-- Referred Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referrer email --></label>
+        <name>tffa__ReferrerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer name --></label>
+        <name>tffa__ReferrerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward --></label>
+        <name>tffa__ReferrerReward__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referrer URL --></label>
+        <name>tffa__ReferrerUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referring Agent User --></label>
+        <name>tffa__ReferringAgentUser__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referring Agent --></label>
+        <name>tffa__ReferringAgent__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referring Party --></label>
+        <name>tffa__ReferringParty__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reminder count --></label>
+        <name>tffa__ReminderCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder date --></label>
+        <name>tffa__ReminderDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Referral program --></help>
+        <label><!-- Reminder schedule --></label>
+        <name>tffa__ReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewarded --></label>
+        <name>tffa__Rewarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product Category --></label>
+        <name>tffa__SecondaryProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Financial Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Secondary product is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__SecondaryProduct__c</name>
+        <relationshipLabel><!-- Secondary Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>tffa__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync pending on --></label>
+        <name>tffa__SyncPendingOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Product Category --></label>
+        <name>tffa__TertiaryProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Financial Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Tertiary product is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__TertiaryProduct__c</name>
+        <relationshipLabel><!-- Tertiary Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribe url --></label>
+        <name>tffa__UnsubscribeUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Url --></label>
+        <name>tffa__Url__c</name>
+    </fields>
+</CustomObjectTranslation>

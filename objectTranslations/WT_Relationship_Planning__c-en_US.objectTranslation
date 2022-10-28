@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relationship Planning</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relationship Plannings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Notes --></label>
+        <name>WT_Account_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>WT_Account__c</name>
+        <relationshipLabel><!-- Relationship Plannings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approximate Balance --></label>
+        <name>WT_Approximate_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Bank --></label>
+        <name>WT_Current_Bank__c</name>
+        <relationshipLabel><!-- Relationship Plannings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Follow-up date --></label>
+        <name>WT_Next_Follow_up_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RP Product Type --></label>
+        <name>WT_RP_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Card</masterLabel>
+            <translation><!-- Corporate Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit / Loans</masterLabel>
+            <translation><!-- Credit / Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Derivatives</masterLabel>
+            <translation><!-- Derivatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International / FX</masterLabel>
+            <translation><!-- International / FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Services</masterLabel>
+            <translation><!-- Merchant Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury / Deposit</masterLabel>
+            <translation><!-- Treasury / Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth / 401K</masterLabel>
+            <translation><!-- Wealth / 401K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust at Work</masterLabel>
+            <translation><!-- Wintrust at Work --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Next Follow-up  Date cannot be prior to current date . --></errorMessage>
+        <name>WT_Next_Follow_Up_Date_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

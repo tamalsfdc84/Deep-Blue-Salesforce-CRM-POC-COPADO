@@ -1,0 +1,30 @@
+<apex:page applyBodyTag="false" renderAs="pdf" standardController="tffa__Submission__c" extensions="CZWTFCDisclosurePdfExtension"
+  applyHtmlTag="false" showHeader="false">
+
+  <head>
+    <style>
+      @page {
+        size: A4 portrait;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <apex:pageBlock >
+    <b> {!disTitle}
+    </b>
+    <br/>
+    <pre>{!discontent}</pre>
+    <br/>
+  </apex:pageBlock>
+</apex:page>

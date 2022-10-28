@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional information about the counter offer for the applicant to view. --></help>
+        <label><!-- Comments --></label>
+        <name>tffa__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Matrix --></label>
+        <name>tffa__DecisionMatrix__c</name>
+        <relationshipLabel><!-- Counter Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Counter Offer Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Product should belong to same category as DecisionMatrix Product --></errorMessage>
+        <name>CustomProductCategoryCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product should belong to same category as DecisionMatrix Product --></errorMessage>
+        <name>tffa__ProductCategoryCheck</name>
+    </validationRules>
+</CustomObjectTranslation>

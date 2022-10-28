@@ -1,0 +1,21 @@
+<apex:page docType="html-5.0" controller="tffa.DisclosureController" action="{!init}" applyBodyTag="false" showHeader="false">
+  <apex:pageMessages />
+  <apex:outputPanel rendered="{!completed}" layout="block">
+    <p>Please click on Close</p>
+    <script>
+      const data = { event: "{!JSENCODE(event)}", envelopeId: "{!JSENCODE(envelopeId)}", signerId: "{!JSENCODE(signerId)}" };
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage(data, window.parent.location);
+      }
+      if (window.opener && window.opener !== window) {
+        window.opener.postMessage(data, window.opener.location);
+        window.close();
+      }
+    </script>
+  </apex:outputPanel>
+  <apex:outputPanel rendered="{!signerInitialized}" layout="block">
+    <script>
+      window.open("{!JSENCODE(signerUrl)}", '_self');
+    </script>
+  </apex:outputPanel>
+</apex:page>

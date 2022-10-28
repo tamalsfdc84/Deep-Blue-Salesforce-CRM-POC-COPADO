@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FULL</fullName>
+        <default>false</default>
+        <label>Full Power</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED</fullName>
+        <default>false</default>
+        <label>Limited Power</label>
+    </customValue>
+    <description>List of account authority powers configured in the system. An authority power typically translates to allowed actions on an account. e.g. FULL may mean all actions are permitted.</description>
+    <masterLabel>ApplicantRoleAuthority</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

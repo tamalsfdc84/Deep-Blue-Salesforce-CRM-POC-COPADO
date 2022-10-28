@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional features --></label>
+        <name>tffa__AdditionalFeatures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Purchase Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Age of construction --></label>
+        <name>tffa__AgeOfConstruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement value --></label>
+        <name>tffa__AgreementValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commercial designator type --></label>
+        <name>tffa__CommercialDesignatorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial usage type --></label>
+        <name>tffa__CommercialUsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community property type --></label>
+        <name>tffa__CommunityPropertyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction closing type --></label>
+        <name>tffa__ConstructionClosingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction improvement amount --></label>
+        <name>tffa__ConstructionImprovementAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit limit --></label>
+        <name>tffa__CreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designator type --></label>
+        <name>tffa__DesignatorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposition status type --></label>
+        <name>tffa__DispositionStatusType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Down payment --></label>
+        <name>tffa__DownPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Energy improvement indicator --></label>
+        <name>tffa__EnergyImprovementIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated value --></label>
+        <name>tffa__EstimatedValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing mortgage --></label>
+        <name>tffa__ExistingMortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- External reference id --></label>
+        <name>tffa__ExternalReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fhasecondary residence indicator --></label>
+        <name>tffa__FHASecondaryResidenceIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full name --></label>
+        <name>tffa__FullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing expense type --></label>
+        <name>tffa__HousingExpenseType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Land original amount --></label>
+        <name>tffa__LandOriginalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Land tenure type --></label>
+        <name>tffa__LandTenureType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease expiration date --></label>
+        <name>tffa__LeaseExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufactured home indicator --></label>
+        <name>tffa__ManufacturedHomeIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market value --></label>
+        <name>tffa__MarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mixed usage indicator --></label>
+        <name>tffa__MixedUsageIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly housing expense --></label>
+        <name>tffa__MonthlyHousingExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly insurance --></label>
+        <name>tffa__MonthlyInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly rental income --></label>
+        <name>tffa__MonthlyRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly tax --></label>
+        <name>tffa__MonthlyTax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly utility expense --></label>
+        <name>tffa__MonthlyUtilityExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage amount --></label>
+        <name>tffa__MortgageAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net rental income --></label>
+        <name>tffa__NetRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of baths --></label>
+        <name>tffa__NumberOfBaths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of beds --></label>
+        <name>tffa__NumberOfBeds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of floors --></label>
+        <name>tffa__NumberOfFloors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of mortgages --></label>
+        <name>tffa__NumberOfMortgages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of rooms --></label>
+        <name>tffa__NumberOfRooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of units --></label>
+        <name>tffa__NumberOfUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupancy percentage --></label>
+        <name>tffa__OccupancyPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupancy status --></label>
+        <name>tffa__OccupancyStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project legal structure type --></label>
+        <name>tffa__ProjectLegalStructureType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property acquired date --></label>
+        <name>tffa__PropertyAcquiredDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property estate type --></label>
+        <name>tffa__PropertyEstateType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase price --></label>
+        <name>tffa__PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship vesting type --></label>
+        <name>tffa__RelationshipVestingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search timeline --></label>
+        <name>tffa__SearchTimeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search type --></label>
+        <name>tffa__SearchType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title holder name --></label>
+        <name>tffa__TitleHolderName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title type --></label>
+        <name>tffa__TitleType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total area --></label>
+        <name>tffa__TotalArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total dues --></label>
+        <name>tffa__TotalDues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction type --></label>
+        <name>tffa__TransactionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust classification type --></label>
+        <name>tffa__TrustClassificationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage type --></label>
+        <name>tffa__UsageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used as collateral --></label>
+        <name>tffa__UsedAsCollateral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation amount --></label>
+        <name>tffa__ValuationAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation source --></label>
+        <name>tffa__ValuationSource__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Date_Qualified__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Description</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lead$WT_Referred_To__c.WT_Line_of_Business__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Private Client Group,Wealth - CDEC,Wealth - Chicago Trust,Wealth - Great Lakes Advisors,Wealth Management,Wealth – Retirement Benefit Advisors,Wealth - Wintrust Investments</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$FinServ__ReferredByUser__c.WT_Line_of_Business__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Private Client Group,Wealth - CDEC,Wealth - Chicago Trust,Wealth - Great Lakes Advisors,Wealth Management,Wealth – Retirement Benefit Advisors,Wealth - Wintrust Investments</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$WT_Date_Referred__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$WT_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,Checking,MMA/SAV,Time Deposit,Mortgage,Line of Credit,Home Equity,Other Loan</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$WT_Referred_To__c.WT_Line_of_Business__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total No. of Referrals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WT_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Lead$WT_Product_Type__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lead$FinServ__ConversionDateTime__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

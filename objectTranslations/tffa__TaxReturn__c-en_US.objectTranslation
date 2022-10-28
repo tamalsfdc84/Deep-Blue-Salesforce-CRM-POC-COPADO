@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Due amount --></label>
+        <name>tffa__DueAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filing exemption number --></label>
+        <name>tffa__FilingExemptionNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filing status --></label>
+        <name>tffa__FilingStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial year --></label>
+        <name>tffa__FinancialYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- TaxReturns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund amount --></label>
+        <name>tffa__RefundAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxable income --></label>
+        <name>tffa__TaxableIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking number --></label>
+        <name>tffa__TrackingNumber__c</name>
+    </fields>
+</CustomObjectTranslation>

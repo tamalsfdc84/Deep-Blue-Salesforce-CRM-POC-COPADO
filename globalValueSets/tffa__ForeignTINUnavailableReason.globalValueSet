@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COUNTRY_DOES_NOT_ISSUE</fullName>
+        <default>false</default>
+        <label>My country of permanent residence does not issue foreign TINs.</label>
+    </customValue>
+    <customValue>
+        <fullName>NOT_LEGALLY_REQUIRED</fullName>
+        <default>false</default>
+        <label>I am not legally required to obtain a foreign TIN.</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Possible reasons for Unavailability of foreign tax id.</description>
+    <masterLabel>ForeignTINUnavailableReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

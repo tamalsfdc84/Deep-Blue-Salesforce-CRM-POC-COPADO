@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agent --></label>
+        <name>tffa__Agent__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary --></label>
+        <name>tffa__Beneficiary__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Device browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Orientation --></label>
+        <name>tffa__DeviceOrientation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device pixel ratio --></label>
+        <name>tffa__DevicePixelRatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure --></label>
+        <name>tffa__Disclosure__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>tffa__IpAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is acceptance required --></label>
+        <name>tffa__IsAcceptanceRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is signature required --></label>
+        <name>tffa__IsSignatureRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role code --></label>
+        <name>tffa__RoleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>tffa__RoleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature point type --></label>
+        <name>tffa__SignaturePointType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature point --></label>
+        <name>tffa__SignaturePoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User agent --></label>
+        <name>tffa__UserAgent__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>tffa__User__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

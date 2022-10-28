@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Factor Staging</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Factor Staging</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bank Number --></label>
+        <name>WT_Bank_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank --></label>
+        <name>WT_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer Number Of Transactions --></label>
+        <name>WT_Branch_Customer_Num_Of_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer TPC --></label>
+        <name>WT_Branch_Customer_TPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer with Transaction % --></label>
+        <name>WT_Branch_Customer_Transaction_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customers Transaction --></label>
+        <name>WT_Branch_Customers_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Number --></label>
+        <name>WT_Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>WT_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter Factor --></label>
+        <name>WT_Charter_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Factor --></label>
+        <name>WT_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foot Traffic Level --></label>
+        <name>WT_Foot_Traffic_Level__c</name>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fusion Location --></label>
+        <name>WT_Fusion_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Processed --></label>
+        <name>WT_Is_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market --></label>
+        <name>WT_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Customers --></label>
+        <name>WT_New_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Bank Customers --></label>
+        <name>WT_Total_Current_Bank_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Customers --></label>
+        <name>WT_Total_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Foot Traffic --></label>
+        <name>WT_Total_Foot_Traffic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number Of Transactions --></label>
+        <name>WT_Total_Number_Of_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Customer TPC --></label>
+        <name>WT_Unique_Customer_TPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Customers Transaction --></label>
+        <name>WT_Unique_Customers_Transaction__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

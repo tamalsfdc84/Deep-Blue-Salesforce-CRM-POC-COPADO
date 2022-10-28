@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CHECKING</fullName>
+        <default>false</default>
+        <label>Checking</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVINGS</fullName>
+        <default>false</default>
+        <label>Savings</label>
+    </customValue>
+    <description>Type of account captured for funding</description>
+    <masterLabel>FundingAccountType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

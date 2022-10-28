@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Application Metrics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time to fill --></label>
+        <name>tffa__TimeToFill__c</name>
+    </fields>
+</CustomObjectTranslation>

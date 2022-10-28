@@ -1,0 +1,1378 @@
+<apex:page controller="tffa.AdverseActionNoticeController" applyBodyTag="false" renderAs="pdf" action="{!init}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <title>Adverse Action Notice</title>
+
+    <style type="text/css">
+      body {
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      @page {
+        margin: 0.1in;
+      }
+
+      #page_1 {
+        position: relative;
+        overflow: hidden;
+        margin: 49px 0px 101px 48px;
+        padding: 0px;
+        border: none;
+        width: 768px;
+      }
+
+      #page_1 #p1dimg1 {
+        position: absolute;
+        top: 34px;
+        left: 0px;
+        z-index: -1;
+        width: 721px;
+        height: 838px;
+      }
+
+      #page_1 #p1dimg1 #p1img1 {
+        width: 721px;
+        height: 838px;
+      }
+
+      #page_2 {
+        position: relative;
+        overflow: hidden;
+        margin: 52px 0px 101px 48px;
+        padding: 0px;
+        border: none;
+        width: 768px;
+      }
+
+      #page_2 #p2dimg1 {
+        position: absolute;
+        top: 412px;
+        left: 0px;
+        z-index: -1;
+        width: 720px;
+        height: 457px;
+      }
+
+      #page_2 #p2dimg1 #p2img1 {
+        width: 720px;
+        height: 457px;
+      }
+
+      #page_2 #p2inl_img1 {
+        position: relative;
+        width: 0px;
+        height: 16px;
+      }
+
+      #page_2 #p2inl_img2 {
+        position: relative;
+        width: 1px;
+        height: 16px;
+      }
+
+      .ft0 {
+        font: bold 24px 'Arial';
+        line-height: 27px;
+      }
+
+      .ft1 {
+        font: bold 14px 'Arial';
+        line-height: 15px;
+      }
+
+      .ft2 {
+        font: 13px 'Courier New';
+        line-height: 16px;
+      }
+
+      .ft3 {
+        font: 13px 'Courier New';
+        line-height: 15px;
+      }
+
+      .ft4 {
+        font: 1px 'Times New Roman';
+        line-height: 7px;
+      }
+
+      .ft5 {
+        font: 1px 'Times New Roman';
+        line-height: 9px;
+      }
+
+      .ft6 {
+        font: italic 14px 'Arial';
+        line-height: 16px;
+      }
+
+      .ft7 {
+        font: 14px 'Times New Roman';
+        line-height: 16px;
+      }
+
+      .ft8 {
+        font: 1px 'Times New Roman';
+        line-height: 1px;
+      }
+
+      .ft9 {
+        font: italic bold 17px 'Arial';
+        color: #ffffff;
+        line-height: 19px;
+        background-color: black;
+      }
+
+      .ft10 {
+        font: 14px 'Times New Roman';
+        line-height: 16px;
+      }
+
+      .ft11 {
+        font: 13px 'Courier New';
+        line-height: 16px;
+        position: relative;
+        bottom: 2px;
+      }
+
+      .ft12 {
+        font: 8px 'Arial';
+        line-height: 9px;
+      }
+
+      .ft13 {
+        font: 8px 'Arial';
+        line-height: 8px;
+      }
+
+      .ft14 {
+        font: 1px 'Times New Roman';
+        line-height: 8px;
+      }
+
+      .ft15 {
+        font: 8px 'Arial';
+        line-height: 10px;
+      }
+
+      .ft16 {
+        font: bold 14px 'Arial';
+        color: #ffffff;
+        line-height: 15px;
+      }
+
+      .ft17 {
+        font: italic bold 13px 'Arial';
+        color: #ffffff;
+        line-height: 14px;
+      }
+
+      .ft18 {
+        font: 10px 'Arial';
+        line-height: 13px;
+      }
+
+      .ft19 {
+        font: bold 14px 'Arial';
+        margin-left: 9px;
+        line-height: 16px;
+      }
+
+      .ft20 {
+        font: bold 13px 'Courier New';
+        line-height: 16px;
+      }
+
+      .ft21 {
+        font: bold 14px 'Arial';
+        line-height: 16px;
+      }
+
+      .ft22 {
+        font: bold 12px 'Courier New';
+        line-height: 16px;
+      }
+
+      .ft23 {
+        font: bold 13px 'Arial';
+        line-height: 16px;
+      }
+
+      .ft24 {
+        font: italic 14px 'Arial';
+        line-height: 17px;
+      }
+
+      .ft25 {
+        font: 14px 'Times New Roman';
+        line-height: 17px;
+      }
+
+      .checkbox {
+        border: 1px solid black;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .p0 {
+        text-align: left;
+        padding-left: 231px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .p1 {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .p2 {
+        text-align: left;
+        padding-left: 27px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p3 {
+        text-align: left;
+        padding-left: 1px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p4 {
+        text-align: right;
+        padding-right: 83px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p5 {
+        text-align: left;
+        padding-left: 28px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p6 {
+        text-align: left;
+        padding-left: 4px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+      }
+
+      .p7 {
+        text-align: left;
+        padding-left: 1px;
+        margin-top: 7px;
+        margin-bottom: 0px;
+      }
+
+      .p8 {
+        text-align: left;
+        padding-left: 4px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+
+      .p9 {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+
+      .p10 {
+        text-align: left;
+        padding-left: 3px;
+        margin-top: 11px;
+        margin-bottom: 0px;
+      }
+
+      .p11 {
+        text-align: left;
+        padding-left: 19px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+
+      .p12 {
+        text-align: left;
+        padding-left: 24px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+
+      .p13 {
+        text-align: left;
+        padding-left: 24px;
+        margin-top: 22px;
+        margin-bottom: 0px;
+      }
+
+      .p14 {
+        text-align: left;
+        padding-left: 4px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+      }
+
+      .p15 {
+        text-align: left;
+        padding-left: 3px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+      }
+
+      .p16 {
+        text-align: left;
+        padding-left: 3px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+      }
+
+      .p17 {
+        text-align: left;
+        padding-left: 4px;
+        margin-top: 35px;
+        margin-bottom: 0px;
+      }
+
+      .p18 {
+        text-align: left;
+        padding-left: 3px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+      }
+
+      .p19 {
+        text-align: left;
+        padding-right: 66px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+      }
+
+      .p20 {
+        text-align: left;
+        padding-left: 49px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p21 {
+        text-align: left;
+        padding-left: 44px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p22 {
+        text-align: left;
+        padding-left: 75px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p23 {
+        text-align: left;
+        padding-left: 48px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p24 {
+        text-align: left;
+        padding-left: 45px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p25 {
+        text-align: center;
+        padding-right: 1px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p26 {
+        text-align: left;
+        padding-left: 6px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p27 {
+        text-align: left;
+        padding-left: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p28 {
+        text-align: left;
+        padding-left: 4px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p29 {
+        text-align: right;
+        padding-right: 45px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p30 {
+        text-align: left;
+        padding-left: 22px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+      }
+
+      .p31 {
+        text-align: left;
+        padding-left: 19px;
+        padding-right: 77px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+      }
+
+      .p32 {
+        text-align: left;
+        padding-left: 45px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+
+      .p33 {
+        text-align: right;
+        padding-right: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p34 {
+        text-align: right;
+        padding-right: 66px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+
+      .p35 {
+        text-align: left;
+        padding-left: 45px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+      }
+
+      .p36 {
+        text-align: left;
+        padding-left: 87px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+
+      .p37 {
+        text-align: left;
+        padding-left: 87px;
+        margin-top: 18px;
+        margin-bottom: 0px;
+      }
+
+      .p38 {
+        text-align: left;
+        padding-left: 87px;
+        margin-top: 21px;
+        margin-bottom: 0px;
+      }
+
+      .p39 {
+        text-align: left;
+        padding-right: 68px;
+        margin-top: 7px;
+        margin-bottom: 0px;
+        text-indent: 1px;
+      }
+
+      .td0 {
+        padding: 0px;
+        margin: 0px;
+        width: 256px;
+        vertical-align: bottom;
+      }
+
+      .td1 {
+        padding: 0px;
+        margin: 0px;
+        width: 228px;
+        vertical-align: bottom;
+      }
+
+      .td2 {
+        padding: 0px;
+        margin: 0px;
+        width: 237px;
+        vertical-align: bottom;
+      }
+
+      .td3 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 256px;
+        vertical-align: bottom;
+      }
+
+      .td4 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 228px;
+        vertical-align: bottom;
+      }
+
+      .td5 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 237px;
+        vertical-align: bottom;
+      }
+
+      .td6 {
+        padding: 0px;
+        margin: 0px;
+        width: 628px;
+        vertical-align: bottom;
+      }
+
+      .td7 {
+        padding: 0px;
+        margin: 0px;
+        width: 92px;
+        vertical-align: bottom;
+      }
+
+      .td8 {
+        padding: 0px;
+        margin: 0px;
+        width: 0px;
+        vertical-align: bottom;
+      }
+
+      .td9 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 127px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td10 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 254px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td11 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 162px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td12 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 173px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td13 {
+        padding: 0px;
+        margin: 0px;
+        width: 97px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td14 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 157px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td15 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 127px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td16 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 97px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td17 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 157px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td18 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 162px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td19 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 173px;
+        vertical-align: bottom;
+        background: #000000;
+      }
+
+      .td20 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 127px;
+        vertical-align: bottom;
+      }
+
+      .td21 {
+        padding: 0px;
+        margin: 0px;
+        width: 97px;
+        vertical-align: bottom;
+      }
+
+      .td22 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 157px;
+        vertical-align: bottom;
+      }
+
+      .td23 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 162px;
+        vertical-align: bottom;
+      }
+
+      .td24 {
+        border-right: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 173px;
+        vertical-align: bottom;
+      }
+
+      .td25 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 127px;
+        vertical-align: bottom;
+      }
+
+      .td26 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 97px;
+        vertical-align: bottom;
+      }
+
+      .td27 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 157px;
+        vertical-align: bottom;
+      }
+
+      .td28 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 162px;
+        vertical-align: bottom;
+      }
+
+      .td29 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 173px;
+        vertical-align: bottom;
+      }
+
+      .td30 {
+        padding: 0px;
+        margin: 0px;
+        width: 13px;
+        vertical-align: bottom;
+      }
+
+      .td31 {
+        padding: 0px;
+        margin: 0px;
+        width: 62px;
+        vertical-align: bottom;
+      }
+
+      .td32 {
+        padding: 0px;
+        margin: 0px;
+        width: 171px;
+        vertical-align: bottom;
+      }
+
+      .td33 {
+        padding: 0px;
+        margin: 0px;
+        width: 233px;
+        vertical-align: bottom;
+      }
+
+      .td34 {
+        padding: 0px;
+        margin: 0px;
+        width: 661px;
+        vertical-align: bottom;
+      }
+
+      .td35 {
+        padding: 0px;
+        margin: 0px;
+        width: 10px;
+        vertical-align: bottom;
+      }
+
+      .tr0 {
+        height: 16px;
+      }
+
+      .tr1 {
+        height: 22px;
+      }
+
+      .tr2 {
+        height: 17px;
+      }
+
+      .tr3 {
+        height: 15px;
+      }
+
+      .tr4 {
+        height: 7px;
+      }
+
+      .tr5 {
+        height: 9px;
+      }
+
+      .tr6 {
+        height: 36px;
+      }
+
+      .tr7 {
+        height: 10px;
+      }
+
+      .tr8 {
+        height: 8px;
+      }
+
+      .tr9 {
+        height: 11px;
+      }
+
+      .tr10 {
+        height: 1px;
+      }
+
+      .tr11 {
+        height: 20px;
+      }
+
+      .tr12 {
+        height: 19px;
+      }
+
+      .tr13 {
+        height: 18px;
+      }
+
+      .tr14 {
+        height: 23px;
+      }
+
+      .tr15 {
+        height: 29px;
+      }
+
+      .tr16 {
+        height: 69px;
+      }
+
+      .tr17 {
+        height: 70px;
+      }
+
+      .tr18 {
+        height: 71px;
+      }
+
+      .t0 {
+        width: 721px;
+        margin-top: 11px;
+        font: 13px 'Courier New';
+      }
+
+      .t1 {
+        margin-top: 154px;
+        font: 8px 'Arial';
+        border-top: 1px solid black;
+        padding-top: 5px;
+      }
+
+      .t2 {
+        width: 720px;
+        font: 13px 'Courier New';
+      }
+
+      .t3 {
+        width: 343px;
+        margin-left: 45px;
+        font: 10px 'Arial';
+      }
+
+      .t4 {
+        width: 671px;
+        margin-left: 19px;
+        margin-top: 22px;
+        font: 14px 'Times New Roman';
+      }
+
+      .t5 {
+        margin-top: 32px;
+        font: 8px 'Arial';
+        border-top: 1px solid black;
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page_1">
+      <p class="p0 ft0">Notice of Action Taken</p>
+      <table cellpadding="0" cellspacing="0" class="t0">
+        <tr>
+          <td class="tr0 td0">
+            <p class="p1 ft1">Financial Institution</p>
+          </td>
+          <td class="tr0 td1">
+            <p class="p1 ft1">Depositor</p>
+          </td>
+          <td class="tr0 td2">
+            <p class="p2 ft1">Date</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr1 td0">
+            <p class="p3 ft2">{!financialInstitutionName}</p>
+          </td>
+          <td class="tr1 td1">
+            <p class="p1 ft2">{!party.Name}</p>
+          </td>
+          <td class="tr1 td2">
+            <p class="p5 ft2">
+              <apex:outputText value="{0, date, MM'/'dd'/'yyyy}">
+                <apex:param value="{!NOW()}" />
+              </apex:outputText>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr2 td0">
+            <p class="p3 ft2">{!branch.Name}</p>
+          </td>
+          <td class="tr2 td1">
+            <p class="p1 ft2">{!partyAddress.Line1__c}</p>
+          </td>
+          <td class="tr2 td2">
+            <p class="p2 ft1">SSN/TIN</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr3 td0">
+            <p class="p3 ft3">{!branch.Address__r.Line1__c}</p>
+          </td>
+          <td class="tr3 td1">
+            <p class="p1 ft3">{!partyAddress.City__c}, {!partyAddress.State__c} {!partyAddress.ZipCode__c}</p>
+          </td>
+          <td rowspan="2" class="tr1 td2">
+            <p class="p5 ft2">XXX-XX-{!party.Last4NationalIdentifierValue__c}</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="tr0 td0">
+            <p class="p3 ft2">{!branch.Address__r.City__c}, {!branch.Address__r.State__c} {!branch.Address__r.ZipCode__c}</p>
+          </td>
+          <td class="tr4 td1">
+            <p class="p1 ft4">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr5 td1">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+          <td class="tr5 td2">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr6 td3">
+            <p class="p1 ft7"><span class="ft6">"We" </span>means Financial Institution.</p>
+          </td>
+          <td class="tr6 td4">
+            <p class="p1 ft7"><span class="ft6">"You" </span>means Depositor.</p>
+          </td>
+          <td class="tr6 td5">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="p6 ft9">Description of Account, Transaction or Request</p>
+      <p class="p7 ft2">Request to open an account</p>
+      <p class="p8 ft9">Description of Action Taken</p>
+      <p class="p9 ft7">This notice is to inform you that:</p>
+      <p class="p10 ft7">
+        <span class="ft2 checkbox">X</span>
+        <span class="ft10">We are unable to approve your request.</span>
+      </p>
+      <p class="p10 ft7">
+        <span class="ft2 checkbox">&nbsp;</span>
+        <span class="ft10">We are unable to approve your request in its entirety.</span>
+      </p>
+      <p class="p12 ft7">We have approved:</p>
+      <p class="p13 ft7">We are unable to:</p>
+      <p class="p10 ft7">
+        <span class="ft2 checkbox">&nbsp;</span>
+        <span class="ft10"></span>
+      </p>
+      <p class="p14 ft9">Principal Reasons for Action Taken</p>
+      <p class="p15 ft7"><span class="ft11 checkbox">{!IF(isAddressNotVerified, 'X', ' ')}</span>Unable to verify residence</p>
+      <p class="p15 ft7"><span class="ft11 checkbox">{!IF(isPersonalInfoNotVerified, 'X', ' ')}</span>Unable to verify personal information</p>
+      <p class="p15 ft7">
+        <span class="ft11 checkbox">{!IF(isQualiFileBureauDeclined, 'X', ' ')}</span>Based on information provided by ChexSystems Inc
+      </p>
+      <apex:outputPanel rendered="{!declinedReason!=null}" layout="none">
+        <p class="p15 ft7"><span class="ft11 checkbox">X</span>{!declinedReasonLabel}</p>
+      </apex:outputPanel>
+      <p class="p17 ft9">Disclosure of Use of Information Obtained from an Outside Source</p>
+      <p class="p18 ft7">
+        <span class="ft2 checkbox">X</span>
+        <span class="ft10"
+          >Our decision was based in whole or in part on information obtained in a report from the consumer reporting agency or
+        </span>
+      </p>
+      <p class="p19 ft7">
+        agencies listed below. You have a right under the <span class="ft6">Fair Credit Reporting Act </span>to know the information
+        contained in your file at the consumer reporting agency. The reporting agency played no part in our decision and is unable to supply
+        specific reasons why we have denied your request. You also have a right to a free copy of your report from the reporting agency, if
+        you request it no later than 60 days after you receive this notice. In addition, if you find that any information contained in the
+        report you receive is inaccurate or incomplete, you have the right to dispute the matter with the reporting agency.
+      </p>
+      <table cellpadding="0" cellspacing="0" class="t1">
+        <tr>
+          <td class="tr7 td6">
+            <p class="p1 ft12">Adverse <nobr>Action-Notice</nobr> of Action Taken</p>
+          </td>
+          <td class="tr7 td7">
+            <p class="p1 ft12"><nobr>DN-FCRA-D</nobr> 10/31/2011</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr8 td6">
+            <p class="p1 ft13">Bankers Systems*</p>
+          </td>
+          <td class="tr8 td7">
+            <p class="p1 ft14">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr9 td6">
+            <p class="p1 ft15">Wolters Kluwer Financial Services - 1997, 2011</p>
+          </td>
+          <td class="tr9 td7">
+            <p class="p20 ft15">Page 1 of 2</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="page_2">
+      <table cellpadding="0" cellspacing="0" class="t2">
+        <tr>
+          <td class="tr10 td8"></td>
+          <td rowspan="2" class="tr11 td9">
+            <p class="p21 ft16">Name</p>
+          </td>
+          <td colspan="2" rowspan="2" class="tr11 td10">
+            <p class="p22 ft16">Mailing Address</p>
+          </td>
+          <td rowspan="2" class="tr11 td11">
+            <p class="p23 ft16">Telephone</p>
+          </td>
+          <td rowspan="2" class="tr11 td12">
+            <p class="p24 ft16">Web Address</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr12 td8"></td>
+        </tr>
+        <tr>
+          <td class="tr13 td8"></td>
+          <td class="tr13 td9">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr13 td13">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr13 td14">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr13 td11">
+            <p class="p25 ft17">
+              <nobr>Toll-Free</nobr>
+            </p>
+          </td>
+          <td class="tr13 td12">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr5 td8"></td>
+          <td class="tr5 td15">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+          <td class="tr5 td16">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+          <td class="tr5 td17">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+          <td class="tr5 td18">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+          <td class="tr5 td19">
+            <p class="p1 ft5">&nbsp;</p>
+          </td>
+        </tr>
+        <apex:outputPanel rendered="{!isQualiFileBureau}" layout="none">
+          <tr>
+            <td class="tr14 td8"></td>
+            <td class="tr14 td20">
+              <p class="p26 ft2">ChexSystems</p>
+            </td>
+            <td class="tr14 td21">
+              <p class="p27 ft2">7805 Hudson</p>
+            </td>
+            <td class="tr14 td22">
+              <p class="p28 ft2">Road, Suite 100</p>
+            </td>
+            <td class="tr14 td23">
+              <p class="p29 ft2">
+                (800)
+                <nobr>428-9623</nobr>
+              </p>
+            </td>
+            <td class="tr14 td24">
+              <p class="p27 ft2">consumerdebit.com</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tr12 td8"></td>
+            <td class="tr12 td20">
+              <p class="p1 ft8">&nbsp;</p>
+            </td>
+            <td class="tr12 td21">
+              <p class="p27 ft2">Woodbury,MN</p>
+            </td>
+            <td class="tr12 td22">
+              <p class="p28 ft2">
+                <nobr>55125-0000</nobr>
+              </p>
+            </td>
+            <td class="tr12 td23">
+              <p class="p1 ft8">&nbsp;</p>
+            </td>
+            <td class="tr12 td24">
+              <p class="p1 ft8">&nbsp;</p>
+            </td>
+          </tr>
+        </apex:outputPanel>
+
+        <tr>
+          <td class="tr15 td8"></td>
+          <td class="tr15 td25">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr15 td26">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr15 td27">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr15 td28">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr15 td29">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr16 td8"></td>
+          <td class="tr16 td25">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr16 td26">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr16 td27">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr16 td28">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr16 td29">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr17 td8"></td>
+          <td class="tr17 td25">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td26">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td27">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td28">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td29">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr17 td8"></td>
+          <td class="tr17 td25">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td26">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td27">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td28">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+          <td class="tr17 td29">
+            <p class="p1 ft8">&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="p30 ft7">
+        <span class="ft2 checkbox">{!IF(bureauDD != null, 'X', ' ')}</span>
+        <span class="ft10"
+          >We also obtained your credit score from the consumer reporting agency and used it in making our decision. Your</span
+        >
+      </p>
+      <p class="p31 ft7">
+        credit score is a number that reflects the information in your consumer report. Your credit score can change, depending on how the
+        information in your consumer report changes.
+      </p>
+      <p class="p32 ft21">
+        <span class="ft18">*</span>
+        <span class="ft19">Your credit score: </span>
+        <span class="ft20">{!bureauDD.Score__c}</span>
+      </p>
+      <table cellpadding="0" cellspacing="0" class="t3">
+        <tr>
+          <td class="tr2 td30">
+            <p class="p33 ft18">*</p>
+          </td>
+          <td class="tr2 td31">
+            <p class="p28 ft21">Date:</p>
+          </td>
+          <td class="tr2 td32">
+            <p class="p34 ft20">
+              <apex:outputText value="{0, date, MM'/'dd'/'yyyy}">
+                <apex:param value="{!bureauDD.CreatedDate}" />
+              </apex:outputText>
+            </p>
+          </td>
+          <td class="tr2 td21">
+            <p class="p1 ft8"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr12 td30">
+            <p class="p33 ft18">*</p>
+          </td>
+          <td colspan="2" class="tr12 td33">
+            <p class="p28 ft21">
+              Scores range from a low of
+              <span class="ft20">{!bureauScoreRange[0]}</span>
+            </p>
+          </td>
+          <td class="tr12 td21">
+            <p class="p1 ft23">
+              to a high of
+              <span class="ft22">{!bureauScoreRange[1]}</span>
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="p35 ft21">
+        <span class="ft18">*</span>
+        <span class="ft19">Key factors that adversely affected your credit score:</span>
+      </p>
+      <apex:outputPanel rendered="{!bureauDD == null}" layout="none">
+        <p class="p37 ft2">&nbsp;</p>
+        <p class="p37 ft2">&nbsp;</p>
+        <p class="p37 ft2">&nbsp;</p>
+        <p class="p38 ft2">&nbsp;</p>
+      </apex:outputPanel>
+
+      <apex:repeat value="{!reasonCodes}" var="item">
+        <p class="p37 ft2">{!item.tffa__Value__c}: {!item.tffa__ValueName__c}</p>
+      </apex:repeat>
+
+      <table cellpadding="0" cellspacing="0" class="t4">
+        <tr>
+          <td class="tr12 td34">
+            <p class="p1 ft7">
+              If you have any questions regarding your score, you should contact the consumer reporting agency using the contact information
+              above.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr12 td34">
+            <p class="p1 ft7">
+              If you have any other questions regarding this notice, please email <b>{!branch.ContactEmail__c}</b> or call
+              <b>{!branch.ContactPhone__c}</b>.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="p39 ft25">
+        <span class="ft2 checkbox">&nbsp;</span>
+        Our decision was based in whole or in part on information obtained from an affiliate or from an outside source other than a consumer
+        reporting agency. Under the
+        <span class="ft24">Fair Credit Reporting Act</span>, you have the right to make a written request, no later than 60 days after you
+        receive this notice, for disclosure of the nature of this information.
+      </p>
+      <table cellpadding="0" cellspacing="0" class="t5">
+        <tr>
+          <td class="tr7 td6">
+            <p class="p1 ft12">Adverse <nobr>Action-Notice</nobr> of Action Taken</p>
+          </td>
+          <td class="tr7 td7">
+            <p class="p1 ft12"><nobr>DN-FCRA-D</nobr> 10/31/2011</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr8 td6">
+            <p class="p1 ft13">Bankers Systems*</p>
+          </td>
+          <td class="tr8 td7">
+            <p class="p1 ft14">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr9 td6">
+            <p class="p1 ft15">Wolters Kluwer Financial Services - 1997, 2011</p>
+          </td>
+          <td class="tr9 td7">
+            <p class="p20 ft15">Page 2 of 2</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</apex:page>

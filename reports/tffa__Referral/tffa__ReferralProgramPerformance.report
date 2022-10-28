@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>tffa__Referral__c.tffa__Converted__c:SUM/MAX(tffa__Referral__c.tffa__One__c:SUM,1)</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Conversion Ratio</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conversion Ratio</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>tffa__ReferralProgram__c$tffa__NumberOfReferralCodes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>tffa__ReferralProgram__c$tffa__NumberOfReferredVisitors__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>tffa__ReferralProgram__c.tffa__Referrals__r$tffa__One__c</field>
+    </columns>
+    <description>Displays some of the statistics of the referral programs for comparison</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>tffa__ReferralProgram__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Referral Program Performance</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>tffa__ReferralProgramsWithReferrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>tffa__ReferralProgram__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

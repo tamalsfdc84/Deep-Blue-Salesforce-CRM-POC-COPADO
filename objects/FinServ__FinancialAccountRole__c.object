@@ -1,0 +1,2693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents the role occupied by a person or organizational entity that is involved with a financial account, such as a beneficiary or trustee.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>WM_Client_FinancialAccountRole</fullName>
+        <description>Client profile&apos;s Financials tab.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FinServ__FinancialAccount__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FinServ__Role__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FinServ__Active__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Financial Account Role</label>
+    </fieldSets>
+    <fields>
+        <fullName>FinServ__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the organizational entity or person currently occupies this role.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__Editable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this field is read-only or editable.</description>
+        <externalId>false</externalId>
+        <label>Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date when the organizational entity or person relinquished this role.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__FinancialAccount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Financial account that this role is related to.</description>
+        <externalId>false</externalId>
+        <label>Financial Account</label>
+        <referenceTo>FinServ__FinancialAccount__c</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>FinServ__RelatedAccount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Name of the organizational entity that is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__RelatedContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Name of the person who is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Related Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__Role__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Role that describes how the organizational entity or person is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Beneficial Owner</fullName>
+                    <default>false</default>
+                    <label>Beneficial Owner</label>
+                </value>
+                <value>
+                    <fullName>Committee Member</fullName>
+                    <default>false</default>
+                    <label>Committee Member</label>
+                </value>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+                <value>
+                    <fullName>Additional Obligator</fullName>
+                    <default>false</default>
+                    <label>Additional Obligator</label>
+                </value>
+                <value>
+                    <fullName>Authority Signor</fullName>
+                    <default>false</default>
+                    <label>Authority Signor</label>
+                </value>
+                <value>
+                    <fullName>CEO</fullName>
+                    <default>false</default>
+                    <label>CEO</label>
+                </value>
+                <value>
+                    <fullName>Co-Borrower</fullName>
+                    <default>false</default>
+                    <label>Co-Borrower</label>
+                </value>
+                <value>
+                    <fullName>Guarantor</fullName>
+                    <default>false</default>
+                    <label>Guarantor</label>
+                </value>
+                <value>
+                    <fullName>President</fullName>
+                    <default>false</default>
+                    <label>President</label>
+                </value>
+                <value>
+                    <fullName>Borrower</fullName>
+                    <default>false</default>
+                    <label>Borrower</label>
+                </value>
+                <value>
+                    <fullName>Co-Maker</fullName>
+                    <default>false</default>
+                    <label>Co-Maker</label>
+                </value>
+                <value>
+                    <fullName>Corporation</fullName>
+                    <default>false</default>
+                    <label>Corporation</label>
+                </value>
+                <value>
+                    <fullName>Llc</fullName>
+                    <default>false</default>
+                    <label>Llc</label>
+                </value>
+                <value>
+                    <fullName>Administrator</fullName>
+                    <default>false</default>
+                    <label>Administrator</label>
+                </value>
+                <value>
+                    <fullName>Agent</fullName>
+                    <default>false</default>
+                    <label>Agent</label>
+                </value>
+                <value>
+                    <fullName>Aka</fullName>
+                    <default>false</default>
+                    <label>Aka</label>
+                </value>
+                <value>
+                    <fullName>Association</fullName>
+                    <default>false</default>
+                    <label>Association</label>
+                </value>
+                <value>
+                    <fullName>Assistant Director</fullName>
+                    <default>false</default>
+                    <label>Assistant Director</label>
+                </value>
+                <value>
+                    <fullName>Attorney</fullName>
+                    <default>false</default>
+                    <label>Attorney</label>
+                </value>
+                <value>
+                    <fullName>Auth. Agent For</fullName>
+                    <default>false</default>
+                    <label>Auth. Agent For</label>
+                </value>
+                <value>
+                    <fullName>Authority Signor - Non Owner</fullName>
+                    <default>false</default>
+                    <label>Authority Signor - Non Owner</label>
+                </value>
+                <value>
+                    <fullName>Bankrupt</fullName>
+                    <default>false</default>
+                    <label>Bankrupt</label>
+                </value>
+                <value>
+                    <fullName>Bene Ira</fullName>
+                    <default>false</default>
+                    <label>Bene Ira</label>
+                </value>
+                <value>
+                    <fullName>Beneficiary</fullName>
+                    <default>false</default>
+                    <label>Beneficiary</label>
+                </value>
+                <value>
+                    <fullName>Beneficiary Non</fullName>
+                    <default>false</default>
+                    <label>Beneficiary Non</label>
+                </value>
+                <value>
+                    <fullName>Business</fullName>
+                    <default>false</default>
+                    <label>Business</label>
+                </value>
+                <value>
+                    <fullName>By</fullName>
+                    <default>false</default>
+                    <label>By</label>
+                </value>
+                <value>
+                    <fullName>Education Saving Account</fullName>
+                    <default>false</default>
+                    <label>Education Saving Account</label>
+                </value>
+                <value>
+                    <fullName>CFO</fullName>
+                    <default>false</default>
+                    <label>CFO</label>
+                </value>
+                <value>
+                    <fullName>Chairman</fullName>
+                    <default>false</default>
+                    <label>Chairman</label>
+                </value>
+                <value>
+                    <fullName>Client Trustee</fullName>
+                    <default>false</default>
+                    <label>Client Trustee</label>
+                </value>
+                <value>
+                    <fullName>Clergy</fullName>
+                    <default>false</default>
+                    <label>Clergy</label>
+                </value>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                    <label>Commercial</label>
+                </value>
+                <value>
+                    <fullName>Conservator</fullName>
+                    <default>false</default>
+                    <label>Conservator</label>
+                </value>
+                <value>
+                    <fullName>Co-Executor</fullName>
+                    <default>false</default>
+                    <label>Co-Executor</label>
+                </value>
+                <value>
+                    <fullName>Compliance Off</fullName>
+                    <default>false</default>
+                    <label>Compliance Off</label>
+                </value>
+                <value>
+                    <fullName>Contingent Benifitioary</fullName>
+                    <default>false</default>
+                    <label>Contingent Benifitioary</label>
+                </value>
+                <value>
+                    <fullName>Co-Owner</fullName>
+                    <default>false</default>
+                    <label>Co-Owner</label>
+                </value>
+                <value>
+                    <fullName>Co-Signer</fullName>
+                    <default>false</default>
+                    <label>Co-Signer</label>
+                </value>
+                <value>
+                    <fullName>Cust Ilutma</fullName>
+                    <default>false</default>
+                    <label>Cust Ilutma</label>
+                </value>
+                <value>
+                    <fullName>Cust Ugma</fullName>
+                    <default>false</default>
+                    <label>Cust Ugma</label>
+                </value>
+                <value>
+                    <fullName>Cust Utma</fullName>
+                    <default>false</default>
+                    <label>Cust Utma</label>
+                </value>
+                <value>
+                    <fullName>Custodian</fullName>
+                    <default>false</default>
+                    <label>Custodian</label>
+                </value>
+                <value>
+                    <fullName>Dba</fullName>
+                    <default>false</default>
+                    <label>Dba</label>
+                </value>
+                <value>
+                    <fullName>Deceased</fullName>
+                    <default>false</default>
+                    <label>Deceased</label>
+                </value>
+                <value>
+                    <fullName>Director</fullName>
+                    <default>false</default>
+                    <label>Director</label>
+                </value>
+                <value>
+                    <fullName>Disabled Person</fullName>
+                    <default>false</default>
+                    <label>Disabled Person</label>
+                </value>
+                <value>
+                    <fullName>Depositor</fullName>
+                    <default>false</default>
+                    <label>Depositor</label>
+                </value>
+                <value>
+                    <fullName>Education Ira</fullName>
+                    <default>false</default>
+                    <label>Education Ira</label>
+                </value>
+                <value>
+                    <fullName>Endorser</fullName>
+                    <default>false</default>
+                    <label>Endorser</label>
+                </value>
+                <value>
+                    <fullName>Escrow</fullName>
+                    <default>false</default>
+                    <label>Escrow</label>
+                </value>
+                <value>
+                    <fullName>Escrow Agent</fullName>
+                    <default>false</default>
+                    <label>Escrow Agent</label>
+                </value>
+                <value>
+                    <fullName>Escrow Benefitiary</fullName>
+                    <default>false</default>
+                    <label>Escrow Benefitiary</label>
+                </value>
+                <value>
+                    <fullName>Estate</fullName>
+                    <default>false</default>
+                    <label>Estate</label>
+                </value>
+                <value>
+                    <fullName>Exec Director</fullName>
+                    <default>false</default>
+                    <label>Exec Director</label>
+                </value>
+                <value>
+                    <fullName>Executor</fullName>
+                    <default>false</default>
+                    <label>Executor</label>
+                </value>
+                <value>
+                    <fullName>Fbo</fullName>
+                    <default>false</default>
+                    <label>Fbo</label>
+                </value>
+                <value>
+                    <fullName>Fiduciary</fullName>
+                    <default>false</default>
+                    <label>Fiduciary</label>
+                </value>
+                <value>
+                    <fullName>Foundation</fullName>
+                    <default>false</default>
+                    <label>Foundation</label>
+                </value>
+                <value>
+                    <fullName>For</fullName>
+                    <default>false</default>
+                    <label>For</label>
+                </value>
+                <value>
+                    <fullName>For Benefit Of</fullName>
+                    <default>false</default>
+                    <label>For Benefit Of</label>
+                </value>
+                <value>
+                    <fullName>Gdn &amp; Consv</fullName>
+                    <default>false</default>
+                    <label>Gdn &amp; Consv</label>
+                </value>
+                <value>
+                    <fullName>Grantor</fullName>
+                    <default>false</default>
+                    <label>Grantor</label>
+                </value>
+                <value>
+                    <fullName>General Partner</fullName>
+                    <default>false</default>
+                    <label>General Partner</label>
+                </value>
+                <value>
+                    <fullName>Guardian</fullName>
+                    <default>false</default>
+                    <label>Guardian</label>
+                </value>
+                <value>
+                    <fullName>Guardianship</fullName>
+                    <default>false</default>
+                    <label>Guardianship</label>
+                </value>
+                <value>
+                    <fullName>Hh Related</fullName>
+                    <default>false</default>
+                    <label>Hh Related</label>
+                </value>
+                <value>
+                    <fullName>Hsa</fullName>
+                    <default>false</default>
+                    <label>Hsa</label>
+                </value>
+                <value>
+                    <fullName>Hsa Agent</fullName>
+                    <default>false</default>
+                    <label>Hsa Agent</label>
+                </value>
+                <value>
+                    <fullName>Hsa Beneficiary</fullName>
+                    <default>false</default>
+                    <label>Hsa Beneficiary</label>
+                </value>
+                <value>
+                    <fullName>Hsa Dependent</fullName>
+                    <default>false</default>
+                    <label>Hsa Dependent</label>
+                </value>
+                <value>
+                    <fullName>Hsa Employee</fullName>
+                    <default>false</default>
+                    <label>Hsa Employee</label>
+                </value>
+                <value>
+                    <fullName>Hsa Individual</fullName>
+                    <default>false</default>
+                    <label>Hsa Individual</label>
+                </value>
+                <value>
+                    <fullName>Hsa Owner</fullName>
+                    <default>false</default>
+                    <label>Hsa Owner</label>
+                </value>
+                <value>
+                    <fullName>I/T/F</fullName>
+                    <default>false</default>
+                    <label>I/T/F</label>
+                </value>
+                <value>
+                    <fullName>Ilutma</fullName>
+                    <default>false</default>
+                    <label>Ilutma</label>
+                </value>
+                <value>
+                    <fullName>In Trust For</fullName>
+                    <default>false</default>
+                    <label>In Trust For</label>
+                </value>
+                <value>
+                    <fullName>Incapacitated</fullName>
+                    <default>false</default>
+                    <label>Incapacitated</label>
+                </value>
+                <value>
+                    <fullName>Incompetent</fullName>
+                    <default>false</default>
+                    <label>Incompetent</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Inquiry &amp; Trnfr</fullName>
+                    <default>false</default>
+                    <label>Inquiry &amp; Trnfr</label>
+                </value>
+                <value>
+                    <fullName>Inquiry Only</fullName>
+                    <default>false</default>
+                    <label>Inquiry Only</label>
+                </value>
+                <value>
+                    <fullName>Internet</fullName>
+                    <default>false</default>
+                    <label>Internet</label>
+                </value>
+                <value>
+                    <fullName>Iolta</fullName>
+                    <default>false</default>
+                    <label>Iolta</label>
+                </value>
+                <value>
+                    <fullName>Iolta/Ibreta</fullName>
+                    <default>false</default>
+                    <label>Iolta/Ibreta</label>
+                </value>
+                <value>
+                    <fullName>Ira</fullName>
+                    <default>false</default>
+                    <label>Ira</label>
+                </value>
+                <value>
+                    <fullName>Joint (And)</fullName>
+                    <default>false</default>
+                    <label>Joint (And)</label>
+                </value>
+                <value>
+                    <fullName>Joint (Or)</fullName>
+                    <default>false</default>
+                    <label>Joint (Or)</label>
+                </value>
+                <value>
+                    <fullName>Joint Owner</fullName>
+                    <default>false</default>
+                    <label>Joint Owner</label>
+                </value>
+                <value>
+                    <fullName>Jt W/O Surv</fullName>
+                    <default>false</default>
+                    <label>Jt W/O Surv</label>
+                </value>
+                <value>
+                    <fullName>Jt W/Survivor</fullName>
+                    <default>false</default>
+                    <label>Jt W/Survivor</label>
+                </value>
+                <value>
+                    <fullName>Landlord</fullName>
+                    <default>false</default>
+                    <label>Landlord</label>
+                </value>
+                <value>
+                    <fullName>Legally Disable</fullName>
+                    <default>false</default>
+                    <label>Legally Disable</label>
+                </value>
+                <value>
+                    <fullName>Llc Member</fullName>
+                    <default>false</default>
+                    <label>Llc Member</label>
+                </value>
+                <value>
+                    <fullName>Llp</fullName>
+                    <default>false</default>
+                    <label>Llp</label>
+                </value>
+                <value>
+                    <fullName>Limited Liability Company</fullName>
+                    <default>false</default>
+                    <label>Limited Liability Company</label>
+                </value>
+                <value>
+                    <fullName>Limited Liability Corporation</fullName>
+                    <default>false</default>
+                    <label>Limited Liability Corporation</label>
+                </value>
+                <value>
+                    <fullName>Member</fullName>
+                    <default>false</default>
+                    <label>Member</label>
+                </value>
+                <value>
+                    <fullName>Member/Manager</fullName>
+                    <default>false</default>
+                    <label>Member/Manager</label>
+                </value>
+                <value>
+                    <fullName>Member (Llc)</fullName>
+                    <default>false</default>
+                    <label>Member (Llc)</label>
+                </value>
+                <value>
+                    <fullName>Municipal</fullName>
+                    <default>false</default>
+                    <label>Municipal</label>
+                </value>
+                <value>
+                    <fullName>Managing Member</fullName>
+                    <default>false</default>
+                    <label>Managing Member</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+                <value>
+                    <fullName>Minor</fullName>
+                    <default>false</default>
+                    <label>Minor</label>
+                </value>
+                <value>
+                    <fullName>Non-Title</fullName>
+                    <default>false</default>
+                    <label>Non-Title</label>
+                </value>
+                <value>
+                    <fullName>Officer</fullName>
+                    <default>false</default>
+                    <label>Officer</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Part/Guarantor</fullName>
+                    <default>false</default>
+                    <label>Part/Guarantor</label>
+                </value>
+                <value>
+                    <fullName>Pay On Death</fullName>
+                    <default>false</default>
+                    <label>Pay On Death</label>
+                </value>
+                <value>
+                    <fullName>Payee</fullName>
+                    <default>false</default>
+                    <label>Payee</label>
+                </value>
+                <value>
+                    <fullName>Personal Rep</fullName>
+                    <default>false</default>
+                    <label>Personal Rep</label>
+                </value>
+                <value>
+                    <fullName>Plenary Grdian</fullName>
+                    <default>false</default>
+                    <label>Plenary Grdian</label>
+                </value>
+                <value>
+                    <fullName>Pod</fullName>
+                    <default>false</default>
+                    <label>Pod</label>
+                </value>
+                <value>
+                    <fullName>Pod Beneficiary</fullName>
+                    <default>false</default>
+                    <label>Pod Beneficiary</label>
+                </value>
+                <value>
+                    <fullName>Principal Owner</fullName>
+                    <default>false</default>
+                    <label>Principal Owner</label>
+                </value>
+                <value>
+                    <fullName>Proprietor</fullName>
+                    <default>false</default>
+                    <label>Proprietor</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>Partnership</fullName>
+                    <default>false</default>
+                    <label>Partnership</label>
+                </value>
+                <value>
+                    <fullName>Power Of Atty</fullName>
+                    <default>false</default>
+                    <label>Power Of Atty</label>
+                </value>
+                <value>
+                    <fullName>Responsible Ind</fullName>
+                    <default>false</default>
+                    <label>Responsible Ind</label>
+                </value>
+                <value>
+                    <fullName>Resp Individual</fullName>
+                    <default>false</default>
+                    <label>Resp Individual</label>
+                </value>
+                <value>
+                    <fullName>Related Cust</fullName>
+                    <default>false</default>
+                    <label>Related Cust</label>
+                </value>
+                <value>
+                    <fullName>Roth Ira</fullName>
+                    <default>false</default>
+                    <label>Roth Ira</label>
+                </value>
+                <value>
+                    <fullName>Rep Payee</fullName>
+                    <default>false</default>
+                    <label>Rep Payee</label>
+                </value>
+                <value>
+                    <fullName>Represent Payee</fullName>
+                    <default>false</default>
+                    <label>Represent Payee</label>
+                </value>
+                <value>
+                    <fullName>Succession</fullName>
+                    <default>false</default>
+                    <label>Succession</label>
+                </value>
+                <value>
+                    <fullName>Successor</fullName>
+                    <default>false</default>
+                    <label>Successor</label>
+                </value>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                    <label>Secondary</label>
+                </value>
+                <value>
+                    <fullName>Secretary</fullName>
+                    <default>false</default>
+                    <label>Secretary</label>
+                </value>
+                <value>
+                    <fullName>Sep Ira</fullName>
+                    <default>false</default>
+                    <label>Sep Ira</label>
+                </value>
+                <value>
+                    <fullName>Sole Owner</fullName>
+                    <default>false</default>
+                    <label>Sole Owner</label>
+                </value>
+                <value>
+                    <fullName>Sole Proprietor</fullName>
+                    <default>false</default>
+                    <label>Sole Proprietor</label>
+                </value>
+                <value>
+                    <fullName>Subsidiary</fullName>
+                    <default>false</default>
+                    <label>Subsidiary</label>
+                </value>
+                <value>
+                    <fullName>Succ Custodian</fullName>
+                    <default>false</default>
+                    <label>Succ Custodian</label>
+                </value>
+                <value>
+                    <fullName>Succesr Trustee</fullName>
+                    <default>false</default>
+                    <label>Succesr Trustee</label>
+                </value>
+                <value>
+                    <fullName>T/A</fullName>
+                    <default>false</default>
+                    <label>T/A</label>
+                </value>
+                <value>
+                    <fullName>Tenant</fullName>
+                    <default>false</default>
+                    <label>Tenant</label>
+                </value>
+                <value>
+                    <fullName>Tenant/Bldg</fullName>
+                    <default>false</default>
+                    <label>Tenant/Bldg</label>
+                </value>
+                <value>
+                    <fullName>To</fullName>
+                    <default>false</default>
+                    <label>To</label>
+                </value>
+                <value>
+                    <fullName>Treasurer</fullName>
+                    <default>false</default>
+                    <label>Treasurer</label>
+                </value>
+                <value>
+                    <fullName>Trust</fullName>
+                    <default>false</default>
+                    <label>Trust</label>
+                </value>
+                <value>
+                    <fullName>Trst Related</fullName>
+                    <default>false</default>
+                    <label>Trst Related</label>
+                </value>
+                <value>
+                    <fullName>Trustee</fullName>
+                    <default>false</default>
+                    <label>Trustee</label>
+                </value>
+                <value>
+                    <fullName>Trustor</fullName>
+                    <default>false</default>
+                    <label>Trustor</label>
+                </value>
+                <value>
+                    <fullName>Ugma</fullName>
+                    <default>false</default>
+                    <label>Ugma</label>
+                </value>
+                <value>
+                    <fullName>Utma</fullName>
+                    <default>false</default>
+                    <label>Utma</label>
+                </value>
+                <value>
+                    <fullName>Vice President</fullName>
+                    <default>false</default>
+                    <label>Vice President</label>
+                </value>
+                <value>
+                    <fullName>Ward</fullName>
+                    <default>false</default>
+                    <label>Ward</label>
+                </value>
+                <value>
+                    <fullName>Company</fullName>
+                    <default>false</default>
+                    <label>Company</label>
+                </value>
+                <value>
+                    <fullName>Franchisee</fullName>
+                    <default>false</default>
+                    <label>Franchisee</label>
+                </value>
+                <value>
+                    <fullName>Hsa Tpa/Employr</fullName>
+                    <default>false</default>
+                    <label>Hsa Tpa/Employr</label>
+                </value>
+                <value>
+                    <fullName>Ilota/Ibreta</fullName>
+                    <default>false</default>
+                    <label>Ilota/Ibreta</label>
+                </value>
+                <value>
+                    <fullName>Incorporated</fullName>
+                    <default>false</default>
+                    <label>Incorporated</label>
+                </value>
+                <value>
+                    <fullName>Master/Mstr Id</fullName>
+                    <default>false</default>
+                    <label>Master/Mstr Id</label>
+                </value>
+                <value>
+                    <fullName>Master Primary</fullName>
+                    <default>false</default>
+                    <label>Master Primary</label>
+                </value>
+                <value>
+                    <fullName>Non Profit Corp</fullName>
+                    <default>false</default>
+                    <label>Non Profit Corp</label>
+                </value>
+                <value>
+                    <fullName>Non-Pft</fullName>
+                    <default>false</default>
+                    <label>Non-Pft</label>
+                </value>
+                <value>
+                    <fullName>Public Funds</fullName>
+                    <default>false</default>
+                    <label>Public Funds</label>
+                </value>
+                <value>
+                    <fullName>Pc</fullName>
+                    <default>false</default>
+                    <label>Pc</label>
+                </value>
+                <value>
+                    <fullName>Repo Sweep</fullName>
+                    <default>false</default>
+                    <label>Repo Sweep</label>
+                </value>
+                <value>
+                    <fullName>Tenants/Common</fullName>
+                    <default>false</default>
+                    <label>Tenants/Common</label>
+                </value>
+                <value>
+                    <fullName>Affiliate</fullName>
+                    <default>false</default>
+                    <label>Affiliate</label>
+                </value>
+                <value>
+                    <fullName>Common Guarantor</fullName>
+                    <default>false</default>
+                    <label>Common Guarantor</label>
+                </value>
+                <value>
+                    <fullName>Dba/Sole Owner</fullName>
+                    <default>false</default>
+                    <label>Dba/Sole Owner</label>
+                </value>
+                <value>
+                    <fullName>Endorsed</fullName>
+                    <default>false</default>
+                    <label>Endorsed</label>
+                </value>
+                <value>
+                    <fullName>Guaranteed</fullName>
+                    <default>false</default>
+                    <label>Guaranteed</label>
+                </value>
+                <value>
+                    <fullName>Joint</fullName>
+                    <default>false</default>
+                    <label>Joint</label>
+                </value>
+                <value>
+                    <fullName>Et Al</fullName>
+                    <default>false</default>
+                    <label>Et Al</label>
+                </value>
+                <value>
+                    <fullName>Lease</fullName>
+                    <default>false</default>
+                    <label>Lease</label>
+                </value>
+                <value>
+                    <fullName>Participant</fullName>
+                    <default>false</default>
+                    <label>Participant</label>
+                </value>
+                <value>
+                    <fullName>Partnership/Llp</fullName>
+                    <default>false</default>
+                    <label>Partnership/Llp</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Trust Client</fullName>
+                    <default>false</default>
+                    <label>Trust Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FinServ__SourceSystemId__c</fullName>
+        <deprecated>false</deprecated>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Source System ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FinServ__StartDate__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Start date when the organizational entity or person assumed this role.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WT_Account_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Account_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Customer_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Customer_Relationship_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Relationship Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+                <value>
+                    <fullName>Primary Passive</fullName>
+                    <default>false</default>
+                    <label>Primary Passive</label>
+                </value>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                    <label>Secondary</label>
+                </value>
+                <value>
+                    <fullName>Secondary Passive</fullName>
+                    <default>false</default>
+                    <label>Secondary Passive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Financial Account Role</label>
+    <nameField>
+        <displayFormat>FAR-{000000000}</displayFormat>
+        <label>Role Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Financial Account Roles</pluralLabel>
+    <recordTypes>
+        <fullName>FinServ__AccountRole</fullName>
+        <active>true</active>
+        <description>Role occupied by an organizational entity, such as a corporation or LLC</description>
+        <label>Account Role</label>
+        <picklistValues>
+            <picklist>FinServ__Role__c</picklist>
+            <values>
+                <fullName>Additional Obligator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assistant Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Association</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attorney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auth%2E Agent For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authority Signor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authority Signor - Non Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bankrupt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bene Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clergy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Executor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Signer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Committee Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Common Guarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conservator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingent Benifitioary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Ilutma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Ugma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Utma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custodian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dba%2FSole Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Depositor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disabled Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Saving Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endorsed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endorser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow Benefitiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Et Al</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exec Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiduciary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For Benefit Of</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchisee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gdn %26 Consv</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guaranteed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guardianship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hh Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Dependent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Tpa%2FEmployr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I%2FT%2FF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilota%2FIbreta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilutma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Trust For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incapacitated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incompetent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorporated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry %26 Trnfr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iolta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iolta%2FIbreta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint %28And%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint %28Or%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jt W%2FO Surv</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jt W%2FSurvivor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legally Disable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Liability Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Liability Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llc Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managing Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master%2FMstr Id</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member %28Llc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member%2FManager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Profit Corp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Pft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Organization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part%2FGuarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership%2FLlp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay On Death</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plenary Grdian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pod Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Of Atty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Principal Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proprietor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Related Cust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repo Sweep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Represent Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resp Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsible Ind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roth Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sep Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succ Custodian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succesr Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succession</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Successor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant%2FBldg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenants%2FCommon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trst Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ugma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ward</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Customer_Relationship_Type__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Primary Passive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary Passive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FinServ__ContactRole</fullName>
+        <active>true</active>
+        <description>Role occupied by a person</description>
+        <label>Contact Role</label>
+        <picklistValues>
+            <picklist>FinServ__Role__c</picklist>
+            <values>
+                <fullName>Additional Obligator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assistant Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Association</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attorney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auth%2E Agent For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authority Signor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authority Signor - Non Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bankrupt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bene Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficial Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clergy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Executor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Signer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Common Guarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingent Benifitioary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Ilutma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Ugma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cust Utma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dba%2FSole Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Depositor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disabled Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Saving Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endorsed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endorser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow Benefitiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Et Al</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exec Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiduciary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For Benefit Of</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchisee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gdn %26 Consv</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guaranteed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guardianship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hh Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Dependent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hsa Tpa%2FEmployr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I%2FT%2FF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilota%2FIbreta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilutma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Trust For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incapacitated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incompetent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorporated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry %26 Trnfr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iolta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iolta%2FIbreta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint %28And%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint %28Or%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jt W%2FO Surv</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jt W%2FSurvivor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legally Disable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Liability Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Liability Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llc Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Llp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managing Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master%2FMstr Id</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member %28Llc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member%2FManager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Profit Corp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Pft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Organization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part%2FGuarantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership%2FLlp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay On Death</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plenary Grdian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pod Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Of Atty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Principal Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Related Cust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repo Sweep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Represent Payee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resp Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsible Ind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roth Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sep Ira</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succ Custodian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succesr Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Succession</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Successor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant%2FBldg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenants%2FCommon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trst Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ugma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ward</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Customer_Relationship_Type__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Primary Passive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary Passive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>FinServ__CannotCreateInactiveRecord</fullName>
+        <active>false</active>
+        <description>Ensures that a record cannot be created as Inactive</description>
+        <errorConditionFormula>ISBLANK(FinServ__EndDate__c) &amp;&amp; NOT(FinServ__Active__c)</errorConditionFormula>
+        <errorMessage>A Financial Account Role cannot be created as Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__FARCannotBeModified</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(OR(ISCHANGED(FinServ__RelatedAccount__c),ISCHANGED(FinServ__RelatedContact__c),ISCHANGED(FinServ__FinancialAccount__c),ISCHANGED(FinServ__Role__c)),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>This record cannot be edited. To update role information, you can deactivate this record and create a new one.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__InactiveFARCannotBeEdited</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(PRIORVALUE(FinServ__Active__c) == false,NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>Inactive record cannot be edited. To update FAR, you can create a new one.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__InactiveRecordCannotBeReactivated</fullName>
+        <active>false</active>
+        <description>Ensures that inactive records cannot be reactivated.</description>
+        <errorConditionFormula>1!=1</errorConditionFormula>
+        <errorMessage>Inactive Financial Roles cannot be reactivated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__OwnershipRolesCannotBeDeactivated</fullName>
+        <active>false</active>
+        <description>Enforces that changes to primary roles cannot be deactivated.</description>
+        <errorConditionFormula>(FinServ__Editable__c == false) &amp;&amp;
+        (ISCHANGED( FinServ__Active__c ))</errorConditionFormula>
+        <errorMessage>This record cannot be deactivated because ownership can be updated on the financial account only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__OwnershipRolesCannotBeModified</fullName>
+        <active>false</active>
+        <description>Enforces that changes to Related Contact, Related Account, Role fields are not allowed when fields are non editable.</description>
+        <errorConditionFormula>1!=1</errorConditionFormula>
+        <errorMessage>This record cannot be modified because ownership can be specified on the financial account only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__RelatedAccountOrContactRequired</fullName>
+        <active>false</active>
+        <description>Enforce selection of the correct lookup relationship: either a Related Account or Related Contact.</description>
+        <errorConditionFormula>ISBLANK(FinServ__RelatedContact__c) &amp;&amp; ISBLANK( FinServ__RelatedAccount__c)</errorConditionFormula>
+        <errorMessage>Either Related Account or Related Contact is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinServ__RoleIsMandatory</fullName>
+        <active>false</active>
+        <description>Enforces that the Role__c field is mandatory when a FinancialAccountRole__c object is created.</description>
+        <errorConditionFormula>ISBLANK(TEXT(FinServ__Role__c))</errorConditionFormula>
+        <errorMessage>Role is required.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

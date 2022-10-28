@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Finanz-Accountrolle</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Finanz-Accountrollen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Finanz-Accountrolle</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Finanz-Accountrollen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Finanz-Accountrolle</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Finanz-Accountrollen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Finanz-Accountrolle</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Finanz-Accountrollen</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Financial Account Role --></label>
+        <name>WM_Client_FinancialAccountRole</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FinServ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Editable --></label>
+        <name>FinServ__Editable__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>FinServ__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Account --></label>
+        <name>FinServ__RelatedAccount__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Contact --></label>
+        <name>FinServ__RelatedContact__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>FinServ__Role__c</name>
+        <picklistValues>
+            <masterLabel>Additional Obligator</masterLabel>
+            <translation><!-- Additional Obligator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrator</masterLabel>
+            <translation>Administrator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation><!-- Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aka</masterLabel>
+            <translation><!-- Aka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Director</masterLabel>
+            <translation><!-- Assistant Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auth. Agent For</masterLabel>
+            <translation><!-- Auth. Agent For --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authority Signor</masterLabel>
+            <translation><!-- Authority Signor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authority Signor - Non Owner</masterLabel>
+            <translation><!-- Authority Signor - Non Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankrupt</masterLabel>
+            <translation><!-- Bankrupt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bene Ira</masterLabel>
+            <translation><!-- Bene Ira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficial Owner</masterLabel>
+            <translation>Nutzungsberechtigter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficiary</masterLabel>
+            <translation>Empfänger</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficiary Non</masterLabel>
+            <translation><!-- Beneficiary Non --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By</masterLabel>
+            <translation><!-- By --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO</masterLabel>
+            <translation><!-- CEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFO</masterLabel>
+            <translation><!-- CFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairman</masterLabel>
+            <translation><!-- Chairman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clergy</masterLabel>
+            <translation><!-- Clergy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Trustee</masterLabel>
+            <translation><!-- Client Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Borrower</masterLabel>
+            <translation><!-- Co-Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Executor</masterLabel>
+            <translation><!-- Co-Executor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Maker</masterLabel>
+            <translation><!-- Co-Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Owner</masterLabel>
+            <translation><!-- Co-Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Signer</masterLabel>
+            <translation><!-- Co-Signer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee Member</masterLabel>
+            <translation>Ausschussmitglied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Common Guarantor</masterLabel>
+            <translation><!-- Common Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Off</masterLabel>
+            <translation><!-- Compliance Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservator</masterLabel>
+            <translation>Konservator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingent Benifitioary</masterLabel>
+            <translation><!-- Contingent Benifitioary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation>Kapitalgesellschaft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust Ilutma</masterLabel>
+            <translation><!-- Cust Ilutma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust Ugma</masterLabel>
+            <translation><!-- Cust Ugma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust Utma</masterLabel>
+            <translation><!-- Cust Utma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custodian</masterLabel>
+            <translation>Depotstelle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dba</masterLabel>
+            <translation><!-- Dba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dba/Sole Owner</masterLabel>
+            <translation><!-- Dba/Sole Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depositor</masterLabel>
+            <translation><!-- Depositor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled Person</masterLabel>
+            <translation><!-- Disabled Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Ira</masterLabel>
+            <translation><!-- Education Ira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Saving Account</masterLabel>
+            <translation><!-- Education Saving Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endorsed</masterLabel>
+            <translation><!-- Endorsed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endorser</masterLabel>
+            <translation><!-- Endorser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escrow</masterLabel>
+            <translation><!-- Escrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escrow Agent</masterLabel>
+            <translation><!-- Escrow Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escrow Benefitiary</masterLabel>
+            <translation><!-- Escrow Benefitiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate</masterLabel>
+            <translation><!-- Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Et Al</masterLabel>
+            <translation><!-- Et Al --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exec Director</masterLabel>
+            <translation><!-- Exec Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executor</masterLabel>
+            <translation><!-- Executor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fbo</masterLabel>
+            <translation><!-- Fbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiduciary</masterLabel>
+            <translation><!-- Fiduciary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For</masterLabel>
+            <translation><!-- For --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For Benefit Of</masterLabel>
+            <translation><!-- For Benefit Of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation>Stiftung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchisee</masterLabel>
+            <translation><!-- Franchisee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gdn &amp; Consv</masterLabel>
+            <translation><!-- Gdn &amp; Consv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Partner</masterLabel>
+            <translation><!-- General Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grantor</masterLabel>
+            <translation>Optionsverkäufer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guaranteed</masterLabel>
+            <translation><!-- Guaranteed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardian</masterLabel>
+            <translation>Vormund</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardianship</masterLabel>
+            <translation><!-- Guardianship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hh Related</masterLabel>
+            <translation><!-- Hh Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa</masterLabel>
+            <translation><!-- Hsa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Agent</masterLabel>
+            <translation><!-- Hsa Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Beneficiary</masterLabel>
+            <translation><!-- Hsa Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Dependent</masterLabel>
+            <translation><!-- Hsa Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Employee</masterLabel>
+            <translation><!-- Hsa Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Individual</masterLabel>
+            <translation><!-- Hsa Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Owner</masterLabel>
+            <translation><!-- Hsa Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hsa Tpa/Employr</masterLabel>
+            <translation><!-- Hsa Tpa/Employr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I/T/F</masterLabel>
+            <translation><!-- I/T/F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilota/Ibreta</masterLabel>
+            <translation><!-- Ilota/Ibreta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilutma</masterLabel>
+            <translation><!-- Ilutma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Trust For</masterLabel>
+            <translation><!-- In Trust For --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incapacitated</masterLabel>
+            <translation><!-- Incapacitated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incompetent</masterLabel>
+            <translation><!-- Incompetent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorporated</masterLabel>
+            <translation><!-- Incorporated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry &amp; Trnfr</masterLabel>
+            <translation><!-- Inquiry &amp; Trnfr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry Only</masterLabel>
+            <translation><!-- Inquiry Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iolta</masterLabel>
+            <translation><!-- Iolta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iolta/Ibreta</masterLabel>
+            <translation><!-- Iolta/Ibreta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ira</masterLabel>
+            <translation><!-- Ira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint (And)</masterLabel>
+            <translation><!-- Joint (And) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint (Or)</masterLabel>
+            <translation><!-- Joint (Or) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Owner</masterLabel>
+            <translation>Mitinhaber</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jt W/O Surv</masterLabel>
+            <translation><!-- Jt W/O Surv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jt W/Survivor</masterLabel>
+            <translation><!-- Jt W/Survivor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landlord</masterLabel>
+            <translation><!-- Landlord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legally Disable</masterLabel>
+            <translation><!-- Legally Disable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company</masterLabel>
+            <translation><!-- Limited Liability Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Corporation</masterLabel>
+            <translation><!-- Limited Liability Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Llc</masterLabel>
+            <translation><!-- Llc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Llc Member</masterLabel>
+            <translation><!-- Llc Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Llp</masterLabel>
+            <translation><!-- Llp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Member</masterLabel>
+            <translation><!-- Managing Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Primary</masterLabel>
+            <translation><!-- Master Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master/Mstr Id</masterLabel>
+            <translation><!-- Master/Mstr Id --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member (Llc)</masterLabel>
+            <translation><!-- Member (Llc) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member/Manager</masterLabel>
+            <translation><!-- Member/Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal</masterLabel>
+            <translation><!-- Municipal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Profit Corp</masterLabel>
+            <translation><!-- Non Profit Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Pft</masterLabel>
+            <translation><!-- Non-Pft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Title</masterLabel>
+            <translation><!-- Non-Title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer</masterLabel>
+            <translation><!-- Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization</masterLabel>
+            <translation><!-- Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part/Guarantor</masterLabel>
+            <translation><!-- Part/Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership/Llp</masterLabel>
+            <translation><!-- Partnership/Llp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay On Death</masterLabel>
+            <translation><!-- Pay On Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payee</masterLabel>
+            <translation><!-- Payee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pc</masterLabel>
+            <translation><!-- Pc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Rep</masterLabel>
+            <translation><!-- Personal Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plenary Grdian</masterLabel>
+            <translation><!-- Plenary Grdian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pod</masterLabel>
+            <translation><!-- Pod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pod Beneficiary</masterLabel>
+            <translation><!-- Pod Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Of Atty</masterLabel>
+            <translation><!-- Power Of Atty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal Owner</masterLabel>
+            <translation><!-- Principal Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proprietor</masterLabel>
+            <translation>Eigentümer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds</masterLabel>
+            <translation><!-- Public Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Cust</masterLabel>
+            <translation><!-- Related Cust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Payee</masterLabel>
+            <translation><!-- Rep Payee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repo Sweep</masterLabel>
+            <translation><!-- Repo Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Represent Payee</masterLabel>
+            <translation><!-- Represent Payee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp Individual</masterLabel>
+            <translation><!-- Resp Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsible Ind</masterLabel>
+            <translation><!-- Responsible Ind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth Ira</masterLabel>
+            <translation><!-- Roth Ira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secretary</masterLabel>
+            <translation><!-- Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep Ira</masterLabel>
+            <translation><!-- Sep Ira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Owner</masterLabel>
+            <translation><!-- Sole Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietor</masterLabel>
+            <translation><!-- Sole Proprietor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Succ Custodian</masterLabel>
+            <translation><!-- Succ Custodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Succesr Trustee</masterLabel>
+            <translation><!-- Succesr Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Succession</masterLabel>
+            <translation><!-- Succession --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successor</masterLabel>
+            <translation><!-- Successor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T/A</masterLabel>
+            <translation><!-- T/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenant</masterLabel>
+            <translation><!-- Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenant/Bldg</masterLabel>
+            <translation><!-- Tenant/Bldg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenants/Common</masterLabel>
+            <translation><!-- Tenants/Common --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To</masterLabel>
+            <translation><!-- To --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trst Related</masterLabel>
+            <translation><!-- Trst Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust Client</masterLabel>
+            <translation><!-- Trust Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation>Treuhänder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustor</masterLabel>
+            <translation><!-- Trustor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ugma</masterLabel>
+            <translation><!-- Ugma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utma</masterLabel>
+            <translation><!-- Utma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ward</masterLabel>
+            <translation><!-- Ward --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>FinServ__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>FinServ__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>WT_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>WT_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>WT_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Relationship Type --></label>
+        <name>WT_Customer_Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Passive</masterLabel>
+            <translation><!-- Primary Passive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Passive</masterLabel>
+            <translation><!-- Secondary Passive --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Rollennummer</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Role occupied by an organizational entity, such as a corporation or LLC --></description>
+        <label><!-- Account Role --></label>
+        <name>FinServ__AccountRole</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Role occupied by a person --></description>
+        <label><!-- Contact Role --></label>
+        <name>FinServ__ContactRole</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A Financial Account Role cannot be created as Inactive --></errorMessage>
+        <name>FinServ__CannotCreateInactiveRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be edited. To update role information, you can deactivate this record and create a new one. --></errorMessage>
+        <name>FinServ__FARCannotBeModified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive record cannot be edited. To update FAR, you can create a new one. --></errorMessage>
+        <name>FinServ__InactiveFARCannotBeEdited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive Financial Roles cannot be reactivated. --></errorMessage>
+        <name>FinServ__InactiveRecordCannotBeReactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be deactivated because ownership can be updated on the financial account only. --></errorMessage>
+        <name>FinServ__OwnershipRolesCannotBeDeactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be modified because ownership can be specified on the financial account only. --></errorMessage>
+        <name>FinServ__OwnershipRolesCannotBeModified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either Related Account or Related Contact is required. --></errorMessage>
+        <name>FinServ__RelatedAccountOrContactRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Role is required. --></errorMessage>
+        <name>FinServ__RoleIsMandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

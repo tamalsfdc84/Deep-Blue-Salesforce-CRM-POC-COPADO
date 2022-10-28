@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>It contains header details of respective APIs</description>
+    <fields>
+        <fullName>AccountNumber__c</fullName>
+        <description>AccountNumber field used for funding hold Request</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>AccountNumber</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ApplicationId__c</fullName>
+        <description>Application Id (Field specific to FIS CodeConnect APIs)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Application Id (Field specific to FIS CodeConnect APIs)</inlineHelpText>
+        <label>ApplicationId</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContentType__c</fullName>
+        <defaultValue>&quot;application/json&quot;</defaultValue>
+        <description>Content type for HTTP request e.g. application/json, application/xml etc.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Content type for HTTP request  e.g. application/json, application/xml etc.</inlineHelpText>
+        <label>Content Type</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTTPMethod__c</fullName>
+        <defaultValue>&quot;POST&quot;</defaultValue>
+        <description>Valid http method e.g. GET, POST etc.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Valid http method e.g. GET, POST etc.</inlineHelpText>
+        <label>HTTP Method</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsEncrypted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether HTTP request and response are encrypted.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Indicates whether HTTP request and response are encrypted.</inlineHelpText>
+        <label>IsEncrypted</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsIBSAuthRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether IBS Authorization header is required (Flag specific to FIS CodeConnect APIs).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Indicates whether IBS Authorization header is required (Flag specific to FIS CodeConnect APIs).</inlineHelpText>
+        <label>IsIBSAuthRequired</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LogRequest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked http request body will be logged in &apos;Debug Logs&apos;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked http request body will be logged in &apos;Debug Logs&apos;.</inlineHelpText>
+        <label>Log Request</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LogResponse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked response from http will be logged in &apos;Debug Logs&apos;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked response from http will be logged in &apos;Debug Logs&apos;.</inlineHelpText>
+        <label>Log Response</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ResponseBuilderClass__c</fullName>
+        <defaultValue>&quot;FISCCHostResponseBuilder&quot;</defaultValue>
+        <description>Name of the class for response Builder.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the class for response Builder.</inlineHelpText>
+        <label>Response Builder Class</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceURL__c</fullName>
+        <description>This contains base url for API</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ServiceURL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Timeout__c</fullName>
+        <defaultValue>120000</defaultValue>
+        <description>Timeout for http request in milliseconds. Default is set to maximum timeout &apos;120000&apos;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Timeout for http request in milliseconds. Default is set to maximum timeout &apos;120000&apos;.</inlineHelpText>
+        <label>Timeout</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>FISCC Adapter Configs</label>
+    <pluralLabel>FISCC Adapter Configs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

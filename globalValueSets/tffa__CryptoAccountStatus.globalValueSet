@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PROVISIONING</fullName>
+        <default>false</default>
+        <label>Provisioning</label>
+    </customValue>
+    <customValue>
+        <fullName>ACTIVATED</fullName>
+        <default>false</default>
+        <label>Activated</label>
+    </customValue>
+    <customValue>
+        <fullName>REJECTED</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </customValue>
+    <customValue>
+        <fullName>SUSPENDED</fullName>
+        <default>false</default>
+        <label>Suspended</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSED</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </customValue>
+    <description>Captures the status of the crypto custodial account</description>
+    <masterLabel>CryptoAccountStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

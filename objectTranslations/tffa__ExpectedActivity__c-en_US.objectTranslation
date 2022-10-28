@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Expected Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long value --></label>
+        <name>tffa__LongValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value (text) --></label>
+        <name>tffa__ValueName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value type --></label>
+        <name>tffa__ValueType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

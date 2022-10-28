@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NYDIG</fullName>
+        <default>false</default>
+        <label>NYDIG</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH</fullName>
+        <default>false</default>
+        <label>North Crypto Custodian</label>
+    </customValue>
+    <description>Name of the Third-Party Digital Asset Custody solutions provider</description>
+    <masterLabel>CryptoCustodianType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

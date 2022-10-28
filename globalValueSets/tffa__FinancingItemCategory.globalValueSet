@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>TITLE_CHARGE</fullName>
+        <default>false</default>
+        <label>Title Charges</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVT_FEES</fullName>
+        <default>false</default>
+        <label>Government Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE_FEES</fullName>
+        <default>false</default>
+        <label>Mortgage Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>INSURANCE</fullName>
+        <default>false</default>
+        <label>Insurance Charges</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKER_FEES</fullName>
+        <default>false</default>
+        <label>Broker Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>OWNER_CONTRIBUTION</fullName>
+        <default>false</default>
+        <label>Owner Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>GRANT</fullName>
+        <default>false</default>
+        <label>Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>LOAN_AMOUNT</fullName>
+        <default>false</default>
+        <label>Loan Amount</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_VALUE</fullName>
+        <default>false</default>
+        <label>Property Value</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>RATELOCK_FEES</fullName>
+        <default>false</default>
+        <label>Rate Lock Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>BUYDOWN_FEES</fullName>
+        <default>false</default>
+        <label>Buy Down Fees</label>
+    </customValue>
+    <description>Possible types of Financing categories involved in the lending application. Loosely based on the source of the preference.</description>
+    <masterLabel>FinancingItemCategory</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

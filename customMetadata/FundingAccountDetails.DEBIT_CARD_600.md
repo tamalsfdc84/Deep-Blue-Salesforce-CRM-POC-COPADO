@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DEBIT_CARD_600</label>
+    <protected>false</protected>
+    <values>
+        <field>BrandCode__c</field>
+        <value xsi:type="xsd:string">600</value>
+    </values>
+    <values>
+        <field>BrandName__c</field>
+        <value xsi:type="xsd:string">Crystal Lake Bank &amp; Trust Company, N.A.</value>
+    </values>
+    <values>
+        <field>FundingType__c</field>
+        <value xsi:type="xsd:string">DEBIT_CARD</value>
+    </values>
+    <values>
+        <field>GLAccountNumber__c</field>
+        <value xsi:type="xsd:string">1021275</value>
+    </values>
+    <values>
+        <field>GLCostCenter__c</field>
+        <value xsi:type="xsd:string">8888888</value>
+    </values>
+    <values>
+        <field>TransactionCode__c</field>
+        <value xsi:type="xsd:string">628</value>
+    </values>
+    <values>
+        <field>TransactionType__c</field>
+        <value xsi:type="xsd:string">CREDIT</value>
+    </values>
+</CustomMetadata>

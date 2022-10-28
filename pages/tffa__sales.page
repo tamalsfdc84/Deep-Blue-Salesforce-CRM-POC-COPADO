@@ -1,0 +1,68 @@
+<apex:page docType="html-5.0" showheader="false" applyHtmlTag="false" applyBodyTag="false" cache="false" standardStylesheets="false" controller="tffa.SalesController" action="{!preInitialize}" extensions="tffa.SessionController,tffa.ConfigurationController,tffa.SubmissionController,tffa.PartyController,tffa.VehicleController,tffa.UserController,tffa.StipulationController,tffa.SubmissionPartyXrefController,tffa.ApplicationController,tffa.FundingController,tffa.ReferralController">
+  <head>
+    <meta charset="utf-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <meta name="theme-color" content="#1976d2">
+    </meta>
+    <title>North Capital Trust Bank</title>
+    <base href="/">
+    </base>
+    <link rel="icon" type="image/x-icon" href="{!URLFOR($Resource[ui['styles']], 'favicon.ico')}">
+    </link>
+    <link rel="stylesheet" href="{!URLFOR($Resource[ui['styles']], 'styles.css')}">
+    </link>
+  </head>
+  <apex:outputPanel id="error">
+    <apex:pageMessages />
+  </apex:outputPanel>
+  <body>
+    <app-root>
+
+      <!-- this adds a loading image before angular loads. waits for css to load -->
+      <div class="tf-spinner-overlay">
+        <span class="tf-spinner-image">
+        <img></img>
+      </span>
+      </div>
+    </app-root>
+    <apex:outputPanel id="tffaconfig">
+      <script>
+        TFFA = {
+          ...(typeof TFFA === 'undefined' ? {} : TFFA),
+          sessionContext: {
+            id: "{!JSENCODE(id)}",
+            sessionToken: "{!JSENCODE(sessionToken)}",
+            siteUrl: "{!JSENCODE($Site.BaseUrl)}",
+            sitePrefix: "{!JSENCODE($Site.Prefix)}",
+            params: "{!JSENCODE(params)}",
+            environmentConfig: "{!JSENCODE(environmentConfig)}",
+            assets: {
+              i18n: "{!URLFOR($Resource[ui['i18n']])}/assets/i18n",
+              styles: "{!URLFOR($Resource[ui['styles']])}",
+              app: "{!URLFOR($Resource[ui['app']])}",
+            },
+            ui: {
+              theme: "{!JSENCODE(ui['theme'])}",
+            },
+            asid: "{!JSENCODE($Api.Session_ID)}"
+          }
+        };
+      </script>
+    </apex:outputPanel>
+    <apex:form >
+      <apex:actionFunction action="{!initialize}" name="initialize" oncomplete="TFFA.onInitialize()" reRender="tffaconfig">
+      </apex:actionFunction>
+    </apex:form>
+    <script>
+      TFFA.initialized = new Promise(resolve => (TFFA.onInitialize = resolve));
+      window.onload = initialize
+    </script>
+    <script src="{!URLFOR($Resource[ui['app']], 'runtime.js')}" type="module"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'polyfills.js')}" type="module"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'scripts.js')}" defer="true"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'vendor.js')}" type="module"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'main.js')}" type="module"></script>
+  </body>
+</apex:page>

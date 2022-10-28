@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>TRADITIONAL</fullName>
+        <default>false</default>
+        <label>Traditional IRA</label>
+    </customValue>
+    <customValue>
+        <fullName>ROTH</fullName>
+        <default>false</default>
+        <label>Roth</label>
+    </customValue>
+    <customValue>
+        <fullName>SEP</fullName>
+        <default>false</default>
+        <label>SEP</label>
+    </customValue>
+    <customValue>
+        <fullName>SIMPLE</fullName>
+        <default>false</default>
+        <label>Savings Incentive Match Plan for Employees</label>
+    </customValue>
+    <customValue>
+        <fullName>ROLLOVER</fullName>
+        <default>false</default>
+        <label>Rollover</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTRIBUTION</fullName>
+        <default>false</default>
+        <label>Contributory Roth IRA</label>
+    </customValue>
+    <customValue>
+        <fullName>CONVERSION</fullName>
+        <default>false</default>
+        <label>Conversion Roth IRA</label>
+    </customValue>
+    <customValue>
+        <fullName>EDUCATION</fullName>
+        <default>false</default>
+        <label>Education IRA</label>
+    </customValue>
+    <description>Different investment plan types.</description>
+    <masterLabel>InvestmentPlanType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

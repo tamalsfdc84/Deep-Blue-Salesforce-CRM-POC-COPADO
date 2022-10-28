@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Branch_Factor_Update_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Branch Factor Update Email</shortDescription>
+        <value>CRMSupport@Wintrust.com</value>
+    </labels>
+    <labels>
+        <fullName>WT_Account_Error_on_Merge</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WT_Account_Error_on_Merge</shortDescription>
+        <value>You cannot merge the Customer Accounts into Prospect Account</value>
+    </labels>
+    <labels>
+        <fullName>WT_Account_Error_on_RecordType_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WT_Account_Error_on_RecordType_Change</shortDescription>
+        <value>You cannot change the record type for the account from &apos;Customer&apos; to &apos;Prospect&apos;</value>
+    </labels>
+    <labels>
+        <fullName>WT_Case_Cancellation</fullName>
+        <categories>DBSFCRM-786</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Cancellation</shortDescription>
+        <value>Cancellation</value>
+    </labels>
+    <labels>
+        <fullName>WT_Case_Cancelled</fullName>
+        <categories>DBSFCRM-786</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Cancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>WT_Case_Resolved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Resolved</shortDescription>
+        <value>Resolved</value>
+    </labels>
+    <labels>
+        <fullName>WT_Case_Waiting_for_Customer</fullName>
+        <categories>created as part of DBFSCRM-120</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Waiting for Customer</shortDescription>
+        <value>Waiting for Customer</value>
+    </labels>
+    <labels>
+        <fullName>WT_Coverage_Action_Plan_Template_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WT Coverage Action Plan Template Name</shortDescription>
+        <value>Coverage Plan</value>
+    </labels>
+    <labels>
+        <fullName>WT_Coverage_Task_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WT Coverage Task Subject</shortDescription>
+        <value>Coverage</value>
+    </labels>
+    <labels>
+        <fullName>WT_Error_on_Cancellation</fullName>
+        <categories>DBSFCRM-786</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancellation error</shortDescription>
+        <value>Case Note of type Cancellation is required</value>
+    </labels>
+    <labels>
+        <fullName>WT_Error_on_Case_Resolved</fullName>
+        <categories>Created as part of 1139</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error on Case Resolved</shortDescription>
+        <value>Case Note of type resolved is required.</value>
+    </labels>
+    <labels>
+        <fullName>WT_Error_on_Case_Waiting_for_Customer</fullName>
+        <categories>created as part of DBFSCRM-120</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error on Case Waiting for Customer</shortDescription>
+        <value>Case Notes of type Waiting for Customer is required.</value>
+    </labels>
+    <labels>
+        <fullName>WT_OptOut_Customer_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OptOut Customer Error</shortDescription>
+        <value>You Cannot Contact Opt Out Customer Unless You Override DNC</value>
+    </labels>
+    <labels>
+        <fullName>WT_case_note_resolved</fullName>
+        <categories>Created as part of 1139</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>case note resolved</shortDescription>
+        <value>Resolving</value>
+    </labels>
+</CustomLabels>

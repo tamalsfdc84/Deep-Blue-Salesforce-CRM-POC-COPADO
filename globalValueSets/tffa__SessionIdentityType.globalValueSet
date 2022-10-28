@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ENTITY</fullName>
+        <default>false</default>
+        <label>Entity</label>
+    </customValue>
+    <customValue>
+        <fullName>NAMED_PRINCIPAL</fullName>
+        <default>false</default>
+        <label>Named Principal</label>
+    </customValue>
+    <description>Type of the identity for the session</description>
+    <masterLabel>SessionIdentityType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

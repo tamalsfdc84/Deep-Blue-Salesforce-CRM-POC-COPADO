@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PASSED</fullName>
+        <default>false</default>
+        <label>✅Passed</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLINED</fullName>
+        <default>false</default>
+        <label>❌Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>FAILED</fullName>
+        <default>false</default>
+        <label>❌Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>false</default>
+        <label>🔶In progress</label>
+    </customValue>
+    <customValue>
+        <fullName>CHALLENGED</fullName>
+        <default>false</default>
+        <label>⚠️Challenged</label>
+    </customValue>
+    <customValue>
+        <fullName>REVIEW</fullName>
+        <default>false</default>
+        <label>⚠️Review</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPIRED</fullName>
+        <default>false</default>
+        <label>❌Expired</label>
+    </customValue>
+    <description>States of a due diligence activity.</description>
+    <masterLabel>DueDiligenceStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

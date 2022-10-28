@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SSN</fullName>
+        <default>false</default>
+        <label>SSN</label>
+    </customValue>
+    <customValue>
+        <fullName>TIN</fullName>
+        <default>false</default>
+        <label>TIN</label>
+    </customValue>
+    <customValue>
+        <fullName>FOR</fullName>
+        <default>false</default>
+        <label>Foreign Tax ID</label>
+    </customValue>
+    <customValue>
+        <fullName>NONE</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>EIN</fullName>
+        <default>false</default>
+        <label>EIN</label>
+    </customValue>
+    <description>Classifies identification numbers used by the Internal Revenue Service IRS.</description>
+    <masterLabel>NationalIdentifierType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

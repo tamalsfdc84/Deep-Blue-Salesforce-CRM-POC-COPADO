@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FEE_SIMPLE</fullName>
+        <default>false</default>
+        <label>Fee Simple On a Reservation</label>
+    </customValue>
+    <customValue>
+        <fullName>INDIVIDUAL_TRUST_LAND</fullName>
+        <default>false</default>
+        <label>Individual Trust Land</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>ALASKA_NATIVE_CORPORATIONLAND</fullName>
+        <default>false</default>
+        <label>Alaska Native Corporation Land</label>
+    </customValue>
+    <customValue>
+        <fullName>TRIBAL_TRUST_LANDOFFRESERVATION</fullName>
+        <default>false</default>
+        <label>Tribal Trust Land Off Reservation</label>
+    </customValue>
+    <customValue>
+        <fullName>TRIBAL_TRUST_LANDONARESERVATION</fullName>
+        <default>false</default>
+        <label>Tribal Trust Land On a Reservation</label>
+    </customValue>
+    <description>list that categorizes the legal means by which Native American land may be owned.</description>
+    <masterLabel>LandTenureType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <available>true</available>
+    <description>Email for Credit Card Offer Accepted</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ApplicationOfferAccepted</name>
+    <style>none</style>
+    <subject>Credit Card Offer is accepted</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,66 @@
+<template>
+    <lightning-card>
+        <div class="container">
+            <div class="row card-holder">
+                <div class="card-header">Universal Links </div>
+                <div class="row card-body">
+                    <template if:true={universalLinks.data}>
+                        <template for:each={universalLinks.data} for:item="universalLink">
+                            <div class="col-xs-4 inner-div" key={universalLink.WT_Title__c}>
+                                <a href={universalLink.WT_URL__c} target="_blank">
+                                    <div class="block-container">
+                                        <p class="linkTitle"> {universalLink.WT_Title__c} </p>
+                                    </div>
+                                    <p class="linkTitle" key={universalLink.Title__c}> {universalLink.WT_Title__c} </p>
+                                </a>
+                            </div>
+                        </template>
+                    </template>
+                    <template if:true={universalLinks.error}>
+                        {universalLinks.error}
+                    </template>
+                </div>
+            </div>
+            <div class="row card-holder">
+                <div class="card-header">FXD Links</div>
+                <div class="row card-body">
+                    <template if:true={bankLinks.data}>
+                        <template for:each={bankLinks.data} for:item="bankLink">
+                            <div class="col-xs-4 inner-div" key={bankLink.WT_Title__c}>
+                                <a href={bankLink.WT_URL__c} target="_blank">
+                                    <div class="img-container">
+                                        <img class="image-link" src={bankLink.WT_Icon__c} alt={bankLink.WT_Title__c}></img>
+                                    </div>
+                                    <p class="linkTitle" key={bankLink.WT_Title__c}> {bankLink.WT_Title__c} </p>
+                                </a>
+                            </div>
+                        </template>
+                    </template>
+                    <template if:true={bankLinks.error}>
+                        {bankLinks.error}
+                    </template>
+                </div>
+            </div>
+            <div class="row card-holder">
+                <div class="card-header">Vision Content Links </div>
+                <div class="row card-body">
+                    <template if:true={bankVCLinks.data}>
+                        <template for:each={bankVCLinks.data} for:item="bankVCLink">
+                            <div class="col-xs-4 inner-div" key={bankVCLink.WT_Title__c}>
+                                <a href={bankVCLink.WT_URL__c} target="_blank">
+                                    <div class="img-container">
+                                        <img class="image-link" src={bankVCLink.WT_Icon__c} alt={bankVCLink.WT_Title__c}></img>
+                                    </div>
+                                    <p class="linkTitle" key={bankVCLink.WT_Title__c}> {bankVCLink.WT_Title__c} </p>
+                                </a>
+                            </div>
+                        </template>
+                    </template>
+                    <template if:true={bankVCLinks.error}>
+                        {bankVCLinks.error}
+                    </template>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FIS Holiday List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FIS Holiday List</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- HolidayCurYrDt --></label>
+        <name>HolidayCurYrDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- HolidayDesc --></label>
+        <name>HolidayDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- HolidayNxtYrDt --></label>
+        <name>HolidayNxtYrDt__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Wintrust Env Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Wintrust Env Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- AdobeAnalytics Script --></label>
+        <name>AdobeAnalyticsScript__c</name>
+    </fields>
+    <fields>
+        <label><!-- BatchRetryCount --></label>
+        <name>BatchRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed CPU Usage Limit --></label>
+        <name>CZAllowedCPULimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Callout Limit --></label>
+        <name>CZAllowedCalloutLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Cumulative Timeout Limit --></label>
+        <name>CZAllowedCumulativeTimeoutLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chex System Tags --></label>
+        <name>CZChexSystemTags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Reminder Schedule --></label>
+        <name>CZDocusignReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Review Template Id --></label>
+        <name>CZDocusignReviewTemplateId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Tags --></label>
+        <name>CZFraudTags__c</name>
+    </fields>
+    <fields>
+        <label><!-- CssFontSrc --></label>
+        <name>CssFontSrc__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Dollar Transaction Error Codes --></label>
+        <name>FISDLRTransErrorCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Immediate Transaction Error Codes --></label>
+        <name>FISImmediateTransErrorCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- FISPasswordExpireDays --></label>
+        <name>FISPasswordExpireDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate Automation --></label>
+        <name>InterestRateAutomation__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsTestEnvironment --></label>
+        <name>IsTestEnv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Microdeposits Reminder Schedule --></label>
+        <name>MicrodepositsReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Inquiries Threshold --></label>
+        <name>NoInquiriesThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owed Amount Threshold --></label>
+        <name>OwedAmountThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- PassChangeNotifyMail --></label>
+        <name>PassChangeNotifyMail__c</name>
+    </fields>
+    <fields>
+        <label><!-- PurgeExpiredAndCancelSubmission --></label>
+        <name>PurgeExpiredAndCancelSub__c</name>
+    </fields>
+    <fields>
+        <label><!-- PurgeSubmission --></label>
+        <name>PurgeSubmission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starter Check User ID --></label>
+        <name>StarterCheckUserID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

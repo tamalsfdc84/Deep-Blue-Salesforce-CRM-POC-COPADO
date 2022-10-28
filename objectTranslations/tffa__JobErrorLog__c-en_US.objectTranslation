@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Job Apex Class --></label>
+        <name>tffa__ApexClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Async Apex Job Id --></label>
+        <name>tffa__AsyncApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does Exceed Job Scope Max Length --></label>
+        <name>tffa__DoesExceedJobScopeMaxLength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Type --></label>
+        <name>tffa__ExceptionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Name --></label>
+        <name>tffa__JobName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Scope --></label>
+        <name>tffa__JobScope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>tffa__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Id --></label>
+        <name>tffa__RequestId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stack Trace --></label>
+        <name>tffa__StackTrace__c</name>
+    </fields>
+</CustomObjectTranslation>

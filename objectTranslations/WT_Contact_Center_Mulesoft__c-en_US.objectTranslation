@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Center Mulesoft</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Center Mulesoft</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>WT_Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>WT_Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Profile URL --></label>
+        <name>WT_Customer_Profile_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token URL --></label>
+        <name>WT_Token_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,202 @@
+<template>
+    <template if:true={isButton}>
+        <div class="slds-text-align_right">
+            <lightning-button label="New" variant="neutral" onclick={handleButton} class="slds-m-left_x-small">
+            </lightning-button>
+        </div>
+    </template>
+    <template if:false={isButton}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <template if:true={isNext}>
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={handleCloseModal}>
+                            <lightning-icon icon-name="utility:close" variant="inverse" alternative-text="Close"
+                                size="medium">
+                            </lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">New Referral</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning-card>
+                            <lightning-radio-group label="Select a record type" value={SelectedRecordId}
+                                variant="label-stacked" options={mapRecordType} onchange={recordTypeValue} type="radio">
+                            </lightning-radio-group>
+                        </lightning-card>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button class="slds-m-top_small" onclick={handleCloseModal} label="Cancel">
+                        </lightning-button> &nbsp;&nbsp;&nbsp;
+                        <lightning-button class="slds-m-top_small" variant="brand" onclick={handleNextModal}
+                            label="Next">
+                        </lightning-button>
+                    </footer>
+                </div>
+            </template>
+            <template if:false={isNext}>
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={handleCloseModal}>
+                            <lightning-icon icon-name="utility:close" variant="inverse" alternative-text="Close"
+                                size="medium">
+                            </lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">New Referral:
+                            {recordName}</h2>
+                    </header>
+                    <lightning-record-edit-form object-api-name={varObjectApiName} record-type-id={getRecordId}
+                        onsuccess={handleSuccess} onload={handleLoad} onerror={handleError} onsubmit={handleSubmit}>
+                        <div class="slds-modal__content slds-p-around_medium" style="max-height:450px;">
+                            <lightning-card>
+                                <lightning-messages>
+                                </lightning-messages>
+                                <lightning-input-field field-name="FirstName" value={firstName} class="slds-hide">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="MiddleName" value={middleName} class="slds-hide">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="LastName" value={lastName} class="slds-hide">
+                                </lightning-input-field>
+                                <h4 class="slds-section__title slds-theme_shade">
+                                    <span class="slds-truncate slds-p-horizontal_small"
+                                        title="Referral Information">Referral
+                                        Information</span>
+                                </h4>
+                                <lightning-layout>
+                                    <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                        <lightning-input-field field-name="FinServ__ExpressedInterest__c"
+                                            variant="label-stacked" onchange={populateReferredTo} required>
+                                        </lightning-input-field>
+                                        <lightning-input-field field-name="FinServ__RelatedAccount__c"
+                                            variant="label-stacked" required onchange={populteNameFieldValue}
+                                            value={recordId}>
+                                        </lightning-input-field>
+                                        <lightning-input-field field-name="FinServ__ReferredByUser__c"
+                                            variant="label-stacked" required onchange={changeOnReferredBy}
+                                            value={currentUserId}></lightning-input-field>
+                                        <lightning-input-field field-name="WT_Referred_To__c" required
+                                            variant="label-stacked" class="slds-hide" value={referralToId}>
+                                        </lightning-input-field>
+                                        <c-w-t_-custom-lookup-component lookup-label="Referred To"
+                                            object-api-name="User" icon-name="standard:user"
+                                            onrecordselection={onAccountSelection} filter-value={referredType}>
+                                        </c-w-t_-custom-lookup-component>
+                                        <template if:true={isRecordFormWealth}>
+                                        <lightning-input-field field-name="WT_Referral_Business_Unit__c"
+                                            variant="label-stacked" data-field="BusinessUnit"
+                                            value={referralBUId}  >
+                                        </lightning-input-field>
+                                    </template>
+                                        <lightning-input-field field-name="Description" variant="label-stacked">
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                        <lightning-input-field field-name="Status" variant="label-stacked">
+                                        </lightning-input-field>
+                                        <lightning-input-field field-name="WT_Date_Referred__c" variant="label-stacked"
+                                            required></lightning-input-field>
+                                        <lightning-input-field field-name="WT_Non_CRM_Referred_By__c"
+                                            variant="label-stacked"></lightning-input-field>
+                                        <lightning-input-field field-name="WT_Non_CRM_Referred_To__c"
+                                            variant="label-stacked"></lightning-input-field>
+                                        <lightning-input-field field-name="WT_Preferred_Followup_Method__c"
+                                            variant="label-stacked"></lightning-input-field>
+                                        <lightning-input-field field-name="WT_Preferred_Contact_Information__c"
+                                            variant="label-stacked"></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <template if:true={isRecordFormStandard}>
+                                    <h4 class="slds-section__title slds-theme_shade">
+                                        <span class="slds-truncate slds-p-horizontal_small" title="WM Partnership">
+                                            WM Partnership </span>
+                                    </h4>
+                                    <lightning-layout pull-to-boundary="small">
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Amount_Bank_Funded__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Product_Type__c"
+                                                variant="label-stacked"></lightning-input-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </template>
+                                <template if:true={isRecordFormWealth}>
+                                    <h4 class="slds-section__title slds-theme_shade">
+                                        <span class="slds-truncate slds-p-horizontal_small"
+                                            title="Wealth Partner Referrals">Wealth Partner Referrals
+                                        </span>
+                                    </h4>
+                                    <lightning-layout pull-to-boundary="medium">
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Approximate_Financial_Assets__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_Investment_Time_Horizon__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_WM_Professional__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_Amount_Funded__c"
+                                                variant="label-stacked"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Date_Qualified__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Investment_Amount__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_Purpose_Investment__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_Amount_Referred__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                            <lightning-input-field field-name="WT_Date_Funded__c"
+                                                variant="label-stacked"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Date_Paid__c" variant="label-stacked">
+                                            </lightning-input-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                    <h4 class="slds-section__title slds-theme_shade">
+                                        <span class="slds-truncate slds-p-horizontal_small"
+                                            title="Wealth Services">Wealth
+                                            Services
+                                        </span>
+                                    </h4>
+                                    <lightning-layout pull-to-boundary="medium">
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Wealth_Services_Type__c"
+                                                variant="label-stacked">
+                                            </lightning-input-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                                            <lightning-input-field field-name="WT_Wealth_Amount__c"
+                                                variant="label-stacked"></lightning-input-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </template>
+                                <template if:true={isLoading}>
+                                    <lightning-spinner variant="brand" alternative-text="Loading.." size="small">
+                                    </lightning-spinner>
+                                </template>
+                            </lightning-card>
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning-button class="slds-m-top_small" onclick={handleCloseModal} label="Cancel">
+                            </lightning-button> &nbsp;&nbsp;&nbsp;
+                            <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Save">
+                            </lightning-button>
+                        </footer>
+                    </lightning-record-edit-form>
+                </div>
+            </template>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>REFERRAL</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Enumerates the different sources for rewards. This offers a broad classification of the reward sources.</description>
+    <masterLabel>RewardSourceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
