@@ -507,8 +507,8 @@ public with sharing class MDMCustomerCreateExtension {
           accountItem.endDt = '9999-12-31';
           accountItem.statCd.lkpCd = 'DEBCRDSTAT|1';
           accountItem.Account.acctNo = app.tffa__AccountPurpose__c == 'DEBIT_CARD'
-            ? accPref.tffa__AccountNumber__c
-            : app.tffa__AccountNumber__c;
+            ? accPref.tffa__AccountNumber__c.leftPad(11, '0')
+            : app.tffa__AccountNumber__c.leftPad(11, '0');
           accountItem.Account.statCd.lkpCd = 'ACCTSTAT|O';
           accountItem.Account.boClassCode = 'DEPOSIT';
 

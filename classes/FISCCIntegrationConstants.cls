@@ -391,7 +391,20 @@ public with sharing class FISCCIntegrationConstants {
     'GC' => 'GreenCard',
     'ST' => 'StateID',
     'PPT' => 'Passport',
-    'FPPT' => 'ForeignPassport'
+    'FPPT' => 'ForeignPassport',
+    'STDNT' => 'StudentID',
+    'MNR' => 'Minor',
+    'MTR' => 'Matricula',
+    'USIMV' => 'UsImmigrationVisa',
+    'ED' => 'Elderly/Disabled',
+    'TRBL' => 'TribalID',
+    'PW' => 'PhotoWorkID',
+    'VR' => 'VoterRegistration',
+    'MCC' => 'MajorCreditCard',
+    'SSI' => 'SelectiveServiceID',
+    'IC' => 'InsuranceCard',
+    'TPVR' => '3rdPartyReport',
+    'FI20' => 'ForeignExStud'
   };
 
   public static Map<String, String> NATIONAL_IDENTITY_MDM_TO_TF_MAP = new Map<String, String>{

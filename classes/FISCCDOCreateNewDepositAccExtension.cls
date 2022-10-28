@@ -64,8 +64,16 @@ public with sharing class FISCCDOCreateNewDepositAccExtension {
           fisccCreateNewDepositAccountDTO.DPFedTaxId = 'N';
         }
       }
-
-      fisccCreateNewDepositAccountDTO.DPFedWithholdingInd = FISCCIntegrationConstants.DPFedWithholdingInd;
+      if (partyObj.tffa__NationalIdentifierType__c == 'SSN') {
+        fisccCreateNewDepositAccountDTO.DPFedWithholdingInd = '4';
+      } else if (partyObj.tffa__NationalIdentifierType__c == 'TIN') {
+        fisccCreateNewDepositAccountDTO.DPFedWithholdingInd = '1';
+      } else if (partyObj.tffa__NationalIdentifierType__c == 'EIN') {
+        fisccCreateNewDepositAccountDTO.DPFedWithholdingInd = '2';
+      } else {
+        // None
+        fisccCreateNewDepositAccountDTO.DPFedWithholdingInd = '6';
+      }
 
       if (String.isNotBlank(partyObj.CZPrimaryOfficer__c)) {
         fisccCreateNewDepositAccountDTO.DPPrmyOffcr = Integer.valueOf(partyObj.CZPrimaryOfficer__c);
