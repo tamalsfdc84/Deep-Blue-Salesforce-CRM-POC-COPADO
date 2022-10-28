@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ONE_CLOSING</fullName>
+        <default>false</default>
+        <label>Single Closing</label>
+    </customValue>
+    <customValue>
+        <fullName>TWO_CLOSING</fullName>
+        <default>false</default>
+        <label>Two Closing</label>
+    </customValue>
+    <description>A value from a MISMO prescribed list that specifies the type of closing process for the construction-to-permanent loan.</description>
+    <masterLabel>ConstructionClosingType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

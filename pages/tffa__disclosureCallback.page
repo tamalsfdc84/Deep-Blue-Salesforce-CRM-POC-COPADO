@@ -1,0 +1,15 @@
+<apex:page docType="html-5.0" controller="tffa.DisclosureController" action="{!init}" applyBodyTag="false" showHeader="false">
+  <apex:pageMessages />
+  <apex:outputPanel rendered="{!completed}" layout="block">
+    <p>Please click on Close</p>
+    <script>
+      const data = { event: "Signing_Complete" };
+      window.parent.postMessage(data, window.parent.location);
+    </script>
+  </apex:outputPanel>
+  <apex:outputPanel rendered="{!signerInitialized}" layout="block">
+    <script>
+      window.open("{!JSENCODE(signerUrl)}", '_self');
+    </script>
+  </apex:outputPanel>
+</apex:page>

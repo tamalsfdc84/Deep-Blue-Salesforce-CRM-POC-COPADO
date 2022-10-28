@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Banking_Without_HR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Banking Without HR</label>
+        <sharedTo>
+            <role>Banking</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Banking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Business_Admin_Case_Sharing_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Business Admin Case Sharing Rule</label>
+        <sharedTo>
+            <group>Business_Administrators</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CCPA_Without_MyHR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CCPA Without MyHR</label>
+        <sharedTo>
+            <role>CCPA</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>CCPA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Case_Management_Without_HR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Management Without HR</label>
+        <sharedTo>
+            <role>Case_Management</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Case Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Case_Sharing_Rule_HR_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Case Sharing Rule - HR Cases</label>
+        <sharedTo>
+            <group>My_HR_Cases</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Complaint_Manager_Without_MyHR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Complaint Manager Without MyHR</label>
+        <sharedTo>
+            <role>Complaint_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Complaint Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Complaint_Processor_Without_MyHR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Complaint Processor Without MyHR</label>
+        <sharedTo>
+            <role>Complaint_Processor</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Complaint Processor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compliance_Case</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compliance Case</label>
+        <sharedTo>
+            <group>Compliance_Case_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compliance Complaint</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compliance_Manager_Without_MyHR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Compliance Manager Without MyHR</label>
+        <sharedTo>
+            <role>Compliance_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Compliance Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compliance_Report_Processor_Without_MyHR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Compliance Report Processor Without MyHR</label>
+        <sharedTo>
+            <role>Complaince_Report_Processor</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>WT_Owner_Role_Name__c</field>
+            <operation>equals</operation>
+            <value>Compliance Report Processor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>MyHR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Banking</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Banking</label>
+        <sharedTo>
+            <roleAndSubordinates>Banking</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Banking</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Case_Sharing_Rule_Case_Management</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case Sharing Rule - Case Management</label>
+        <sharedTo>
+            <roleAndSubordinates>Case_Management</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Case_Management</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

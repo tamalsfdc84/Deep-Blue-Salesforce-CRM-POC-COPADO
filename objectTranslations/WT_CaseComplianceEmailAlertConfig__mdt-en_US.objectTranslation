@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>WT_CaseComplianceEmailAlertConfig</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>WT_CaseComplianceEmailAlertConfig</value>
+    </caseValues>
+    <fields>
+        <label><!-- EmailRecipients --></label>
+        <name>EmailRecipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour --></label>
+        <name>Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewStatus --></label>
+        <name>NewStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldStatus --></label>
+        <name>OldStatus__c</name>
+    </fields>
+    <layouts>
+        <layout>WT_CaseComplianceEmailAlertConfig Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

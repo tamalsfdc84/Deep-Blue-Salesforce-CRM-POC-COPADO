@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>WT_Bank_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Bank Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Bank__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Bank</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Customer_Num_Of_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Customer Number Of Transactions</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Customer_TPC__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Customer TPC</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Customer_Transaction_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Customer with Transaction %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Customers_Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Customers Transaction</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Branch Indicator?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Branch_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Branch Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Branch__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Charter_Factor__c</fullName>
+        <externalId>false</externalId>
+        <label>WM Charter Factor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Charter__c</fullName>
+        <description>Cost Center</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Charter</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_CostCenter__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CostCenter</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Foot_Traffic_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Foot Traffic Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+                <value>
+                    <fullName>M</fullName>
+                    <default>false</default>
+                    <label>M</label>
+                </value>
+                <value>
+                    <fullName>L</fullName>
+                    <default>false</default>
+                    <label>L</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Fusion_Feed_Branch__c</fullName>
+        <externalId>false</externalId>
+        <formula>WT_Bank_Number__c + LPAD(WT_Branch_Number__c,3,&apos;0&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fusion Feed Branch #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Fusion_Location__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Fusion Location</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Line_of_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Line of Business</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABL,</fullName>
+                    <default>false</default>
+                    <label>ABL,</label>
+                </value>
+                <value>
+                    <fullName>Agricultural Lending</fullName>
+                    <default>false</default>
+                    <label>Agricultural Lending</label>
+                </value>
+                <value>
+                    <fullName>Business Banking</fullName>
+                    <default>false</default>
+                    <label>Business Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Advantage</fullName>
+                    <default>false</default>
+                    <label>Community Advantage</label>
+                </value>
+                <value>
+                    <fullName>Community Banking</fullName>
+                    <default>false</default>
+                    <label>Community Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Impact</fullName>
+                    <default>false</default>
+                    <label>Community Impact</label>
+                </value>
+                <value>
+                    <fullName>Consumer Lending</fullName>
+                    <default>false</default>
+                    <label>Consumer Lending</label>
+                </value>
+                <value>
+                    <fullName>Contact Center</fullName>
+                    <default>false</default>
+                    <label>Contact Center</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+                <value>
+                    <fullName>Government Funds</fullName>
+                    <default>false</default>
+                    <label>Government Funds</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>MAD - Managed Assets Division</fullName>
+                    <default>false</default>
+                    <label>MAD - Managed Assets Division</label>
+                </value>
+                <value>
+                    <fullName>Middle Market</fullName>
+                    <default>false</default>
+                    <label>Middle Market</label>
+                </value>
+                <value>
+                    <fullName>Professional Practice Group</fullName>
+                    <default>false</default>
+                    <label>Professional Practice Group</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Support Role</fullName>
+                    <default>false</default>
+                    <label>Support Role</label>
+                </value>
+                <value>
+                    <fullName>Swap</fullName>
+                    <default>false</default>
+                    <label>Swap</label>
+                </value>
+                <value>
+                    <fullName>Syndication/Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Syndication/Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management, Wealth - Chicago Trust</fullName>
+                    <default>false</default>
+                    <label>Treasury Management, Wealth - Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Great Lakes Advisors</fullName>
+                    <default>false</default>
+                    <label>Wealth - Great Lakes Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Wintrust Investments</fullName>
+                    <default>false</default>
+                    <label>Wealth - Wintrust Investments</label>
+                </value>
+                <value>
+                    <fullName>Wealth Management, Wealth Services</fullName>
+                    <default>false</default>
+                    <label>Wealth Management, Wealth Services</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Funds Group</fullName>
+                    <default>false</default>
+                    <label>Wintrust Funds Group</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Receivables Finance</fullName>
+                    <default>false</default>
+                    <label>Wintrust Receivables Finance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Market__c</fullName>
+        <description>Division Name</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Market</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_New_Customers__c</fullName>
+        <externalId>false</externalId>
+        <label>New Customers</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Parent_Business_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Self lookup tp Business Unit</description>
+        <externalId>false</externalId>
+        <label>Parent Branch Factor</label>
+        <referenceTo>WT_Business_Unit_Entity__c</referenceTo>
+        <relationshipLabel>Branch Factors</relationshipLabel>
+        <relationshipName>Business_Unit_Entity</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Total_Current_Bank_Customers__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Current Bank Customers</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Total_Customers__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Customers</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Total_Foot_Traffic__c</fullName>
+        <externalId>false</externalId>
+        <label>Foot Traffic</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Total_Number_Of_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number Of Transactions</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Unique_Customer_TPC__c</fullName>
+        <externalId>false</externalId>
+        <label>Unique Customer TPC</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Unique_Customers_Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Unique Customers Transaction</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Unique_Key__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>WT_WM_Branch_Factor__c</fullName>
+        <externalId>false</externalId>
+        <label>WM Branch Factor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_WM_Charter_Factor__c</fullName>
+        <externalId>false</externalId>
+        <formula>WT_New_Customers__c /  WT_Total_Foot_Traffic__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>WM Charter Factor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Branch Factor</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>WT_Parent_Business_Unit__c</columns>
+        <columns>WT_Line_of_Business__c</columns>
+        <columns>WT_Unique_Key__c</columns>
+        <columns>WT_Fusion_Feed_Branch__c</columns>
+        <columns>WT_Bank_Number__c</columns>
+        <columns>WT_Branch_Number__c</columns>
+        <columns>WT_WM_Branch_Factor__c</columns>
+        <columns>WT_Total_Foot_Traffic__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Business Unit Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Branch Factors</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

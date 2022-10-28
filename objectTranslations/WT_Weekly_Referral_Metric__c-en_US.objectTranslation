@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Weekly Referral Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Weekly Referral Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Line Of Business --></label>
+        <name>WT_Line_Of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Referral qualified By LOB --></label>
+        <name>WT_Referral_Qualified_By_LOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Referral qualified-ConvertedBy LOB --></label>
+        <name>WT_Referral_Qualified_Converted_By_LOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referral Submitted by LOB --></label>
+        <name>WT_Referral_Submitted_By_LOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Metric --></label>
+        <name>WT_Weekly_Metric__c</name>
+        <relationshipLabel><!-- Weekly Referral Metrics --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

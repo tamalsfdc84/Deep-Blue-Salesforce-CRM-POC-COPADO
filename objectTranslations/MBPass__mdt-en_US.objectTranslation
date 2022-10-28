@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MBPass</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MBPasses</value>
+    </caseValues>
+    <fields>
+        <label><!-- destDataTag --></label>
+        <name>destDataTag__c</name>
+    </fields>
+    <fields>
+        <label><!-- destServId --></label>
+        <name>destServId__c</name>
+    </fields>
+    <fields>
+        <label><!-- operationName --></label>
+        <name>operationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- serviceId --></label>
+        <name>serviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- srcDataTag --></label>
+        <name>srcDataTag__c</name>
+    </fields>
+    <fields>
+        <label><!-- trimSkip --></label>
+        <name>trimSkip__c</name>
+    </fields>
+    <fields>
+        <label><!-- trimTyp --></label>
+        <name>trimTyp__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

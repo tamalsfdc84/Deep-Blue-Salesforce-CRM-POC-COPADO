@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Docusign to integrate with Docusign REST APIs</description>
+    <label>Docusign</label>
+    <namedCredential>Docusign</namedCredential>
+    <operations>
+        <active>true</active>
+        <name>logininformationx5fgetlogininformation</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;swagger&quot;: &quot;2.0&quot;,
+  &quot;info&quot;: {
+    &quot;version&quot;: &quot;v2&quot;,
+    &quot;title&quot;: &quot;DocuSign REST API&quot;,
+    &quot;description&quot;: &quot;The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign.&quot;,
+    &quot;termsOfService&quot;: &quot;https://www.docusign.com/company/terms-and-conditions/web&quot;
+  },
+  &quot;host&quot;: &quot;www.docusign.net&quot;,
+  &quot;basePath&quot;: &quot;/restapi&quot;,
+  &quot;schemes&quot;: [&quot;https&quot;],
+  &quot;consumes&quot;: [&quot;application/json&quot;, &quot;application/xml&quot;],
+  &quot;produces&quot;: [&quot;application/json&quot;],
+  &quot;externalDocs&quot;: {
+    &quot;description&quot;: &quot;See the DocuSign REST API Guide for more information.&quot;,
+    &quot;url&quot;: &quot;https://docs.docusign.com/esign&quot;
+  },
+  &quot;paths&quot;: {
+    &quot;/v2/login_information&quot;: {
+      &quot;get&quot;: {
+        &quot;tags&quot;: [&quot;Authentication&quot;],
+        &quot;summary&quot;: &quot;Gets login information for a specified user.&quot;,
+        &quot;description&quot;: &quot;Retrieves account information for the authenticated user. Since the API is sessionless, this method does not actually log you in.\nInstead, the method returns information about the account or accounts that the authenticated user has access to.\n&quot;,
+        &quot;operationId&quot;: &quot;LoginInformation_GetLoginInformation&quot;,
+        &quot;consumes&quot;: [],
+        &quot;produces&quot;: [],
+        &quot;parameters&quot;: [
+          {
+            &quot;name&quot;: &quot;api_password&quot;,
+            &quot;in&quot;: &quot;query&quot;,
+            &quot;description&quot;: &quot;Reserved for DocuSign.\n&quot;,
+            &quot;required&quot;: false,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;name&quot;: &quot;embed_account_id_guid&quot;,
+            &quot;in&quot;: &quot;query&quot;,
+            &quot;required&quot;: false,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;&quot;
+          },
+          {
+            &quot;name&quot;: &quot;include_account_id_guid&quot;,
+            &quot;in&quot;: &quot;query&quot;,
+            &quot;description&quot;: &quot;When set to **true**, shows the account ID GUID in the response.&quot;,
+            &quot;required&quot;: false,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;name&quot;: &quot;login_settings&quot;,
+            &quot;in&quot;: &quot;query&quot;,
+            &quot;description&quot;: &quot;Determines whether login settings are returned in the response.\n\nValid Values:\n\n* all -  All the login settings are returned. \n* none - no login settings are returned.&quot;,
+            &quot;required&quot;: false,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;Successful response.&quot;,
+            &quot;schema&quot;: {
+              &quot;$ref&quot;: &quot;#/definitions/Authentication&quot;
+            }
+          },
+          &quot;400&quot;: {
+            &quot;description&quot;: &quot;Error encountered.&quot;,
+            &quot;schema&quot;: {
+              &quot;$ref&quot;: &quot;#/definitions/errorDetails&quot;
+            }
+          }
+        }
+      }
+    }
+  },
+  &quot;definitions&quot;: {
+    &quot;Authentication&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;apiPassword&quot;: {
+          &quot;description&quot;: &quot;Contains a token that can be used for authentication in API calls instead of using the user name and password. Only returned if the `api_password=true` query string is added to the URL.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;loginAccounts&quot;: {
+          &quot;description&quot;: &quot;The list of accounts that authenticating user is a member of.&quot;,
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/loginAccount&quot;
+          }
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;loginInformation&quot;,
+      &quot;description&quot;: &quot;Authentication and login&quot;,
+      &quot;x-ds-category&quot;: &quot;Authentication&quot;,
+      &quot;x-ds-order&quot;: &quot;10&quot;,
+      &quot;x-ms-summary&quot;: &quot;Authentication and login&quot;
+    },
+    &quot;loginAccount&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;accountId&quot;: {
+          &quot;description&quot;: &quot;The account ID associated with the envelope.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;accountIdGuid&quot;: {
+          &quot;description&quot;: &quot;The GUID associated with the account ID.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;baseUrl&quot;: {
+          &quot;description&quot;: &quot;The URL that should be used for successive calls to this account. It includes the protocal (https), the DocuSign server where the account is located, and the account number. Use this Url to make API calls against this account. Many of the API calls provide Uri&apos;s that are relative to this baseUrl.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;email&quot;: {
+          &quot;description&quot;: &quot;The email address for the user.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;isDefault&quot;: {
+          &quot;description&quot;: &quot;This value is true if this is the default account for the user, otherwise false is returned.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;loginAccountSettings&quot;: {
+          &quot;description&quot;: &quot;A list of settings on the acccount that indicate what features are available.&quot;,
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/nameValue&quot;
+          }
+        },
+        &quot;loginUserSettings&quot;: {
+          &quot;description&quot;: &quot;A list of user-level settings that indicate what user-specific features are available.&quot;,
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/nameValue&quot;
+          }
+        },
+        &quot;name&quot;: {
+          &quot;description&quot;: &quot;The name associated with the account.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;siteDescription&quot;: {
+          &quot;description&quot;: &quot;An optional descirption of the site that hosts the account.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;userId&quot;: {
+          &quot;description&quot;: &quot;The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing. **Note**: For [GET /v2/accounts/{accountId}/envelopes](https://developers.docusign.com/esign-rest-api/reference/Envelopes/Envelopes/listStatusChanges/#envelopesInformation)   `user_id` query parameter is not implemented and should not be used.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;userName&quot;: {
+          &quot;description&quot;: &quot;The name of this user as defined by the account.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      }
+    },
+    &quot;nameValue&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;errorDetails&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/errorDetails&quot;,
+          &quot;description&quot;: &quot;&quot;
+        },
+        &quot;name&quot;: {
+          &quot;description&quot;: &quot;The name or key of a name/value pair.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;originalValue&quot;: {
+          &quot;description&quot;: &quot;The initial value of the tab when it was sent to the recipient. &quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;value&quot;: {
+          &quot;description&quot;: &quot;The value field of a name/value pair.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      }
+    },
+    &quot;errorDetails&quot;: {
+      &quot;description&quot;: &quot;This object describes errors that occur. It is only valid for responses, and ignored in requests.&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;errorCode&quot;: {
+          &quot;description&quot;: &quot;An error code associated with the error.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;message&quot;: {
+          &quot;description&quot;: &quot;A short error message.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;errorDetails&quot;,
+      &quot;x-ms-summary&quot;: &quot;This object describes errors that occur. It is only valid for responses, and ignored in requests.&quot;
+    },
+    &quot;envelopeSummary&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;envelopeId&quot;: {
+          &quot;description&quot;: &quot;The envelope ID of the envelope status that failed to post.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;status&quot;: {
+          &quot;description&quot;: &quot;Indicates the envelope status. Valid values are: \n\n* completed - The envelope has been completed and all tags have been signed.\n* created - The envelope is created as a draft. It can be modified and sent later.\n* declined - The envelope has been declined by the recipients.\n* delivered - The envelope has been delivered to the recipients.\n* sent - The envelope is sent to the recipients.\n* signed - The envelope has been signed by the recipients.\n* voided - The envelope is no longer valid and recipients cannot access or sign the envelope.\n&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;statusDateTime&quot;: {
+          &quot;description&quot;: &quot;The DateTime that the envelope changed status (i.e. was created or sent.)&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;uri&quot;: {
+          &quot;description&quot;: &quot;&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;envelopeSummary&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-ms-summary&quot;: &quot;&quot;
+    },
+    &quot;EnvelopeViews&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;url&quot;: {
+          &quot;description&quot;: &quot;The view URL to be navigated to.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;viewUrl&quot;,
+      &quot;description&quot;: &quot;Embedding Envelope views&quot;,
+      &quot;x-ds-category&quot;: &quot;Envelopes&quot;,
+      &quot;x-ds-order&quot;: &quot;1&quot;,
+      &quot;x-ms-summary&quot;: &quot;Embedding Envelope views&quot;
+    },
+    &quot;envelopeDefinition&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;emailSubject&quot;: {
+          &quot;description&quot;: &quot;Specifies the subject of the email that is sent to all recipients.\n\nSee [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;status&quot;: {
+          &quot;description&quot;: &quot;Indicates the envelope status. Valid values are:\n\n* sent - The envelope is sent to the recipients. \n* created - The envelope is saved as a draft and can be modified and sent later.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;templateId&quot;: {
+          &quot;description&quot;: &quot;The unique identifier of the template. If this is not provided, DocuSign will generate a value. &quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;templateRoles&quot;: {
+          &quot;description&quot;: &quot;Specifies the template recipients. Each roleName in the template must have a recipient assigned to it. This is made up by the following elements:\n\n* email - The recipient&apos;s email address.\n* name - The recipient&apos;s name.\n* roleName - The template roleName associated with the recipient.\n* clientUserId - Optional, this sets if the signer is This specifies if the recipient is embedded or remote. If the clientUserId is not null then the recipient is embedded. Note that if a ClientUserId is used and the account settings SignerMustHaveAccount or SignerMustLoginToSign are true, an error is generated on sending.\n* defaultRecipient - Optional, When set to **true**, this recipient is the default recipient and any tabs generated by the transformPdfFields option are mapped to this recipient.\n* routingOrder - This specifies the routing order of the recipient in the envelope.\n* accessCode - This optional element specifies the access code a recipient has to enter to validate the identity. This can be a maximum of 50 characters.\n* inPersonSignerName - Optional, if the template role is an in person signer, this is the full legal name of the signer. This can be a maximum of 100 characters.\n* emailNotification - This is an optional complex element that has a role-specific emailSubject, emailBody, and language. It follows the same format as the emailNotification node for Recipients.\n* tabs - This allows the tab values to be specified for matching to tabs in the template.\n&quot;,
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/templateRole&quot;
+          }
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;envelopeDefinition&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-ms-summary&quot;: &quot;&quot;
+    },
+    &quot;templateRole&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;clientUserId&quot;: {
+          &quot;description&quot;: &quot;Specifies whether the recipient is embedded or remote. \n\nIf the `clientUserId` property is not null then the recipient is embedded. Use this field to associate the signer with their userId in your app. Authenticating the user is the responsibility of your app when you use embedded signing.\n\nNote: if the `clientUserId` property is set and either `SignerMustHaveAccount` or `SignerMustLoginToSign` property of the account settings is set to  **true**, an error is generated on sending. \n\nMaximum length: 100 characters. &quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;email&quot;: {
+          &quot;description&quot;: &quot;Specifies the email associated with a role name.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;name&quot;: {
+          &quot;description&quot;: &quot;Specifies the recipient&apos;s name.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;roleName&quot;: {
+          &quot;description&quot;: &quot;Optional element. Specifies the role name associated with the recipient.&lt;br/&gt;&lt;br/&gt;This is required when working with template recipients.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;templateRole&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-ms-summary&quot;: &quot;&quot;
+    },
+    &quot;recipientViewRequest&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;authenticationMethod&quot;: {
+          &quot;description&quot;: &quot;Required. Choose a value that most closely matches the technique your application used to authenticate the recipient / signer. \n\nChoose a value from this list: \n* Biometric \n* Email\n* HTTPBasicAuth\n* Kerberos\n* KnowledgeBasedAuth\n* None\n* PaperDocuments\n* Password\n* RSASecureID\n* SingleSignOn_CASiteminder\n* SingleSignOn_InfoCard\n* SingleSignOn_MicrosoftActiveDirectory\n* SingleSignOn_Other\n* SingleSignOn_Passport\n* SingleSignOn_SAML\n* Smartcard\n* SSLMutualAuth\n* X509Certificate\n\nThis information is included in the Certificate of Completion.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;clientUserId&quot;: {
+          &quot;description&quot;: &quot;A sender created value. If provided, the recipient is treated as an embedded (captive) recipient or signer.\n\nUse your application&apos;s client ID (user ID) for the recipient. Doing so enables the details of your application&apos;s authentication of the recipient to be connected to the recipient&apos;s signature if the signature is disputed or repudiated.\n\nMaximum length: 100 characters.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;email&quot;: {
+          &quot;description&quot;: &quot;Specifies the email of the recipient. You can use either email and userName or userId to identify the recipient.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;recipientId&quot;: {
+          &quot;description&quot;: &quot;Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;returnUrl&quot;: {
+          &quot;description&quot;: &quot;The URL that the recipient is redirected to\nafter the signing session has ended.\nDocuSign redirects to the URL\nand includes an `event` query parameter\nthat can be used by your application.\n\nPossible `event` parameter values include: \n\n* `access_code_failed`&lt;br&gt;\n  Recipient used incorrect access code.\n* `cancel`&lt;br&gt;\n  Recipient canceled the signing operation,\n  possibly by using the **Finish Later** option.\n* `decline`&lt;br&gt;\n  Recipient declined to sign.\n* `exception`&lt;br&gt;\n  A system error occurred during the signing process.\n* `fax_pending`&lt;br&gt;\n  Recipient has a fax pending.\n* `id_check_failed`&lt;br&gt;\n  Recipient failed an ID check.\n* `session_timeout`&lt;br&gt;\n  The session timed out.\n  An account can control this timeout using the **Signer Session Timeout** option.\n* `signing_complete`&lt;br&gt;\n  Recipient completed the signing ceremony.\n* `ttl_expired`&lt;br&gt;\n  The Time To Live token for the envelope has expired.\n  After being successfully invoked, these tokens expire\n  after 5 minutes or if the envelope is voided.\n* `viewing_complete`&lt;br&gt;\n  The recipient completed viewing an envelope\n  that is in a read-only/terminal state\n  such as completed, declined, or voided.\n\nBe sure to include `https://` in the URL or the redirect may fail on certain browsers.\n&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;userId&quot;: {
+          &quot;description&quot;: &quot;Specifies the user ID of the recipient. You can use with user ID or email and user name to identify the recipient. \n\nIf userId is used and a clientUserId is provided, the value in the `userId` property must match a recipientId (which can be retrieved with a GET recipients call) for the envelope. \n\nIf a userId is used and a clientUserId is not provided, the userId must match the user ID of the authenticating user.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;userName&quot;: {
+          &quot;description&quot;: &quot;Specifies the username of the recipient. You can use either email and userName or userId to identify the recipient.&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;x-ds-definition-name&quot;: &quot;recipientViewRequest&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-ms-summary&quot;: &quot;&quot;
+    }
+  }
+}</schema>
+    <schemaType>OpenApi</schemaType>
+    <serviceBinding>{&quot;compatibleMediaTypes&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>2</systemVersion>
+</ExternalServiceRegistration>

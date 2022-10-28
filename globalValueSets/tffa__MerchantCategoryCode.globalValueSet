@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AIRLINES</fullName>
+        <default>false</default>
+        <label>Airlines</label>
+    </customValue>
+    <customValue>
+        <fullName>AMUSEMENT_ENTERTAINMENT</fullName>
+        <default>false</default>
+        <label>Amusement and Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>VEHICLE_RENTALS</fullName>
+        <default>false</default>
+        <label>Vehicle Rentals</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTOMOBILES_AND_VEHICLES</fullName>
+        <default>false</default>
+        <label>Automobiles and Vehicles</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_SERVICES</fullName>
+        <default>false</default>
+        <label>Business Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CLEANING_SERVICES</fullName>
+        <default>false</default>
+        <label>Cleaning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOTHING_STORES</fullName>
+        <default>false</default>
+        <label>Clothing Stores</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTRACTED_SERVICES</fullName>
+        <default>false</default>
+        <label>Contracted Services</label>
+    </customValue>
+    <customValue>
+        <fullName>EDUCATION</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVERNMENT_SERVICES</fullName>
+        <default>false</default>
+        <label>Government Services</label>
+    </customValue>
+    <customValue>
+        <fullName>HOTELS</fullName>
+        <default>false</default>
+        <label>Hotels</label>
+    </customValue>
+    <customValue>
+        <fullName>MISCELLANEOUS_STORES</fullName>
+        <default>false</default>
+        <label>Miscellaneous Stores</label>
+    </customValue>
+    <customValue>
+        <fullName>PERSONAL_SERVICE_PROVIDERS</fullName>
+        <default>false</default>
+        <label>Personal Service Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>HIGH_RISK_RETAIL</fullName>
+        <default>false</default>
+        <label>High Risk Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>PROFESSIONAL_SERVICES</fullName>
+        <default>false</default>
+        <label>Professional Services</label>
+    </customValue>
+    <customValue>
+        <fullName>REPAIR_SERVICES</fullName>
+        <default>false</default>
+        <label>Repair Services</label>
+    </customValue>
+    <customValue>
+        <fullName>RETAIL_STORES</fullName>
+        <default>false</default>
+        <label>Retail Stores</label>
+    </customValue>
+    <customValue>
+        <fullName>SERVICE_PROVIDERS</fullName>
+        <default>false</default>
+        <label>Service Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>TELECOM_DATA</fullName>
+        <default>false</default>
+        <label>Telecom Data</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORTATION</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>UTILITIES</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>WHOLESALE_DISTRIBUTORS_AND_MANUFACTURERS</fullName>
+        <default>false</default>
+        <label>Wholesale Distributors and Manufacturers</label>
+    </customValue>
+    <description>A Merchant Category Code (MCC) is a four-digit number listed in ISO 18245 for retail financial services. A MCC is used to classify a business by the types of goods or services it provides.</description>
+    <masterLabel>MerchantCategoryCode</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Definition of Batch schedulable jobs in the system</description>
+    <fields>
+        <fullName>tffa__ApexClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the apex class which extends AbstractBatchJob</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>ensure to extend AbstractBatchJob</inlineHelpText>
+        <label>ApexClass</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BatchSize__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that can be processed in a batch.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Batch Size</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CronExpression__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Based on the values provided in this expression, the job trigger is set to execute on the specified time. The format is read as - Seconds, Minutes, Hours, Day_of_month, Month, Day_of_week. Ignored for ADHOC type</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The format is read as - Seconds, Minutes, Hours, Day_of_month, Month, Day_of_week.</inlineHelpText>
+        <label>CronExpression</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describe the purpose of the batch job</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Description</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the job is enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ScheduleIntervalInMinutes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the scheduled job is required to repeate in intervals in minutes  special handling is done</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default is -1 . Add a value between 2-40</inlineHelpText>
+        <label>Schedule Interval In Minutes</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the job is system job and not visible on the UI</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>System Job?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of batch job. 
+Scheduled jobs will run by schedule defined by the cron expression
+Adhoc jobs will scheduled and executed when then user triggers it.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SCHEDULED</fullName>
+                    <default>true</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>ADHOC</fullName>
+                    <default>false</default>
+                    <label>Adhoc</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Job Configuration</label>
+    <listViews>
+        <fullName>tffa__Job_Configuration</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__Description__c</columns>
+        <columns>tffa__ApexClass__c</columns>
+        <columns>tffa__BatchSize__c</columns>
+        <columns>tffa__CronExpression__c</columns>
+        <columns>tffa__Enabled__c</columns>
+        <columns>tffa__Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Job Configuration</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Job Configurations</pluralLabel>
+    <validationRules>
+        <fullName>tffa__BatchSize</fullName>
+        <active>true</active>
+        <description>batch size</description>
+        <errorConditionFormula>tffa__BatchSize__c &gt; 200</errorConditionFormula>
+        <errorDisplayField>tffa__BatchSize__c</errorDisplayField>
+        <errorMessage>Batch size cannot be more than 200</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>tffa__Cron_Expression</fullName>
+        <active>true</active>
+        <description>CronExpression is mandatory if type is scheduled</description>
+        <errorConditionFormula>AND((ISBLANK( tffa__CronExpression__c)),
+ISPICKVAL( tffa__Type__c ,&quot;SCHEDULED&quot;))</errorConditionFormula>
+        <errorDisplayField>tffa__CronExpression__c</errorDisplayField>
+        <errorMessage>CronExpression is mandatory if Type is scheduled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>tffa__ScheduleIntervalInMinutesValidation</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR( MOD(60,tffa__ScheduleIntervalInMinutes__c) != 0,tffa__ScheduleIntervalInMinutes__c &lt; 5)</errorConditionFormula>
+        <errorDisplayField>tffa__ScheduleIntervalInMinutes__c</errorDisplayField>
+        <errorMessage>Schedule Interval In Minutes  should be between 5 and 30 and a factor of 60</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

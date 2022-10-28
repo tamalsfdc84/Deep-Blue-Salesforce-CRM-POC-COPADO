@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__Description__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__EndDate__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__FullDescription__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__InfoUrl__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__SortOrder__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Promotion__c.tffa__StartDate__c</field>
+    </columns>
+    <description>Count of configured (active) promotions</description>
+    <filter>
+        <criteriaItems>
+            <column>tffa__Promotion__c.tffa__Active__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>tffa__Promotion__c.tffa__Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Promotion Count Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$tffa__Promotion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>tffa__Promotion__c.tffa__EndDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

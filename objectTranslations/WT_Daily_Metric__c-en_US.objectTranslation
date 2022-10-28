@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Daily Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Daily Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Processed --></label>
+        <name>WT_Date_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Action Plans Today --></label>
+        <name>WT_Number_of_Action_Plans_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Action Plans Yesterday --></label>
+        <name>WT_Number_of_Action_Plans_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Call Logged Today --></label>
+        <name>WT_Number_of_Call_Logged_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Calls Logged Yesterday --></label>
+        <name>WT_Number_of_Calls_Logged_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Calls Scheduled Today --></label>
+        <name>WT_Number_of_Calls_Scheduled_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Calls Scheduled Yesterday --></label>
+        <name>WT_Number_of_Calls_Scheduled_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of New Logins Today --></label>
+        <name>WT_Number_of_New_Logins_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of New Logins Yesterday --></label>
+        <name>WT_Number_of_New_Logins_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Unique Login Today --></label>
+        <name>WT_Number_of_Unique_Login_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Unique Login Yesterday --></label>
+        <name>WT_Number_of_Unique_Login_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Walk Ins Today --></label>
+        <name>WT_Number_of_Walk_Ins_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Walk Ins Yesterday --></label>
+        <name>WT_Number_of_Walk_Ins_Yesterday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Mortgage Today --></label>
+        <name>WT_Referrals_Converted_By_Mortgage_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Mortgage YDA --></label>
+        <name>WT_Referrals_Converted_By_Mortgage_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Retail Today --></label>
+        <name>WT_Referrals_Converted_By_Retail_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Retail Yesterday --></label>
+        <name>WT_Referrals_Converted_By_Retail_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Wealth Today --></label>
+        <name>WT_Referrals_Converted_By_Wealth_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Converted By Wealth Yesterday --></label>
+        <name>WT_Referrals_Converted_By_Wealth_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Mortgage Today --></label>
+        <name>WT_Referrals_Qualified_By_Mortgage_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Mortgage YDA --></label>
+        <name>WT_Referrals_Qualified_By_Mortgage_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Retail Today --></label>
+        <name>WT_Referrals_Qualified_By_Retail_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Retail Yesterday --></label>
+        <name>WT_Referrals_Qualified_By_Retail_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Wealth Today --></label>
+        <name>WT_Referrals_Qualified_By_Wealth_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Qualified By Wealth Yesterday --></label>
+        <name>WT_Referrals_Qualified_By_Wealth_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Mortgage Today --></label>
+        <name>WT_Referrals_Submitted_By_Mortgage_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Mortgage YDA --></label>
+        <name>WT_Referrals_Submitted_By_Mortgage_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Retail Today --></label>
+        <name>WT_Referrals_Submitted_By_Retail_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Retail Yesterday --></label>
+        <name>WT_Referrals_Submitted_By_Retail_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Wealth Today --></label>
+        <name>WT_Referrals_Submitted_By_Wealth_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals Submitted By Wealth Yesterday --></label>
+        <name>WT_Referrals_Submitted_By_Wealth_YDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>WT_Report_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

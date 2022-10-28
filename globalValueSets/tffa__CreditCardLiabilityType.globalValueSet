@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INDIVIDUAL</fullName>
+        <default>false</default>
+        <label>Individual Liability</label>
+    </customValue>
+    <customValue>
+        <fullName>CORPORATE</fullName>
+        <default>false</default>
+        <label>Corporate Liability</label>
+    </customValue>
+    <description>Possible types of credit card liability types.</description>
+    <masterLabel>CreditCardLiabilityType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

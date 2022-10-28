@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CIVIL_UNION</fullName>
+        <default>false</default>
+        <label>Civil Union</label>
+    </customValue>
+    <customValue>
+        <fullName>DOMESTIC_PARTNER</fullName>
+        <default>false</default>
+        <label>Domestic Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>List that specifies a borrower’s relationship with an individual who is not a legal spouse but who has real property rights similar to those of a legal spouse.</description>
+    <masterLabel>DomesticRelationshipType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

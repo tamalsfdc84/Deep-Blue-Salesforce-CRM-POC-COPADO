@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accepted item ids (DEPRECATED) --></label>
+        <name>tffa__AcceptedItemIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Financial Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Birth date --></label>
+        <name>tffa__BirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Financial Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Device Browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- First name --></label>
+        <name>tffa__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last name --></label>
+        <name>tffa__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- National identifier value --></label>
+        <name>tffa__NationalIdentifierValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Financial Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prequal --></label>
+        <name>tffa__Prequal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary contact email (DEPRECATED) --></label>
+        <name>tffa__PrimaryContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product segment --></label>
+        <name>tffa__ProductSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire name --></label>
+        <name>tffa__QuestionnaireName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire --></label>
+        <name>tffa__Questionnaire__c</name>
+        <relationshipLabel><!-- Financial Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Financial Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>tffa__Submitted__c</name>
+    </fields>
+    <layouts>
+        <layout>Financial Need Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

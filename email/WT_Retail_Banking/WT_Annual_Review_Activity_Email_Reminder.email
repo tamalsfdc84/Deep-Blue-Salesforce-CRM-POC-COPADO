@@ -1,0 +1,21 @@
+<messaging:emailTemplate subject="Upcoming Appointment." recipientType="User" relatedToType="Event">
+<messaging:htmlEmailBody >
+<html>
+<body> 
+<p>
+<p>Dear &nbsp;<apex:outputField value="{!relatedTo.Owner.Name}"> </apex:outputField>,</p>
+
+<p>You have an upcoming appointment for the customer &nbsp; <apex:outputField value="{!relatedTo.What.Name}"> </apex:outputField>  on &nbsp; <apex:outputText value="{0,date,MM/dd/yyyy}"><apex:param value="{!relatedTo.WT_Next_Follow_Up_Date__c}" /> 
+</apex:outputText>. You can access the activity record in the system by clicking the link below.</p>
+
+<apex:outputLink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">Click here</apex:outputLink>
+<br/><br/>
+
+Sincerely,<br/>
+CRM Support<br/>
+crmsupport@wintrust.com<br/>
+</p>
+</body>
+</html>            
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

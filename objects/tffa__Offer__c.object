@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>An offer is a clear proposal to sell a specific product or service under specific conditions. Offers are made in a manner that a reasonable person would understand its acceptance and will result in a binding contract (source: investopedia). Offers can include special rates and fee waivers over the original product rates and fees, depending on the credit profile of the person. It is important to note that offers represent a configuration in the system like products, and are not tied to a person directly. They are attached to recommendations (via items) which are tied to a person. Offers can also exist without a product. This just means that the fulfilment of the offer can only be done by an external system.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>tffa__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reports whether the offer is active for consumption. Derived from disabled and effective period (StartDate &amp; EndDate) of the offer.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Disabled__c = False &amp;&amp; tffa__StartDate__c &lt;= TODAY() &amp;&amp; tffa__EndDate__c &gt;= TODAY()</formula>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AnnualFee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>(Reduced) Fee charged yearly for use of credit card.</description>
+        <externalId>false</externalId>
+        <label>Annual fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AutoPayDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount offered on price when a  person enrols in AutoPay when applying under the offer.</description>
+        <externalId>false</externalId>
+        <label>Auto pay discount</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The unique code of the offer. Is also an external id for the offer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Code</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Short description about the offer, highlighting the main features.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Captures explicit disabling of offer independent of any configured effective range.</description>
+        <externalId>false</externalId>
+        <label>Disabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EndDate__c</fullName>
+        <defaultValue>DATE(2049,1,1)</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The date on which the offer expires. Captures the upper bound of the effective range.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FooterDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional description often serving as disclaimer and usually displayed in the footer of offer card.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Footer description</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__FullDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A comprehensive description about the offer, covering features, rates, discounts in greater detail.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Full description</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__IconClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Style classes for rendering an icon describing (the nature of) the offer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Icon class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ImageUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location (url) of image describing the offer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product Image</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsBusinessConfiguration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Business configuration marker.</description>
+        <externalId>false</externalId>
+        <formula>TRUE</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Business Configuration</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum loan amount for which the offer is applicable. For credit card or heloc this can refer to max credit line offered.</description>
+        <externalId>false</externalId>
+        <label>Max amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MaxLoanToValueRatio__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the upper bound on the loan-to-value ratio applicable for the term. The loan-to-value (LTV) ratio is a financial ratio that compares the size of a loan to the value of an asset that is purchased using the proceeds of the loan.  For HELOC, this stores the upper
+        bound on the combined loan-to-value ratio applicable for the product offered.</description>
+        <externalId>false</externalId>
+        <label>Max loan to value ratio</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MinAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Minimum loan amount for which the offer is applicable.</description>
+        <externalId>false</externalId>
+        <label>Min amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MinLoanToValueRatio__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the lower bound on the loan-to-value ratio applicable for the term. The loan-to-value (LTV) ratio is a financial ratio that compares the size of a loan to the value of an asset that is purchased using the proceeds of the loan.  For HELOC, this stores the lower
+        bound on the combined loan-to-value ratio applicable for the product offered.</description>
+        <externalId>false</externalId>
+        <label>Min loan to value ratio</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__OriginationFee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>(Reduced) Fee charged for processing the loan application under the offer.</description>
+        <externalId>false</externalId>
+        <label>Origination fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PrepaymentFee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>(Reduced) Fee charged if a person pays off all or part of their loan/mortgage early.</description>
+        <externalId>false</externalId>
+        <label>Prepayment fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The category of the product being offered. Same as product category of related product.</description>
+        <externalId>false</externalId>
+        <label>Product category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Product__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The product being offered.</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Product must be active and should of same category as product category.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Category__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__ProductCategory__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Product</value>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Offers</relationshipLabel>
+        <relationshipName>Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PromotionDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description about promotions related to the offer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Promotion description</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Purpose__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Purpose of the offer. e.g. prequalified offer</description>
+        <externalId>false</externalId>
+        <label>Purpose</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__OfferPurpose</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__RelationshipDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount offered on price to an existing customer or member when applying under the offer.</description>
+        <externalId>false</externalId>
+        <label>Relationship discount</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__StartDate__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The date from which the offer is active or ready for consumption. Captures the lower bound of the effective range.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Offer</label>
+    <listViews>
+        <fullName>tffa__All</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Purpose__c</columns>
+        <columns>tffa__ProductCategory__c</columns>
+        <columns>tffa__Product__c</columns>
+        <columns>tffa__Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Offers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Brand Code --></help>
+        <label><!-- Brand Code --></label>
+        <name>tffa__BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>tffa__Brand__c</name>
+        <relationshipLabel><!-- Agent Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing agent type --></label>
+        <name>tffa__ClosingAgentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit union indicator --></label>
+        <name>tffa__CreditUnionIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier authority type --></label>
+        <name>tffa__IdentifierAuthorityLevelType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier description --></label>
+        <name>tffa__IdentifierDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier expiry date --></label>
+        <name>tffa__IdentifierExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier issue date --></label>
+        <name>tffa__IdentifierIssueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier issuing authority --></label>
+        <name>tffa__IdentifierIssuingAuthority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier issuing state --></label>
+        <name>tffa__IdentifierIssuingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier value --></label>
+        <name>tffa__IdentifierValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan originator type --></label>
+        <name>tffa__LoanOriginatorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- Agent Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other description --></label>
+        <name>tffa__OtherDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Agent Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Real estate agent type --></label>
+        <name>tffa__RealEstateAgentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skill additional description --></label>
+        <name>tffa__SkillAdditionalDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills --></label>
+        <name>tffa__Skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- User email --></label>
+        <name>tffa__UserEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>tffa__User__c</name>
+        <relationshipLabel><!-- AgentDetail --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>AgentDetail Layout</layout>
+        <sections>
+            <label><!-- Agent Identification --></label>
+            <section>Agent Identification</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Skill Specific Details --></label>
+            <section>Skill Specific Details</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- createAgentsFromUsers --></label>
+        <name>tffa__createAgentsFromUsers</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Goals Import Process Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Goals Import Process Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Queueable Job Id --></label>
+        <name>Queueable_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excel Row Number --></label>
+        <name>WT_Excel_Row_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>WT_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>WT_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation><!-- Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

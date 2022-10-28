@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HOME</fullName>
+        <default>false</default>
+        <label>Home</label>
+    </customValue>
+    <customValue>
+        <fullName>WORK</fullName>
+        <default>false</default>
+        <label>Work</label>
+    </customValue>
+    <customValue>
+        <fullName>CELL</fullName>
+        <default>false</default>
+        <label>Cell</label>
+    </customValue>
+    <customValue>
+        <fullName>MOBILE</fullName>
+        <default>false</default>
+        <label>Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </customValue>
+    <description>The type of the primary phone , valid values can be HOME,WORK,BUSINESS</description>
+    <masterLabel>PhoneType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

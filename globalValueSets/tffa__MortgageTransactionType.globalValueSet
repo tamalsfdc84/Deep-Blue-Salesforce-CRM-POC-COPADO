@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DEED_CONTRACT</fullName>
+        <default>false</default>
+        <label>Conversion of Contract for Deed or Land Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>RENOVATION</fullName>
+        <default>false</default>
+        <label>Renovation</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSTRUCTION_CONVERSION</fullName>
+        <default>false</default>
+        <label>Construction-Conversion/Construction-to-Permanent</label>
+    </customValue>
+    <description>Types of the subject mortgage transaction</description>
+    <masterLabel>MortgageTransactionType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

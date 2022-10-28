@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>WT_Account_Classification__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Classification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C = Customer</label>
+                </value>
+                <value>
+                    <fullName>C1</fullName>
+                    <default>false</default>
+                    <label>C1 = Top Priority Customer</label>
+                </value>
+                <value>
+                    <fullName>C2</fullName>
+                    <default>false</default>
+                    <label>C2 = Medium Priority Customer</label>
+                </value>
+                <value>
+                    <fullName>C3</fullName>
+                    <default>false</default>
+                    <label>C3 = Established Customer</label>
+                </value>
+                <value>
+                    <fullName>C4</fullName>
+                    <default>false</default>
+                    <label>C4 = Customer - PPP Onboarding</label>
+                </value>
+                <value>
+                    <fullName>NQ</fullName>
+                    <default>false</default>
+                    <label>NQ = Middle Market (Revenue $10MM to $260MM)</label>
+                </value>
+                <value>
+                    <fullName>NQ0</fullName>
+                    <default>false</default>
+                    <label>NQ0 = Companies with Unknown Revenue</label>
+                </value>
+                <value>
+                    <fullName>NQBB</fullName>
+                    <default>false</default>
+                    <label>NQBB = Companies with Revenue $1.00MM to $9.99MM)</label>
+                </value>
+                <value>
+                    <fullName>NQSB</fullName>
+                    <default>false</default>
+                    <label>NQSB = Companies with Revenue under $1MM</label>
+                </value>
+                <value>
+                    <fullName>P1</fullName>
+                    <default>false</default>
+                    <label>P1 = Proposing within 6 months/Top Prospect</label>
+                </value>
+                <value>
+                    <fullName>P2</fullName>
+                    <default>false</default>
+                    <label>P2 = Proposing in 6-12 months</label>
+                </value>
+                <value>
+                    <fullName>P3</fullName>
+                    <default>false</default>
+                    <label>P3 = Proposing outside 12 months</label>
+                </value>
+                <value>
+                    <fullName>P4</fullName>
+                    <default>false</default>
+                    <label>P4 = Other</label>
+                </value>
+                <value>
+                    <fullName>P5</fullName>
+                    <default>false</default>
+                    <label>P5 = PPP Lead</label>
+                </value>
+                <value>
+                    <fullName>X1</fullName>
+                    <default>false</default>
+                    <label>X1 = EdFAC</label>
+                </value>
+                <value>
+                    <fullName>X2</fullName>
+                    <default>false</default>
+                    <label>X2 = Bankrupt/Out of Business</label>
+                </value>
+                <value>
+                    <fullName>X3</fullName>
+                    <default>false</default>
+                    <label>X3 = Industry Excluded</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_All_Other_Lines_of_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>All Other Lines of Business</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Coverage_Time_Period_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Coverage Time Period Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Period</fullName>
+                    <default>false</default>
+                    <label>Period</label>
+                </value>
+                <value>
+                    <fullName>Annual</fullName>
+                    <default>false</default>
+                    <label>Annual</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Include_Annual_Review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>DBSFCRM - 2736</description>
+        <externalId>false</externalId>
+        <label>Include Annual Review</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_CRA_Calls__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include CRA Calls</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_CRA_Events__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include CRA Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include Emails</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_Events__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_Standard_Calls__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include Standard Calls</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_Tasks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include Tasks</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Include_WFG_Calls__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include WFG Calls</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Lines_of_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Lines of Business</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABL</fullName>
+                    <default>false</default>
+                    <label>ABL</label>
+                </value>
+                <value>
+                    <fullName>Agricultural Lending</fullName>
+                    <default>false</default>
+                    <label>Agricultural Lending</label>
+                </value>
+                <value>
+                    <fullName>Business Banking</fullName>
+                    <default>false</default>
+                    <label>Business Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Advantage</fullName>
+                    <default>false</default>
+                    <label>Community Advantage</label>
+                </value>
+                <value>
+                    <fullName>Community Banking</fullName>
+                    <default>false</default>
+                    <label>Community Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Impact</fullName>
+                    <default>false</default>
+                    <label>Community Impact</label>
+                </value>
+                <value>
+                    <fullName>Consumer Lending</fullName>
+                    <default>false</default>
+                    <label>Consumer Lending</label>
+                </value>
+                <value>
+                    <fullName>Contact Center</fullName>
+                    <default>false</default>
+                    <label>Contact Center</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+                <value>
+                    <fullName>Government Funds</fullName>
+                    <default>false</default>
+                    <label>Government Funds</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>MAD - Managed Assets Division</fullName>
+                    <default>false</default>
+                    <label>MAD - Managed Assets Division</label>
+                </value>
+                <value>
+                    <fullName>Middle Market</fullName>
+                    <default>false</default>
+                    <label>Middle Market</label>
+                </value>
+                <value>
+                    <fullName>Professional Practice Group</fullName>
+                    <default>false</default>
+                    <label>Professional Practice Group</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Support Role</fullName>
+                    <default>false</default>
+                    <label>Support Role</label>
+                </value>
+                <value>
+                    <fullName>Swap</fullName>
+                    <default>false</default>
+                    <label>Swap</label>
+                </value>
+                <value>
+                    <fullName>Syndication/Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Syndication/Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management, Wealth - Chicago Trust</fullName>
+                    <default>false</default>
+                    <label>Treasury Management, Wealth - Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Great Lakes Advisors</fullName>
+                    <default>false</default>
+                    <label>Wealth - Great Lakes Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Wintrust Investments</fullName>
+                    <default>false</default>
+                    <label>Wealth - Wintrust Investments</label>
+                </value>
+                <value>
+                    <fullName>Wealth Management, Wealth Services</fullName>
+                    <default>false</default>
+                    <label>Wealth Management, Wealth Services</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Funds Group</fullName>
+                    <default>false</default>
+                    <label>Wintrust Funds Group</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Receivables Finance</fullName>
+                    <default>false</default>
+                    <label>Wintrust Receivables Finance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>WT_Months__c</fullName>
+        <externalId>false</externalId>
+        <label>Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Relationship_Classification__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship Classification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C = Customer</label>
+                </value>
+                <value>
+                    <fullName>C1</fullName>
+                    <default>false</default>
+                    <label>C1 = Top Priority Customer</label>
+                </value>
+                <value>
+                    <fullName>C2</fullName>
+                    <default>false</default>
+                    <label>C2 = Medium Priority Customer</label>
+                </value>
+                <value>
+                    <fullName>C3</fullName>
+                    <default>false</default>
+                    <label>C3 = Established Customer</label>
+                </value>
+                <value>
+                    <fullName>C4</fullName>
+                    <default>false</default>
+                    <label>C4 = Customer - PPP Onboarding</label>
+                </value>
+                <value>
+                    <fullName>NQ</fullName>
+                    <default>false</default>
+                    <label>NQ = Middle Market (Revenue $10MM to $260MM)</label>
+                </value>
+                <value>
+                    <fullName>NQ0</fullName>
+                    <default>false</default>
+                    <label>NQ0 = Companies with Unknown Revenue</label>
+                </value>
+                <value>
+                    <fullName>NQBB</fullName>
+                    <default>false</default>
+                    <label>NQBB = Companies with Revenue $1.00MM to $9.99MM)</label>
+                </value>
+                <value>
+                    <fullName>NQSB</fullName>
+                    <default>false</default>
+                    <label>NQSB = Companies with Revenue under $1MM</label>
+                </value>
+                <value>
+                    <fullName>P1</fullName>
+                    <default>false</default>
+                    <label>P1 = Proposing within 6 months/Top Prospect</label>
+                </value>
+                <value>
+                    <fullName>P2</fullName>
+                    <default>false</default>
+                    <label>P2 = Proposing in 6-12 months</label>
+                </value>
+                <value>
+                    <fullName>P3</fullName>
+                    <default>false</default>
+                    <label>P3 = Proposing outside 12 months</label>
+                </value>
+                <value>
+                    <fullName>P4</fullName>
+                    <default>false</default>
+                    <label>P4 = Other</label>
+                </value>
+                <value>
+                    <fullName>P5</fullName>
+                    <default>false</default>
+                    <label>P5 = PPP Lead</label>
+                </value>
+                <value>
+                    <fullName>X1</fullName>
+                    <default>false</default>
+                    <label>X1 = EdFAC</label>
+                </value>
+                <value>
+                    <fullName>X2</fullName>
+                    <default>false</default>
+                    <label>X2 = Bankrupt/Out of Business</label>
+                </value>
+                <value>
+                    <fullName>X3</fullName>
+                    <default>false</default>
+                    <label>X3 = Industry Excluded</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Total_Number_of_Activities_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number of Activities Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Client Coverage</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>WT_Total_Number_of_Activities_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Client Coverage Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Client Coverages</pluralLabel>
+    <recordTypes>
+        <fullName>WT_Account</fullName>
+        <active>true</active>
+        <label>Account</label>
+        <picklistValues>
+            <picklist>WT_Account_Classification__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQSB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Coverage_Time_Period_Type__c</picklist>
+            <values>
+                <fullName>Annual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Period</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Lines_of_Business__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAD - Managed Assets Division</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management%2C Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management%2C Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Funds Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Relationship_Classification__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQSB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WT_Relationship</fullName>
+        <active>true</active>
+        <label>Relationship</label>
+        <picklistValues>
+            <picklist>WT_Account_Classification__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQSB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Coverage_Time_Period_Type__c</picklist>
+            <values>
+                <fullName>Annual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Period</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Lines_of_Business__c</picklist>
+            <values>
+                <fullName>ABL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Advantage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franchise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Funds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAD - Managed Assets Division</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Practice Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Syndication%2FCapital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management%2C Wealth - Chicago Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Great Lakes Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth - Wintrust Investments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management%2C Wealth Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Funds Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wintrust Receivables Finance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WT_Relationship_Classification__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQ0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NQSB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

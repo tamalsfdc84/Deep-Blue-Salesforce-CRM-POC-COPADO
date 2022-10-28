@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>APPLICANT</fullName>
+        <default>false</default>
+        <label>Applicant</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKER</fullName>
+        <default>false</default>
+        <label>Broker</label>
+    </customValue>
+    <customValue>
+        <fullName>VENDOR</fullName>
+        <default>false</default>
+        <label>Vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>AGENT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AGENT</label>
+    </customValue>
+    <description>The role played by the party in the submission. Most common value will be APPLICANT.
+There can be other parties like Brokers, MLO etc who play a role in the submission but may not play a role in the application/account.</description>
+    <masterLabel>SubmissionPartyRole</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

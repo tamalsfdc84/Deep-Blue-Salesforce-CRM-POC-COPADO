@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- KYC Facts --></label>
+        <name>tffa__KYCFacts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Fraud status --></label>
+        <name>CZFraudStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC status --></label>
+        <name>CZOFACStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adverse action notice required --></label>
+        <name>tffa__AdverseActionNoticeRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Bureau status --></label>
+        <name>tffa__DebitBureauStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <lookupFilter>
+            <errorMessage><!-- Strategies configured for Party Decision Matrix can only be selected. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Party Decision Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDV status --></label>
+        <name>tffa__IDVStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>tffa__Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Party Decision Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Facts --></label>
+            <section>Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Outcomes --></label>
+            <section>Outcomes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Mark Champion/Challenger --></label>
+        <name>tffa__MarkChampionChallenger</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Decision Strategy purpose must match the Party Decision Matrix type. --></errorMessage>
+        <name>tffa__DecisionStrategy</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MassClone --></label>
+        <name>tffa__MassClone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassDelete --></label>
+        <name>tffa__MassDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

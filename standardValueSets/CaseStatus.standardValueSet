@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>true</default>
+        <label>Submitted</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Customer</fullName>
+        <default>false</default>
+        <label>Waiting for Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - Project</fullName>
+        <default>false</default>
+        <label>Waiting - Project</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - 3rd Party</fullName>
+        <default>false</default>
+        <label>Waiting - 3rd Party</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fulfilled</fullName>
+        <default>false</default>
+        <label>Fulfilled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Approval</fullName>
+        <default>false</default>
+        <label>Awaiting Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Queue</fullName>
+        <default>false</default>
+        <label>In Queue</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Process</fullName>
+        <default>false</default>
+        <label>In Process</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

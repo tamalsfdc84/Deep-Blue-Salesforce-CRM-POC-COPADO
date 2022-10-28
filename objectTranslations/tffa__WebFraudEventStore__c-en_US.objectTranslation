@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action --></label>
+        <name>tffa__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContextId --></label>
+        <name>tffa__ContextId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity name --></label>
+        <name>tffa__EntityName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host name --></label>
+        <name>tffa__HostName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ip address --></label>
+        <name>tffa__IpAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- The message of the log --></help>
+        <label><!-- Message --></label>
+        <name>tffa__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>tffa__Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>tffa__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <layouts>
+        <layout>WebFraudEventStore Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- DeleteSelected --></label>
+        <name>tffa__DeleteSelected</name>
+    </webLinks>
+</CustomObjectTranslation>

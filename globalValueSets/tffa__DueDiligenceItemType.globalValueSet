@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>QUESTION</fullName>
+        <default>false</default>
+        <label>Question</label>
+    </customValue>
+    <customValue>
+        <fullName>RESPONSE</fullName>
+        <default>false</default>
+        <label>Response</label>
+    </customValue>
+    <description>Types of DueDiligenceItem(s). A DueDiligenceItem can be used to store OOW Questions, or results related to a DueDiligence activity.</description>
+    <masterLabel>DueDiligenceItemType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Center Link</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Center Links</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>WT_Category__c</name>
+        <picklistValues>
+            <masterLabel>FXD Links</masterLabel>
+            <translation><!-- FXD Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universal Links</masterLabel>
+            <translation><!-- Universal Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision Content Links</masterLabel>
+            <translation><!-- Vision Content Links --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Icon --></label>
+        <name>WT_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- SortOrder --></label>
+        <name>WT_SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InActive</masterLabel>
+            <translation><!-- InActive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>WT_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>WT_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

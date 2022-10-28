@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AGENT</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>PARTY</fullName>
+        <default>false</default>
+        <label>Party</label>
+    </customValue>
+    <description>Type of referrers in the system. Referres are entities that can join a referral program.</description>
+    <masterLabel>ReferrerType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funds Groups</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funds Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Controlling Party --></label>
+        <name>WT_Controlling_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Management Company --></label>
+        <name>WT_Funds_Management_Company__c</name>
+        <relationshipLabel><!-- Funds Groups (Funds Management Company) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third Party Funds Administrator --></label>
+        <name>WT_Third_Party_Funds_Administrator__c</name>
+        <relationshipLabel><!-- Funds Groups (Third Party Funds Administrator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- WFG Acceptable Exchanges --></label>
+        <name>WT_WFG_Acceptable_Exchanges__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Asset Class --></label>
+        <name>WT_WFG_Asset_Class__c</name>
+        <picklistValues>
+            <masterLabel>Commodities</masterLabel>
+            <translation><!-- Commodities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crypto</masterLabel>
+            <translation><!-- Crypto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Settlements</masterLabel>
+            <translation><!-- Life Settlements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Credit</masterLabel>
+            <translation><!-- Private Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Equity</masterLabel>
+            <translation><!-- Private Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securities</masterLabel>
+            <translation><!-- Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Liens</masterLabel>
+            <translation><!-- Tax Liens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venture Capital</masterLabel>
+            <translation><!-- Venture Capital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WFG BSA Approval Received --></label>
+        <name>WT_WFG_BSA_Approval_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Fund AUM --></label>
+        <name>WT_WFG_Fund_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Fund Strategy --></label>
+        <name>WT_WFG_Fund_Strategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Other/Crypto BSA Approval Requested --></label>
+        <name>WT_WFG_OtherCrypto_BSA_Approval_Requeste__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Purpose of Account --></label>
+        <name>WT_WFG_Purpose_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wintrust Funds Alternative Fund --></label>
+        <name>WT_Wintrust_Funds_Alternative_Fund__c</name>
+        <relationshipLabel><!-- Funds Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wintrust Funds Client --></label>
+        <name>WT_Wintrust_Funds_Client__c</name>
+        <relationshipLabel><!-- Funds Groups(Wintrust Funds Client) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Funds Groups Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

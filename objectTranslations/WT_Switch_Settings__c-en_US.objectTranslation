@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Switch Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trigger Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Is Process Builder Active --></label>
+        <name>WT_Is_Process_Builder_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- NOTE: Only for Data Migration
+If Data Load - SObject (FinServ__AccountAccountRelation__c). --></help>
+        <label><!-- Is Required AAR Load? --></label>
+        <name>WT_Is_Required_AAR_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Trigger Active --></label>
+        <name>WT_Is_Trigger_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Validation Rule Active --></label>
+        <name>WT_Is_Validation_Rule_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Workflow Rule Active --></label>
+        <name>WT_Is_Workflow_Rule_Active__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

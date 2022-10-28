@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Profile License Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Profile License Configuration</value>
+    </caseValues>
+    <fields>
+        <label><!-- Count License To Start Blocking --></label>
+        <name>WT_Count_License_To_Start_Blocking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>WT_Profile_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

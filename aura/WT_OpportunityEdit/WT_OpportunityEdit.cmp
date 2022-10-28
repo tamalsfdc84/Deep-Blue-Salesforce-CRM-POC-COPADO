@@ -1,0 +1,5 @@
+<aura:component implements="lightning:isUrlAddressable,force:appHostable,lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">      
+    <aura:attribute name="objectApiName" type="String" default="Opportunity" />     
+    <aura:attribute name="recordId" type="Id" />           
+    <c:wT_OpportunityPage objectApiName="{!v.objectApiName}" recordId="{!v.recordId}" isEditButtonClick="true"></c:wT_OpportunityPage>
+</aura:component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MANUALLY_PROCESSED</fullName>
+        <default>false</default>
+        <label>Manually processed</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>EXISTING_CUSTOMER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Existing Customer</label>
+    </customValue>
+    <description>A list of possible reasons for overriding funding status. Helps in standardizing reasons which can be later used in reporting.</description>
+    <masterLabel>FundingOverrideReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

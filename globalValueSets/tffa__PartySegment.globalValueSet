@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BOOMER</fullName>
+        <default>false</default>
+        <label>Boomer</label>
+    </customValue>
+    <customValue>
+        <fullName>PROSPECT</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </customValue>
+    <customValue>
+        <fullName>GENERAL</fullName>
+        <default>false</default>
+        <label>General</label>
+    </customValue>
+    <customValue>
+        <fullName>MASS_AFFLUENT</fullName>
+        <default>false</default>
+        <label>Mass Affluent</label>
+    </customValue>
+    <customValue>
+        <fullName>PRIVATE_WEALTH</fullName>
+        <default>false</default>
+        <label>Private/Wealth</label>
+    </customValue>
+    <description>Different groups of people or organizations an enterprise aims to reach and serve.</description>
+    <masterLabel>PartySegment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

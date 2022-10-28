@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BackPhotoId --></label>
+        <name>tffa__BackPhotoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- BackPhotoType --></label>
+        <name>tffa__BackPhotoType__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExpirationDate --></label>
+        <name>tffa__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FrontPhotoId --></label>
+        <name>tffa__FrontPhotoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FrontPhotoType --></label>
+        <name>tffa__FrontPhotoType__c</name>
+    </fields>
+    <fields>
+        <help><!-- On a particular document or in a particular resource each party  is assigned a unique value. For example a driver&apos;s license number or passport number on documents. --></help>
+        <label><!-- Identification Number --></label>
+        <name>tffa__IdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- IssueDate --></label>
+        <name>tffa__IssueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- IssuingAuthority --></label>
+        <name>tffa__IssuingAuthority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IssuingCountry --></label>
+        <name>tffa__IssuingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- IssuingState --></label>
+        <name>tffa__IssuingState__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Identifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prefill source --></label>
+        <name>tffa__PrefillSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefilled --></label>
+        <name>tffa__Prefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- VerifiedBy --></label>
+        <name>tffa__VerifiedBy__c</name>
+        <relationshipLabel><!-- Identifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VerifiedOn --></label>
+        <name>tffa__VerifiedOn__c</name>
+    </fields>
+    <layouts>
+        <layout>Identification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

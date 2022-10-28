@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INDIVIDUAL</fullName>
+        <default>false</default>
+        <label>Sole Ownership</label>
+    </customValue>
+    <customValue>
+        <fullName>JOINT_TENANTS_WITH_RIGHTOF_SURVIVORSHIP</fullName>
+        <default>false</default>
+        <label>Joint Tenancy with Right of Survivorship</label>
+    </customValue>
+    <customValue>
+        <fullName>LIFE_ESTATE</fullName>
+        <default>false</default>
+        <label>Life Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>TENANTSBY_THE_ENTIRETY</fullName>
+        <default>false</default>
+        <label>Tenancy by the Entirety</label>
+    </customValue>
+    <customValue>
+        <fullName>TENANTS_IN_COMMON</fullName>
+        <default>false</default>
+        <label>Tenancy in Common</label>
+    </customValue>
+    <description>List that specifies a type of real property ownership by one or more parties. This defines the rights of the parties to occupy, sell their interest in the property to others, to will the property, or to sever joint ownership of the property.</description>
+    <masterLabel>RelationshipVestingType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

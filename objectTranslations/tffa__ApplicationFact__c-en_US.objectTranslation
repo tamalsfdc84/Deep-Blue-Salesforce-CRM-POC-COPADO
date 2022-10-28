@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Abandoned Routing Decision Strategy --></label>
+        <name>tffa__AbandonedRoutingDecisionStrategy__c</name>
+        <relationshipLabel><!-- Abandoned Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Abandoned --></label>
+        <name>tffa__Abandoned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account opened on --></label>
+        <name>tffa__AccountOpenedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add-on Services --></label>
+        <name>tffa__AddOnServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>tffa__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approved on --></label>
+        <name>tffa__ApprovedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>tffa__BrandEntity__c</name>
+        <relationshipLabel><!-- ApplicationFacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>tffa__Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle code --></label>
+        <name>tffa__BundleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle name --></label>
+        <name>tffa__BundleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product Bundle not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Bundle__c</name>
+        <relationshipLabel><!-- Bundled Applications Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tffa__Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation reason --></label>
+        <name>tffa__CancellationReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled by --></label>
+        <name>tffa__CancelledBy__c</name>
+        <relationshipLabel><!-- Application Facts (Cancelled by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>tffa__CreditDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Decision Strategy --></label>
+        <name>tffa__CreditDecisionStrategy__c</name>
+        <relationshipLabel><!-- Credit Decisioned Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cross Channel --></label>
+        <name>tffa__CrossChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cross sell source product category --></label>
+        <name>tffa__CrossSellSourceProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cross sell source product code --></label>
+        <name>tffa__CrossSellSourceProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cross sell source product --></label>
+        <name>tffa__CrossSellSourceProduct__c</name>
+        <relationshipLabel><!-- Cross Sell Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cross sell --></label>
+        <name>tffa__CrossSell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined reason --></label>
+        <name>tffa__DeclinedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Browser --></label>
+        <name>tffa__DeviceBrowser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location City --></label>
+        <name>tffa__DeviceLocationCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location Continent --></label>
+        <name>tffa__DeviceLocationContinent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location Country --></label>
+        <name>tffa__DeviceLocationCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location State --></label>
+        <name>tffa__DeviceLocationState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Location --></label>
+        <name>tffa__DeviceLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>tffa__DeviceOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>tffa__Device__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Need Fact --></label>
+        <name>tffa__FinancialNeedFact__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Funded Amount --></label>
+        <name>tffa__FundedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding status --></label>
+        <name>tffa__FundingStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding type --></label>
+        <name>tffa__FundingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business --></label>
+        <name>tffa__IsBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has multiple accounts --></label>
+        <name>tffa__IsCloned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is CD ladder --></label>
+        <name>tffa__IsLadder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lending --></label>
+        <name>tffa__IsLending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is multi-product submission --></label>
+        <name>tffa__IsMultiProductSubmission__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>tffa__KYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Strategy --></label>
+        <name>tffa__KYCDecisionStrategy__c</name>
+        <relationshipLabel><!-- KYC Decisioned Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Saved on --></label>
+        <name>tffa__LastSavedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last synced on --></label>
+        <name>tffa__LastSyncedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- ApplicationFacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Medium --></label>
+        <name>tffa__Medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customers --></label>
+        <name>tffa__NumberOfCustomers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individuals --></label>
+        <name>tffa__NumberOfIndividuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizations --></label>
+        <name>tffa__NumberOfOrganizations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parties --></label>
+        <name>tffa__NumberOfParties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospects --></label>
+        <name>tffa__NumberOfProspects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts / Terms --></label>
+        <name>tffa__NumberOfTerms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, useful for reporting --></help>
+        <label><!-- Applications --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization type --></label>
+        <name>tffa__OrganizationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Sync --></label>
+        <name>tffa__OutOfSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party age --></label>
+        <name>tffa__PartyAge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party city --></label>
+        <name>tffa__PartyCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party country --></label>
+        <name>tffa__PartyCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Credit bureau score --></label>
+        <name>tffa__PartyCreditBureauScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Debit Bureau score --></label>
+        <name>tffa__PartyDebitBureauScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party FICO score --></label>
+        <name>tffa__PartyFICOScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party gender --></label>
+        <name>tffa__PartyGender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Segment --></label>
+        <name>tffa__PartySegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party state --></label>
+        <name>tffa__PartyState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party tenure --></label>
+        <name>tffa__PartyTenure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary purpose --></label>
+        <name>tffa__PrimaryPurpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product --></label>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion code --></label>
+        <name>tffa__PromotionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>tffa__Promotion__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate lock expiry date --></label>
+        <name>tffa__RateLockExpiryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate lock status --></label>
+        <name>tffa__RateLockStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation Fact --></label>
+        <name>tffa__RecommendationFact__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral code (value) --></label>
+        <name>tffa__ReferralCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>tffa__Referral__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reopened --></label>
+        <name>tffa__Reopened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review --></label>
+        <name>tffa__Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission id --></label>
+        <name>tffa__SubmissionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission name --></label>
+        <name>tffa__SubmissionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission --></label>
+        <name>tffa__Submission__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submitted By --></label>
+        <name>tffa__SubmittedBy__c</name>
+        <relationshipLabel><!-- Application Facts (Submitted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submitted Channel --></label>
+        <name>tffa__SubmittedChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted on --></label>
+        <name>tffa__SubmittedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>tffa__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- UX Theme --></label>
+        <name>tffa__Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- UX Strategy Code --></label>
+        <name>tffa__UXStrategyCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- UX Strategy --></label>
+        <name>tffa__UXStrategy__c</name>
+        <relationshipLabel><!-- Application Facts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

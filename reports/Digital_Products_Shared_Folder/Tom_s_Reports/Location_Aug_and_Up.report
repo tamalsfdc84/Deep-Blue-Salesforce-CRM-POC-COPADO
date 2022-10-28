@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>tffa__ApplicationFact__c.tffa__AccountOpenedOn__c</field>
+    </columns>
+    <columns>
+        <field>tffa__ApplicationFact__c.tffa__PartyState__c</field>
+    </columns>
+    <columns>
+        <field>tffa__ApplicationFact__c.tffa__PartyCity__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Location_Aug and Up</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$tffa__ApplicationFact__c@tffa__ApplicationFact__c.tffa__Party__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>tffa__ApplicationFact__c.tffa__AccountOpenedOn__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-08-02</startDate>
+    </timeFrameFilter>
+</Report>

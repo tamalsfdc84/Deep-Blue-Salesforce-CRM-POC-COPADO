@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PUBLIC_STATE</fullName>
+        <default>false</default>
+        <label>Public State</label>
+    </customValue>
+    <customValue>
+        <fullName>PUBLIC_LOCAL</fullName>
+        <default>false</default>
+        <label>Public Local</label>
+    </customValue>
+    <customValue>
+        <fullName>PUBLIC_FEDERAL</fullName>
+        <default>false</default>
+        <label>Public Federal</label>
+    </customValue>
+    <customValue>
+        <fullName>PRIVATE</fullName>
+        <default>false</default>
+        <label>Private</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Level of authority of the license identifier.</description>
+    <masterLabel>IdentifierAuthorityLevelType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ACHConfigurations</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ACHConfigurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACHFileNamePrefix --></label>
+        <name>ACHFileNamePrefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- AchHoldTransactions --></label>
+        <name>AchHoldDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- BankName --></label>
+        <name>BankName__c</name>
+    </fields>
+    <fields>
+        <label><!-- BankRoutingNo --></label>
+        <name>BankRoutingNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- CompanyId --></label>
+        <name>CompanyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CompanyName --></label>
+        <name>CompanyName__c</name>
+    </fields>
+    <fields>
+        <help><!-- FederalReserveBankName. --></help>
+        <label><!-- FederalReserveBankName --></label>
+        <name>FederalReserveBankName__c</name>
+    </fields>
+    <fields>
+        <help><!-- FederalReserveRoutingNo. --></help>
+        <label><!-- FederalReserveRoutingNo --></label>
+        <name>FederalReserveRoutingNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- GLAccountNo --></label>
+        <name>GLAccountNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- GL Cost Center --></label>
+        <name>GLCostCenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- ImmediateDestinationNam --></label>
+        <name>ImmediateDestinationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ImmediateDestination --></label>
+        <name>ImmediateDestination__c</name>
+    </fields>
+    <fields>
+        <label><!-- ImmediateOriginName --></label>
+        <name>ImmediateOriginName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ImmediateOrigin --></label>
+        <name>ImmediateOrigin__c</name>
+    </fields>
+    <fields>
+        <label><!-- ODFI Id --></label>
+        <name>ODFI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originator Status Code --></label>
+        <name>OriginatorStatusCode__c</name>
+    </fields>
+    <layouts>
+        <layout>ACHConfigurations Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Annual Percentage Yield --></label>
+        <name>tffa__APY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Title --></label>
+        <name>tffa__AccountTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance --></label>
+        <name>tffa__Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIC Code --></label>
+        <name>tffa__BicCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close date --></label>
+        <name>tffa__CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>tffa__CreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial institution --></label>
+        <name>tffa__FinancialInstitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Away --></label>
+        <name>tffa__HeldAway__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) code --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Branch) --></label>
+        <name>tffa__Location__c</name>
+        <relationshipLabel><!-- FinancialAccounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Number (masked) --></label>
+        <name>tffa__MaskedAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity date --></label>
+        <name>tffa__MaturityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nick name --></label>
+        <name>tffa__NickName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open date --></label>
+        <name>tffa__OpenDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>tffa__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Name --></label>
+        <name>tffa__ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Financial Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>tffa__Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary email --></label>
+        <name>tffa__SecondaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary phone --></label>
+        <name>tffa__SecondaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access token(Encrypted) --></label>
+        <name>tffa__SourceSystemToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>tffa__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>tffa__Term__c</name>
+    </fields>
+    <layouts>
+        <layout>Financial Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Business Certificate --></label>
+        <name>tffa__BUSINESS_CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Business Checking --></label>
+        <name>tffa__BUSINESS_CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the business  to borrow funds. --></description>
+        <label><!-- Business Credit Card --></label>
+        <name>tffa__BUSINESS_CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Business IRA is a type of Traditional IRA for self-employed people or small business owners. A small business owner with one employee or more, or anyone with a freelance income can open a business IRA. --></description>
+        <label><!-- Businesss retirement account --></label>
+        <name>tffa__BUSINESS_IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business line of credit provides flexibility that a regular business loan doesn’t. With a business line of credit, you can borrow up to a certain limit  and pay interest only on the portion of money that you borrow. --></description>
+        <label><!-- Business Line of Credit --></label>
+        <name>tffa__BUSINESS_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Business Money Market --></label>
+        <name>tffa__BUSINESS_MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A commercial real estate loan is a mortgage secured by a lien on commercial property as opposed to residential property --></description>
+        <label><!-- Business Real Estate Loan --></label>
+        <name>tffa__BUSINESS_REALESTATE_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that  limit the number of withdrawals --></description>
+        <label><!-- Business Savings --></label>
+        <name>tffa__BUSINESS_SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A traditional business term loan is a lump sum of capital that you pay back with regular repayments at a fixed interest rate. Most business owners use the proceeds of term loans to finance a specific, one-off investment for their small business. --></description>
+        <label><!-- Business Term Loan --></label>
+        <name>tffa__BUSINESS_TERM_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certificate of deposit (CD) is a savings certificate with a fixed maturity date and specified fixed interest rate --></description>
+        <label><!-- Certificate --></label>
+        <name>tffa__CERTIFICATE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A checking account is a deposit account held at a financial institution that allows withdrawals and deposits using checks, ATM and electronic debits, among other methods --></description>
+        <label><!-- Checking --></label>
+        <name>tffa__CHECKING</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A credit card is a card issued by a financial instituition which enables the cardholder to borrow funds. --></description>
+        <label><!-- Credit Card --></label>
+        <name>tffa__CREDIT_CARD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An account which allows buying/selling cryptocurrency via a custodian (e.g. NYDIG). --></description>
+        <label><!-- Crypto Custodial --></label>
+        <name>tffa__CRYPTO_CUSTODIAL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An education loan is money borrowed to finance education or school related expenses. Payments are often deferred while in school and for a six-month grace period after graduation --></description>
+        <label><!-- Education Loan --></label>
+        <name>tffa__EDUCATION_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Coverdell education savings account (also known as an education savings account, a Coverdell ESA, a Coverdell account, or just an ESA, and formerly known as an education individual retirement account), is a tax-advantaged investment account in the U.S --></description>
+        <label><!-- Education savings account --></label>
+        <name>tffa__ESA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A home equity line of credit (HELOC) is a loan in which the lender agrees to lend a maximum amount within an agreed period, where the collateral is the borrowers equity in his/her house (similar to a second mortgage) --></description>
+        <label><!-- Home Equity Line of Credit --></label>
+        <name>tffa__HELOC</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Health Savings Account (HSA) is a tax-advantaged account created for individuals who are covered under high-deductible health plans (HDHPs) to save for medical expenses that HDHPs do not cover. --></description>
+        <label><!-- Health savings account --></label>
+        <name>tffa__HSA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An individual retirement account (IRA) is a tax-advantaged investing tool that individuals use to earmark funds for retirement savings --></description>
+        <label><!-- Individual retirement account --></label>
+        <name>tffa__IRA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A money market account is an interest-bearing account. money market accounts pay a higher interest rate than regular passbook savings accounts and often include checkwriting and debit card privileges --></description>
+        <label><!-- Money Market --></label>
+        <name>tffa__MONEY_MARKET</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A mortgage is a debt instrument, secured by the collateral of specified real estate property, that the borrower is obliged to pay back with a predetermined set of payments --></description>
+        <label><!-- Mortgage --></label>
+        <name>tffa__MORTGAGE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A line of credit (LOC ) is preset borrowing limit that can be used at any time. The borrower can take money out as needed until the limit is reached. --></description>
+        <label><!-- Personal Line of Credit --></label>
+        <name>tffa__PERSONAL_LINE_OF_CREDIT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An unsecured loan is a loan that is issued and supported only by the borrower&apos;s creditworthiness --></description>
+        <label><!-- Personal Loan --></label>
+        <name>tffa__PERSONAL_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A savings account is an interest-bearing deposit account held at a financial institution that  limit the number of withdrawals --></description>
+        <label><!-- Savings --></label>
+        <name>tffa__SAVINGS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SBA loans are business loans guaranteed by the Small Business Administration.SBA loan programs let you borrow money for working capital, purchasing inventory or equipment, refinancing other debts, or buying real estate—through these SBA-guaranteed loans. --></description>
+        <label><!-- SBA Loan --></label>
+        <name>tffa__SBA_LOAN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A vehicle loan  is a short-term loan in which the borrower&apos;s vehicle  title is used as collateral --></description>
+        <label><!-- Vehicle Loan --></label>
+        <name>tffa__VEHICLE_LOAN</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DL</fullName>
+        <default>false</default>
+        <label>Driver License</label>
+    </customValue>
+    <customValue>
+        <fullName>STATE_ID</fullName>
+        <default>false</default>
+        <label>State Id</label>
+    </customValue>
+    <customValue>
+        <fullName>MILITARY_ID</fullName>
+        <default>false</default>
+        <label>Military Id</label>
+    </customValue>
+    <customValue>
+        <fullName>PASSPORT</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <customValue>
+        <fullName>BALANCE_SHEET</fullName>
+        <default>false</default>
+        <label>Balance Sheet</label>
+    </customValue>
+    <customValue>
+        <fullName>PROFIT_AND_LOSS</fullName>
+        <default>false</default>
+        <label>Profit and Loss</label>
+    </customValue>
+    <customValue>
+        <fullName>CASH_FLOW</fullName>
+        <default>false</default>
+        <label>Cash Flow</label>
+    </customValue>
+    <customValue>
+        <fullName>TAX_RETURNS</fullName>
+        <default>false</default>
+        <label>Tax Returns</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSET_REPORT</fullName>
+        <default>false</default>
+        <label>Asset Report</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PAYSTUBS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAYSTUBS</label>
+    </customValue>
+    <description>A subset category identified within a larger group of documents. A document subtype provides more specific context for the document.</description>
+    <masterLabel>DocumentSubtype</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

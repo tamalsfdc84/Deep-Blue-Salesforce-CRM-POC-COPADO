@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>FinServ__Expectations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about client&apos;s expectations</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Expectations</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__Household__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Household associated with the task</description>
+        <externalId>false</externalId>
+        <label>Household</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__NextSteps__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about follow-up activities</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Next Steps</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__Objectives__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about client&apos;s objectives</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Objectives</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FinServ__Regarding__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Nature of interaction with the client</description>
+        <externalId>false</externalId>
+        <label>Regarding</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospecting</fullName>
+                    <default>false</default>
+                    <label>Prospecting</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Client Retention</fullName>
+                    <default>false</default>
+                    <label>Client Retention</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Activity_Completed_Date__c</fullName>
+        <description>This Field will Updated automatically through process builder when Status is Completed.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Activity Completed Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WT_Activity_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Appointment</fullName>
+                    <default>false</default>
+                    <label>Appointment</label>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                    <label>Phone Call</label>
+                </value>
+                <value>
+                    <fullName>Task</fullName>
+                    <default>false</default>
+                    <label>Task</label>
+                </value>
+                <value>
+                    <fullName>Letter</fullName>
+                    <default>false</default>
+                    <label>Letter</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Walk-in</fullName>
+                    <default>false</default>
+                    <label>Walk-in</label>
+                </value>
+                <value>
+                    <fullName>Annual Review Appointment</fullName>
+                    <default>false</default>
+                    <label>Annual Review Appointment</label>
+                </value>
+                <value>
+                    <fullName>Annual Review Phone Call</fullName>
+                    <default>false</default>
+                    <label>Annual Review Phone Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Admin_Attendees__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Administrator Attendees</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Annual_AUA__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Annual Sales or AUA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WT_Areas_where_we_can_be_more_helpful__c</fullName>
+        <externalId>false</externalId>
+        <label>Areas where we can be more helpful?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Assigned_To_Charter__c</fullName>
+        <description>Activity Assigned to Charter can&apos;t be accessed in reports as a work around, created a Text formula field to access in Report.</description>
+        <externalId>false</externalId>
+        <formula>Owner:User.WT_Charter__c</formula>
+        <label>Assigned To Charter</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Assigned_to_Line_of_Business__c</fullName>
+        <description>Activity Assigned to Line of business is a picklist value which can&apos;t be accessed in reports as a work around, created a Text formula field to access the TEXT value of &quot;Assigned to Line of business&quot;.</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Owner:User.WT_Line_of_Business__c )</formula>
+        <label>Assigned to Line of Business</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Bcc__c</fullName>
+        <description>Created a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Bcc</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Brokers_Dealers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Brokers Dealers</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Buisness_Location__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Buisness Location</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_CRA_Reportable__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>CRA Reportable</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Call_Duration__c</fullName>
+        <defaultValue>&quot;30 minutes&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Duration</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 minutes</fullName>
+                    <default>false</default>
+                    <label>1 minutes</label>
+                </value>
+                <value>
+                    <fullName>15 minutes</fullName>
+                    <default>false</default>
+                    <label>15 minutes</label>
+                </value>
+                <value>
+                    <fullName>30 minutes</fullName>
+                    <default>false</default>
+                    <label>30 minutes</label>
+                </value>
+                <value>
+                    <fullName>45 minutes</fullName>
+                    <default>false</default>
+                    <label>45 minutes</label>
+                </value>
+                <value>
+                    <fullName>1 hour</fullName>
+                    <default>false</default>
+                    <label>1 hour</label>
+                </value>
+                <value>
+                    <fullName>1.5 hours</fullName>
+                    <default>false</default>
+                    <label>1.5 hours</label>
+                </value>
+                <value>
+                    <fullName>2 hours</fullName>
+                    <default>false</default>
+                    <label>2 hours</label>
+                </value>
+                <value>
+                    <fullName>2.5 hours</fullName>
+                    <default>false</default>
+                    <label>2.5 hours</label>
+                </value>
+                <value>
+                    <fullName>3 hours</fullName>
+                    <default>false</default>
+                    <label>3 hours</label>
+                </value>
+                <value>
+                    <fullName>3.5 hours</fullName>
+                    <default>false</default>
+                    <label>3.5 hours</label>
+                </value>
+                <value>
+                    <fullName>4 hours</fullName>
+                    <default>false</default>
+                    <label>4 hours</label>
+                </value>
+                <value>
+                    <fullName>4.5 hours</fullName>
+                    <default>false</default>
+                    <label>4.5 hours</label>
+                </value>
+                <value>
+                    <fullName>5 hours</fullName>
+                    <default>false</default>
+                    <label>5 hours</label>
+                </value>
+                <value>
+                    <fullName>5.5 hours</fullName>
+                    <default>false</default>
+                    <label>5.5 hours</label>
+                </value>
+                <value>
+                    <fullName>6 hours</fullName>
+                    <default>false</default>
+                    <label>6 hours</label>
+                </value>
+                <value>
+                    <fullName>6.5 hours</fullName>
+                    <default>false</default>
+                    <label>6.5 hours</label>
+                </value>
+                <value>
+                    <fullName>7 hours</fullName>
+                    <default>false</default>
+                    <label>7 hours</label>
+                </value>
+                <value>
+                    <fullName>7.5 hours</fullName>
+                    <default>false</default>
+                    <label>7.5 hours</label>
+                </value>
+                <value>
+                    <fullName>8 hours</fullName>
+                    <default>false</default>
+                    <label>8 hours</label>
+                </value>
+                <value>
+                    <fullName>1 day</fullName>
+                    <default>false</default>
+                    <label>1 day</label>
+                </value>
+                <value>
+                    <fullName>2 days</fullName>
+                    <default>false</default>
+                    <label>2 days</label>
+                </value>
+                <value>
+                    <fullName>3 days</fullName>
+                    <default>false</default>
+                    <label>3 days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Case_Owner_Email__c</fullName>
+        <description>created as part of DBSFCRM - 93</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Case Owner Email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>created as part of DBSFCRM-93</description>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Chg_Policies_Procedure__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Explain AML policy/procedure changes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Contact_Status__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Contact Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Activity Not Executed</fullName>
+                    <default>false</default>
+                    <label>Activity Not Executed</label>
+                </value>
+                <value>
+                    <fullName>Follow Up Appointment Scheduled</fullName>
+                    <default>false</default>
+                    <label>Follow Up Appointment Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Follow Up Call Scheduled</fullName>
+                    <default>false</default>
+                    <label>Follow Up Call Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Goal Met</fullName>
+                    <default>false</default>
+                    <label>Goal Met</label>
+                </value>
+                <value>
+                    <fullName>Goal Not Met</fullName>
+                    <default>false</default>
+                    <label>Goal Not Met</label>
+                </value>
+                <value>
+                    <fullName>Message Left</fullName>
+                    <default>false</default>
+                    <label>Message Left</label>
+                </value>
+                <value>
+                    <fullName>No Answer, No Message Left</fullName>
+                    <default>false</default>
+                    <label>No Answer, No Message Left</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number on File</fullName>
+                    <default>false</default>
+                    <label>Wrong Number on File</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Contact_Type__c</fullName>
+        <description>Created as part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Meeting</fullName>
+                    <default>false</default>
+                    <label>Meeting</label>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                    <label>Phone Call</label>
+                </value>
+                <value>
+                    <fullName>Networking Event</fullName>
+                    <default>false</default>
+                    <label>Networking Event</label>
+                </value>
+                <value>
+                    <fullName>Sponsored Event</fullName>
+                    <default>false</default>
+                    <label>Sponsored Event</label>
+                </value>
+                <value>
+                    <fullName>COI/Referral</fullName>
+                    <default>false</default>
+                    <label>COI/Referral</label>
+                </value>
+                <value>
+                    <fullName>CRA</fullName>
+                    <default>false</default>
+                    <label>CRA</label>
+                </value>
+                <value>
+                    <fullName>Bank At Work</fullName>
+                    <default>false</default>
+                    <label>Bank At Work</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Controlling_party_pooled_investments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Controlling party on pooled investments</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Credit_Needs_Not_Being_Met_By_Bank__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit needs not being met by the bank?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Current_Wintrust_Customer__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Current Wintrust Customer</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_CustBulk_Cash_ShipSer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bulk cash shipment services</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Customer_Uses_Product__c</fullName>
+        <description>Created as part of 155</description>
+        <externalId>false</externalId>
+        <label>Customer Uses Product</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Deposit_Brokers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Deposit Brokers</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Direction__c</fullName>
+        <defaultValue>&quot;Outbound&quot;</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Direction</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inbound</fullName>
+                    <default>false</default>
+                    <label>Inbound</label>
+                </value>
+                <value>
+                    <fullName>Outbound</fullName>
+                    <default>false</default>
+                    <label>Outbound</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Entertaining__c</fullName>
+        <description>Created as part of  155</description>
+        <externalId>false</externalId>
+        <label>Entertaining</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>High End</fullName>
+                    <default>false</default>
+                    <label>High End</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_If_Yes_Where_Can_We_Be_More_Helpful__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>If yes, where can we be more helpful?</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Intend_to_trade_MRB_Marijuana__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Intend to trade MRB (Marijuana)?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Internal_Planning_Notes__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Internal Planning Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Internet_Gambling__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Internet Gambling</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Likelihood_of_Moving_to_Wintrust__c</fullName>
+        <description>Created as part of 155</description>
+        <externalId>false</externalId>
+        <label>Likelihood of Moving to Wintrust</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Somewhat</fullName>
+                    <default>false</default>
+                    <label>Somewhat</label>
+                </value>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                    <label>Good</label>
+                </value>
+                <value>
+                    <fullName>Great</fullName>
+                    <default>false</default>
+                    <label>Great</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_MSD_MDM_Record_ID__c</fullName>
+        <description>Added for capture the MDM+!+MDM id as unique for data load</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>MSD MDM Record ID</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MSD_Record_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>MSD Record ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Mapped_from_Outlook__c</fullName>
+        <description>Created for DBSFCRM-155</description>
+        <externalId>false</externalId>
+        <label>Mapped from Outlook</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Marketing_Missing_Areas_Of_Community__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing missing areas of community?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Meet_With_SR_Leadership__c</fullName>
+        <description>Created as  part of 155</description>
+        <externalId>false</externalId>
+        <label>Meet With SR Leadership</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ED Wehmer</fullName>
+                    <default>false</default>
+                    <label>ED Wehmer</label>
+                </value>
+                <value>
+                    <fullName>Paul Carlisle</fullName>
+                    <default>false</default>
+                    <label>Paul Carlisle</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Next_Follow_Up_Date__c</fullName>
+        <description>Created as part of 155</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Next Follow Up Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_Number_Clients__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Number of Clients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Number_Employees__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Number of Employees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Occupation_Function_Person_Group__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Occupation/Function of Person/Group</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Onboard_InvestMng__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Onboard Investors/Managers</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Optional_Attendees__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Optional Attendees</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Organizer_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Organizer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Outcome_Notes__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Outcome Notes**</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Override_DNC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-139</description>
+        <externalId>false</externalId>
+        <label>Override DNC</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Phone__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>WT_Plan_to_invest_in_what_industries__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Plan to invest in what industries?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Precious_Metal_Dealers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Precious Metal Dealers (PMDs)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Private_Banking__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Private Banking (def by US Patriot Act)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Product_Partner_Joint_Call__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Product Partner Joint Call?</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABL</fullName>
+                    <default>false</default>
+                    <label>ABL</label>
+                </value>
+                <value>
+                    <fullName>Agricultural Lending</fullName>
+                    <default>false</default>
+                    <label>Agricultural Lending</label>
+                </value>
+                <value>
+                    <fullName>Business Banking</fullName>
+                    <default>false</default>
+                    <label>Business Banking</label>
+                </value>
+                <value>
+                    <fullName>Community Advantage</fullName>
+                    <default>false</default>
+                    <label>Community Advantage</label>
+                </value>
+                <value>
+                    <fullName>Community Banking</fullName>
+                    <default>false</default>
+                    <label>Community Banking</label>
+                </value>
+                <value>
+                    <fullName>Consumer Lending</fullName>
+                    <default>false</default>
+                    <label>Consumer Lending</label>
+                </value>
+                <value>
+                    <fullName>Contact Center</fullName>
+                    <default>false</default>
+                    <label>Contact Center</label>
+                </value>
+                <value>
+                    <fullName>CRE</fullName>
+                    <default>false</default>
+                    <label>CRE</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+                <value>
+                    <fullName>Government Funds</fullName>
+                    <default>false</default>
+                    <label>Government Funds</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>Middle Market</fullName>
+                    <default>false</default>
+                    <label>Middle Market</label>
+                </value>
+                <value>
+                    <fullName>Professional Practice Group</fullName>
+                    <default>false</default>
+                    <label>Professional Practice Group</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Support Role</fullName>
+                    <default>false</default>
+                    <label>Support Role</label>
+                </value>
+                <value>
+                    <fullName>Swap</fullName>
+                    <default>false</default>
+                    <label>Swap</label>
+                </value>
+                <value>
+                    <fullName>Syndication/Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Syndication/Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management</fullName>
+                    <default>false</default>
+                    <label>Treasury Management</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Chicago Trust</fullName>
+                    <default>false</default>
+                    <label>Wealth - Chicago Trust</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Corporate Plan Services</fullName>
+                    <default>false</default>
+                    <label>Wealth - Corporate Plan Services</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Great Lakes Advisors</fullName>
+                    <default>false</default>
+                    <label>Wealth - Great Lakes Advisors</label>
+                </value>
+                <value>
+                    <fullName>Wealth - Wintrust Investments</fullName>
+                    <default>false</default>
+                    <label>Wealth - Wintrust Investments</label>
+                </value>
+                <value>
+                    <fullName>Wealth Management</fullName>
+                    <default>false</default>
+                    <label>Wealth Management</label>
+                </value>
+                <value>
+                    <fullName>Wintrust Receivables Finance</fullName>
+                    <default>false</default>
+                    <label>Wintrust Receivables Finance</label>
+                </value>
+                <value>
+                    <fullName>Private Client Group</fullName>
+                    <default>false</default>
+                    <label>Private Client Group</label>
+                </value>
+                <value>
+                    <fullName>Wealth Services</fullName>
+                    <default>false</default>
+                    <label>Wealth Services</label>
+                </value>
+                <value>
+                    <fullName>Wealth – Corporate Plan Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wealth – Corporate Plan Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>WT_Product_Partner__c</fullName>
+        <description>Created as part of 155</description>
+        <externalId>false</externalId>
+        <label>Product Partner</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Wealth</fullName>
+                    <default>false</default>
+                    <label>Wealth</label>
+                </value>
+                <value>
+                    <fullName>TM</fullName>
+                    <default>false</default>
+                    <label>TM</label>
+                </value>
+                <value>
+                    <fullName>Leasing</fullName>
+                    <default>false</default>
+                    <label>Leasing</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Recommended_Follow_Up__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Recommended Follow-up</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Regarding__c</fullName>
+        <description>.</description>
+        <externalId>false</externalId>
+        <label>Regarding</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yet To Receive</fullName>
+                    <default>false</default>
+                    <label>Yet To Receive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Relationship_Group__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Relationship Group</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Residence_Location__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Residence Location</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Retail_Call_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Retail Call Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Collection Call</fullName>
+                    <default>false</default>
+                    <label>Collection Call</label>
+                </value>
+                <value>
+                    <fullName>Maturing CD</fullName>
+                    <default>false</default>
+                    <label>Maturing CD</label>
+                </value>
+                <value>
+                    <fullName>OD Call</fullName>
+                    <default>false</default>
+                    <label>OD Call</label>
+                </value>
+                <value>
+                    <fullName>OnBoarding Call</fullName>
+                    <default>false</default>
+                    <label>OnBoarding Call</label>
+                </value>
+                <value>
+                    <fullName>Past Due Loan</fullName>
+                    <default>false</default>
+                    <label>Past Due Loan</label>
+                </value>
+                <value>
+                    <fullName>Sales Call</fullName>
+                    <default>false</default>
+                    <label>Sales Call</label>
+                </value>
+                <value>
+                    <fullName>Service Call</fullName>
+                    <default>false</default>
+                    <label>Service Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Review_Type__c</fullName>
+        <description>Created as part of 155</description>
+        <externalId>false</externalId>
+        <label>Review Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annual</fullName>
+                    <default>false</default>
+                    <label>Annual</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Monthly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Send_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>created as part of DBFSCRM- 93</description>
+        <externalId>false</externalId>
+        <label>Send Email ?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Shell_Comp_IntlPrivateInvestComp__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Shell &amp; Intl private investment company</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Status__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Event Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_TM_Activity_Lkp__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>TM Activity</label>
+        <referenceTo>WT_Activity_Extension__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Talking_Points__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Talking Points</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_TaskSubtype__c</fullName>
+        <description>Created as a part of DBSFCRM-464.</description>
+        <externalId>false</externalId>
+        <label>Task Subtype</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>.</fullName>
+                    <default>false</default>
+                    <label>.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Task_Number__c</fullName>
+        <description>Created as part of story 93</description>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Task Number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>WT_ThirdParty_Payment_Processors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Third Party Payment Processors</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Third_Party_Payment_Processors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Third Party Payment Processors</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Training__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Training</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Trends__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Trends</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Update_intr_rec__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Updated SOC1/SSAE16 report (get copy)?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_WFG_Attendees__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>WFG Attendees</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_What_Are_Major_Bank_Related_Needs__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>What are the major bank related needs?</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_What_Was_Discussed__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>What was discussed?</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_What_ownership_str_investment__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Owner structure of investment (private)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_What_percent_portfolio_foreign_del__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>% of portfolio that is foreign</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_Who_Initiated_Contact__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Who Initiated Contact?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bank Initiated</fullName>
+                    <default>false</default>
+                    <label>Bank Initiated</label>
+                </value>
+                <value>
+                    <fullName>Client Initiated</fullName>
+                    <default>false</default>
+                    <label>Client Initiated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Wholesale_Accept_Party_Chks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Wholesalers Accepting 3rd Party Checks</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_annual_admin_call__c</fullName>
+        <description>Created as a part of DBSFCRM-464.</description>
+        <externalId>false</externalId>
+        <label>Is this an annual administrator call?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_annual_review_call__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created as a part of DBSFCRM-464</description>
+        <externalId>false</externalId>
+        <label>Is this an annual review addendum call?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_chg_send_clt_funds__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Explain fund sending changes (wires)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_chg_senior_manag_del__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Senior management changes?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_exchgs_counterparties__c</fullName>
+        <description>Created as a part of DBSFCRM-464</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>List all exchanges or counterparties</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_which_country_planinvest_del__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Which country(ies) plan to invest?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WT_which_industries_plan_invest_del__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>which industries do you plan to invest?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <columns>ACTIVITY_SUBTYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>EVENT.LOCATION</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

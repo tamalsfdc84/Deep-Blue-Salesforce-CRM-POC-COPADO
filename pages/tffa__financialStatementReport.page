@@ -1,0 +1,110 @@
+<apex:page controller="tffa.FinancialStatementReportController" applyBodyTag="false" renderAs="{!renderAs}" action="{!init}">
+  <head>
+    <style type="text/css">
+      @page {
+        margin:16px;
+      }
+      body {
+        font-size: 14px;
+      }
+      table  {
+        border-collapse: collapse;      
+        width: 100%;
+      }
+      th, td {
+        padding: 8px;
+      }
+      th {
+        border-bottom: 1px solid #ddd;
+      }
+      .item-header {
+        text-align: right;        
+      }
+      .item-detail, .item-header {
+        width: 140px;
+      }
+      .level0 .item-label {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .level0 .item-detail {
+        font-weight: bold;
+      }
+      .level0.is-summary .item-label {
+        text-transform: none;
+        font-size: 14px;
+      }  
+      .is-summary td {
+        font-weight: bold; 
+        border-top: 2px solid #e7eaec;
+        border-bottom: 2px solid #e7eaec;
+      }
+      .item-detail {
+        text-align: right;
+      }
+      .is-group td {
+        border-bottom: 1px solid #e7eaec;
+      }
+      .level0.is-summary {
+        background-color: #f9f9f9;
+      }
+      .level1 .item-label {
+        padding-left: 20px;
+      }
+      .level2 .item-label {
+        padding-left: 40px;
+      }
+      .level3 .item-label {
+        padding-left: 60px;
+      }
+      .level4 .item-label {
+        padding-left: 80px;
+      }
+      .container {
+        min-width: 768px;
+        #padding: 16px 16px 0px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <apex:repeat var="header" value="{!headers}">
+              <th class="item-header">{!header}</th>
+            </apex:repeat>
+          </tr>       
+        </thead>
+        <tbody>
+          <apex:repeat var="row" value="{!rows}">                
+            <apex:outputPanel rendered="{!row.isGroup}">          
+              <tr class="{!row.styleClass}">
+                <td class="item-label" colspan="{!row.colSpan}">{!row.header}</td>            
+              </tr>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!!row.isGroup}">
+              <tr class="{!row.styleClass}">
+                <td class="item-label">{!row.header}</td>
+                <apex:repeat var="col" value="{!row.data}">
+                  <td class="item-detail">
+                    <apex:outputText value="{0, number, #,##0.00}">
+                      <apex:param value="{!col.tffa__Value__c}" />
+                    </apex:outputText>
+                  </td>
+                </apex:repeat>
+              </tr>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!row.level == 0 && !row.isGroup}">
+              <tr>
+                <td colspan="{!row.colSpan}">&nbsp;</td>            
+              </tr>
+            </apex:outputPanel>
+          </apex:repeat>  
+        </tbody>
+      </table>
+    </div>
+  </body>
+</apex:page>

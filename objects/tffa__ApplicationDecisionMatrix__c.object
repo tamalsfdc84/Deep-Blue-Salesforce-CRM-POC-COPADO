@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A decision matrix lists down business rule conditions (causes) and actions (effects), represented as a matrix where each row represents a unique combination. In ApplicationDecisionMatrix, the action is a decision outcome - APPROVED, DECLINED, etc related to Application.status. It controls future status flows (behaviour) of the Application. e.g. if outcome is DECLINED, Application is marked DECLINED and all processing is terminated, if outcome is REVIEW, manual
+        intervention may be required for further processing, etc. The conditions that make up the causes can include - party attributes like PartyRole, IsPartyMinor or KYC check reponses like IDVStatus, DebitBureauScore, and application attributes like Product. ApplicationDecisionMatrix also supports additional outcomes in the form of CounterOfferItem(s), applicable when the outcome is COUNTER_OFFER.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>tffa__CreditFacts</fullName>
+        <description>Set of fields that act as facts for Credit decisioning.</description>
+        <displayedFields>
+            <field>tffa__Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__CreditBureauScoreFrom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__CreditBureauScoreTo__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__ProductCategory__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__BundleCodeSet__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Credit Facts</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>tffa__KYCFacts</fullName>
+        <availableFields>
+            <field>tffa__BundleCodeSet__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>tffa__PartyRole__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>tffa__Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Set of fields that act as facts for KYC decisioning.</description>
+        <displayedFields>
+            <field>tffa__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsSsnMatch__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsDobMatch__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__DebitBureauScoreTo__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__DebitBureauScoreFrom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__CreditBureauScoreTo__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__CreditBureauScoreFrom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__PartyType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__ProductCategorySet__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Occupation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsStudentProduct__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsPrimaryApplicant__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ChargeAmountExceeded__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OFACStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsMinor__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsIDUploaded__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>InquiryCountExceeded__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__IDVStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IDAStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tffa__DebitBureauStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsExistingCustomer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ExistingCustomerLastNameMatch__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ExistingCustomerDOBMatch__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsRejectedWithFraudReasons__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsAuthenticatedCustomer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsKYCRequired__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsAuthenticatedFlow__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CZPartyDecisionOutcome__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CZFraudStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>KYC Facts</label>
+    </fieldSets>
+    <fields>
+        <fullName>CZAssignToQueue__c</fullName>
+        <description>Assign To Queue</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Assign To Queue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZFraudStatus__c</fullName>
+        <description>Fraud Status</description>
+        <externalId>false</externalId>
+        <label>Fraud Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DueDiligenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CZPartyDecisionOutcome__c</fullName>
+        <description>Party Decision Outcome</description>
+        <externalId>false</externalId>
+        <label>Party Decision Outcome</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyDecisionOutcome</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ChargeAmountExceeded__c</fullName>
+        <description>Charge Amount Exceeded?</description>
+        <externalId>false</externalId>
+        <label>Charge Amount Exceeded?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExistingCustomerDOBMatch__c</fullName>
+        <description>Is DOB entered by Customer same as in FIS?</description>
+        <externalId>false</externalId>
+        <label>Existing Customer DOB Match?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExistingCustomerLastNameMatch__c</fullName>
+        <description>Is Last Name entered by Customer same as in FIS?</description>
+        <externalId>false</externalId>
+        <label>Existing Customer Last Name Match ?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IDAStatus__c</fullName>
+        <description>IDA Status</description>
+        <externalId>false</externalId>
+        <label>IDA Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DueDiligenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>InquiryCountExceeded__c</fullName>
+        <description>Inquiry Count Exceeded?</description>
+        <externalId>false</externalId>
+        <label>Inquiry Count Exceeded?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsAuthenticatedCustomer__c</fullName>
+        <description>Is Authenticated Customer</description>
+        <externalId>false</externalId>
+        <label>Is Authenticated Customer?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsAuthenticatedFlow__c</fullName>
+        <description>Is Authenticated Flow</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If any other applicant in the submission is authenticated</inlineHelpText>
+        <label>Is Authenticated Flow?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsDobMatch__c</fullName>
+        <description>Is DOB Match in IDV?</description>
+        <externalId>false</externalId>
+        <label>DOB Match in IDV?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsExistingCustomer__c</fullName>
+        <description>Is Existing Cutomer</description>
+        <externalId>false</externalId>
+        <label>Is Existing Customer?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsIDUploaded__c</fullName>
+        <description>Is ID Uploaded?</description>
+        <externalId>false</externalId>
+        <label>Is ID Uploaded?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsKYCRequired__c</fullName>
+        <description>Is KYC Required</description>
+        <externalId>false</externalId>
+        <label>Is KYC Required?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsMinor__c</fullName>
+        <description>Is Minor</description>
+        <externalId>false</externalId>
+        <label>Is Minor?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsPrimaryApplicant__c</fullName>
+        <description>Is Primary Applicant</description>
+        <externalId>false</externalId>
+        <label>Is Primary Applicant?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsRejectedWithFraudReasons__c</fullName>
+        <description>If KYC was rejected with some Fraud reject Reasons.</description>
+        <externalId>false</externalId>
+        <label>KYC Rejected with Fraud Reason?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsSsnMatch__c</fullName>
+        <description>Is SSN Match in IDV?</description>
+        <externalId>false</externalId>
+        <label>SSN Match in IDV?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsStudentProduct__c</fullName>
+        <description>Is Student Product</description>
+        <externalId>false</externalId>
+        <label>Is Student Product?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__YesNoOptions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OFACStatus__c</fullName>
+        <description>OFAC status</description>
+        <externalId>false</externalId>
+        <label>OFAC Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DueDiligenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Occupation__c</fullName>
+        <description>Occupation (Employment type from employment object) of the applicant</description>
+        <externalId>false</externalId>
+        <label>Occupation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EmploymentType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__AdverseActionNoticeRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, a notice is sent out (via email) to the related Parties if the Application is declined.</description>
+        <externalId>false</externalId>
+        <label>Adverse action notice required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AmountFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Requested amount for lending application. Sets the lower bound.</description>
+        <externalId>false</externalId>
+        <label>Amount (from)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AmountTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Requested amount for lending application. Sets the upper bound.</description>
+        <externalId>false</externalId>
+        <label>Amount (to)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__BrandCodeSet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The brand code under which the application was started. Supports multiple (semicolon separated). A fact.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Ensure you wrap each individual value in semicolons e.g. ;123;456;</inlineHelpText>
+        <label>Brand code (set)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BundleCodeSet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique product bundle code maintained in the system as a fact. Supports multiple values (semicolon separated)</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Ensure you wrap each individual values with semicolon ;BUNDLECHECKING;</inlineHelpText>
+        <label>Bundle code (set)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CreditBureauScoreFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a credit bureau (e.g. Equifax, TransUnion) to the primary party. It is a reflection of the party&apos;s credit worthiness. Sets the lower limit.</description>
+        <externalId>false</externalId>
+        <label>Credit bureau score (from)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CreditBureauScoreTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a credit bureau (e.g. Equifax, TransUnion) to the primary party. It is a reflection of the party&apos;s credit worthiness. Sets the upper limit.</description>
+        <externalId>false</externalId>
+        <label>Credit bureau score (to)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauReasonCodeSet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Supplements the DebitBureauScore of primary party. A semicolon delimited list of reason codes. Each code may be looked up for additional understanding of the score.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Debit bureau reason code (set)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauScoreFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a debit bureau (e.g. ChexSystems) to the primary party. e.g. QualiFile score. A measure of risk associated with the party. Sets the lower limit.</description>
+        <externalId>false</externalId>
+        <label>Debit bureau score (from)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauScoreTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Score given by a debit bureau (e.g. ChexSystems) to the primary party. e.g. QualiFile score. A measure of risk associated with the party. Sets the upper limit.</description>
+        <externalId>false</externalId>
+        <label>Debit bureau score (to)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebitBureauStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Debit Bureau status of the primary party.</description>
+        <externalId>false</externalId>
+        <label>Debit Bureau status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DueDiligenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__DecisionStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Champion/Challenger strategy to which this record belongs. Used in Champion/Challenger testing.</description>
+        <externalId>false</externalId>
+        <label>Decision Strategy</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Strategies configured for Application Decision Matrix can only be selected.</errorMessage>
+            <filterItems>
+                <field>tffa__DecisionStrategy__c.tffa__Configuration__r.tffa__EntityType__c</field>
+                <operation>equals</operation>
+                <value>ApplicationDecisionMatrix</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__DecisionStrategy__c</referenceTo>
+        <relationshipLabel>Application Decision Matrices</relationshipLabel>
+        <relationshipName>ApplicationDecisionMatrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Explains the rule, giving some context about why the rule conditions (facts) lead to the rule action (outcome).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IDVStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID Verification status of the primary party.</description>
+        <externalId>false</externalId>
+        <label>IDV status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DueDiligenceStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__IsBusinessConfiguration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Business configuration marker.</description>
+        <externalId>false</externalId>
+        <formula>TRUE</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Business Configuration</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Outcome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The prescribed action if the business rule conditions (represented by fields in the Facts fieldSet) are satisfied.</description>
+        <externalId>false</externalId>
+        <label>Outcome</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationDecisionOutcome</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyRole__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The role played by the primary party in the bank - CUSTOMER, PROSPECT.</description>
+        <externalId>false</externalId>
+        <label>Party role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyRole</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PartyType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the primary party. e.g. INDIVIDUAL, ORGANIZATION</description>
+        <externalId>false</externalId>
+        <label>Party type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PartyType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCategorySet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product category of associated application. A fact. Supports multiple values.</description>
+        <externalId>false</externalId>
+        <label>Product category (set)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product category as a fact.</description>
+        <externalId>false</externalId>
+        <label>Product category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Product__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product as a fact.</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Product not valid.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>ApplicationDecisionMatrices</relationshipLabel>
+        <relationshipName>ApplicationDecisionMatrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the relative order of records. Useful when making a selection from possible matches representing the output of an evaluation. In such cases, records with lower SortOrder values are selected.</description>
+        <externalId>false</externalId>
+        <label>Sort order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TermFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Requested term for lending application. Sets the lower bound.</description>
+        <externalId>false</externalId>
+        <label>Term (from)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TermTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Requested term for lending application. Sets the upper bound.</description>
+        <externalId>false</externalId>
+        <label>Term (to)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of decisioning. Groups rule conditions and actions, such that each set may apply only when that type of decisioning is requested. e.g. KYC</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ApplicationDecisionType</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Application Decision Matrix</label>
+    <listViews>
+        <fullName>tffa__All</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Type__c</columns>
+        <columns>tffa__Description__c</columns>
+        <columns>tffa__SortOrder__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__CREDIT</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__SortOrder__c</columns>
+        <columns>tffa__CreditBureauScoreFrom__c</columns>
+        <columns>tffa__CreditBureauScoreTo__c</columns>
+        <columns>tffa__Product__c</columns>
+        <columns>tffa__ProductCategory__c</columns>
+        <columns>tffa__Outcome__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>tffa__Type__c</field>
+            <operation>equals</operation>
+            <value>CREDIT</value>
+        </filters>
+        <label>Credit</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__KYC</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__SortOrder__c</columns>
+        <columns>ExistingCustomerDOBMatch__c</columns>
+        <columns>tffa__Description__c</columns>
+        <columns>CZPartyDecisionOutcome__c</columns>
+        <columns>tffa__Outcome__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__Type__c</field>
+            <operation>equals</operation>
+            <value>KYC</value>
+        </filters>
+        <label>KYC</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ADM-{0000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Application Decision Matrices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>tffa__DecisionStrategy</fullName>
+        <active>true</active>
+        <description>Applies validations around DecisionStrategy field
+1.  entityPurpose of strategy must match type</description>
+        <errorConditionFormula>NOT(ISBLANK(tffa__DecisionStrategy__c)) &amp;&amp; TEXT(tffa__DecisionStrategy__r.tffa__Configuration__r.tffa__EntityPurpose__c) &lt;&gt; TEXT(tffa__Type__c)</errorConditionFormula>
+        <errorDisplayField>tffa__DecisionStrategy__c</errorDisplayField>
+        <errorMessage>Decision Strategy purpose must match the Application Decision Matrix type.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>tffa__MassClone</fullName>
+        <availability>online</availability>
+        <description>Clone selected records</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>sidebar</openType>
+        <page>tffa__cloneApplicationDecisionMatrix</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>tffa__MassDelete</fullName>
+        <availability>online</availability>
+        <description>Delete selected records</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Delete</masterLabel>
+        <openType>sidebar</openType>
+        <page>tffa__deleteApplicationDecisionMatrix</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

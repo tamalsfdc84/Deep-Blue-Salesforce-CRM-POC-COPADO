@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Due dilgience Response --></label>
+        <name>DueDiligenceResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report --></label>
+        <name>Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context ID --></label>
+        <name>tffa__ContextId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conversation id --></label>
+        <name>tffa__ConversationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device token --></label>
+        <name>tffa__DeviceToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Questionnaire Id --></label>
+        <name>tffa__ExternalQuestionnaireId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External url --></label>
+        <name>tffa__ExternalUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-time password --></label>
+        <name>tffa__OTP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overridden --></label>
+        <name>tffa__Overridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Comments --></label>
+        <name>tffa__OverrideComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override reason --></label>
+        <name>tffa__OverrideReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override source --></label>
+        <name>tffa__OverrideSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Due Diligences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider status --></label>
+        <name>tffa__ProviderStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tffa__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire --></label>
+        <name>tffa__Questionnaire__c</name>
+        <relationshipLabel><!-- Due Diligences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>tffa__Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report --></label>
+        <name>tffa__ReportLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report name --></label>
+        <name>tffa__ReportName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report url --></label>
+        <name>tffa__ReportUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>tffa__Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score range --></label>
+        <name>tffa__ScoreRange__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>tffa__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source party id --></label>
+        <name>tffa__SourcePartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tags --></label>
+        <name>tffa__Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Due Diligence Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Overrides --></label>
+            <section>Overrides</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,61 @@
+<apex:page docType="html-5.0" showheader="false" applyHtmlTag="false" applyBodyTag="false" cache="false" standardStylesheets="false" controller="tffa.SalesController" action="{!initialize}" extensions="CZWTFCCustomController,CZWTFCProductController,CZWTFCAuthenticationController,CZWTFCMXController,tffa.SessionController,tffa.ConfigurationController,tffa.SubmissionController,tffa.PartyController,tffa.VehicleController,tffa.UserController,tffa.StipulationController,tffa.SubmissionPartyXrefController,tffa.ApplicationController,tffa.FundingController,tffa.ReferralController">
+  <head>
+    <script src="{!tagManagerSource}" async="true"></script>
+    <meta charset="utf-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <meta name="theme-color" content="#1976d2">
+    </meta>
+    <title>Wintrust</title>
+    <base href="/">
+    </base>
+    <link rel="stylesheet" type="text/css" href="{!cssFontSrc}">
+    </link>
+    <link rel="icon" type="image/x-icon" href="{!URLFOR($Resource[ui['styles']], 'favicon.ico')}">
+    </link>
+    <script src="{!URLFOR($Resource[ui['app']], 'generated/browser-check.js')}"></script>
+    <link rel="stylesheet" href="{!URLFOR($Resource[ui['styles']], 'styles.css')}">
+    </link>
+  </head>
+  <apex:outputPanel id="error">
+    <apex:pageMessages />
+  </apex:outputPanel>
+  <body>
+    <app-root>
+
+      <!-- this adds a loading image before angular loads. waits for css to load -->
+      <div class="tf-spinner-overlay">
+        <span class="tf-spinner-image">
+      <img alt=""></img>
+      </span>
+      </div>
+    </app-root>
+    <script>
+      TFFA = {
+        sessionContext: {
+          id: "{!JSENCODE(id)}",
+          sessionToken: "{!JSENCODE(sessionToken)}",
+          siteUrl: "{!JSENCODE($Site.BaseUrl)}",
+          sitePrefix: "{!JSENCODE($Site.Prefix)}",
+          params: "{!JSENCODE(params)}",
+          environmentConfig: "{!JSENCODE(environmentConfig)}",
+          assets: {
+            i18n: "{!URLFOR($Resource[ui['i18n']])}/assets/i18n",
+            styles: "{!URLFOR($Resource[ui['styles']])}",
+            app: "{!URLFOR($Resource[ui['app']])}",
+          },
+          ui: {
+            theme: "{!JSENCODE(ui['theme'])}",
+          },
+          asid: "{!$Api.Session_ID}"
+        }
+      };
+    </script>
+    <script src="{!URLFOR($Resource[ui['app']], 'runtime.js')}" defer="true"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'polyfills.js')}" defer="true"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'scripts.js')}" defer="true"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'vendor.js')}" defer="true"></script>
+    <script src="{!URLFOR($Resource[ui['app']], 'main.js')}" defer="true"></script>
+  </body>
+</apex:page>

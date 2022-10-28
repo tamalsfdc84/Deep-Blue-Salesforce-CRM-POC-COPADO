@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Address State (set) --></label>
+        <name>tffa__AddressStateSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application party role --></label>
+        <name>tffa__ApplicationPartyRole__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;PURCHASE; --></help>
+        <label><!-- Application purpose (set) --></label>
+        <name>tffa__ApplicationPurposeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;BUNDLECHECKING; --></help>
+        <label><!-- Bundle code (set) --></label>
+        <name>tffa__BundleCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event name --></label>
+        <name>tffa__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Location code (set) --></label>
+        <name>tffa__LocationCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location segment (set) --></label>
+        <name>tffa__LocationSegmentSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Offer Code Set --></label>
+        <name>tffa__OfferCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type (set) --></label>
+        <name>tffa__OrganizationTypeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prequal (is) --></label>
+        <name>tffa__PrequalIs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Stipulations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion code (is) --></label>
+        <name>tffa__PromotionCodeIs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- State (set) --></label>
+        <name>tffa__StateSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission party role --></label>
+        <name>tffa__SubmissionPartyRole__c</name>
+    </fields>
+    <layouts>
+        <layout>Stipulation Checklist Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

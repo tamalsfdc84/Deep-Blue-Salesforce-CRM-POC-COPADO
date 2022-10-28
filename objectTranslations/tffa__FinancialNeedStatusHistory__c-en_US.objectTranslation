@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fact --></label>
+        <name>tffa__Fact__c</name>
+        <relationshipLabel><!-- Financial Need Status Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Need --></label>
+        <name>tffa__FinancialNeed__c</name>
+        <relationshipLabel><!-- Financial Need Status Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- Financial needs --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+</CustomObjectTranslation>

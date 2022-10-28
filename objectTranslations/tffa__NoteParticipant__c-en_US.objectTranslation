@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Entity id --></label>
+        <name>tffa__EntityId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>tffa__Note__c</name>
+        <relationshipLabel><!-- NoteParticipants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>tffa__Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share type --></label>
+        <name>tffa__ShareType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visibility --></label>
+        <name>tffa__Visibility__c</name>
+    </fields>
+</CustomObjectTranslation>

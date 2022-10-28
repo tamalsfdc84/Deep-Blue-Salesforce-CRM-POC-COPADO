@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Custom settings to turn on performance tracing</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the performance tracing is turned on</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the performance tracing is turned on</inlineHelpText>
+        <label>Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RetentionPeriod__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the period of time after which performance logs will be purged from the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Performance logs older than this period will be purged from the system.</inlineHelpText>
+        <label>Log retention period in days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ThresholdInMilliseconds__c</fullName>
+        <defaultValue>20</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A minimum threshold in milliseconds to log performance logs. Useful in reducing database entries. Log will be captured if time taken is more than the specified threshold time.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A minimum threshold in milliseconds to log performance logs. Useful in reducing database entries</inlineHelpText>
+        <label>ThresholdInMilliseconds</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Performance Log Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>

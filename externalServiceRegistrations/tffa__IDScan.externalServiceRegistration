@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>IDScan</description>
+    <label>IDScan</label>
+    <namedCredential>IDScan</namedCredential>
+    <operations>
+        <active>true</active>
+        <name>parseimage</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;swagger&quot;: &quot;2.0&quot;,
+  &quot;info&quot;: {
+    &quot;description&quot;: &quot;IDSCAN TO Scan the back image of driver license&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;title&quot;: &quot;IDSCAN&quot;,
+    &quot;termsOfService&quot;: &quot;https://idscan.net/scanning-solutions/enterprise/web-services-api&quot;,
+    &quot;license&quot;: {
+      &quot;name&quot;: &quot;Apache 2.0&quot;,
+      &quot;url&quot;: &quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;
+    }
+  },
+  &quot;host&quot;: &quot;https://app1.idware.net&quot;,
+  &quot;basePath&quot;: &quot;/DriverLicenseParserRest.svc&quot;,
+  &quot;schemes&quot;: [&quot;https&quot;, &quot;http&quot;],
+  &quot;paths&quot;: {
+    &quot;/ParseImage&quot;: {
+      &quot;post&quot;: {
+        &quot;summary&quot;: &quot;Parse an image&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;operationId&quot;: &quot;ParseImage&quot;,
+        &quot;consumes&quot;: [&quot;application/json&quot;],
+        &quot;produces&quot;: [&quot;application/json&quot;],
+        &quot;parameters&quot;: [
+          {
+            &quot;name&quot;: &quot;authKey&quot;,
+            &quot;in&quot;: &quot;path&quot;,
+            &quot;description&quot;: &quot;authKey&quot;,
+            &quot;required&quot;: true,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;name&quot;: &quot;file&quot;,
+            &quot;in&quot;: &quot;path&quot;,
+            &quot;description&quot;: &quot;Base64 file&quot;,
+            &quot;required&quot;: true,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;successful operation&quot;,
+            &quot;schema&quot;: {
+              &quot;$ref&quot;: &quot;#/definitions/parseImageResult&quot;
+            }
+          }
+        }
+      }
+    }
+  },
+  &quot;definitions&quot;: {
+    &quot;parseImageResult&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;parseImageResult&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;title&quot;: &quot;The Parseimageresult Schema&quot;,
+          &quot;required&quot;: [&quot;driverLicense&quot;],
+          &quot;properties&quot;: {
+            &quot;driverLicense&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;title&quot;: &quot;The Driverlicense Schema&quot;,
+              &quot;required&quot;: [
+                &quot;Address1&quot;,
+                &quot;Address2&quot;,
+                &quot;Birthdate&quot;,
+                &quot;CardRevisionDate&quot;,
+                &quot;City&quot;,
+                &quot;ClassificationCode&quot;,
+                &quot;ComplianceType&quot;,
+                &quot;Country&quot;,
+                &quot;CountryCode&quot;,
+                &quot;EndorsementCodeDescription&quot;,
+                &quot;EndorsementsCode&quot;,
+                &quot;ExpirationDate&quot;,
+                &quot;EyeColor&quot;,
+                &quot;FirstName&quot;,
+                &quot;FullName&quot;,
+                &quot;Gender&quot;,
+                &quot;HAZMATExpDate&quot;,
+                &quot;HairColor&quot;,
+                &quot;Height&quot;,
+                &quot;IIN&quot;,
+                &quot;IssueDate&quot;,
+                &quot;IssuedBy&quot;,
+                &quot;JurisdictionCode&quot;,
+                &quot;LastName&quot;,
+                &quot;LicenseNumber&quot;,
+                &quot;LimitedDurationDocument&quot;,
+                &quot;MiddleName&quot;,
+                &quot;NamePrefix&quot;,
+                &quot;NameSuffix&quot;,
+                &quot;OrganDonor&quot;,
+                &quot;PostalCode&quot;,
+                &quot;Race&quot;,
+                &quot;RestrictionCode&quot;,
+                &quot;RestrictionCodeDescription&quot;,
+                &quot;VehicleClassCode&quot;,
+                &quot;VehicleClassCodeDescription&quot;,
+                &quot;Veteran&quot;,
+                &quot;WeightKG&quot;,
+                &quot;WeightLBS&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;Address1&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Address1 Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;26 HOTAL PL UNIT D&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Address2&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Address2 Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Birthdate&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Birthdate Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;1974-04-02&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;CardRevisionDate&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Cardrevisiondate Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;2010-04-02&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;City&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The City Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;SAN FRANCISCO&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;ClassificationCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Classificationcode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;ComplianceType&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Compliancetype Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot; &quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Country&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Country Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;UNITED STATES&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;CountryCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Countrycode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;USA&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;EndorsementCodeDescription&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Endorsementcodedescription Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;EndorsementsCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Endorsementscode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;ExpirationDate&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Expirationdate Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;2020-04-02&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;EyeColor&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Eyecolor Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;Black&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;FirstName&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Firstname Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;FullName&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Fullname Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE  OLA&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Gender&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Gender Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;Male&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;HAZMATExpDate&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Hazmatexpdate Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;HairColor&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Haircolor Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;Grey&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Height&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Height Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;068 IN&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;IIN&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Iin Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;636014&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;IssueDate&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Issuedate Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;2017-04-02&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;IssuedBy&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Issuedby Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;CA&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;JurisdictionCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Jurisdictioncode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;CA&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;LastName&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Lastname Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;OLA&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;LicenseNumber&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Licensenumber Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;Y8572625&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;LimitedDurationDocument&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Limiteddurationdocument Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;True&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;MiddleName&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Middlename Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;NamePrefix&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Nameprefix Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;NameSuffix&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Namesuffix Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;OrganDonor&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Organdonor Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;PostalCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Postalcode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;94111-0000&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Race&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Race Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;RestrictionCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Restrictioncode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;RestrictionCodeDescription&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Restrictioncodedescription Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;VehicleClassCode&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Vehicleclasscode Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;NONE&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;VehicleClassCodeDescription&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Vehicleclasscodedescription Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;Veteran&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Veteran Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;WeightKG&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Weightkg Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;65&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                },
+                &quot;WeightLBS&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;title&quot;: &quot;The Weightlbs Schema&quot;,
+                  &quot;default&quot;: &quot;&quot;,
+                  &quot;examples&quot;: [&quot;143&quot;],
+                  &quot;pattern&quot;: &quot;^(.*)$&quot;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi</schemaType>
+    <serviceBinding>{&quot;compatibleMediaTypes&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>2</systemVersion>
+</ExternalServiceRegistration>

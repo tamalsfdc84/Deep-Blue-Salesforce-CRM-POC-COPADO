@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- LBL.Label_Field_Set_Referrals_Made --></label>
+        <name>FSC_Business_Referrals_Made</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LBL.Label_Field_Set_Referral_Form --></label>
+        <name>FSC_Referral_Form</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LBL.Label_Field_Set_Referrals_Expressed_Interest --></label>
+        <name>FSC_Referrals_Expressed_Interest</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LBL.Label_Field_Set_Referrals_Made --></label>
+        <name>FSC_Referrals_Made</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LBL.Label_Field_Set_Referrals_Made --></label>
+        <name>FSC_Referrals_Made_Community</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Conversion DateTime --></label>
+        <name>FinServ__ConversionDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Me --></label>
+        <name>FinServ__CreatedByMe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created from Lead --></label>
+        <name>FinServ__CreatedFromLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>FinServ__Employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expressed Interest --></label>
+        <name>FinServ__ExpressedInterest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Household Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Potential Value --></label>
+        <name>FinServ__PotentialValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Referrer --></label>
+        <name>FinServ__ReferredByContact__c</name>
+        <relationshipLabel><!-- Client Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Referrer --></label>
+        <name>FinServ__ReferredByUser__c</name>
+        <relationshipLabel><!-- Referrals (Referred By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referrer Score --></label>
+        <name>FinServ__ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Account --></label>
+        <name>FinServ__RelatedAccount__c</name>
+        <relationshipLabel><!-- Related Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile phone --></label>
+        <name>Mobile_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Approver --></label>
+        <name>Referral_Approver__c</name>
+        <relationshipLabel><!-- Referrals (Referral Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User LOB --></label>
+        <name>User_LOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Referred Email --></label>
+        <name>WT_Account_Referred_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Referred --></label>
+        <name>WT_Account_Referred_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Bank Funded --></label>
+        <name>WT_Amount_Bank_Funded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Funded --></label>
+        <name>WT_Amount_Funded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Referred --></label>
+        <name>WT_Amount_Referred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approximate Financial Assets --></label>
+        <name>WT_Approximate_Financial_Assets__c</name>
+        <picklistValues>
+            <masterLabel>$0-$49,999</masterLabel>
+            <translation><!-- $0-$49,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1,000,000 - $4,999,999</masterLabel>
+            <translation><!-- $1,000,000 - $4,999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10,000,000 or more</masterLabel>
+            <translation><!-- $10,000,000 or more --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,000 - $199,999</masterLabel>
+            <translation><!-- $100,000 - $199,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$200,000 - $499,999</masterLabel>
+            <translation><!-- $200,000 - $499,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5,000,000 - $9,999,999</masterLabel>
+            <translation><!-- $5,000,000 - $9,999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,000 - $99,999</masterLabel>
+            <translation><!-- $50,000 - $99,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500,000 - $999,999</masterLabel>
+            <translation><!-- $500,000 - $999,999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charter Factor --></label>
+        <name>WT_Charter_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter --></label>
+        <name>WT_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created To Me --></label>
+        <name>WT_Created_To_Me__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Funded --></label>
+        <name>WT_Date_Funded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Paid --></label>
+        <name>WT_Date_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Qualified --></label>
+        <name>WT_Date_Qualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Referred --></label>
+        <name>WT_Date_Referred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Amount --></label>
+        <name>WT_Investment_Amount__c</name>
+        <picklistValues>
+            <masterLabel>$0-$49,999</masterLabel>
+            <translation><!-- $0-$49,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1,000,000 - $4,999,999</masterLabel>
+            <translation><!-- $1,000,000 - $4,999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10,000,000 or more</masterLabel>
+            <translation><!-- $10,000,000 or more --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,000 - $199,999</masterLabel>
+            <translation><!-- $100,000 - $199,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$200,000 - $499,999</masterLabel>
+            <translation><!-- $200,000 - $499,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5,000,000 - $9,999,999</masterLabel>
+            <translation><!-- $5,000,000 - $9,999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,000 - $99,999</masterLabel>
+            <translation><!-- $50,000 - $99,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500,000 - $999,999</masterLabel>
+            <translation><!-- $500,000 - $999,999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Investment Time Horizon --></label>
+        <name>WT_Investment_Time_Horizon__c</name>
+        <picklistValues>
+            <masterLabel>Intermediate (3-5 yrs.)</masterLabel>
+            <translation><!-- Intermediate (3-5 yrs.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long-Term (10+ yrs.)</masterLabel>
+            <translation><!-- Long-Term (10+ yrs.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate (5-10 yrs.)</masterLabel>
+            <translation><!-- Moderate (5-10 yrs.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-Term (less than 3 yrs.)</masterLabel>
+            <translation><!-- Short-Term (less than 3 yrs.) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Modified On* --></help>
+        <label><!-- Modified On* --></label>
+        <name>WT_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non CRM Referred By --></label>
+        <name>WT_Non_CRM_Referred_By__c</name>
+        <relationshipLabel><!-- Leads &amp; Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Non-CRM Referred To --></label>
+        <name>WT_Non_CRM_Referred_To__c</name>
+        <relationshipLabel><!-- Leads &amp; Referrals (Non-CRM Referred To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferred Contact Information --></label>
+        <name>WT_Preferred_Contact_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Follow-up Method --></label>
+        <name>WT_Preferred_Followup_Method__c</name>
+        <picklistValues>
+            <masterLabel>By email</masterLabel>
+            <translation><!-- By email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By mail</masterLabel>
+            <translation><!-- By mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By phone</masterLabel>
+            <translation><!-- By phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In person</masterLabel>
+            <translation><!-- In person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>WT_Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>WT_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Equity</masterLabel>
+            <translation><!-- Home Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line of Credit</masterLabel>
+            <translation><!-- Line of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMA/SAV</masterLabel>
+            <translation><!-- MMA/SAV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage</masterLabel>
+            <translation><!-- Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Loan</masterLabel>
+            <translation><!-- Other Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBL</masterLabel>
+            <translation><!-- SBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Deposit</masterLabel>
+            <translation><!-- Time Deposit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Investment --></label>
+        <name>WT_Purpose_Investment__c</name>
+        <picklistValues>
+            <masterLabel>College Education</masterLabel>
+            <translation><!-- College Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death Benefits</masterLabel>
+            <translation><!-- Death Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate Planning</masterLabel>
+            <translation><!-- Estate Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Preservation</masterLabel>
+            <translation><!-- Wealth Preservation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Factor Location --></label>
+        <name>WT_Referral_Business_Unit__c</name>
+        <relationshipLabel><!-- Leads &amp; Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referred By Charter --></label>
+        <name>WT_Referred_By_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred To --></label>
+        <name>WT_Referred_To__c</name>
+        <relationshipLabel><!-- Referrals (Referred To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referred by Me/My Team --></label>
+        <name>WT_Referred_by_Me_My_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Group --></label>
+        <name>WT_Relationship_Group__c</name>
+        <relationshipLabel><!-- Relationship Group Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InActive</masterLabel>
+            <translation><!-- InActive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified – Duplicate</masterLabel>
+            <translation><!-- Not Qualified – Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified – Other</masterLabel>
+            <translation><!-- Not Qualified – Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified - Appointment Kept</masterLabel>
+            <translation><!-- Qualified - Appointment Kept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified - No Sale</masterLabel>
+            <translation><!-- Qualified - No Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified - Sale Made</masterLabel>
+            <translation><!-- Qualified - Sale Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified - Sale in Process</masterLabel>
+            <translation><!-- Qualified - Sale in Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WM Professional --></label>
+        <name>WT_WM_Professional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Client Group Amount $ --></label>
+        <name>WT_Wealth_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Client Group Services Type --></label>
+        <name>WT_Wealth_Services_Type__c</name>
+        <picklistValues>
+            <masterLabel>Deposit</masterLabel>
+            <translation><!-- Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments - Great Lakes Advisors</masterLabel>
+            <translation><!-- Investments - Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments - Wayne Hummer</masterLabel>
+            <translation><!-- Investments - Wayne Hummer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter of Credit</masterLabel>
+            <translation><!-- Letter of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust - Chicago Trust Company</masterLabel>
+            <translation><!-- Trust - Chicago Trust Company --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Lead (General) Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Verwijzingsgegevens</label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead (Referral) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Verwijzingsgegevens</label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Lead (Referral) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- Wealth Partner Referrals --></label>
+            <section>Wealth Partner Referrals</section>
+        </sections>
+        <sections>
+            <label><!-- Wealth Services --></label>
+            <section>Wealth Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Referral (Standard) Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- WM Partnership --></label>
+            <section>WM Partnership</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Referral (Wealth) Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Wealth Partner Referrals --></label>
+            <section>Wealth Partner Referrals</section>
+        </sections>
+        <sections>
+            <label><!-- Wealth Services --></label>
+            <section>Wealth Services</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Unlock Record --></label>
+        <name>Unlock_Record</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- A business or organization that is a commercial banking business referral​ --></description>
+        <label><!-- Business Referral --></label>
+        <name>FinServ__BusinessReferral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>FinServ__General</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A person, business, or organization that is a referral --></description>
+        <label><!-- Person Referral --></label>
+        <name>FinServ__Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retirement Planning --></label>
+        <name>FinServ__RetirementPlanning</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>WT_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wealth --></label>
+        <name>WT_Wealth</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- &apos;Referred To&apos; user is part of Referral Type that can be selected must be same as &apos;Referral Type&apos; field. --></errorMessage>
+        <name>BasedOnReferralTypeSameASReferralTofield</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required. --></errorMessage>
+        <name>BasedOnReferralType_BranchFactorRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Its is not permitted to move a referral to this status value. Please try another option. --></errorMessage>
+        <name>ControlThatStatusTransitionsfollowRules</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Referred To&apos; user is part of Referral Type that can be selected must be same as &apos;Referral Type&apos; field. --></errorMessage>
+        <name>ReferralTypeSameASReferralTofield</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The current user is not allowed to make a change to this referral&apos;s status. --></errorMessage>
+        <name>ReferredByShouldNotbeAllowedChangeStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount Bank Funded and Product Type should be Mandatory --></errorMessage>
+        <name>RequiredFieldOnStandardForm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- WM Professional, Amount Referred, Amount Funded, Date Funded, Approximate Financial Assets, Investment Amount ,Purpose of Investment, Investment Time Horizon should be Mandatory. --></errorMessage>
+        <name>RequiredFieldOnWealthPartnerSection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out &quot;Private Client Group Service Type, Private Client Group Amount $ &quot; fields. --></errorMessage>
+        <name>RequiredFieldOnWealthServiceSection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Based on business rules , you are not allowed to change the status of this referral. --></errorMessage>
+        <name>StatusChangeValidationOnBusinessRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount Funded is required --></errorMessage>
+        <name>WT_Amount_Funded_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Approximate Financial Assets is required --></errorMessage>
+        <name>WT_Approximate_Financial_assets_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount bank funded and Product type is mandatory. --></errorMessage>
+        <name>WT_Blank_AmountFunded_ProductType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date Funded is required --></errorMessage>
+        <name>WT_Date_Funded_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Investment Amount is required --></errorMessage>
+        <name>WT_Investment_Account_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Investment time horizon is required --></errorMessage>
+        <name>WT_Investment_time_horizon_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Purpose of Investment is required --></errorMessage>
+        <name>WT_Purpose_of_investment_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot directly associate a Referral with Household or Relationship Group Accounts. Please use the Customer or Prospect Account to link the Referral with. --></errorMessage>
+        <name>WT_Restrict_HH_RR_Accounts_on_Referral</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot populate Date Qualified or Date Paid for the new record. Please contact your Administrator. --></errorMessage>
+        <name>WT_Wealth_Date_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- WT_Date_Paid_Automation --></label>
+        <name>WT_Date_Paid_Automation</name>
+    </webLinks>
+</CustomObjectTranslation>

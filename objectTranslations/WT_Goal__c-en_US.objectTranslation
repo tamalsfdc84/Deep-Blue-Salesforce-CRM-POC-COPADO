@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Goals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual --></label>
+        <name>WT_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- BB/CB Scorecard Category --></label>
+        <name>WT_BB_CB_Scorecard_Category__c</name>
+        <picklistValues>
+            <masterLabel># Face Calls Attended</masterLabel>
+            <translation><!-- # Face Calls Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Joint TM Calls</masterLabel>
+            <translation><!-- # Joint TM Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># New Relationships</masterLabel>
+            <translation><!-- # New Relationships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Phone Calls</masterLabel>
+            <translation><!-- # Phone Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Qualified Referrals</masterLabel>
+            <translation><!-- # Qualified Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Change in FIS Outstanding</masterLabel>
+            <translation><!-- $ Change in FIS Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ International Fee</masterLabel>
+            <translation><!-- $ International Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Fees</masterLabel>
+            <translation><!-- $ Loan Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New CRE Commitments</masterLabel>
+            <translation><!-- $ New CRE Commitments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Demand Accounts (CRM)</masterLabel>
+            <translation><!-- $ New Demand Accounts (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Demand Accounts (FIS)</masterLabel>
+            <translation><!-- $ New Demand Accounts (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Int Bearing Accounts (CRM)</masterLabel>
+            <translation><!-- $ New Int Bearing Accounts (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Int Bearing Accounts (FIS)</masterLabel>
+            <translation><!-- $ New Int Bearing Accounts (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Loan Commitments (CRM)</masterLabel>
+            <translation><!-- $ New Loan Commitments (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Loan Commitments (FIS)</masterLabel>
+            <translation><!-- $ New Loan Commitments (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Loan Outstandings (CRM)</masterLabel>
+            <translation><!-- $ New Loan Outstandings (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New Loan Outstandings (FIS)</masterLabel>
+            <translation><!-- $ New Loan Outstandings (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New SBA Loans</masterLabel>
+            <translation><!-- $ New SBA Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ TM Fees</masterLabel>
+            <translation><!-- $ TM Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Calls in LMI HM Census Tracts</masterLabel>
+            <translation><!-- % Calls in LMI HM Census Tracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% In/Out Ratio of New Loans</masterLabel>
+            <translation><!-- % In/Out Ratio of New Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Prospect Calling Coverage</masterLabel>
+            <translation><!-- % Prospect Calling Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% of New Loans in LMI/HM Census Tracts</masterLabel>
+            <translation><!-- % of New Loans in LMI/HM Census Tracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total # Business Loans</masterLabel>
+            <translation><!-- Total # Business Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total $ DDA</masterLabel>
+            <translation><!-- Total $ DDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total $ Int Bearing</masterLabel>
+            <translation><!-- Total $ Int Bearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total $ Outstanding Loan Portfolio</masterLabel>
+            <translation><!-- Total $ Outstanding Loan Portfolio --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Category --></label>
+        <name>WT_CRE_Scorecard_Category__c</name>
+        <picklistValues>
+            <masterLabel># Calls Made</masterLabel>
+            <translation><!-- # Calls Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># New Relationships</masterLabel>
+            <translation><!-- # New Relationships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Swap Closed</masterLabel>
+            <translation><!-- # Swap Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Deposit Balance Growth (CRM)</masterLabel>
+            <translation><!-- $ Deposit Balance Growth (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Deposit Balance Growth (FIS)</masterLabel>
+            <translation><!-- $ Deposit Balance Growth (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Fees</masterLabel>
+            <translation><!-- $ Loan Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Commitments (CRM)</masterLabel>
+            <translation><!-- $ Loan Originations - Commitments (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Commitments (FIS)</masterLabel>
+            <translation><!-- $ Loan Originations - Commitments (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (CRM)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (FIS)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New TM Analysis Revenue</masterLabel>
+            <translation><!-- $ New TM Analysis Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Swap Fees</masterLabel>
+            <translation><!-- $ Swap Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>WT_Date_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Rolled Up Date --></label>
+        <name>WT_Date_Last_In_Progress_Rolled_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>WT_Date_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Level --></label>
+        <name>WT_Goal_Level__c</name>
+        <picklistValues>
+            <masterLabel>Hub Goal</masterLabel>
+            <translation><!-- Hub Goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Goal</masterLabel>
+            <translation><!-- Individual Goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOB Goal</masterLabel>
+            <translation><!-- LOB Goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Goal</masterLabel>
+            <translation><!-- Team Goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goal Metric --></label>
+        <name>WT_Goal_Metric__c</name>
+        <relationshipLabel><!-- Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Goal Owner --></label>
+        <name>WT_Goal_Owner__c</name>
+        <relationshipLabel><!-- Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- In-Progress --></label>
+        <name>WT_In_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Category --></label>
+        <name>WT_MM_Scorecard_Category__c</name>
+        <picklistValues>
+            <masterLabel># Calls Made</masterLabel>
+            <translation><!-- # Calls Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Corporate Credit Card Referrals</masterLabel>
+            <translation><!-- # Corporate Credit Card Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># International Referrals (Trade and FX)</masterLabel>
+            <translation><!-- # International Referrals (Trade and FX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Leasing Referrals</masterLabel>
+            <translation><!-- # Leasing Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># New Relationships</masterLabel>
+            <translation><!-- # New Relationships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># SBA Referrals</masterLabel>
+            <translation><!-- # SBA Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Swap Referrals</masterLabel>
+            <translation><!-- # Swap Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel># Wealth Services Referrals</masterLabel>
+            <translation><!-- # Wealth Services Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Corporate Credit Card Revenue Share</masterLabel>
+            <translation><!-- $ Corporate Credit Card Revenue Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Demand Balance Growth (CRM)</masterLabel>
+            <translation><!-- $ Demand Balance Growth (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Demand Balance Growth (FIS)</masterLabel>
+            <translation><!-- $ Demand Balance Growth (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Int Bearing Balance Growth (CRM)</masterLabel>
+            <translation><!-- $ Int Bearing Balance Growth (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Int Bearing Balance Growth (FIS)</masterLabel>
+            <translation><!-- $ Int Bearing Balance Growth (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ International Fees (Trade and FX)</masterLabel>
+            <translation><!-- $ International Fees (Trade and FX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Lease Fundings</masterLabel>
+            <translation><!-- $ Lease Fundings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Fees</masterLabel>
+            <translation><!-- $ Loan Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Commitments (CRM)</masterLabel>
+            <translation><!-- $ Loan Originations - Commitments (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Commitments (FIS)</masterLabel>
+            <translation><!-- $ Loan Originations - Commitments (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (CRM)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (FIS)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ New TM Analysis Revenue</masterLabel>
+            <translation><!-- $ New TM Analysis Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ SBA Amount (amount staying on Wintrust books)</masterLabel>
+            <translation><!-- $ SBA Amount (amount staying on Wintrust books) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Swap Fees</masterLabel>
+            <translation><!-- $ Swap Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Wealth Services Investment Fees</masterLabel>
+            <translation><!-- $ Wealth Services Investment Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Goal --></label>
+        <name>WT_Parent_Goal__c</name>
+        <relationshipLabel><!-- Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percentage To Goal --></label>
+        <name>WT_Percentage_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RowNumber --></label>
+        <name>WT_RowNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Run Rate To Goal --></label>
+        <name>WT_Run_Rate_To_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Up From Child --></label>
+        <name>WT_Should_Roll_Up_From_Child__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>WT_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Category --></label>
+        <name>WT_WS_Scorecard_Category__c</name>
+        <picklistValues>
+            <masterLabel>$ Deposit Balance Growth (CRM)</masterLabel>
+            <translation><!-- $ Deposit Balance Growth (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Deposit Balance Growth (FIS)</masterLabel>
+            <translation><!-- $ Deposit Balance Growth (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (CRM)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (CRM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Loan Originations - Outstandings (FIS)</masterLabel>
+            <translation><!-- $ Loan Originations - Outstandings (FIS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$ Won Investment Fees</masterLabel>
+            <translation><!-- $ Won Investment Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- GoalMetrics is required --></errorMessage>
+        <name>GoalMetricsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The user does not have access to enter the goal. --></errorMessage>
+        <name>WT_Goal_Access_New</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The user does not have access to update the goal --></errorMessage>
+        <name>WT_Goal_Access_Update</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Goal_Actual --></label>
+        <name>Calculate_Goal_Actual</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,29 @@
+/*----CSS File--*/
+.divstyle
+{
+    text-align: center;margin-top: 10px;
+}
+.divstyletextalign
+{
+    text-align:right;
+}
+.divstyletextfont
+{
+    text-align: right;font-size: 14px;
+}
+.divstylemargin
+{
+    margin-top: -8px;
+}
+.divstylefontweight
+{
+    font-weight:400;
+}
+.divstylefontbold
+{
+    font-weight: bold;
+}
+.divstylered
+{
+    color: red;
+}

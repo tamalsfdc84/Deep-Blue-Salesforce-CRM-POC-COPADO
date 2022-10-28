@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COMMUNITYNONPROFIT</fullName>
+        <default>false</default>
+        <label>Community Non Profit</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER</fullName>
+        <default>false</default>
+        <label>Employer</label>
+    </customValue>
+    <customValue>
+        <fullName>FEDERALAGENCY</fullName>
+        <default>false</default>
+        <label>Federal Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>LENDER</fullName>
+        <default>false</default>
+        <label>Lender</label>
+    </customValue>
+    <customValue>
+        <fullName>LOCALAGENCY</fullName>
+        <default>false</default>
+        <label>Local Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>RELATIVE</fullName>
+        <default>false</default>
+        <label>Relative</label>
+    </customValue>
+    <customValue>
+        <fullName>RELIGIOUSNONPROFIT</fullName>
+        <default>false</default>
+        <label>Religious Non Profit</label>
+    </customValue>
+    <customValue>
+        <fullName>STATEAGENCY</fullName>
+        <default>false</default>
+        <label>State Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>UNMARRIEDPARTNER</fullName>
+        <default>false</default>
+        <label>Unmarried Partner</label>
+    </customValue>
+    <description>A value that specifies the party providing the associated funds.</description>
+    <masterLabel>GiftSourceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

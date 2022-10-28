@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Applied Amount From --></label>
+        <name>tffa__AppliedAmountFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applied Amount To --></label>
+        <name>tffa__AppliedAmountTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applied Term From --></label>
+        <name>tffa__AppliedTermFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applied Term To --></label>
+        <name>tffa__AppliedTermTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Channel --></label>
+        <name>tffa__CreatedChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Channel --></label>
+        <name>tffa__SubmittedChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Value Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>REAL_ESTATE</fullName>
+        <default>false</default>
+        <label>Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>BANK_DEPOSIT</fullName>
+        <default>false</default>
+        <label>Bank Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>CHECKING</fullName>
+        <default>false</default>
+        <label>Checking</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKERAGE</fullName>
+        <default>false</default>
+        <label>Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>RETIREMENT</fullName>
+        <default>false</default>
+        <label>Retirement</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVINGS</fullName>
+        <default>false</default>
+        <label>Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>TRUST</fullName>
+        <default>false</default>
+        <label>Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>CERTIFICATE_OF_DEPOSIT</fullName>
+        <default>false</default>
+        <label>Certificate of Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>MONEY_MARKET</fullName>
+        <default>false</default>
+        <label>Money Market</label>
+    </customValue>
+    <customValue>
+        <fullName>ANNUITY</fullName>
+        <default>false</default>
+        <label>Annuity</label>
+    </customValue>
+    <customValue>
+        <fullName>IRA</fullName>
+        <default>false</default>
+        <label>Individual retirement account</label>
+    </customValue>
+    <customValue>
+        <fullName>401K</fullName>
+        <default>false</default>
+        <label>401(k)</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>GIFT</fullName>
+        <default>false</default>
+        <label>Gifts</label>
+    </customValue>
+    <customValue>
+        <fullName>VEHICLE</fullName>
+        <default>false</default>
+        <label>Vehicle</label>
+    </customValue>
+    <description>Type of asset held by the party applying for financial product.</description>
+    <masterLabel>AssetType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

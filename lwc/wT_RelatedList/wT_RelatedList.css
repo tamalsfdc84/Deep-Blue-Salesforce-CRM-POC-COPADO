@@ -1,0 +1,44 @@
+.lightning-card
+{
+    width: 100%;
+}
+.spinner
+{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    background: #fff;
+    left: 50%;
+    margin-left: -4em;
+}
+.slds-card__header
+{
+    padding: var(--lwc-varSpacingVerticalSmall,0.75rem) var(--lwc-varSpacingHorizontalMedium,1rem) var(--lwc-varSpacingVerticalSmall,0.75rem);
+    margin: 0 0 0;  
+}
+.related-list .slds-button_icon-bare
+{
+	display: none;
+}
+.related-list a span 
+{
+	color: rgba(27, 82, 151, 1.0);
+}
+.related-list .slds-scrollable_x 
+{
+	overflow-y:visible;
+	overflow-x:visible;
+}
+.THIS .slds-icon-text-default 
+{
+
+    border : 1px solid grey;
+    background : lightgrey;
+    border-radius: 2px;    
+}
+.THIS .slds-th__action_form:after
+{    
+    content: 'AAA';
+}

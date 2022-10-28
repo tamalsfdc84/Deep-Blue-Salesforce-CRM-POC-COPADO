@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACCOUNT_OPENED</fullName>
+        <default>false</default>
+        <label>Account Opened</label>
+    </customValue>
+    <customValue>
+        <fullName>FUNDED</fullName>
+        <default>false</default>
+        <label>Funded</label>
+    </customValue>
+    <description>Enumerates the various statuses of accounts captured as application terms under an application. Typically a small subset of ApplicationStatus.</description>
+    <masterLabel>ApplicationTermStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

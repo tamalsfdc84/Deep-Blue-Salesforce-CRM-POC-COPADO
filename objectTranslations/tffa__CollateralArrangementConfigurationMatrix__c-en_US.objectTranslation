@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel (set) --></label>
+        <name>tffa__ChannelSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration --></label>
+        <name>tffa__Configuration__c</name>
+        <relationshipLabel><!-- Configuration Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum quantity --></label>
+        <name>tffa__MaximumQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type (set) --></label>
+        <name>tffa__OrganizationTypeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Product code (set) --></label>
+        <name>tffa__ProductCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Collateral Arrangement Configuration Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Facts --></label>
+            <section>Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Outcome --></label>
+            <section>Outcome</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

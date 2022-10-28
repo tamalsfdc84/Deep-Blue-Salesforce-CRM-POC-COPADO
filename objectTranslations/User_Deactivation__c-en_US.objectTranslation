@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Deactivation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Deactivation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Email To Be Excluded --></label>
+        <name>Email_To_Be_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Days --></label>
+        <name>Inactive_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Excluded --></label>
+        <name>Profile_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- UsersExcluded --></label>
+        <name>UsersExcluded__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

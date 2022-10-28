@@ -1,0 +1,82 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-grid slds-page-header forceRelatedListCardHeader">
+            <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                <div class="slds-media__figure stencil slds-avatar slds-avatar_small">
+                    <div style="background-color: #FCB95B" class="extraSmall forceEntityIcon">
+                        <span class="uiImage">
+                            <lightning-icon icon-name="standard:people" alternative-text="Opportunity Team Member" title="Opportunity Team Member"></lightning-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <p class="slds-card__header-link baseCard__header-title-container">
+                            <span title="Opportunity Team Member" class="slds-truncate slds-m-right--xx-small">
+                                Opportunity Team Member
+                            </span>
+                        </p>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <template if:false={shouldShowNewTeamMemberCreationForm}>
+                        <button class="slds-button slds-button_neutral" onclick={handleNewButtonClick}>New</button>
+                    </template>
+                  </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <template if:true={shouldShowNewTeamMemberCreationForm}>
+                <lightning-record-edit-form object-api-name={objectApiNames} onload={handleLoad} onsuccess={handleSuccess}
+                onsubmit={handleSubmit} onerror={handleError} density="compact">
+                    <template if:true={isError}>
+                        <lightning-messages></lightning-messages>
+                    </template>                
+                    <lightning-input-field field-name="OpportunityId" value={recordId} class="slds-hide">
+                    </lightning-input-field>
+                    <lightning-input-field required field-name="TeamMemberRole" value={selectedTeamRole} class="slds-hide">
+                    </lightning-input-field>
+                    <lightning-combobox
+                        name="TeamRole"
+                        label="Team Role"
+                        value={selectedTeamRole}
+                        placeholder="Select Team Role"
+                        options={listTeamRole}
+                        onchange={handleTeamRoleChange}
+                        variant="label-inline"
+                        data-field="TeamRole"
+                        required
+                    ></lightning-combobox>
+                    <lightning-input-field required data-field="User" field-name="UserId" value={selectedUserId} class="slds-hide">
+                    </lightning-input-field>
+                    <c-w-t_-utility_-lookup placeholder="Search People..." query-name={lookupQueryName} 
+                        onrecordselectionchange={handleLookupRecordSelectionChange} initial-selection={initialSelection}></c-w-t_-utility_-lookup>
+                    <lightning-input-field disabled value={access} field-name="OpportunityAccessLevel">
+                    </lightning-input-field>
+                    <div class="slds-align_absolute-center">
+                        <lightning-button variant="neutral" label="Cancel" style="margin-right: 10px;" onclick={handleCancelClick}> </lightning-button>
+                        <template if:false={isValidForSubmit}>
+                            <lightning-button variant="brand" type="submit" label="Add Member" disabled> </lightning-button>
+                        </template>
+                        <template if:true={isValidForSubmit}>
+                            <lightning-button variant="brand" type="submit" label="Add Member"> </lightning-button>
+                        </template>
+                    </div>
+                </lightning-record-edit-form>
+            </template>
+
+            <div style="margin-top: 20px; max-height: 250px; overflow-y: auto;">
+                <lightning-datatable
+                        key-field="Id"
+                        data={listOpportunityTeamMember}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+        </div>
+        <template if:true={isLoading}>
+            <lightning-spinner size="small" alternative-text="Loading" variant="brand"> </lightning-spinner>
+        </template>
+    </article>
+</template>

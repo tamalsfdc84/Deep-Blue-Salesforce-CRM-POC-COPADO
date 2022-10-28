@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Referrals are potential customers (prospects) that have been introduced to your business by existing customers or agents. Referrals are usually used as a marketing tactic that makes use of recommendations and word of mouth to grow your business&apos;s customer base through the networks of its existing customers. In return, the existing customers may receive rewards (e.g. fee waiver, cash rewards, etc) for their referrals. Referrals are expected to be used with a referral code and referral program and rarely standalone.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>tffa__AddressState__c</fullName>
+        <deprecated>false</deprecated>
+        <description>State (address) of the referred party.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Address state</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Age__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Age of the referred party.</description>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BrandCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique code of the Brand code this referral is associated with.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Brand Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Bundle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The product bundle referred by the referrer.</description>
+        <externalId>false</externalId>
+        <label>Bundle</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Bundle</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Bundle Referrals</relationshipLabel>
+        <relationshipName>BundleReferrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Campaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The individual campaign name, slogan, promo code associated with the referral program. Aligns with utm_campaign parameter.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional notes captured on the referral. Can serve as instructions for the referred party.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A marker that indicates whether the Referral has reached the end of its lifecycle.</description>
+        <externalId>false</externalId>
+        <label>Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Converted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral has been converted.</description>
+        <externalId>false</externalId>
+        <label>Converted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Country of the referred party.</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__AddressCountry</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceBrowser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The browser of the client creating the referral</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Browser</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationCity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The city of the device</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationContinent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The continent where device located</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location Continent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The country where device located</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationState__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The state (address) where the device resides.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocationZipCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The device zip code</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device Location Zip code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceLocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the precise geolocation of the device from which referral was made. A device&apos;s IP can be used to derive this value within some degree of confidence.</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Device Location</label>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DeviceOS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The OS of the client creating the referral</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device OS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Device__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifier of the device creating the referral</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Expired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral has expired</description>
+        <externalId>false</externalId>
+        <label>Expired</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExpiresOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time on which the referral expires.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Expires on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FirstName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The first name of the individual (party) being referred.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>First name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IpAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>IP address of the device</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Ip address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsReferredByCurrentUser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the Referral was referred by current user.</description>
+        <externalId>false</externalId>
+        <formula>tffa__ReferringAgentUser__c = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Referred by Current User</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsReferredPartyCaptured__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether referred party details were captured on the referral.</description>
+        <externalId>false</externalId>
+        <label>Capture Party?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The last name of the individual (party) being referred.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__LastRemindedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time of last reminder sent to the referred party.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last reminded on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LastSyncedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of last synchronization with submission record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last synced on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LocationCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique code of the current geographical location/branch serving the referral.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Location(Branch) code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The current geographical location/branch serving the referral. This will be computed and be useful for regulations.</description>
+        <externalId>false</externalId>
+        <label>Location(Branch)</label>
+        <referenceTo>tffa__Location__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Medium__c</fullName>
+        <defaultValue>&quot;none&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The advertising, marketing or traffic medium associated with the referral. e.g. email, referral, etc. Aligns with utm_medium parameter.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MortgageLoanPurpose__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary purpose of mortgage product if selected.</description>
+        <externalId>false</externalId>
+        <label>Mortgage loan purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__MortgageLoanPurpose</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>Referrals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OutOfSync__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if referral requires synchronization with related objects e.g. submission.</description>
+        <externalId>false</externalId>
+        <formula>NOT(ISNULL(tffa__SyncPendingOn__c)) &amp;&amp; (ISNULL(tffa__LastSyncedOn__c) || tffa__SyncPendingOn__c &gt; tffa__LastSyncedOn__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Out of Sync</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Prequal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral requires prequalification for mortgage product if selected.</description>
+        <externalId>false</externalId>
+        <label>Prequal</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary email of the party being referred.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Primary email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary phone number of the party being referred.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Primary phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product category of the primary product.</description>
+        <externalId>false</externalId>
+        <label>Primary Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The primary product referred by the referrer.</description>
+        <externalId>false</externalId>
+        <label>Primary Financial Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Primary product is inactive or invalid.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Category__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__PrimaryProductCategory__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Product</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Primary Referrals</relationshipLabel>
+        <relationshipName>PrimaryReferrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ProgramCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unique code of the referral program.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ProgramName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the referral program.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Program__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related referral program</description>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <referenceTo>tffa__ReferralProgram__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Promotion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The promotion referred by the referrer.</description>
+        <externalId>false</externalId>
+        <label>Promotion</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Promotion is inactive.</errorMessage>
+            <filterItems>
+                <field>tffa__Promotion__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Promotion__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__QRCodeUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to access QR code that can be scanned to get the referral url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QR Code Url</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferralCodeEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to referral code entity.</description>
+        <externalId>false</externalId>
+        <label>Referral Code</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+            <filterItems>
+                <field>tffa__ReferralCode__c.tffa__Agent__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__ReferringAgent__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__ReferralCode__c.tffa__Party__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__ReferringParty__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__ReferralCode__c.tffa__AgentUser__c</field>
+                <operation>equals</operation>
+                <valueField>$User.Id</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__ReferralCode__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferralCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The referral code that was used when creating the referral.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referral code (value)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferredParty__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to referred party. Populated if referred party exists in the system or later when the referred party is onboarded into the system.</description>
+        <externalId>false</externalId>
+        <label>Referred Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Referred Referrals</relationshipLabel>
+        <relationshipName>ReferredReferrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary email of the referrer.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referrer email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Referrer name. Derived from referring party/agent name.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referrer name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerReward__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The reward earned by the referrer of the referral.</description>
+        <externalId>false</externalId>
+        <label>Referrer reward</label>
+        <referenceTo>tffa__Reward__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferrerUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL of the previous web page from which the referral link was followed.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referrer URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferringAgentUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Denormalized field of Referring Agent.</description>
+        <externalId>false</externalId>
+        <label>Referring Agent User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferringAgent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The agent (or banker) responsible for submitting the initial referral.</description>
+        <externalId>false</externalId>
+        <label>Referring Agent</label>
+        <referenceTo>tffa__AgentDetail__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReferringParty__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The person responsible for submitting the initial referral.</description>
+        <externalId>false</externalId>
+        <label>Referring Party</label>
+        <referenceTo>tffa__Party__c</referenceTo>
+        <relationshipLabel>Referrals</relationshipLabel>
+        <relationshipName>Referrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures count of reminder emails sent to referee (referred party).</description>
+        <externalId>false</externalId>
+        <label>Reminder count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures next date on which reminder email will be sent to referee (referred party).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Reminder date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ReminderSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Schedule (frequency in days) for reminder emails sent to referee (referred party).</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Derived from Referral program</inlineHelpText>
+        <label>Reminder schedule</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Rewarded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral has been rewarded. Only applicable to converted referrals.</description>
+        <externalId>false</externalId>
+        <label>Rewarded</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SecondaryProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product category of the secondary product.</description>
+        <externalId>false</externalId>
+        <label>Secondary Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SecondaryProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The secondary product referred by the referrer in addition to primary product.</description>
+        <externalId>false</externalId>
+        <label>Secondary Financial Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Secondary product is inactive or invalid.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Category__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__SecondaryProductCategory__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Product</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Secondary Referrals</relationshipLabel>
+        <relationshipName>SecondaryReferrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Source__c</fullName>
+        <defaultValue>&quot;direct&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Source of referral. e.g. email, twitter, etc</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Status__c</fullName>
+        <defaultValue>&quot;OPEN&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Current status of the referral. Default is OPEN. Useful for tracking progress of a referral.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ReferralStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the referral was submitted by the referrer using a &quot;send referral&quot; widget.</description>
+        <externalId>false</externalId>
+        <label>Submitted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SyncPendingOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when the referral was marked pending for synchronization.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Sync pending on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TertiaryProductCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product category of the tertiary product.</description>
+        <externalId>false</externalId>
+        <label>Tertiary Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProductCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__TertiaryProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The tertiary product referred by the referrer in addition to primary and secondary products.</description>
+        <externalId>false</externalId>
+        <label>Tertiary Financial Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Tertiary product is inactive or invalid.</errorMessage>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Category__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.tffa__TertiaryProductCategory__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>tffa__Product__c.tffa__Type__c</field>
+                <operation>equals</operation>
+                <value>Product</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__Product__c</referenceTo>
+        <relationshipLabel>Tertiary Referrals</relationshipLabel>
+        <relationshipName>TertiaryReferrals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__UnsubscribeUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A link for the referee (referred party) to unsubscribe themself from reminder emails.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Unsubscribe url</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Usually points to sales application where the referral can be fulfilled.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Referral Url</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Referral</label>
+    <listViews>
+        <fullName>tffa__All</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>tffa__ReferringParty__c</columns>
+        <columns>tffa__ReferringAgent__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__MyReferrals</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>tffa__Program__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__IsReferredByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Referrals</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Referrals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

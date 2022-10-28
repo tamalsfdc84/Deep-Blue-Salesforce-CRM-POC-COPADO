@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__RelatedAccount__c</field>
+    </columns>
+    <columns>
+        <field>Lead.WT_Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__ReferredByUser__c</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__ExpressedInterest__c</field>
+    </columns>
+    <columns>
+        <field>Lead.WT_Referred_To__c</field>
+    </columns>
+    <description>All of my referrals made progress year to date.</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead.FinServ__CreatedByMe__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Referrals Made Progress Year to Date</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Lead.WT_Date_Referred__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CHALLENGED</fullName>
+        <default>false</default>
+        <label>Challenged</label>
+    </customValue>
+    <customValue>
+        <fullName>VALIDATED</fullName>
+        <default>false</default>
+        <label>Validated</label>
+    </customValue>
+    <description>Status of OTP validation.</description>
+    <masterLabel>OTPStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

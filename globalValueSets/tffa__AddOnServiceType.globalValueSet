@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ATM_CARD</fullName>
+        <default>false</default>
+        <label>ATM Card</label>
+    </customValue>
+    <customValue>
+        <fullName>DEBIT_CARD</fullName>
+        <default>false</default>
+        <label>Debit Card</label>
+    </customValue>
+    <customValue>
+        <fullName>ONLINE_BANKING</fullName>
+        <default>false</default>
+        <label>Online Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>ESTATEMENTS</fullName>
+        <default>false</default>
+        <label>Electronic Statements</label>
+    </customValue>
+    <customValue>
+        <fullName>OVERDRAFT_PROTECTION</fullName>
+        <default>false</default>
+        <label>Overdraft Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>LINKED_OVERDRAFT_PROTECTION</fullName>
+        <default>false</default>
+        <label>Linked Overdraft Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>CHECK_ORDER</fullName>
+        <default>false</default>
+        <label>Check Order</label>
+    </customValue>
+    <customValue>
+        <fullName>BILL_PAY</fullName>
+        <default>false</default>
+        <label>Bill Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>NOTIFICATIONS</fullName>
+        <default>false</default>
+        <label>Notifications</label>
+    </customValue>
+    <customValue>
+        <fullName>ADD_ON_CARD</fullName>
+        <default>false</default>
+        <label>Add-on Card</label>
+    </customValue>
+    <customValue>
+        <fullName>BALANCE_TRANSFER</fullName>
+        <default>false</default>
+        <label>Balance Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>COMBINED_STATEMENT</fullName>
+        <default>false</default>
+        <label>Combined Statement</label>
+    </customValue>
+    <customValue>
+        <fullName>MERCHANT_SERVICES</fullName>
+        <default>false</default>
+        <label>Merchant Services</label>
+    </customValue>
+    <customValue>
+        <fullName>FRAUD_PROTECTION</fullName>
+        <default>false</default>
+        <label>Fraud Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_MOBILE_DEPOSIT</fullName>
+        <default>false</default>
+        <label>Business Mobile Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_BILL_PAY</fullName>
+        <default>false</default>
+        <label>Business Bill Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>CASH_MANAGEMENT</fullName>
+        <default>false</default>
+        <label>Cash Management</label>
+    </customValue>
+    <customValue>
+        <fullName>PAYROLL_PROCESSING</fullName>
+        <default>false</default>
+        <label>Payroll Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_ACCOUNT</fullName>
+        <default>false</default>
+        <label>Business Account</label>
+    </customValue>
+    <customValue>
+        <fullName>STARTER_CHECK</fullName>
+        <default>false</default>
+        <label>Started Check</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVE_AND_PAY</fullName>
+        <default>false</default>
+        <label>Save and Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>HOME_EQUITY</fullName>
+        <default>false</default>
+        <label>Home Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE</fullName>
+        <default>false</default>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>DIRECT_DEPOSIT</fullName>
+        <default>false</default>
+        <label>Direct Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL_BANKING</fullName>
+        <default>false</default>
+        <label>Digital Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_DIGITAL_BANKING</fullName>
+        <default>false</default>
+        <label>Business Digital Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>SAFE_DEPOSIT_BOX</fullName>
+        <default>false</default>
+        <label>Safe Deposit Box</label>
+    </customValue>
+    <customValue>
+        <fullName>LIABILITY_PROTECTION</fullName>
+        <default>false</default>
+        <label>Liability Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>OD_PROTECTION_STANDARD</fullName>
+        <default>false</default>
+        <label>Standard Overdraft Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>OD_PROTECTION_ATM</fullName>
+        <default>false</default>
+        <label>ATM and Non-Recurring Debit Card Transactions</label>
+    </customValue>
+    <description>Captures the type of Add on service offered as part of the application..</description>
+    <masterLabel>AddOnServiceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>FinServ__Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>FinServ__NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>FinServ__Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>FinServ__Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Completed Date --></label>
+        <name>WT_Activity_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>WT_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrator Attendees --></label>
+        <name>WT_Admin_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Sales or AUA --></label>
+        <name>WT_Annual_AUA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas where we can be more helpful? --></label>
+        <name>WT_Areas_where_we_can_be_more_helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Charter --></label>
+        <name>WT_Assigned_To_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned to Line of Business --></label>
+        <name>WT_Assigned_to_Line_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bcc --></label>
+        <name>WT_Bcc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brokers Dealers --></label>
+        <name>WT_Brokers_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buisness Location --></label>
+        <name>WT_Buisness_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRA Reportable --></label>
+        <name>WT_CRA_Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>WT_Call_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Email --></label>
+        <name>WT_Case_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>WT_Case__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Explain AML policy/procedure changes --></label>
+        <name>WT_Chg_Policies_Procedure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>WT_Contact_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>WT_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling party on pooled investments --></label>
+        <name>WT_Controlling_party_pooled_investments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit needs not being met by the bank? --></label>
+        <name>WT_Credit_Needs_Not_Being_Met_By_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Wintrust Customer --></label>
+        <name>WT_Current_Wintrust_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk cash shipment services --></label>
+        <name>WT_CustBulk_Cash_ShipSer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Uses Product --></label>
+        <name>WT_Customer_Uses_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Brokers --></label>
+        <name>WT_Deposit_Brokers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direction --></label>
+        <name>WT_Direction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertaining --></label>
+        <name>WT_Entertaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, where can we be more helpful? --></label>
+        <name>WT_If_Yes_Where_Can_We_Be_More_Helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intend to trade MRB (Marijuana)? --></label>
+        <name>WT_Intend_to_trade_MRB_Marijuana__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Planning Notes --></label>
+        <name>WT_Internal_Planning_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Gambling --></label>
+        <name>WT_Internet_Gambling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Likelihood of Moving to Wintrust --></label>
+        <name>WT_Likelihood_of_Moving_to_Wintrust__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD MDM Record ID --></label>
+        <name>WT_MSD_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped from Outlook --></label>
+        <name>WT_Mapped_from_Outlook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing missing areas of community? --></label>
+        <name>WT_Marketing_Missing_Areas_Of_Community__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meet With SR Leadership --></label>
+        <name>WT_Meet_With_SR_Leadership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Follow Up Date --></label>
+        <name>WT_Next_Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Clients --></label>
+        <name>WT_Number_Clients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Employees --></label>
+        <name>WT_Number_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation/Function of Person/Group --></label>
+        <name>WT_Occupation_Function_Person_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboard Investors/Managers --></label>
+        <name>WT_Onboard_InvestMng__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optional Attendees --></label>
+        <name>WT_Optional_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer --></label>
+        <name>WT_Organizer_User__c</name>
+        <relationshipLabel><!-- Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outcome Notes** --></label>
+        <name>WT_Outcome_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override DNC --></label>
+        <name>WT_Override_DNC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>WT_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan to invest in what industries? --></label>
+        <name>WT_Plan_to_invest_in_what_industries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precious Metal Dealers (PMDs) --></label>
+        <name>WT_Precious_Metal_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Banking (def by US Patriot Act) --></label>
+        <name>WT_Private_Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner Joint Call? --></label>
+        <name>WT_Product_Partner_Joint_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner --></label>
+        <name>WT_Product_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Follow-up --></label>
+        <name>WT_Recommended_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>WT_Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Group --></label>
+        <name>WT_Relationship_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Location --></label>
+        <name>WT_Residence_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Call Type --></label>
+        <name>WT_Retail_Call_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Type --></label>
+        <name>WT_Review_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email ? --></label>
+        <name>WT_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shell &amp; Intl private investment company --></label>
+        <name>WT_Shell_Comp_IntlPrivateInvestComp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>WT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Activity --></label>
+        <name>WT_TM_Activity_Lkp__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Talking Points --></label>
+        <name>WT_Talking_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Subtype --></label>
+        <name>WT_TaskSubtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>WT_Task_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_ThirdParty_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_Third_Party_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training --></label>
+        <name>WT_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trends --></label>
+        <name>WT_Trends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated SOC1/SSAE16 report (get copy)? --></label>
+        <name>WT_Update_intr_rec__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Attendees --></label>
+        <name>WT_WFG_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the major bank related needs? --></label>
+        <name>WT_What_Are_Major_Bank_Related_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- What was discussed? --></label>
+        <name>WT_What_Was_Discussed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner structure of investment (private) --></label>
+        <name>WT_What_ownership_str_investment__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of portfolio that is foreign --></label>
+        <name>WT_What_percent_portfolio_foreign_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Initiated Contact? --></label>
+        <name>WT_Who_Initiated_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesalers Accepting 3rd Party Checks --></label>
+        <name>WT_Wholesale_Accept_Party_Chks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual administrator call? --></label>
+        <name>WT_annual_admin_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual review addendum call? --></label>
+        <name>WT_annual_review_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain fund sending changes (wires) --></label>
+        <name>WT_chg_send_clt_funds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior management changes? --></label>
+        <name>WT_chg_senior_manag_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- List all exchanges or counterparties --></label>
+        <name>WT_exchgs_counterparties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which country(ies) plan to invest? --></label>
+        <name>WT_which_country_planinvest_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- which industries do you plan to invest? --></label>
+        <name>WT_which_industries_plan_invest_del__c</name>
+    </fields>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Wintrust Event Layout</layout>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Annual Review</layout>
+        <sections>
+            <label><!-- Annual Review Information --></label>
+            <section>Annual Review Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT CRA Event Layout</layout>
+        <sections>
+            <label><!-- CRA Information --></label>
+            <section>CRA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Event Layout</layout>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT New Annual Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT New CRA Event Layout</layout>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wealth Events</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Default event record type for Advisor profile --></description>
+        <label><!-- Advisor Event --></label>
+        <name>FinServ__AdvisorEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default event record type for Client Associate profile --></description>
+        <label><!-- Client Associate Event --></label>
+        <name>FinServ__ClientAssociateEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of DBSFCRM-155. --></description>
+        <label><!-- Annual Review --></label>
+        <name>WT_Annual_Review</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Annual Review --></label>
+        <name>WT_Annual_Review_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRA Event --></label>
+        <name>WT_CRA_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New CRA Event --></label>
+        <name>WT_CRA_Event_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event --></label>
+        <name>WT_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wintrust Event --></label>
+        <name>WT_Wintrust_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Wintrust Event --></label>
+        <name>WT_Wintrust_Event_New</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter contact status for successfully completing this activity. --></errorMessage>
+        <name>ContactStatusIsMandatoryOnEvent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Outcome Notes**  field should be mandatory. --></errorMessage>
+        <name>OutcomeNotesAreMandatoryOnEvent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update Outcome Notes if you want to set the status of this Event as Complete --></errorMessage>
+        <name>OutcomeNotes_Required_if_status_Complete</name>
+    </validationRules>
+</CustomObjectTranslation>

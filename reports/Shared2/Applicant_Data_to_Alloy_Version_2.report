@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__FirstName__c</field>
+    </columns>
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__LastName__c</field>
+    </columns>
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__Last4NationalIdentifierValue__c</field>
+    </columns>
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__BirthDate__c</field>
+    </columns>
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__PrimaryEmail__c</field>
+    </columns>
+    <columns>
+        <field>FK_$tffa__Party__c.tffa__PrimaryPhone__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>First/Last/Last 4 SSN/DOB/Email/Phone/Address</description>
+    <format>Tabular</format>
+    <name>Applicant Data for Alloy (Version 2)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$tffa__Address__c$tffa__PartyAddressXref__c@tffa__PartyAddressXref__c.tffa__Party__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-07-25</startDate>
+    </timeFrameFilter>
+</Report>

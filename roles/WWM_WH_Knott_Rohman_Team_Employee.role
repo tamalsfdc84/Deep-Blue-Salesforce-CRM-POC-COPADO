@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>WWM - WH - Knott/Rohman Team (Employee)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>WWM_WH_Knott_Rohman_Team_Manager</parentRole>
+</Role>

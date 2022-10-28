@@ -1,0 +1,28 @@
+<!--
+  @Page Name          : performanceLogConfiguration.page
+  @Description        :  performance log configuration page
+ -->
+<apex:page docType="html-5.0" title="{!$ObjectType.tffa__PerformanceLogConfiguration__c.Label}" standardController="tffa__PerformanceLog__c"
+  recordSetVar="logs" extensions="tffa.PerformanceLogController" lightningStylesheets="true" action="{!getConfiguration}" showHeader="false"
+  applyHtmlTag="false">
+  <apex:outputPanel id="error">
+    <apex:pageMessages />
+  </apex:outputPanel>
+  <apex:form >
+    <apex:pageBlock id="pb1" title="{!$ObjectType.tffa__PerformanceLogConfiguration__c.Label}" mode="edit">
+      <apex:pageBlockButtons location="top">
+        <apex:commandButton action="{!saveConfiguration}" value="Save" rerender="pb1,error" />
+        <apex:commandButton action="{!cancel}" value="Cancel" immediate="true" />
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="{!$Label.tffa__PERFORMANCELOG_CONFIGURATION_DETAILS}">
+        <apex:inputField value="{!config.tffa__Enabled__c}" id="Enabled">
+          <apex:actionSupport event="onchange" reRender="pb1" />
+        </apex:inputField>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" id="RetentionPeriod" value="{!config.tffa__RetentionPeriod__c}">
+        </apex:inputField>
+        <apex:inputField rendered="{!config.tffa__Enabled__c}" id="ThresholdInMilliseconds" value="{!config.tffa__ThresholdInMilliseconds__c}">
+        </apex:inputField>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

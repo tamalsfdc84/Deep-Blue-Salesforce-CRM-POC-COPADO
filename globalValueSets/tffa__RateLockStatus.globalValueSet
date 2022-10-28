@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PENDING</fullName>
+        <default>false</default>
+        <label>Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>LOCKED</fullName>
+        <default>false</default>
+        <label>Locked</label>
+    </customValue>
+    <customValue>
+        <fullName>CANCELLED</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>DENIED</fullName>
+        <default>false</default>
+        <label>Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPIRED</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </customValue>
+    <description>List of status(s) (of processing) of rate lock request.</description>
+    <masterLabel>RateLockStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

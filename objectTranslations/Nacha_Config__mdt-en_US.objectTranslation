@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nacha Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Nacha Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Endpoint --></label>
+        <name>API_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLIENT ID --></label>
+        <name>CLIENT_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLIENT SECRET --></label>
+        <name>CLIENT_SECRET__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Upload Failed Mail Id --></label>
+        <name>File_Upload_Failed_Mail_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- GRANT TYPE --></label>
+        <name>GRANT_TYPE__c</name>
+    </fields>
+    <fields>
+        <label><!-- METHOD --></label>
+        <name>METHOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Retry Count --></label>
+        <name>Max_Retry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oauth Endpoint --></label>
+        <name>Oauth_Endpoint__c</name>
+    </fields>
+    <layouts>
+        <layout>Nacha Config Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NachaCFG</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

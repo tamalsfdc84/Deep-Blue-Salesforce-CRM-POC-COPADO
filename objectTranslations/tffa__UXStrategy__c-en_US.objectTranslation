@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can be uri fragment or a full url --></help>
+        <label><!-- Alternate Logo --></label>
+        <name>tffa__AltLogoUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- The application static resource e.g. sales or apptracker --></help>
+        <label><!-- Application Bundle Suffix --></label>
+        <name>tffa__AppBundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- The application used in this strategy --></help>
+        <label><!-- Application --></label>
+        <name>tffa__AppPage__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collaboration Portal</masterLabel>
+            <translation><!-- Collaboration Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Application</masterLabel>
+            <translation><!-- Sales Application --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Baseline --></label>
+        <name>tffa__Baseline__c</name>
+    </fields>
+    <fields>
+        <help><!-- The body background color --></help>
+        <label><!-- Body Background --></label>
+        <name>tffa__BodyBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The main body font text color --></help>
+        <label><!-- Body Text --></label>
+        <name>tffa__BodyTextColour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>tffa__Brand__c</name>
+        <relationshipLabel><!-- UX Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Collection of css variables (key value pairs) as a JSON string. --></help>
+        <label><!-- CSS Variables --></label>
+        <name>tffa__CSSVariables__c</name>
+    </fields>
+    <fields>
+        <help><!-- The card background color --></help>
+        <label><!-- Card background --></label>
+        <name>tffa__CardBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The card header/footer color --></help>
+        <label><!-- Card Header/Footer Background --></label>
+        <name>tffa__CardCapBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <lookupFilter>
+            <errorMessage><!-- Strategies configured for UX Strategy can only be selected. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- UX Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The default text color used for footnote --></help>
+        <label><!-- Default(Footnote) --></label>
+        <name>tffa__DefaultColour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The title must be text-only --></help>
+        <label><!-- Document Title --></label>
+        <name>tffa__DocumentTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Footer Logo as url --></help>
+        <label><!-- Email Footer Logo --></label>
+        <name>tffa__EmailFooterLogoUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Header Logo --></help>
+        <label><!-- Email Header Logo --></label>
+        <name>tffa__EmailHeaderLogoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Conversion Rate(Deprecated) --></label>
+        <name>tffa__ExpectedConversionRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can be uri fragment or a full url --></help>
+        <label><!-- Favicon URL --></label>
+        <name>tffa__FaviconUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Font Family --></help>
+        <label><!-- Font Family --></label>
+        <name>tffa__FontFamily__c</name>
+    </fields>
+    <fields>
+        <help><!-- Make sure it points to a fontface css --></help>
+        <label><!-- Font URL --></label>
+        <name>tffa__FontUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Footer background color on emails and primary ui --></help>
+        <label><!-- Footer Background --></label>
+        <name>tffa__FooterBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The footer text color --></help>
+        <label><!-- Footer Text --></label>
+        <name>tffa__FooterTextColour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Logo on the UI .Can be uri fragment or a full url --></help>
+        <label><!-- Primary Logo --></label>
+        <name>tffa__LogoUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- The model content background --></help>
+        <label><!-- Modal Content Background --></label>
+        <name>tffa__ModalContentBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <help><!-- The primary CTA and section typographic heading color is both reassuring and calming --></help>
+        <label><!-- Primary (CTA) --></label>
+        <name>tffa__PrimaryColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The product card background color in Hexadecimal format --></help>
+        <label><!-- Product card background Colour --></label>
+        <name>tffa__ProductCardBackgroundColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The secondary color provides high contrast for components such as the applicant’s progress and notifications --></help>
+        <label><!-- Secondary(High contrast) --></label>
+        <name>tffa__SecondaryColour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for loading images .Can be uri fragment or a full url --></help>
+        <label><!-- Spinner Image --></label>
+        <name>tffa__SpinnerUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The main background color helps to create a sense of stability and reliance. --></help>
+        <label><!-- Tertiary(Header) --></label>
+        <name>tffa__TertiaryColour__c</name>
+    </fields>
+    <fields>
+        <help><!-- The theme prefix of the application --></help>
+        <label><!-- Application UI CSS Bundle --></label>
+        <name>tffa__Theme__c</name>
+    </fields>
+    <fields>
+        <help><!-- Input to Tessellate.forRoot stored as JSON --></help>
+        <label><!-- UI Options --></label>
+        <name>tffa__UIOptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight of this strategy in distribution --></help>
+        <label><!-- Weight(Deprecated) --></label>
+        <name>tffa__Weight__c</name>
+    </fields>
+    <layouts>
+        <layout>UX Strategy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective --></label>
+            <section>Effective</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Mark Champion/Challenger --></label>
+        <name>tffa__MarkChampionChallenger</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Weight cannot exceed 100 --></errorMessage>
+        <name>tffa__max_weight</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MassClone --></label>
+        <name>tffa__MassClone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassDelete --></label>
+        <name>tffa__MassDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

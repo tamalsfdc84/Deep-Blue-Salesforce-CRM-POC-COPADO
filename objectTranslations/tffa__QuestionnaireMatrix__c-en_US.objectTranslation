@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CDD Facts --></label>
+        <name>tffa__CDDFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Declaration Facts --></label>
+        <name>tffa__DeclarationFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Eligibility Facts --></label>
+        <name>tffa__EligibilityFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expected Activity Facts --></label>
+        <name>tffa__ExpectedActivityFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Financial Need Facts --></label>
+        <name>tffa__FinancialNeedFacts</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Address State (set) --></label>
+        <name>tffa__AddressStateSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;BUNDLECHECKING; --></help>
+        <label><!-- Bundle code (set) --></label>
+        <name>tffa__BundleCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Strategy --></label>
+        <lookupFilter>
+            <errorMessage><!-- Strategies configured for Questionnaire Matrix can only be selected. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__DecisionStrategy__c</name>
+        <relationshipLabel><!-- Questionnaire Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event name --></label>
+        <name>tffa__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual values with semicolon ;123; --></help>
+        <label><!-- Location code (set) --></label>
+        <name>tffa__LocationCodeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type (set) --></label>
+        <name>tffa__OrganizationTypeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Product code (set) --></label>
+        <name>tffa__ProductCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product segment (set) --></label>
+        <name>tffa__ProductSegmentSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Questionnaire Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Questionnaire --></label>
+        <lookupFilter>
+            <errorMessage><!-- Questionnaire of same type should be selected --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Questionnaire__c</name>
+        <relationshipLabel><!-- Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Questionnaire Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Facts --></label>
+            <section>Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Outcomes --></label>
+            <section>Outcomes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Mark Champion/Challenger --></label>
+        <name>tffa__MarkChampionChallenger</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Decision Strategy purpose must match the Questionnaire Matrix type. --></errorMessage>
+        <name>tffa__DecisionStrategy</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MassClone --></label>
+        <name>tffa__MassClone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassDelete --></label>
+        <name>tffa__MassDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

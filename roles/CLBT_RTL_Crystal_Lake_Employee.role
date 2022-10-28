@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>CLBT - RTL - Crystal Lake (Employee)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>CLBT_RTL_Crystal_Lake_Manager</parentRole>
+</Role>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge Vote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge Votes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Knowledge --></label>
+        <name>WT_Knowledge__c</name>
+        <relationshipLabel><!-- Knowledge Votes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>WT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Down</masterLabel>
+            <translation><!-- Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Up</masterLabel>
+            <translation><!-- Up --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

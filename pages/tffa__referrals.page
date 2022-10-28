@@ -1,0 +1,21 @@
+<apex:page docType="html-5.0" controller="tffa.ReferralController" action="{!init}" applyBodyTag="false" showHeader="false">
+  <head>
+    <title>{!title}</title>
+    <meta name="description" content="{!description}"></meta>
+    <meta property="og:url" content="{!url}"></meta>
+    <meta property="og:type" content="website"></meta>
+    <meta property="og:title" content="{!title}"></meta>
+    <meta property="og:description" content="{!description}"></meta>
+    <meta property="og:image" content="{!imageUrl}"></meta>
+    <link rel="stylesheet" href="{!URLFOR($Resource['sales_styles'], 'styles.css')}"></link>
+  </head>
+  <body>
+    <div class="tf-spinner-overlay">
+      <span class="tf-spinner-image"><img></img></span>
+    </div>
+    <apex:form >
+      <apex:actionFunction action="{!redirect}" name="redirect"></apex:actionFunction>
+    </apex:form>
+    <script>window.onload=redirect</script>
+  </body>
+</apex:page>

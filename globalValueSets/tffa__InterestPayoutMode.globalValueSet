@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COMPOUND</fullName>
+        <default>false</default>
+        <label>Compound</label>
+    </customValue>
+    <customValue>
+        <fullName>CHECK</fullName>
+        <default>false</default>
+        <label>Check</label>
+    </customValue>
+    <customValue>
+        <fullName>ACH</fullName>
+        <default>false</default>
+        <label>External transfer</label>
+    </customValue>
+    <description>Different investment Payout Modes</description>
+    <masterLabel>InterestPayoutMode</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

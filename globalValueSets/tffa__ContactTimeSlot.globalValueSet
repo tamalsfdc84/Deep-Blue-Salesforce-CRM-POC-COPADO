@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Morning</fullName>
+        <default>false</default>
+        <label>Morning</label>
+    </customValue>
+    <description>Preferred time to call to the applicant if the application has been scheduled.</description>
+    <masterLabel>ContactTimeSlot</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

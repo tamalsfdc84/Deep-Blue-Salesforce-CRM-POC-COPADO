@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Household Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Referrer --></label>
+        <name>FinServ__ReferredByContact__c</name>
+        <relationshipLabel><!-- My Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Referrer --></label>
+        <name>FinServ__ReferredByUser__c</name>
+        <relationshipLabel><!-- Opportunities (Internal Referrer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GCLID --></label>
+        <name>GCLID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ABL Component? --></label>
+        <name>WT_ABL_Component__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Actual Close Date --></label>
+        <name>WT_Actual_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Changes to TM Onboarding Process --></label>
+        <name>WT_Changes_to_TM_Onboarding_Process__c</name>
+        <picklistValues>
+            <masterLabel>Manual Change - Do NOT kick off process with fee over threshold</masterLabel>
+            <translation><!-- Manual Change - Do NOT kick off process with fee over threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Change - Kick off process with fee under threshold</masterLabel>
+            <translation><!-- Manual Change - Kick off process with fee under threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Changes to Automatic Onboarding Process</masterLabel>
+            <translation><!-- No Changes to Automatic Onboarding Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closer Manager User Role Ids --></label>
+        <name>WT_Closer_Manager_User_Role_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closer Name --></label>
+        <name>WT_Closer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closer User Ids --></label>
+        <name>WT_Closer_User_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>WT_Competitor__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst Manager User Role Ids --></label>
+        <name>WT_Credit_Analyst_Manager_User_Role_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst Name --></label>
+        <name>WT_Credit_Analyst_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst User Ids --></label>
+        <name>WT_Credit_Analyst_User_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Stage Update --></label>
+        <name>WT_Date_of_Last_Stage_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposits --></label>
+        <name>WT_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee $ --></label>
+        <name>WT_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Franchise Component --></label>
+        <name>WT_Franchise_Component__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Franchise Type --></label>
+        <name>WT_Franchise_Type__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GL Invest --></label>
+        <name>WT_GL_Invest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Amount Drawn $ --></label>
+        <name>WT_Initial_Amount_Drawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Fee $ --></label>
+        <name>WT_International_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Fee $ --></label>
+        <name>WT_Investment_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Involves any of the product partner? --></label>
+        <name>WT_Involves_any_of_the_product_partner__c</name>
+        <picklistValues>
+            <masterLabel>ABL</masterLabel>
+            <translation><!-- ABL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndication</masterLabel>
+            <translation><!-- Syndication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth</masterLabel>
+            <translation><!-- Wealth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Closer Manager User --></label>
+        <name>WT_Is_Closer_Manager_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Closer User --></label>
+        <name>WT_Is_Closer_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Credit Analyst Manager User --></label>
+        <name>WT_Is_Credit_Analyst_Manager_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Credit Analyst User --></label>
+        <name>WT_Is_Credit_Analyst_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Manager? --></label>
+        <name>WT_Is_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Processor Manager User --></label>
+        <name>WT_Is_Processor_Manager_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Processor User --></label>
+        <name>WT_Is_Processor_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Product Partner? --></label>
+        <name>WT_Is_Product_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Shared Credit User Manager? --></label>
+        <name>WT_Is_Shared_Credit_User_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Shared Credit? --></label>
+        <name>WT_Is_Shared_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leasing PV Rent $ --></label>
+        <name>WT_Leasing_PV_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leasing PV Residual $ --></label>
+        <name>WT_Leasing_PV_Residual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leasing Rate % --></label>
+        <name>WT_Leasing_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leasing Team (in months) --></label>
+        <name>WT_Leasing_Team_in_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans --></label>
+        <name>WT_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- New $ --></label>
+        <name>WT_New_Dollar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>WT_Opportunity_Owner_Flow__c</name>
+        <relationshipLabel><!-- Opportunities (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>WT_Opportunity_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>WT_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Charter --></label>
+        <name>WT_Owner_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Probability (%) --></label>
+        <name>WT_Probability__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processor Manager User Role Ids --></label>
+        <name>WT_Processor_Manager_User_Role_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor Name --></label>
+        <name>WT_Processor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor User Ids --></label>
+        <name>WT_Processor_User_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner Name --></label>
+        <name>WT_Product_Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partners --></label>
+        <name>WT_Product_Partners__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>WT_Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>WT_Product__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>WT_Product_for_Flow__c</name>
+        <relationshipLabel><!-- Opportunities (Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>WT_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>WT_Record_Type_Name__c</name>
+        <picklistValues>
+            <masterLabel>Deposit</masterLabel>
+            <translation><!-- Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy Access Loan</masterLabel>
+            <translation><!-- Easy Access Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter of Credit (Standby)</masterLabel>
+            <translation><!-- Letter of Credit (Standby) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM</masterLabel>
+            <translation><!-- TM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terafina</masterLabel>
+            <translation><!-- Terafina --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Group --></label>
+        <name>WT_Relationship_Group__c</name>
+        <relationshipLabel><!-- Relationship Group Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal $ --></label>
+        <name>WT_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Component? --></label>
+        <name>WT_SBA_Component__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SBA Type --></label>
+        <name>WT_SBA_Type__c</name>
+        <picklistValues>
+            <masterLabel>SBA 504 Loan</masterLabel>
+            <translation><!-- SBA 504 Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA 7A Loan</masterLabel>
+            <translation><!-- SBA 7A Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA CAP Line</masterLabel>
+            <translation><!-- SBA CAP Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Express Loan</masterLabel>
+            <translation><!-- SBA Express Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Illinois Advantage</masterLabel>
+            <translation><!-- SBA Illinois Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Int&apos;l Export Express</masterLabel>
+            <translation><!-- SBA Int&apos;l Export Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Int&apos;l Working Capital Guarantee</masterLabel>
+            <translation><!-- SBA Int&apos;l Working Capital Guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA USDA B&amp;I</masterLabel>
+            <translation><!-- SBA USDA B&amp;I --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shared Credit User Managers --></label>
+        <name>WT_Shared_Credit_User_Managers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shared Credit Users --></label>
+        <name>WT_Shared_Credit_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Reason --></label>
+        <name>WT_Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Automatic Deactivation</masterLabel>
+            <translation><!-- Automatic Deactivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled - Fell Through</masterLabel>
+            <translation><!-- Cancelled - Fell Through --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled - Lost to purchase</masterLabel>
+            <translation><!-- Cancelled - Lost to purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled - Other</masterLabel>
+            <translation><!-- Cancelled - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined - Credit</masterLabel>
+            <translation><!-- Declined - Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined - Other</masterLabel>
+            <translation><!-- Declined - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined - Pricing</masterLabel>
+            <translation><!-- Declined - Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected - Credit Structure</masterLabel>
+            <translation><!-- Rejected - Credit Structure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected - Incumbent Response</masterLabel>
+            <translation><!-- Rejected - Incumbent Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected - Pricing</masterLabel>
+            <translation><!-- Rejected - Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won</masterLabel>
+            <translation><!-- Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>WT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed/Lost</masterLabel>
+            <translation><!-- Closed/Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed/Won</masterLabel>
+            <translation><!-- Closed/Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Swap Component? --></label>
+        <name>WT_Swap_Component__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Swap Fee $ --></label>
+        <name>WT_Swap_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Syndication Component? --></label>
+        <name>WT_Syndication_Component__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Syndication Fee $ --></label>
+        <name>WT_Syndication_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Syndication Target Sale $ --></label>
+        <name>WT_Syndication_Target_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Syndication WTFC Role --></label>
+        <name>WT_Syndication_WTFC_Role__c</name>
+        <picklistValues>
+            <masterLabel>Advisory</masterLabel>
+            <translation><!-- Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Best Efforts</masterLabel>
+            <translation><!-- Best Efforts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwritten</masterLabel>
+            <translation><!-- Underwritten --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TMIS # Add-on Products &amp; Accounts --></label>
+        <name>WT_TMIS_Add_on_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Onboarding Eligible --></label>
+        <name>WT_TMOnboarding_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Onboarding Workflow Executed --></label>
+        <name>WT_TM_Onboarding_Workflow_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust --></label>
+        <name>WT_Trust__c</name>
+    </fields>
+    <fields>
+        <label><!-- WH Invest --></label>
+        <name>WT_WH_Invest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Y1 Avg Expected Balance --></label>
+        <name>WT_Y1_Avg_Expected_Balance__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity (General) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Information sur le référent</label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity (Wallet Share) Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Information sur le référent</label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Deposit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Partner Details --></label>
+            <section>Product Partner Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Details --></label>
+            <section>Sales Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT International Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity details --></label>
+            <section>Sales Opportunity details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Investment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity details --></label>
+            <section>Sales Opportunity details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Leasing Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity details --></label>
+            <section>Sales Opportunity details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Letter of Credit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity details --></label>
+            <section>Sales Opportunity details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Loan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Partner Details --></label>
+            <section>Product Partner Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Details --></label>
+            <section>Sales Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Other Layout</layout>
+        <sections>
+            <label><!-- Sales Opportunity Details --></label>
+            <section>Sales Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT TM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Information --></label>
+            <section>Sales Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity details --></label>
+            <section>Sales Opportunity details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- TM Details --></label>
+            <section>TM Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close Opportunity --></label>
+        <name>Mark_as_Closed</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Product --></label>
+        <name>WT_Change_Product</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>FinServ__General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retirement Planning --></label>
+        <name>FinServ__RetirementPlanning</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunity (Wallet Share) --></label>
+        <name>FinServ__WalletShareOpportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deposit --></label>
+        <name>WT_Deposit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Easy Access Loan --></label>
+        <name>WT_Easy_Access_Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- International --></label>
+        <name>WT_International</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Investment --></label>
+        <name>WT_Investment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Leasing --></label>
+        <name>WT_Leasing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Letter of Credit (Standby) --></label>
+        <name>WT_Letter_of_Credit_Standby</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Loan --></label>
+        <name>WT_Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>WT_Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TM --></label>
+        <name>WT_TM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Terafina --></label>
+        <name>WT_Terafina</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Competitor field is Editable Only if Status is Closed/Lost. --></errorMessage>
+        <name>Competitor_Field_Editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status Reason field is Editable Only if Status is Closed/Lost. --></errorMessage>
+        <name>Editable_Fields_When_Status_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Name field should be Read-Only. --></errorMessage>
+        <name>Opportunity_Name_Is_ReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot make changes to a closed Opportunity, Please reopen it first by changing the Pipeline Stage --></errorMessage>
+        <name>WT_Cannot_Change_Opportunity_If_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Product Partner or the Opportunity Owner can edit the Opportunity --></errorMessage>
+        <name>WT_OpportunityOwnerFieldEditAccess</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to mark the opportunity as &apos;Closed/Lost&apos;, please fill in the Actual Closed date and Status Reason fields --></errorMessage>
+        <name>WT_Required_Fields_On_Close_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actual Closed date is required when status is &apos;Closed/Won&apos;. --></errorMessage>
+        <name>WT_Required_Fields_On_Close_Stage_Won</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,356 @@
+/* question section styles */
+
+.faq__question {
+    height: 275px;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 41px 28px 45px 28px;
+}
+
+.faq__question--headline {
+    text-align: center;
+    margin: 0 0 39px 0;
+}
+
+.faq__question--headline>h2 {
+    font-size: 32px;
+    margin: 0 0 15px 0;
+    line-height: 32px;
+    font-family: "Agenda Semibold";
+}
+
+.faq__question--headline>h3 {
+    font-size: 20px;
+    font-family: "Agenda Semibold";
+}
+
+.faq__question__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1025px;
+    margin: 0 auto 43px auto;
+}
+
+.faq__question__row--block {
+    height: 138px;
+    width: 292px;
+    text-decoration: none;
+}
+
+.faq__question__row--block>img {
+    height: 30px;
+    width: 30px;
+    margin: 0 131px 12px 131px;
+    color: #000000;
+}
+
+.faq__question__row--block>h3 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    margin: 0 0 19px 0;
+    color: #000000;
+    font-family: "Agenda Semibold";
+}
+
+.faq__question__row--block>p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 23px;
+    color: #000000;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+}
+
+
+/* Lets Talk modal */
+
+.faq__letsTalk {
+    height: 90vh;
+    width: 1045px;
+    max-width: 1045px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq__letsTalk__header {
+    width: 100%;
+    height: fit-content;
+    background-color: #003E7E;
+    padding: 35px 45px 22px 45px;
+}
+
+.faq__letsTalk__header__holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq__letsTalk__header__holder>h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Agenda";
+}
+
+.faq__letsTalk__header__holder--close {
+    cursor: pointer;
+    min-height: 30px;
+    min-width: 30px;
+    max-height: 30px;
+    max-width: 30px;
+    background-color: #003E7E;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    position: relative;
+}
+
+.faq__letsTalk__header__holder--close::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    right: 0px;
+    /* use the hex value here... */
+    content: "\d7";
+    font-size: 30px;
+    color: #FFF;
+    line-height: 24px;
+    text-align: center;
+}
+
+.faq__letsTalk__body {
+    width: 100%;
+    padding: 17px 45px 22px 45px;
+    overflow-y: scroll;
+}
+
+.faq__letsTalk__body__head>h2 {
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    font-weight: 700;
+    color: #003E7E;
+    line-height: 30px;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+.faq__letsTalk__body__head>p {
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #777777;
+}
+
+.faq__letsTalk__body__list {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0 0 0;
+}
+
+.faq__letsTalk__body__list>ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.faq__letsTalk__body__list>ul>li {
+    width: 415px;
+}
+
+.faq__letsTalk__body__list>ul>li:nth-child(odd) {
+    margin: 0 38px 26px 0;
+}
+
+.faq__letsTalk__body__list>ul>li:nth-child(even) {
+    margin: 0 0 26px 38px;
+}
+
+.faq__letsTalk__body__list>ul>li>p {
+    color: #000000;
+    font-family: "Agenda Semibold";
+    font-size: 24px;
+}
+
+.faq__letsTalk__body__list>ul>li>a {
+    color: #003E7E;
+    font-family: "Agenda Semibold";
+    font-size: 24px;
+}
+
+.faq__blackout {
+    position: absolute;
+    z-index: 4;
+    height: calc(100% + 33px);
+    width: 100%;
+    background-color: #000000;
+    top: -33px;
+    left: 0;
+    opacity: .3;
+    overflow-y: hidden;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .2s, opacity .2s linear;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Table Screen Size  701~1075 */
+
+@media (min-device-width: 768px) and (max-device-width: 1075px) {
+    /* question section css - Tablet -* */
+    .faq__question__row--block {
+        height: 155px;
+        width: 242px;
+    }
+    .faq__question__row--block>img {
+        margin: 0 106px 12px 106px;
+    }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 850px) {
+    .faq__question__row--block {
+        width: 222px;
+    }
+    .faq__question__row--block>img {
+        margin: 0 96px 12px 96px;
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 1075px) {
+    /* Lets Talk modal -Tablet-*/
+    .faq__letsTalk {
+        width: 90%;
+        height: 95vh;
+        top: 50%;
+    }
+    .faq__letsTalk__header__holder>h1 {
+        font-size: 20px;
+    }
+    .faq__letsTalk__body {
+        overflow-y: scroll;
+    }
+    .faq__letsTalk__body__list>ul {
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    .faq__letsTalk__body__list>ul>li:nth-child(odd) {
+        margin: 0 auto 26px auto;
+    }
+    .faq__letsTalk__body__list>ul>li:nth-child(even) {
+        margin: 0 auto 26px auto;
+    }
+    .faq__letsTalk__body__head>h2 {
+        font-size: 20px;
+    }
+    .faq__letsTalk__body__head>p {
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile Screen Size 320~700 */
+
+@media (min-device-width: 0px) and (max-device-width: 768px) {
+    /* question section css - Mobile - */
+    .faq__question {
+        height: fit-content;
+        padding: 41px 0 0px 0;
+    }
+    .faq__question__row {
+        flex-direction: column;
+        margin: 0 auto 0px auto;
+    }
+    .faq__question--headline>h2 {
+        font-size: 24px;
+        margin: 0 0 15px 0;
+        line-height: 29px;
+    }
+    .faq__question--headline>h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .faq__question__row--block {
+        height: 60px;
+        width: 100%;
+        min-width: 292px;
+        max-width: 410px;
+        margin: 0 auto 40px auto;
+    }
+    .faq__question__row--block>img {
+        height: 30px;
+        width: 30px;
+        margin: 0 auto 12px auto;
+        display: flex;
+    }
+}
+
+@media (min-device-width: 0px) and (max-device-width: 599px) {
+    /* Lets Talk modal -Tablet-*/
+    .faq__letsTalk {
+        width: 100%;
+        height: 100vh;
+        top: 50%;
+    }
+    .faq__letsTalk__header {
+        padding: 22px 25px 22px 25px;
+    }
+    .faq__letsTalk__header__holder>h1 {
+        font-size: 20px;
+    }
+    .faq__letsTalk__body {
+        overflow-y: scroll;
+        padding: 11px 25px 22px 25px;
+    }
+    .faq__letsTalk__body__list>ul {
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    .faq__letsTalk__body__list>ul>li:nth-child(odd) {
+        margin: 0 auto 26px auto;
+    }
+    .faq__letsTalk__body__list>ul>li:nth-child(even) {
+        margin: 0 auto 26px auto;
+    }
+    .faq__letsTalk__body__head>h2 {
+        font-size: 20px;
+    }
+    .faq__letsTalk__body__head>p {
+        font-size: 18px;
+    }
+    .faq__letsTalk__body__list>ul>li {
+        width: 310px
+    }
+    .faq__letsTalk__body__list>ul>li>p {
+        font-size: 18px;
+    }
+    .faq__letsTalk__body__list>ul>li>a {
+        font-size: 18px;
+    }
+}

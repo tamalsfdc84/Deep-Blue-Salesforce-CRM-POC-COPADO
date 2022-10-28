@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Will contain configuration for google cloud platform authentication</description>
+    <fields>
+        <fullName>tffa__AudienceClaim__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The audience claim identifies the recipients that the JWT is intended for</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>AudienceClaim</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CertificateName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Certificate name used to exchange JWT token</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Certificate Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IssueClaim__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The issue claim identifies the recipients that the JWT is intended for</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Issue Claim</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ProjectId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique id of the project as identified by the google cloud platform</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Project Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Scope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Scope is a mechanism in OAuth 2.0 to limit an application&apos;s access to a user&apos;s account.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Scope</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SubjectClaim__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The subject claim identifies the recipients that the JWT is intended for</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Subject Claim</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value of the attribute</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Google Cloud Platform Configuration</label>
+    <pluralLabel>Google Cloud Platform Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ApplicationDecisionMatrix</fullName>
+        <default>false</default>
+        <label>Application Decision Matrix</label>
+    </customValue>
+    <customValue>
+        <fullName>PartyDecisionMatrix</fullName>
+        <default>false</default>
+        <label>Party Decision Matrix</label>
+    </customValue>
+    <customValue>
+        <fullName>QuestionnaireMatrix</fullName>
+        <default>false</default>
+        <label>Questionnaire Matrix</label>
+    </customValue>
+    <customValue>
+        <fullName>ApplicationRoutingMatrix</fullName>
+        <default>false</default>
+        <label>Application Routing Matrix</label>
+    </customValue>
+    <customValue>
+        <fullName>UXStrategy</fullName>
+        <default>false</default>
+        <label>UX Strategy</label>
+    </customValue>
+    <description>Enumerates entity types for which Decision Strategy is supported.</description>
+    <masterLabel>DecisionStrategyEntityType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRE_APPROVAL</fullName>
+        <default>false</default>
+        <label>Pre Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>POST_APPROVAL</fullName>
+        <default>false</default>
+        <label>Post Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>PRE_QUAL</fullName>
+        <default>false</default>
+        <label>Pre Qual</label>
+    </customValue>
+    <description>Category of stipulations raised for an application. Possible values are PRE_APPROVAL, POST_APPROVAL and PRE_QUALIFICATION</description>
+    <masterLabel>StipulationCategory</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

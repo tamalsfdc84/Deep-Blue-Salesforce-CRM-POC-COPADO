@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Will contain configuration for overriding class implementations</description>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used for describing the class and its usage</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the extensions are enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExtensionClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The class name which extends class mentioned in DeveloperName</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>ExtensionClass</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Service Configuration</label>
+    <listViews>
+        <fullName>tffa__IntegrationProviders</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__Enabled__c</columns>
+        <columns>tffa__ExtensionClass__c</columns>
+        <columns>tffa__Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DeveloperName</field>
+            <operation>contains</operation>
+            <value>Provider</value>
+        </filters>
+        <label>Integration Providers</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>tffa__Resolver</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__Enabled__c</columns>
+        <columns>tffa__ExtensionClass__c</columns>
+        <columns>tffa__Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DeveloperName</field>
+            <operation>contains</operation>
+            <value>Resolver</value>
+        </filters>
+        <label>Resolver</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>tffa__ServiceConfigurations</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__Enabled__c</columns>
+        <columns>tffa__ExtensionClass__c</columns>
+        <columns>tffa__Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DeveloperName</field>
+            <operation>contains</operation>
+            <value>Ext</value>
+        </filters>
+        <label>Service Extension</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Service Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

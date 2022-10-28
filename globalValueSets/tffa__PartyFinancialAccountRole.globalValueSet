@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BORROWER</fullName>
+        <default>false</default>
+        <label>Borrower</label>
+    </customValue>
+    <customValue>
+        <fullName>CO-SIGNER</fullName>
+        <default>false</default>
+        <label>Co Signer</label>
+    </customValue>
+    <customValue>
+        <fullName>GUARDIAN</fullName>
+        <default>false</default>
+        <label>Guardian</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTHORIZED_SIGNATORY</fullName>
+        <default>false</default>
+        <label>Authorized Signatory</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>OWNER</fullName>
+        <default>true</default>
+        <label>Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>JOINT_OWNER</fullName>
+        <default>false</default>
+        <label>Joint Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>GUARANTOR</fullName>
+        <default>false</default>
+        <label>Guarantor</label>
+    </customValue>
+    <customValue>
+        <fullName>BENEFICIARY</fullName>
+        <default>false</default>
+        <label>Beneficiary</label>
+    </customValue>
+    <customValue>
+        <fullName>ACCOUNTANT</fullName>
+        <default>false</default>
+        <label>Accountant</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTHORIZED-SIGNATORY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Authorized Signatory(DEPRECATED)</label>
+    </customValue>
+    <customValue>
+        <fullName>JOINTOWNER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Joint Owner(DEPRECATED)</label>
+    </customValue>
+    <description>The Party  role with respect to this financial account.</description>
+    <masterLabel>PartyFinancialAccountRole</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

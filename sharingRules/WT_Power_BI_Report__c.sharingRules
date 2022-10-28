@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CRE_Executive_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CRE Executive PowerBi Scorecard</label>
+        <sharedTo>
+            <group>CRE_Scorecard_Executive</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>CRE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Executive</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CRE_Individual_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CRE Individual PowerBi Scorecard</label>
+        <sharedTo>
+            <group>CRE_Scorecard_Individual</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>CRE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Individual</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CRE_Team_Manager_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CRE Team Manager PowerBi Scorecard</label>
+        <sharedTo>
+            <group>CRE_Scorecard_Manager</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>CRE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Team Lead</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MM_Executive_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>MM Executive PowerBi Scorecard</label>
+        <sharedTo>
+            <group>MM_Scorecard_Executive</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>MM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Executive</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MM_Individual_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>MM Individual PowerBi Scorecard</label>
+        <sharedTo>
+            <group>MM_Scorecard_Individual</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>MM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Individual</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MM_Team_Manager_PowerBi_Scorecard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>MM Team Manager PowerBi Scorecard</label>
+        <sharedTo>
+            <group>MM_Scorecard_Manager</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Report_Category__c</field>
+            <operation>equals</operation>
+            <value>MM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Report_Level__c</field>
+            <operation>equals</operation>
+            <value>Team Lead</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

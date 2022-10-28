@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.WT_Actual_Close_Date__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.WT_Product_Partner_Name__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <description>Used by CRM Team to add Product Partner to TM Pipelines via case sensitive excel formula.  Formula structure =INDEX(C3:C8,MATCH(TRUE,EXACT(F2,B3:B8),0)) array formula requires ctrl+shift+enter</description>
+    <filter>
+        <booleanFilter>((2 AND 3) OR 4) AND 1</booleanFilter>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Product Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.WT_Actual_Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>10/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.WT_Actual_Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>4/30/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.WT_Actual_Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TM - Prod Partner Lookup</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

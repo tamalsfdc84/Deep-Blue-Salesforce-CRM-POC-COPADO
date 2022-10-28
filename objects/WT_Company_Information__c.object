@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom entity which is related to Business Accounts.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>WT_Information_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Information Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>History/Background Notes</fullName>
+                    <default>false</default>
+                    <label>History/Background Notes</label>
+                </value>
+                <value>
+                    <fullName>Niche Market Data Notes</fullName>
+                    <default>false</default>
+                    <label>Niche Market Data Notes</label>
+                </value>
+                <value>
+                    <fullName>Industry Notes</fullName>
+                    <default>false</default>
+                    <label>Industry Notes</label>
+                </value>
+                <value>
+                    <fullName>Customer Notes</fullName>
+                    <default>false</default>
+                    <label>Customer Notes</label>
+                </value>
+                <value>
+                    <fullName>Supplier Notes</fullName>
+                    <default>false</default>
+                    <label>Supplier Notes</label>
+                </value>
+                <value>
+                    <fullName>Building Ownership Notes</fullName>
+                    <default>false</default>
+                    <label>Building Ownership Notes</label>
+                </value>
+                <value>
+                    <fullName>Capital Expenditure Plan</fullName>
+                    <default>false</default>
+                    <label>Capital Expenditure Plan</label>
+                </value>
+                <value>
+                    <fullName>Succession Plan Notes</fullName>
+                    <default>false</default>
+                    <label>Succession Plan Notes</label>
+                </value>
+                <value>
+                    <fullName>Import Export Notes</fullName>
+                    <default>false</default>
+                    <label>Import Export Notes</label>
+                </value>
+                <value>
+                    <fullName>Current Issues</fullName>
+                    <default>false</default>
+                    <label>Current Issues</label>
+                </value>
+                <value>
+                    <fullName>Risks in Business</fullName>
+                    <default>false</default>
+                    <label>Risks in Business</label>
+                </value>
+                <value>
+                    <fullName>NFP Affiliations</fullName>
+                    <default>false</default>
+                    <label>NFP Affiliations</label>
+                </value>
+                <value>
+                    <fullName>Hobbies or Special Interests</fullName>
+                    <default>false</default>
+                    <label>Hobbies or Special Interests</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Notes__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>WT_Related_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related To</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.WT_Account_Record_Type__c</field>
+                <operation>contains</operation>
+                <value>Business Account</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Company Informations</relationshipLabel>
+        <relationshipName>Company_Informations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Company Information</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>WT_Information_Type__c</columns>
+        <columns>WT_Notes__c</columns>
+        <columns>WT_Related_To__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Note-{00000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Company Information</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Funds</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Commercial</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Read Only</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Technical Administrator</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Retail</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Business Administrator</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Wealth</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Case Only</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Mortgage</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>WT Referral</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>WT_Information_Type__c</fields>
+        <fields>WT_Notes__c</fields>
+        <fields>WT_Related_To__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

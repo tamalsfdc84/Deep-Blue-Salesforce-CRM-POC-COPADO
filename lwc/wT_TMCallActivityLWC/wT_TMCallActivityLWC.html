@@ -1,0 +1,343 @@
+<template >
+    <template if:true={displayTMCallLayout}>
+    <template if:true={showTMCallEditLayout}>
+        <lightning-card>
+                <lightning-record-edit-form object-api-name="WT_Activity_Extension__c" onsuccess={handleSuccess}>
+        
+                    <lightning-messages></lightning-messages>
+                               
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="TM Onboarding">TM Onboarding</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <!--lightning-input-field field-name="WT_14Day_TMOnboarding_Call__c"></lightning-input-field-->
+                                            <lightning-input-field field-name="WT_TM_Onboarding_Call__c" required="true" onchange={handleTMChange}></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Primary_Contact__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <!--lightning-input-field field-name="WT_Primary_Contact__c"></lightning-input-field-->
+                                            <lightning-input-field field-name="WT_TM_Onboarding_Due_Date__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="Marketing - WIIFM/C">Marketing - WIIFM/C</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-output-field field-name="WT_Primary_Objective_Call__c"></lightning-output-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <template if:true={display14DaySection}>   
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="14 Day Customer Feedback">14 Day Customer Feedback</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Doc_Timeline_Satisfact__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_How_Would_You_Rate_Training__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Easy_To_Use_Our_Digital_Products__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Did_You_Customize_DB_Views_Panels__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Favorite_Dashboard_Panel__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Do_We_Need_To_Improve_Upon__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Document_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Training_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Digital_Products_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Dashboard_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Did_We_Do_Really_Well__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        </template>
+                        <template if:true={display60DaySection}>  
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="60 Day Customer Feedback">60 Day Customer Feedback</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Are_Fees_Set_Up_Correctly__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Other_Products_Services_To_Discuss__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Any_Changes_Over_Last_60_Days__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Can_We_Improve_On__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Fees_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Account_Activity_As_Initially_Said__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Has_Improved_Since_We_Last_Spoke__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                </template>
+                        <div class="slds-align_absolute-center" style="height:5rem">               
+                                <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                                <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={handleCloseModal}></lightning-button>
+                        </div>  
+                </lightning-record-edit-form>
+            </lightning-card>
+   </template>
+
+   <!-- This section is displayed on edit -->
+   <template if:true={showTMCallViewLayout}>
+   <template if:true={showReadOnlySection}>
+    <lightning-card>
+        <lightning-record-view-form object-api-name="WT_Activity_Extension__c" record-id={activityExtId} 
+        layout-type="Full"  onsuccess={handleSuccess}>
+
+            <lightning-messages></lightning-messages>
+                       
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="TM Onboarding">TM Onboarding</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <!--lightning-input-field field-name="WT_14Day_TMOnboarding_Call__c"></lightning-input-field-->
+                                    <lightning-output-field field-name="WT_TM_Onboarding_Call__c"  onchange={handleTMChange}></lightning-output-field>
+                                    <lightning-output-field field-name="WT_Primary_Contact__c"></lightning-output-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <!--lightning-input-field field-name="WT_Primary_Contact__c"></lightning-input-field-->
+                                    <lightning-output-field field-name="WT_TM_Onboarding_Due_Date__c"></lightning-output-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Marketing - WIIFM/C">Marketing - WIIFM/C</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-output-field field-name="WT_Primary_Objective_Call__c"></lightning-output-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <template if:true={display14DaySectionEdit}>   
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="14 Day Customer Feedback">14 Day Customer Feedback</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-output-field style="float:left" field-name="WT_Doc_Timeline_Satisfact__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_How_Would_You_Rate_Training__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_Easy_To_Use_Our_Digital_Products__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_Did_You_Customize_DB_Views_Panels__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_Favorite_Dashboard_Panel__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_What_Do_We_Need_To_Improve_Upon__c"></lightning-output-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-output-field style="float:right" field-name="WT_Document_Comments__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_Training_Comments__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_Digital_Products_Comments__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_Dashboard_Comments__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_What_Did_We_Do_Really_Well__c"></lightning-output-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                </template>
+                <template if:true={display60DaySectionEdit}>  
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="60 Day Customer Feedback">60 Day Customer Feedback</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-output-field style="float:left" field-name="WT_Are_Fees_Set_Up_Correctly__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_Other_Products_Services_To_Discuss__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_Any_Changes_Over_Last_60_Days__c"></lightning-output-field>
+                                    <lightning-output-field style="float:left" field-name="WT_What_Can_We_Improve_On__c"></lightning-output-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-output-field style="float:right" field-name="WT_Fees_Comments__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_Account_Activity_As_Initially_Said__c"></lightning-output-field>
+                                    <lightning-output-field style="float:right" field-name="WT_What_Has_Improved_Since_We_Last_Spoke__c"></lightning-output-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </template>
+                <div class="slds-align_absolute-center" style="height:5rem">               
+                        <lightning-button class="slds-m-top_small" type="submit" label="Edit" onclick={handleUpdateModal} ></lightning-button>
+                        <!--lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={handleCloseModal}></lightning-button-->
+                </div>  
+        </lightning-record-view-form>
+    </lightning-card>
+</template>
+        <template if:true={showEditSection}>
+            <lightning-card>
+                <lightning-record-edit-form object-api-name="WT_Activity_Extension__c" record-id={activityExtId} 
+                layout-type="Full"  onsuccess={handleSuccess}>
+        
+                    <lightning-messages></lightning-messages>
+                               
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="TM Onboarding">TM Onboarding</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <!--lightning-input-field field-name="WT_14Day_TMOnboarding_Call__c"></lightning-input-field-->
+                                            <lightning-output-field field-name="WT_TM_Onboarding_Call__c"  onchange={handleTMChange}></lightning-output-field>
+                                            <lightning-input-field field-name="WT_Primary_Contact__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <!--lightning-input-field field-name="WT_Primary_Contact__c"></lightning-input-field-->
+                                            <lightning-input-field field-name="WT_TM_Onboarding_Due_Date__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="Marketing - WIIFM/C">Marketing - WIIFM/C</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-output-field field-name="WT_Primary_Objective_Call__c"></lightning-output-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <template if:true={display14DaySectionEdit}>   
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="14 Day Customer Feedback">14 Day Customer Feedback</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Doc_Timeline_Satisfact__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_How_Would_You_Rate_Training__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Easy_To_Use_Our_Digital_Products__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Did_You_Customize_DB_Views_Panels__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Favorite_Dashboard_Panel__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Do_We_Need_To_Improve_Upon__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Document_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Training_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Digital_Products_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Dashboard_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Did_We_Do_Really_Well__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        </template>
+                        <template if:true={display60DaySectionEdit}>  
+                        <div class="slds-section slds-is-open" >
+                            <h4 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="60 Day Customer Feedback">60 Day Customer Feedback</span>
+                            </h4>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Are_Fees_Set_Up_Correctly__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Other_Products_Services_To_Discuss__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Any_Changes_Over_Last_60_Days__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Can_We_Improve_On__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span>
+                                            <lightning-input-field field-name="WT_Fees_Comments__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_Account_Activity_As_Initially_Said__c"></lightning-input-field>
+                                            <lightning-input-field field-name="WT_What_Has_Improved_Since_We_Last_Spoke__c"></lightning-input-field>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                </template>
+                        <div class="slds-align_absolute-center" style="height:5rem">               
+                                <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                                <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={handleCloseModal}></lightning-button>
+                        </div>  
+                </lightning-record-edit-form>
+            </lightning-card>
+            <!--lightning-card title="TM Call Details">
+                    <lightning-layout>
+                        <lightning-layout-item>
+                            <lightning-record-form
+                                record-id={activityExtId}
+                                object-api-name="WT_Activity_Extension__c"
+                                layout-type="Full"
+                                columns="2"
+                                mode="view">
+                            </lightning-record-form>
+                        </lightning-layout-item>
+                    </lightning-layout>
+            </lightning-card-->
+    </template>
+   </template>
+    </template>
+    <template if:false={displayTMCallLayout}>
+        <h4 class="slds-section__title slds-theme_shade">
+            <span class="slds-truncate slds-p-horizontal_small" >Additional details tab is only available for TM Phone Call Tasks</span>
+        </h4>
+    </template>
+</template>

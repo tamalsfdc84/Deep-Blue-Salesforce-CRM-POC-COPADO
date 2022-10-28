@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>STARTED</fullName>
+        <default>false</default>
+        <label>Started</label>
+    </customValue>
+    <customValue>
+        <fullName>ABANDONED</fullName>
+        <default>false</default>
+        <label>Abandoned</label>
+    </customValue>
+    <customValue>
+        <fullName>SUBMITTED</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>RECOMMENDED</fullName>
+        <default>false</default>
+        <label>Recommended</label>
+    </customValue>
+    <customValue>
+        <fullName>ACCEPTED</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>DISMISSED</fullName>
+        <default>false</default>
+        <label>Dismissed</label>
+    </customValue>
+    <customValue>
+        <fullName>FULFILLED</fullName>
+        <default>false</default>
+        <label>Fulfilled</label>
+    </customValue>
+    <description>Enumerates the various status (or stages) of Financial Need. Useful for tracking the lifecycle of Financial Need Analysis.</description>
+    <masterLabel>FinancialNeedStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

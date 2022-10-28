@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configure REST handlers for different http paths to paths</description>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describe the purpose of the REST Handler</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Description</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the REST path is enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Path__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The relative path url for the REST</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Path</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RESTHandlerClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the apex class which extends RESTHandler</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>REST Handler Class</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ResourceUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The resource url for the REST</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Resource Url</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>REST Configuration</label>
+    <listViews>
+        <fullName>tffa__REST_Configuration</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__ResourceUrl__c</columns>
+        <columns>tffa__Path__c</columns>
+        <columns>tffa__RESTHandlerClass__c</columns>
+        <columns>tffa__Enabled__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>REST Configuration</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>REST Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

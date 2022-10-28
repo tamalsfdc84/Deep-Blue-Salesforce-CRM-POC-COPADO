@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Center Mulesoft</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Center Mulesoft</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>WT_Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>WT_Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Profile URL --></label>
+        <name>WT_Customer_Profile_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Acquirer Id --></label>
+        <name>WT_IDA_API_Acquirer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Client Id --></label>
+        <name>WT_IDA_API_Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Client Secret --></label>
+        <name>WT_IDA_API_Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Config Key --></label>
+        <name>WT_IDA_API_Config_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Customer Id --></label>
+        <name>WT_IDA_API_Customer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Decision URL --></label>
+        <name>WT_IDA_API_Decision_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Instance CD --></label>
+        <name>WT_IDA_API_Instance_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Product CD --></label>
+        <name>WT_IDA_API_Product_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Product Version --></label>
+        <name>WT_IDA_API_Product_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API Token URL --></label>
+        <name>WT_IDA_API_Token_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA API URL --></label>
+        <name>WT_IDA_API_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token URL --></label>
+        <name>WT_Token_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactions API Client Id --></label>
+        <name>WT_Transactions_API_Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactions API Client Secret --></label>
+        <name>WT_Transactions_API_Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactions API Token URL --></label>
+        <name>WT_Transactions_API_Token_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactions API URL --></label>
+        <name>WT_Transactions_API_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

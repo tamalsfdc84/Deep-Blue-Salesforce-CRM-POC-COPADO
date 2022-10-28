@@ -1,0 +1,19 @@
+<template> 
+    <lightning-card title={reportContainerTitle}>
+        <div class="slds-m-around_medium">            
+          <template if:true={report}>
+            <template if:true={report.error}>
+              <div>{report.error}</div>
+            </template>
+          </template>
+          <template if:false={report}>
+            <h3>Unable to load Relationship Planning Report. Please try again later.</h3>
+          </template>
+          <template if:true={report}>
+            <template if:true={report.embedUrl}>
+              <div data-id="embed-container" style="height: 800px;width:90%"></div>
+            </template>
+          </template>
+        </div>
+      </lightning-card>
+</template>

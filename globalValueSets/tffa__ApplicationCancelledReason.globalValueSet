@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BETTER_OFFER</fullName>
+        <default>false</default>
+        <label>Better Offer Available</label>
+    </customValue>
+    <customValue>
+        <fullName>INCOMPLETE_INFO</fullName>
+        <default>false</default>
+        <label>Incomplete Information Provided</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>A list of possible reasons for cancelling an application. Helps in standardizing reasons which can be later used in reporting. WILL BE DELETED.</description>
+    <masterLabel>ApplicationCancelledReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

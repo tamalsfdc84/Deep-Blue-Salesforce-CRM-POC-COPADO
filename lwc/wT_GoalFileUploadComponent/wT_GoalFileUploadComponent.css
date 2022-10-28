@@ -1,0 +1,22 @@
+.spinner-padding {
+    padding-top: 5%;
+  }
+.file-selector-image {
+    display: inline-flex;
+    align-items: center;
+    width: 500px;
+}
+.THIS .custom-background {
+  background-color: white;
+}
+.loadSpinner{
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.slds-file-selector__button {
+  display: inline-flex;
+  align-items: center;
+  width: 500px;
+}

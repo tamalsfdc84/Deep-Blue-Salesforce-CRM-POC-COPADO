@@ -1,0 +1,109 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="{!RelatedTo.Program__r.tffa__Title__c}" recipientType="User" relatedToType="tffa__ReferralCode__c">
+  <messaging:htmlEmailBody >
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{FinancialInstitutionName__c}</title>
+    <style type="text/css">
+        .im {
+           color: {BodyTextColour__c} !important;
+        }
+    </style>
+</head>
+<body spellcheck="none" style="padding: 0; margin: 0;background-color:{BodyBackgroundColour__c};">
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " border="0" align="center">
+    <tr>
+      <td width="563" align="center"  valign="top">
+          <table align="center" border="0" cellpadding="0" cellspacing="0"  style="width:800px;" width="800">
+          <tr>
+            <td colspan="7" height="30">
+            </td>               
+          </tr>
+          <tr>
+            <c:EmailHeader />
+              </tr>
+          <tr>
+            <td colspan="7" valign="top">               
+                <tr>
+                  <td width="20" height="170"></td>
+                  <td width="543" valign="top" >
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; width:800px;padding:4rem;color:{BodyTextColour__c};background-color:{CardBackgroundColour__c};" width="800">
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1rem; line-height:1.25rem;">
+                     Dear {!RelatedTo.ReferrerName__c},
+                              <p style="font-weight: bold;">
+                                <apex:outputPanel rendered="{!RelatedTo.tffa__NumberOfReferralsRequiredForNextReward__c>0}">
+                                  You are&nbsp;<apex:outputText value="{0, number, integer}"><apex:param value="{!RelatedTo.tffa__NumberOfReferralsRequiredForNextReward__c}"/></apex:outputText> referrals away from your {!IF(RelatedTo.tffa__NumberOfRewardsEarned__c>0,'next','first')} reward!
+                                </apex:outputPanel>                                                             
+                              </p>
+                              <p>We just wanted to remind you that you can - {!RelatedTo.Program__r.ReferrerRewardDescription__c }</p>
+                              <p>
+                                Offer expires on:&nbsp;
+                                <apex:outputText value="{0, date, MM'/'dd'/'yyyy}" style="font-weight: bold;">
+                                  <apex:param value="{!RelatedTo.Program__r.tffa__EndDate__c}" />
+                                </apex:outputText>
+                              </p>
+                              <p style="font-weight: bold;">To get started just copy and send this message</p>
+                              <p style="padding: 0.5rem;border: 1px dashed;user-select: all!important;">
+                                {!RelatedTo.Program__r.ShareLinkText__c}&nbsp;{!URLFOR(RelatedTo.Url__c, null, [utm_medium='share_link'])}
+                              </p>
+                              <apex:outputPanel layout="block" rendered="{!RelatedTo.Program__r.tffa__InfoUrl__c!=null}">
+                                Check out our referral program&nbsp;<apex:outputLink value="{!URLFOR(RelatedTo.Program__r.tffa__InfoUrl__c, null, [utm_medium='email'])}">T&amp;Cs here</apex:outputLink> along with other frequently asked questions.
+                              </apex:outputPanel>
+                              <p> If there is anything we can do to help, please give us a call at <a href="tel:{ContactPhone__c}">{ContactPhone__c}</a> or email us at <a href="mailto:{ContactEmail__c}">{ContactEmail__c}</a>.
+                              </p>
+                              <p>At {FinancialInstitutionName__c}, we strive to make banking as convenient as possible for you. We provide personal
+                              service and account features to help simplify your life. For more information on our various
+                              accounts and to find out which one is right for you, visit
+                              <a href="{InfoUrl__c}">{InfoUrl__c}</a>.
+                              </p>
+                              <br/>
+                              <br/>Welcome to better banking.
+                              <br/>
+                              <br/> Best regards,
+                              <br/>
+                              <br/>Banking Solutions Center
+                              <br/>
+                              <br/>
+                              <br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                     
+                    </table>
+                  </td>
+                </tr>                
+            </td>
+          </tr>
+          <tr>
+          <c:EmailFooter >
+            <apex:outputPanel layout="block" rendered="{!RelatedTo.tffa__UnsubscribeUrl__c!=null}">
+            You're receiving this email because you have been subscribed to {!RelatedTo.Program__r.Name}. If you do not wish to receive further communication like this, please&nbsp;<apex:outputLink value="{!URLFOR(RelatedTo.tffa__UnsubscribeUrl__c, null, [utm_medium='email'])}">unsubscribe here</apex:outputLink>.
+            </apex:outputPanel>
+          </c:EmailFooter>
+          </tr>
+          <tr>
+            <td colspan="7" height="10"></td>
+          </tr>            
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FINANCE_PROGRAM</fullName>
+        <default>false</default>
+        <label>Mortgage loan will finance energy-related improvements</label>
+    </customValue>
+    <customValue>
+        <fullName>EXISTING_PROGRAM</fullName>
+        <default>false</default>
+        <label>Property is currently subject to a lien that could take priority over the first mortgage lien,such as a clean energy lien paid for through property taxes</label>
+    </customValue>
+    <description>Options for energy-related improvements program</description>
+    <masterLabel>EnergyImprovementIndicator</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

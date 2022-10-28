@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Stage History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OpportunityStageHistories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>WT_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CloseDate --></label>
+        <name>WT_CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityId --></label>
+        <name>WT_OpportunityId__c</name>
+        <relationshipLabel><!-- OpportunityStageHistories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Probability --></label>
+        <name>WT_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- StageName --></label>
+        <name>WT_StageName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Opportunity Id is a mandatory field!!! --></errorMessage>
+        <name>WT_Opportunity_Id_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

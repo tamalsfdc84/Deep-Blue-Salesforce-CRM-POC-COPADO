@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,lightning:isUrlAddressable" >
+	<c:wT_BlockedUserAutoProvision></c:wT_BlockedUserAutoProvision>
+</aura:component>

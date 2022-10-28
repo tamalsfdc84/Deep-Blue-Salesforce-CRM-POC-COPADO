@@ -1,0 +1,174 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Your Crypto Purchase order is executed successfully" recipientType="User" relatedToType="tffa__Party__c">
+  <messaging:htmlEmailBody >
+   <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{FinancialInstitutionName__c}</title>
+    <style type="text/css">
+        .im {
+           color: {BodyTextColour__c} !important;
+        }
+    </style>
+</head>
+<body spellcheck="none" style="padding: 0; margin: 0;background-color:{BodyBackgroundColour__c};">
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " border="0" align="center">
+    <tr>
+      <td width="563" align="center"  valign="top">
+          <table align="center" border="0" cellpadding="0" cellspacing="0"  style="width:800px;" width="800">
+          <tr>
+            <td colspan="7" height="30">
+            </td>               
+          </tr>
+          <tr>
+            <c:EmailHeader />
+              </tr>
+          <tr>
+            <td colspan="7" valign="top">               
+                <tr>
+                  <td width="20" height="170"></td>
+                  <td width="543" valign="top" >
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; width:800px;padding:4rem;color:{BodyTextColour__c};background-color:{CardBackgroundColour__c};" width="800">
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1rem; line-height:1.25rem;">
+                      Dear {!RelatedTo.Name},
+                              <br/>
+                              <br/>Your Crypto Purchase order is executed successfully. We appreciate the opportunity to serve your
+                              financial needs, and we look forward to providing you with service beyond expectations.
+                              <br/>
+                              <br/>
+                              <p>Your order details are - </p>
+                              <table cellpadding="3" cellspacing="2" style="border: thin solid #FFFFFF; font-size: 16px;">
+                                <tr>
+                                  <td style="background-color: #dde0eb; color: #080808; font-weight: bold;">
+                                    Name
+                                    </td>
+                                  <td style="background-color: #dde0eb; color: #080808; font-weight: bold;">
+                                    {!RelatedTo.Name}
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Total Amount
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {totalAmount}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    BTC Units
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {cryptoUnits}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    BTC Price
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {cryptoPrice}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Purchase Amount
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {purchaseAmount}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Fees
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {fees}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Total
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {totalAmount}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Transaction Id
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {transactionId}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    Transaction Date
+                                  </td>
+                                  <td style="background-color: #fafafc; color: #080808;">
+                                    {transactionDate}
+                                  </td>
+                                </tr>
+                              </table>
+                              <br/>
+                              <br/>This receipt is provided by either {cryptoCustodian} Trust Company LLC or {cryptoCustodian} Execution LLC. See the Terms and Conditions for details on which entity is providing the services. <apex:outputLink value="{SubmissionTrackerPath__c}" id="cryptoServiceProviderURL"> See Terms </apex:outputLink>.
+                              <br/>
+                              <br/>510 Madison Avenue, 21st Floor, New York,NY 10022
+                              <br/>
+                              <br/>{cryptoCustodian} will be responsible for non-delivery or delayed delivery in limited circumstances. Please see terms and conditions. Once you accept this transaction, you may not cancel itor ask for a refund.
+                              <br/>
+                              <br/>To view the status of your application, please
+                              <apex:outputLink value="{SubmissionTrackerPath__c}" id="tracker"> click here</apex:outputLink>.
+                              <br/>
+                              <br/>
+                              <br/>
+                              <br/>At times, we may need to get further verification of your information. If necessary, a {FinancialInstitutionName__c}
+                              employee may contact you at the telephone number we have on file. If you have any questions,
+                              or did not submit this application, please call us at {ContactPhone__c}.
+                              <br/>
+                              <br/>Welcome to better banking.
+                              <br/>
+                              <br/> Best regards,
+                              <br/>
+                              <br/>Banking Solutions Center
+                              <br/>
+                              <br/>
+                              <br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                     
+                    </table>
+                  </td>
+                </tr>                
+            </td>
+          </tr>
+          <tr>
+          <c:EmailFooter />
+          </tr>
+          <tr>
+            <td colspan="7" height="10"></td>
+          </tr>            
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

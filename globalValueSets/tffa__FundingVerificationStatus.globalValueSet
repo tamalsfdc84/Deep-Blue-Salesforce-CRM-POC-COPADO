@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PENDING_AUTOMATIC_VERIFICATION</fullName>
+        <default>false</default>
+        <label>Pending Automatic Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>PENDING_MANUAL_VERIFICATION</fullName>
+        <default>false</default>
+        <label>Pending Manual Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTOMATICALLY_VERIFIED</fullName>
+        <default>false</default>
+        <label>Automatically Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>MANUALLY_VERIFIED</fullName>
+        <default>false</default>
+        <label>Manually Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>VERIFICATION_EXPIRED</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>FAILED</fullName>
+        <default>false</default>
+        <label>Verification Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>VERIFIED</fullName>
+        <default>true</default>
+        <label>Verified</label>
+    </customValue>
+    <description>Verification Status of funding</description>
+    <masterLabel>FundingVerificationStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

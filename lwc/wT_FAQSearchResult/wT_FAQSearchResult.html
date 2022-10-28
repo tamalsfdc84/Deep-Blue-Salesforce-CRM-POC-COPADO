@@ -1,0 +1,45 @@
+<template>
+    <div class="faq__searchResult">
+        <template if:false={isLoading}>
+            <div class="faq__searchResult__head">
+                <div class="faq__searchResult__head__helpcenter">
+                    <a  href="/s/" class="faq__searchResult__helpCenter ">
+                        <div>
+                            <div class="navArrow left"></div>
+                        </div>
+                        <p>Help Center</p>                    
+                    </a>
+                    <div class="faq__searchResult__pageInfo__mobile">
+                        <div class="faq__searchResult__pageInfo--row">Your search matched<p class="faq__searchResult__pageInfo--blue">&#160;{totalPages} Pages.</p></div> 
+                        <div class="faq__searchResult__pageInfo--row">All results,<p class="faq__searchResult__pageInfo--blue">&nbsp;Page {currentPage} of {totalPages}</p></div>
+                    </div>
+                </div>
+                <div class="faq__searchResult__headBottom">
+                    <div class="faq__searchResult__title">Search Results</div>
+                    <div class="faq__searchResult__pageInfo__desktop">
+                        <div class="faq__searchResult__pageInfo--row">Your search matched<p class="faq__searchResult__pageInfo--blue">&#160;{totalPages} Pages.</p></div> 
+                        <div class="faq__searchResult__pageInfo--row">All results,<p class="faq__searchResult__pageInfo--blue">&nbsp;Page {currentPage} of {totalPages}</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__searchResult__searchBody">
+                <template for:each={visibleListSearchResult} for:item="result">
+                    <div class="searchResult" key={result.ArticleTitle}>
+                        <div class="searchResult__path">
+                            <a>{result.ArticleCategoryName}</a>
+                        </div>
+                        <div class="searchResult__name"><a href={result.RedirectUrl}>{result.ArticleTitle}</a></div>
+                        <div class="searchResult__description">{result.ArticleAnswer}</div>
+                    </div>
+                </template>
+                <div slot="footer" class="slds-var-m-vertical_medium">
+                    <c-w-t-_-f-a-q-search-pagination records={listSearchResult} onupdate={updateSearchHandler}>
+                    </c-w-t-_-f-a-q-search-pagination>
+                </div>
+            </div>
+        </template>
+        <template if:true={isLoading}>
+            <lightning-spinner variant="brand" alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+    </div>
+</template>

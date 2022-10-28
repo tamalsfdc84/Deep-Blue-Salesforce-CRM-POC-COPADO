@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity In Processing Notification</name>
+    <style>none</style>
+    <subject>Opportunity Sent For Processing</subject>
+    <textOnly>The following opportunity has been assigned to you.  
+
+Opportunity Name: {!Opportunity.Name} 
+Submitted By: {!Opportunity.OwnerFullName} 
+Product: {!Opportunity.WT_Product__r}  
+
+You can view the details of this opportunity using the link below: {!Opportunity.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

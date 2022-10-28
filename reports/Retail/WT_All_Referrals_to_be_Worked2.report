@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__RelatedAccount__c</field>
+    </columns>
+    <columns>
+        <field>Lead.WT_Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__ReferredByUser__c</field>
+    </columns>
+    <columns>
+        <field>Lead.FinServ__ExpressedInterest__c</field>
+    </columns>
+    <columns>
+        <field>Lead.WT_Referred_To__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <description>All of my referrals to be worked.</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead.WT_Created_To_Me__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New - Not Contacted,New - Overdue,Working - Contacted</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All Referrals to be Worked</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

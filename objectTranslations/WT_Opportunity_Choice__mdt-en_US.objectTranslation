@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Choice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Choices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Value Order --></label>
+        <name>Value_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice Value --></label>
+        <name>WT_Choice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>WT_Field_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

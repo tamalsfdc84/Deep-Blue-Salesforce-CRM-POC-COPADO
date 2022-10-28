@@ -1,0 +1,191 @@
+<template>
+    <lightning-card title="Goal Settings for Employee" icon-name="standard:goals" variant="Narrow">
+    <div if:true={errorMsg} style="margin-left: 3%;">
+        <p style="color: red;">{errorMsg}</p>
+    </div>
+    <lightning-accordion allow-multiple-sections-open="true" active-section-name={activeSections} onsectiontoggle={handleToggleSection}>
+        <lightning-accordion-section name="GoalMetricDetails" label="Goal Metric Details">
+            <lightning-layout horizontal-align="spread">
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" label="Name" required= "true" value={goalMetricName} onchange={handleGoalNameChange} variant="label-stacked" ></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <lightning-combobox
+                        name="MetricType"
+                        label="Metric Type"
+                        required="true"
+                        value={goalMetricType}
+                        placeholder="Select Metric Type"
+                        options={metricTypeOptions}
+                        onchange={handleMetricTypeChange}
+                        class="lightningComboBox"
+                        variant="label-stacked"
+                        >
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <lightning-combobox
+                        name="CRMObject"
+                        label="SF Object"
+                        required = "true"
+                        value={value}
+                        placeholder="Select Object"
+                        options={objectOptions}
+                        onchange={handleObjChange}
+                        class="lightningComboBox"
+                        variant="label-stacked"
+                        >                    
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="4">
+                    <template if:true={shouldShowFieldToSum}>
+                        <div>
+                            <lightning-combobox
+                            name="CRMSumField"
+                            label="Field To Sum"
+                            required={isSumFieldRequired}
+                            value={value}
+                            placeholder="Select Field To Sum"
+                            options={fieldToSumOptions}
+                            onchange={handleFieldToSumChanged}
+                            class="lightningComboBox"
+                            variant="label-stacked"
+                            >                    
+                        </lightning-combobox>
+                        </div>
+                    </template>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-accordion-section>
+        <lightning-accordion-section name="GoalCriteriaSection" label="Goal Criteria Section">
+        <template for:each={itemList} for:item="item" for:index="index">
+            <lightning-record-edit-form key={item.id} object-api-name="WT_Goal_Metric__c">
+                <lightning-layout multiple-rows class="goalCriteria">
+                    <lightning-layout-item size="4">
+                        <lightning-combobox
+                            key={item.id}
+                            name="CRMField"
+                            label="SF Field"
+                            required = "true"
+                            value={item.fieldSelected}
+                            data-id="fieldId"
+                            placeholder="Select Field"
+                            options={objectFieldsList}
+                            onchange={handleFieldChange}
+                            class="lightningComboBox"
+                            variant="label-stacked">
+                        </lightning-combobox>
+                    </lightning-layout-item>        
+                    <lightning-layout-item size="1">
+                        <lightning-combobox
+                            key={item.id}
+                            name="operatorList"
+                            label="Operator"
+                            required = "true"
+                            value={item.operatorValue}
+                            data-id="operatorId"
+                            placeholder="Select Operator"
+                            options={opertorOptions}
+                            onchange={handleOptChange}
+                            class="lightningComboBox"
+                            variant="label-stacked"
+                            >
+                        </lightning-combobox>
+                    </lightning-layout-item>        
+                    <lightning-layout-item size="4">                                            
+                        <lightning-input type="text" name = "value" label="Value" key={item.id}  value={item.inputValue}  data-id="valueId" onchange={handleInputChange}  class="lightningComboBox" variant="label-stacked" ></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="1">
+                        <div class="action-icon-padding-top">
+                            <lightning-button-icon icon-name="action:new" alternative-text="Add Row" title="Add Row" access-key={item.id} id={index} onclick={addRow}></lightning-button-icon>
+                            <lightning-button-icon icon-name="action:delete" alternative-text="Delete Row" title="Delete Row" access-key={item.id} id={index} onclick={removeRow}></lightning-button-icon>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-record-edit-form>
+        </template>
+        <br>
+        <lightning-layout horizontal-align="spread">
+            <lightning-layout-item size="4">
+                <lightning-input type="text" label="Actual Result Criteria Logic" value={combinationValue} onchange={handleCombinationChange} variant="label-stacked" ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="4">
+                <lightning-input type="text" label="Actual Result Date Field" value={dateFieldValue} onchange={handleDateFieldChange} variant="label-stacked" ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="4">                
+            </lightning-layout-item>
+        </lightning-layout>
+        </lightning-accordion-section>
+    </lightning-accordion>
+    </br>
+    
+    <lightning-accordion allow-multiple-sections-open="true" active-section-name={activeSections} onsectiontoggle={handleToggleSection}>        
+        <lightning-accordion-section name="InProgressCriteriaSection" label="In Progress Criteria Section">
+            <template for:each={itemList} for:item="item" for:index="index">
+            <lightning-record-edit-form key={item.id} object-api-name="WT_Goal_Metric__c">
+                <lightning-layout multiple-rows class="inProgressCriteria">                    
+                    <lightning-layout-item size="4">
+                        <lightning-combobox
+                            key={item.id}
+                            name="CRMField"
+                            label="SF Field"
+                            required = "true"
+                            value={item.fieldSelected}
+                            data-id="ipFieldId"
+                            placeholder="Select Field"
+                            options={objectFieldsList}
+                            onchange={handleInProgressFdChange}
+                            class="lightningComboBox"
+                            variant="label-stacked" >
+                        </lightning-combobox>
+                    </lightning-layout-item>        
+                    <lightning-layout-item size="1">
+                        <lightning-combobox
+                            key={item.id}
+                            name="operatorList"
+                            label="Operator"
+                            required = "true"
+                            value={item.operatorValue}
+                            data-id="ipOperatorId"
+                            placeholder="Select Operator"
+                            options={opertorOptions}
+                            onchange={handleInprogressOptChange}
+                            class="lightningComboBox"
+                            variant="label-stacked">
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="4">
+                        <lightning-input type="text" name="value" label="Value" key={item.id}  value={item.inputValue} data-id="ipValueId" onchange={handleInProgressInpValChg}  class="lightningComboBox" variant="label-stacked" ></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="1">
+                    <div class="slds-p-top_medium">
+                        <lightning-button-icon icon-name="action:new" alternative-text="Add Row" title="Add Row" access-key={item.id} id={index} onclick={addRow}></lightning-button-icon>
+                        <lightning-button-icon icon-name="action:delete" alternative-text="Delete Row" title="Delete Row" access-key={item.id} id={index} onclick={removeRow}></lightning-button-icon>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            </lightning-record-edit-form>
+            </template>
+            <lightning-layout>
+                <lightning-layout-item size="6">
+                    <lightning-input type="text" label="In Progress Criteria Logic" value={inprogressValue} onchange={handleInprogresChange} variant="label-stacked" ></lightning-input>
+                </lightning-layout-item>
+                </lightning-layout>
+                <lightning-layout>
+                <lightning-layout-item size="6">
+                    <lightning-input type="text" label="In Progress Date Field" value={inprogressdateValue} onchange={handleInprogressDateChange} variant="label-stacked" ></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-accordion-section>        
+    </lightning-accordion>
+    </br>
+    <lightning-layout>
+        <div class="slds-align_absolute-center">
+            <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToMainPage}></lightning-button> 
+                &nbsp;&nbsp;&nbsp;
+            <lightning-button class="slds-m-top_small" variant="brand" type="button" onclick={handleSubmit} name="submit" label="Add/Save">
+            </lightning-button>
+        </div>
+    </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NONE</fullName>
+        <default>false</default>
+        <label>none</label>
+    </customValue>
+    <customValue>
+        <fullName>SINGLE_FAMILY</fullName>
+        <default>false</default>
+        <label>single family</label>
+    </customValue>
+    <customValue>
+        <fullName>CONDOMINIUM</fullName>
+        <default>false</default>
+        <label>condominium</label>
+    </customValue>
+    <customValue>
+        <fullName>TOWNHOUSE</fullName>
+        <default>false</default>
+        <label>townhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>2_4_UNITS</fullName>
+        <default>false</default>
+        <label>2-4 units</label>
+    </customValue>
+    <customValue>
+        <fullName>MULTI_FAMILY</fullName>
+        <default>false</default>
+        <label>Multi-Family</label>
+    </customValue>
+    <customValue>
+        <fullName>MOBILE_HOME</fullName>
+        <default>false</default>
+        <label>Mobile Home</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCIAL</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>HOME_AND_BUSINESS_COMBINED</fullName>
+        <default>false</default>
+        <label>Home and Business Combined</label>
+    </customValue>
+    <customValue>
+        <fullName>MIXED</fullName>
+        <default>false</default>
+        <label>Mixed</label>
+    </customValue>
+    <customValue>
+        <fullName>FARM</fullName>
+        <default>false</default>
+        <label>Farm</label>
+    </customValue>
+    <customValue>
+        <fullName>LAND</fullName>
+        <default>false</default>
+        <label>Land</label>
+    </customValue>
+    <description>Display real estate property types</description>
+    <masterLabel>RealEstatePropertyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

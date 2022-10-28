@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PERSONAL</fullName>
+        <default>false</default>
+        <label>Personal</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCIAL</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <description>Indicates the usage type of the vehicle being purchased or refinanced</description>
+    <masterLabel>VehicleUsageType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

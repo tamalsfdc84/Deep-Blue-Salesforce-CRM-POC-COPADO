@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account purpose (set) --></label>
+        <name>tffa__AccountPurposeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum allowed --></label>
+        <name>tffa__MaximumAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type (set) --></label>
+        <name>tffa__OrganizationTypeSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;TRUSTEE;CEO; --></help>
+        <label><!-- Party relation code set --></label>
+        <name>tffa__PartyRelationCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Product code (set) --></label>
+        <name>tffa__ProductCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>tffa__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>tffa__Role__c</name>
+        <relationshipLabel><!-- Role Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Applicant Role Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Facts --></label>
+            <section>Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Outcomes --></label>
+            <section>Outcomes</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

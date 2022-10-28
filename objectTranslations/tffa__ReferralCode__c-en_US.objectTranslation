@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent User --></label>
+        <name>tffa__AgentUser__c</name>
+        <relationshipLabel><!-- Referral Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agent --></label>
+        <name>tffa__Agent__c</name>
+        <relationshipLabel><!-- Referral Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>tffa__BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tffa__Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exhausted --></label>
+        <name>tffa__Exhausted__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Party ID --></label>
+        <name>tffa__ExternalPartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Related to Current User --></label>
+        <name>tffa__IsRelatedToCurrentUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last reminded on --></label>
+        <name>tffa__LastRemindedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last synced on --></label>
+        <name>tffa__LastSyncedOn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of referrals that can be submitted using the referral code. Configured in referral program. --></help>
+        <label><!-- Maximum number of Referrals --></label>
+        <name>tffa__MaxNumberOfReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Converted Referrals --></label>
+        <name>tffa__NumberOfConvertedReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Declined Referrals --></label>
+        <name>tffa__NumberOfDeclinedReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Open Referrals --></label>
+        <name>tffa__NumberOfOpenReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrals required for next reward --></label>
+        <name>tffa__NumberOfReferralsRequiredForNextReward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of referrals rewarded --></label>
+        <name>tffa__NumberOfReferralsRewarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals --></label>
+        <name>tffa__NumberOfReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred Visitors --></label>
+        <name>tffa__NumberOfReferredVisitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of rewards earned --></label>
+        <name>tffa__NumberOfRewardsEarned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- Referrers --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Sync --></label>
+        <name>tffa__OutOfSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <lookupFilter>
+            <errorMessage><!-- Party must be an individual --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Referral Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program Code --></label>
+        <name>tffa__ProgramCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <lookupFilter>
+            <errorMessage><!-- Referral program is not active --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Program__c</name>
+        <relationshipLabel><!-- Referral Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- QR Code Url --></label>
+        <name>tffa__QRCodeUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer email --></label>
+        <name>tffa__ReferrerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer Name --></label>
+        <name>tffa__ReferrerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder count --></label>
+        <name>tffa__ReminderCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder date --></label>
+        <name>tffa__ReminderDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Referral program --></help>
+        <label><!-- Reminder schedule --></label>
+        <name>tffa__ReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share link text --></label>
+        <name>tffa__ShareLinkText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share link title --></label>
+        <name>tffa__ShareLinkTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share links --></label>
+        <name>tffa__ShareLinks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing options --></label>
+        <name>tffa__SharingOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync pending on --></label>
+        <name>tffa__SyncPendingOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total reward credits earned --></label>
+        <name>tffa__TotalRewardCreditsEarned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total reward points earned --></label>
+        <name>tffa__TotalRewardPointsEarned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribe url --></label>
+        <name>tffa__UnsubscribeUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Url --></label>
+        <name>tffa__Url__c</name>
+    </fields>
+    <layouts>
+        <layout>Referral Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Limit Details --></label>
+            <section>Limit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+        <sections>
+            <label><!-- Referrer Details --></label>
+            <section>Referrer Details</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Number of referral exceeds the maximum limit set in the referral program --></errorMessage>
+        <name>tffa__MaxNumberOfReferrals</name>
+    </validationRules>
+</CustomObjectTranslation>

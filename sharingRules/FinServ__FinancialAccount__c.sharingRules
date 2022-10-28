@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Financial_Account_Sharing_Rule_Banking</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Financial Account Sharing Rule - Banking</label>
+        <sharedTo>
+            <roleAndSubordinates>Banking</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Banking</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Financial_Account_Sharing_Rule_Case_Management</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Financial Account Sharing Rule -Case Management</label>
+        <sharedTo>
+            <roleAndSubordinates>Case_Management</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Case_Management</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>WT_Operations_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Operations Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>Small_Business_Operations</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Banking</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SOLE_PROPRIETORSHIP</fullName>
+        <default>false</default>
+        <label>Sole Proprietorship</label>
+    </customValue>
+    <customValue>
+        <fullName>CORPORATION</fullName>
+        <default>false</default>
+        <label>Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>CORPORATION_SOLE</fullName>
+        <default>false</default>
+        <label>S Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>General Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>SINGLE_MEMBER_LLC</fullName>
+        <default>false</default>
+        <label>Single Member LLC</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVERNMENT_ENTITY</fullName>
+        <default>false</default>
+        <label>Government Entity</label>
+    </customValue>
+    <customValue>
+        <fullName>NON_PROFIT_CORPORATION</fullName>
+        <default>false</default>
+        <label>Non-Profit Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>Limited Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_LIABILITY_COMPANY</fullName>
+        <default>false</default>
+        <label>Limited Liability Company</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_LIABILITY_PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>Limited Liability Partnership (LLP)</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>TRUST</fullName>
+        <default>false</default>
+        <label>Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>ESTATE</fullName>
+        <default>false</default>
+        <label>Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>JOINT_VENTURE</fullName>
+        <default>false</default>
+        <label>Joint Venture</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_LIABILITY_LIMITED_PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>Limited Liability Limited Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>CCORPORATION</fullName>
+        <default>false</default>
+        <label>C-Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_LIABILITY_SCORP</fullName>
+        <default>false</default>
+        <label>Limited Liability S-Corp</label>
+    </customValue>
+    <customValue>
+        <fullName>THIRDPARTY</fullName>
+        <default>false</default>
+        <label>ThirdParty</label>
+    </customValue>
+    <customValue>
+        <fullName>NON_PROFIT_UNINCORPORATED</fullName>
+        <default>false</default>
+        <label>Non profit un-incorporated</label>
+    </customValue>
+    <customValue>
+        <fullName>LODGE</fullName>
+        <default>false</default>
+        <label>Lodge</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSOCIATION</fullName>
+        <default>false</default>
+        <label>Association</label>
+    </customValue>
+    <customValue>
+        <fullName>FINANCIAL_INSTITUTION</fullName>
+        <default>false</default>
+        <label>Financial Institution</label>
+    </customValue>
+    <customValue>
+        <fullName>FINANCIAL_MARKET_UTILITY</fullName>
+        <default>false</default>
+        <label>Financial Market Utility</label>
+    </customValue>
+    <description>Type of Organization. This governs the structure of the business.</description>
+    <masterLabel>OrganizationType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

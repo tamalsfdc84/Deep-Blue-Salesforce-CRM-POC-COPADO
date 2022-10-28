@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INITIALIZED</fullName>
+        <default>true</default>
+        <label>Initialized</label>
+    </customValue>
+    <customValue>
+        <fullName>PROCESSING</fullName>
+        <default>false</default>
+        <label>Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>FAILED</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLETED</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <description>Status of deposit switch</description>
+    <masterLabel>DepositSwitchStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CDD Facts --></label>
+        <name>tffa__CDDFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Declaration Facts --></label>
+        <name>tffa__DeclarationFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Eligibility Facts --></label>
+        <name>tffa__EligibilityFacts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expected Activity Facts --></label>
+        <name>tffa__ExpectedActivityFacts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Channel (DEPRECATED) --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type (DEPRECATED) --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event name (DEPRECATED) --></label>
+        <name>tffa__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input style class --></label>
+        <name>tffa__InputStyleClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label style class --></label>
+        <name>tffa__LabelStyleClass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party role (DEPRECATED) --></label>
+        <name>tffa__PartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party type (DEPRECATED) --></label>
+        <name>tffa__PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (DEPRECATED) --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product (DEPRECATED) --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product not valid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Questionnaires --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Questionnaire Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Style --></label>
+            <section>Style</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone with Related --></label>
+        <name>tffa__CloneWithRelated</name>
+    </quickActions>
+</CustomObjectTranslation>

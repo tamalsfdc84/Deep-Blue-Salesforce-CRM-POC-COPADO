@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Will contain configuration for web fraud event logging</description>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the event config is enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RateThresholdPeriod__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the period of time after which rate threshold will be checked before sending notifications.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>It is the period of time after which rate threshold will be checked before sending notifications.</inlineHelpText>
+        <label>Rate threshold period in minutes</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RateThreshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>It is the rate threshold of fraud events per minute after which system alerts will be raised.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>It is the rate threshold of fraud events per minute after which system alerts will be raised.</inlineHelpText>
+        <label>Rate threshold per minute</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__RetentionPeriod__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the period of time after which event logs will be purged from the system.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Event logs older than this period will be purged from the system.</inlineHelpText>
+        <label>Log retention period in days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Web Fraud Event Configuration</label>
+    <pluralLabel>WebFraudEventConfigurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

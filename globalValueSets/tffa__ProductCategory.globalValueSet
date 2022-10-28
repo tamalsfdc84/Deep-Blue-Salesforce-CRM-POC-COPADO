@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CHECKING</fullName>
+        <default>false</default>
+        <label>Checking</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVINGS</fullName>
+        <default>false</default>
+        <label>Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>CERTIFICATE</fullName>
+        <default>false</default>
+        <label>Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>PERSONAL_LOAN</fullName>
+        <default>false</default>
+        <label>Personal loan</label>
+    </customValue>
+    <customValue>
+        <fullName>PERSONAL_LINE_OF_CREDIT</fullName>
+        <default>false</default>
+        <label>Personal Line of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_CARD</fullName>
+        <default>false</default>
+        <label>Credit card</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE</fullName>
+        <default>false</default>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>VEHICLE_LOAN</fullName>
+        <default>false</default>
+        <label>Vehicle loan</label>
+    </customValue>
+    <customValue>
+        <fullName>EDUCATION_LOAN</fullName>
+        <default>false</default>
+        <label>Student loan</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_CHECKING</fullName>
+        <default>false</default>
+        <label>Business Checking</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_SAVINGS</fullName>
+        <default>false</default>
+        <label>Business Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_CERTIFICATE</fullName>
+        <default>false</default>
+        <label>Business Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_TERM_LOAN</fullName>
+        <default>false</default>
+        <label>Business Term Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_LINE_OF_CREDIT</fullName>
+        <default>false</default>
+        <label>Business Line of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_REALESTATE_LOAN</fullName>
+        <default>false</default>
+        <label>Business Real Estate Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_CREDIT_CARD</fullName>
+        <default>false</default>
+        <label>Business Credit Card</label>
+    </customValue>
+    <customValue>
+        <fullName>HELOC</fullName>
+        <default>false</default>
+        <label>Home Equity Line of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>IRA</fullName>
+        <default>false</default>
+        <label>Individual Retirement Account</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_IRA</fullName>
+        <default>false</default>
+        <label>Business Retirement Account</label>
+    </customValue>
+    <customValue>
+        <fullName>ESA</fullName>
+        <default>false</default>
+        <label>Education Savings Account</label>
+    </customValue>
+    <customValue>
+        <fullName>HSA</fullName>
+        <default>false</default>
+        <label>Health Savings Account</label>
+    </customValue>
+    <customValue>
+        <fullName>SBA_LOAN</fullName>
+        <default>false</default>
+        <label>SBA Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>SAFE_DEPOSIT_BOX</fullName>
+        <default>false</default>
+        <label>Safe Deposit Box</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_SAFE_DEPOSIT_BOX</fullName>
+        <default>false</default>
+        <label>Business Safe Deposit Box</label>
+    </customValue>
+    <customValue>
+        <fullName>MERCHANT_SERVICES</fullName>
+        <default>false</default>
+        <label>Merchant Services</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKERAGE</fullName>
+        <default>false</default>
+        <label>Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>CRYPTO_CUSTODIAL</fullName>
+        <default>false</default>
+        <label>Crypto Custodial</label>
+    </customValue>
+    <customValue>
+        <fullName>MONEY_MARKET</fullName>
+        <default>false</default>
+        <label>Money Market</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_MONEY_MARKET</fullName>
+        <default>false</default>
+        <label>Business Money Market</label>
+    </customValue>
+    <description>Different product category  supported by system.
+This classifies the flow of account opening , the underlying data model and the servicing components about an account.</description>
+    <masterLabel>ProductCategory</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

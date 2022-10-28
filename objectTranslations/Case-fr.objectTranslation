@@ -1,0 +1,3139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Household Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account/ Ref # ( If not in CRM) --></label>
+        <name>WT_Account_Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>WT_Action_ListView__c</name>
+        <picklistValues>
+            <masterLabel>401k</masterLabel>
+            <translation><!-- 401k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Management</masterLabel>
+            <translation><!-- Access Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access/Reset</masterLabel>
+            <translation><!-- Access/Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accommodation</masterLabel>
+            <translation><!-- Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Payable</masterLabel>
+            <translation><!-- Accounts Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Badge Access</masterLabel>
+            <translation><!-- Badge Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Cards</masterLabel>
+            <translation><!-- Business Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COVID</masterLabel>
+            <translation><!-- COVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobra</masterLabel>
+            <translation><!-- Cobra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingent Worker</masterLabel>
+            <translation><!-- Contingent Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction/Update</masterLabel>
+            <translation><!-- Correction/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deductions</masterLabel>
+            <translation><!-- Deductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegation</masterLabel>
+            <translation><!-- Delegation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Deposit</masterLabel>
+            <translation><!-- Direct Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPP</masterLabel>
+            <translation><!-- ESPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment</masterLabel>
+            <translation><!-- Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equifax</masterLabel>
+            <translation><!-- Equifax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity</masterLabel>
+            <translation><!-- Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception Form</masterLabel>
+            <translation><!-- Exception Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goals/Performance Management</masterLabel>
+            <translation><!-- Goals/Performance Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Partners</masterLabel>
+            <translation><!-- HR Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSA/FSA</masterLabel>
+            <translation><!-- HSA/FSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday</masterLabel>
+            <translation><!-- Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Support</masterLabel>
+            <translation><!-- IT Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Cards</masterLabel>
+            <translation><!-- Insurance Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOA</masterLabel>
+            <translation><!-- LOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning &amp; Development</masterLabel>
+            <translation><!-- Learning &amp; Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Update</masterLabel>
+            <translation><!-- Mass Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc</masterLabel>
+            <translation><!-- Misc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name Plate</masterLabel>
+            <translation><!-- Name Plate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCTanner</masterLabel>
+            <translation><!-- OCTanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Enrollment</masterLabel>
+            <translation><!-- Open Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTO</masterLabel>
+            <translation><!-- PTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paystubs</masterLabel>
+            <translation><!-- Paystubs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perks</masterLabel>
+            <translation><!-- Perks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Info Correction/Update</masterLabel>
+            <translation><!-- Personal Info Correction/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy</masterLabel>
+            <translation><!-- Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projects</masterLabel>
+            <translation><!-- Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Record Change Approval</masterLabel>
+            <translation><!-- Record Change Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation><!-- Recruiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salary Planning</masterLabel>
+            <translation><!-- Salary Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security/Colliers</masterLabel>
+            <translation><!-- Security/Colliers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharepoint</masterLabel>
+            <translation><!-- Sharepoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Forms</masterLabel>
+            <translation><!-- Tax Forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination</masterLabel>
+            <translation><!-- Termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard</masterLabel>
+            <translation><!-- Timecard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuition Reimbursement</masterLabel>
+            <translation><!-- Tuition Reimbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOE</masterLabel>
+            <translation><!-- VOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VitalCheck</masterLabel>
+            <translation><!-- VitalCheck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wage Garnishment</masterLabel>
+            <translation><!-- Wage Garnishment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WageWorks</masterLabel>
+            <translation><!-- WageWorks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withholdings</masterLabel>
+            <translation><!-- Withholdings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>WT_Action__c</name>
+        <picklistValues>
+            <masterLabel>401k</masterLabel>
+            <translation><!-- 401k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Management</masterLabel>
+            <translation><!-- Access Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access/Reset</masterLabel>
+            <translation><!-- Access/Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accommodation</masterLabel>
+            <translation><!-- Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Payable</masterLabel>
+            <translation><!-- Accounts Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Badge Access</masterLabel>
+            <translation><!-- Badge Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Cards</masterLabel>
+            <translation><!-- Business Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COVID</masterLabel>
+            <translation><!-- COVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobra</masterLabel>
+            <translation><!-- Cobra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingent Worker</masterLabel>
+            <translation><!-- Contingent Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction/Update</masterLabel>
+            <translation><!-- Correction/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deductions</masterLabel>
+            <translation><!-- Deductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegation</masterLabel>
+            <translation><!-- Delegation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Deposit</masterLabel>
+            <translation><!-- Direct Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPP</masterLabel>
+            <translation><!-- ESPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment</masterLabel>
+            <translation><!-- Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equifax</masterLabel>
+            <translation><!-- Equifax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity</masterLabel>
+            <translation><!-- Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception Form</masterLabel>
+            <translation><!-- Exception Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goals/Performance Management</masterLabel>
+            <translation><!-- Goals/Performance Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Partners</masterLabel>
+            <translation><!-- HR Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSA/FSA</masterLabel>
+            <translation><!-- HSA/FSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday</masterLabel>
+            <translation><!-- Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Support</masterLabel>
+            <translation><!-- IT Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Cards</masterLabel>
+            <translation><!-- Insurance Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOA</masterLabel>
+            <translation><!-- LOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning &amp; Development</masterLabel>
+            <translation><!-- Learning &amp; Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Update</masterLabel>
+            <translation><!-- Mass Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc</masterLabel>
+            <translation><!-- Misc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name Plate</masterLabel>
+            <translation><!-- Name Plate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCTanner</masterLabel>
+            <translation><!-- OCTanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Enrollment</masterLabel>
+            <translation><!-- Open Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTO</masterLabel>
+            <translation><!-- PTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paystubs</masterLabel>
+            <translation><!-- Paystubs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perks</masterLabel>
+            <translation><!-- Perks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Info Correction/Update</masterLabel>
+            <translation><!-- Personal Info Correction/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy</masterLabel>
+            <translation><!-- Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projects</masterLabel>
+            <translation><!-- Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Record Change Approval</masterLabel>
+            <translation><!-- Record Change Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation><!-- Recruiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salary Planning</masterLabel>
+            <translation><!-- Salary Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security/Colliers</masterLabel>
+            <translation><!-- Security/Colliers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharepoint</masterLabel>
+            <translation><!-- Sharepoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Forms</masterLabel>
+            <translation><!-- Tax Forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination</masterLabel>
+            <translation><!-- Termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard</masterLabel>
+            <translation><!-- Timecard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuition Reimbursement</masterLabel>
+            <translation><!-- Tuition Reimbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOE</masterLabel>
+            <translation><!-- VOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VitalCheck</masterLabel>
+            <translation><!-- VitalCheck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wage Garnishment</masterLabel>
+            <translation><!-- Wage Garnishment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WageWorks</masterLabel>
+            <translation><!-- WageWorks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withholdings</masterLabel>
+            <translation><!-- Withholdings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>WT_Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>WT_Address2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Law or Regulation --></label>
+        <name>WT_Applicable_Law_Regulation__c</name>
+        <picklistValues>
+            <masterLabel>ADA – Americans with Disabilities</masterLabel>
+            <translation><!-- ADA – Americans with Disabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRA – Community Reinvestment Act</masterLabel>
+            <translation><!-- CRA – Community Reinvestment Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children’s Online Privacy Act (COPA)</masterLabel>
+            <translation><!-- Children’s Online Privacy Act (COPA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Call</masterLabel>
+            <translation><!-- Do Not Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elder Abuse</masterLabel>
+            <translation><!-- Elder Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINRA</masterLabel>
+            <translation><!-- FINRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Credit Reporting Act</masterLabel>
+            <translation><!-- Fair Credit Reporting Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Housing Act</masterLabel>
+            <translation><!-- Fair Housing Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Lending/Discrimination</masterLabel>
+            <translation><!-- Fair Lending/Discrimination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flood</masterLabel>
+            <translation><!-- Flood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeownership Counseling</masterLabel>
+            <translation><!-- Homeownership Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeowner’s Protection Act</masterLabel>
+            <translation><!-- Homeowner’s Protection Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Theft Red Flags</masterLabel>
+            <translation><!-- ID Theft Red Flags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info Security</masterLabel>
+            <translation><!-- Info Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junk/Fax/CAN SPAM</masterLabel>
+            <translation><!-- Junk/Fax/CAN SPAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification/Foreclosure</masterLabel>
+            <translation><!-- Modification/Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdraft Practices</masterLabel>
+            <translation><!-- Overdraft Practices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protecting Tenants at Foreclosure</masterLabel>
+            <translation><!-- Protecting Tenants at Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation AA</masterLabel>
+            <translation><!-- Regulation AA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation B: Equal Credit Opportunity Act</masterLabel>
+            <translation><!-- Regulation B: Equal Credit Opportunity Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation C: Home Mortgage Disclosure</masterLabel>
+            <translation><!-- Regulation C: Home Mortgage Disclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation CC</masterLabel>
+            <translation><!-- Regulation CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation D: Reserves/NOW/Interest</masterLabel>
+            <translation><!-- Regulation D: Reserves/NOW/Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation DD: Truth in Savings</masterLabel>
+            <translation><!-- Regulation DD: Truth in Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation E: Electronic Fund Transfers</masterLabel>
+            <translation><!-- Regulation E: Electronic Fund Transfers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation F: Fair Debt Collection Practices Act</masterLabel>
+            <translation><!-- Regulation F: Fair Debt Collection Practices Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation GG</masterLabel>
+            <translation><!-- Regulation GG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation M: Consumer Leasing</masterLabel>
+            <translation><!-- Regulation M: Consumer Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation N: Mortgage Acts and Practices-Advertising</masterLabel>
+            <translation><!-- Regulation N: Mortgage Acts and Practices-Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation O: Insider Loans</masterLabel>
+            <translation><!-- Regulation O: Insider Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation P: Privacy of Consumer Financial Information</masterLabel>
+            <translation><!-- Regulation P: Privacy of Consumer Financial Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation U</masterLabel>
+            <translation><!-- Regulation U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation X: Real Estate Settlement Procedures Act</masterLabel>
+            <translation><!-- Regulation X: Real Estate Settlement Procedures Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation Z: Truth in Lending</masterLabel>
+            <translation><!-- Regulation Z: Truth in Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right to Financial Privacy</masterLabel>
+            <translation><!-- Right to Financial Privacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCRA – Service members Civil Relief Act</masterLabel>
+            <translation><!-- SCRA – Service members Civil Relief Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEC</masterLabel>
+            <translation><!-- SEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Incentives/Practices   (NEW)</masterLabel>
+            <translation><!-- Sales Incentives/Practices   (NEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCPA – Telephone Consumer Protection Act</masterLabel>
+            <translation><!-- TCPA – Telephone Consumer Protection Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDAAP</masterLabel>
+            <translation><!-- UDAAP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicable Law or Regulation2 --></label>
+        <name>WT_Applicable_Law_or_Regulation2__c</name>
+        <picklistValues>
+            <masterLabel>ADA – Americans with Disabilities</masterLabel>
+            <translation><!-- ADA – Americans with Disabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRA – Community Reinvestment Act</masterLabel>
+            <translation><!-- CRA – Community Reinvestment Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children’s Online Privacy Act (COPA)</masterLabel>
+            <translation><!-- Children’s Online Privacy Act (COPA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Call</masterLabel>
+            <translation><!-- Do Not Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elder Abuse</masterLabel>
+            <translation><!-- Elder Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINRA</masterLabel>
+            <translation><!-- FINRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Credit Reporting Act</masterLabel>
+            <translation><!-- Fair Credit Reporting Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Housing Act</masterLabel>
+            <translation><!-- Fair Housing Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Lending/Discrimination</masterLabel>
+            <translation><!-- Fair Lending/Discrimination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flood</masterLabel>
+            <translation><!-- Flood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeownership Counseling</masterLabel>
+            <translation><!-- Homeownership Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeowner’s Protection Act</masterLabel>
+            <translation><!-- Homeowner’s Protection Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Theft Red Flags</masterLabel>
+            <translation><!-- ID Theft Red Flags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info Security</masterLabel>
+            <translation><!-- Info Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junk/Fax/CAN SPAM</masterLabel>
+            <translation><!-- Junk/Fax/CAN SPAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification/Foreclosure</masterLabel>
+            <translation><!-- Modification/Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdraft Practices</masterLabel>
+            <translation><!-- Overdraft Practices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protecting Tenants at Foreclosure</masterLabel>
+            <translation><!-- Protecting Tenants at Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation AA</masterLabel>
+            <translation><!-- Regulation AA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation B: Equal Credit Opportunity Act</masterLabel>
+            <translation><!-- Regulation B: Equal Credit Opportunity Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation C: Home Mortgage Disclosure</masterLabel>
+            <translation><!-- Regulation C: Home Mortgage Disclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation CC</masterLabel>
+            <translation><!-- Regulation CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation D: Reserves/NOW/Interest</masterLabel>
+            <translation><!-- Regulation D: Reserves/NOW/Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation DD: Truth in Savings</masterLabel>
+            <translation><!-- Regulation DD: Truth in Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation E: Electronic Fund Transfers</masterLabel>
+            <translation><!-- Regulation E: Electronic Fund Transfers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation F: Fair Debt Collection Practices Act</masterLabel>
+            <translation><!-- Regulation F: Fair Debt Collection Practices Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation GG</masterLabel>
+            <translation><!-- Regulation GG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation M: Consumer Leasing</masterLabel>
+            <translation><!-- Regulation M: Consumer Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation N: Mortgage Acts and Practices-Advertising</masterLabel>
+            <translation><!-- Regulation N: Mortgage Acts and Practices-Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation O: Insider Loans</masterLabel>
+            <translation><!-- Regulation O: Insider Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation P: Privacy of Consumer Financial Information</masterLabel>
+            <translation><!-- Regulation P: Privacy of Consumer Financial Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation U</masterLabel>
+            <translation><!-- Regulation U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation X: Real Estate Settlement Procedures Act</masterLabel>
+            <translation><!-- Regulation X: Real Estate Settlement Procedures Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulation Z: Truth in Lending</masterLabel>
+            <translation><!-- Regulation Z: Truth in Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right to Financial Privacy</masterLabel>
+            <translation><!-- Right to Financial Privacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCRA – Service members Civil Relief Act</masterLabel>
+            <translation><!-- SCRA – Service members Civil Relief Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEC</masterLabel>
+            <translation><!-- SEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Incentives/Practices   (NEW)</masterLabel>
+            <translation><!-- Sales Incentives/Practices   (NEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCPA – Telephone Consumer Protection Act</masterLabel>
+            <translation><!-- TCPA – Telephone Consumer Protection Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDAAP</masterLabel>
+            <translation><!-- UDAAP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attempted to Contact --></label>
+        <name>WT_Attempted_to_Contact__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank/Entity --></label>
+        <name>WT_BankEntity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Entity --></label>
+        <name>WT_Bank_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Barrington Bank &amp; Trust Company, N.A.</masterLabel>
+            <translation><!-- Barrington Bank &amp; Trust Company, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beverly Bank &amp; Trust Company, N.A.</masterLabel>
+            <translation><!-- Beverly Bank &amp; Trust Company, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centralized Loan Servicing</masterLabel>
+            <translation><!-- Centralized Loan Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago Deferred Exchange</masterLabel>
+            <translation><!-- Chicago Deferred Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal Lake Bank &amp; Trust Company, N.A.</masterLabel>
+            <translation><!-- Crystal Lake Bank &amp; Trust Company, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Insurance Funding -Canada</masterLabel>
+            <translation><!-- First Insurance Funding -Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Insurance Funding -US</masterLabel>
+            <translation><!-- First Insurance Funding -US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First National Bank of Omaha</masterLabel>
+            <translation><!-- First National Bank of Omaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Great Lakes Advisors</masterLabel>
+            <translation><!-- Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hinsdale Bank &amp; Trust Company</masterLabel>
+            <translation><!-- Hinsdale Bank &amp; Trust Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lake Forest Bank &amp; Trust Company, N.A.</masterLabel>
+            <translation><!-- Lake Forest Bank &amp; Trust Company, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libertyville Bank &amp; Trust Company</masterLabel>
+            <translation><!-- Libertyville Bank &amp; Trust Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northbrook Bank &amp; Trust Company</masterLabel>
+            <translation><!-- Northbrook Bank &amp; Trust Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Plank Trail Community Bank, N.A.</masterLabel>
+            <translation><!-- Old Plank Trail Community Bank, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schaumburg Bank &amp; Trust Company, N.A.</masterLabel>
+            <translation><!-- Schaumburg Bank &amp; Trust Company, N.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Charles Bank &amp; Trust</masterLabel>
+            <translation><!-- St. Charles Bank &amp; Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Bank of the Lakes</masterLabel>
+            <translation><!-- State Bank of the Lakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Chicago Trust Company</masterLabel>
+            <translation><!-- The Chicago Trust Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Town Bank</masterLabel>
+            <translation><!-- Town Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tricom Funding</masterLabel>
+            <translation><!-- Tricom Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterans First</masterLabel>
+            <translation><!-- Veterans First --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Village Bank &amp; Trust</masterLabel>
+            <translation><!-- Village Bank &amp; Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wheaton Bank &amp; Trust</masterLabel>
+            <translation><!-- Wheaton Bank &amp; Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Asset Finance</masterLabel>
+            <translation><!-- Wintrust Asset Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Financial Corporation</masterLabel>
+            <translation><!-- Wintrust Financial Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Investments</masterLabel>
+            <translation><!-- Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust LIfe</masterLabel>
+            <translation><!-- Wintrust LIfe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Mortgage</masterLabel>
+            <translation><!-- Wintrust Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust/North Shore Community Bank &amp; Trust Company</masterLabel>
+            <translation><!-- Wintrust/North Shore Community Bank &amp; Trust Company --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank Number --></label>
+        <name>WT_Bank_Number__c</name>
+        <picklistValues>
+            <masterLabel>118</masterLabel>
+            <translation><!-- 118 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158</masterLabel>
+            <translation><!-- 158 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167</masterLabel>
+            <translation><!-- 167 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289</masterLabel>
+            <translation><!-- 289 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291</masterLabel>
+            <translation><!-- 291 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318</masterLabel>
+            <translation><!-- 318 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380</masterLabel>
+            <translation><!-- 380 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495</masterLabel>
+            <translation><!-- 495 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529</masterLabel>
+            <translation><!-- 529 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600</masterLabel>
+            <translation><!-- 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629</masterLabel>
+            <translation><!-- 629 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669</masterLabel>
+            <translation><!-- 669 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870</masterLabel>
+            <translation><!-- 870 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919</masterLabel>
+            <translation><!-- 919 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924</masterLabel>
+            <translation><!-- 924 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Banks</masterLabel>
+            <translation><!-- All Banks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Hours to Complete --></label>
+        <name>WT_Business_Hours_To_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Line Contact --></label>
+        <name>WT_Business_Line_Contact__c</name>
+        <relationshipLabel><!-- Cases (Business Line Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Title --></label>
+        <name>WT_Case_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>WT_Category__c</name>
+        <picklistValues>
+            <masterLabel>Add/Change/Delete Customer</masterLabel>
+            <translation><!-- Add/Change/Delete Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lockbox - Other</masterLabel>
+            <translation><!-- Lockbox - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Modification</masterLabel>
+            <translation><!-- Program Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Setup</masterLabel>
+            <translation><!-- Program Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Census Tract --></label>
+        <name>WT_Census_Tract__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>WT_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed On --></label>
+        <name>WT_Closed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Authenticated --></label>
+        <name>WT_Consumer_Authenticated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Consumer Email Address --></label>
+        <name>WT_Consumer_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Mailing Address --></label>
+        <name>WT_Consumer_Mailing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Name --></label>
+        <name>WT_Consumer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Type --></label>
+        <name>WT_Consumer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Applicant for Employment</masterLabel>
+            <translation><!-- Applicant for Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Insurance</masterLabel>
+            <translation><!-- First Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage</masterLabel>
+            <translation><!-- Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a Current Customer</masterLabel>
+            <translation><!-- Not a Current Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth</masterLabel>
+            <translation><!-- Wealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Employee</masterLabel>
+            <translation><!-- Wintrust Employee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Date Qtr --></label>
+        <name>WT_Contact_Date_Qtr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Date Year --></label>
+        <name>WT_Contact_Date_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Date --></label>
+        <name>WT_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Method --></label>
+        <name>WT_Contact_Method__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact (non-CRM User) --></label>
+        <name>WT_Contact_non_CRM_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corrective Action Ref # --></label>
+        <name>WT_Corrective_Action_Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corrective Action --></label>
+        <name>WT_Corrective_Action__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created On --></label>
+        <name>WT_Created_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Phone Number --></label>
+        <name>WT_Current_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name (CRM) --></label>
+        <name>WT_Customer_Name_CRM__c</name>
+        <relationshipLabel><!-- Cases (Customer Name (CRM)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Name (non-CRM) --></label>
+        <name>WT_Customer_Name_non_CRM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Purge Requested --></label>
+        <name>WT_Data_Purge_Requested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date  Received --></label>
+        <name>WT_Date_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Request Received --></label>
+        <name>WT_Date_of_Request_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>WT_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>WT_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>WT_EmployeeIDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Location --></label>
+        <name>WT_Employee_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Name --></label>
+        <name>WT_Employee_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>WT_Employee__c</name>
+        <relationshipLabel><!-- Cases (Employee) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>WT_Exception__c</name>
+        <picklistValues>
+            <masterLabel>Complex Issue</masterLabel>
+            <translation><!-- Complex Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation</masterLabel>
+            <translation><!-- Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received Late</masterLabel>
+            <translation><!-- Received Late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Legal</masterLabel>
+            <translation><!-- With Legal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>WT_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gravity of Issue --></label>
+        <name>WT_Gravity_of_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Isolated</masterLabel>
+            <translation><!-- Isolated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systemic</masterLabel>
+            <translation><!-- Systemic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HR Case Owner --></label>
+        <lookupFilter>
+            <errorMessage><!-- You can only assign Case Owner as a HR User --></errorMessage>
+        </lookupFilter>
+        <name>WT_HRCaseOwner__c</name>
+        <relationshipLabel><!-- Cases (HR Case Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HR Case Queue Owner --></label>
+        <name>WT_HR_Case_Queue_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Minority ( &gt;50%) CensusTract --></label>
+        <name>WT_HighMinorityCensusTract__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In Litigation? --></label>
+        <name>WT_In_Litigation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Customer ? --></label>
+        <name>WT_Is_Customer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue Category --></label>
+        <name>WT_Issue_Category__c</name>
+        <picklistValues>
+            <masterLabel>Consumer/ Commercial Loan Servicing</masterLabel>
+            <translation><!-- Consumer/ Commercial Loan Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer/Commercial Loan Origination</masterLabel>
+            <translation><!-- Consumer/Commercial Loan Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit/Credit Card/ ATM</masterLabel>
+            <translation><!-- Debit/Credit Card/ ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Acct Opening</masterLabel>
+            <translation><!-- Deposit Acct Opening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Transactions</masterLabel>
+            <translation><!-- Deposit Transactions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Origination</masterLabel>
+            <translation><!-- Mortgage Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Servicing</masterLabel>
+            <translation><!-- Mortgage Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online/Mobile Banking</masterLabel>
+            <translation><!-- Online/Mobile Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotions</masterLabel>
+            <translation><!-- Promotions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth</masterLabel>
+            <translation><!-- Wealth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Reassigned Date --></label>
+        <name>WT_Latest_Reassigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy CaseNumber --></label>
+        <name>WT_Legacy_CaseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low or Moderate Income Census Tract --></label>
+        <name>WT_LoworModerateIncomeCensusTract__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management Reviewed and Closed --></label>
+        <name>WT_Management_Reviewed_and_Closed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Method Received --></label>
+        <name>WT_Method_Received__c</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney General</masterLabel>
+            <translation><!-- Attorney General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Better Business Bureau</masterLabel>
+            <translation><!-- Better Business Bureau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Us</masterLabel>
+            <translation><!-- Contact Us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Errors &amp; Information Log</masterLabel>
+            <translation><!-- Errors &amp; Information Log --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethics Point</masterLabel>
+            <translation><!-- Ethics Point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Person/Verbal</masterLabel>
+            <translation><!-- In Person/Verbal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call</masterLabel>
+            <translation><!-- Phone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory Agency</masterLabel>
+            <translation><!-- Regulatory Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media or Forum</masterLabel>
+            <translation><!-- Social Media or Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey</masterLabel>
+            <translation><!-- Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of Employee Involved(if applicable) --></label>
+        <name>WT_Name_of_Employee_Involved_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Customer Complainant --></label>
+        <name>WT_Non_Customer_Complainant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Role Name --></label>
+        <name>WT_Owner_Role_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>WT_PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Trend --></label>
+        <name>WT_Potential_Trend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>WT_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Loan</masterLabel>
+            <translation><!-- Commercial Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Mortgage Loan</masterLabel>
+            <translation><!-- Consumer Mortgage Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Product</masterLabel>
+            <translation><!-- Deposit Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDIP</masterLabel>
+            <translation><!-- NDIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Consumer Loan</masterLabel>
+            <translation><!-- Other Consumer Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Financing</masterLabel>
+            <translation><!-- Premium Financing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipient (Non-CRM) --></label>
+        <name>WT_Recipient_Non_CRM__c</name>
+        <relationshipLabel><!-- Cases (Recipient (Non-CRM)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient --></label>
+        <name>WT_Recipient__c</name>
+        <relationshipLabel><!-- Cases (Recipient) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redisclosure --></label>
+        <name>WT_Redisclosure__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred for Fair Lending risk --></label>
+        <name>WT_Referred_for_Fair_Lending_risk__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred for UDAAP risk --></label>
+        <name>WT_Referred_for_UDAAP_risk__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred to Legal --></label>
+        <name>WT_Referred_to_Legal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Case --></label>
+        <name>WT_Related_Case__c</name>
+        <relationshipLabel><!-- Compliance Related Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Delivery Method --></label>
+        <name>WT_Report_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Secure Email</masterLabel>
+            <translation><!-- Secure Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USPS Mail</masterLabel>
+            <translation><!-- USPS Mail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>WT_Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>Categories of Information</masterLabel>
+            <translation><!-- Categories of Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detailed Report</masterLabel>
+            <translation><!-- Detailed Report --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>WT_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Acquired Banks Post Conversion</masterLabel>
+            <translation><!-- Acquired Banks Post Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquired Banks Pre Conversion</masterLabel>
+            <translation><!-- Acquired Banks Pre Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balancing</masterLabel>
+            <translation><!-- Balancing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Openings &amp; Closures</masterLabel>
+            <translation><!-- Branch Openings &amp; Closures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDO (Central Deposit Operations)</masterLabel>
+            <translation><!-- CDO (Central Deposit Operations) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIS</masterLabel>
+            <translation><!-- CIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion-Related</masterLabel>
+            <translation><!-- Conversion-Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposits</masterLabel>
+            <translation><!-- Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Transfer (IFMS)</masterLabel>
+            <translation><!-- Funds Transfer (IFMS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Reporting</masterLabel>
+            <translation><!-- Government Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Savings</masterLabel>
+            <translation><!-- Health Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image Center - Customer Research</masterLabel>
+            <translation><!-- Image Center - Customer Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image Center - Image Research</masterLabel>
+            <translation><!-- Image Center - Image Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image Center - Report Research</masterLabel>
+            <translation><!-- Image Center - Report Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image Center - Statement Research</masterLabel>
+            <translation><!-- Image Center - Statement Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Processing</masterLabel>
+            <translation><!-- Item Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy Account Reconciliation</masterLabel>
+            <translation><!-- Legacy Account Reconciliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Exchange</masterLabel>
+            <translation><!-- Mass Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalculate Interest</masterLabel>
+            <translation><!-- Recalculate Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safe Deposit Box</masterLabel>
+            <translation><!-- Safe Deposit Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-End</masterLabel>
+            <translation><!-- Year-End --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested by current user? --></label>
+        <name>WT_Requested_by_current_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester&apos;s Name --></label>
+        <name>WT_Requester_s_Name__c</name>
+        <relationshipLabel><!-- Cases (Requester&apos;s Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Required by Date --></label>
+        <name>WT_Required_by_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Date --></label>
+        <name>WT_Resolution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Notes --></label>
+        <name>WT_Resolution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Target --></label>
+        <name>WT_Resolution_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Time --></label>
+        <name>WT_Resolution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Type --></label>
+        <name>WT_Resolution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Closed with explanation</masterLabel>
+            <translation><!-- Closed with explanation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed with monetary relief due to error</masterLabel>
+            <translation><!-- Closed with monetary relief due to error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed with monetary relief due to goodwill</masterLabel>
+            <translation><!-- Closed with monetary relief due to goodwill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed with non-monetary relief</masterLabel>
+            <translation><!-- Closed with non-monetary relief --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>WT_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Respond By --></label>
+        <name>WT_Respond_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responded On --></label>
+        <name>WT_Responded_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restitution Paid --></label>
+        <name>WT_Restitution_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restitution? --></label>
+        <name>WT_Restitution__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Root Cause Type 2 --></label>
+        <name>WT_Root_Cause_Type_2__c</name>
+        <picklistValues>
+            <masterLabel>Bank Policy/Procedure</masterLabel>
+            <translation><!-- Bank Policy/Procedure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank/Entity Error</masterLabel>
+            <translation><!-- Bank/Entity Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Information Provided</masterLabel>
+            <translation><!-- Incorrect Information Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misunderstanding of Product</masterLabel>
+            <translation><!-- Misunderstanding of Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Root Cause Type --></label>
+        <name>WT_Root_Cause_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bank Policy/Procedure</masterLabel>
+            <translation><!-- Bank Policy/Procedure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank/Entity Error</masterLabel>
+            <translation><!-- Bank/Entity Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failure to deliver product/service as disclosed</masterLabel>
+            <translation><!-- Failure to deliver product/service as disclosed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failure to disclose relevant terms/conditions</masterLabel>
+            <translation><!-- Failure to disclose relevant terms/conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiduciary Issue</masterLabel>
+            <translation><!-- Fiduciary Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Information Provided</masterLabel>
+            <translation><!-- Incorrect Information Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misunderstanding of Product</masterLabel>
+            <translation><!-- Misunderstanding of Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Error</masterLabel>
+            <translation><!-- Vendor Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Root Cause --></label>
+        <name>WT_Root_Cause__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>WT_State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>WT_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Issue Category --></label>
+        <name>WT_Sub_Issue_Category__c</name>
+        <picklistValues>
+            <masterLabel>00 Miscellaneous</masterLabel>
+            <translation><!-- 00 Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01 Misrepresentation</masterLabel>
+            <translation><!-- 01 Misrepresentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 Unauthorized Trading</masterLabel>
+            <translation><!-- 02 Unauthorized Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 Excessive Trading</masterLabel>
+            <translation><!-- 03 Excessive Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 Suitability</masterLabel>
+            <translation><!-- 04 Suitability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 Failure to Follow Instructions</masterLabel>
+            <translation><!-- 05 Failure to Follow Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 Documentation</masterLabel>
+            <translation><!-- 06 Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 Solicitation</masterLabel>
+            <translation><!-- 07 Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 Misappropriation/Forgery</masterLabel>
+            <translation><!-- 08 Misappropriation/Forgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 Communication with Public</masterLabel>
+            <translation><!-- 09 Communication with Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 Disclosure of Fees</masterLabel>
+            <translation><!-- 10 Disclosure of Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 Failure to Supervise</masterLabel>
+            <translation><!-- 11 Failure to Supervise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Poor Recommendation/Poor Advice</masterLabel>
+            <translation><!-- 12 Poor Recommendation/Poor Advice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13 Selling Away</masterLabel>
+            <translation><!-- 13 Selling Away --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 Outside Business Activities</masterLabel>
+            <translation><!-- 14 Outside Business Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Municipal Advisor Conflict of Interest</masterLabel>
+            <translation><!-- 15 Municipal Advisor Conflict of Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 Research</masterLabel>
+            <translation><!-- 20 Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 Product Origination/Investment Banking</masterLabel>
+            <translation><!-- 21 Product Origination/Investment Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22 Trading</masterLabel>
+            <translation><!-- 22 Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23 Poor Performance</masterLabel>
+            <translation><!-- 23 Poor Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 Managed Accounts</masterLabel>
+            <translation><!-- 24 Managed Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 Marketing/Sales Literature</masterLabel>
+            <translation><!-- 25 Marketing/Sales Literature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26 Regulation B</masterLabel>
+            <translation><!-- 26 Regulation B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27 Regulation E</masterLabel>
+            <translation><!-- 27 Regulation E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28 Regulation S-P</masterLabel>
+            <translation><!-- 28 Regulation S-P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29 Third Party/Anonymous</masterLabel>
+            <translation><!-- 29 Third Party/Anonymous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Complaints Referred to Previous Employer</masterLabel>
+            <translation><!-- 30 Complaints Referred to Previous Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31 Other Theft/Forgery</masterLabel>
+            <translation><!-- 31 Other Theft/Forgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32 Identity Theft</masterLabel>
+            <translation><!-- 32 Identity Theft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33 Affiliate Activity</masterLabel>
+            <translation><!-- 33 Affiliate Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 Miscellaneous - Firm Related Only</masterLabel>
+            <translation><!-- 40 Miscellaneous - Firm Related Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 Transfer of Accounts</masterLabel>
+            <translation><!-- 50 Transfer of Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51 Receipt and/or Delivery of Securities</masterLabel>
+            <translation><!-- 51 Receipt and/or Delivery of Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52 Receipt and/or Disbursement of Funds</masterLabel>
+            <translation><!-- 52 Receipt and/or Disbursement of Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53 Dividend and Interest Problems</masterLabel>
+            <translation><!-- 53 Dividend and Interest Problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54 Margin Problems</masterLabel>
+            <translation><!-- 54 Margin Problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55 Reorganization/Redemption</masterLabel>
+            <translation><!-- 55 Reorganization/Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56 Proxy/Prospectus</masterLabel>
+            <translation><!-- 56 Proxy/Prospectus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57 Execution</masterLabel>
+            <translation><!-- 57 Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>58 Statement/Confirms</masterLabel>
+            <translation><!-- 58 Statement/Confirms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>59 Tax Reporting</masterLabel>
+            <translation><!-- 59 Tax Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Fees and Commissions</masterLabel>
+            <translation><!-- 60 Fees and Commissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61 Account Administration and Processing</masterLabel>
+            <translation><!-- 61 Account Administration and Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61 PATRIOT Act Liquidation</masterLabel>
+            <translation><!-- 61 PATRIOT Act Liquidation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>62 On-Line Trading</masterLabel>
+            <translation><!-- 62 On-Line Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>63 Service Issues</masterLabel>
+            <translation><!-- 63 Service Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65 Account Administration and Processing - Acct. Opening</masterLabel>
+            <translation><!-- 65 Account Administration and Processing - Acct. Opening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>66 Account Administration and Processing - Acct. Maintenance</masterLabel>
+            <translation><!-- 66 Account Administration and Processing - Acct. Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>67 On-Line Issues</masterLabel>
+            <translation><!-- 67 On-Line Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>68 Firm Policy</masterLabel>
+            <translation><!-- 68 Firm Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>69 DOL Fiduciary Rule</masterLabel>
+            <translation><!-- 69 DOL Fiduciary Rule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99 Miscellaneous (Non-Sales Practice Only)</masterLabel>
+            <translation><!-- 99 Miscellaneous (Non-Sales Practice Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APR</masterLabel>
+            <translation><!-- APR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Process</masterLabel>
+            <translation><!-- Application Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal</masterLabel>
+            <translation><!-- Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banker</masterLabel>
+            <translation><!-- Banker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Report</masterLabel>
+            <translation><!-- Credit Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Reporting</masterLabel>
+            <translation><!-- Credit Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclosures</masterLabel>
+            <translation><!-- Disclosures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escrows</masterLabel>
+            <translation><!-- Escrows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees</masterLabel>
+            <translation><!-- Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Originator</masterLabel>
+            <translation><!-- Loan Originator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss Mitigation</masterLabel>
+            <translation><!-- Loss Mitigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile/RDC</masterLabel>
+            <translation><!-- Mobile/RDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple/Duplicate Requests</masterLabel>
+            <translation><!-- Multiple/Duplicate Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Working</masterLabel>
+            <translation><!-- Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Line</masterLabel>
+            <translation><!-- On-Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Processing</masterLabel>
+            <translation><!-- Payment Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Posted wrong acct</masterLabel>
+            <translation><!-- Posted wrong acct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processor</masterLabel>
+            <translation><!-- Processor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wires</masterLabel>
+            <translation><!-- Wires --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Product Type --></label>
+        <name>WT_Sub_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>00 Miscellaneous</masterLabel>
+            <translation><!-- 00 Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01 Equity-Listed</masterLabel>
+            <translation><!-- 01 Equity-Listed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 Debt-Corporate</masterLabel>
+            <translation><!-- 02 Debt-Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 Debt-U.S. Government</masterLabel>
+            <translation><!-- 03 Debt-U.S. Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 Commodities/Futures</masterLabel>
+            <translation><!-- 04 Commodities/Futures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 Commodity Options</masterLabel>
+            <translation><!-- 05 Commodity Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 Options</masterLabel>
+            <translation><!-- 06 Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 Index Options</masterLabel>
+            <translation><!-- 07 Index Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 Insurance</masterLabel>
+            <translation><!-- 08 Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 Mutual Funds</masterLabel>
+            <translation><!-- 09 Mutual Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 Certificate of Deposit</masterLabel>
+            <translation><!-- 10 Certificate of Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 Unit Investment Trusts</masterLabel>
+            <translation><!-- 11 Unit Investment Trusts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Direct Investments</masterLabel>
+            <translation><!-- 12 Direct Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13 Financial Futures</masterLabel>
+            <translation><!-- 13 Financial Futures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 Equity-OTC</masterLabel>
+            <translation><!-- 14 Equity-OTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Debt-Municipal</masterLabel>
+            <translation><!-- 15 Debt-Municipal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16 Debt-Asset Backed</masterLabel>
+            <translation><!-- 16 Debt-Asset Backed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17 Managed/Wrap Accounts (In-house)</masterLabel>
+            <translation><!-- 17 Managed/Wrap Accounts (In-house) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 No Product</masterLabel>
+            <translation><!-- 18 No Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19 Managed/Wrap Accounts (Outside)</masterLabel>
+            <translation><!-- 19 Managed/Wrap Accounts (Outside) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 Variable Annuities</masterLabel>
+            <translation><!-- 20 Variable Annuities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 Warrants/Rights</masterLabel>
+            <translation><!-- 21 Warrants/Rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22 Real Estate Investment Trusts</masterLabel>
+            <translation><!-- 22 Real Estate Investment Trusts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23 Employee/Employer Stock Option Plans</masterLabel>
+            <translation><!-- 23 Employee/Employer Stock Option Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 Equity-Foreign</masterLabel>
+            <translation><!-- 24 Equity-Foreign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 Debt-Foreign</masterLabel>
+            <translation><!-- 25 Debt-Foreign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26 Exchange Traded Funds</masterLabel>
+            <translation><!-- 26 Exchange Traded Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27 Single Stock Futures</masterLabel>
+            <translation><!-- 27 Single Stock Futures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28 529 Plans/Municipal Fund Securities</masterLabel>
+            <translation><!-- 28 529 Plans/Municipal Fund Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29 Hedge Funds</masterLabel>
+            <translation><!-- 29 Hedge Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Private Placements</masterLabel>
+            <translation><!-- 30 Private Placements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31 Promissory Note</masterLabel>
+            <translation><!-- 31 Promissory Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32 Mortgage</masterLabel>
+            <translation><!-- 32 Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33 Closed End Funds</masterLabel>
+            <translation><!-- 33 Closed End Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34 Cash Management Accounts</masterLabel>
+            <translation><!-- 34 Cash Management Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 Self-Directed Fee Based Accounts</masterLabel>
+            <translation><!-- 35 Self-Directed Fee Based Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 Contractual Plans/Systematic Investment Plans</masterLabel>
+            <translation><!-- 36 Contractual Plans/Systematic Investment Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>37 Tenant in Common</masterLabel>
+            <translation><!-- 37 Tenant in Common --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38 Money Markets</masterLabel>
+            <translation><!-- 38 Money Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>39 Auction Rate Securities - Municipal Debt</masterLabel>
+            <translation><!-- 39 Auction Rate Securities - Municipal Debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 Auction Rate Securities - Corporate Debt</masterLabel>
+            <translation><!-- 40 Auction Rate Securities - Corporate Debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>41 Auction Rate Securities - Closed-End Funds</masterLabel>
+            <translation><!-- 41 Auction Rate Securities - Closed-End Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42 Structured Products</masterLabel>
+            <translation><!-- 42 Structured Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43 Fixed Annuities</masterLabel>
+            <translation><!-- 43 Fixed Annuities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44 Equity-Indexed Annuities</masterLabel>
+            <translation><!-- 44 Equity-Indexed Annuities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 Life Settlements</masterLabel>
+            <translation><!-- 45 Life Settlements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>46 Viatical Settlement</masterLabel>
+            <translation><!-- 46 Viatical Settlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>47 Private Securities</masterLabel>
+            <translation><!-- 47 Private Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 Non-Brokered-Dealer Affiliate Product</masterLabel>
+            <translation><!-- 48 Non-Brokered-Dealer Affiliate Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>49 Exchange-Traded Notes</masterLabel>
+            <translation><!-- 49 Exchange-Traded Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto/Vehicle</masterLabel>
+            <translation><!-- Auto/Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD Secured</masterLabel>
+            <translation><!-- CD Secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking/NOW</masterLabel>
+            <translation><!-- Checking/NOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Card</masterLabel>
+            <translation><!-- Debit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy Access LOC</masterLabel>
+            <translation><!-- Easy Access LOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy Access Loan</masterLabel>
+            <translation><!-- Easy Access Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Day Loan</masterLabel>
+            <translation><!-- Every Day Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HE Loan</masterLabel>
+            <translation><!-- HE Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HELOC</masterLabel>
+            <translation><!-- HELOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Banking</masterLabel>
+            <translation><!-- Mobile Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Line Banking</masterLabel>
+            <translation><!-- On-Line Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdraft</masterLabel>
+            <translation><!-- Overdraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdraft Line of Credit</masterLabel>
+            <translation><!-- Overdraft Line of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal LOC</masterLabel>
+            <translation><!-- Personal LOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Financing</masterLabel>
+            <translation><!-- Premium Financing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA</masterLabel>
+            <translation><!-- USDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsecured</masterLabel>
+            <translation><!-- Unsecured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Substantiated for FL/UDAAP --></label>
+        <name>WT_Substantiated_for_FL_UDAAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>WT_Topic_ListView__c</name>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation</masterLabel>
+            <translation><!-- Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation><!-- Employee Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handbook</masterLabel>
+            <translation><!-- Handbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc</masterLabel>
+            <translation><!-- Misc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redirect</masterLabel>
+            <translation><!-- Redirect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time &amp; Absence</masterLabel>
+            <translation><!-- Time &amp; Absence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOE</masterLabel>
+            <translation><!-- VOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workday</masterLabel>
+            <translation><!-- Workday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Topic Text --></label>
+        <name>WT_Topic_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>WT_Topic__c</name>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation</masterLabel>
+            <translation><!-- Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation><!-- Employee Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handbook</masterLabel>
+            <translation><!-- Handbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc</masterLabel>
+            <translation><!-- Misc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redirect</masterLabel>
+            <translation><!-- Redirect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time &amp; Absence</masterLabel>
+            <translation><!-- Time &amp; Absence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOE</masterLabel>
+            <translation><!-- VOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workday</masterLabel>
+            <translation><!-- Workday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Issue --></label>
+        <name>WT_Vendor_Issue__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verified Resident of California --></label>
+        <name>WT_Verified_Resident_of_California__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was Claim Substantiated? --></label>
+        <name>WT_Was_Claim_Substantiated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HR Case Reactivation Date --></label>
+        <name>WT_myHR_Reactivation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HR Case Reactivation --></label>
+        <name>WT_myHR_Reactivation__c</name>
+    </fields>
+    <layouts>
+        <layout>Case (FSC) Layout</layout>
+        <sections>
+            <label>Informations de base</label>
+            <section>Basic Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Deposit Application</layout>
+        <sections>
+            <label><!-- Additional Field --></label>
+            <section>Additional Field</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Requester Information --></label>
+            <section>Requester Information</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT CCPA Request</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Compliance Complaint</layout>
+        <sections>
+            <label><!-- Business Line Contact --></label>
+            <section>Business Line Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Complainant Details --></label>
+            <section>Complainant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Corrective Action --></label>
+            <section>Corrective Action</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Recipient Of Complaint --></label>
+            <section>Recipient Of Complaint</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution --></label>
+            <section>Resolution</section>
+        </sections>
+        <sections>
+            <label><!-- Response Due Date --></label>
+            <section>Response Due Date</section>
+        </sections>
+        <sections>
+            <label><!-- Who is Complaining? Fill out appropriate field. --></label>
+            <section>Who is Complaining? Fill out appropriate field.</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT My HR Cases</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Assign To HR Queue --></label>
+        <name>Assign_To_HR_Queue</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CCPA --></label>
+        <name>WT_CCPA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compliance Complaint --></label>
+        <name>WT_Compliance_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MyHR --></label>
+        <name>WT_MyHR</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Prior Status value should be &apos;Awaiting approval&apos; in order to &apos;Cancel&apos; the Case. --></errorMessage>
+        <name>CancelComplianceCasebyComplaintManagers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot create a new case with the specified sender. --></errorMessage>
+        <name>Case_Email_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a compliant manager can change the status of a compliance case from resolved back to in progress. --></errorMessage>
+        <name>ReActivateComplianceCasebyManagers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to change the owner --></errorMessage>
+        <name>WT_Compliance_Case_Owner_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Consumer Email Address --></errorMessage>
+        <name>WT_Consumer_Email_Address_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Consumer Mailing Address --></errorMessage>
+        <name>WT_Consumer_Mailing_Address_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Name is Required --></errorMessage>
+        <name>WT_Customer_Is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fields are Editable by compliant manager only. --></errorMessage>
+        <name>WT_Fields_Editable_By_Compliant_manager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only complaint manager can make edits to Management Review and Closed field. --></errorMessage>
+        <name>WT_ManagementReview_NotEdit_by_Processor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the ‘Management Reviewed and Closed’ checkbox to confirm your intention to cancel or resolve this case. --></errorMessage>
+        <name>WT_Management_Review_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Management Review and Closed cannot be updated when status is in Resolved or Cancelled --></errorMessage>
+        <name>WT_Management_review_is_not_editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requestor is not allowed to change the status. --></errorMessage>
+        <name>WT_RequestorCannotUpdateStatusOnCCPA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Restitution Paid is Required --></errorMessage>
+        <name>WT_Restitution_Paid_Is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requester cannot change the owner of the case --></errorMessage>
+        <name>WT_Restrict_Owner_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requester cannot change the status of the case --></errorMessage>
+        <name>WT_Restrict_Status_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot change the Status to &quot;Resolved&quot; as the Case Owner is a Queue. Please re-assign the case before marking it as &quot;Resolved&quot;. --></errorMessage>
+        <name>WT_Restrict_Status_Change_HR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This case cannot be moved to the status you are selecting , please try again with a different option --></errorMessage>
+        <name>WT_Status_Change_Error</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected status value is not Applicable. Please try again with different option. --></errorMessage>
+        <name>WT_Status_Error_on_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Compliant Manager can change the status from Awaiting Approval. --></errorMessage>
+        <name>WT_status_change_compliance_manager</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Export_List --></label>
+        <name>Export_List</name>
+    </webLinks>
+</CustomObjectTranslation>

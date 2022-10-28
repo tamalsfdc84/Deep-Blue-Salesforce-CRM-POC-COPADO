@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PURCHASE</fullName>
+        <default>false</default>
+        <label>Purchase</label>
+    </customValue>
+    <customValue>
+        <fullName>REFINANCE</fullName>
+        <default>false</default>
+        <label>Refinance</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSTRUCTION</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CONSTRUCTION</label>
+    </customValue>
+    <description>Display purpose of loan</description>
+    <masterLabel>MortgageLoanPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

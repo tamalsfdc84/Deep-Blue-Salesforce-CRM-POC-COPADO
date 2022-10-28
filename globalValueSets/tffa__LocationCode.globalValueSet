@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>XXX</fullName>
+        <default>false</default>
+        <label>Bank&apos;s Headquarters</label>
+    </customValue>
+    <description>A picklist representing Location records. To achieve a close coupling with Location, Location.Code field is of this picklist type. Useful when introducing location fields in standard objects like User, and for grouping in reports.</description>
+    <masterLabel>LocationCode</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

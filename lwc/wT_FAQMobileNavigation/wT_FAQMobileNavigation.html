@@ -1,0 +1,37 @@
+<template>
+    <div class="faq_splitSection__topNav__dropdown" onclick={toggleDropdownNav}>
+        <p>{activeCategoryName}</p>
+        <div>
+            <div class="dropdownArrow down"></div>
+        </div>
+    </div>
+    <!-- drop down menu -->
+    <div class="faq_dropdown__main hidden">
+        <div class="faq_dropdown__main__title" onclick={toggleDropdownNav}>
+            <p>PRODUCTS & SERVICES</p>
+            <div>
+                <div class="dropdownArrowUp up"></div>
+            </div>
+        </div>
+        <template if:true={listCategory}>
+            <ul>
+                <template for:each={listCategory} for:item="categoryItem">
+                    <template if:true={categoryItem.IsActive}>
+                        <li class="activeDropdown" data-id={categoryItem.CategoryRedirectUrl} key={categoryItem.CategoryName}>
+                            <a href={categoryItem.CategoryRedirectUrlPath}>
+                                <p>{categoryItem.CategoryName}</p>
+                            </a>
+                        </li>
+                    </template>
+<template if:false={categoryItem.IsActive}>
+                        <li data-id={categoryItem.CategoryRedirectUrl} key={categoryItem.CategoryName}>
+                            <a href={categoryItem.CategoryRedirectUrlPath}>
+                                <p>{categoryItem.CategoryName}</p>
+                            </a>
+                        </li>    
+                    </template>
+</template>
+</ul>
+</template>
+</div>
+</template>

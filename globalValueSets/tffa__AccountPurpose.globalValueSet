@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FIDUCIARY</fullName>
+        <default>false</default>
+        <label>Fiduciary</label>
+    </customValue>
+    <customValue>
+        <fullName>REPRESENTIVE_PAYEE</fullName>
+        <default>false</default>
+        <label>Representative Payee</label>
+    </customValue>
+    <customValue>
+        <fullName>ESCROW</fullName>
+        <default>false</default>
+        <label>Escrow</label>
+    </customValue>
+    <customValue>
+        <fullName>COURT_ORDERED</fullName>
+        <default>false</default>
+        <label>Court Ordered</label>
+    </customValue>
+    <customValue>
+        <fullName>FBO</fullName>
+        <default>false</default>
+        <label>FBO</label>
+    </customValue>
+    <customValue>
+        <fullName>UTMA</fullName>
+        <default>false</default>
+        <label>UTMA</label>
+    </customValue>
+    <customValue>
+        <fullName>MINOR</fullName>
+        <default>false</default>
+        <label>Minor</label>
+    </customValue>
+    <customValue>
+        <fullName>POA</fullName>
+        <default>false</default>
+        <label>POA</label>
+    </customValue>
+    <customValue>
+        <fullName>TRUST</fullName>
+        <default>false</default>
+        <label>Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>GUARDIANSHIP</fullName>
+        <default>false</default>
+        <label>Guardianship</label>
+    </customValue>
+    <customValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <label>NA</label>
+    </customValue>
+    <customValue>
+        <fullName>ESTATE</fullName>
+        <default>false</default>
+        <label>Estate</label>
+    </customValue>
+    <description>A list of specialised account purposes</description>
+    <masterLabel>AccountPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

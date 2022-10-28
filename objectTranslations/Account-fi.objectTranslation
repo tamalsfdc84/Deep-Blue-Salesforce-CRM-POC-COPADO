@@ -1,0 +1,3315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>FSC_Banker_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>WM_Client_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Household Summary --></label>
+        <name>WM_Client_Profile_Relations_HH_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Group Members --></label>
+        <name>WM_Client_Relationship_Group_Members</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Groups --></label>
+        <name>WM_Client_Relationship_Groups</name>
+    </fieldSets>
+    <fields>
+        <label><!-- AUM --></label>
+        <name>FinServ__AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Number --></label>
+        <name>FinServ__BankNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrowing History --></label>
+        <name>FinServ__BorrowingHistory__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited to No History</masterLabel>
+            <translation><!-- Limited to No History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borrowing Priorities --></label>
+        <name>FinServ__BorrowingPriorities__c</name>
+        <picklistValues>
+            <masterLabel>Build Equity</masterLabel>
+            <translation><!-- Build Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Consolidation</masterLabel>
+            <translation><!-- Debt Consolidation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments</masterLabel>
+            <translation><!-- Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Capital Purchases</masterLabel>
+            <translation><!-- Large Capital Purchases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Purchase</masterLabel>
+            <translation><!-- Property Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renovations</masterLabel>
+            <translation><!-- Renovations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>FinServ__BranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>FinServ__BranchName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes all the claims (irrespective of their current status), including the ones that are settled, as long as the related policy is active. --></help>
+        <label><!-- Claims on Household Policies --></label>
+        <name>FinServ__ClaimsOnHouseholdPolicies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>FinServ__ClientCategory__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conversion DateTime --></label>
+        <name>FinServ__ConversionDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating --></label>
+        <name>FinServ__CreditRating__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair</masterLabel>
+            <translation><!-- Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>FinServ__CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>FinServ__CustomerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment --></label>
+        <name>FinServ__CustomerSegment__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Growth</masterLabel>
+            <translation><!-- Long Term Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation><!-- Mass Affluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Market</masterLabel>
+            <translation><!-- Mass Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation><!-- Millennial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Accumulation</masterLabel>
+            <translation><!-- Wealth Accumulation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>FinServ__CustomerType__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relational</masterLabel>
+            <translation><!-- Relational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction</masterLabel>
+            <translation><!-- Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Interests --></label>
+        <name>FinServ__FinancialInterests__c</name>
+        <picklistValues>
+            <masterLabel>College Planning</masterLabel>
+            <translation><!-- College Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income</masterLabel>
+            <translation><!-- Fixed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Bonds</masterLabel>
+            <translation><!-- Municipal Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the count of the policies owned by the members in the household. For example, if the Rachel Adam&apos;s primary household has three members, including Rachel, and each of them owns two policies, this field will show a value of 6. --></help>
+        <label><!-- Household Policies --></label>
+        <name>FinServ__HouseholdPolicies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual ID --></label>
+        <name>FinServ__IndividualId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Type --></label>
+        <name>FinServ__IndividualType__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Ryhmä</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Yksityishenkilö</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insurance Customer Since --></label>
+        <name>FinServ__InsuranceCustomerSince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Experience --></label>
+        <name>FinServ__InvestmentExperience__c</name>
+        <picklistValues>
+            <masterLabel>Experienced</masterLabel>
+            <translation><!-- Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inexperienced</masterLabel>
+            <translation><!-- Inexperienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Experienced</masterLabel>
+            <translation><!-- Moderately Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Inexperienced</masterLabel>
+            <translation><!-- Moderately Inexperienced --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Investment Objectives --></label>
+        <name>FinServ__InvestmentObjectives__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive Growth</masterLabel>
+            <translation><!-- Aggressive Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balanced</masterLabel>
+            <translation><!-- Balanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative Income</masterLabel>
+            <translation><!-- Conservative Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation><!-- Income --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- KYC Date --></label>
+        <name>FinServ__KYCDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>FinServ__KYCStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed - Invalid</masterLabel>
+            <translation><!-- Completed - Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Valid</masterLabel>
+            <translation><!-- Completed - Valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Queue</masterLabel>
+            <translation><!-- In Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue</masterLabel>
+            <translation><!-- Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Interaction --></label>
+        <name>FinServ__LastInteraction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Review --></label>
+        <name>FinServ__LastReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date - Joint Owner --></label>
+        <name>FinServ__LastTransactionDateJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date - Primary Owner --></label>
+        <name>FinServ__LastTransactionDatePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date --></label>
+        <name>FinServ__LastTransactionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Used Channel --></label>
+        <name>FinServ__LastUsedChannel__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Length --></label>
+        <name>FinServ__LengthOfRelationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lifetime Value --></label>
+        <name>FinServ__LifetimeValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Segment --></label>
+        <name>FinServ__MarketingSegment__c</name>
+        <picklistValues>
+            <masterLabel>Female Investor</masterLabel>
+            <translation><!-- Female Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Net Worth</masterLabel>
+            <translation><!-- High Net Worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation><!-- Mass Affluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation><!-- Millennial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>FinServ__NetWorth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Interaction --></label>
+        <name>FinServ__NextInteraction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Review --></label>
+        <name>FinServ__NextReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Important Notes --></label>
+        <name>FinServ__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Interests --></label>
+        <name>FinServ__PersonalInterests__c</name>
+        <picklistValues>
+            <masterLabel>Biking</masterLabel>
+            <translation><!-- Biking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Basketball</masterLabel>
+            <translation><!-- College Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooking</masterLabel>
+            <translation><!-- Cooking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation><!-- Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiking</masterLabel>
+            <translation><!-- Hiking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wine</masterLabel>
+            <translation><!-- Wine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>FinServ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Accounts (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Referrer --></label>
+        <name>FinServ__ReferredByContact__c</name>
+        <relationshipLabel><!-- My Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Referrer --></label>
+        <name>FinServ__ReferredByUser__c</name>
+        <relationshipLabel><!-- Accounts (Internal Referrer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date --></label>
+        <name>FinServ__RelationshipStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Frequency --></label>
+        <name>FinServ__ReviewFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Tolerance --></label>
+        <name>FinServ__RiskTolerance__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive</masterLabel>
+            <translation><!-- Aggressive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative</masterLabel>
+            <translation><!-- Conservative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Model --></label>
+        <name>FinServ__ServiceModel__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>FinServ__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>FinServ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliquent</masterLabel>
+            <translation><!-- Deliquent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation><!-- Dormant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Horizon --></label>
+        <name>FinServ__TimeHorizon__c</name>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Term</masterLabel>
+            <translation><!-- Medium Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term</masterLabel>
+            <translation><!-- Short Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total AUM Joint Owner --></label>
+        <name>FinServ__TotalAUMJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AUM Primary Owner --></label>
+        <name>FinServ__TotalAUMPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits Joint Owner --></label>
+        <name>FinServ__TotalBankDepositsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits Primary Owner --></label>
+        <name>FinServ__TotalBankDepositsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits --></label>
+        <name>FinServ__TotalBankDeposits__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes amount paid for all the claims (irrespective of their current status), including the ones that are settled, as long as the related policy is active. --></help>
+        <label><!-- Total Claim Amount Paid --></label>
+        <name>FinServ__TotalClaimAmountPaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts Joint Owner --></label>
+        <name>FinServ__TotalFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts Primary Owner --></label>
+        <name>FinServ__TotalFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts --></label>
+        <name>FinServ__TotalFinancialAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Held Financial Accounts Joint --></label>
+        <name>FinServ__TotalHeldFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Held Financial Accounts Primary --></label>
+        <name>FinServ__TotalHeldFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the sum of gross written premium (GWP) for all the active policies currently owned by the household. --></help>
+        <label><!-- Total Household Premiums --></label>
+        <name>FinServ__TotalHouseholdPremiums__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance Joint Owner --></label>
+        <name>FinServ__TotalInsuranceJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance Primary Owner --></label>
+        <name>FinServ__TotalInsurancePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance --></label>
+        <name>FinServ__TotalInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments Joint Owner --></label>
+        <name>FinServ__TotalInvestmentsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments Primary Owner --></label>
+        <name>FinServ__TotalInvestmentsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments --></label>
+        <name>FinServ__TotalInvestments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities Joint Owner --></label>
+        <name>FinServ__TotalLiabilitiesJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities Primary Owner --></label>
+        <name>FinServ__TotalLiabilitiesPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities --></label>
+        <name>FinServ__TotalLiabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets Joint Owner --></label>
+        <name>FinServ__TotalNonfinancialAssetsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets Primary Owner --></label>
+        <name>FinServ__TotalNonfinancialAssetsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets --></label>
+        <name>FinServ__TotalNonfinancialAssets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Fin. Accounts - Joint Owner --></label>
+        <name>FinServ__TotalNumberOfFinAccountsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Fin. Accounts - Primary Owner --></label>
+        <name>FinServ__TotalNumberOfFinAccountsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Financial Accounts --></label>
+        <name>FinServ__TotalNumberOfFinAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit - Joint Owner --></label>
+        <name>FinServ__TotalOutstandingCreditJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit - Primary Owner --></label>
+        <name>FinServ__TotalOutstandingCreditPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit --></label>
+        <name>FinServ__TotalOutstandingCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Premium --></label>
+        <name>FinServ__TotalPremium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>FinServ__TotalRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wallet Share --></label>
+        <name>FinServ__WalletShare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Duplicate (Admin) --></label>
+        <name>Is_Duplicate_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Characteristics --></label>
+        <name>WT_Account_Characteristics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner - Prev Month End --></label>
+        <name>WT_Account_Owner_Prev_Month_End__c</name>
+        <relationshipLabel><!-- Accounts (Account Owner - Prev Month End) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>WT_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Queue --></label>
+        <name>WT_Account_Queue__c</name>
+        <picklistValues>
+            <masterLabel>All | BB Queue</masterLabel>
+            <translation><!-- All | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All | MM Queue</masterLabel>
+            <translation><!-- All | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBT | Community Advantage Queue</masterLabel>
+            <translation><!-- BBT | Community Advantage Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBT | Community Business Group Queue</masterLabel>
+            <translation><!-- BBT | Community Business Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBT | MM Group Queue</masterLabel>
+            <translation><!-- BBT | MM Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBT | MM | Team 1 Queue</masterLabel>
+            <translation><!-- BBT | MM | Team 1 Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BevBT | BB Group Queue</masterLabel>
+            <translation><!-- BevBT | BB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BevBT | MM Group Queue</masterLabel>
+            <translation><!-- BevBT | MM Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BevBT | SB Group Queue</masterLabel>
+            <translation><!-- BevBT | SB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLBT | Commercial Queue</masterLabel>
+            <translation><!-- CLBT | Commercial Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HBT | BB Queue</masterLabel>
+            <translation><!-- HBT | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HBT | MM Queue</masterLabel>
+            <translation><!-- HBT | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HBT | SB Queue</masterLabel>
+            <translation><!-- HBT | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBT | BB Queue</masterLabel>
+            <translation><!-- LBT | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBT | SB Queue</masterLabel>
+            <translation><!-- LBT | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LFBT | BB Group Queue</masterLabel>
+            <translation><!-- LFBT | BB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LFBT | MM Lake McHenry Queue</masterLabel>
+            <translation><!-- LFBT | MM Lake McHenry Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LFBT | SB Queue</masterLabel>
+            <translation><!-- LFBT | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBT | BB Group Queue</masterLabel>
+            <translation><!-- NBT | BB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBT | MM Queue</masterLabel>
+            <translation><!-- NBT | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBT | SB Group Queue</masterLabel>
+            <translation><!-- NBT | SB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTCB | BB Queue</masterLabel>
+            <translation><!-- OPTCB | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTCB | MM Queue</masterLabel>
+            <translation><!-- OPTCB | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTCB | SB Queue</masterLabel>
+            <translation><!-- OPTCB | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBOTL | MM Queue</masterLabel>
+            <translation><!-- SBOTL | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBOTL | SB Queue</masterLabel>
+            <translation><!-- SBOTL | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBT | BB Group Queue</masterLabel>
+            <translation><!-- SBT | BB Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBT | BB | Team 1 Queue</masterLabel>
+            <translation><!-- SBT | BB | Team 1 Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBT | MM Group Queue</masterLabel>
+            <translation><!-- SBT | MM Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBT | Small Business Group Queue</masterLabel>
+            <translation><!-- SBT | Small Business Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCBT | CB | Commercial Group Queue</masterLabel>
+            <translation><!-- SCBT | CB | Commercial Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCBT | MM Queue</masterLabel>
+            <translation><!-- SCBT | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TB | BB | Madison HUB Queue</masterLabel>
+            <translation><!-- TB | BB | Madison HUB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TB | BB | North Hub Queue</masterLabel>
+            <translation><!-- TB | BB | North Hub Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TB | BB | South Hub Queue</masterLabel>
+            <translation><!-- TB | BB | South Hub Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TB | CB | MKE Queue</masterLabel>
+            <translation><!-- TB | CB | MKE Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TB | MM Queue</masterLabel>
+            <translation><!-- TB | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VBT | BB Queue</masterLabel>
+            <translation><!-- VBT | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VBT | MM HUB Queue</masterLabel>
+            <translation><!-- VBT | MM HUB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VBT | SB Queue</masterLabel>
+            <translation><!-- VBT | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WB | BB Queue</masterLabel>
+            <translation><!-- WB | BB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WB | MM Queue</masterLabel>
+            <translation><!-- WB | MM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WB | SB Queue</masterLabel>
+            <translation><!-- WB | SB Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WBT | MM Group Queue</masterLabel>
+            <translation><!-- WBT | MM Group Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WBT | SB Group Queue</masterLabel>
+            <translation><!-- WBT | SB Group Queue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Record Type --></label>
+        <name>WT_Account_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accountant** --></label>
+        <name>WT_Accountant__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT Address Flag --></label>
+        <name>WT_Address_Flag__c</name>
+        <picklistValues>
+            <masterLabel>Address Cannot be Standardized</masterLabel>
+            <translation><!-- Address Cannot be Standardized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Not Standardized</masterLabel>
+            <translation><!-- Address Not Standardized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Standardized</masterLabel>
+            <translation><!-- Address Standardized --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Age To Calculate from Birthdates --></label>
+        <name>WT_Age_To_Calculate_from_Birthdates__c</name>
+    </fields>
+    <fields>
+        <label><!-- All CRA Areas --></label>
+        <name>WT_All_CRA_Areas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue (Banker)** --></label>
+        <name>WT_Annual_Revenue_Banker_Entered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue (DNB) --></label>
+        <name>WT_Annual_Revenue_DNB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue (InfoUSA) --></label>
+        <name>WT_Annual_Revenue_InfoUSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue Range --></label>
+        <name>WT_Annual_Revenue_Range__c</name>
+        <picklistValues>
+            <masterLabel>a. Under $200,000</masterLabel>
+            <translation><!-- a. Under $200,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>b. $200,000 - $499,999</masterLabel>
+            <translation><!-- b. $200,000 - $499,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c. $500,000 - $999,999</masterLabel>
+            <translation><!-- c. $500,000 - $999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d. $1.0 MM - $2.4 MM</masterLabel>
+            <translation><!-- d. $1.0 MM - $2.4 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e. $2.5 MM - $4.9 MM</masterLabel>
+            <translation><!-- e. $2.5 MM - $4.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>f. $5.0 MM - $9.9 MM</masterLabel>
+            <translation><!-- f. $5.0 MM - $9.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>g. $10.0 MM - $24.9 MM</masterLabel>
+            <translation><!-- g. $10.0 MM - $24.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>h. $25.0 MM - $49.9 MM</masterLabel>
+            <translation><!-- h. $25.0 MM - $49.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>i. $50.0 MM - $99.9 MM</masterLabel>
+            <translation><!-- i. $50.0 MM - $99.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>j. $100.0 MM - $249.9 MM</masterLabel>
+            <translation><!-- j. $100.0 MM - $249.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>k. $250.0 MM - $499.9 MM</masterLabel>
+            <translation><!-- k. $250.0 MM - $499.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>l. $500.0 MM - $749.9 MM</masterLabel>
+            <translation><!-- l. $500.0 MM - $749.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>m. $750.0 MM - $999.9 MM</masterLabel>
+            <translation><!-- m. $750.0 MM - $999.9 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>n. $1,000 MM - $1,999 MM</masterLabel>
+            <translation><!-- n. $1,000 MM - $1,999 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>o. $2,000 MM or above</masterLabel>
+            <translation><!-- o. $2,000 MM or above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>p. Undefined/Other</masterLabel>
+            <translation><!-- p. Undefined/Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q. N/A</masterLabel>
+            <translation><!-- q. N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue (Ranked) --></label>
+        <name>WT_Annual_Revenue_Ranked__c</name>
+    </fields>
+    <fields>
+        <label><!-- $ Balance - Total Deposits --></label>
+        <name>WT_Balance_Total_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Officer Name --></label>
+        <name>WT_Bank_Officer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Officer Number --></label>
+        <name>WT_Bank_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Officer User --></label>
+        <name>WT_Bank_Officer_User__c</name>
+        <relationshipLabel><!-- Accounts (Bank Officer User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill Payment --></label>
+        <name>WT_Bill_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch # --></label>
+        <name>WT_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Banking Relationship --></label>
+        <name>WT_Business_Banking_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- CD Only Household --></label>
+        <name>WT_CD_Only_Household__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>WT_CI_Board_Member_Name__c</name>
+        <relationshipLabel><!-- Accounts (User Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CI Donation CRA Eligible --></label>
+        <name>WT_CI_Donation_CRA_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Funded Organization --></label>
+        <name>WT_CI_Funded_Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Funding Amount --></label>
+        <name>WT_CI_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Mission --></label>
+        <name>WT_CI_Mission__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Seeks Board Member --></label>
+        <name>WT_CI_Seeks_Board_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Volunteer Opportunities --></label>
+        <name>WT_CI_Volunteer_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of calls made last year --></label>
+        <name>WT_Calls_Made_Last_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of calls made this year --></label>
+        <name>WT_Calls_Made_This_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census ID --></label>
+        <name>WT_Census_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census Tract Processed --></label>
+        <name>WT_Census_Tract_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census Tract --></label>
+        <name>WT_Census_Tract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter Name --></label>
+        <name>WT_Charter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter # --></label>
+        <name>WT_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification Reason --></label>
+        <name>WT_Classification_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification --></label>
+        <name>WT_Classification__c</name>
+        <picklistValues>
+            <masterLabel>C = Customer</masterLabel>
+            <translation><!-- C = Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1 = Top Priority Customer</masterLabel>
+            <translation><!-- C1 = Top Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2 = Medium Priority Customer</masterLabel>
+            <translation><!-- C2 = Medium Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3 = Established Customer</masterLabel>
+            <translation><!-- C3 = Established Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4 = Customer - PPP Onboarding</masterLabel>
+            <translation><!-- C4 = Customer - PPP Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COI = Center of Influence</masterLabel>
+            <translation><!-- COI = Center of Influence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ = Middle Market (Revenue $10MM to $260MM)</masterLabel>
+            <translation><!-- NQ = Middle Market (Revenue $10MM to $260MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ0 = Companies with Unknown Revenue</masterLabel>
+            <translation><!-- NQ0 = Companies with Unknown Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQBB = Companies with Revenue $1.00MM to $9.99MM</masterLabel>
+            <translation><!-- NQBB = Companies with Revenue $1.00MM to $9.99MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQSB = Companies with Revenue under $1MM</masterLabel>
+            <translation><!-- NQSB = Companies with Revenue under $1MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P1 = Proposing within 6 months/Top Prospect</masterLabel>
+            <translation><!-- P1 = Proposing within 6 months/Top Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2 = Proposing in 6-12 months</masterLabel>
+            <translation><!-- P2 = Proposing in 6-12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3 = Proposing outside 12 months</masterLabel>
+            <translation><!-- P3 = Proposing outside 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4 = Other</masterLabel>
+            <translation><!-- P4 = Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5 = PPP Lead</masterLabel>
+            <translation><!-- P5 = PPP Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X1 = EdFAC</masterLabel>
+            <translation><!-- X1 = EdFAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X2 = Bankrupt/Out of Business</masterLabel>
+            <translation><!-- X2 = Bankrupt/Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X3 = Industry Excluded</masterLabel>
+            <translation><!-- X3 = Industry Excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X4 = Subsidiary</masterLabel>
+            <translation><!-- X4 = Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X5 = Potential Duplicate</masterLabel>
+            <translation><!-- X5 = Potential Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X6 = Other</masterLabel>
+            <translation><!-- X6 = Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closest Bank &amp; Branch --></label>
+        <name>WT_Closest_Bank_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Bank Name --></label>
+        <name>WT_Closest_Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Branch Name --></label>
+        <name>WT_Closest_Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coml Banking Services List --></label>
+        <name>WT_Coml_Banking_Services_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Relationship --></label>
+        <name>WT_Commercial_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Customer --></label>
+        <name>WT_Contact_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- County Code --></label>
+        <name>WT_County_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>WT_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covered - Annual Report --></label>
+        <name>WT_Covered_Annual_Report__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Annual? --></label>
+        <name>WT_Covered_Annual__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Last Period Report --></label>
+        <name>WT_Covered_Last_Period_Report__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Last Period --></label>
+        <name>WT_Covered_Last_Period__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Last Year Report --></label>
+        <name>WT_Covered_Last_Year_Report__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Last Year --></label>
+        <name>WT_Covered_Last_Year__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Period Report --></label>
+        <name>WT_Covered_Period_Report__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered - Period? --></label>
+        <name>WT_Covered_Period__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By/On --></label>
+        <name>WT_Created_By_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card --></label>
+        <name>WT_Credit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Area Pop Rank Desc --></label>
+        <name>WT_DUNS_Address_Area_Pop_Rank_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Area Pop Rank Number --></label>
+        <name>WT_DUNS_Address_Area_Pop_Rank_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address CBSA Code --></label>
+        <name>WT_DUNS_Address_CBSA_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address CBSA Name --></label>
+        <name>WT_DUNS_Address_CBSA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address County Name --></label>
+        <name>WT_DUNS_Address_County_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Economic Area Influence --></label>
+        <name>WT_DUNS_Address_Economic_Area_Influence__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Latitude --></label>
+        <name>WT_DUNS_Address_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT DUNS Address Line1 --></label>
+        <name>WT_DUNS_Address_Line1__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Line2 --></label>
+        <name>WT_DUNS_Address_Line2__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Locality --></label>
+        <name>WT_DUNS_Address_Locality__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Longitude --></label>
+        <name>WT_DUNS_Address_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Postal Code --></label>
+        <name>WT_DUNS_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Address Region Name --></label>
+        <name>WT_DUNS_Address_Region_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Banks Name --></label>
+        <name>WT_DUNS_Banks_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT_DUNS_Charter_Description --></label>
+        <name>WT_DUNS_Charter_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Company Start Date --></label>
+        <name>WT_DUNS_Company_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Country Code --></label>
+        <name>WT_DUNS_Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Domestic DUNS --></label>
+        <name>WT_DUNS_Domestic_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Domestic Primary Name --></label>
+        <name>WT_DUNS_Domestic_Primary_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Email --></label>
+        <name>WT_DUNS_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT_DUNS_Entity_Type_Description --></label>
+        <name>WT_DUNS_Entity_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Global Number Of Employees --></label>
+        <name>WT_DUNS_Global_Number_Of_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Headquarter Duns --></label>
+        <name>WT_DUNS_Headquarter_Duns__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Headquarter Primary Name --></label>
+        <name>WT_DUNS_Headquarter_Primary_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Incorporated Date --></label>
+        <name>WT_DUNS_Incorporated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Exporter --></label>
+        <name>WT_DUNS_Is_Exporter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Importer --></label>
+        <name>WT_DUNS_Is_Importer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Manufacturing Location --></label>
+        <name>WT_DUNS_Is_Manufacturing_Location__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Registered Address --></label>
+        <name>WT_DUNS_Is_Registered_Address__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Residential --></label>
+        <name>WT_DUNS_Is_Residential__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Is Small Business --></label>
+        <name>WT_DUNS_Is_Small_Business__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Level --></label>
+        <name>WT_DUNS_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Name --></label>
+        <name>WT_DUNS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Number --></label>
+        <name>WT_DUNS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Operation Type Description --></label>
+        <name>WT_DUNS_Operation_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT_DUNS_Organization_Size --></label>
+        <name>WT_DUNS_Organization_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Parent DUNS --></label>
+        <name>WT_DUNS_Parent_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Parent Primary Name --></label>
+        <name>WT_DUNS_Parent_Primary_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Phone --></label>
+        <name>WT_DUNS_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Primary Industry Code --></label>
+        <name>WT_DUNS_Primary_Industry_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Primary Industry Desc --></label>
+        <name>WT_DUNS_Primary_Industry_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- WT_DUNS_Registered_Name --></label>
+        <name>WT_DUNS_Registered_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Single Entity --></label>
+        <name>WT_DUNS_Single_Entity__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DUNS Ultimate DUNS --></label>
+        <name>WT_DUNS_Ultimate_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Ultimate Primary Name --></label>
+        <name>WT_DUNS_Ultimate_Primary_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Ultimate Tree Count --></label>
+        <name>WT_DUNS_Ultimate_Tree_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Of Death --></label>
+        <name>WT_Date_Of_Death__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Provided Permission To Contact --></label>
+        <name>WT_Date_Provided_Permission_To_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last WFG Review --></label>
+        <name>WT_Date_of_Last_WFG_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Card --></label>
+        <name>WT_Debit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deceased --></label>
+        <name>WT_Deceased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Deposit --></label>
+        <name>WT_Direct_Deposit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Driver’s License Number --></label>
+        <name>WT_Drivers_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP/Accounting System Text --></label>
+        <name>WT_ERP_Accounting_System_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP/Accounting System --></label>
+        <name>WT_ERP_Accounting_System__c</name>
+        <picklistValues>
+            <masterLabel>Abila MIP Fund Accounting</masterLabel>
+            <translation><!-- Abila MIP Fund Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounting CS</masterLabel>
+            <translation><!-- Accounting CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acumatica</masterLabel>
+            <translation><!-- Acumatica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackbaud Financial Edge</masterLabel>
+            <translation><!-- Blackbaud Financial Edge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackbaud Financial Edge/NXT</masterLabel>
+            <translation><!-- Blackbaud Financial Edge/NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deltek Vision</masterLabel>
+            <translation><!-- Deltek Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERA-Ignite</masterLabel>
+            <translation><!-- ERA-Ignite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite/Pro Law</masterLabel>
+            <translation><!-- Elite/Pro Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ellucian Banner</masterLabel>
+            <translation><!-- Ellucian Banner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EpiCor</masterLabel>
+            <translation><!-- EpiCor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Force</masterLabel>
+            <translation><!-- Financial Force --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info CloudSuite</masterLabel>
+            <translation><!-- Info CloudSuite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JD Edwards Enterprise One</masterLabel>
+            <translation><!-- JD Edwards Enterprise One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenzabar</masterLabel>
+            <translation><!-- Jenzabar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRI Software</masterLabel>
+            <translation><!-- MRI Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macoia Software</masterLabel>
+            <translation><!-- Macoia Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MatrixCare</masterLabel>
+            <translation><!-- MatrixCare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Dynamics 365 Business</masterLabel>
+            <translation><!-- Microsoft Dynamics 365 Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Dynamics GP</masterLabel>
+            <translation><!-- Microsoft Dynamics GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Dynamics NAV</masterLabel>
+            <translation><!-- Microsoft Dynamics NAV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Dynamics SL</masterLabel>
+            <translation><!-- Microsoft Dynamics SL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle NetSuite</masterLabel>
+            <translation><!-- Oracle NetSuite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle eBusiness Suite</masterLabel>
+            <translation><!-- Oracle eBusiness Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other ERP/Accounting System</masterLabel>
+            <translation><!-- Other ERP/Accounting System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QAD ERP</masterLabel>
+            <translation><!-- QAD ERP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuickBooks Desktop</masterLabel>
+            <translation><!-- QuickBooks Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuickBooks Online</masterLabel>
+            <translation><!-- QuickBooks Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RealPage Accounting</masterLabel>
+            <translation><!-- RealPage Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP Business One</masterLabel>
+            <translation><!-- SAP Business One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 100 (Standard, Advanced and Premium</masterLabel>
+            <translation><!-- Sage 100 (Standard, Advanced and Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 100 Contractor</masterLabel>
+            <translation><!-- Sage 100 Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 300 CRE</masterLabel>
+            <translation><!-- Sage 300 CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 300 ERP</masterLabel>
+            <translation><!-- Sage 300 ERP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 50</masterLabel>
+            <translation><!-- Sage 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage 500</masterLabel>
+            <translation><!-- Sage 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage Intacct</masterLabel>
+            <translation><!-- Sage Intacct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shelby Systems</masterLabel>
+            <translation><!-- Shelby Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SysPro</masterLabel>
+            <translation><!-- SysPro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOPS</masterLabel>
+            <translation><!-- TOPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAI Software</masterLabel>
+            <translation><!-- VAI Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xero</masterLabel>
+            <translation><!-- Xero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yardi Voyager</masterLabel>
+            <translation><!-- Yardi Voyager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Elavon Indicator --></label>
+        <name>WT_Elavon_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elavon? --></label>
+        <name>WT_Elavon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email–Primary Contact (Banker Entered)** --></label>
+        <name>WT_Email_Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Indicator --></label>
+        <name>WT_Employee_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employees - InfoUSA --></label>
+        <name>WT_Employees_InfoUSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Date Of Contact --></label>
+        <name>WT_First_Date_Of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Interaction --></label>
+        <name>WT_First_Interaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top Organization --></label>
+        <name>WT_Focus_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Ownership --></label>
+        <name>WT_Foreign_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Franchise Type --></label>
+        <name>WT_Franchise_Type__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Funds Management Company --></label>
+        <name>WT_Funds_Management_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Given Permission To Contact --></label>
+        <name>WT_Has_Given_Permission_To_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Household --></label>
+        <name>WT_Head_of_Household_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of RG --></label>
+        <name>WT_Head_of_RG__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Household ID --></label>
+        <name>WT_Household_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA Verification Id --></label>
+        <name>WT_IDA_Verification_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- I-Business Banking (BEB)? --></label>
+        <name>WT_I_Business_Banking_BEB__c</name>
+    </fields>
+    <fields>
+        <label><!-- In/Out CRA Assessment Area --></label>
+        <name>WT_In_Out_CRA_Assessment_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incumbent/Former Bank (lookup)** --></label>
+        <name>WT_Incumbent_Former_Bank_lookup__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- InfoUSA Prospect ID --></label>
+        <name>WT_InfoUSA_Prospect_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Agent** --></label>
+        <name>WT_Insurance_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Relationship --></label>
+        <name>WT_Investment_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Processed? --></label>
+        <name>WT_IsProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Duplicate Account --></label>
+        <name>WT_Is_Duplicate_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Eight Digits Of Debit Card --></label>
+        <name>WT_Last_8_Of_Debit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Date Of Contact --></label>
+        <name>WT_Last_Date_Of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>WT_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lawyer** --></label>
+        <name>WT_Lawyer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>WT_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>WT_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low to Mod Income/Minority Tract? --></label>
+        <name>WT_Low_to_Mod_Income_Minority_Tract__c</name>
+        <picklistValues>
+            <masterLabel>Low to Mod Income and Minority Tract</masterLabel>
+            <translation><!-- Low to Mod Income and Minority Tract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low to Moderate Income ONLY</masterLabel>
+            <translation><!-- Low to Moderate Income ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minority Tract ONLY</masterLabel>
+            <translation><!-- Minority Tract ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither</masterLabel>
+            <translation><!-- Neither --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MDM Household ID --></label>
+        <name>WT_MDM_Household_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Record ID --></label>
+        <name>WT_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Relationship ID --></label>
+        <name>WT_MDM_Relationship_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD MDM Record ID --></label>
+        <name>WT_MSD_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage To Closest Branch --></label>
+        <name>WT_Mileage_To_Closest_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Banking --></label>
+        <name>WT_Mobile_Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified By/On --></label>
+        <name>WT_Modified_By_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Officer Name --></label>
+        <name>WT_Mortgage_Officer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Officer Number --></label>
+        <name>WT_Mortgage_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Officer User --></label>
+        <name>WT_Mortgage_Officer_User__c</name>
+        <relationshipLabel><!-- Accounts (Mortgage Officer User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code --></label>
+        <name>WT_NAICS_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Checking Household --></label>
+        <name>WT_No_Checking_Household__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No Loan Household --></label>
+        <name>WT_No_Loan_Household__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. of Employees (Banker) --></label>
+        <name>WT_No_of_Employees_Banker__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1,000 to 2,499</masterLabel>
+            <translation><!-- 1,000 to 2,499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 to 24</masterLabel>
+            <translation><!-- 10 to 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 to 249</masterLabel>
+            <translation><!-- 100 to 249 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 to 4</masterLabel>
+            <translation><!-- 2 to 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 to 49</masterLabel>
+            <translation><!-- 25 to 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250 to 499</masterLabel>
+            <translation><!-- 250 to 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 to 9</masterLabel>
+            <translation><!-- 5 to 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 to 99</masterLabel>
+            <translation><!-- 50 to 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 to 999</masterLabel>
+            <translation><!-- 500 to 999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined/Other</masterLabel>
+            <translation><!-- Undefined/Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Online Banking --></label>
+        <name>WT_Online_Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type --></label>
+        <name>WT_Organization_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Relationship Group --></label>
+        <name>WT_Parent_Relationship_Group__c</name>
+        <relationshipLabel><!-- Accounts (Parent Relationship Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>WT_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month&apos;s End Date --></label>
+        <name>WT_Previous_Month_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name (Banker Entered) --></label>
+        <name>WT_Primary_Contact_Name_Banker_Entered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name (DNB) --></label>
+        <name>WT_Primary_Contact_Name_DNB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name (InfoUSA) --></label>
+        <name>WT_Primary_Contact_Name_InfoUSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name (Ranked) --></label>
+        <name>WT_Primary_Contact_Name_Ranked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email (DNB) --></label>
+        <name>WT_Primary_Email_DNB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email  (InfoUSA) --></label>
+        <name>WT_Primary_Email_InfoUSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email (Ranked) --></label>
+        <name>WT_Primary_Email_Ranked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer Name - Prev Month End --></label>
+        <name>WT_Primary_Officer_Name_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer Name --></label>
+        <name>WT_Primary_Officer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer Number - Prev Month End --></label>
+        <name>WT_Primary_Officer_Number_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer Number --></label>
+        <name>WT_Primary_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Banking Relationship --></label>
+        <name>WT_Private_Banking_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit Indicator --></label>
+        <name>WT_Profit_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 4</masterLabel>
+            <translation><!-- Tier 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 5</masterLabel>
+            <translation><!-- Tier 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined/Other</masterLabel>
+            <translation><!-- Undefined/Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit Tier --></label>
+        <name>WT_Profit_Tier__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined/Other</masterLabel>
+            <translation><!-- Undefined/Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit --></label>
+        <name>WT_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect List --></label>
+        <name>WT_Prospect_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- RGCalenderFiscalYear --></label>
+        <name>WT_RGCalenderFiscalYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- RGCalenderYear --></label>
+        <name>WT_RGCalender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Group --></label>
+        <name>WT_Relationship_Group__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date - Approval Date --></label>
+        <name>WT_Relationship_Start_Date_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date - Approver --></label>
+        <name>WT_Relationship_Start_Date_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date - Override --></label>
+        <name>WT_Relationship_Start_Date_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remote Deposit Capture --></label>
+        <name>WT_Remote_Deposit_Capture__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retail Relationship --></label>
+        <name>WT_Retail_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Services List --></label>
+        <name>WT_Retail_Services_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG SSAE16 Year --></label>
+        <name>WT_SSAE16_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN TIN Dev --></label>
+        <name>WT_SSN_TIN_Dev__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN/TIN --></label>
+        <name>WT_SSN_TIN_Encrypt__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN/TIN --></label>
+        <name>WT_SSN_TIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Officer Name --></label>
+        <name>WT_Secondary_Officer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Officer Number --></label>
+        <name>WT_Secondary_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single, Double, Triple --></label>
+        <name>WT_Single_Double_Triple__c</name>
+        <picklistValues>
+            <masterLabel>Double</masterLabel>
+            <translation><!-- Double --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triple</masterLabel>
+            <translation><!-- Triple --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Single Service Household --></label>
+        <name>WT_Single_Service_Household__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TM Relationship --></label>
+        <name>WT_TM_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>WT_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Funds Administrator --></label>
+        <name>WT_Third_Party_Funds_Administrator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Accounts - Prev Month End --></label>
+        <name>WT_Total_Accounts_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Bank Deposits - Prev Month End --></label>
+        <name>WT_Total_Bank_Deposits_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Deposits --></label>
+        <name>WT_Total_Bank_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ CD --></label>
+        <name>WT_Total_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # DDA Accounts --></label>
+        <name>WT_Total_DDA_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ DDA Deposits --></label>
+        <name>WT_Total_DDA_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # DDA/NOW --></label>
+        <name>WT_Total_DDA_NOW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Deposit Accounts --></label>
+        <name>WT_Total_Deposit_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ IRA --></label>
+        <name>WT_Total_IRA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Investments --></label>
+        <name>WT_Total_Investments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Loan Cmmt - Prev Month End --></label>
+        <name>WT_Total_Loan_Cmmt_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Loan Commitments --></label>
+        <name>WT_Total_Loan_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Loan Outstandings --></label>
+        <name>WT_Total_Loan_Outstandings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Loans/Lines Out - Prev Month End --></label>
+        <name>WT_Total_Loans_Lines_Out_Prev_Month_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Loans/Lines --></label>
+        <name>WT_Total_Loans_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ Mortgage --></label>
+        <name>WT_Total_Mortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $ NOW Deposits --></label>
+        <name>WT_Total_NOW_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Non Checking Deposits --></label>
+        <name>WT_Total_Non_Checking_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Services --></label>
+        <name>WT_Total_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Services Relationship --></label>
+        <name>WT_Treasury_Services_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust Relationship --></label>
+        <name>WT_Trust_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>WT_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCC Filing --></label>
+        <name>WT_UCC_Filing__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Admin AUM --></label>
+        <name>WT_WFG_Admin_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Attorney --></label>
+        <name>WT_WFG_Attorney__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Auditor --></label>
+        <name>WT_WFG_Auditor__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Current SSAE16? --></label>
+        <name>WT_WFG_Current_SSAE16__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG E-mail --></label>
+        <name>WT_WFG_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Management AUM --></label>
+        <name>WT_WFG_Management_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Phone --></label>
+        <name>WT_WFG_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Pricing Notification --></label>
+        <name>WT_WFG_Pricing_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Primary Contact --></label>
+        <name>WT_WFG_Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Prime Broker --></label>
+        <name>WT_WFG_Prime_Broker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wallet Share --></label>
+        <name>WT_Wallet_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wealth Management Officer Name --></label>
+        <name>WT_Wealth_Management_Officer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wealth Management Officer Number --></label>
+        <name>WT_Wealth_Management_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wealth Management Officer User --></label>
+        <name>WT_Wealth_Management_Officer_User__c</name>
+        <relationshipLabel><!-- Accounts (Wealth Management Officer User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Private Client Group Relationship --></label>
+        <name>WT_Wealth_Services_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wintrust Funds Client --></label>
+        <name>WT_Wintrust_Funds_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Wire Cutoff/CST --></label>
+        <name>WT_Wire_Cutoff_CST__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Wire Limit --></label>
+        <name>WT_Wire_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Woman Executive --></label>
+        <name>WT_Woman_Executive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Established --></label>
+        <name>WT_Year_Established__c</name>
+    </fields>
+    <fields>
+        <label><!-- eStatements --></label>
+        <name>WT_eStatements__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_msd_record_id__c</name>
+    </fields>
+    <layouts>
+        <layout>Account (Business Referral) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Business) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Household) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Individual) Layout</layout>
+        <sections>
+            <label><!-- Address 1 --></label>
+            <section>Address 1</section>
+        </sections>
+        <sections>
+            <label><!-- Client Services --></label>
+            <section>Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Know Your Client --></label>
+            <section>Know Your Client</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Institution) Layout</layout>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Policyholder) Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Interest --></label>
+            <section>Financial Interest</section>
+        </sections>
+        <sections>
+            <label><!-- Policyholder Information --></label>
+            <section>Policyholder Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policyholder Services --></label>
+            <section>Policyholder Services</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Retail Client - Individual) Layout</layout>
+        <sections>
+            <label><!-- Billing/Shipping Address --></label>
+            <section>Billing/Shipping Address</section>
+        </sections>
+        <sections>
+            <label><!-- Client Services --></label>
+            <section>Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Profile --></label>
+            <section>Finance Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Details - Account Info --></label>
+            <section>Details - Account Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Additional Info --></label>
+            <section>Details - Additional Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Info --></label>
+            <section>Details - System Info</section>
+        </sections>
+        <sections>
+            <label><!-- Task related Details --></label>
+            <section>Task related Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Business Account Layout (Customer)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Info --></label>
+            <section>Details - Account Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Additional Info --></label>
+            <section>Details - Additional Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Company Info --></label>
+            <section>Details - Company Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Financial Summary --></label>
+            <section>Details - Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Marketing/Privacy Preferences --></label>
+            <section>Details - Marketing/Privacy Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Sales Details --></label>
+            <section>Details - Sales Details</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Security Preferences --></label>
+            <section>Details - Security Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Info --></label>
+            <section>Details - System Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details- Interaction Info --></label>
+            <section>Details- Interaction Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Business Account Layout (Prospect)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Info --></label>
+            <section>Details - Account Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Additional Info --></label>
+            <section>Details - Additional Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Company Info --></label>
+            <section>Details - Company Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Financial Summary --></label>
+            <section>Details - Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Sales Details --></label>
+            <section>Details - Sales Details</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Info --></label>
+            <section>Details - System Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details- Interaction Info --></label>
+            <section>Details- Interaction Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Business Account Layout - Admin</layout>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Coverage --></label>
+            <section>Details - Coverage</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Interaction Info --></label>
+            <section>Details - Interaction Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Marketing/Privacy Preference --></label>
+            <section>Details - Marketing/Privacy Preference</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Security Preferences --></label>
+            <section>Details - Security Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Month End Information --></label>
+            <section>Month End Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Wintrust Funds Group --></label>
+            <section>Wintrust Funds Group</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Person Account Layout (Customer)</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Additional Information --></label>
+            <section>Details - Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Financial Summary --></label>
+            <section>Details - Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Interaction Info --></label>
+            <section>Details - Interaction Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Marketing/Privacy Preferences --></label>
+            <section>Details - Marketing/Privacy Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Security Preferences --></label>
+            <section>Details - Security Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Information --></label>
+            <section>Details - System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Person Account Layout (Prospect)</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Additional Information --></label>
+            <section>Details - Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Interaction Info --></label>
+            <section>Details - Interaction Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Marketing/ Privacy Preferences --></label>
+            <section>Details - Marketing/ Privacy Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Information --></label>
+            <section>Details - System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Person Account Layout – Admin</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Customer Banking Relationship --></label>
+            <section>Customer Banking Relationship</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Financial Summary --></label>
+            <section>Details - Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Interaction Info --></label>
+            <section>Details - Interaction Info</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Marketing/ Privacy Preferences --></label>
+            <section>Details - Marketing/ Privacy Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Security Preferences --></label>
+            <section>Details - Security Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Details - System Information --></label>
+            <section>Details - System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Month End Information --></label>
+            <section>Month End Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Relationship Group Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Coverage --></label>
+            <section>Details - Coverage</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Month End Information --></label>
+            <section>Details - Month End Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Officer Information --></label>
+            <section>Officer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Group Type --></label>
+            <section>Relationship Group Type</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Relationship Group Layout - Admin</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Coverage --></label>
+            <section>Details - Coverage</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Month End Information --></label>
+            <section>Details - Month End Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Officer Information --></label>
+            <section>Officer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Group Type --></label>
+            <section>Relationship Group Type</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Retail Household Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Coverage --></label>
+            <section>Details - Coverage</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Month End Information --></label>
+            <section>Details - Month End Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Officer Information --></label>
+            <section>Officer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Group Type --></label>
+            <section>Relationship Group Type</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Retail Household Layout - Admin</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Account Information --></label>
+            <section>Details - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Details - CRA --></label>
+            <section>Details - CRA</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Client Services --></label>
+            <section>Details - Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Coverage --></label>
+            <section>Details - Coverage</section>
+        </sections>
+        <sections>
+            <label><!-- Details - Month End Information --></label>
+            <section>Details - Month End Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Officer Information --></label>
+            <section>Officer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Group Type --></label>
+            <section>Relationship Group Type</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT_WFG_Account_Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail - Account Information --></label>
+            <section>Detail - Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Wintrust Funds Group --></label>
+            <section>Wintrust Funds Group</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Group --></label>
+        <name>FinServ__EditGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Relationship Planning --></label>
+        <name>Relationship_Planning</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Business Account (Customer) --></label>
+        <name>BusinessAccount_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Business Account (Prospect) --></label>
+        <name>BusinessAccount_Prospect</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business or an organization --></description>
+        <label><!-- Business --></label>
+        <name>FinServ__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A grouping of related people and institutions --></description>
+        <label><!-- Household --></label>
+        <name>FinServ__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A person who is a prospect or a client --></description>
+        <label><!-- Individual --></label>
+        <name>FinServ__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An institution that is a prospect or a client --></description>
+        <label><!-- Institution --></label>
+        <name>FinServ__IndustriesInstitution</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Relationship Group --></label>
+        <name>Relationship_Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Employee --></label>
+        <name>WT_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HR Partner --></label>
+        <name>WT_HR_Partner</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- At least two of the following fields are required to be populated: State/Province, Country, Postal Code. --></errorMessage>
+        <name>AddressFieldShouldbeMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
+        <name>FinServ__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
+        <name>FinServ__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please include a first name. --></errorMessage>
+        <name>FirstNameFieldShouldbeMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name and Business Phone field should be Read-Only for Administrator. --></errorMessage>
+        <name>NameAndPhoneFieldCannotBeEdit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name field should be Read-only for Customer. --></errorMessage>
+        <name>NameFieldCannotBeEditonCustomerRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Owner field should be Read-only for Customer. --></errorMessage>
+        <name>OwnerField_Cannot_ChangOn_CustomerRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business Phone should be Numeric Value. --></errorMessage>
+        <name>PhoneNumberShouldbeNumericValue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SSN/TIN can only contain numbers and hyphens and should contain a total of 9 numbers. --></errorMessage>
+        <name>SSN_TIN_MustBe9DigitsOnAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- WFG Phone should be Numeric Value. --></errorMessage>
+        <name>WFGPhoneNumberShouldbeNumericValue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name field should be Read-only. --></errorMessage>
+        <name>WT_Account_Name_Field_Is_Read_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First, Middle, and Last Name fields cannot contain any numbers or special characters. --></errorMessage>
+        <name>WT_Name_Pattern_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Update Account Owner before updating the record --></errorMessage>
+        <name>WT_Only_Account_Owner_Can_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Street Address is required. Enter at least 1 character and 1 number. --></errorMessage>
+        <name>WT_Street_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For addresses within the US, please use the 2 digit State/Province code. --></errorMessage>
+        <name>WT_US_Address_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only available if ERP/Accounting System = Other ERP/Accounting System. --></errorMessage>
+        <name>WT_VisibleAccountingERPSystemasOther</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AddMember --></label>
+        <name>FinServ__AddMember</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddRelation --></label>
+        <name>FinServ__AddRelation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Stage 1 - Opportunity Identified</fullName>
+        <default>false</default>
+        <label>Stage 1 - Opportunity Identified</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 2 - Company Information Obtained/Needs Assessed</fullName>
+        <default>false</default>
+        <label>Stage 2 - Company Information Obtained/Needs Assessed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 3 - Deal Structured/Presented</fullName>
+        <default>false</default>
+        <label>Stage 3 - Deal Structured/Presented</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 4 - Deal Accepted/Commitment</fullName>
+        <default>false</default>
+        <label>Stage 4 - Deal Accepted/Commitment</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 5 - Deal Approved</fullName>
+        <default>false</default>
+        <label>Stage 5 - Deal Approved</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 6 - Deal Booked/Closed</fullName>
+        <default>false</default>
+        <label>Stage 6 - Deal Booked/Closed</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stage 7 - Deal Lost or Declined</fullName>
+        <default>false</default>
+        <label>Stage 7 - Deal Lost or Declined</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>1. Opportunity Identified</fullName>
+        <default>false</default>
+        <label>1. Opportunity Identified</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>2. Company Information Collected</fullName>
+        <default>false</default>
+        <label>2. Company Information Collected</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>3. Opportunity Sent For Processing</fullName>
+        <default>false</default>
+        <label>3. Opportunity Sent For Processing</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>4. Opportunity In Initial Review</fullName>
+        <default>false</default>
+        <label>4. Opportunity In Initial Review</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>5. Opportunity Incomplete</fullName>
+        <default>false</default>
+        <label>5. Opportunity Incomplete</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6. Opportunity In Underwriting</fullName>
+        <default>false</default>
+        <label>6. Opportunity In Underwriting</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>7. Opportunity Approved</fullName>
+        <default>false</default>
+        <label>7. Opportunity Approved</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>8. Opportunity In Pre-Close</fullName>
+        <default>false</default>
+        <label>8. Opportunity In Pre-Close</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>9. Opportunity Pending Signed Documents</fullName>
+        <default>false</default>
+        <label>9. Opportunity Pending Signed Documents</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>10. Submitted For Booking</fullName>
+        <default>false</default>
+        <label>10. Submitted For Booking</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>11. Loan Booked</fullName>
+        <default>false</default>
+        <label>11. Loan Booked</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>90</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>12. Loan Lost/Denied</fullName>
+        <default>false</default>
+        <label>12. Loan Lost/Denied</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

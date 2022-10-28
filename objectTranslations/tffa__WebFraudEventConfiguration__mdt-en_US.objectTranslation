@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>tffa__Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- It is the period of time after which rate threshold will be checked before sending notifications. --></help>
+        <label><!-- Rate threshold period in minutes --></label>
+        <name>tffa__RateThresholdPeriod__c</name>
+    </fields>
+    <fields>
+        <help><!-- It is the rate threshold of fraud events per minute after which system alerts will be raised. --></help>
+        <label><!-- Rate threshold per minute --></label>
+        <name>tffa__RateThreshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Event logs older than this period will be purged from the system. --></help>
+        <label><!-- Log retention period in days --></label>
+        <name>tffa__RetentionPeriod__c</name>
+    </fields>
+    <layouts>
+        <layout>Web Fraud Event Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

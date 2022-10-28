@@ -1,0 +1,7 @@
+You have an upcoming appointment for the customer (Related To field value on the activity form) on  {!Event.WT_Next_Follow_Up_Date__c}. You can access the activity record in the system by clicking the link below.</br></br>
+
+<a href= “{!Event.Link}”>Click Here</a></br></br>
+
+Sincerely,</br>
+CRM Support</br>
+crmsupport@wintrust.com

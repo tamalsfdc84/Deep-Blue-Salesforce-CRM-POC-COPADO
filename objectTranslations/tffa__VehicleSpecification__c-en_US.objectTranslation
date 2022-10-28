@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>tffa__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info url --></label>
+        <name>tffa__InfoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make code --></label>
+        <name>tffa__MakeCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>tffa__Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model code --></label>
+        <name>tffa__ModelCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>tffa__Model__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub model code --></label>
+        <name>tffa__SubModelCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub model --></label>
+        <name>tffa__SubModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year code --></label>
+        <name>tffa__YearCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>tffa__Year__c</name>
+    </fields>
+    <layouts>
+        <layout>VehicleSpecification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

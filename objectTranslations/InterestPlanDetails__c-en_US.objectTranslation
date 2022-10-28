@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>InterestPlanDetails</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>InterestPlanDetails</value>
+    </caseValues>
+    <fields>
+        <label><!-- Annual Percentage Yield --></label>
+        <name>APY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Basis Days --></label>
+        <name>IntBasisDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Calculation Methods --></label>
+        <name>IntCalcMeths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Plan Code --></label>
+        <name>IntPlnCde__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Payment Method --></label>
+        <name>IntPmtMthd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>InterestRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Plan Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Schedule Indicator --></label>
+        <name>RteSchedInd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Deposit Frequency ID --></label>
+        <name>TDFreqId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Deposit Maturity Term --></label>
+        <name>TDMatTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Deposit Maturity Term ID --></label>
+        <name>TDTermId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Maximum Balance --></label>
+        <name>TierMaxBal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Minimum Balance --></label>
+        <name>TierMinBal__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

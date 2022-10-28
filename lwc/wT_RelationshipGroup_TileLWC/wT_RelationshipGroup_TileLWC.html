@@ -1,0 +1,32 @@
+<template>
+    <div class="slds-p-around_medium slds-card slds-card_boundary"
+        style="background-color: white;border-left-color: #7f8de1; border-left-width: thick;">
+        <lightning-tile label={relatedAccount.WT_RelatedAccount__r.Name} type="media" actions={actions}
+            onactiontriggered={handleButtonMenu} href={fetchURL}>
+            <lightning-icon slot="media" icon-name={fetchIconName}></lightning-icon>
+            <template if:true={relatedAccount.WT_Primary__c}>
+            <span class="slds-badge" style="font-size: x-small;">Primary</span>
+        </template>
+            <dl class="slds-dl_horizontal">
+                <dt class="slds-dl_horizontal__label">
+                    <em>Type:</em>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    {relatedAccount.WT_RelatedAccount__r.RecordType.Name}
+                </dd>
+                <dt class="slds-dl_horizontal__label">
+                    <em>Roles:</em>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    {relatedAccount.WT_Roles__c}
+                </dd>                
+                <dt class="slds-dl_horizontal__label">
+                    <em>Owner:</em>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    {relatedAccount.WT_RelatedAccount__r.WT_Account_Owner__c}
+                </dd>
+            </dl>
+        </lightning-tile>
+    </div>
+</template>

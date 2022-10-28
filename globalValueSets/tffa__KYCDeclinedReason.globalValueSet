@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>UNABLE_TO_VERIFY_RESIDENCE</fullName>
+        <default>false</default>
+        <label>Unable to verify residence</label>
+    </customValue>
+    <customValue>
+        <fullName>UNABLE_TO_VERIFY_PERSONAL_INFO</fullName>
+        <default>false</default>
+        <label>Unable to verify personal information</label>
+    </customValue>
+    <customValue>
+        <fullName>UNABLE_TO_VERIFY_IDENTITY</fullName>
+        <default>false</default>
+        <label>Unable to verify identity</label>
+    </customValue>
+    <customValue>
+        <fullName>DOCUMENTS_DO_NOT_MATCH</fullName>
+        <default>false</default>
+        <label>Documents do not match</label>
+    </customValue>
+    <customValue>
+        <fullName>DOCUMENTATION_NOT_ENOUGH</fullName>
+        <default>false</default>
+        <label>Documentation not enough</label>
+    </customValue>
+    <customValue>
+        <fullName>ADVERSE_ACTIONS_NOTICED</fullName>
+        <default>false</default>
+        <label>Adverse actions noticed</label>
+    </customValue>
+    <customValue>
+        <fullName>FRAUD</fullName>
+        <default>false</default>
+        <label>Fraud</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITY_FREEZE</fullName>
+        <default>false</default>
+        <label>Security Freeze</label>
+    </customValue>
+    <customValue>
+        <fullName>EXCESSIVE_INQUIRIES</fullName>
+        <default>false</default>
+        <label>Excessive Inquiries</label>
+    </customValue>
+    <customValue>
+        <fullName>DOCUMENTATION_NOT_RECEIVED</fullName>
+        <default>false</default>
+        <label>Documentation not received</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Possible reasons for declining an application in KYC decisioning stage.</description>
+    <masterLabel>KYCDeclinedReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

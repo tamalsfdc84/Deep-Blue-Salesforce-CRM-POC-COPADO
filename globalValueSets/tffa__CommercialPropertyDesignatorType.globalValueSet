@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MULTI_FAMILY</fullName>
+        <default>false</default>
+        <label>Multi-Family</label>
+    </customValue>
+    <customValue>
+        <fullName>CO_OP</fullName>
+        <default>false</default>
+        <label>Cooperative</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCIAL</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>BASEMENT</fullName>
+        <default>false</default>
+        <label>Basement</label>
+    </customValue>
+    <customValue>
+        <fullName>HOME_AND_BUSINESS_COMBINED</fullName>
+        <default>false</default>
+        <label>Home and Business Combined</label>
+    </customValue>
+    <customValue>
+        <fullName>MIXED</fullName>
+        <default>false</default>
+        <label>Mixed</label>
+    </customValue>
+    <customValue>
+        <fullName>FARM</fullName>
+        <default>false</default>
+        <label>Farm</label>
+    </customValue>
+    <customValue>
+        <fullName>LAND</fullName>
+        <default>false</default>
+        <label>Land</label>
+    </customValue>
+    <customValue>
+        <fullName>WAREHOUSE</fullName>
+        <default>false</default>
+        <label>Warehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>MANUFACTURING_INDUSTRIAL</fullName>
+        <default>false</default>
+        <label>Manufacturing/Industrial</label>
+    </customValue>
+    <description>A value from a MISMO prescribed list that specifies a further level of detail for a street address, for example, Suite or Unit. This list is based on the USPS Publication 28 on Postal Addressing Standards with the addition of Condo based on mortgage industry need.</description>
+    <masterLabel>CommercialPropertyDesignatorType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

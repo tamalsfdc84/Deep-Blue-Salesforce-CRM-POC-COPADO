@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Applicant role (set) --></label>
+        <name>tffa__ApplicantRoleSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Builder class --></label>
+        <name>tffa__BuilderClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applicable to External url. ensure CORS policy allows  site url --></help>
+        <label><!-- CORS Enabled ? --></label>
+        <name>tffa__CorsEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upload it under Salesforce Classic &gt; Document &gt; Disclosures --></help>
+        <label><!-- Document Name --></label>
+        <name>tffa__DocumentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic signature provider --></label>
+        <name>tffa__ElectronicSignatureProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity type --></label>
+        <name>tffa__EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution required --></label>
+        <name>tffa__ExecutionRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>tffa__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locale --></label>
+        <name>tffa__Locale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefill required --></label>
+        <name>tffa__PrefillRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Setup on docusign --></help>
+        <label><!-- Template --></label>
+        <name>tffa__Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- EXTERNAL_URL is URL to access the document maintained in salesforce. Ensure to set correct Document Name for type as EXTERNAL_URL. --></help>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Content --></label>
+        <name>tffa__Url__c</name>
+    </fields>
+    <layouts>
+        <layout>Disclosure Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

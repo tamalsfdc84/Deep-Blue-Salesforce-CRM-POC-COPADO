@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Debug Log Configuration</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>tffa__DatabaseLoggingLevel__c</fullName>
+        <defaultValue>&quot;DEBUG&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Define the logging level upper limit to be persisted into database table</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the logging level upper limit to be persisted into database table</inlineHelpText>
+        <label>Database Logging Level</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DebugCallStack__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Log begin and end marker logs</description>
+        <externalId>false</externalId>
+        <label>Debug Call Stack</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If database and system is enabled</description>
+        <externalId>false</externalId>
+        <label>Enable Database and System Logging</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__MaskingEnabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If log masking is enabled when calling logger methods</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If log masking is enabled when calling logger methods</inlineHelpText>
+        <label>Automatic Log Masking Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MaskingPattern__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define the regex masking pattern with pipes</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the regex masking pattern with pipes. The matching text will be replaced with ***</inlineHelpText>
+        <label>Masking Pattern</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RetentionPeriod__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>It is the period of time after which system debug logs will be purged from the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>System debug logs older than this period will be purged from the system.</inlineHelpText>
+        <label>Log retention period in days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Debug Log Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>

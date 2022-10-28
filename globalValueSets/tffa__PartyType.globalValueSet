@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INDIVIDUAL</fullName>
+        <default>false</default>
+        <label>Individual</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIZATION</fullName>
+        <default>false</default>
+        <label>Organization</label>
+    </customValue>
+    <description>Type of the party</description>
+    <masterLabel>PartyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

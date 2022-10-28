@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SECURED</fullName>
+        <default>false</default>
+        <label>Secured</label>
+    </customValue>
+    <customValue>
+        <fullName>UNSECURED</fullName>
+        <default>false</default>
+        <label>Unsecured</label>
+    </customValue>
+    <customValue>
+        <fullName>LIQUID</fullName>
+        <default>false</default>
+        <label>Liquid</label>
+    </customValue>
+    <description>Indicate the Collateral Exposure Type</description>
+    <masterLabel>CollateralExposureType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

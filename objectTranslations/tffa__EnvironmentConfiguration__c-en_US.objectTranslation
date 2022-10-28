@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Allowed Ownership Code: DeficitTransfer --></label>
+        <name>AllowedOwnershipCodesForDeficitTransfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Ownership Code: Initial Funding --></label>
+        <name>AllowedOwnershipCodesForInitialFunding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Products For Deficit Transfer --></label>
+        <name>AllowedProductsForDeficitTransfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Products For Initial Funding --></label>
+        <name>AllowedProductsForInitialFunding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow joint collaboration --></label>
+        <name>tffa__AllowJointCollaboration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure the type, with each type separated by a semicolon ;. Example - EMBEDDED;PRINT;REMOTE --></help>
+        <label><!-- Allowed Disclosure Delivery Type --></label>
+        <name>tffa__AllowedDisclosureDeliveryType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apple Mobile App Url --></label>
+        <name>tffa__AppleMobileAppUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Validity Duration (mins) --></label>
+        <name>tffa__ApplicationLinkValidityDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be greather than the expiration duration --></help>
+        <label><!-- Application Retention Period in days --></label>
+        <name>tffa__ApplicationRetentionPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Url --></label>
+        <name>tffa__BaseUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- BIC stands for Bank Identifier Code. It is an international bank code that identifies particular banks worldwide. Same as SWIFT Code --></help>
+        <label><!-- BIC/SWIFT Code --></label>
+        <name>tffa__BicCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client code --></label>
+        <name>tffa__ClientCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Address for Instituition in a Single Line --></help>
+        <label><!-- Contact Address (Single line) --></label>
+        <name>tffa__ContactAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>tffa__ContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>tffa__ContactPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Org wide sender email Address for this Instituition --></help>
+        <label><!-- Default Sender Email Address --></label>
+        <name>tffa__DefaultSenderEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether Multi Brands are enabled --></help>
+        <label><!-- Enable Multi Brands --></label>
+        <name>tffa__EnableBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Crypto Services --></label>
+        <name>tffa__EnableCryptoServices__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if estated is enabled for property details --></help>
+        <label><!-- Enable Estated Property Details --></label>
+        <name>tffa__EnableEstatedValuation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables the new performant JSON serialization API for SObject(s). Currently available for opt-in. In the next release this will become the default. --></help>
+        <label><!-- Enable experimental JSON serializn API --></label>
+        <name>tffa__EnableExperimentalJsonSerializationApi__c</name>
+    </fields>
+    <fields>
+        <help><!-- If geo fencing is enabled --></help>
+        <label><!-- Enable Geo Fencing --></label>
+        <name>tffa__EnableGeoFencing__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, Iovation is used to capture device fingerprint. --></help>
+        <label><!-- Enable Iovation Device Fingerprinting --></label>
+        <name>tffa__EnableIovationDeviceFingerprinting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Multi Factor Authentication --></label>
+        <name>tffa__EnableMultiFactorAuthentication__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid assets is enabled for fetching assets --></help>
+        <label><!-- Enable Plaid assets --></label>
+        <name>tffa__EnablePlaidAssets__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid identity is enabled for applicant verification --></help>
+        <label><!-- Enable Plaid Auth Verify Identity --></label>
+        <name>tffa__EnablePlaidAuthIdentity__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid auth item is removed automatically --></help>
+        <label><!-- Enable Plaid Auth Item Automatic Removal --></label>
+        <name>tffa__EnablePlaidAuthItemAutoRemove__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid auth is enabled for ach transfer --></help>
+        <label><!-- Enable Plaid Auth --></label>
+        <name>tffa__EnablePlaidAuth__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid balance is enabled for refreshing the real time balances --></help>
+        <label><!-- Enable Plaid balance --></label>
+        <name>tffa__EnablePlaidBalance__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid bank transfers is enabled --></help>
+        <label><!-- Enable Plaid Bank Transfers --></label>
+        <name>tffa__EnablePlaidBankTransfers__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid deposit switch is enabled --></help>
+        <label><!-- Enable Plaid Deposit Switch --></label>
+        <name>tffa__EnablePlaidDepositSwitch__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid identity prefill is enabled --></help>
+        <label><!-- Enable Plaid Identity Prefill --></label>
+        <name>tffa__EnablePlaidIdentity__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid income verification is enabled --></help>
+        <label><!-- Enable Plaid Income Verification --></label>
+        <name>tffa__EnablePlaidIncomeVerification__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if plaid liabilities is enabled for fetching liabilities --></help>
+        <label><!-- Enable Plaid liabilities --></label>
+        <name>tffa__EnablePlaidLiabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable reCAPTCHA --></label>
+        <name>tffa__EnableReCaptcha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Remote Funding --></label>
+        <name>tffa__EnableRemoteFunding__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables caching of schema information for Guest sessions. --></help>
+        <label><!-- Enable Schema Caching --></label>
+        <name>tffa__EnableSchemaCaching__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether UX Strategies for A/B Testing is enabled --></help>
+        <label><!-- Enable UX Experiments --></label>
+        <name>tffa__EnableUXStrategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short Name of the Financial Instituition --></help>
+        <label><!-- FI Full Name --></label>
+        <name>tffa__FinancialInstitutionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short Name of the Financial Instituition --></help>
+        <label><!-- FI Short Name --></label>
+        <name>tffa__FinancialInstitutionShortName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The route to be used for navigating to the a generic error page --></help>
+        <label><!-- Generic Error Page --></label>
+        <name>tffa__GenericErrorPage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Mobile App Url --></label>
+        <name>tffa__GoogleMobileAppUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info URL --></label>
+        <name>tffa__InfoUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- True , if the Financial Instituition is a  credit union --></help>
+        <label><!-- Is FI a Credit Union ? --></label>
+        <name>tffa__IsCreditUnion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sandbox --></label>
+        <name>tffa__IsSandbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cipher Key --></label>
+        <name>tffa__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum distance (in miles) allowed when resolving the nearest location (branch) for a submission. --></help>
+        <label><!-- Location Resolution Range (miles) --></label>
+        <name>tffa__LocationResolutionRange__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Beneficiary Count --></label>
+        <name>tffa__MaxBeneficiaryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Individual Applicant Count --></label>
+        <name>tffa__MaxIndividualApplicantCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max OLB authentication retry count --></label>
+        <name>tffa__MaxOLBAuthenticationRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max OTP generation retry count --></label>
+        <name>tffa__MaxOTPGenerationRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max OTP retry count --></label>
+        <name>tffa__MaxOTPRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Organization Applicant Count --></label>
+        <name>tffa__MaxOrganizationApplicantCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Other Income Count --></label>
+        <name>tffa__MaxOtherIncomeCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Previous Address Count --></label>
+        <name>tffa__MaxPreviousAddressCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Previous Employer Count --></label>
+        <name>tffa__MaxPreviousEmployerCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Years of Address History --></label>
+        <name>tffa__MinAddressHistoryInYears__c</name>
+    </fields>
+    <fields>
+        <help><!-- In law, a minor is a person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood. The age of majority depends upon jurisdiction and application, but it is generally 18. --></help>
+        <label><!-- Minor Age Threshold --></label>
+        <name>tffa__MinorAgeThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification enabled --></label>
+        <name>tffa__NotificationEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP Validity duration in mins --></label>
+        <name>tffa__OTPValidityDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Entity Id --></label>
+        <name>tffa__OnlineBankingEntityId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Login Url to the Online Banking Url for authentication --></help>
+        <label><!-- Online Banking Login Url --></label>
+        <name>tffa__OnlineBankingLoginUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Provider --></label>
+        <name>tffa__OnlineBankingProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Url --></label>
+        <name>tffa__OnlineBankingUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Possible values: arc, cbr, ccd, cie, cor, ctx, iat, mte, pbr, pop, pos, ppd, rck, tel, web --></help>
+        <label><!-- Plaid Bank Transfer ACH class --></label>
+        <name>tffa__PlaidBankTransferACHClass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Possible values: ach, same-day-ach, wire --></help>
+        <label><!-- Plaid Bank Transfer Network --></label>
+        <name>tffa__PlaidBankTransferNetwork__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plaid Bank Transfer Origination Account --></label>
+        <name>tffa__PlaidBankTransferOriginationAccountId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure Mortgage prequal reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30 --></help>
+        <label><!-- Prequal reminder schedule --></label>
+        <name>tffa__PrequalReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- ReCaptcha error score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot. --></help>
+        <label><!-- reCAPTCHA error score threshold --></label>
+        <name>tffa__ReCaptchaErrorScoreThreshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- ReCaptcha warning score (Risk analysis score) threshold value. Range is from 0 to 1 where 1.0 is very likely a good interaction, 0.0 is very likely a bot. --></help>
+        <label><!-- reCAPTCHA warning score threshold --></label>
+        <name>tffa__ReCaptchaWarningScoreThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume Submission url --></label>
+        <name>tffa__ResumeSubmissionPath__c</name>
+    </fields>
+    <fields>
+        <help><!-- Routing number of the Instituition. An identification number assigned to the banking institution. --></help>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be less than the session validity duration --></help>
+        <label><!-- Session Idle warning duration in minutes --></label>
+        <name>tffa__SessionIdleDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Duration in minutes --></help>
+        <label><!-- Session Keep Alive duration in minutes --></label>
+        <name>tffa__SessionKeepAliveDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session validity duration in minutes --></label>
+        <name>tffa__SessionValidityDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Abandonment duration in mins --></label>
+        <name>tffa__SubmissionAbandonmentDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be greather than the submissions abandonment duration --></help>
+        <label><!-- Submission expiration duration in days --></label>
+        <name>tffa__SubmissionExpirationDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure Submission reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30 --></help>
+        <label><!-- Submission reminder schedule --></label>
+        <name>tffa__SubmissionReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Tracker Url --></label>
+        <name>tffa__SubmissionTrackerPath__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of times application status may be enquired after submission. Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page. --></help>
+        <label><!-- Submitted polling count --></label>
+        <name>tffa__SubmittedPollingCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Interval between successive requests to enquire application status after submission.  Used when asynchronous processing of application is triggered on submission. Polling typically happens in confirmation page. --></help>
+        <label><!-- Submitted polling interval in seconds --></label>
+        <name>tffa__SubmittedPollingIntervalInSeconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true , then continue even if Geo Callout error or null IP --></help>
+        <label><!-- Success on Geo Fencing Callout Error --></label>
+        <name>tffa__SuccessOnGeoFencingCalloutError__c</name>
+    </fields>
+</CustomObjectTranslation>

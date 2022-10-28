@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Answer --></label>
+        <name>WT_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>WT_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Submitted Date --></label>
+        <name>WT_Approval_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>WT_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Rejected Count --></label>
+        <name>WT_Compliance_Rejected_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Unpublished --></label>
+        <name>WT_Date_Unpublished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclaimer --></label>
+        <name>WT_Disclaimer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledge Category --></label>
+        <name>WT_Knowledge_Category__c</name>
+        <relationshipLabel><!-- Knowledge --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originator --></label>
+        <name>WT_Originator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>WT_Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Highest</masterLabel>
+            <translation><!-- 1 - Highest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - High</masterLabel>
+            <translation><!-- 2 - High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Medium</masterLabel>
+            <translation><!-- 3 - Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Low</masterLabel>
+            <translation><!-- 4 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Lowest</masterLabel>
+            <translation><!-- 5 - Lowest --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Publication Comment --></label>
+        <name>WT_Publication_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publish Without Compliance Approval --></label>
+        <name>WT_Publish_Without_Compliance_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>WT_Question__c</name>
+    </fields>
+    <layouts>
+        <layout>Lightning Knowledge FAQ Layout</layout>
+        <sections>
+            <label><!-- Approval Details --></label>
+            <section>Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Properties --></label>
+            <section>Properties</section>
+        </sections>
+        <sections>
+            <label><!-- Publication Details --></label>
+            <section>Publication Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- This can be used for simple question and answer articles --></description>
+        <label><!-- FAQ --></label>
+        <name>FAQ</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>FinServ__Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>FinServ__NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>FinServ__Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>FinServ__Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Completed Date --></label>
+        <name>WT_Activity_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>WT_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrator Attendees --></label>
+        <name>WT_Admin_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Sales or AUA --></label>
+        <name>WT_Annual_AUA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas where we can be more helpful? --></label>
+        <name>WT_Areas_where_we_can_be_more_helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Charter --></label>
+        <name>WT_Assigned_To_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned to Line of Business --></label>
+        <name>WT_Assigned_to_Line_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bcc --></label>
+        <name>WT_Bcc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brokers Dealers --></label>
+        <name>WT_Brokers_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buisness Location --></label>
+        <name>WT_Buisness_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRA Reportable --></label>
+        <name>WT_CRA_Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>WT_Call_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Email --></label>
+        <name>WT_Case_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>WT_Case__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Explain AML policy/procedure changes --></label>
+        <name>WT_Chg_Policies_Procedure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>WT_Contact_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>WT_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling party on pooled investments --></label>
+        <name>WT_Controlling_party_pooled_investments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit needs not being met by the bank? --></label>
+        <name>WT_Credit_Needs_Not_Being_Met_By_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Wintrust Customer --></label>
+        <name>WT_Current_Wintrust_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk cash shipment services --></label>
+        <name>WT_CustBulk_Cash_ShipSer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Uses Product --></label>
+        <name>WT_Customer_Uses_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Brokers --></label>
+        <name>WT_Deposit_Brokers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direction --></label>
+        <name>WT_Direction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertaining --></label>
+        <name>WT_Entertaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, where can we be more helpful? --></label>
+        <name>WT_If_Yes_Where_Can_We_Be_More_Helpful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intend to trade MRB (Marijuana)? --></label>
+        <name>WT_Intend_to_trade_MRB_Marijuana__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Planning Notes --></label>
+        <name>WT_Internal_Planning_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Gambling --></label>
+        <name>WT_Internet_Gambling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Likelihood of Moving to Wintrust --></label>
+        <name>WT_Likelihood_of_Moving_to_Wintrust__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD MDM Record ID --></label>
+        <name>WT_MSD_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped from Outlook --></label>
+        <name>WT_Mapped_from_Outlook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing missing areas of community? --></label>
+        <name>WT_Marketing_Missing_Areas_Of_Community__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meet With SR Leadership --></label>
+        <name>WT_Meet_With_SR_Leadership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Follow Up Date --></label>
+        <name>WT_Next_Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Clients --></label>
+        <name>WT_Number_Clients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Employees --></label>
+        <name>WT_Number_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation/Function of Person/Group --></label>
+        <name>WT_Occupation_Function_Person_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboard Investors/Managers --></label>
+        <name>WT_Onboard_InvestMng__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optional Attendees --></label>
+        <name>WT_Optional_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer --></label>
+        <name>WT_Organizer_User__c</name>
+        <relationshipLabel><!-- Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outcome Notes** --></label>
+        <name>WT_Outcome_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override DNC --></label>
+        <name>WT_Override_DNC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>WT_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan to invest in what industries? --></label>
+        <name>WT_Plan_to_invest_in_what_industries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precious Metal Dealers (PMDs) --></label>
+        <name>WT_Precious_Metal_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Banking (def by US Patriot Act) --></label>
+        <name>WT_Private_Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner Joint Call? --></label>
+        <name>WT_Product_Partner_Joint_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Partner --></label>
+        <name>WT_Product_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Follow-up --></label>
+        <name>WT_Recommended_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>WT_Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Group --></label>
+        <name>WT_Relationship_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Location --></label>
+        <name>WT_Residence_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Call Type --></label>
+        <name>WT_Retail_Call_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Type --></label>
+        <name>WT_Review_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email ? --></label>
+        <name>WT_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shell &amp; Intl private investment company --></label>
+        <name>WT_Shell_Comp_IntlPrivateInvestComp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>WT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Activity --></label>
+        <name>WT_TM_Activity_Lkp__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Talking Points --></label>
+        <name>WT_Talking_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Subtype --></label>
+        <name>WT_TaskSubtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>WT_Task_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_ThirdParty_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Payment Processors --></label>
+        <name>WT_Third_Party_Payment_Processors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training --></label>
+        <name>WT_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trends --></label>
+        <name>WT_Trends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated SOC1/SSAE16 report (get copy)? --></label>
+        <name>WT_Update_intr_rec__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFG Attendees --></label>
+        <name>WT_WFG_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the major bank related needs? --></label>
+        <name>WT_What_Are_Major_Bank_Related_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- What was discussed? --></label>
+        <name>WT_What_Was_Discussed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner structure of investment (private) --></label>
+        <name>WT_What_ownership_str_investment__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of portfolio that is foreign --></label>
+        <name>WT_What_percent_portfolio_foreign_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Initiated Contact? --></label>
+        <name>WT_Who_Initiated_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesalers Accepting 3rd Party Checks --></label>
+        <name>WT_Wholesale_Accept_Party_Chks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual administrator call? --></label>
+        <name>WT_annual_admin_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this an annual review addendum call? --></label>
+        <name>WT_annual_review_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain fund sending changes (wires) --></label>
+        <name>WT_chg_send_clt_funds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior management changes? --></label>
+        <name>WT_chg_senior_manag_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- List all exchanges or counterparties --></label>
+        <name>WT_exchgs_counterparties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which country(ies) plan to invest? --></label>
+        <name>WT_which_country_planinvest_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- which industries do you plan to invest? --></label>
+        <name>WT_which_industries_plan_invest_del__c</name>
+    </fields>
+    <layouts>
+        <layout>CRA Call Layout</layout>
+        <sections>
+            <label><!-- CRA Information --></label>
+            <section>CRA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Planning/Outcome Notes --></label>
+            <section>Planning/Outcome Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard Call Layout</layout>
+        <sections>
+            <label><!-- Planning/Outcome Notes --></label>
+            <section>Planning/Outcome Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TM Call Layout</layout>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label><!-- Planning/Outcome Notes --></label>
+            <section>Planning/Outcome Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WFG Call Layout</layout>
+        <sections>
+            <label><!-- Planning/Outcome Notes --></label>
+            <section>Planning/Outcome Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Information --></label>
+            <section>Scheduling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wealth Tasks</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wintrust Layout</layout>
+        <sections>
+            <label><!-- Planning/Outcome Notes --></label>
+            <section>Planning/Outcome Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+        <sections>
+            <label><!-- Task Details --></label>
+            <section>Task Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Defer --></label>
+        <name>Defer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_0 --></label>
+        <name>Defer_0</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_1 --></label>
+        <name>Defer_1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_2 --></label>
+        <name>Defer_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_3 --></label>
+        <name>Defer_3</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_4 --></label>
+        <name>Defer_4</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_5 --></label>
+        <name>Defer_5</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_6 --></label>
+        <name>Defer_6</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Defer_7 --></label>
+        <name>Defer_7</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription --></label>
+        <name>EditDescription</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_0 --></label>
+        <name>EditDescription_0</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_1 --></label>
+        <name>EditDescription_1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_2 --></label>
+        <name>EditDescription_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_3 --></label>
+        <name>EditDescription_3</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_4 --></label>
+        <name>EditDescription_4</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_5 --></label>
+        <name>EditDescription_5</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_6 --></label>
+        <name>EditDescription_6</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription_7 --></label>
+        <name>EditDescription_7</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority --></label>
+        <name>UpdatePriority</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_0 --></label>
+        <name>UpdatePriority_0</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_1 --></label>
+        <name>UpdatePriority_1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_2 --></label>
+        <name>UpdatePriority_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_3 --></label>
+        <name>UpdatePriority_3</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_4 --></label>
+        <name>UpdatePriority_4</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_5 --></label>
+        <name>UpdatePriority_5</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_6 --></label>
+        <name>UpdatePriority_6</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority_7 --></label>
+        <name>UpdatePriority_7</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus --></label>
+        <name>UpdateStatus</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_0 --></label>
+        <name>UpdateStatus_0</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_1 --></label>
+        <name>UpdateStatus_1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_2 --></label>
+        <name>UpdateStatus_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_3 --></label>
+        <name>UpdateStatus_3</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_4 --></label>
+        <name>UpdateStatus_4</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_5 --></label>
+        <name>UpdateStatus_5</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_6 --></label>
+        <name>UpdateStatus_6</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus_7 --></label>
+        <name>UpdateStatus_7</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Email --></label>
+        <name>WT_Send_Email</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Default task record type for Advisor profile --></description>
+        <label><!-- Advisor Task --></label>
+        <name>FinServ__AdvisorTask</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default task record type for Client Associate profile --></description>
+        <label><!-- Client Associate Task --></label>
+        <name>FinServ__ClientAssociateTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TM Call --></label>
+        <name>TM_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New TM Call --></label>
+        <name>TM_Call_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRA Call --></label>
+        <name>WT_CRA_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New CRA Call --></label>
+        <name>WT_CRA_Call_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Call --></label>
+        <name>WT_Standard_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Standard Call --></label>
+        <name>WT_Standard_Call_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Task --></label>
+        <name>WT_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WFG Call --></label>
+        <name>WT_WFG_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New WFG Call --></label>
+        <name>WT_WFG_Call_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wintrust Task --></label>
+        <name>WT_Wintrust_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Wintrust Task --></label>
+        <name>WT_Wintrust_Task_New</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter contact status for successfully completing this activity. --></errorMessage>
+        <name>ContactStatusIsMandatoryOnTask</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Outcome Notes** field should be mandatory. --></errorMessage>
+        <name>OutcomeNotesAreMandatoryOnTask</name>
+    </validationRules>
+</CustomObjectTranslation>

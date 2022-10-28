@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>tffa__auraUXStrategy</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>tffa__auraUXStrategy</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>tffa__auraUXStrategy</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>tffa__auraUXStrategy</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>tffa__UX_Strategy_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>tffa__UX_Strategy_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>UX Strategy to maintain UI styles and variables</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>tffa__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reports whether the strategy is active for consumption. Derived from disabled and effective period (StartDate &amp; EndDate) of the product.</description>
+        <externalId>false</externalId>
+        <formula>tffa__Disabled__c = False &amp;&amp; tffa__StartDate__c &lt;= TODAY() &amp;&amp; tffa__EndDate__c &gt;= TODAY()</formula>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AltLogoUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of image describing the alternate logo as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Can be uri fragment or a full url</inlineHelpText>
+        <label>Alternate Logo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AppBundle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The application resource Bundle</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The application static resource e.g. sales or apptracker</inlineHelpText>
+        <label>Application Bundle Suffix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AppPage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The application used in this strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The application used in this strategy</inlineHelpText>
+        <label>Application</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>sales</fullName>
+                    <default>false</default>
+                    <label>Sales Application</label>
+                </value>
+                <value>
+                    <fullName>apptracker</fullName>
+                    <default>false</default>
+                    <label>Collaboration Portal</label>
+                </value>
+                <value>
+                    <fullName>all</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Baseline__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Captures if the strategy is the baseline/default</description>
+        <externalId>false</externalId>
+        <label>Baseline</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__BodyBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The body background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The body background color</inlineHelpText>
+        <label>Body Background</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__BodyTextColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The body text color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The main body font text color</inlineHelpText>
+        <label>Body Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Brand__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The brand of the ux strategy</description>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <referenceTo>tffa__Brand__c</referenceTo>
+        <relationshipLabel>UX Strategies</relationshipLabel>
+        <relationshipName>UXStrategies</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CSSVariables__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Collection of other css variables</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Collection of css variables (key value pairs) as a JSON string.</inlineHelpText>
+        <label>CSS Variables</label>
+        <length>131072</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__CardBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The card background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The card background color</inlineHelpText>
+        <label>Card background</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__CardCapBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The card cap background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The card header/footer color</inlineHelpText>
+        <label>Card Header/Footer Background</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Code__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Unique identifier for the strategy</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Code</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DecisionStrategy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Champion/Challenger strategy to which this record belongs. Used in Champion/Challenger testing.</description>
+        <externalId>false</externalId>
+        <label>Decision Strategy</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Strategies configured for UX Strategy can only be selected.</errorMessage>
+            <filterItems>
+                <field>tffa__DecisionStrategy__c.tffa__Configuration__r.tffa__EntityType__c</field>
+                <operation>equals</operation>
+                <value>UXStrategy</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>tffa__DecisionStrategy__c</referenceTo>
+        <relationshipLabel>UX Strategies</relationshipLabel>
+        <relationshipName>UXStrategies</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Default color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The default text color used for footnote</inlineHelpText>
+        <label>Default(Footnote)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A summarized description, meant to provide a quick overview about the strategy.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Captures explicit disabling of strategy independent of any configured effective range.</description>
+        <externalId>false</externalId>
+        <label>Disabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DocumentTitle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The title tag defines the title of the document. The title must be text-only, and it is shown in the browser&apos;s title bar or in the page&apos;s tab.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The title must be text-only</inlineHelpText>
+        <label>Document Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmailFooterLogoUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of image describing the footer logo as a url for email.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Footer Logo as url</inlineHelpText>
+        <label>Email Footer Logo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmailHeaderLogoUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of image describing the logo as a url for email.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Header Logo</inlineHelpText>
+        <label>Email Header Logo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EndDate__c</fullName>
+        <defaultValue>DATE(2049,1,1)</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The date on which the strategy expires. Captures the upper bound of the effective range.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExpectedConversionRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expected Conversion Rate for Reporting purposes</description>
+        <externalId>false</externalId>
+        <label>Expected Conversion Rate(Deprecated)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>External id as referred by external system</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FaviconUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of favicon for the page as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Can be uri fragment or a full url</inlineHelpText>
+        <label>Favicon URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The font family to apply</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Font Family</inlineHelpText>
+        <label>Font Family</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FontUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of font describing the font as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Make sure it points to a fontface css</inlineHelpText>
+        <label>Font URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FooterBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The footer background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The Footer background color on emails and primary ui</inlineHelpText>
+        <label>Footer Background</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FooterTextColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The footer text color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The footer text color</inlineHelpText>
+        <label>Footer Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__IsBusinessConfiguration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Business configuration marker.</description>
+        <externalId>false</externalId>
+        <formula>TRUE</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Business Configuration</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LogoUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of image describing the logo as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Logo on the UI .Can be uri fragment or a full url</inlineHelpText>
+        <label>Primary Logo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ModalContentBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The model content background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The model content background</inlineHelpText>
+        <label>Modal Content Background</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__PrimaryColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The primary color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The primary CTA and section typographic heading color is both reassuring and calming</inlineHelpText>
+        <label>Primary (CTA)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ProductCardBackgroundColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product card background color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The product card background color in Hexadecimal format</inlineHelpText>
+        <label>Product card background Colour</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SecondaryColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Secondary color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The secondary color provides high contrast for components such as the applicant’s progress and notifications</inlineHelpText>
+        <label>Secondary(High contrast)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls the relative order of the item in a list.</description>
+        <externalId>false</externalId>
+        <label>Sort Order</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__SpinnerUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of spinner describing the spinner as a url.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for loading images .Can be uri fragment or a full url</inlineHelpText>
+        <label>Spinner Image</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__StartDate__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The date from which the strategy is active or ready for consumption. Captures the lower bound of the effective range.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TertiaryColour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Tertiary color in Hexadecimal format</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The main background color helps to create a sense of stability and reliance.</inlineHelpText>
+        <label>Tertiary(Header)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Theme__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The ui style bundle in the application</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The theme prefix of the application</inlineHelpText>
+        <label>Application UI CSS Bundle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__UIOptions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>store json of tessellate root options</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Input to Tessellate.forRoot stored as JSON</inlineHelpText>
+        <label>UI Options</label>
+        <length>131072</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Weight__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The weight of this strategy in distribution</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The weight of this strategy in distribution</inlineHelpText>
+        <label>Weight(Deprecated)</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>UX Strategy</label>
+    <listViews>
+        <fullName>tffa__All</fullName>
+        <columns>tffa__SortOrder__c</columns>
+        <columns>NAME</columns>
+        <columns>tffa__Active__c</columns>
+        <columns>tffa__Baseline__c</columns>
+        <columns>tffa__AppPage__c</columns>
+        <columns>tffa__AppBundle__c</columns>
+        <columns>tffa__Theme__c</columns>
+        <columns>tffa__Weight__c</columns>
+        <columns>tffa__ExpectedConversionRate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Strategies</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__AllActive</fullName>
+        <columns>tffa__SortOrder__c</columns>
+        <columns>NAME</columns>
+        <columns>tffa__Baseline__c</columns>
+        <columns>tffa__AppPage__c</columns>
+        <columns>tffa__AppBundle__c</columns>
+        <columns>tffa__Theme__c</columns>
+        <columns>tffa__Weight__c</columns>
+        <columns>tffa__ExpectedConversionRate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Strategies</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__AllActiveWithBrand</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Code__c</columns>
+        <columns>tffa__Description__c</columns>
+        <columns>tffa__AppPage__c</columns>
+        <columns>tffa__Baseline__c</columns>
+        <columns>tffa__Brand__c</columns>
+        <columns>tffa__DecisionStrategy__c</columns>
+        <columns>tffa__SortOrder__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>tffa__Brand__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All Active Brand UX Strategies</label>
+    </listViews>
+    <listViews>
+        <fullName>tffa__AllActiveWithDecisionStrategy</fullName>
+        <columns>NAME</columns>
+        <columns>tffa__Code__c</columns>
+        <columns>tffa__Description__c</columns>
+        <columns>tffa__AppPage__c</columns>
+        <columns>tffa__Baseline__c</columns>
+        <columns>tffa__Brand__c</columns>
+        <columns>tffa__DecisionStrategy__c</columns>
+        <columns>tffa__SortOrder__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tffa__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>tffa__DecisionStrategy__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All Active Champion/Challenger</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>UX Strategies</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <listViewButtons>tffa__MassClone</listViewButtons>
+        <listViewButtons>tffa__MassDelete</listViewButtons>
+        <lookupDialogsAdditionalFields>tffa__Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>tffa__Description__c</lookupDialogsAdditionalFields>
+        <massQuickActions>tffa__MarkChampionChallenger</massQuickActions>
+        <searchResultsAdditionalFields>tffa__Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tffa__Code__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>tffa__max_weight</fullName>
+        <active>true</active>
+        <description>max_weight</description>
+        <errorConditionFormula>tffa__Weight__c  &gt; 1</errorConditionFormula>
+        <errorDisplayField>tffa__Weight__c</errorDisplayField>
+        <errorMessage>Weight cannot exceed 100</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>tffa__MassClone</fullName>
+        <availability>online</availability>
+        <description>Clone selected records</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>sidebar</openType>
+        <page>tffa__cloneUXStrategy</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>tffa__MassDelete</fullName>
+        <availability>online</availability>
+        <description>Delete selected records</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Delete</masterLabel>
+        <openType>sidebar</openType>
+        <page>tffa__deleteUXStrategy</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

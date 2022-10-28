@@ -1,0 +1,264 @@
+/* CSS for Search Component*/
+
+.faq__searchResult {
+    padding: 0 22px 0 22px;
+    max-width: 1069px;
+    margin: 0 auto;
+    min-height: 200px;
+    position: relative;
+}
+
+.faq__searchResult__head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid #C4CED4; */
+    position: relative;
+}
+
+.faq__searchResult__head__helpcenter {
+    margin: 0 0 41px 0;
+}
+
+.faq__searchResult__headBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 8px 0;
+    position: inherit;
+}
+
+.faq__searchResult__title {
+    font-size: 32px;
+    font-family: "Agenda";
+    font-weight: 600;
+    color: #263357;
+    margin: 5px 0 0 0;
+}
+
+.faq__searchResult__pageInfo__desktop {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    min-width: 230px;
+    margin: 0 45px 0 0;
+}
+
+.faq__searchResult__pageInfo--row {
+    font-family: "Agenda";
+    font-size: 18px;
+    color: #777777;
+    display: flex;
+    flex-direction: row;
+}
+
+.faq__searchResult__pageInfo--blue {
+    color: #777777;
+}
+
+.faq__searchResult__searchBody {
+    width: 100%;
+    height: fit-content;
+    padding: 33px 0 0 0;
+}
+
+.searchResult {
+    width: 96%;
+    height: fit-content;
+    padding-bottom: 34px;
+}
+
+.searchResult__path {
+    color: #003E7E;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Agenda";
+    display: flex;
+    flex-direction: row;
+}
+
+.searchResult__path>a {
+    color: #003E7E;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Agenda";
+    text-decoration: none;
+}
+
+.searchResult__name>a {
+    color: #2777C9;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Agenda";
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.searchResult__description {
+    color: #777777;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Agenda";
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.faq__searchResult__helpCenter {
+    color: #1C81AF;
+    min-width: 107px;
+    line-height: 18px;
+    font-size: 16px;
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+}
+
+
+/* arrow styles */
+
+.navArrow {
+    border: solid #1C81AF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+/* ---------------------------- */
+
+.style_font_colour_page_numbering {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.styletextfont {
+    text-align: right;
+    font-size: 16px;
+}
+
+.style_font_colour_result_pages {
+    font-weight: normal;
+    color: #2777C9;
+}
+
+.hr_line_alignment {
+    height: 2px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+    margin: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.result_title_font {
+    font-family: Agenda Semibold;
+    font-size: 16px;
+    font-weight: 350;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #2777C9;
+    text-transform: capitalize;
+}
+
+.level_title_font {
+    font-family: Agenda Medium;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #2777C9;
+    text-transform: capitalize;
+}
+
+.description_style_font {
+    text-align: left;
+    font: normal normal medium 20px/30px Agenda;
+    letter-spacing: 0px;
+    color: #777777;
+}
+
+.helpCenter {
+    font-size: 14px;
+    font-weight: 81px;
+    font: Whitney medium;
+    color: #1C81AF;
+}
+
+.faq__searchResult__pageInfo__mobile {
+    display: none;
+}
+
+@media only screen and (min-device-width:0px) and (max-device-width: 600px) {
+    .searchResult {
+        padding-top: 4px;
+        border-bottom: 1px solid #C4CED4;
+    }
+    .faq__searchResult__head__helpcenter {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 21px 0;
+    }
+    .faq__searchResult__pageInfo__desktop {
+        display: none;
+    }
+    .faq__searchResult__pageInfo__mobile {
+        display: flex;
+        flex-direction: column;
+        max-width: 235px;
+        min-width: 215px;
+        margin: 0 0px 0 0;
+    }
+    .searchResult__path {
+        font-size: 14px;
+    }
+    .searchResult__path>a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-device-width:0px) and (max-device-width: 399px) {
+    .faq__searchResult__pageInfo__mobile {
+        margin: 45px 0px 0 0;
+    }
+}
+
+@media only screen and (min-device-width:400px) and (max-device-width: 599px) {
+    .faq__searchResult__pageInfo__mobile {
+        margin: 0px 0px 0 0;
+    }
+}
+
+@media only screen and (min-device-width:0px) and (max-device-width: 800px) {
+    .searchResult__description {
+        overflow: inherit;
+        white-space: unset;
+    }
+}

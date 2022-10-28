@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SINGLE_FAMILY_RESIDENCE</fullName>
+        <default>false</default>
+        <label>Single Family Residence</label>
+    </customValue>
+    <customValue>
+        <fullName>MULTI_FAMILY_RESIDENCE</fullName>
+        <default>false</default>
+        <label>Multi Family Residence</label>
+    </customValue>
+    <customValue>
+        <fullName>DETACHED</fullName>
+        <default>false</default>
+        <label>Detached</label>
+    </customValue>
+    <description>Display property types</description>
+    <masterLabel>PropertyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

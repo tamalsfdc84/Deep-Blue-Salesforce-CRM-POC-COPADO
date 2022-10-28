@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>true</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>ABANDONED</fullName>
+        <default>false</default>
+        <label>Abandoned</label>
+    </customValue>
+    <customValue>
+        <fullName>CANCELLED</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVED</fullName>
+        <default>false</default>
+        <label>Saved</label>
+    </customValue>
+    <customValue>
+        <fullName>SUBMITTED</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPIRED</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLETED</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <description>Indicates current status of the submission.This will be computed and be useful for regulations.</description>
+    <masterLabel>SubmissionStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

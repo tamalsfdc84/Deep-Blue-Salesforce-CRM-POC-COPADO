@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INSTANT</fullName>
+        <default>true</default>
+        <label>Instant</label>
+    </customValue>
+    <customValue>
+        <fullName>MAIL</fullName>
+        <default>false</default>
+        <label>Mail</label>
+    </customValue>
+    <customValue>
+        <fullName>PDF</fullName>
+        <default>false</default>
+        <label>Pdf</label>
+    </customValue>
+    <description>Method of deposit switch</description>
+    <masterLabel>DepositSwitchMethod</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

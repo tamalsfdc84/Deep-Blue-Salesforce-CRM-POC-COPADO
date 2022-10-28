@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>It contains Wintrust Configurations</description>
+    <fields>
+        <fullName>AdobeAnalyticsScript__c</fullName>
+        <description>Adobe Analytics Script</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>AdobeAnalytics Script</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BatchRetryCount__c</fullName>
+        <defaultValue>120000</defaultValue>
+        <description>Batch Retry Count</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>BatchRetryCount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZChexSystemTags__c</fullName>
+        <description>Chex System Tags for Adverse Action letter</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Chex System Tags</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CZFraudTags__c</fullName>
+        <description>Fraud System Tags for Adverse Action letter</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Fraud Tags</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CssFontSrc__c</fullName>
+        <description>Css Font Src</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>CssFontSrc</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISDLRTransErrorCode__c</fullName>
+        <description>FIS Dollar Transaction Error Codes</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FIS Dollar Transaction Error Codes</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISImmediateTransErrorCode__c</fullName>
+        <description>FIS Immediate Transaction Error Codes</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FIS Immediate Transaction Error Codes</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISPasswordExpireDays__c</fullName>
+        <description>Days after which Fis password will get expired</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>FISPasswordExpireDays</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InterestRateAutomation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enable Interest Rate Automation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Interest Rate Automation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsTestEnv__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is Test Environment.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IsTestEnvironment</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MicrodepositsReminderSchedule__c</fullName>
+        <description>Microdeposits Reminder Schedule</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Microdeposits Reminder Schedule</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoInquiriesThreshold__c</fullName>
+        <description>Threshold for Inquiries</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>No Inquiries Threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwedAmountThreshold__c</fullName>
+        <description>Threshold for Amount owed by applicant</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Owed Amount Threshold</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PassChangeNotifyMail__c</fullName>
+        <description>Pass Change Notify Mail id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>PassChangeNotifyMail</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PurgeExpiredAndCancelSub__c</fullName>
+        <description>Days after which Expired and Cancel submissions will be deleted</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>PurgeExpiredAndCancelSubmission</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PurgeSubmission__c</fullName>
+        <description>Days after which submissions will be deleted</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>PurgeSubmission</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Wintrust Env Config</label>
+    <pluralLabel>Wintrust Env Config</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

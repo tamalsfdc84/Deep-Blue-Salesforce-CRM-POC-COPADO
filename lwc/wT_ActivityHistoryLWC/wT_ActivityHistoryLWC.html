@@ -1,0 +1,454 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="divstyle">
+        <lightning-button-group>
+            <template for:each={allTypes} for:item="tab">
+                <template if:true={tab.isTask}>
+                    <lightning-button key={tab} label={tab.label} onclick={createTask} data-id={tab.id}  data-name={tab.name}>
+                    </lightning-button>    
+                </template>
+                <template if:false={tab.isTask}>
+                    <lightning-button key={tab} label={tab.label} onclick={createEvent} data-id={tab.id}  data-name={tab.name}>
+                    </lightning-button>
+                </template>
+            </template>
+        </lightning-button-group>
+    </div>
+    <div class="slds-m-bottom_medium slds-m-top_medium slds-m-right_x-large divstyletextalign">
+        <lightning-button-icon-stateful icon-name="utility:task" size="medium" selected={taskState} onclick={filterTask}
+            alternative-text="Task"></lightning-button-icon-stateful>
+        <lightning-button-icon-stateful icon-name="utility:event" size="medium" selected={evtState}
+            onclick={filterEvent} alternative-text="Event" class="slds-m-left_x-small"></lightning-button-icon-stateful>
+    </div>
+    <div class="spinner">
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+            </lightning-spinner>
+        </template>
+    </div>
+    <!---Refresh,Expand all and Collapsible sections-->
+    <div>
+        <div class="slds-m-bottom_medium slds-m-top_medium slds-m-right_x-large divstyletextfont">
+            <a href="#" onclick={refreshData}>
+                Refresh
+            </a>
+            <template if:true={isExpand}>
+                <a href="#" class="slds-p-left_small" onclick={expand}>
+                    Expand All
+                </a>
+            </template>
+            <template if:false={isExpand}>
+                <a href="#" class="slds-p-left_small" onclick={expand}>
+                    Collapse All
+                </a>
+            </template>
+        </div>
+    </div>
+    <!-- END-Refresh,Expand all and Collapsible sections-->
+    <!--Accordion/section start  OVERDUE ACTIVITIES-->
+    <ul class="slds-timeline">
+        <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+            <!--Accordion/section start  OVERDUE ACTIVITIES-->
+            <lightning-accordion-section name="C" label="Overdue Activities" class="slds-m-bottom_large">
+                <template for:each={intialOvList} for:item="task">
+                    <li key={task.Id}>
+                        <div class={task.isOpen}>
+                            <span class="slds-assistive-text">task</span>
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+                                    <button class="slds-button slds-button_icon" title="test"
+                                        aria-controls="task-item-base" onclick={handleOverdue} data-id={task.Id}>
+                                        <lightning-icon icon-name={task.btnName} size="x-small"
+                                            class="slds-button__icon slds-timeline__details-action-icon">
+                                        </lightning-icon>
+                                    </button>
+                                    <div class="slds-icon_container" title="task">
+                                        <template if:true={task.IsTask}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                        <template if:true={task.IsEvent}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="slds-media__body divstylemargin">
+                                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                        <div
+                                            class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+
+                                            <h3 class="slds-truncate" title={task.Subject}>
+                                                <a href="#" onclick={navigateToAccount} data-con={task.Id}>
+                                                    <strong class="divstylefontweight divstylered">{task.newSub}</strong>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                            <p class="slds-timeline__date divstylered">
+                                                <lightning-formatted-date-time value={task.ActivityDate}
+                                                    class="divstylefontbold"></lightning-formatted-date-time>
+                                            </p>
+                                            <div class="buttonMenu slds-dropdown--right">
+                                                <lightning-button-menu alternative-text="Toggle menu">
+                                                    <P onclick={navigateToRecordEditPage} data-recid={task.Id}>
+                                                        <lightning-menu-item label="Edit">
+                                                        </lightning-menu-item>
+                                                    </P>
+                                                </lightning-button-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" slds-grid slds-wrap">
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Assigned to:&nbsp;
+                                                <a href="#" onclick={navigateToAccount}
+                                                    data-con={task.OwnerId}>{task.Owner.Name}</a>
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_center">
+                                                <template if:true={task.IsTask}>
+                                                    Status: {task.Status}
+                                                </template>
+                                                <template if:true={task.IsEvent}>
+                                                    Status: {task.WT_Status__c}
+                                                </template>
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Activity Type: {task.WT_Activity_Type__c} </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                        </div>
+                                    </div>
+                                    <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small"
+                                        id={task.Id} aria-hidden="true">
+                                        <template if:true={task.IsEvent}>
+                                            <ul class="slds-list_horizontal slds-wrap">
+                                                <li class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Event Attendees</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+
+                                                        <template if:true={task.IsEvent}>{task.Who.Name}
+                                                        </template>
+                                                    </span>
+                                                </li>
+                                                <li class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Organizer</span>
+                                                    <span class="slds-text-body_medium slds-truncate"
+                                                        title={task.Owner.Name}>
+                                                        <a href="#" onclick={navigateToAccount}
+                                                            data-con={task.WT_Organizer_User__c}>{task.WT_Organizer_User__r.Name}</a>
+                                                    </span>
+                                                </li>
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Contact
+                                                        Type</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+                                                        <template if:true={task.IsEvent}>{task.WT_Contact_Type__c}
+                                                        </template>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </template>
+                                        <div>
+                                            <span class="slds-text-title">Outcome Notes</span>
+                                            <p class="slds-p-top_x-small">{task.WT_Outcome_Notes__c}</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+                <template if:false={overDue}>
+                    <div class="slds-m-top--small slds-text-align--center">
+                        <template if:true={OvMore}>
+                            <lightning-button label="View More" onclick={handleViewMoreOverdue}></lightning-button>
+                        </template>
+                        <template if:true={OvLess}>
+                            <lightning-button label="View Less" onclick={handleViewLessOverdue}></lightning-button>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={overDue}>
+                    <p class=" divstylefontweight divstylefontbold "> Great job! There are no overdue activities.</p>
+                </template>
+            </lightning-accordion-section>
+            <!--Accordion/section END  OVERDUE ACTIVITIES-->
+            <!--Accordion/section start  Upcoming ACTIVITIES-->
+            <lightning-accordion-section name="A" label="Upcoming Activities" class="slds-m-bottom_large">
+                <template for:each={intialUpList} for:item="task">
+                    <li key={task.Id}>
+                        <div class={task.isOpen}>
+                            <span class="slds-assistive-text">task</span>
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+                                    <button class="slds-button slds-button_icon" title="test"
+                                        aria-controls="task-item-base" onclick={handleOpen} data-id={task.Id}>
+                                        <lightning-icon icon-name={task.btnName} size="x-small"
+                                            class="slds-button__icon slds-timeline__details-action-icon">
+                                        </lightning-icon>
+                                    </button>
+                                    <div class="slds-icon_container" title="task">
+                                        <template if:true={task.IsTask}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                        <template if:true={task.IsEvent}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="slds-media__body divstylemargin">
+                                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                        <div
+                                            class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+
+                                            <h3 class="slds-truncate" title={task.Subject}>
+                                                <a href="#" onclick={navigateToAccount} data-con={task.Id}>
+                                                    <strong class="divstylefontweight">{task.newSub}</strong>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                            <p class="slds-timeline__date">
+                                                <lightning-formatted-date-time value={task.ActivityDate}
+                                                    class="divstylefontbold"></lightning-formatted-date-time>
+                                            </p>
+                                            <div class="buttonMenu">
+                                                <lightning-button-menu alternative-text="Toggle menu">
+                                                    <P onclick={navigateToRecordEditPage} data-recid={task.Id}>
+                                                        <lightning-menu-item label="Edit">
+                                                        </lightning-menu-item>
+                                                    </P>
+                                                </lightning-button-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" slds-grid slds-wrap">
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Assigned to:&nbsp;
+                                                <a href="#" onclick={navigateToAccount}
+                                                    data-con={task.OwnerId}>{task.Owner.Name}</a>
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_center">
+                                                <template if:true={task.IsTask}>
+                                                    Status: {task.Status}
+                                                </template>
+                                                <template if:true={task.IsEvent}>
+                                                    Status: {task.WT_Status__c}
+                                                </template>
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Activity Type: {task.WT_Activity_Type__c}
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                        </div>
+                                    </div>
+                                    <article
+                                        class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small"
+                                        id={task.Id} aria-hidden="true">
+                                        <template if:true={task.IsEvent}>
+                                            <ul class="slds-list_horizontal slds-wrap">
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Event Attendees</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+                                                        <template if:true={task.IsEvent}>{task.Who.Name}
+                                                        </template>
+                                                    </span>
+                                                </li>
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Organizer</span>
+                                                    <span class="slds-text-body_medium slds-truncate"
+                                                        title={task.Owner.Name}>
+
+                                                        <a href="#" onclick={navigateToAccount}
+                                                            data-con={task.WT_Organizer_User__c}>{task.WT_Organizer_User__r.Name}</a>
+                                                    </span>
+                                                </li>
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Contact
+                                                        Type</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+                                                        <template if:true={task.IsEvent}>{task.WT_Contact_Type__c}
+                                                        </template>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </template>
+                                        <div>
+                                            <span class="slds-text-title">Outcome Notes</span>
+                                            <p class="slds-p-top_x-small">{task.WT_Outcome_Notes__c}</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+                <template if:false={upcoming}>
+                    <div class="slds-m-top--small slds-text-align--center">
+                        <template if:true={UpMore}>
+                            <lightning-button label="View More" onclick={handleViewMoreUpcoming}></lightning-button>
+                        </template>
+                        <template if:true={UpLess}>
+                            <lightning-button label="View Less" onclick={handleViewLessUpcoming}></lightning-button>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={upcoming}>
+                    <p class="divstylefontbold">There are no upcoming activities.</p>
+                </template>
+            </lightning-accordion-section>
+            <!--Accordion/section END  UPCOMING ACTIVITIES-->
+ 
+            <!--Accordion/section start  COMPLETED ACTIVITIES-->
+            <lightning-accordion-section name="B" label="Completed Activities" class="slds-m-bottom_large">
+                <template for:each={intialComList} for:item="task">
+                    <li key={task.Id}>
+                        <div class={task.isOpen}>
+                            <span class="slds-assistive-text">task</span>
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+                                    <button class="slds-button slds-button_icon" title="test"
+                                        aria-controls="task-item-base" onclick={handleCompleted} data-id={task.Id}>
+                                        <lightning-icon icon-name={task.btnName} size="x-small"
+                                            class="slds-button__icon slds-timeline__details-action-icon">
+                                        </lightning-icon>
+                                    </button>
+                                    <div class="slds-icon_container" title="task">
+                                        <template if:true={task.IsTask}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                        <template if:true={task.IsEvent}>
+                                            <lightning-icon icon-name={task.icn} size="small"></lightning-icon>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="slds-media__body divstylemargin">
+                                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                        <div
+                                            class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+
+                                            <h3 class="slds-truncate" title={task.Subject}>
+                                                <a href="#" onclick={navigateToAccount} data-con={task.Id}>
+                                                    <strong class="divstylefontweight">{task.newSub}</strong>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                            <p class="slds-timeline__date">
+                                                <lightning-formatted-date-time value={task.ActivityDate}
+                                                    class="divstylefontbold"></lightning-formatted-date-time>
+                                            </p>
+                                            <div class="buttonMenu">
+                                                <lightning-button-menu alternative-text="Toggle menu">
+                                                    <P onclick={navigateToRecordEditPage} data-recid={task.Id}>
+                                                        <lightning-menu-item label="Edit">
+                                                        </lightning-menu-item>
+                                                    </P>
+
+                                                </lightning-button-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" slds-grid slds-wrap">
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Assigned to:&nbsp;
+                                                <a href="#" onclick={navigateToAccount}
+                                                    data-con={task.OwnerId}>{task.Owner.Name}</a>
+                                                </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_center">
+                                                <template if:true={task.IsTask}>
+                                                    Status: {task.Status}
+                                                </template>
+                                                <template if:true={task.IsEvent}>
+                                                    Status: {task.WT_Status__c}
+                                                </template>
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                            <div class=" slds-text-align_left">
+                                                Activity Type: {task.WT_Activity_Type__c}
+                                            </div>
+                                        </div>
+                                        <div class="slds-size_3-of-12">
+                                        </div>
+                                    </div>
+                                    <article
+                                        class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small"
+                                        id={task.Id} aria-hidden="true">
+                                        <template if:true={task.IsEvent}>
+                                            <ul class="slds-list_horizontal slds-wrap">
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Event Attendees</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+                                                        <template if:true={task.IsEvent}>{task.Who.Name}
+                                                        </template>
+
+                                                    </span>
+                                                </li>
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Organizer</span>
+                                                    <span class="slds-text-body_medium slds-truncate"
+                                                        title={task.Owner.Name}>
+
+                                                        <a href="#" onclick={navigateToAccount}
+                                                            data-con={task.WT_Organizer_User__c}>{task.WT_Organizer_User__r.Name}</a>
+                                                    </span>
+                                                </li>
+                                                <li
+                                                    class="slds-grid slds-grid_vertical slds-size_1-of-3 slds-p-bottom_small">
+                                                    <span class="slds-text-title slds-p-bottom_x-small">Contact
+                                                        Type</span>
+                                                    <span class="slds-text-body_medium slds-truncate">
+                                                        <template if:true={task.IsEvent}>{task.WT_Contact_Type__c}
+                                                        </template>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </template>
+                                        <div>
+                                            <span class="slds-text-title">Outcome Notes</span>
+                                            <p class="slds-p-top_x-small">{task.WT_Outcome_Notes__c}</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+                <template if:false={completed}>
+                    <div class="slds-m-top--small slds-text-align--center">
+                        <template if:true={ComMore}>
+                            <lightning-button label="View More" onclick={handleViewMoreCompleted}></lightning-button>
+                        </template>
+                        <template if:true={ComLess}>
+                            <lightning-button label="View Less" onclick={handleViewLessCompleted}></lightning-button>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={completed}>
+                    <p class="divstylefontbold">There are no completed activities.</p>
+                </template>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </ul>
+   </template>
+ <!--Accordion/section END  COMPLETED ACTIVITIES-->

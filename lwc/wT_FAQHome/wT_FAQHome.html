@@ -1,0 +1,31 @@
+<template>
+    <div class="content-wrapper">
+        <template if:false={isLoading}>
+            <template if:false={shouldShowSearchResult}>
+                <!-- FAQ -->
+                <div class="faq__section">
+                    <div class="faq__section__title">
+                        <h2> FREQUENTLY ASKED QUESTIONS</h2>
+                    </div>
+                    <div class="faq__section__option">
+                        <template if:true={listCategory}>
+                            <template for:each={listCategory} for:item="categoryItem">
+                                <a key={categoryItem.CategoryName} href={categoryItem.CategoryRedirectUrlPath} data-id={categoryItem.CategoryRedirectUrlPath} class="faq__section__option__block">
+                                    <img src={categoryItem.CategoryIconFullPath}>
+                                    <p>{categoryItem.CategoryName}</p>
+                                    <div class="faq__section__option__block--line"></div>
+                                </a>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+            </template>
+            <template if:true={shouldShowSearchResult}>
+                <!-- TODO: Add the search results component -->
+            </template>
+        </template>
+        <template if:true={isLoading}>
+            <lightning-spinner variant="brand" alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+    </div>
+</template>

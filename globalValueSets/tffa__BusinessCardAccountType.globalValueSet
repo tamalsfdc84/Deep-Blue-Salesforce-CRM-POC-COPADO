@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MCA</fullName>
+        <default>false</default>
+        <label>Master Control Account Number</label>
+    </customValue>
+    <customValue>
+        <fullName>ICA</fullName>
+        <default>false</default>
+        <label>Intermediate Control Account Number</label>
+    </customValue>
+    <customValue>
+        <fullName>BCA</fullName>
+        <default>false</default>
+        <label>Basic Control Account Number</label>
+    </customValue>
+    <description>Possible types of business card accounts as per the Companys internal structure and Management Information.</description>
+    <masterLabel>BusinessCardAccountType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

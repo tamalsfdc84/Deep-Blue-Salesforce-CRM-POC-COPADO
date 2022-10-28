@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account tenure in days (from) --></label>
+        <name>tffa__AccountTenureFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Skill (set) --></label>
+        <name>tffa__AgentSkillSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;123;456; --></help>
+        <label><!-- Brand code (set) --></label>
+        <name>tffa__BrandCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party segment (set) --></label>
+        <name>tffa__PartySegmentSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product category (set) --></label>
+        <name>tffa__ProductCategorySet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure you wrap each individual value in semicolons e.g. ;P-01;P-02; --></help>
+        <label><!-- Product code (set) --></label>
+        <name>tffa__ProductCodeSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program (outcome) --></label>
+        <lookupFilter>
+            <errorMessage><!-- Program is inactive. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Program__c</name>
+        <relationshipLabel><!-- Matrices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Type of referrer who can join the referral program. Derived from referral program (outcome). --></help>
+        <label><!-- Referrer type --></label>
+        <name>tffa__ReferrerType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Referral Program Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Facts --></label>
+            <section>Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Outcomes --></label>
+            <section>Outcomes</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

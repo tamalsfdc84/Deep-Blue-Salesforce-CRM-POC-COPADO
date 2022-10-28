@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>QUEUE</fullName>
+        <default>false</default>
+        <label>Queue</label>
+    </customValue>
+    <customValue>
+        <fullName>USER</fullName>
+        <default>false</default>
+        <label>User</label>
+    </customValue>
+    <customValue>
+        <fullName>AGENT</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </customValue>
+    <description>List of assignee types or entities that can own a record (primarily Application).</description>
+    <masterLabel>AssigneeType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

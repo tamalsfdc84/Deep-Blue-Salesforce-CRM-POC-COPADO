@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Credit Card - Business</fullName>
+        <default>false</default>
+        <label>Credit Card - Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Business Interest Bearing</fullName>
+        <default>false</default>
+        <label>Deposit - Business Interest Bearing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Business Non-Interest Bearing</fullName>
+        <default>false</default>
+        <label>Deposit - Business Non-Interest Bearing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Personal CDs/IRAs</fullName>
+        <default>false</default>
+        <label>Deposit - Personal CDs/IRAs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Personal Checking</fullName>
+        <default>false</default>
+        <label>Deposit - Personal Checking</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Personal MMA</fullName>
+        <default>false</default>
+        <label>Deposit - Personal MMA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Personal Now</fullName>
+        <default>false</default>
+        <label>Deposit - Personal Now</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deposit - Personal Savings</fullName>
+        <default>false</default>
+        <label>Deposit - Personal Savings</label>
+    </standardValue>
+    <standardValue>
+        <fullName>International - Documentary Collection</fullName>
+        <default>false</default>
+        <label>International - Documentary Collection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>International - Foreign Exchange</fullName>
+        <default>false</default>
+        <label>International - Foreign Exchange</label>
+    </standardValue>
+    <standardValue>
+        <fullName>International - Trade Finance</fullName>
+        <default>false</default>
+        <label>International - Trade Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investment - Great Lakes Advisors</fullName>
+        <default>false</default>
+        <label>Investment - Great Lakes Advisors</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investment - WWM</fullName>
+        <default>false</default>
+        <label>Investment - WWM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Leasing</fullName>
+        <default>false</default>
+        <label>Leasing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Letter of Credit - Standby</fullName>
+        <default>false</default>
+        <label>Letter of Credit - Standby</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Letter of Credit - Trade</fullName>
+        <default>false</default>
+        <label>Letter of Credit - Trade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Ag FPP</fullName>
+        <default>false</default>
+        <label>Loan - Ag FPP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Business Easy Access Loan/Line</fullName>
+        <default>false</default>
+        <label>Loan - Business Easy Access Loan/Line</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Business Line of Credit</fullName>
+        <default>false</default>
+        <label>Loan - Business Line of Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Business ODP Line</fullName>
+        <default>false</default>
+        <label>Loan - Business ODP Line</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Business Term</fullName>
+        <default>false</default>
+        <label>Loan - Business Term</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Industrial</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Industrial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Mixed Use</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Mixed Use</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Multi-Family</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Multi-Family</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Office</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Office</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Other</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Coml Real Estate - Retail</fullName>
+        <default>false</default>
+        <label>Loan - Coml Real Estate - Retail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Personal Line (ODP, Easy Access, etc.)</fullName>
+        <default>false</default>
+        <label>Loan - Personal Line (ODP, Easy Access, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Personal Mortgage</fullName>
+        <default>false</default>
+        <label>Loan - Personal Mortgage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - Personal Term</fullName>
+        <default>false</default>
+        <label>Loan - Personal Term</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan - WRF AR Factoring</fullName>
+        <default>false</default>
+        <label>Loan - WRF AR Factoring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other Services</fullName>
+        <default>false</default>
+        <label>Other Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TM - Incremental Deposits - Interest Bearing</fullName>
+        <default>false</default>
+        <label>TM - Incremental Deposits - Interest Bearing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TM - Incremental Deposits - Non-Interest Bearing</fullName>
+        <default>false</default>
+        <label>TM - Incremental Deposits - Non-Interest Bearing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TM - Merchant Services</fullName>
+        <default>false</default>
+        <label>TM - Merchant Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TM - Recapture</fullName>
+        <default>false</default>
+        <label>TM - Recapture</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TM - Treasury Management Services</fullName>
+        <default>false</default>
+        <label>TM - Treasury Management Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trust - Chicago Trust Company</fullName>
+        <default>false</default>
+        <label>Trust - Chicago Trust Company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private Client Group services – Deposit</fullName>
+        <default>false</default>
+        <label>Private Client Group services – Deposit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private Client Group Services - Loan</fullName>
+        <default>false</default>
+        <label>Private Client Group Services - Loan</label>
+    </standardValue>
+</StandardValueSet>

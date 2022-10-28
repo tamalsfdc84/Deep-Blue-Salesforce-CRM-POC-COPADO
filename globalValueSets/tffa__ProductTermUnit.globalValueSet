@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DAY</fullName>
+        <default>false</default>
+        <label>Day</label>
+    </customValue>
+    <customValue>
+        <fullName>MONTH</fullName>
+        <default>false</default>
+        <label>Month</label>
+    </customValue>
+    <customValue>
+        <fullName>YEAR</fullName>
+        <default>false</default>
+        <label>Year</label>
+    </customValue>
+    <description>Possible units for defining a product term.</description>
+    <masterLabel>ProductTermUnit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

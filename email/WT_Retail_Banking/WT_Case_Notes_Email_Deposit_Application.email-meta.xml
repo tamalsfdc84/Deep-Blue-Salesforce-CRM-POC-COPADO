@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Case Notes Email Deposit Application</name>
+    <style>freeForm</style>
+    <subject>Case {!Case.CaseNumber} has a new note -- Deposit Applications Team Request</subject>
+    <textOnly>Dear {!Case.WT_Requester_s_Name__c}
+
+
+
+Your Case {!Case.CaseNumber}  regarding {!Case.Subject} has been updated with a new note.
+
+
+
+Case ID: {!Case.CaseNumber}
+
+Submitted by: {!Case.CreatedBy}
+
+Reported by: {!Case.CreatedBy}
+
+Request Type: {!Case.WT_Request_Type__c}
+
+Summary:  {!Case.Subject}
+
+Description: {!Case.Description}
+
+
+
+Case Notes:
+
+{!WT_Case_Note__c.WT_Notes__c}
+
+
+
+You can view the details of your request using the link below:
+
+{!WT_Case_Note__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

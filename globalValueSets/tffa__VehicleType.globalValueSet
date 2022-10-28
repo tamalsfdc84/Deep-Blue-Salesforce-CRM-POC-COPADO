@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CAR</fullName>
+        <default>false</default>
+        <label>Car</label>
+    </customValue>
+    <customValue>
+        <fullName>MOTORCYCLE</fullName>
+        <default>false</default>
+        <label>Motorcycle</label>
+    </customValue>
+    <customValue>
+        <fullName>TRAILER</fullName>
+        <default>false</default>
+        <label>Trailer</label>
+    </customValue>
+    <customValue>
+        <fullName>MPV</fullName>
+        <default>false</default>
+        <label>Multipurpose Passenger Vehicle (MPV)</label>
+    </customValue>
+    <customValue>
+        <fullName>TRUCK</fullName>
+        <default>false</default>
+        <label>Truck</label>
+    </customValue>
+    <customValue>
+        <fullName>SUV</fullName>
+        <default>false</default>
+        <label>Sports Utility Vehicle (SUV)</label>
+    </customValue>
+    <customValue>
+        <fullName>PICKUP</fullName>
+        <default>false</default>
+        <label>Pickup</label>
+    </customValue>
+    <customValue>
+        <fullName>VAN</fullName>
+        <default>false</default>
+        <label>Van</label>
+    </customValue>
+    <customValue>
+        <fullName>HEAVY_GOODS_VEHICLE</fullName>
+        <default>false</default>
+        <label>Heavy Goods Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>WATERCRAFT</fullName>
+        <default>false</default>
+        <label>Watercraft</label>
+    </customValue>
+    <customValue>
+        <fullName>RECREATIONAL_VEHICLE</fullName>
+        <default>false</default>
+        <label>Recreational Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>POWERSPORTS</fullName>
+        <default>false</default>
+        <label>Powersport Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Body type of the vehicle. Possible values are - CAR, TRUCK,SUV,PICKUP,VAN, HEAVY_GOODS_VEHICLE</description>
+    <masterLabel>VehicleType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

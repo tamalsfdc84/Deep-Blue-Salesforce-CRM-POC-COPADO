@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        <header class="slds-modal__header slds-text-heading--medium"><b> Date Paid Automation
+            </b> </header>
+        <template if:false={isLoad}>
+            <div class="slds-text-color_error"><center>{errorMessage}</center></div>
+            <template class="slds-box" if:true={isEmpty}>
+                <lightning-datatable key-field="Id" data={leads} columns={columns} onrowselection={getSelectedRows}>
+                </lightning-datatable>
+            </template>
+            <template if:false={isEmpty}>
+                <br/> <br/> <br/>            
+                <div class="slds-align_absolute-center">No items to display.</div>
+                <br/> <br/> <br/>
+            </template>
+        </template>
+        <div if:true={isLoad} class="slds-spinner_inline spinner-padding">
+            <lightning-spinner variant="brand" size="medium" alternative-text="Loading..."></lightning-spinner>
+        </div>
+    </lightning-card>
+    <footer class="slds-modal__footer">
+        <lightning-button variant='neutral' label="Close" onclick={closeModal}></lightning-button>
+        &nbsp;&nbsp;&nbsp;
+        <lightning-button variant='brand' label='Payout workflow' onclick={updatePaid}></lightning-button>
+    </footer>
+</template>

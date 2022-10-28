@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>LIVING_TRUST</fullName>
+        <default>false</default>
+        <label>Living Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>LAND_TRUST</fullName>
+        <default>false</default>
+        <label>Land Trust</label>
+    </customValue>
+    <description>List that categorizes a trust classification.</description>
+    <masterLabel>TrustClassificationType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

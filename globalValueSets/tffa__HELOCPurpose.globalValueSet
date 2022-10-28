@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HOME_IMPROVEMENT</fullName>
+        <default>false</default>
+        <label>Home Improvement</label>
+    </customValue>
+    <customValue>
+        <fullName>PAY_DEBT</fullName>
+        <default>false</default>
+        <label>Pay Debt</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Display purpose of Home equity line of credit</description>
+    <masterLabel>HELOCPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

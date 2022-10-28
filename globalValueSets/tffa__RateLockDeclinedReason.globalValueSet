@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>INCOME_NOT_VERIFIED</fullName>
+        <default>false</default>
+        <label>Income Not Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_NOT_VERIFIED</fullName>
+        <default>false</default>
+        <label>Property Not Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>INCOMPLETE_INFO</fullName>
+        <default>false</default>
+        <label>Incomplete Information Provided</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_SCORE_LOW</fullName>
+        <default>false</default>
+        <label>Credit score too low</label>
+    </customValue>
+    <customValue>
+        <fullName>DTI_HIGH</fullName>
+        <default>false</default>
+        <label>Debt-to-income (DTI) ratios are too high</label>
+    </customValue>
+    <customValue>
+        <fullName>DOWNPAYMENT_LOW</fullName>
+        <default>false</default>
+        <label>Down payment funds too low</label>
+    </customValue>
+    <customValue>
+        <fullName>LTV_HIGH</fullName>
+        <default>false</default>
+        <label>Loan-to-value (LTV) ratio is too high</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Reason why the rate lock was declined</description>
+    <masterLabel>RateLockDeclinedReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

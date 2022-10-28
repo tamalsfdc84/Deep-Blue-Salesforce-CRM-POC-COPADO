@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Factor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Factors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bank Number --></label>
+        <name>WT_Bank_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank --></label>
+        <name>WT_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer Number Of Transactions --></label>
+        <name>WT_Branch_Customer_Num_Of_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer TPC --></label>
+        <name>WT_Branch_Customer_TPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customer with Transaction % --></label>
+        <name>WT_Branch_Customer_Transaction_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Customers Transaction --></label>
+        <name>WT_Branch_Customers_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Indicator? --></label>
+        <name>WT_Branch_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Number --></label>
+        <name>WT_Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>WT_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- WM Charter Factor --></label>
+        <name>WT_Charter_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter --></label>
+        <name>WT_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- CostCenter --></label>
+        <name>WT_CostCenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foot Traffic Level --></label>
+        <name>WT_Foot_Traffic_Level__c</name>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fusion Feed Branch # --></label>
+        <name>WT_Fusion_Feed_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fusion Location --></label>
+        <name>WT_Fusion_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>WT_Line_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>ABL,</masterLabel>
+            <translation><!-- ABL, --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agricultural Lending</masterLabel>
+            <translation><!-- Agricultural Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Banking</masterLabel>
+            <translation><!-- Business Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Banking</masterLabel>
+            <translation><!-- Community Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Center</masterLabel>
+            <translation><!-- Contact Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Funds</masterLabel>
+            <translation><!-- Government Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAD - Managed Assets Division</masterLabel>
+            <translation><!-- MAD - Managed Assets Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Practice Group</masterLabel>
+            <translation><!-- Professional Practice Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Role</masterLabel>
+            <translation><!-- Support Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndication/Capital Markets</masterLabel>
+            <translation><!-- Syndication/Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management, Wealth - Chicago Trust</masterLabel>
+            <translation><!-- Treasury Management, Wealth - Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Great Lakes Advisors</masterLabel>
+            <translation><!-- Wealth - Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Wintrust Investments</masterLabel>
+            <translation><!-- Wealth - Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Management, Wealth Services</masterLabel>
+            <translation><!-- Wealth Management, Wealth Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Funds Group</masterLabel>
+            <translation><!-- Wintrust Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Market --></label>
+        <name>WT_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>WT_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Customers --></label>
+        <name>WT_New_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Branch Factor --></label>
+        <name>WT_Parent_Business_Unit__c</name>
+        <relationshipLabel><!-- Branch Factors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Current Bank Customers --></label>
+        <name>WT_Total_Current_Bank_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Customers --></label>
+        <name>WT_Total_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foot Traffic --></label>
+        <name>WT_Total_Foot_Traffic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number Of Transactions --></label>
+        <name>WT_Total_Number_Of_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Customer TPC --></label>
+        <name>WT_Unique_Customer_TPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Customers Transaction --></label>
+        <name>WT_Unique_Customers_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Key --></label>
+        <name>WT_Unique_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- WM Branch Factor --></label>
+        <name>WT_WM_Branch_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- WM Charter Factor --></label>
+        <name>WT_WM_Charter_Factor__c</name>
+    </fields>
+    <layouts>
+        <layout>Business Unit Entity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

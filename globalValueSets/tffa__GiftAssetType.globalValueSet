@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CASH</fullName>
+        <default>false</default>
+        <label>Cash</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_EQUITY</fullName>
+        <default>false</default>
+        <label>Property Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>GRANT</fullName>
+        <default>false</default>
+        <label>Grant</label>
+    </customValue>
+    <description>A value that specifies financial assets in a mortgage loan transaction. Assets may be either liquid or fixed and are associated with a corresponding asset amount</description>
+    <masterLabel>GiftAssetType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

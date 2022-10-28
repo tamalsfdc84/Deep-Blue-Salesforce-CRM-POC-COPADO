@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>REGULAR</fullName>
+        <default>false</default>
+        <label>Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>ROLLOVER</fullName>
+        <default>false</default>
+        <label>Rollover</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSFER</fullName>
+        <default>false</default>
+        <label>Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP</fullName>
+        <default>false</default>
+        <label>Catchup</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP_CURRENT_YEAR</fullName>
+        <default>false</default>
+        <label>Catch Up Current Year</label>
+    </customValue>
+    <customValue>
+        <fullName>CATCHUP_PREVIOUS_YEAR</fullName>
+        <default>false</default>
+        <label>Catch Up Previous Year</label>
+    </customValue>
+    <customValue>
+        <fullName>CONVERSION_TO_ROTH</fullName>
+        <default>false</default>
+        <label>Conversion To Roth IRA</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER_SEP</fullName>
+        <default>false</default>
+        <label>Employer&apos;s SEP Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER_SIMPLE</fullName>
+        <default>false</default>
+        <label>Employer&apos;s SIMPLE Contribution</label>
+    </customValue>
+    <customValue>
+        <fullName>RECHARACTERIZATION</fullName>
+        <default>false</default>
+        <label>Recharacterization</label>
+    </customValue>
+    <customValue>
+        <fullName>REGULAR_SPOUSAL_CURRENT</fullName>
+        <default>false</default>
+        <label>Regular Current Year</label>
+    </customValue>
+    <customValue>
+        <fullName>REGULAR_SPOUSAL_PREVIOUS</fullName>
+        <default>false</default>
+        <label>Regular Prior Year</label>
+    </customValue>
+    <customValue>
+        <fullName>ANNUAL_AMOUNT</fullName>
+        <default>false</default>
+        <label>Annual Amount</label>
+    </customValue>
+    <description>Different investment contribution types.</description>
+    <masterLabel>InvestmentContributionType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

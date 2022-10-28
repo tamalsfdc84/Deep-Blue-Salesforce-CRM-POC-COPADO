@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge Category</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge Category</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category Title --></label>
+        <name>WT_Category_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Published --></label>
+        <name>WT_Date_Published__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Unpublished --></label>
+        <name>WT_Date_Unpublished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>WT_Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Icon Name --></label>
+        <name>WT_Portal_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Title --></label>
+        <name>WT_Sub_Title__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

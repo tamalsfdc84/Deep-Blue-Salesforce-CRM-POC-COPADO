@@ -1,0 +1,320 @@
+<!--
+@description       : 
+@author            : ChangeMeIn@UserSettingsUnder.SFDoc
+@group             : 
+@last modified on  : 06-11-2021
+@last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+Modifications Log 
+Ver   Date         Author                               Modification
+1.0   05-04-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+<template>
+    <template if:true={showRecordTypeSelection}>
+        <template if:true={loaded}>
+        
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <span>
+                    <header class="slds-modal__header">
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">New Case :  Record Type </h2>
+                    </header> 
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <lightning-radio-group label="Select a record type" required="true" value={recordTypeId} options={mapRecordType} onchange={getRecordTypeID}>
+                            </lightning-radio-group>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <div class="slds-clearfix">
+                            <div class="slds-align_absolute-center">  
+                                <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button> 
+                                &nbsp;&nbsp;&nbsp;
+                                <lightning-button class="slds-m-top_small" variant="brand" type="button" name="Next" label="Next" onclick={prePopulateValue}></lightning-button>                                        
+                            </div>
+                        </div>
+                    </footer>         
+                </span>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:false={loaded}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+    </template>
+    <template if:true={showDepositApplicationLayout}>
+        <template if:true={loaded}>
+        </template>
+        <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+        <lightning-card icon-name="standard:case" title="New Case : Deposit Application">
+            <lightning-record-edit-form object-api-name="Case"  onerror={handleError} onsubmit={handleSubmit} onsuccess={handleSuccess} record-type-id={recordTypeId}>
+                <div class="slds-clearfix">
+                    <div class="slds-align_absolute-center">                
+                        <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                        <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button>
+                    </div>
+                </div>
+                <lightning-messages></lightning-messages>
+                <div class="slds-hide">
+                    <div class="slds-section slds-is-open" >
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Case Information">Case Information</span>
+                        </h4>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span>
+                                        <lightning-input-field field-name="OwnerId" data-field="caseOwner"></lightning-input-field>
+                                    </span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span>
+                                        <lightning-input-field field-name="CaseNumber" ></lightning-input-field>
+                                    </span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span>
+                                        <lightning-input-field field-name="AccountId" value={accountId}></lightning-input-field>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="slds-section slds-is-open">
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Requester Information">Requester Information</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-input-field field-name="WT_Requester_s_Name__c" required="true" value={userInfo.Id} onchange={changePrepopulatedValue}></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Email_Address__c" value={userInfo.Email}></lightning-input-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-input-field field-name="WT_Current_Phone_Number__c" required value={userInfo.Phone}></lightning-input-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-section slds-is-open">
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Request Details">Request Details</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    
+                                    <lightning-input-field field-name="WT_Request_Type__c" onchange={handleRequestChange} required></lightning-input-field>
+                                    <lightning-input-field field-name="Subject" required></lightning-input-field>
+                                    <lightning-input-field field-name="Description" required></lightning-input-field>
+                                    <lightning-input-field field-name="Priority" required value="Low"></lightning-input-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-input-field field-name="WT_Bank_Number__c" ></lightning-input-field>
+                                    <lightning-input-field field-name="Status" value="Pending" disabled data-field="status"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Required_by_Date__c" ></lightning-input-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-hide">
+                    <div class="slds-section slds-is-open">
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Resolution Details">Resolution Details</span>
+                        </h4>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <lightning-input-field field-name="WT_Resolution_Target__c" value={reportdate}></lightning-input-field>
+                            <lightning-input-field field-name="WT_Resolution_Date__c" ></lightning-input-field>
+                            <lightning-input-field field-name="WT_Resolution_Notes__c" ></lightning-input-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-section slds-is-open">
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="System Information">System Information</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    <lightning-input-field field-name="CreatedById" ></lightning-input-field>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>  
+                                    <lightning-input-field field-name="LastModifiedById" ></lightning-input-field>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-clearfix">
+                    <div class="slds-align_absolute-center">                
+                        <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                        <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+    <template if:true={showCCPALayout}>
+        <template if:true={loaded}>
+        </template>
+        <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+        <lightning-card icon-name="standard:case" title="New Case : CCPA">
+            <lightning-record-edit-form object-api-name="Case" onerror={handleError}  onsubmit={handleSubmit} onsuccess={handleSuccess} record-type-id={recordTypeId}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-clearfix">
+                <div class="slds-align_absolute-center">                
+                    <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                    <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button>
+                </div>
+            </div>
+            <div class="slds-hide">
+            <div class="slds-section slds-is-open">
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Case Information">Case Information</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="AccountId"  value={accountId} data-field="accountDetail" onchange={getMailingAddress}></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="slds-section slds-is-open">
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Request Details">Request Details</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Date_of_Request_Received__c" required onchange={handleRequestChange}></lightning-input-field>
+                                <lightning-input-field field-name="WT_Consumer_Authenticated__c"  required></lightning-input-field>                                                                        
+                                <lightning-input-field field-name="WT_Report_Delivery_Method__c" data-field="report" required  onchange={getMailingAddress}></lightning-input-field>
+                                <lightning-input-field field-name="WT_Consumer_Mailing_Address__c" value={mailingAddress}></lightning-input-field> 
+                                <lightning-input-field field-name="WT_Consumer_Email_Address__c"></lightning-input-field>                                    
+                                <lightning-input-field field-name="WT_Verified_Resident_of_California__c" required></lightning-input-field>                                  
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="WT_Consumer_Name__c"  required></lightning-input-field>
+                                <lightning-input-field field-name="WT_Report_Type__c"  required></lightning-input-field>
+                                <lightning-input-field field-name="WT_Data_Purge_Requested__c"  required></lightning-input-field>
+                                <lightning-input-field field-name="WT_Consumer_Type__c" required></lightning-input-field>                                  
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-section slds-is-open">
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Additional Information">Additional Information</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                            <lightning-input-field field-name="Status" data-field="status" value="In Progress" disabled></lightning-input-field>
+                                <!--  <lightning-input-field field-name="WT_Attempted_to_Contact__c" required></lightning-input-field> -->                             
+                                <lightning-input-field field-name="Origin" required></lightning-input-field>
+                            </span></div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="Type" ></lightning-input-field>
+                                <lightning-input-field field-name="Description" ></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-section slds-is-open">
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Additional Information">Additional Fields</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="Summary" data-field="summary"></lightning-input-field>
+                                <lightning-input-field field-name="ContactId" ></lightning-input-field>
+                            </span></div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>                                    
+                                <lightning-input-field field-name="Priority" ></lightning-input-field>
+                                <lightning-input-field field-name="Reason" ></lightning-input-field>
+                                <lightning-input-field field-name="WebEmail"></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-section slds-is-open">
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="System Information">System Information</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>
+                                <lightning-input-field field-name="CreatedById" ></lightning-input-field>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <span>  
+                                <lightning-input-field field-name="LastModifiedById" ></lightning-input-field>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <lightning-input-field field-name="WT_Resolution_Target__c" value={reportdate} class="slds-hide"></lightning-input-field>
+            
+            <div class="slds-clearfix">
+                <div class="slds-align_absolute-center">                
+                    <lightning-button class="slds-m-top_small" type="submit" label="Save" ></lightning-button>
+                    <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button>
+                </div>
+            </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+    <template if:true={showComplianceComplaintLayout}>
+        <lightning-card>
+            <c-w-t-compliance-case-override account-id={accountId} loaded=true oncompliancerecordsave={handleChildSave}></c-w-t-compliance-case-override>  
+        </lightning-card>
+    </template>
+    <template if:true={showComplianceComplaintError}>
+        <lightning-card>
+            <div class="slds-align_absolute-center" style="height:5rem">You do not have access to compliance Case Creation</div>
+            <div class="slds-clearfix">
+            <div class="slds-align_absolute-center">                
+                <lightning-button class="slds-m-top_small" type="button" label="Cancel" onclick={returnToCaseMainPage}></lightning-button>
+            </div>
+        </div>
+        </lightning-card>
+    </template>
+    <template if:true={showMyHRCasesLayout}>
+        <lightning-card>
+            <c-w-t-my-h-r-cases-l-w-c loaded=true oncompliancerecordsave={handleChildSave}></c-w-t-my-h-r-cases-l-w-c>
+        </lightning-card>
+    </template>
+    
+    </template>

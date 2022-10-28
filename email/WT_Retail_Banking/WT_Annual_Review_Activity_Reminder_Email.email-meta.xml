@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Annual Review Activity Reminder Email</name>
+    <style>none</style>
+    <subject>Upcoming Appointment</subject>
+    <textOnly>You have an upcoming appointment for the customer (Related To field value on the activity form) on 09/24/2021. You can access the activity record in the system by clicking the link below. Click Here Sincerely, CRM Support crmsupport@wintrust.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

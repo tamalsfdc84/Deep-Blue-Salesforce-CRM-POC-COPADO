@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COMPLETE</fullName>
+        <default>false</default>
+        <label>Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>INCOMPLETE</fullName>
+        <default>false</default>
+        <label>Incomplete</label>
+    </customValue>
+    <description>The status of the party in the submission. More akin to data entry status</description>
+    <masterLabel>SubmissionPartyStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

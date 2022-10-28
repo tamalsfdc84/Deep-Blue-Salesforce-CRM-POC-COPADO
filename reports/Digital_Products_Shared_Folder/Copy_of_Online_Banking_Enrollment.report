@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>tffa__Submission__c.tffa__Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>tffa__Submission__c.tffa__Brand__c</field>
+    </columns>
+    <description>Status of Online Banking Enrollment for Submissions that have been submitted.</description>
+    <filter>
+        <criteriaItems>
+            <column>tffa__Submission__c.tffa__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SUBMITTED</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Copy of Online Banking Enrollment</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$tffa__Submission__c$tffa__AdditionalPreference__c@tffa__AdditionalPreference__c.tffa__Party__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-08-02</startDate>
+    </timeFrameFilter>
+</Report>

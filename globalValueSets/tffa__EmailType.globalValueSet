@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRIMARY</fullName>
+        <default>false</default>
+        <label>Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </customValue>
+    <customValue>
+        <fullName>SECONDARY</fullName>
+        <default>false</default>
+        <label>Secondary</label>
+    </customValue>
+    <description>The type of the primary email , valid values can be HOME,WORK,BUSINESS</description>
+    <masterLabel>EmailType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

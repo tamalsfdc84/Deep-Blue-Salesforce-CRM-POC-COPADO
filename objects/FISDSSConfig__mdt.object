@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for all the configs related to FISDSSConfig</description>
+    <fields>
+        <fullName>AcquirerId__c</fullName>
+        <description>Acquirer Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>AcquirerId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AqrCustomerId__c</fullName>
+        <description>Aqr Customer Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>AqrCustomerId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aqr__c</fullName>
+        <description>Aqr</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Aqr</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChexSystemsVersionNbr__c</fullName>
+        <description>Chex Systems Version Nbr</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ChexSystemsVersionNbr</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConfigKey__c</fullName>
+        <description>Config Key</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ConfigKey</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomerId__c</fullName>
+        <description>Customer Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>CustomerId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IncludeChexSystems__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Include Chex Systems</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IncludeChexSystems</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncludeIdentityManager__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Include Identity Manager</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IncludeIdentityManager</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncludeOfac__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Include Ofac</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IncludeOfac</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncludeQualifile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Include Qualifile</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IncludeQualifile</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IndustryMarketCode__c</fullName>
+        <description>Industry Market Code</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IndustryMarketCode</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InquiryId__c</fullName>
+        <description>Inquiry Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>InquiryId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InstanceCd__c</fullName>
+        <description>Instance Cd</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>InstanceCd</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsStaging__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Is Staging</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>IsStaging</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LocationId__c</fullName>
+        <description>Location Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>LocationId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MsgUuid__c</fullName>
+        <description>Msg Uuid</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>MsgUuid</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductCd__c</fullName>
+        <description>Product Cd</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ProductCd</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductVersion__c</fullName>
+        <description>Product Version</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ProductVersion</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QualifileVersionNbr__c</fullName>
+        <description>Qualifile Version Nbr</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>QualifileVersionNbr</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportDataType__c</fullName>
+        <description>Report Data Type</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ReportDataType</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StrategyTypeId__c</fullName>
+        <description>Strategy Type Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>StrategyTypeId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserDefinedTransTextOne__c</fullName>
+        <description>UserDefined Trans Text One</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserDefinedTransTextOne</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserDefinedTransTextThree__c</fullName>
+        <description>User Defined Trans Text Three</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserDefinedTransTextThree</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserDefinedTransTextTwo__c</fullName>
+        <description>User Defined Trans Text Two</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserDefinedTransTextTwo</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserDefinedTransactionText__c</fullName>
+        <description>UserDefined Trans Text</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserDefinedTransText</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>FISDSSConfig</label>
+    <pluralLabel>FISDSSConfig</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

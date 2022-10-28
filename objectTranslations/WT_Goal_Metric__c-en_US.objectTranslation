@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Goal Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Goal Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Result Criteria Logic --></label>
+        <name>WT_Actual_Result_Criteria_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Result Criteria --></label>
+        <name>WT_Actual_Result_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Result Date Field --></label>
+        <name>WT_Actual_Result_Date_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Field To Sum --></label>
+        <name>WT_CRM_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Object --></label>
+        <name>WT_CRM_Object_API_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In Progress Criteria --></label>
+        <name>WT_InProgress_Result_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Progress Result Date Field --></label>
+        <name>WT_InProgress_Result_Date_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Progress Criteria Logic --></label>
+        <name>WT_In_Progress_Criteria_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metric Type --></label>
+        <name>WT_Metric_Type__c</name>
+        <picklistValues>
+            <masterLabel>COUNT</masterLabel>
+            <translation><!-- COUNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation><!-- SUM --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Goal Metric Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The user does not have access to enter the goal metric. --></errorMessage>
+        <name>WT_Goal_Metrics_Access_New</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The user does not have access to update the goal metric. --></errorMessage>
+        <name>WT_Goal_Metrics_Access_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

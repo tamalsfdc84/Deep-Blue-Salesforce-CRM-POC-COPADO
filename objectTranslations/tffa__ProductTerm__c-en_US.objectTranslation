@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- APR --></label>
+        <name>tffa__APR__c</name>
+    </fields>
+    <fields>
+        <label><!-- APY --></label>
+        <name>tffa__APY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest plan code --></label>
+        <name>tffa__InterestPlanCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>tffa__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Amount --></label>
+        <name>tffa__MaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Term --></label>
+        <name>tffa__MaxTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Amount --></label>
+        <name>tffa__MinAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Term --></label>
+        <name>tffa__MinTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product --></label>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Financial Product Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>tffa__Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term unit --></label>
+        <name>tffa__TermUnit__c</name>
+    </fields>
+    <layouts>
+        <layout>ProductTerm Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

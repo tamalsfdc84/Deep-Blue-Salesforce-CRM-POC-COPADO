@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Controlling party --></label>
+        <name>tffa__ControllingParty__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financially dependent --></label>
+        <name>tffa__FinanciallyDependent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership percentage --></label>
+        <name>tffa__OwnershipPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Related To --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Party --></label>
+        <name>tffa__RelatedParty__c</name>
+        <relationshipLabel><!-- Related As --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relation category --></label>
+        <name>tffa__RelationCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation code value --></label>
+        <name>tffa__RelationCodeValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Captures how Related Party related to Party. --></help>
+        <label><!-- Relation Code --></label>
+        <lookupFilter>
+            <errorMessage><!-- Relation code not active. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__RelationCode__c</name>
+        <relationshipLabel><!-- Party Party Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Party Party Relationship Layout</layout>
+        <sections>
+            <label><!-- Additional details --></label>
+            <section>Additional details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- The relation is invalid for the associated parties. --></errorMessage>
+        <name>tffa__ValidateRelationCode</name>
+    </validationRules>
+</CustomObjectTranslation>

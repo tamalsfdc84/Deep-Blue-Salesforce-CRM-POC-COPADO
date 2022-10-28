@@ -1,0 +1,173 @@
+<template>
+    <lightning-card title ="General Information" icon-name="standard:account">
+        <lightning-layout-item size="6" padding='around-small'>
+            <lightning-record-view-form record-id={recordId} object-api-name="Account" >
+            <div class="slds-box">
+            <lightning-layout >
+                <lightning-layout-item  flexibility="auto" padding="horizontal-medium">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="name"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='Name' id='name'></lightning-output-field>
+                         </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="address"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='BillingAddress' id='address'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="primarycontact"></label>
+                        <div class="slds-form-element__control">        
+                            <lightning-output-field field-name='WT_Primary_Contact_Name_Ranked__c' id='primarycontact'></lightning-output-field>
+                        </div>
+                    </div>    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="phone"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='Phone' id='phone'></lightning-output-field>
+                         </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="headofhouse"></label>
+                        <div class="slds-form-element__control">
+                             <lightning-output-field field-name='WT_Head_of_RG__c' id='headofhouse'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="incubent"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='WT_Incumbent_Former_Bank_lookup__c' id='incubent'></lightning-output-field>
+                        </div>
+                    </div>    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="Accontant"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='WT_Accountant__c' id='Accontant'></lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="lawyer"></label>
+                        <div class="slds-form-element__control">
+                             <lightning-output-field field-name='WT_Lawyer__c' id='lawyer'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="hobbies"></label>
+                        <div class="slds-form-element__control">
+                             <lightning-output-field field-name='WT_Hobbies_or_Special_Interests__pc' id='hobbies'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="Revenue"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='WT_Annual_Revenue_Ranked__c' id='Revenue'></lightning-output-field>
+                         </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="NAICS"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='WT_NAICS_Code__c' id='NAICS'></lightning-output-field>
+                         </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="SIC"></label>
+                        <div class="slds-form-element__control">
+                             <lightning-output-field field-name='Sic' id='SIC'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="industry"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='Industry' id='industry'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="yearest"></label>
+                        <div class="slds-form-element__control">
+                            <lightning-output-field field-name='WT_Year_Established__c' id='yearest'></lightning-output-field>
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="Noofemployee"></label>
+                        <div class="slds-form-element__control">
+                             <lightning-output-field field-name='WT_No_of_Employees_Banker__c' id='Noofemployee'></lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>        
+            </div>
+            </lightning-record-view-form>
+        </lightning-layout-item>
+    </lightning-card>
+    <lightning-card title="Research Summary" icon-name="standard:account">
+        <lightning-layout-item size="6" padding='around-small'>
+            <lightning-record-view-form record-id={recordId} object-api-name="Account" >
+                <div class="slds-box">
+                    <lightning-output-field field-name='FinServ__LinkedIn__pc'></lightning-output-field>
+                    <lightning-output-field field-name='Website'></lightning-output-field>
+                    <lightning-output-field field-name='WT_UCC_Filing__c'></lightning-output-field>
+                </div>
+            </lightning-record-view-form>
+        </lightning-layout-item>
+    </lightning-card>
+    <lightning-card title="Wintrust Customer Overview" icon-name="standard:account">
+        <lightning-layout-item size="6" padding='around-small'>
+            <lightning-record-view-form record-id={recordId} object-api-name="Account" >
+                <div class="slds-box">
+                    <lightning-output-field field-name='WT_Total_Loan_Outstandings__c'></lightning-output-field>
+                    <lightning-output-field field-name='WT_Total_Loan_Commitments__c'></lightning-output-field>
+                    <lightning-output-field field-name='WT_Total_DDA_Deposits__c'></lightning-output-field>
+                    <lightning-output-field field-name='FinServ__TotalBankDeposits__c'></lightning-output-field>
+                    <lightning-output-field field-name='WT_TM_Relationship__c'></lightning-output-field>
+                    <lightning-output-field field-name='WT_Investment_Relationship__c'></lightning-output-field>
+                </div>
+            </lightning-record-view-form>
+        </lightning-layout-item>
+    </lightning-card>
+    <lightning-card title="Upcoming Meetings" icon-name="action:new_event">
+        <div class="slds-box">
+            <template if:true={WrapEvent}>
+                <table>
+                    <tr><th>Date &nbsp;</th>
+                    <th> Owner &nbsp;</th>
+                    <th>Subject </th></tr>
+                    <template for:each={WrapEvent} for:item="event">
+                        <tr key ={event.assignedTo}>
+                        <th> {event.actvityDate} &nbsp;  </th>
+                        <th> {event.assignedTo}  &nbsp; </th>
+                        <th> {event.subject} </th>
+                        </tr>
+                    </template>
+                </table>
+            </template>
+            <template if:true={error}>
+                {error}
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Upcoming Activties" icon-name="action:new_task">
+        <div class="slds-box">
+            <template if:true={WrapTask}>
+                <table>
+                <tr><th>Date &nbsp;</th>
+                <th> Owner &nbsp;</th>
+                <th>Subject </th></tr>
+                <template for:each={WrapTask} for:item="task">
+                    <tr key={task.subject}>
+                    <th> {task.actvityDate} &nbsp;</th>
+                    <th> {task.assignedTo}  &nbsp; </th>            
+                    <th> {task.subject} </th>
+                    </tr>
+                </template>
+            </table>
+            </template>
+            <template if:true={error}>
+                {error}
+            </template>
+        </div>
+    </lightning-card>
+</template>

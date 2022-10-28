@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SINGLE_FAMILY</fullName>
+        <default>false</default>
+        <label>Single Family</label>
+    </customValue>
+    <customValue>
+        <fullName>CO_OP</fullName>
+        <default>false</default>
+        <label>Co-Op</label>
+    </customValue>
+    <customValue>
+        <fullName>CONDO</fullName>
+        <default>false</default>
+        <label>Condo</label>
+    </customValue>
+    <customValue>
+        <fullName>TOWNHOUSE</fullName>
+        <default>false</default>
+        <label>Townhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>MANUFACTURED_HOUSE</fullName>
+        <default>false</default>
+        <label>Manufactured House</label>
+    </customValue>
+    <description>Display the list of types of property for income summary</description>
+    <masterLabel>IncomePropertyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

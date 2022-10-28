@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- AndroidApp --></label>
+        <name>AndroidApp__c</name>
+    </fields>
+    <fields>
+        <label><!-- AppleApp --></label>
+        <name>AppleApp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Short Name --></label>
+        <name>BankShortName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer Number --></label>
+        <name>CIPrmyOffcrNbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>ContactNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Location --></label>
+        <name>DefaultLocation__c</name>
+        <relationshipLabel><!-- Brands --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EmailHeaderLogoUrl --></label>
+        <name>EmailHeaderLogoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailPhone --></label>
+        <name>EmailPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Footer Logo --></label>
+        <name>FooterLogo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Logo --></label>
+        <name>HeaderLogo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Appointment Url --></label>
+        <name>ScheduleAppointmentUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Email Id --></label>
+        <name>SenderEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swift Code --></label>
+        <name>SwiftCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apple Mobile App Url --></label>
+        <name>tffa__AppleMobileAppUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIC/SWIFT Code --></label>
+        <name>tffa__BicCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Address for Brand in a Single Line --></help>
+        <label><!-- Contact Address (Single line) --></label>
+        <name>tffa__ContactAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>tffa__ContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>tffa__ContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sender Email Address --></label>
+        <name>tffa__DefaultSenderEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full description --></label>
+        <name>tffa__FullDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Mobile App Url --></label>
+        <name>tffa__GoogleMobileAppUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info URL --></label>
+        <name>tffa__InfoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Entity Id --></label>
+        <name>tffa__OnlineBankingEntityId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Login Url to the Online Banking Url for authentication --></help>
+        <label><!-- Online Banking Login Url --></label>
+        <name>tffa__OnlineBankingLoginUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Provider --></label>
+        <name>tffa__OnlineBankingProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Url --></label>
+        <name>tffa__OnlineBankingUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing number --></label>
+        <name>tffa__RoutingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Name --></label>
+        <name>tffa__ShortName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The theme prefix of the application --></help>
+        <label><!-- UX Strategy(Deprecated) --></label>
+        <name>tffa__Theme__c</name>
+    </fields>
+    <layouts>
+        <layout>Brand Layout</layout>
+        <sections>
+            <label><!-- Active --></label>
+            <section>Active</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Details --></label>
+            <section>Email Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

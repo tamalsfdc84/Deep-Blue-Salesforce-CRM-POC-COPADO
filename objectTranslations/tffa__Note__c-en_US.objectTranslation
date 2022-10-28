@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Content --></label>
+        <name>tffa__Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender id --></label>
+        <name>tffa__SenderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender name --></label>
+        <name>tffa__SenderName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>tffa__Title__c</name>
+    </fields>
+</CustomObjectTranslation>

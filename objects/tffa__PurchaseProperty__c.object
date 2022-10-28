@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Details of purchase property involved in this application</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>tffa__AdditionalFeatures__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describing features in or around the building, and their corresponding size in sq ft.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Additional features</label>
+        <length>1024</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Captures address of the property being purchased</description>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <referenceTo>tffa__Address__c</referenceTo>
+        <relationshipLabel>Purchase Properties</relationshipLabel>
+        <relationshipName>PurchaseProperties</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tffa__AgeOfConstruction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates age in years of the real estate to be purchased by party</description>
+        <externalId>false</externalId>
+        <label>Age of construction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AgreementValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total agreement value of real estate asset</description>
+        <externalId>false</externalId>
+        <label>Agreement value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Application__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to parent application object</description>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>tffa__Application__c</referenceTo>
+        <relationshipLabel>Properties</relationshipLabel>
+        <relationshipName>PurchaseProperties</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>tffa__CommercialDesignatorType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies a further level of detail for a street address, for example, Suite or Unit. Captured for Commercial property.</description>
+        <externalId>false</externalId>
+        <label>Commercial designator type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__CommercialPropertyDesignatorType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CommercialUsageType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the intended usage of the property by the borrower.</description>
+        <externalId>false</externalId>
+        <label>Commercial usage type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__CommercialOccupancyType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__CommunityPropertyType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Captures details about community property state</description>
+        <externalId>false</externalId>
+        <label>Community property type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__CommunityPropertyType</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__ConstructionClosingType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies the type of closing process for the construction-to-permanent loan.</description>
+        <externalId>false</externalId>
+        <label>Construction closing type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ConstructionClosingType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__ConstructionImprovementAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total cost amount of additions to raw land that normally increase its value (i.e., the building) as part of a construction loan.</description>
+        <externalId>false</externalId>
+        <label>Construction improvement amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__CreditLimit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum dollar amount of credit available to the borrower on a Home Equity Line of Credit (HELOC) regardless of whether the borrower has accessed the amount.</description>
+        <externalId>false</externalId>
+        <label>Credit limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__DesignatorType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies a further level of detail for a street address, for example, Suite or Unit. This list is based on the USPS Publication 28 on Postal Addressing Standards with the addition of Condo based on mortgage industry need.</description>
+        <externalId>false</externalId>
+        <label>Designator type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertyDesignatorType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__DispositionStatusType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies the intended disposition of an owned real property.</description>
+        <externalId>false</externalId>
+        <label>Disposition status type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__DispositionStatusType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__DownPayment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Down payment amount to be paid while purchasing the property</description>
+        <externalId>false</externalId>
+        <label>Down payment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__EnergyImprovementIndicator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Options for energy-related improvements program</description>
+        <externalId>false</externalId>
+        <label>Energy improvement indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__EnergyImprovementIndicator</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__EstimatedValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Estimated valuation of the property</description>
+        <externalId>false</externalId>
+        <label>Estimated value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExistingMortgage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates existing mortgage on the property</description>
+        <externalId>false</externalId>
+        <label>Existing mortgage</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExternalReferenceId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The reference ID of the property from external system which has provided property details result.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>External reference id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FHASecondaryResidenceIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When true, indicates that the property usage falls under the FHA Secondary Residence policy and guidelines.</description>
+        <externalId>false</externalId>
+        <label>Fhasecondary residence indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__FinancialInstitution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the financial institution in which existing mortgage account is held</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Financial institution</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__FullName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unparsed name of either an individual or a legal entity.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Full name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__HousingExpenseType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies the housing expense items listed in a mortgage loan transaction</description>
+        <externalId>false</externalId>
+        <label>Housing expense type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__HousingExpenseType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>True if the object is marked for delete.</description>
+        <externalId>false</externalId>
+        <label>Is Deleted?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LandOriginalAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The original cost of acquiring the land on which the home will be built. This is used for purchase, construction and refinance loans.</description>
+        <externalId>false</externalId>
+        <label>Land original amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__LandTenureType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that categorizes the legal means by which Native American land may be owned.</description>
+        <externalId>false</externalId>
+        <label>Land tenure type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__LandTenureType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__LeaseExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The final expiration date of the ground lease.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Lease expiration date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ManufacturedHomeIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Describes the construction process for the main dwelling unit of the subject property.</description>
+        <externalId>false</externalId>
+        <label>Manufactured home indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MarketValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount of market value of the current real estate</description>
+        <externalId>false</externalId>
+        <label>Market value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MixedUsageIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When true, indicates the subject property includes commercial space set aside to operate a business.</description>
+        <externalId>false</externalId>
+        <label>Mixed usage indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyHousingExpense__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total monthly amount for insurance, property taxes, association dues and other housing expenses on the owned real property.</description>
+        <externalId>false</externalId>
+        <label>Monthly housing expense</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyInsurance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Monthly insurance amount to be paid for the property</description>
+        <externalId>false</externalId>
+        <label>Monthly insurance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyRentalIncome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Monthly rental income from the property</description>
+        <externalId>false</externalId>
+        <label>Monthly rental income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyTax__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Monthly tax amount to be paid for the property</description>
+        <externalId>false</externalId>
+        <label>Monthly tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MonthlyUtilityExpense__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Monthly expenses towards utility bills</description>
+        <externalId>false</externalId>
+        <label>Monthly utility expense</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__MortgageAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total mortgage amount on existing real estate asset</description>
+        <externalId>false</externalId>
+        <label>Mortgage amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__NetRentalIncome__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Net rental income from the current real estate</description>
+        <externalId>false</externalId>
+        <label>Net rental income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfBaths__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of bathrooms in the property</description>
+        <externalId>false</externalId>
+        <label>Number of baths</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfBeds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of bedrooms in the property</description>
+        <externalId>false</externalId>
+        <label>Number of beds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfFloors__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of floors/stories in the property</description>
+        <externalId>false</externalId>
+        <label>Number of floors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfMortgages__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of existing mortgages of real estate asset</description>
+        <externalId>false</externalId>
+        <label>Number of mortgages</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfRooms__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of rooms in the property</description>
+        <externalId>false</externalId>
+        <label>Number of rooms</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__NumberOfUnits__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of individual family dwelling units being financed in the subject property.</description>
+        <externalId>false</externalId>
+        <label>Number of units</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__NumberOfUnits</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__OccupancyPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The percentage of the rentable area of such Property occupied by bona fide tenants of such Property or leased by tenants pursuant to bona fide tenant Leases.</description>
+        <externalId>false</externalId>
+        <label>Occupancy percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__OccupancyStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the intended usage of the property by the borrower.</description>
+        <externalId>false</externalId>
+        <label>Occupancy status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__OccupancyType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__One__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power of One, Useful for reporting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Power of One, Useful for reporting</inlineHelpText>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ProjectLegalStructureType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List that specifies the form of ownership of a project. The Project Legal Structure Type defines the quality and quantity of project ownership and rights accruing to the individual unit owner.</description>
+        <externalId>false</externalId>
+        <label>Project legal structure type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__ProjectLegalStructureType</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__PropertyAcquiredDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date the property was acquired.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Property acquired date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tffa__PropertyEstateType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies the ownership interest in the property.</description>
+        <externalId>false</externalId>
+        <label>Property estate type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertyEstateType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__PurchasePrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Purchase price of the land/unit. Used for purchase, construction, refinance loans.</description>
+        <externalId>false</externalId>
+        <label>Purchase price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__RelationshipVestingType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that specifies a type of real property ownership by one or more parties. This defines the rights of the parties to occupy, sell their interest in the property to others, to will the property, or to sever joint ownership of the property.</description>
+        <externalId>false</externalId>
+        <label>Relationship vesting type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__RelationshipVestingType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SearchTimeline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expected timeline for finalizing property to purchase</description>
+        <externalId>false</externalId>
+        <label>Search timeline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertySearchTimeline</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SearchType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describes the applicant&apos;s search stage of property selection for applying mortgage</description>
+        <externalId>false</externalId>
+        <label>Search type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertySearchType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__SortOrder__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls the relative order of the item in a list.</description>
+        <externalId>false</externalId>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The source/provider for this asset if it sourced from a external system.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TitleHolderName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unparsed name of either an individual or a legal entity.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Title holder name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TitleType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies how the borrower held title to the property.</description>
+        <externalId>false</externalId>
+        <label>Title type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertyTitleType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__TotalArea__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total livable square footage of the structure.</description>
+        <externalId>false</externalId>
+        <label>Total area</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__TotalDues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total dues pending against the property</description>
+        <externalId>false</externalId>
+        <label>Total dues</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__TransactionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Types of the subject mortgage transaction</description>
+        <externalId>false</externalId>
+        <label>Transaction type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__MortgageTransactionType</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tffa__TrustClassificationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A value from a MISMO prescribed list that categorizes a trust.</description>
+        <externalId>false</externalId>
+        <label>Trust classification type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__TrustClassificationType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates property type being purchased. Values are SINGLE_FAMILY_RESIDENCE, MULTI_FAMILY_RESIDENCE, DETACHED</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertyType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__UsageType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the intended usage of the property by the borrower.</description>
+        <externalId>false</externalId>
+        <label>Usage type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>tffa__PropertyUsageType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__UsedAsCollateral__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the current asset is used as collateral in lending application</description>
+        <externalId>false</externalId>
+        <label>Used as collateral</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ValuationAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Statement of value of the property from a valid property valuation source.</description>
+        <externalId>false</externalId>
+        <label>Valuation amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ValuationSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Valid property valuation source.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Valuation source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Purchase Property</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>PurchaseProperty Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PurchaseProperties</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

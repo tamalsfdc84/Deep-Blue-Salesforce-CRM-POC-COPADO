@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OWNER</fullName>
+        <default>false</default>
+        <label>Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLOYER</fullName>
+        <default>false</default>
+        <label>Employer</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Different investment contribution source types.</description>
+    <masterLabel>InvestmentContributionSourceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

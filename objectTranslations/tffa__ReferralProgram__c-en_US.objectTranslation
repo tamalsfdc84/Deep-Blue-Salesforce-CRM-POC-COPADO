@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tffa__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <lookupFilter>
+            <errorMessage><!-- Bundle is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Bundle__c</name>
+        <relationshipLabel><!-- Bundle Referral Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign ID --></label>
+        <name>tffa__CampaignId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tffa__Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>tffa__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>tffa__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tffa__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exhausted --></label>
+        <name>tffa__Exhausted__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full description --></label>
+        <name>tffa__FullDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon class --></label>
+        <name>tffa__IconClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>tffa__ImageUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info URL --></label>
+        <name>tffa__InfoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business Configuration --></label>
+        <name>tffa__IsBusinessConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Business --></label>
+        <name>tffa__IsBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of referral codes that can be created under the referral program. --></help>
+        <label><!-- Maximum number of Referral Codes --></label>
+        <name>tffa__MaxNumberOfReferralCodes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of referrals that can be submitted per referral code under the referral program. --></help>
+        <label><!-- Maximum number of Referrals per Code --></label>
+        <name>tffa__MaxNumberOfReferralsPerCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrers --></label>
+        <name>tffa__NumberOfReferralCodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals --></label>
+        <name>tffa__NumberOfReferrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred Visitors --></label>
+        <name>tffa__NumberOfReferredVisitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>tffa__ProductCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Product is inactive or invalid. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Referral Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Configure reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30 --></help>
+        <label><!-- Program Reminder schedule(for referrers) --></label>
+        <name>tffa__ProgramReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <lookupFilter>
+            <errorMessage><!-- Promotion is inactive. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__Promotion__c</name>
+        <relationshipLabel><!-- Referral Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referee reward description --></label>
+        <name>tffa__RefereeRewardDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure reminder schedule in number of days, with each number separated by a semicolon ;. Example - 5;15;30 --></help>
+        <label><!-- Referral Reminder schedule(for referees) --></label>
+        <name>tffa__ReferralReminderSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward description --></label>
+        <name>tffa__ReferrerRewardDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward name --></label>
+        <name>tffa__ReferrerRewardName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward threshold --></label>
+        <name>tffa__ReferrerRewardThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward type --></label>
+        <name>tffa__ReferrerRewardType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer reward value --></label>
+        <name>tffa__ReferrerRewardValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer type --></label>
+        <name>tffa__ReferrerType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Message text used when sharing the referral link using native sharing mechanisms like whatsapp, facebook, twitter, etc --></help>
+        <label><!-- Share link text --></label>
+        <name>tffa__ShareLinkText__c</name>
+    </fields>
+    <fields>
+        <help><!-- Message title used when sharing the referral link using native sharing mechanisms like whatsapp, facebook, twitter, etc --></help>
+        <label><!-- Share link title --></label>
+        <name>tffa__ShareLinkTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral sharing options --></label>
+        <name>tffa__SharingOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tffa__StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of the referral program. Also used as subject in referral program emails to referrers. --></help>
+        <label><!-- Title --></label>
+        <name>tffa__Title__c</name>
+    </fields>
+    <layouts>
+        <layout>Referral Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective --></label>
+            <section>Effective</section>
+        </sections>
+        <sections>
+            <label><!-- Limits --></label>
+            <section>Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <section>Products</section>
+        </sections>
+        <sections>
+            <label><!-- Referee Rewards --></label>
+            <section>Referee Rewards</section>
+        </sections>
+        <sections>
+            <label><!-- Referrer Rewards --></label>
+            <section>Referrer Rewards</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder Schedule --></label>
+            <section>Reminder Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Sharing Options --></label>
+            <section>Sharing Options</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Number of referral codes exceeds the maximum limit set in the referral program --></errorMessage>
+        <name>tffa__MaxNumberOfReferralCodes</name>
+    </validationRules>
+</CustomObjectTranslation>

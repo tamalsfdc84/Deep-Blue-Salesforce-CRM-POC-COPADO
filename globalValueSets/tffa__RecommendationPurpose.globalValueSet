@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CROSS_SELL</fullName>
+        <default>false</default>
+        <label>Cross sell</label>
+    </customValue>
+    <customValue>
+        <fullName>FINANCIAL_NEED</fullName>
+        <default>false</default>
+        <label>Financial need</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </customValue>
+    <description>Various purposes (or use cases) for which a recommendation may be resolved.</description>
+    <masterLabel>RecommendationPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

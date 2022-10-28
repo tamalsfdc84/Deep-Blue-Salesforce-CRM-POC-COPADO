@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FOOD</fullName>
+        <default>false</default>
+        <label>Food</label>
+    </customValue>
+    <customValue>
+        <fullName>HOUSING</fullName>
+        <default>false</default>
+        <label>Housing</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMUNICATION</fullName>
+        <default>false</default>
+        <label>Communication</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDICAL_HEALTH</fullName>
+        <default>false</default>
+        <label>Medical And Health</label>
+    </customValue>
+    <customValue>
+        <fullName>INSURANCE</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORT</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <description>Specifies the type of expense for reimbursed tasks or services performed.</description>
+    <masterLabel>ExpenseType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

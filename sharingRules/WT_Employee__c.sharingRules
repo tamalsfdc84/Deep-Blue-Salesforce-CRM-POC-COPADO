@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Employee_Sharing_Rule_MYHR_Employee</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Employee Sharing Rule - MYHR Employee</label>
+        <sharedTo>
+            <roleAndSubordinates>MyHR_Employee</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>MyHR_Employee</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Employee_Sharing_Rule_MYHR_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Employee Sharing Rule - MYHR Manager</label>
+        <sharedTo>
+            <roleAndSubordinates>MyHR_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>MyHR_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

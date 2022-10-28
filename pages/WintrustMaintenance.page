@@ -1,0 +1,38 @@
+<apex:page >
+        <style>
+    .wrapper{
+        text-align:center;
+        width: 100%;
+    }
+    
+        .wrapper img{
+            width: 170px;
+        }
+
+    .wintrust_header {
+        margin: 30px 0 30px 0;
+    }
+
+    .informational_text p{
+        font-size: 11pt;
+        font-family:"Calibri",sans-serif;
+        color:black;
+        line-height: 25px;
+        width: 80%;
+        margin:auto;
+    }
+
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="wintrust_header">
+                <img src="https://wintrustbank--c.visualforce.com/resource/1651007845000/WintrustCommunityBankLogo" />
+            </div>
+            <div class="informational_text">
+                <p>Our site is down for periodic maintenance and we are working to make this page available as soon as we can.</p>
+                <p>We understand the inconvenience this may cause and we look forward to delivering you the best in class account opening experience Wintrust has to offer.</p>
+                <p>Please come back and try again shortly. Thank you!</p>
+            </div>
+        </div>
+    </body>
+</apex:page>

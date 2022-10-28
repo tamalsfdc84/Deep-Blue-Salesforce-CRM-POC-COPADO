@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Disclosure --></label>
+        <name>tffa__Disclosure__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is acceptance required --></label>
+        <name>tffa__IsAcceptanceRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is signature required --></label>
+        <name>tffa__IsSignatureRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Disclosure Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role code --></label>
+        <name>tffa__RoleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature point --></label>
+        <name>tffa__SignaturePoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Disclosure Participant Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

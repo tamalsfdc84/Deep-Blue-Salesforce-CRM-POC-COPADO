@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing status --></label>
+        <name>tffa__HousingStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPayment --></label>
+        <name>tffa__MonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Period At this Address In Months --></label>
+        <name>tffa__PeriodInMonths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period At this Address In Years --></label>
+        <name>tffa__PeriodInYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred --></label>
+        <name>tffa__Preferred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefilled --></label>
+        <name>tffa__Prefilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Method --></label>
+        <name>tffa__VerificationMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified on --></label>
+        <name>tffa__VerifiedOn__c</name>
+    </fields>
+    <layouts>
+        <layout>PartyAddressXref Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

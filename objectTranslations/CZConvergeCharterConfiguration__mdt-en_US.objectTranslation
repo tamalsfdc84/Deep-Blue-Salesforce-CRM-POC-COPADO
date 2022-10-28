@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Converge Charter Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Converge Charter Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand Code --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Id --></label>
+        <name>MerchantId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ssl Pin --></label>
+        <name>SslPin__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>UserId__c</name>
+    </fields>
+    <layouts>
+        <layout>Converge Charter Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

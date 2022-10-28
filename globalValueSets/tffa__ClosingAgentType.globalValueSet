@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ATTORNEY</fullName>
+        <default>false</default>
+        <label>Attorney</label>
+    </customValue>
+    <customValue>
+        <fullName>ESCROW_COMPANY</fullName>
+        <default>false</default>
+        <label>Escrow Company</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>TITLE_COMPANY</fullName>
+        <default>false</default>
+        <label>Title Company</label>
+    </customValue>
+    <description>This designates the type of the closing agent.</description>
+    <masterLabel>ClosingAgentType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PRIMARY_RESIDENCE</fullName>
+        <default>false</default>
+        <label>Primary Residence</label>
+    </customValue>
+    <customValue>
+        <fullName>SECONDARY_RESIDENCE</fullName>
+        <default>false</default>
+        <label>Secondary Residence</label>
+    </customValue>
+    <customValue>
+        <fullName>INVESTMENT</fullName>
+        <default>false</default>
+        <label>Investment</label>
+    </customValue>
+    <description>Display occupancy types</description>
+    <masterLabel>OccupancyType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

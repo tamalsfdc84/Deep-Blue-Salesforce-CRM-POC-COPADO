@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$FinServ__FinancialAccount__c.FinServ__OpenDate__c</field>
+    </columns>
+    <columns>
+        <field>FK_$FinServ__FinancialAccount__c.FinServ__City__c</field>
+    </columns>
+    <columns>
+        <field>FK_$FinServ__FinancialAccount__c.FinServ__State__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <description>Funds Groups with Alternative Funds to be joined via Funds Groups ID to reproduce EnAct &quot;Funds Group Annual Review Prep Export&quot;</description>
+    <filter>
+        <criteriaItems>
+            <column>WT_Funds_Groups__c.WT_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Annual Review Pt. 3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$WT_Funds_Groups__c@WT_Funds_Groups__c.WT_Wintrust_Funds_Alternative_Fund__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WT_Funds_Groups__c.WT_WFG_BSA_Approval_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

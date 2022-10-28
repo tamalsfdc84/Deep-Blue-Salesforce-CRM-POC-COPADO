@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FISCC Adapter Configs</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FISCC Adapter Configs</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountNumber --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application Id (Field specific to FIS CodeConnect APIs) --></help>
+        <label><!-- ApplicationId --></label>
+        <name>ApplicationId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Content type for HTTP request  e.g. application/json, application/xml etc. --></help>
+        <label><!-- Content Type --></label>
+        <name>ContentType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Valid http method e.g. GET, POST etc. --></help>
+        <label><!-- HTTP Method --></label>
+        <name>HTTPMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether HTTP request and response are encrypted. --></help>
+        <label><!-- IsEncrypted --></label>
+        <name>IsEncrypted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether IBS Authorization header is required (Flag specific to FIS CodeConnect APIs). --></help>
+        <label><!-- IsIBSAuthRequired --></label>
+        <name>IsIBSAuthRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked http request body will be logged in &apos;Debug Logs&apos;. --></help>
+        <label><!-- Log Request --></label>
+        <name>LogRequest__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked response from http will be logged in &apos;Debug Logs&apos;. --></help>
+        <label><!-- Log Response --></label>
+        <name>LogResponse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the class for response Builder. --></help>
+        <label><!-- Response Builder Class --></label>
+        <name>ResponseBuilderClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- ServiceURL --></label>
+        <name>ServiceURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Timeout for http request in milliseconds. Default is set to maximum timeout &apos;120000&apos;. --></help>
+        <label><!-- Timeout --></label>
+        <name>Timeout__c</name>
+    </fields>
+    <layouts>
+        <layout>FISCC Adapter Configs Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

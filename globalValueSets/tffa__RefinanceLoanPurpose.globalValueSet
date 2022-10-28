@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RATE_AND_TERM_REFINANCE</fullName>
+        <default>false</default>
+        <label>Rate and Term Refinance</label>
+    </customValue>
+    <customValue>
+        <fullName>CASH_OUT</fullName>
+        <default>false</default>
+        <label>Cash Out</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMITED_CASH_OUT</fullName>
+        <default>false</default>
+        <label>Limited Cash Out</label>
+    </customValue>
+    <description>Display purpose of refinance</description>
+    <masterLabel>RefinanceLoanPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

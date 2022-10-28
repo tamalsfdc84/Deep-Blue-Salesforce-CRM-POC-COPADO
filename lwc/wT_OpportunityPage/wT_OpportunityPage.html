@@ -1,0 +1,1156 @@
+<template>
+    <template if:true={showReadOnlySection}>
+        <lightning-card>
+            <lightning-record-view-form  object-api-name={objectApiName} record-id={recordId} 
+            layout-type="Full" onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Information">Sales Opportunity Information</span>
+                </h4>
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element slds-form-element_horizontal">                                                                
+                                <label class="slds-form-element__label">Opportunity Name</label>     
+                                <lightning-output-field class="slds-form-element slds-form-element_horizontal" field-name="Name" variant="label-hidden"></lightning-output-field>                                               
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil-customlabel" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>                  
+                            <div class="slds-form-element_readonly">
+                            </div>                            
+                            <div class="slds-form-element_readonly">                                
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Purpose__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>                                    
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="CloseDate"></lightning-output-field>                              
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product_Partner_Name__c"></lightning-output-field>
+                            </div>   
+                            <div class="slds-form-element slds-form-element_horizontal">
+                                <label class="slds-form-element__label">Opportunity Owner</label>     
+                                <lightning-output-field class="slds-form-element slds-form-element_horizontal" field-name="OwnerId" variant="label-hidden"></lightning-output-field>                                               
+                            </div>
+                            <div class="slds-form-element_readonly"></div>                          
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">                                                      
+                            <div class="slds-form-element slds-form-element_horizontal">                                                                
+                                <label class="slds-form-element__label">Account Name</label>     
+                                <lightning-output-field class="slds-form-element slds-form-element_horizontal" field-name="AccountId" variant="label-hidden"></lightning-output-field>               
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil-customlabel" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>                          
+                            <div class="slds-form-element_readonly"></div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Actual_Close_Date__c"></lightning-output-field>            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <template if:true={isEasyAccessLoan}>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Processor_Name__c"></lightning-output-field>            
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Credit_Analyst_Name__c"></lightning-output-field>            
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Closer_Name__c"></lightning-output-field>            
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Common Opportunity Details Section Start -->
+            <template if:true={showCommonOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">        
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Fee__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+          </template>  
+          <!-- Common Opportunity Details Section End -->
+          <!-- International Opportunity Details Section Start -->
+          <template if:true={showInternationalOpportunityDetailsLayout}>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2"> 
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_International_Fee__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>                            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+          </template>  
+          <!-- International Opportunity Details Section End -->
+           <!-- Investment Opportunity Details Section Start -->
+           <template if:true={showInvestmentOpportunityDetailsLayout}>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">        
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Investment_Fee__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+          </template>  
+          <!-- Investment Opportunity Details Section End -->
+          <!-- Deposit Opportunity Details Section Start -->
+          <template if:true={showDepositOpportunityDetailsLayout}>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">         
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Fee__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Renewal__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>   
+          </template>  
+          <!-- Deposit Opportunity Details Section End -->
+          <!-- Loan Opportunity Details Section Start -->
+          <template if:true={showLoanOpportunityDetailsLayout}>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">           
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Initial_Amount_Drawn__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Y1_Avg_Expected_Balance__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Fee__c"></lightning-output-field>            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Renewal__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>    
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+          </template>  
+          <!-- Loan Opportunity Details Section End -->
+          <!-- Leasing Opportunity Details Section Start -->
+          <template if:true={showLeasingOpportunityDetailsLayout}>
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">           
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Product__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Initial_Amount_Drawn__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_New_Dollar__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Fee__c"></lightning-output-field>            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Leasing_PV_Rent__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Leasing_PV_Residual__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Leasing_Rate__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Leasing_Team_in_months__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Record_Type_Name__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Probability__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="StageName"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Status_Reason__c"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="Description"></lightning-output-field>
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                            <div class="slds-form-element_readonly">
+                                <lightning-output-field class="inline-field standard-field-width" field-name="WT_Competitor__c"></lightning-output-field>                            
+                                <template if:true={showEditButton}>
+                                    <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+          </template>  
+          <!-- Leasing Opportunity Details Section End -->
+          <!-- TM Details Section Start -->
+            <template if:true={showTMDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="TM Details">TM Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">     
+                                <div class="slds-form-element_readonly">      
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_TMOnboarding_Eligible__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Changes_to_TM_Onboarding_Process__c"></lightning-output-field>        
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field  class="inline-field standard-field-width" field-name="WT_TMIS_Add_on_Products__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_TM_Onboarding_Workflow_Executed__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </template>
+             <!-- TM Details Section End -->
+            <!-- Loan Product Partner Details Section Start -->
+            <template if:true={showLoanProductPartnerDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Product Partner Details">Product Partner Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">    
+                                <div class="slds-form-element_readonly">       
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_ABL_Component__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_SBA_Component__c"></lightning-output-field>        
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_SBA_Type__c"></lightning-output-field>       
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="Amount"></lightning-output-field>        
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Swap_Component__c"></lightning-output-field>        
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Swap_Fee__c"></lightning-output-field>        
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Franchise_Component__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Franchise_Type__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Component__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Target_Sale__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Fee__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_WTFC_Role__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </template>
+            <!-- Loan Product Partner Details Section End -->  
+            <!-- Deposit Product Partner Details Section Start -->
+            <template if:true={showDepositProductPartnerDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Product Partner Details">Product Partner Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">          
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field  class="inline-field standard-field-width" field-name="WT_Franchise_Component__c"></lightning-output-field>
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Franchise_Type__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Component__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                              </div>
+                              <div class="slds-col slds-size_1-of-2">   
+                                <div class="slds-form-element_readonly">       
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Target_Sale__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_Fee__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                                <div class="slds-form-element_readonly">
+                                    <lightning-output-field class="inline-field standard-field-width" field-name="WT_Syndication_WTFC_Role__c"></lightning-output-field>         
+                                    <template if:true={showEditButton}>
+                                        <lightning-icon title="Edit" size="x-small" class="edit-pencil" icon-name="utility:edit" alternative-text="Edit" onclick={handleUpdateModal}></lightning-icon>
+                                    </template>
+                                </div>
+                              </div>
+                        </div>
+                    </div> 
+                </div>
+            </template>
+            <!-- Deposit Product Partner Details Section End -->  
+            <!-- System Information Section Start -->
+            <div class="slds-section slds-is-open" >
+                <h4 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="System Information">System Information</span>
+                </h4>     
+                <div aria-hidden="false" class="slds-section__content">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">      
+                            <div class="slds-form-element slds-form-element_horizontal">
+                                <label class="slds-form-element__label">Created By</label>     
+                                <lightning-output-field class="slds-form-element slds-form-element_horizontal" field-name="CreatedById" variant="label-hidden"></lightning-output-field>                                                                               
+                                
+                            </div>
+                            <div class="slds-form-element_readonly"></div>
+                            <div class="slds-form-element_readonly">                                
+                                <lightning-output-field class="inline-field standard-field-width" field-name="CreatedDate"></lightning-output-field>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-form-element slds-form-element_horizontal">
+                                <label class="slds-form-element__label">Last Modified By</label>     
+                                <lightning-output-field class="slds-form-element slds-form-element_horizontal" field-name="LastModifiedById" variant="label-hidden"></lightning-output-field>                                              
+                            </div>
+                            <div class="slds-form-element_readonly"></div>
+                            <div class="slds-form-element_readonly">                                
+                                <lightning-output-field class="inline-field standard-field-width" field-name="LastModifiedDate"></lightning-output-field>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </lightning-record-view-form>
+        </lightning-card>
+    </template>
+    <template if:true={showEditSection}>
+        <div class="default-background">
+            <lightning-record-edit-form
+                record-id={recordId}
+                object-api-name={objectApiName}
+                onsuccess={handleSuccess} onsubmit ={handleSubmit} onerror={handleError}>  
+                <lightning-messages></lightning-messages>   
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Information">Sales Opportunity Information</span>
+                    </h4>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="Name"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Purpose__c"></lightning-input-field>
+                                <lightning-input-field field-name="CloseDate"></lightning-input-field>
+                                <lightning-output-field field-name="WT_Product_Partner_Name__c"></lightning-output-field>
+                                <lightning-input-field field-name="OwnerId"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="AccountId"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Actual_Close_Date__c"></lightning-input-field>     
+                                <template if:true={isEasyAccessLoan}>
+                                    <lightning-output-field field-name="WT_Processor_Name__c"></lightning-output-field>
+                                    <lightning-output-field field-name="WT_Credit_Analyst_Name__c"></lightning-output-field>       
+                                    <lightning-output-field field-name="WT_Closer_Name__c"></lightning-output-field> 
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Common Opportunity Details Section Start -->
+                <template if:true={showCommonOpportunityDetailsLayout}>
+                    <div class="slds-section slds-is-open" >
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                        </h4>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">           
+                                    <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Fee__c"></lightning-input-field>
+                                    <lightning-input-field field-name="Description"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                    <lightning-input-field field-name="StageName"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+            </template>  
+            <!-- Common Opportunity Details Section End -->
+            <!-- International Opportunity Details Section Start -->
+            <template if:true={showInternationalOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_International_Fee__c"></lightning-input-field>
+                                <lightning-input-field field-name="Description"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                <lightning-input-field field-name="StageName"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </template>  
+            <!-- International Opportunity Details Section End -->
+            <!-- Investment Opportunity Details Section Start -->
+            <template if:true={showInvestmentOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Investment_Fee__c"></lightning-input-field>
+                                <lightning-input-field field-name="Description"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                <lightning-input-field field-name="StageName"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </template>  
+            <!-- Investment Opportunity Details Section End -->
+            <!-- Deposit Opportunity Details Section Start -->
+            <template if:true={showDepositOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Fee__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Renewal__c"></lightning-input-field>
+                                <lightning-input-field field-name="Description"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                <lightning-input-field field-name="StageName"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>
+                            </div>
+                        </div>
+                    </div> 
+                </div>   
+            </template>  
+            <!-- Deposit Opportunity Details Section End -->
+            <!-- Loan Opportunity Details Section Start -->
+            <template if:true={showLoanOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Initial_Amount_Drawn__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Y1_Avg_Expected_Balance__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Fee__c"></lightning-input-field>            
+                                <lightning-input-field field-name="WT_Renewal__c"></lightning-input-field>
+                                <lightning-input-field field-name="Description"></lightning-input-field>            
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                <lightning-input-field field-name="StageName"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>            
+                                <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </template>  
+            <!-- Loan Opportunity Details Section End -->
+            <!-- Leasing Opportunity Details Section Start -->
+            <template if:true={showLeasingOpportunityDetailsLayout}>
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sales Opportunity Details">Sales Opportunity Details</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="WT_Product__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Initial_Amount_Drawn__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_New_Dollar__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Fee__c"></lightning-input-field>            
+                                <lightning-input-field field-name="WT_Leasing_PV_Rent__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Leasing_PV_Residual__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Leasing_Rate__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Leasing_Team_in_months__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="WT_Record_Type_Name__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Probability__c"></lightning-input-field>
+                                <lightning-input-field field-name="StageName"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status__c"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Status_Reason__c"></lightning-input-field>
+                                <lightning-input-field field-name="Description"></lightning-input-field>
+                                <lightning-input-field field-name="WT_Competitor__c"></lightning-input-field>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </template>  
+            <!-- Leasing Opportunity Details Section End -->
+            <!-- TM Details Section Start -->
+                <template if:true={showTMDetailsLayout}>
+                    <div class="slds-section slds-is-open" >
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="TM Details">TM Details</span>
+                        </h4>     
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">           
+                                    <lightning-input-field field-name="WT_TMOnboarding_Eligible__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Changes_to_TM_Onboarding_Process__c"></lightning-input-field>        
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field  field-name="WT_TMIS_Add_on_Products__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_TM_Onboarding_Workflow_Executed__c"></lightning-input-field>         
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </template>
+                <!-- TM Details Section End -->
+                <!-- Loan Product Partner Details Section Start -->
+                <template if:true={showLoanProductPartnerDetailsLayout}>
+                    <div class="slds-section slds-is-open" >
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Product Partner Details">Product Partner Details</span>
+                        </h4>     
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">           
+                                    <lightning-input-field field-name="WT_ABL_Component__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_SBA_Component__c"></lightning-input-field>        
+                                    <lightning-input-field field-name="WT_SBA_Type__c"></lightning-input-field>        
+                                    <lightning-input-field field-name="Amount"></lightning-input-field>        
+                                    <lightning-input-field field-name="WT_Swap_Component__c"></lightning-input-field>        
+                                    <lightning-input-field field-name="WT_Swap_Fee__c"></lightning-input-field>        
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field  field-name="WT_Franchise_Component__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Franchise_Type__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_Component__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_Target_Sale__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_Fee__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_WTFC_Role__c"></lightning-input-field>         
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </template>
+                <!-- Loan Product Partner Details Section End -->  
+                <!-- Deposit Product Partner Details Section Start -->
+                <template if:true={showDepositProductPartnerDetailsLayout}>
+                    <div class="slds-section slds-is-open" >
+                        <h4 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Product Partner Details">Product Partner Details</span>
+                        </h4>     
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">           
+                                    <lightning-input-field  field-name="WT_Franchise_Component__c"></lightning-input-field>
+                                    <lightning-input-field field-name="WT_Franchise_Type__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_Component__c"></lightning-input-field>         
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">          
+                                    <lightning-input-field field-name="WT_Syndication_Target_Sale__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_Fee__c"></lightning-input-field>         
+                                    <lightning-input-field field-name="WT_Syndication_WTFC_Role__c"></lightning-input-field>         
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </template>
+                <!-- Deposit Product Partner Details Section End -->  
+                <div class="slds-section slds-is-open" >
+                    <h4 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="System Information">System Information</span>
+                    </h4>     
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">           
+                                <lightning-input-field field-name="CreatedById"></lightning-input-field>
+                                <lightning-input-field field-name="CreatedDate"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="LastModifiedById"></lightning-input-field>                                           
+                                <lightning-input-field  field-name="LastModifiedDate"></lightning-input-field>                                           
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <footer class="slds-modal__footer">
+                <div class="slds-align_absolute-center">               
+                    <lightning-button class="slds-m-top_small"  type="button" label="Cancel" onclick={handleCloseModal}></lightning-button>
+                    &nbsp;      
+                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Save" ></lightning-button>          
+                </div>    
+                </footer>
+            </lightning-record-edit-form>
+        </div>
+    </template>
+    <div class="spinner">
+        <template if:true={isSaving}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="medium"></lightning-spinner>
+        </template>
+    </div>
+    <!--Modal Box Start-->
+    <template if:true={bShowModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="modalSection slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+            <!--Modal Header Start-->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                <lightning-icon variant="inverse" onclick={closeModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                </button>                                
+                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                    <lightning-icon size="small" title="Warning!" icon-name="utility:warning" alternative-text="Warning!"></lightning-icon>                                                   
+                    Warning!</h2>
+            </header>
+            <!--Modal Body Start-->
+            <template if:true={isFeeInvalid}>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                Please review and confirm that <b>Fee $</b> is accurate. 
+            </div>
+            </template>
+            <template if:true={isInitialAmountDrawnInvalid}>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                Please review and confirm that <b>Initial Amount Drawn</b> is accurate. As a reminder, this figure should reflect the anticipated outstanding amount within 30 days of closing.
+            </div>
+            </template>
+            <template if:true={isEstimatedCloseDateAndProbabilityInvalid}>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+                Please review and confirm that <b>Estimated Close Date</b> and <b>Probability %</b> are accurate.
+            </div>
+            </template>
+            <!--Modal Footer Start-->
+            <footer class="slds-modal__footer">
+                <lightning-button label="Cancel" onclick={closeModal}></lightning-button>
+                &nbsp;
+                <lightning-button variant="brand" label="Save" type="submit" onclick={saveModal}></lightning-button>
+            </footer>
+            </div>
+        </section>
+        <div class="backdropDiv slds-backdrop slds-backdrop_open"></div>
+    </template>
+        <!--Modal Box end-->
+</template>

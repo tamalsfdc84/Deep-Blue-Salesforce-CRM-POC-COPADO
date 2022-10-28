@@ -1,0 +1,5 @@
+<aura:component implements="lightning:isUrlAddressable,force:appHostable,lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">      
+    <aura:attribute name="recordId" type="Id" />
+    <c:wT_RelationshipPlanningReport recordId="{!v.recordId}"/>
+  
+</aura:component>

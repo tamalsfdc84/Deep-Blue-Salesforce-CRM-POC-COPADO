@@ -1,0 +1,13 @@
+.custom-header {
+    background-color: #fafafa;    
+}
+.custom-left {
+    font-size: 12pt;
+    float: left;
+}
+.custom-right {
+    float: right;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}

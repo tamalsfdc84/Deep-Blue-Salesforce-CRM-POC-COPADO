@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MANUALLY_VERIFIED</fullName>
+        <default>false</default>
+        <label>Manually verified identification documents</label>
+    </customValue>
+    <customValue>
+        <fullName>ADDITIONAL_DOCUMENTS_PROVIDED</fullName>
+        <default>false</default>
+        <label>Additional documents provided</label>
+    </customValue>
+    <customValue>
+        <fullName>OFAC_VERIFIED</fullName>
+        <default>false</default>
+        <label>OFAC Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>FRAUD_VERIFIED</fullName>
+        <default>false</default>
+        <label>Fraud Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Possible reasons for approving an application (marked for REVIEW) in KYC decisioning stage.</description>
+    <masterLabel>KYCApprovalReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

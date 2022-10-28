@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Beneficiaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>tffa__Application__c</name>
+        <relationshipLabel><!-- Beneficiaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Birth date --></label>
+        <name>tffa__BirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- First name --></label>
+        <name>tffa__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Minor --></label>
+        <name>tffa__IsMinor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>tffa__IsPEP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last name --></label>
+        <name>tffa__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle name --></label>
+        <name>tffa__MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Remarks --></label>
+        <name>tffa__OFACRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Status --></label>
+        <name>tffa__OFACStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefix --></label>
+        <name>tffa__Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation code name --></label>
+        <name>tffa__RelationCodeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation code value --></label>
+        <name>tffa__RelationCodeValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Captures how beneficiary is related to primary Party. --></help>
+        <label><!-- Relation Code --></label>
+        <lookupFilter>
+            <errorMessage><!-- Relation code not active. --></errorMessage>
+        </lookupFilter>
+        <name>tffa__RelationCode__c</name>
+        <relationshipLabel><!-- Beneficiaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Share percentage --></label>
+        <name>tffa__SharePercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ssn --></label>
+        <name>tffa__Ssn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>tffa__Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Beneficiary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

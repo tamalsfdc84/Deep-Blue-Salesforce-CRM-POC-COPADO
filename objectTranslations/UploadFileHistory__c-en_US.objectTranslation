@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Upload File History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Upload File History</value>
+    </caseValues>
+    <fields>
+        <label><!-- ApplicationID --></label>
+        <name>ApplicationID__c</name>
+        <relationshipLabel><!-- Upload File History_Application --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BrandCode --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Id --></label>
+        <name>CZPartyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company ID --></label>
+        <name>CompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>CompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company ID --></label>
+        <name>Company_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Item Count --></label>
+        <name>CreditItemCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Item Count --></label>
+        <name>Credit_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Item Count --></label>
+        <name>DebitItemCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Item Count --></label>
+        <name>Debit_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocumentId --></label>
+        <name>DocumentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective Date for all batches in the file. --></help>
+        <label><!-- Effective Date --></label>
+        <name>EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective Date for all batches in the file. --></help>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCMDocumentId --></label>
+        <name>FCMDocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Extension --></label>
+        <name>FileExt__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Extension --></label>
+        <name>FileExtension__c</name>
+    </fields>
+    <fields>
+        <label><!-- FileName --></label>
+        <name>FileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Transfer Retry Count --></label>
+        <name>FileTransferRetryCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Transfer Status Message --></label>
+        <name>FileTransferStatusMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Transfer Status --></label>
+        <name>FileTransferStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- FileType --></label>
+        <name>FileType__c</name>
+    </fields>
+    <fields>
+        <label><!-- GenMsg --></label>
+        <name>GenMsg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Immediate Origin Name --></label>
+        <name>ImmediateOriginName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Immediate Origin Name --></label>
+        <name>Immediate_Origin_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MembershipNumber --></label>
+        <name>MembershipNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party First Name --></label>
+        <name>PartyFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Last Name --></label>
+        <name>PartyLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartyName --></label>
+        <name>PartyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Counter --></label>
+        <name>RetryCounter__c</name>
+    </fields>
+    <fields>
+        <label><!-- SerialNumber --></label>
+        <name>SerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmissionID --></label>
+        <name>SubmissionID__c</name>
+        <relationshipLabel><!-- Upload File History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SubmissionName --></label>
+        <name>SubmissionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Credit Amount --></label>
+        <name>TotalFileCreditAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Debit Amount --></label>
+        <name>TotalFileDebitAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalFileEntryRecords --></label>
+        <name>TotalFileEntryRecords__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalFileRecNo --></label>
+        <name>TotalFileRecNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Error Mail Sent --></label>
+        <name>isErrorMailSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Index File Generated --></label>
+        <name>isIndexFileGenerated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Failed file retried --></label>
+        <name>isRetried__c</name>
+    </fields>
+    <layouts>
+        <layout>Upload File History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

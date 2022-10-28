@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EMAIL</fullName>
+        <default>false</default>
+        <label>Via Email</label>
+    </customValue>
+    <customValue>
+        <fullName>FACETOFACE</fullName>
+        <default>false</default>
+        <label>In a Face-To-Face interview</label>
+    </customValue>
+    <customValue>
+        <fullName>FAX</fullName>
+        <default>false</default>
+        <label>By Fax</label>
+    </customValue>
+    <customValue>
+        <fullName>INTERNET</fullName>
+        <default>false</default>
+        <label>Via Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>MAIL</fullName>
+        <default>false</default>
+        <label>By Mail</label>
+    </customValue>
+    <customValue>
+        <fullName>TELEPHONE</fullName>
+        <default>false</default>
+        <label>In a Telephone interview</label>
+    </customValue>
+    <description>A value from a MISMO prescribed list that specifies the method used to take the application.</description>
+    <masterLabel>DemographicCaptureMethodType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

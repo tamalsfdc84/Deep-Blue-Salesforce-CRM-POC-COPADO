@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ALL --></label>
+        <name>tffa__ALL</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Facts --></label>
+        <name>tffa__Facts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Referrer Score --></label>
+        <name>FinServ__ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Should Send Phase 3 Welcome Email --></label>
+        <name>Should_Send_Phase_3_Welcome_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- User LOB matched --></label>
+        <name>User_LOB_matched__c</name>
+    </fields>
+    <fields>
+        <label><!-- BB/CB Scorecard Access --></label>
+        <name>WT_BB_CB_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BB Scorecard End Date --></label>
+        <name>WT_BB_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BB Scorecard Start Date --></label>
+        <name>WT_BB_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank # --></label>
+        <name>WT_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch # --></label>
+        <name>WT_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Factor --></label>
+        <name>WT_Business_Unit_Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Access --></label>
+        <name>WT_CRE_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard End Date --></label>
+        <name>WT_CRE_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Exception End Date --></label>
+        <name>WT_CRE_Scorecard_Exception_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Exception Start Date --></label>
+        <name>WT_CRE_Scorecard_Exception_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Start Date --></label>
+        <name>WT_CRE_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRE Scorecard Team --></label>
+        <name>WT_CRE_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charter --></label>
+        <name>WT_Charter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Scorecard --></label>
+        <name>WT_Current_Scorecard__c</name>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date User Released From Auto Block --></label>
+        <name>WT_Date_User_Released_From_Auto_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Welcome Email Sent --></label>
+        <name>WT_Date_Welcome_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Status Change --></label>
+        <name>WT_Date_of_Last_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>WT_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fusion Feed Branch # --></label>
+        <name>WT_Fusion_Feed_Branch__c</name>
+        <picklistValues>
+            <masterLabel>118001</masterLabel>
+            <translation><!-- 118001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118002</masterLabel>
+            <translation><!-- 118002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118003</masterLabel>
+            <translation><!-- 118003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118004</masterLabel>
+            <translation><!-- 118004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118005</masterLabel>
+            <translation><!-- 118005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118006</masterLabel>
+            <translation><!-- 118006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118007</masterLabel>
+            <translation><!-- 118007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118009</masterLabel>
+            <translation><!-- 118009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118010</masterLabel>
+            <translation><!-- 118010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118011</masterLabel>
+            <translation><!-- 118011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118012</masterLabel>
+            <translation><!-- 118012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118014</masterLabel>
+            <translation><!-- 118014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118015</masterLabel>
+            <translation><!-- 118015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118016</masterLabel>
+            <translation><!-- 118016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118017</masterLabel>
+            <translation><!-- 118017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118018</masterLabel>
+            <translation><!-- 118018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118019</masterLabel>
+            <translation><!-- 118019 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118021</masterLabel>
+            <translation><!-- 118021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118022</masterLabel>
+            <translation><!-- 118022 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118023</masterLabel>
+            <translation><!-- 118023 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118024</masterLabel>
+            <translation><!-- 118024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118026</masterLabel>
+            <translation><!-- 118026 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118027</masterLabel>
+            <translation><!-- 118027 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118029</masterLabel>
+            <translation><!-- 118029 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118030</masterLabel>
+            <translation><!-- 118030 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158001</masterLabel>
+            <translation><!-- 158001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158003</masterLabel>
+            <translation><!-- 158003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158004</masterLabel>
+            <translation><!-- 158004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158005</masterLabel>
+            <translation><!-- 158005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158006</masterLabel>
+            <translation><!-- 158006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158008</masterLabel>
+            <translation><!-- 158008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158012</masterLabel>
+            <translation><!-- 158012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167001</masterLabel>
+            <translation><!-- 167001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167002</masterLabel>
+            <translation><!-- 167002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167003</masterLabel>
+            <translation><!-- 167003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167004</masterLabel>
+            <translation><!-- 167004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167005</masterLabel>
+            <translation><!-- 167005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167006</masterLabel>
+            <translation><!-- 167006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167007</masterLabel>
+            <translation><!-- 167007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167008</masterLabel>
+            <translation><!-- 167008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289001</masterLabel>
+            <translation><!-- 289001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289002</masterLabel>
+            <translation><!-- 289002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289004</masterLabel>
+            <translation><!-- 289004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289005</masterLabel>
+            <translation><!-- 289005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289006</masterLabel>
+            <translation><!-- 289006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289007</masterLabel>
+            <translation><!-- 289007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289010</masterLabel>
+            <translation><!-- 289010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289011</masterLabel>
+            <translation><!-- 289011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289012</masterLabel>
+            <translation><!-- 289012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289013</masterLabel>
+            <translation><!-- 289013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289330</masterLabel>
+            <translation><!-- 289330 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289424</masterLabel>
+            <translation><!-- 289424 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289425</masterLabel>
+            <translation><!-- 289425 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289427</masterLabel>
+            <translation><!-- 289427 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289487</masterLabel>
+            <translation><!-- 289487 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291001</masterLabel>
+            <translation><!-- 291001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291002</masterLabel>
+            <translation><!-- 291002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291003</masterLabel>
+            <translation><!-- 291003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291004</masterLabel>
+            <translation><!-- 291004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291006</masterLabel>
+            <translation><!-- 291006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291007</masterLabel>
+            <translation><!-- 291007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291008</masterLabel>
+            <translation><!-- 291008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318001</masterLabel>
+            <translation><!-- 318001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318002</masterLabel>
+            <translation><!-- 318002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318003</masterLabel>
+            <translation><!-- 318003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318005</masterLabel>
+            <translation><!-- 318005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318008</masterLabel>
+            <translation><!-- 318008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318012</masterLabel>
+            <translation><!-- 318012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380001</masterLabel>
+            <translation><!-- 380001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380002</masterLabel>
+            <translation><!-- 380002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380003</masterLabel>
+            <translation><!-- 380003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380006</masterLabel>
+            <translation><!-- 380006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380007</masterLabel>
+            <translation><!-- 380007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380008</masterLabel>
+            <translation><!-- 380008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380009</masterLabel>
+            <translation><!-- 380009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380011</masterLabel>
+            <translation><!-- 380011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380012</masterLabel>
+            <translation><!-- 380012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380013</masterLabel>
+            <translation><!-- 380013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380014</masterLabel>
+            <translation><!-- 380014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380015</masterLabel>
+            <translation><!-- 380015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380017</masterLabel>
+            <translation><!-- 380017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380018</masterLabel>
+            <translation><!-- 380018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380020</masterLabel>
+            <translation><!-- 380020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380021</masterLabel>
+            <translation><!-- 380021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380022</masterLabel>
+            <translation><!-- 380022 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380023</masterLabel>
+            <translation><!-- 380023 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380024</masterLabel>
+            <translation><!-- 380024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380026</masterLabel>
+            <translation><!-- 380026 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380027</masterLabel>
+            <translation><!-- 380027 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380029</masterLabel>
+            <translation><!-- 380029 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380030</masterLabel>
+            <translation><!-- 380030 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380031</masterLabel>
+            <translation><!-- 380031 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380032</masterLabel>
+            <translation><!-- 380032 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380033</masterLabel>
+            <translation><!-- 380033 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380034</masterLabel>
+            <translation><!-- 380034 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380035</masterLabel>
+            <translation><!-- 380035 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380036</masterLabel>
+            <translation><!-- 380036 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>381004</masterLabel>
+            <translation><!-- 381004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495001</masterLabel>
+            <translation><!-- 495001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495003</masterLabel>
+            <translation><!-- 495003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495004</masterLabel>
+            <translation><!-- 495004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495005</masterLabel>
+            <translation><!-- 495005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495006</masterLabel>
+            <translation><!-- 495006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495007</masterLabel>
+            <translation><!-- 495007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>495008</masterLabel>
+            <translation><!-- 495008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529001</masterLabel>
+            <translation><!-- 529001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529003</masterLabel>
+            <translation><!-- 529003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529004</masterLabel>
+            <translation><!-- 529004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529007</masterLabel>
+            <translation><!-- 529007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529008</masterLabel>
+            <translation><!-- 529008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529010</masterLabel>
+            <translation><!-- 529010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529012</masterLabel>
+            <translation><!-- 529012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529015</masterLabel>
+            <translation><!-- 529015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600001</masterLabel>
+            <translation><!-- 600001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600002</masterLabel>
+            <translation><!-- 600002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600003</masterLabel>
+            <translation><!-- 600003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600004</masterLabel>
+            <translation><!-- 600004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629001</masterLabel>
+            <translation><!-- 629001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629002</masterLabel>
+            <translation><!-- 629002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629003</masterLabel>
+            <translation><!-- 629003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629004</masterLabel>
+            <translation><!-- 629004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629005</masterLabel>
+            <translation><!-- 629005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629006</masterLabel>
+            <translation><!-- 629006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629007</masterLabel>
+            <translation><!-- 629007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629008</masterLabel>
+            <translation><!-- 629008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>629010</masterLabel>
+            <translation><!-- 629010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669010</masterLabel>
+            <translation><!-- 669010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669020</masterLabel>
+            <translation><!-- 669020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669030</masterLabel>
+            <translation><!-- 669030 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669040</masterLabel>
+            <translation><!-- 669040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669050</masterLabel>
+            <translation><!-- 669050 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669060</masterLabel>
+            <translation><!-- 669060 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669070</masterLabel>
+            <translation><!-- 669070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669071</masterLabel>
+            <translation><!-- 669071 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>669080</masterLabel>
+            <translation><!-- 669080 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870001</masterLabel>
+            <translation><!-- 870001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870002</masterLabel>
+            <translation><!-- 870002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870003</masterLabel>
+            <translation><!-- 870003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870004</masterLabel>
+            <translation><!-- 870004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870005</masterLabel>
+            <translation><!-- 870005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870006</masterLabel>
+            <translation><!-- 870006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870007</masterLabel>
+            <translation><!-- 870007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>870025</masterLabel>
+            <translation><!-- 870025 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919001</masterLabel>
+            <translation><!-- 919001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919003</masterLabel>
+            <translation><!-- 919003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919005</masterLabel>
+            <translation><!-- 919005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919006</masterLabel>
+            <translation><!-- 919006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919007</masterLabel>
+            <translation><!-- 919007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919008</masterLabel>
+            <translation><!-- 919008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919010</masterLabel>
+            <translation><!-- 919010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>919011</masterLabel>
+            <translation><!-- 919011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924001</masterLabel>
+            <translation><!-- 924001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924002</masterLabel>
+            <translation><!-- 924002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924003</masterLabel>
+            <translation><!-- 924003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924004</masterLabel>
+            <translation><!-- 924004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924005</masterLabel>
+            <translation><!-- 924005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924006</masterLabel>
+            <translation><!-- 924006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924007</masterLabel>
+            <translation><!-- 924007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924008</masterLabel>
+            <translation><!-- 924008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924009</masterLabel>
+            <translation><!-- 924009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924010</masterLabel>
+            <translation><!-- 924010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924011</masterLabel>
+            <translation><!-- 924011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924012</masterLabel>
+            <translation><!-- 924012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924014</masterLabel>
+            <translation><!-- 924014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924016</masterLabel>
+            <translation><!-- 924016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>924017</masterLabel>
+            <translation><!-- 924017 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is the Duplicate Rule Inactive? --></label>
+        <name>WT_Is_the_Duplicate_Rule_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>WT_Line_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>ABL</masterLabel>
+            <translation><!-- ABL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agricultural Lending</masterLabel>
+            <translation><!-- Agricultural Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Administrator</masterLabel>
+            <translation><!-- Business Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Banking</masterLabel>
+            <translation><!-- Business Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCPA</masterLabel>
+            <translation><!-- CCPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charter Leadership</masterLabel>
+            <translation><!-- Charter Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Support</masterLabel>
+            <translation><!-- Commercial Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Banking</masterLabel>
+            <translation><!-- Community Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint Management</masterLabel>
+            <translation><!-- Complaint Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Center</masterLabel>
+            <translation><!-- Contact Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Application</masterLabel>
+            <translation><!-- Deposit Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Operations</masterLabel>
+            <translation><!-- Deposit Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Products</masterLabel>
+            <translation><!-- Digital Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Insurance</masterLabel>
+            <translation><!-- First Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud/ Info Sec</masterLabel>
+            <translation><!-- Fraud/ Info Sec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Group</masterLabel>
+            <translation><!-- Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Funds</masterLabel>
+            <translation><!-- Government Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Administrator</masterLabel>
+            <translation><!-- IT Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Banking Services</masterLabel>
+            <translation><!-- IT Banking Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAD - Managed Assets Division</masterLabel>
+            <translation><!-- MAD - Managed Assets Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyHR</masterLabel>
+            <translation><!-- MyHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Client Group</masterLabel>
+            <translation><!-- Private Client Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Practice Group</masterLabel>
+            <translation><!-- Professional Practice Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Role</masterLabel>
+            <translation><!-- Support Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndication/Capital Markets</masterLabel>
+            <translation><!-- Syndication/Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management</masterLabel>
+            <translation><!-- Treasury Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tricom</masterLabel>
+            <translation><!-- Tricom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Leadership</masterLabel>
+            <translation><!-- WTFC Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Operations - Compliance</masterLabel>
+            <translation><!-- WTFC Operations - Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WTFC Operations - Credit</masterLabel>
+            <translation><!-- WTFC Operations - Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - CDEC</masterLabel>
+            <translation><!-- Wealth - CDEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Chicago Trust</masterLabel>
+            <translation><!-- Wealth - Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Great Lakes Advisors</masterLabel>
+            <translation><!-- Wealth - Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Wintrust Investments</masterLabel>
+            <translation><!-- Wealth - Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Management</masterLabel>
+            <translation><!-- Wealth Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Chicago Trust</masterLabel>
+            <translation><!-- Wealth – Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Retirement Benefit Advisors</masterLabel>
+            <translation><!-- Wealth – Retirement Benefit Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth – Wintrust Investments</masterLabel>
+            <translation><!-- Wealth – Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Funds Group</masterLabel>
+            <translation><!-- Wintrust Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Mortgage</masterLabel>
+            <translation><!-- Wintrust Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Code --></label>
+        <name>WT_Location_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>WT_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Record ID --></label>
+        <name>WT_MDM_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Access --></label>
+        <name>WT_MM_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard End Date --></label>
+        <name>WT_MM_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Exception End Date --></label>
+        <name>WT_MM_Scorecard_Exception_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Exception Start Date --></label>
+        <name>WT_MM_Scorecard_Exception_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Start Date --></label>
+        <name>WT_MM_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MM Scorecard Team --></label>
+        <name>WT_MM_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSD Record ID --></label>
+        <name>WT_MSD_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-AD Title --></label>
+        <name>WT_Non_AD_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Officer Number --></label>
+        <name>WT_Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Role --></label>
+        <name>WT_Operations_Role__c</name>
+        <picklistValues>
+            <masterLabel>Closer</masterLabel>
+            <translation><!-- Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Analyst</masterLabel>
+            <translation><!-- Credit Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processor</masterLabel>
+            <translation><!-- Processor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>WT_Referral_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>WT_Referrals_Type__c</name>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago Deferred Exchange</masterLabel>
+            <translation><!-- Chicago Deferred Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Banking</masterLabel>
+            <translation><!-- Commercial Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Credit Card</masterLabel>
+            <translation><!-- Corporate Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Processing</masterLabel>
+            <translation><!-- Merchant Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Referral</masterLabel>
+            <translation><!-- Other Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum Adventures</masterLabel>
+            <translation><!-- Platinum Adventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Client Group</masterLabel>
+            <translation><!-- Private Client Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Banking</masterLabel>
+            <translation><!-- Retail Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Lending</masterLabel>
+            <translation><!-- Small Business Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaps/Derivatives</masterLabel>
+            <translation><!-- Swaps/Derivatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMIS - Treasury Management Inside Sales</masterLabel>
+            <translation><!-- TMIS - Treasury Management Inside Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing &amp; Training Referral</masterLabel>
+            <translation><!-- Testing &amp; Training Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Mortgage</masterLabel>
+            <translation><!-- Wintrust Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Wealth Management</masterLabel>
+            <translation><!-- Wintrust Wealth Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Id --></label>
+        <name>WT_Test_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>WT_User_Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- User LOB matched --></label>
+        <name>WT_User_LOB_matched__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Access --></label>
+        <name>WT_WS_Scorecard_Access__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager/Team Lead</masterLabel>
+            <translation><!-- Manager/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support User</masterLabel>
+            <translation><!-- Support User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard End Date --></label>
+        <name>WT_WS_Scorecard_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Start Date --></label>
+        <name>WT_WS_Scorecard_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS Scorecard Team --></label>
+        <name>WT_WS_Scorecard_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workday Department --></label>
+        <name>WT_Workday_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch (Location) Code --></label>
+        <name>tffa__BranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>tffa__Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>tffa__LocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Lender Id --></label>
+        <name>tffa__MortgageLenderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skill --></label>
+        <name>tffa__Skill__c</name>
+    </fields>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Background --></label>
+            <section>Background</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scorecard Details --></label>
+            <section>Scorecard Details</section>
+        </sections>
+        <sections>
+            <label><!-- Workday Feed --></label>
+            <section>Workday Feed</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

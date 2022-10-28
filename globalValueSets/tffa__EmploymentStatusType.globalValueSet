@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CURRENT</fullName>
+        <default>false</default>
+        <label>CURRENT</label>
+    </customValue>
+    <customValue>
+        <fullName>PREVIOUS</fullName>
+        <default>false</default>
+        <label>PREVIOUS</label>
+    </customValue>
+    <description>Indicates status of the employment</description>
+    <masterLabel>EmploymentStatusType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

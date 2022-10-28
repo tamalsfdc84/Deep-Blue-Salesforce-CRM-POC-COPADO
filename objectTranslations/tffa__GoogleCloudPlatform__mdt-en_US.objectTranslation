@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AudienceClaim --></label>
+        <name>tffa__AudienceClaim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certificate Name --></label>
+        <name>tffa__CertificateName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Claim --></label>
+        <name>tffa__IssueClaim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Id --></label>
+        <name>tffa__ProjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>tffa__Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject Claim --></label>
+        <name>tffa__SubjectClaim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tffa__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Google Cloud Platform Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

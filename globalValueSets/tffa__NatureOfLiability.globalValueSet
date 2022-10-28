@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AUTOMOBILE_LOAN</fullName>
+        <default>false</default>
+        <label>Automobile Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>REVOLVING_CHARGE_ACCOUNTS</fullName>
+        <default>false</default>
+        <label>Revolving Charge Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>REAL_ESTATE_LOAN</fullName>
+        <default>false</default>
+        <label>Real Estate Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>ALIMONY_CHILD_SUPPORT</fullName>
+        <default>false</default>
+        <label>Alimony/Child Support</label>
+    </customValue>
+    <customValue>
+        <fullName>STOCK_PLEDGES</fullName>
+        <default>false</default>
+        <label>Stock Pledges</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_CARD</fullName>
+        <default>false</default>
+        <label>Credit card</label>
+    </customValue>
+    <customValue>
+        <fullName>EDUCATION_LOAN</fullName>
+        <default>false</default>
+        <label>Education Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>PERSONAL_LOAN</fullName>
+        <default>false</default>
+        <label>Personal Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Display nature of liabilities</description>
+    <masterLabel>NatureOfLiability</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration Log Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration Log Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- APIRequest --></label>
+        <name>APIRequest__c</name>
+    </fields>
+    <fields>
+        <label><!-- APIResponse --></label>
+        <name>APIResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Api Name --></label>
+        <name>ApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Integration Log Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Integration Log --></label>
+        <name>IntegrationLog__c</name>
+        <relationshipLabel><!-- IntegrationLogs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>Party__c</name>
+        <relationshipLabel><!-- Integration Log Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Body --></label>
+        <name>RequestBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Body --></label>
+        <name>ResponseBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Record --></label>
+        <name>SubRecord__c</name>
+    </fields>
+    <layouts>
+        <layout>Integration Log Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

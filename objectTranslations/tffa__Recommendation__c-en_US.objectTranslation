@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accepted item ids --></label>
+        <name>tffa__AcceptedItemIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Party ID --></label>
+        <name>tffa__ExternalPartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External --></label>
+        <name>tffa__External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Need --></label>
+        <name>tffa__FinancialNeed__c</name>
+        <relationshipLabel><!-- Recommendations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Referral --></label>
+        <name>tffa__IsReferral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Items --></label>
+        <name>tffa__NumberOfItems__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- Recommendations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Process id --></label>
+        <name>tffa__ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Product --></label>
+        <name>tffa__Product__c</name>
+        <relationshipLabel><!-- Recommendations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>tffa__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral id --></label>
+        <name>tffa__ReferralId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source id --></label>
+        <name>tffa__SourceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tffa__Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Recommendation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

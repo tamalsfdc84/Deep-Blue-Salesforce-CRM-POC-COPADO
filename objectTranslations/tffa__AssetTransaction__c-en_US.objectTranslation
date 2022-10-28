@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount --></label>
+        <name>tffa__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>tffa__Asset__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tffa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted? --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender name --></label>
+        <name>tffa__LenderName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender type --></label>
+        <name>tffa__LenderType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan amount --></label>
+        <name>tffa__LoanAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan interest rate --></label>
+        <name>tffa__LoanInterestRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan type --></label>
+        <name>tffa__LoanType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>tffa__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tffa__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tffa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value date --></label>
+        <name>tffa__ValueDate__c</name>
+    </fields>
+    <layouts>
+        <layout>Asset Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

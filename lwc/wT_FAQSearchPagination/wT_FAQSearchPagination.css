@@ -1,0 +1,136 @@
+.faq__pagination {
+    height: 60px;
+    width: 100%;
+    max-height: 60px;
+    line-height: 0px;
+    position: relative;
+}
+
+
+/* arrow styles */
+
+.deactivated>.navArrowLeft {
+    border: solid #777777 !important;
+    border-width: 0 3px 3px 0 !important;
+}
+
+.deactivated>.navArrowRight {
+    border: solid #777777 !important;
+    border-width: 0 3px 3px 0 !important;
+}
+
+.deactivated {
+    border: 2px solid #777777 !important;
+    opacity: .5;
+}
+
+.navArrowLeft {
+    border: solid #003E7E;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+
+.navArrowRight {
+    border: solid #003E7E;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    right: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.faq__pagination__row {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.faq__pagination__row__center {
+    width: fit-content;
+    justify-content: space-around;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    /* max-width: 405px; */
+}
+
+.faq__pagination__row__center--item {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    text-align: center;
+}
+
+
+/*  */
+
+.activePage {
+    border-radius: 50%;
+    padding: 8px;
+    /*border: 1px solid #0e0942;*/
+    font-size: 20px;
+    text-decoration: none;
+    background: #003E7E;
+    color: aliceblue;
+    /* margin-right: 15px; */
+    position: relative;
+    top: 19px;
+}
+
+.page {
+    font-size: 20px;
+    text-decoration: none;
+    /* margin-right: 15px; */
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    line-height: 40px;
+    color: #777777;
+}
+
+.button {
+    border-radius: 50%;
+    font-size: 21px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #003E7E;
+    position: relative;
+    min-width: 40px;
+}
+
+.align_previous_Button {
+    /* margin-right: 30px; */
+}
+
+.align_next_Button {
+    /* margin-left: 15px; */
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 599px) {
+    .faq__pagination__row {
+        width: 100%;
+    }
+    .faq__pagination__row__center {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        overflow: hidden;
+        width: 100%;
+    }
+}

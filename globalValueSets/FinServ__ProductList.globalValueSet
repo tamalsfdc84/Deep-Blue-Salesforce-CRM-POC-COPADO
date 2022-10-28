@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Chicago Deferred Exchange</fullName>
+        <default>false</default>
+        <label>Chicago Deferred Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Banking</fullName>
+        <default>false</default>
+        <label>Commercial Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Advantage</fullName>
+        <default>false</default>
+        <label>Community Advantage</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Impact</fullName>
+        <default>false</default>
+        <label>Community Impact</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Lending</fullName>
+        <default>false</default>
+        <label>Consumer Lending</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Credit Card</fullName>
+        <default>false</default>
+        <label>Corporate Credit Card</label>
+    </customValue>
+    <customValue>
+        <fullName>CRE</fullName>
+        <default>false</default>
+        <label>CRE</label>
+    </customValue>
+    <customValue>
+        <fullName>International</fullName>
+        <default>false</default>
+        <label>International</label>
+    </customValue>
+    <customValue>
+        <fullName>Leasing</fullName>
+        <default>false</default>
+        <label>Leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Processing</fullName>
+        <default>false</default>
+        <label>Merchant Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Referral</fullName>
+        <default>false</default>
+        <label>Other Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Platinum Adventures</fullName>
+        <default>false</default>
+        <label>Platinum Adventures</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Client Group</fullName>
+        <default>false</default>
+        <label>Private Client Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Banking</fullName>
+        <default>false</default>
+        <label>Retail Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>SBA</fullName>
+        <default>false</default>
+        <label>SBA</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Business Lending</fullName>
+        <default>false</default>
+        <label>Small Business Lending</label>
+    </customValue>
+    <customValue>
+        <fullName>Swaps/Derivatives</fullName>
+        <default>false</default>
+        <label>Swaps/Derivatives</label>
+    </customValue>
+    <customValue>
+        <fullName>Testing &amp; Training Referral</fullName>
+        <default>false</default>
+        <label>Testing &amp; Training Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>TMIS - Treasury Management Inside Sales</fullName>
+        <default>false</default>
+        <label>TMIS - Treasury Management Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Wintrust Mortgage</fullName>
+        <default>false</default>
+        <label>Wintrust Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>Wintrust Receivables Finance</fullName>
+        <default>false</default>
+        <label>Wintrust Receivables Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Wintrust Wealth Management</fullName>
+        <default>false</default>
+        <label>Wintrust Wealth Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Investments</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Investments</label>
+    </customValue>
+    <customValue>
+        <fullName>Property Purchase</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Property Purchase</label>
+    </customValue>
+    <customValue>
+        <fullName>Manage Money</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Manage Money</label>
+    </customValue>
+    <customValue>
+        <fullName>Day to Day Banking</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Day to Day Banking</label>
+    </customValue>
+    <customValue>
+        <fullName>HELOC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HELOC</label>
+    </customValue>
+    <customValue>
+        <fullName>Checking Account</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Checking Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Savings Account</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Savings Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit Card</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Credit Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Loan</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Personal Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Mortgage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth – Wayne Hummer Investments</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wealth – Wayne Hummer Investments</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth – Great Lakes Advisors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wealth – Great Lakes Advisors</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth – Chicago Trust</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wealth – Chicago Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wealth Services</label>
+    </customValue>
+    <customValue>
+        <fullName>SBL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SBL</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth – Corporate Plan Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wealth – Corporate Plan Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Manage Debt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Manage Debt</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Education</label>
+    </customValue>
+    <masterLabel>Product List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

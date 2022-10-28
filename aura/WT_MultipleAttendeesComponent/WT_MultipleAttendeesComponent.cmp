@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <c:wT_MultipleAttendeesLWC objectApiName="WT_Attendee_Junction__c" recordId="{!v.recordId}"></c:wT_MultipleAttendeesLWC>
+</aura:component>

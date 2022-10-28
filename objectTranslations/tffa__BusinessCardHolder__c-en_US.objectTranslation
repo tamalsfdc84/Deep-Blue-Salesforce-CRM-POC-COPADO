@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account number --></label>
+        <name>tffa__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>tffa__Address__c</name>
+        <relationshipLabel><!-- Business Card Holders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Birth date --></label>
+        <name>tffa__BirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Card Detail0 --></label>
+        <name>tffa__BusinessCardDetail__c</name>
+        <relationshipLabel><!-- BusinessCardHolders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CDD Status --></label>
+        <name>tffa__CDDStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bank Identification Number (“BIN”) or Issuer identification number (“IIN”) is beneficial to identify a card brand, issuing
+        institution or bank, country of issuance, card type and category of cards. --></help>
+        <label><!-- Card BIN Code --></label>
+        <name>tffa__CardBINCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card number --></label>
+        <name>tffa__CardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card status --></label>
+        <name>tffa__CardStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embossed name --></label>
+        <name>tffa__EmbossedName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tffa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Status --></label>
+        <name>tffa__FraudStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full name --></label>
+        <name>tffa__FullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDA status --></label>
+        <name>tffa__IDAStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDV Status --></label>
+        <name>tffa__IDVStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is deleted --></label>
+        <name>tffa__IsDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>tffa__KYCDecisionOutcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Decision Overridden --></label>
+        <name>tffa__KYCDecisionOverridden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max spend limit --></label>
+        <name>tffa__MaxSpendLimit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power of One, Useful for reporting --></help>
+        <label><!-- One --></label>
+        <name>tffa__One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>tffa__Party__c</name>
+        <relationshipLabel><!-- BusinessCardHolders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary email --></label>
+        <name>tffa__PrimaryEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary phone --></label>
+        <name>tffa__PrimaryPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tffa__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ssn --></label>
+        <name>tffa__Ssn__c</name>
+    </fields>
+    <layouts>
+        <layout>BusinessCardHolder Layout</layout>
+        <sections>
+            <label><!-- Card Details --></label>
+            <section>Card Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Holder Details --></label>
+            <section>Holder Details</section>
+        </sections>
+        <sections>
+            <label><!-- Limit Details --></label>
+            <section>Limit Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MYHR Business Hours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MYHR Business Hours</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Hours --></label>
+        <name>WT_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>WT_Priority__c</name>
+    </fields>
+    <layouts>
+        <layout>MYHR Business Hours Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

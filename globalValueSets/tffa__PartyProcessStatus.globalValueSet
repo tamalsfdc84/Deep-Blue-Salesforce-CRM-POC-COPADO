@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>false</default>
+        <label>In progress</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLETED</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>FAILED</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <description>The states seen (in broader terms) when processing or pulling party information from an external system (e.g. accounting system).</description>
+    <masterLabel>PartyProcessStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

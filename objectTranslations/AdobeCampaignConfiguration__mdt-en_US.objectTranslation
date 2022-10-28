@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AdobeCampaignConfiguration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adobe Campaign Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- ContentType --></label>
+        <name>ContentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndPointUrl --></label>
+        <name>EndPointUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- HttpMethodType --></label>
+        <name>HttpMethodType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- SoapAction --></label>
+        <name>SoapAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <layouts>
+        <layout>AdobeCampaignConfiguration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

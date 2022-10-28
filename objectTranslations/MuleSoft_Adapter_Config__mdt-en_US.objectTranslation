@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mulesoft Adapter Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mulesoft Adapter Configs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accept --></label>
+        <name>Accept__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>ClientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>ClientSecret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>ContentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correlation Id --></label>
+        <name>CorrelationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Point --></label>
+        <name>EndPoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grant Type --></label>
+        <name>GrantType__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked http request body will be logged in &apos;Debug Logs&apos;. --></help>
+        <label><!-- Log Request --></label>
+        <name>LogRequest__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked response from http will be logged in &apos;Debug Logs&apos;. --></help>
+        <label><!-- Log Response --></label>
+        <name>LogResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method --></label>
+        <name>Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProdCategory --></label>
+        <name>ProdCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResponseClass --></label>
+        <name>ResponseClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Out --></label>
+        <name>TimeOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- VerificationScenario --></label>
+        <name>VerificationScenario__c</name>
+    </fields>
+    <layouts>
+        <layout>Mulesoft Adapter Config Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

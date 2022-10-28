@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PREQUAL</fullName>
+        <default>false</default>
+        <label>Pre-qualification</label>
+    </customValue>
+    <customValue>
+        <fullName>PURCHASE</fullName>
+        <default>false</default>
+        <label>Purchase</label>
+    </customValue>
+    <customValue>
+        <fullName>REFINANCE</fullName>
+        <default>false</default>
+        <label>Refinance</label>
+    </customValue>
+    <description>List of allowed loan purposes for the collateral</description>
+    <masterLabel>CollateralPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>true</default>
+        <label>Started</label>
+    </customValue>
+    <customValue>
+        <fullName>ABANDONED</fullName>
+        <default>false</default>
+        <label>Abandoned</label>
+    </customValue>
+    <customValue>
+        <fullName>CANCELLED</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVED</fullName>
+        <default>false</default>
+        <label>Saved</label>
+    </customValue>
+    <customValue>
+        <fullName>SUBMITTED</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>APPROVED</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_APPROVED</fullName>
+        <default>false</default>
+        <label>Credit Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPIRED</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>ACCOUNT_OPENED</fullName>
+        <default>false</default>
+        <label>Account Opened</label>
+    </customValue>
+    <customValue>
+        <fullName>FUNDED</fullName>
+        <default>false</default>
+        <label>Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>DISBURSED</fullName>
+        <default>false</default>
+        <label>Disbursed</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLETED</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>REVIEW</fullName>
+        <default>false</default>
+        <label>Review</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLINED</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>PROCESSOR_REVIEW</fullName>
+        <default>false</default>
+        <label>Processor Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_REVIEW</fullName>
+        <default>false</default>
+        <label>Credit Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_DECLINED</fullName>
+        <default>false</default>
+        <label>Credit Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_CONDITIONAL_APPROVED</fullName>
+        <default>false</default>
+        <label>Credit Conditional Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>PENDING</fullName>
+        <default>false</default>
+        <label>Waiting On Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSING_REVIEW</fullName>
+        <default>false</default>
+        <label>Closing Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSING_DOCS_RELEASED</fullName>
+        <default>false</default>
+        <label>Closing Docs Released</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSING_DOCS_SIGNED</fullName>
+        <default>false</default>
+        <label>Closing Docs Signed</label>
+    </customValue>
+    <customValue>
+        <fullName>FUNDING_FAILED</fullName>
+        <default>false</default>
+        <label>Funding Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER_GENERATED</fullName>
+        <default>false</default>
+        <label>Offer Generated</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER_ACCEPTED</fullName>
+        <default>false</default>
+        <label>Offer Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER_DECLINED</fullName>
+        <default>false</default>
+        <label>Offer Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_CARD_PROGRAM_REVIEW</fullName>
+        <default>false</default>
+        <label>Credit Card Program Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_CARD_PROGRAM_APPROVED</fullName>
+        <default>false</default>
+        <label>Credit Card Program Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>COUNTER_OFFER</fullName>
+        <default>false</default>
+        <label>Counter offer</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOSING_COMPLETED</fullName>
+        <default>false</default>
+        <label>Closing Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>INVENTORY_REQUESTED</fullName>
+        <default>false</default>
+        <label>Inventory Requested</label>
+    </customValue>
+    <customValue>
+        <fullName>INVENTORY_FOUND</fullName>
+        <default>false</default>
+        <label>Inventory Found</label>
+    </customValue>
+    <customValue>
+        <fullName>INVENTORY_PROVISIONED</fullName>
+        <default>false</default>
+        <label>Inventory Provisioned</label>
+    </customValue>
+    <customValue>
+        <fullName>INVENTORY_DELIVERED</fullName>
+        <default>false</default>
+        <label>Inventory Delivered</label>
+    </customValue>
+    <description>A copy of ApplicationStatus, added to facilitate changing of status labels in reports. It should contain all values of ApplicationStatus.</description>
+    <masterLabel>ApplicationReportingStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

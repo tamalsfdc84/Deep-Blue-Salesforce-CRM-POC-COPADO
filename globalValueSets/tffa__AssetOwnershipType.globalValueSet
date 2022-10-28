@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OWNER</fullName>
+        <default>false</default>
+        <label>Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>JOINT_OWNER</fullName>
+        <default>false</default>
+        <label>Joint Owner</label>
+    </customValue>
+    <description>Indicates the ownership type for the asset</description>
+    <masterLabel>AssetOwnershipType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

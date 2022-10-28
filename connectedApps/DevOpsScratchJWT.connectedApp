@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdc.admin@terafinainc.com</contactEmail>
+    <label>DevOpsScratchJWT</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9wy_WnyGrHdMP7omhiICO9cNIqxFtL86xuopwDoy3y.qknHvRNl81I6uYHeSmuollIac8kmdfyBTQecT1</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE_RELAXREFRESH</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>DevOps Scratch Admin</permissionSetName>
+    <profileName>No Access</profileName>
+</ConnectedApp>

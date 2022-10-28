@@ -1,0 +1,36 @@
+<messaging:emailTemplate subject="Referral Status Changed" relatedToType="Lead">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>           
+            <apex:outputPanel layout="block" rendered="{!NOT(ISBLANK(relatedTo.FinServ__ReferredByUser__c)) }">
+                <p>Dear {!relatedTo.FinServ__ReferredByUser__r.name}</p>
+            </apex:outputPanel>
+            The referral you created has been updated. The status has been changed.<br/>            
+           <table style="width:100%" border="1">
+                <tr>
+                    <th>Referred Name</th>
+                    <th>Referred by Name</th>
+                    <th>Status</th>
+                    <th>Link to Referral</th>
+                 </tr>
+                 <tr>
+                  <td>{!relatedTo.FinServ__RelatedAccount__r.name}</td>
+                  <td>{!relatedTo.FinServ__ReferredByUser__r.name}</td>
+                  <td>{!relatedTo.Status}</td>                        
+                   <td>
+                        <apex:outputLink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">Click here</apex:outputLink>
+                   </td>
+                 </tr>
+            </table>            
+            <p>
+           Please review the referral to ensure that you are satisfied with the outcome, or contact your product partner for further details.
+            </p>            
+            <p>
+                Sincerely,<br/>
+                CRM Support<br/>
+                crmsupport@wintrust.com
+            </p>
+            </body>
+        </html>
+        </messaging:htmlEmailBody>
+</messaging:emailTemplate>

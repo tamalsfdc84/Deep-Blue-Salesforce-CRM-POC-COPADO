@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.tffa__Submission__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.tffa__ProductCode__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.AccountOpeningStatus__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.tffa__AccountNumber__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.FISBranchCode__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>tffa__Application__c.tffa__CrossSell__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.tffa__Promotion__c</field>
+    </columns>
+    <columns>
+        <field>tffa__Application__c.tffa__PromotionCode__c</field>
+    </columns>
+    <description>Marketing report at an application level</description>
+    <format>Tabular</format>
+    <name>Copy of Marketing Applications Report 6.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$tffa__Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>tffa__Application__c.tffa__ActualClosingDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EQUIPMENT_FINANCE</fullName>
+        <default>false</default>
+        <label>Equipment Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPANSION</fullName>
+        <default>false</default>
+        <label>Expansion or new locations</label>
+    </customValue>
+    <customValue>
+        <fullName>INVENTORY_PURCHASE</fullName>
+        <default>false</default>
+        <label>Large-scale inventory purchases</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other </label>
+    </customValue>
+    <customValue>
+        <fullName>PAYROLL</fullName>
+        <default>false</default>
+        <label>Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>LEASE_INTEREST_PAYMENT</fullName>
+        <default>false</default>
+        <label>Lease/Mortgage Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>UTILITY_BILL</fullName>
+        <default>false</default>
+        <label>Utility Bill Payments</label>
+    </customValue>
+    <description>Supported business lending purposes.</description>
+    <masterLabel>BusinessLoanPurpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

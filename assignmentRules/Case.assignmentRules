@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>CaseAssignmentBasedOnRecordType</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>WT_CCPA_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>if(RecordType.DeveloperName ==&apos;WT_CCPA&apos;,true,false)</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

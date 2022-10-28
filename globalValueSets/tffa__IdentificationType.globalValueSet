@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DL</fullName>
+        <default>false</default>
+        <label>Drivers License</label>
+    </customValue>
+    <customValue>
+        <fullName>StateID</fullName>
+        <default>false</default>
+        <label>State ID</label>
+    </customValue>
+    <customValue>
+        <fullName>Passport</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <customValue>
+        <fullName>StudentID</fullName>
+        <default>false</default>
+        <label>Student ID with Photo - under 18 only</label>
+    </customValue>
+    <customValue>
+        <fullName>Minor</fullName>
+        <default>false</default>
+        <label>Minor</label>
+    </customValue>
+    <customValue>
+        <fullName>MilitaryID</fullName>
+        <default>false</default>
+        <label>Military ID</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSUMED_NAME_CERT</fullName>
+        <default>false</default>
+        <label>Assumed Name Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>NONE</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>CERT_OF_FORMATION</fullName>
+        <default>false</default>
+        <label>Certificate of Formation</label>
+    </customValue>
+    <customValue>
+        <fullName>ARTICLES_OF_INCORPORATION</fullName>
+        <default>false</default>
+        <label>Articles of Incorporation</label>
+    </customValue>
+    <customValue>
+        <fullName>CERT_OF_LIMITED_PARTNERSHIP</fullName>
+        <default>false</default>
+        <label>Certificate of Limited Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_LICENSE</fullName>
+        <default>false</default>
+        <label>Business License</label>
+    </customValue>
+    <customValue>
+        <fullName>GreenCard</fullName>
+        <default>false</default>
+        <label>Green Card</label>
+    </customValue>
+    <customValue>
+        <fullName>ForeignPassport</fullName>
+        <default>false</default>
+        <label>FOREIGN PASSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>ResidentAlienCard</fullName>
+        <default>false</default>
+        <label>RESIDENT ALIEN CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>Matricula</fullName>
+        <default>false</default>
+        <label>MATRICULA</label>
+    </customValue>
+    <customValue>
+        <fullName>USImmigrationVisa</fullName>
+        <default>false</default>
+        <label>US IMMIGRATION VISA</label>
+    </customValue>
+    <description>The list of supported identification type for a party</description>
+    <masterLabel>IdentificationType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

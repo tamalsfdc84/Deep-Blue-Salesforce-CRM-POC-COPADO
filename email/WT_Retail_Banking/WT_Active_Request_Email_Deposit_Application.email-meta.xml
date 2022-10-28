@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Active Request Email Deposit Application</name>
+    <style>freeForm</style>
+    <subject>Case {!Case.CaseNumber}  is Active - Deposit Applications Team Request</subject>
+    <textOnly>Dear {!Case.WT_Requester_s_Name__c},
+
+Your case {!Case.CaseNumber} regarding {!Case.Subject} is now actively being worked on by the Deposit Applications Team.
+
+Case ID : {!Case.CaseNumber}
+Submitted By : {!Case.CreatedBy}
+Reported By:
+Request Type : {!Case.WT_Request_Type__c}
+Summary : {!Case.Subject}
+Description : {!Case.Description}
+
+You can track the status of your request via the link :
+{!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

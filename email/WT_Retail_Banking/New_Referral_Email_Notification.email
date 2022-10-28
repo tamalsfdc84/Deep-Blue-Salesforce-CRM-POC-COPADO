@@ -1,0 +1,42 @@
+<messaging:emailTemplate subject="New Referral" relatedToType="Lead">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>           
+            <apex:outputPanel layout="block" rendered="{!NOT(ISBLANK(relatedTo.FinServ__ReferredByUser__c)) }">
+                <p>Dear {!relatedTo.WT_Referred_To__r.name}</p>
+            </apex:outputPanel>
+            You have received a referral in CRM<br/>            
+           <table style="width:100%" border="1">
+                <tr>
+                    <th>Referred Name</th>
+                    <th>Referred by</th>
+                    <th>Non-CRM Referred by</th>
+                    <th>Link to Referral</th>
+                 </tr>
+                 <tr>
+                  <td>{!relatedTo.FinServ__RelatedAccount__r.name}</td>
+                  <td>{!relatedTo.FinServ__ReferredByUser__r.name}</td>
+                  <td>{!relatedTo.WT_Non_CRM_Referred_By__r.name}</td>                        
+                   <td>
+                        <apex:outputLink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">Click here</apex:outputLink>
+                   </td>
+                 </tr>
+            </table>            
+            <p>
+           Please review the referral. If it is a qualified referral, please change the referral status to one of the “Qualified” statuses and contact the Referred party. If it is not a valid referral, or is a duplicate, please change the status to “Not Qualified”.   
+            </p> 
+            <p>
+            Please refer to the Qualifying Referrals Instructions on the CRM Wintranet page: <br/>
+            <apex:outputLink value="https://wintrust.sharepoint.com/frontline/CRMSite/Salesforce Training Documents/CRMSF - How to Qualify a Referral.pptx?d=w377e9f41daf24d71955a54804dd87540">
+            CRMSF - How to Qualify a Referral.pptx
+             </apex:outputLink>
+            </p>           
+            <p>
+                Sincerely,<br/>
+                CRM Support<br/>
+                crmsupport@wintrust.com
+            </p>
+            </body>
+        </html>
+        </messaging:htmlEmailBody>
+</messaging:emailTemplate>

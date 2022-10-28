@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is used in WT_AccountMergeBatch job to send duplicate record notifications on daily basis if records are not qualified for auto merge.</description>
+    <fields>
+        <fullName>WT_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_CC_Recipients_Email__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>CC Recipients Email</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Duplicate Accounts Notification</label>
+    <pluralLabel>Duplicate Accounts Notifications</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

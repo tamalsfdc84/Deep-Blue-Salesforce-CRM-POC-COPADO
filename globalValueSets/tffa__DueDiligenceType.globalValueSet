@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IDV</fullName>
+        <default>false</default>
+        <label>IDV</label>
+    </customValue>
+    <customValue>
+        <fullName>CDD</fullName>
+        <default>false</default>
+        <label>CDD</label>
+    </customValue>
+    <customValue>
+        <fullName>FRAUD</fullName>
+        <default>false</default>
+        <label>Fraud</label>
+    </customValue>
+    <customValue>
+        <fullName>OFAC</fullName>
+        <default>false</default>
+        <label>OFAC</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALIFILE</fullName>
+        <default>false</default>
+        <label>QualiFile</label>
+    </customValue>
+    <customValue>
+        <fullName>IDA</fullName>
+        <default>false</default>
+        <label>IDA</label>
+    </customValue>
+    <customValue>
+        <fullName>CREDIT_BUREAU</fullName>
+        <default>false</default>
+        <label>Credit Bureau</label>
+    </customValue>
+    <customValue>
+        <fullName>DEBIT_BUREAU</fullName>
+        <default>false</default>
+        <label>Debit Bureau</label>
+    </customValue>
+    <description>Types of due diligences</description>
+    <masterLabel>DueDiligenceType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

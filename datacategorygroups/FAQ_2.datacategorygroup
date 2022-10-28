@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>TouchID Not Working</label>
+            <name>TouchID_Not_Working</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Transactions</label>
+            <name>transactions</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Transfer Funds Not Available</label>
+            <name>Transfer_Funds_Not_Available</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Transfer Money</label>
+            <name>Transfer_Money</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Turn off alerts</label>
+            <name>Turn_off_alerts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Turn off Insights</label>
+            <name>Turn_off_Insights</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Type of Checks</label>
+            <name>Type_of_Checks</name>
+        </dataCategory>
+        <dataCategory>
+            <label>User ID</label>
+            <name>user_ID</name>
+        </dataCategory>
+        <dataCategory>
+            <label>User ID Recovery</label>
+            <name>User_ID_recovery</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Zelle</label>
+            <name>Zelle</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Zelle Internationally</label>
+            <name>Zelle_Internationally</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Zelle Receipt</label>
+            <name>Zelle_Receipt</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Zelle Setup</label>
+            <name>Zelle_Setup</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>FAQ 2</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

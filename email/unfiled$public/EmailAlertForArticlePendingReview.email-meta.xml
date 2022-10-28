@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email alert will trigger when Knowledge Article is submitted for approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>EmailAlertForArticlePendingReview</name>
+    <style>none</style>
+    <subject>Knowledge Article is ready for review - {!Knowledge__kav.Title}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

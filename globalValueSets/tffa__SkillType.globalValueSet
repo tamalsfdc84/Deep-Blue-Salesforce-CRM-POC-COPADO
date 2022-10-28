@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>LOAN_ORIGINATOR</fullName>
+        <default>false</default>
+        <label>Loan Originator</label>
+    </customValue>
+    <customValue>
+        <fullName>REALTOR</fullName>
+        <default>false</default>
+        <label>Selling Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>BUILDER</fullName>
+        <default>false</default>
+        <label>Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING_AGENT</fullName>
+        <default>false</default>
+        <label>Listing Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>REFERRAL_SOURCE</fullName>
+        <default>false</default>
+        <label>Referral Source</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_SELLER</fullName>
+        <default>false</default>
+        <label>Seller</label>
+    </customValue>
+    <customValue>
+        <fullName>ESCROW_COMPANY</fullName>
+        <default>false</default>
+        <label>Escrow Company</label>
+    </customValue>
+    <customValue>
+        <fullName>TITLE_COMPANY</fullName>
+        <default>false</default>
+        <label>Title Company</label>
+    </customValue>
+    <customValue>
+        <fullName>MORTGAGE_BROKER</fullName>
+        <default>false</default>
+        <label>Mortgage Broker</label>
+    </customValue>
+    <customValue>
+        <fullName>EXTERNAL_KYC_REVIEWER</fullName>
+        <default>false</default>
+        <label>External KYC Reviewer</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPERTY_OWNER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Property Owner</label>
+    </customValue>
+    <description>List of skills than can be associated with an user or party in the system. A value from a MISMO defined list that identifies the role that the party plays in the transaction.</description>
+    <masterLabel>SkillType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,18 @@
+<template>      
+    <c-w-t_-related-list
+        sobject-api-name="FinServ__FinancialAccountRole__c"
+        related-field-api-name="FinServ__RelatedAccount__c"
+        fields="FinServ__Role__c, WT_Customer_Relationship_Type__c, FinServ__FinancialAccount__r.Name, 
+        FinServ__FinancialAccount__r.FinServ__Type__c, FinServ__FinancialAccount__r.WT_Owner_Name__c, 
+        FinServ__FinancialAccount__r.FinServ__FinancialAccountType__c, FinServ__FinancialAccount__r.FinServ__OpenDate__c, 
+        FinServ__FinancialAccount__r.FinServ__FinancialAccountNumber__c, FinServ__FinancialAccount__r.WT_Bank__c, 
+        FinServ__FinancialAccount__r.FinServ__CurrentPostedBalance__c, FinServ__FinancialAccount__r.FinServ__RecordTypeName__c, 
+        FinServ__FinancialAccount__r.OwnerId"
+        where-conditions = " "
+        columns={financialAccountColumns}
+        custom-actions={customActions}
+        row-action-handler="true"
+        icon-name = "custom:custom16"
+        record-id={recordId}>
+    </c-w-t_-related-list> 
+</template>

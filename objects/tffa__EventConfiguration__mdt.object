@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Definition of event and related attributes</description>
+    <fields>
+        <fullName>tffa__AppNotificationTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>In-app notification template configured for the current event. Currently points to an email template.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>App Notification Template</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__AppNotificationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>In-app notification type (see CustomNotificationType) configured for the current event.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>App Notification Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultBCCEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of Email address to send BCC to every email seperated by semi colon (;)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of Email address to send BCC to every email seperated by semi colon (;)</inlineHelpText>
+        <label>Default BCC Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultCCEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A list of Email address to send CC to every email seperated by semi colon (;)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A list of Email address to send CC to every email seperated by semi colon (;)</inlineHelpText>
+        <label>Default CC Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultReceiverEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The email address to which mail should be sent. Blank if email is to be sent to applicant.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The email address to which mail should be sent. Blank if email is to be sent to applicant.</inlineHelpText>
+        <label>Default Receiver Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultSenderEmailAddressAlt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Org wide sender email Address for this event</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Default Sender Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__DefaultSenderEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Org wide sender email Address for this event</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Default Sender Email Address(DEPRECATED)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmailTemplateAlt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email template configured for the current event</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Email Template</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__EmailTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email template configured for the current event</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Email Template (DEPRECATED)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the event is enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__ExtensionClassAlt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The extension class to cater to the event, should extend EventExtension</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Extension Class</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__ExtensionClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The extension class to cater to the event should extend EventExtension</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Extension Class (DEPRECATED)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tffa__SaveEmailAsActivity__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the email should be saved as activity</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If the email should be saved as activity</inlineHelpText>
+        <label>Save Email As Activity</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Event Configuration</label>
+    <listViews>
+        <fullName>tffa__Event_Configuration</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__EmailTemplate__c</columns>
+        <columns>tffa__Enabled__c</columns>
+        <columns>tffa__ExtensionClass__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Event Configuration</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Event Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

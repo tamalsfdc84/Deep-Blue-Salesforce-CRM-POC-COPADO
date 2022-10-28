@@ -1,0 +1,89 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Your Inventory Is Delivered" recipientType="User" relatedToType="tffa__Application__c">
+  <messaging:htmlEmailBody >
+    <html xmlns="https://www.w3.org/1999/xhtml">
+
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{FinancialInstitutionName__c}</title>
+    <style type="text/css">
+        .im {
+           color: {BodyTextColour__c} !important;
+        }
+    </style>
+</head>
+<body spellcheck="none" style="padding: 0; margin: 0;background-color:{BodyBackgroundColour__c};">
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " border="0" align="center">
+    <tr>
+      <td width="563" align="center"  valign="top">
+          <table align="center" border="0" cellpadding="0" cellspacing="0"  style="width:800px;" width="800">
+          <tr>
+            <td colspan="7" height="30">
+            </td>               
+          </tr>
+          <tr>
+            <c:EmailHeader />
+              </tr>
+          <tr>
+            <td colspan="7" valign="top">               
+                <tr>
+                  <td width="20" height="170"></td>
+                  <td width="543" valign="top" >
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; width:800px;padding:4rem;color:{BodyTextColour__c};background-color:{CardBackgroundColour__c};" width="800">
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1rem; line-height:1.25rem;">
+                        <br/>
+                              <h3 style="font-size: 1.75rem;">Welcome to the {FinancialInstitutionName__c} Banking !</h3>
+                              <p>Congratulations! Your Safe deposit box with {FinancialInstitutionName__c} is now delivered. 
+                              </p>
+                              <br/>
+                              <br/>At {FinancialInstitutionName__c}, we strive to make banking as convenient as possible for you. We provide personal
+                              service and account features to help simplify your life. For more information on our various
+                              accounts and to find out which one is right for you, visit
+                              <a href="{InfoUrl__c}">{InfoUrl__c}</a>.
+                              <br/>
+                              <br/>
+                              <br/>Welcome to better banking.
+                              <br/>
+                              <br/>Best regards,
+                              <br/>
+                              <br/>Banking Solutions Center
+                              <br/>
+                              <br/>
+                              <br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="15"></td>
+                      </tr>
+                     
+                    </table>
+                  </td>
+                </tr>                
+            </td>
+          </tr>
+          <tr>
+          <c:EmailFooter />
+          </tr>
+          <tr>
+            <td colspan="7" height="10"></td>
+          </tr>            
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

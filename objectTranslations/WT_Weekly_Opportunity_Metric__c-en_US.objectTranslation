@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Weekly Opportunity Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Weekly Opportunity Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Line Of Business --></label>
+        <name>WT_Line_Of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp New Dollar Created --></label>
+        <name>WT_Opp_New_In_Dollar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of opportunities Lost In Dollars --></label>
+        <name>WT_Opportunities_Lost_In_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opportunities Lost --></label>
+        <name>WT_Opportunities_Lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opportunities Won in Dollars --></label>
+        <name>WT_Opportunities_Won_In_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opportunities Won --></label>
+        <name>WT_Opportunities_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Opportunities Created --></label>
+        <name>WT_Sales_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Metric --></label>
+        <name>WT_Weekly_Metric__c</name>
+        <relationshipLabel><!-- Weekly Opportunity Metrics --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

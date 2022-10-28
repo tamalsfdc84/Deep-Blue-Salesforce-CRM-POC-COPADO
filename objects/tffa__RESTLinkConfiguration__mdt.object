@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configure REST Paths for HATEOAS Links</description>
+    <fields>
+        <fullName>tffa__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether the REST path is enabled</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tffa__Method__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The HTTP Method</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The HTTP Method for the relation</inlineHelpText>
+        <label>HTTP Method</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GET</fullName>
+                    <default>true</default>
+                    <label>GET</label>
+                </value>
+                <value>
+                    <fullName>POST</fullName>
+                    <default>false</default>
+                    <label>POST</label>
+                </value>
+                <value>
+                    <fullName>PUT</fullName>
+                    <default>false</default>
+                    <label>PUT</label>
+                </value>
+                <value>
+                    <fullName>DELETE</fullName>
+                    <default>false</default>
+                    <label>DELETE</label>
+                </value>
+                <value>
+                    <fullName>PATCH</fullName>
+                    <default>false</default>
+                    <label>PATCH</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>tffa__ObjectName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The sobject name as identified by the system</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Object Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Path__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The relative path url for the REST</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Path</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tffa__Relation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Link relation</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Link Relation</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>REST Link Configuration</label>
+    <listViews>
+        <fullName>tffa__REST_Configuration</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>tffa__ObjectName__c</columns>
+        <columns>tffa__Path__c</columns>
+        <columns>tffa__Method__c</columns>
+        <columns>tffa__Relation__c</columns>
+        <columns>tffa__Enabled__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>REST Configuration</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>REST Link Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

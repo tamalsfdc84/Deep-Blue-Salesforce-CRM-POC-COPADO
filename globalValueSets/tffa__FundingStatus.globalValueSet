@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FUNDED</fullName>
+        <default>false</default>
+        <label>Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PROGRESS</fullName>
+        <default>true</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>FAILED</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>APPROVAL</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>REVERSED</fullName>
+        <default>false</default>
+        <label>Reversed</label>
+    </customValue>
+    <customValue>
+        <fullName>REVERSAL_FAILED</fullName>
+        <default>false</default>
+        <label>Reversal Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>ACH_FILE_GENERATED</fullName>
+        <default>false</default>
+        <label>ACH File Generated</label>
+    </customValue>
+    <customValue>
+        <fullName>ACH_FILE_FAILED</fullName>
+        <default>false</default>
+        <label>ACH File Generation Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>HOLD_APPLIED</fullName>
+        <default>false</default>
+        <label>Hold Applied on Funds</label>
+    </customValue>
+    <customValue>
+        <fullName>CANCELLED</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>REVERSAL_NOT_REQ</fullName>
+        <default>false</default>
+        <label>Reversal Not Required</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTHORIZED</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AUTHORIZED</label>
+    </customValue>
+    <description>Status of funding</description>
+    <masterLabel>FundingStatus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
