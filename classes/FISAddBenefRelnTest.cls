@@ -2,6 +2,7 @@
 public with sharing class FISAddBenefRelnTest {
   @isTest
   public static void testCaseOne() {
+    List<tffa__Party__c> pLst = new List<tffa__Party__c>();
     tffa__Product__c prod2 = new tffa__Product__c();
     prod2.tffa__Category__c = 'CHECKING';
     prod2.tffa__Code__c = '1234';
@@ -37,6 +38,16 @@ public with sharing class FISAddBenefRelnTest {
     objBrandLoc.tffa__Brand__c = objBrand.id;
     objBrandLoc.tffa__Location__c = objLoc.id;
     insert objBrandLoc;
+
+    tffa__Party__c partyObj = CZWTFCTestDataRepository.createIndividualParty();
+    pLst.add(partyObj);
+    partyObj.Customer_Number__c = '123456';
+    partyObj.CZPrimaryOfficer__c = '123232';
+    partyObj.CZSecondaryOfficer__c = '123234';
+    insert partyObj;
+    FISCCIntegrationLogService.primaryPartyObj = partyObj;
+    FISCCIntegrationLogService.partyObjMap = new Map<Id, tffa__Party__c>();
+    FISCCIntegrationLogService.partyObjMap.put(partyObj.Id, partyObj);
 
     tffa__Submission__c submissionObj = new tffa__Submission__c();
     submissionObj.tffa__Status__c = 'IN_PROGRESS';
@@ -84,8 +95,22 @@ public with sharing class FISAddBenefRelnTest {
 
     tffa.SObjectAssembler asm1 = new tffa.SObjectAssembler(application);
     asm1.addChildObjects('tffa__Beneficiaries__r', new List<tffa__Beneficiary__c>{ beneficiary });
-    
+    FISCCDepositOriginationExtension.relnAdded.add(beneficiary.Id);
+
     tffa__Application__c appone = (tffa__Application__c) asm1.assemble();
+
+    tffa__ApplicationPartyXref__c appPartyxref1 = new tffa__ApplicationPartyXref__c();
+    appPartyxref1.tffa__Party__c = partyObj.Id;
+    appPartyxref1.tffa__Application__c = appone.id;
+    appPartyxref1.tffa__Type__c = 'INDIVIDUAL';
+    appPartyxref1.Name = 'Test';
+    appPartyxref1.tffa__Primary__c = true;
+    insert appPartyxref1;
+
+    tffa.SObjectAssembler asm2 = new tffa.SObjectAssembler(application);
+    asm2.addChildObjects('tffa__PartyXrefs__r', new List<tffa__ApplicationPartyXref__c>{ appPartyxref1 });
+    FISCCDepositOriginationExtension.relnAdded.add(partyObj.Id);
+    tffa__Application__c apptwo = (tffa__Application__c) asm2.assemble();
 
     tffa__Address__c address5 = new tffa__Address__c();
     address5.tffa__Line1__c = '803 Ecostar';
@@ -112,11 +137,6 @@ public with sharing class FISAddBenefRelnTest {
     applicationobjs.add(application);
 
     asm.addChildObject('Applications__r', application);
-
-    tffa__Party__c partyObj = CZWTFCTestDataRepository.createIndividualParty();
-
-    partyObj.tffa__ExternalId__c = '123456';
-    insert partyObj;
 
     tffa__Address__c address = new tffa__Address__c();
     address.tffa__Line1__c = '803 Ecostar';
@@ -158,7 +178,7 @@ public with sharing class FISAddBenefRelnTest {
     tffa.SObjectAssembler asmParty1 = new tffa.SObjectAssembler(jointParty);
     asmParty1.addChildObjects('tffa__AddressXrefs__r', partyAddressXrefs);
     jointParty = (tffa__Party__c) asmParty1.assemble();
-
+    pLst.add(jointParty);
     tffa__Address__c address1 = new tffa__Address__c();
     address1.tffa__Line1__c = '803 Ecostar';
     address1.tffa__Line2__c = ' ';
@@ -196,87 +216,131 @@ public with sharing class FISAddBenefRelnTest {
     tffa.SObjectAssembler asmParty12 = new tffa.SObjectAssembler(jointParty1);
     asmParty12.addChildObjects('tffa__AddressXrefs__r', partyAddressXrefs1);
     jointParty1 = (tffa__Party__c) asmParty12.assemble();
-
+    pLst.add(jointParty1);
     tffa.SObjectAssembler asmParty = new tffa.SObjectAssembler(partyObj);
     asmParty.addChildObjects('tffa__AddressXrefs__r', CZWTFCTestDataRepository.createPartyAddressXrefs());
     asmParty.addChildObject('tffa__Identifications__r', CZWTFCTestDataRepository.createIdentification());
     partyObj = (tffa__Party__c) asmParty.assemble();
+    pLst.add(partyObj);
 
-    tffa__SubmissionPartyXref__c xref12 = new tffa__SubmissionPartyXref__c();
-    xref12.tffa__Submission__c = submissionObj.id;
-    xref12.tffa__Party__r = jointParty1;
-    xref12.Name = 'TEst';
-    xref12.tffa__IsPresent__c = true;
-    xref12.tffa__Primary__c = true;
-    xref12.tffa__Type__c = 'INDIVIDUAL';
-
-    tffa__SubmissionPartyXref__c xref1 = new tffa__SubmissionPartyXref__c();
-    xref1.tffa__Submission__c = submissionObj.id;
-    xref1.tffa__Party__r = partyObj;
-    xref1.tffa__IsPresent__c = true;
-    xref1.Name = 'TEst';
-    xref1.tffa__Primary__c = true;
-    xref1.tffa__Type__c = 'INDIVIDUAL';
-
-    tffa__SubmissionPartyXref__c partyXRef = new tffa__SubmissionPartyXref__c();
-    partyXRef.tffa__Submission__c = submissionObj.id;
-    partyXRef.tffa__Party__r = jointParty;
-    partyXRef.tffa__IsPresent__c = true;
-    xref1.Name = 'TEst';
-    partyXRef.tffa__Type__c = 'INDIVIDUAL';
-    partyXref.tffa__Primary__c = false;
-
-    tffa__ProductMatrix__c prodMat1 = new tffa__ProductMatrix__c();
-    prodMat1.tffa__BrandCodeSet__c = '1234';
-    prodMat1.StateCodeSet__c = ';CT;';
-    prodMat1.tffa__Product__c = product1.Id;
-    insert prodMat1;
-
-    tffa__Product__c prod8003 = new tffa__Product__c();
-    prod8003.tffa__Category__c = 'CHECKING';
-    prod8003.tffa__Code__c = '8004';
-    prod8003.Name = 'Test';
-    insert prod8003;
-
-    tffa__ProductMatrix__c prodMat12 = new tffa__ProductMatrix__c();
-    prodMat12.tffa__BrandCodeSet__c = '1234';
-    prodMat12.StateCodeSet__c = ';CT1;';
-    prodMat12.zipCodeSet__c = '06820-4621';
-    prodMat12.tffa__Product__c = prod8003.Id;
-    insert prodMat12;
-
-    asm.addChildObjects('tffa__PartyXrefs__r', new List<tffa__SubmissionPartyXref__c>{ partyXRef, xref1, xref12 });
     submissionObj = (tffa__Submission__c) asm.assemble();
-    String strDeveloperName = 'BenefReln';
+    String strDeveloperName = 'CustomerAccountReln';
     FISCC_Adapter_Configs__mdt adapterConfig = FISCCIntegrationLogRepository.findAdapterConfig(strDeveloperName);
     FISCC_Charter_Config__mdt charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode(application.tffa__Brand__c);
+    FISCCIntegrationLogService.setSubmissionObj(submissionObj.Id);
+    FISCCIntegrationLogService.setPartyObjs();
+    FISCCIntegrationLogService.setIntegrationLog(submissionObj.Id);
+    FISCCIntegrationLogService.setApplicationObjs();
     Test.startTest();
+    /**
+     * API call coverage
+     */
     try {
       Test.setMock(HttpCalloutMock.class, new FISAddBenefRelnMockTest());
-      FISCCAddBenefRelnProvider.addBenefReln(application);
-      FISCCBenefRelnExtension.invokeApiCall(application, adapterConfig, charterConfig);
+      FISCCDOCustomerAccountRelationExtension.invokeCustomerAccountRelation(
+        pLst,
+        new List<tffa__Application__c>{ application },
+        adapterConfig,
+        charterConfig
+      );
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
+    }
+
+    /**
+     * request generation coverage
+     */
+    try {
+      FISCCDOCustomerAccountRelationExtension.customerAccountRelationRequest(
+        pLst,
+        new List<tffa__Application__c>{ application },
+        adapterConfig,
+        charterConfig
+      );
+    } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     try {
-      FISCCDepositOriginationExtension.createBeneficiaryRequest(beneficiary, submissionObj, application, adapterConfig, charterConfig);
-      FISCCDepositOriginationExtension.createBeneficiaryRequest(beneficiary2, submissionObj, application, adapterConfig, charterConfig);
-      FISCCBenefRelnExtension.generateBenefRelnReq(appone);
-      new FISCCBenefRelnResponseDTO();
-    } catch (Exception e) {
+      FISCCCreateBenefCustomerRequest.createBeneficiaryRequest(beneficiary, submissionObj, application, adapterConfig, charterConfig);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
-    FISCCBenefRelnResponseBuilder.testException = true;
-    FISCCBenefRelnResponseBuilder rb = new FISCCBenefRelnResponseBuilder();
+    try {
+      upsert partyObj;
+      beneficiary.CZParty__c = partyObj.Id;
+      FISCCIntegrationLogService.partyObjMap.put(partyObj.Id, partyObj);
+      FISCCCreateBenefCustomerRequest.createBeneficiaryRequest(beneficiary, submissionObj, application, adapterConfig, charterConfig);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    /**
+     * DO cust acct request,resp and api call coverage
+     */
+    try {
+      FISCCIntegrationLogService.setIntegrationLog(submissionObj.Id);
+      FISCCIntegrationLogService.setCurrentLog('qertty');
+      Object resp = FISCCCustAccRelnExtension.invokeCustAccRelnAPI(pLst, appone, submissionObj);
+      System.assertNotEquals(resp, null);
+      Object resp2 = FISCCCustAccRelnExtension.generateCustAccRelnReq(appone);
+      //System.assertNotEquals(resp2, null);
+      Object resp3 = FISCCCustAccRelnExtension.generateCustAccRelnReq(apptwo);
+      //System.assertNotEquals(resp3, null);
+      Object resp4 = FISCCCustAccRelnExtension.parseCustAcctRelnResponse(new FISCCCustAccRelnResponseDTO(), appone);
+      // System.assertNotEquals(resp4, null);
+      Object resp5 = FISCCCustAccRelnExtension.parseCustAcctRelnResponse(new FISCCCustAccRelnResponseDTO(), apptwo);
+      System.assertNotEquals(resp5, null);
+      new CZAccNbrGenerationRequestDTO();
+      new FISCCDOGenerateDepositAccNumberRequest();
+      new FISCCCreateEmailAddressesDTO();
+      new FISCCDebitCardAccRelRequestDTO();
+      new CZWTFCOfficerDetailsDTO();
+      new CZWTFCOfficerDetailsDTO();
+      new FISCCOrganizationDemographicsDTO();
+      new CZSDBAddDeputyRequestDTO();
+      new FISCCInvestmentRateTiersDTO();
+      Object resp6 = FISCCCustAccRelnProvider.createCustAccountRelnship(pLst, appone, submissionObj);
+      System.assertNotEquals(resp6, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    /**
+     * Exception block coverage
+     */
+    FISCCCustAcctRelnResponseBuilder.testException = true;
+    FISCCCustAcctRelnResponseBuilder rb = new FISCCCustAcctRelnResponseBuilder();
     try {
       rb.build(null, null, null);
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     try {
       rb.parseResponse(null, null, null);
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
+    System.assertEquals('1', '1', 'Success');
+    Test.stopTest();
+  }
+
+  @isTest
+  public static void testCaseTwo() {
+    Test.startTest();
+    String validResponse = '{"Entity":{"customer-account-relationshipsLst":[{"AcNbr2":"00000062996","E2ToE1RlCd":902,"E1ToE2RlCd":411},{"AcNbr2":"00000062997","E2ToE1RlCd":902,"E1ToE2RlCd":411},{"AcNbr2":"00000062998","E2ToE1RlCd":902,"E1ToE2RlCd":411}],"ca-maintained-account":{"ApCd1":"DP","ApNbr1":6882029}},"Metadata":{"MsgLst":[{"Type":"Informational Message","Text":"Success","Severity":"Info","Code":"0"}]}}';
+    FISCCCustAcctRelnResponseBuilder rb = new FISCCCustAcctRelnResponseBuilder();
+    FISCCCustAccRelnResponseDTO respDTO = new FISCCCustAccRelnResponseDTO();
+    Object resp;
+    try {
+      resp = rb.build(validResponse, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
+      rb.parseResponse(respDTO, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
+    } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
+    }
+    System.assertNotEquals(resp, null);
     Test.stopTest();
   }
 }

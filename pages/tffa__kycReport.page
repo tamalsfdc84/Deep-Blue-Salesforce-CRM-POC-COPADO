@@ -191,6 +191,7 @@
                     <div class="slds-grid slds-gutters">
                       <div class="slds-col slds-size_4-of-12">
                         <strong class="slds-text-color_weak">{!item.tffa__Label__c}</strong>
+                        <p>{!item.tffa__Description__c}</p>
                       </div>
                       <div class="slds-col slds-size_2-of-12">{!item.tffa__ValueName__c}</div>
                       <div class="slds-col slds-size_6-of-12">

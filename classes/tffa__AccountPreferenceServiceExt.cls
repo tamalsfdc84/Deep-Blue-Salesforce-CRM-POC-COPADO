@@ -15,6 +15,9 @@ global virtual class AccountPreferenceServiceExt {
     global virtual List<tffa__AccountPreference__c> postCreateOrUpdate(String parentId, List<tffa__AccountPreference__c> entities) {
         return null;
     }
+    global virtual List<tffa__AccountPreference__c> postReadAll(List<tffa__AccountPreference__c> entities, tffa.QueryContext queryCtx) {
+        return null;
+    }
     global virtual List<tffa__AccountPreference__c> preCreateOrUpdate(List<tffa__AccountPreference__c> entities, Map<String,Object> params) {
         return null;
     }

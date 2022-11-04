@@ -2,8 +2,7 @@ public with sharing class FISCCObjectManagerRepository extends tffa.AbstractRepo
   public static List<tffa__Submission__c> doUpsertSubmission(tffa__Submission__c entity) {
     return doUpsert(new List<tffa__Submission__c>{ entity });
   }
-  public static List<tffa__party__c> doUpsertPartys(List<tffa__party__c> entities) {
-    //  doUpsert
+  public static List<tffa__party__c> doUpsertParties(List<tffa__party__c> entities) {
     return doUpsert(entities);
   }
   public static List<IntegrationLog__c> doUpsertIntegrationLogs(List<IntegrationLog__c> entities) {
@@ -27,7 +26,14 @@ public with sharing class FISCCObjectManagerRepository extends tffa.AbstractRepo
   public static List<tffa__AccountPreference__c> doUpsertAccountPrefObj(List<tffa__AccountPreference__c> entities) {
     return doUpsert(entities);
   }
+
+  public static List<sObject> updateRecords(List<sObject> entities) {
+    return doUpsert(entities);
+  }
   public static List<tffa__AdditionalPreference__c> doUpsertAdditionalPrefObj(List<tffa__AdditionalPreference__c> entities) {
+    return doUpsert(entities);
+  }
+  public static List<UploadFileHistory__c> doUpsertuploadFileHistoryObj(List<UploadFileHistory__c> entities) {
     return doUpsert(entities);
   }
 }

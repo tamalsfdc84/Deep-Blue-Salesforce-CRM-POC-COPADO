@@ -448,7 +448,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Promotion Plans</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -45,7 +45,7 @@ public with sharing class FISCCCEBEnrollmentService {
             tffa.logger.debug('inside enrollForOLB CEBEnroll result  ==>' + responseResult);
             if (responseResult != null) {
               if (responseResult instanceof FISCCTransactionResponseBaseDTO) {
-                resultJson = JSON.serialize(responseResult);
+                /*  resultJson = JSON.serialize(responseResult);
                 FISCCCEBEnrollmentResponseDTO response = (FISCCCEBEnrollmentResponseDTO) System.JSON.deserialize(
                   resultJson,
                   FISCCCEBEnrollmentResponseDTO.class
@@ -94,7 +94,7 @@ public with sharing class FISCCCEBEnrollmentService {
                 } else {
                   FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.CEB_ENROLLMENT_FAILURE);
                   FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.CEB_ENROLLMENT, message);
-                }
+                }*/
                 result = new Map<String, Object>{ 'Status' => status, 'StatusMessage' => message };
               } else if (responseResult instanceof Map<String, Object>) {
                 Map<String, Object> errorMessage = (Map<String, Object>) responseResult;
@@ -105,13 +105,13 @@ public with sharing class FISCCCEBEnrollmentService {
                 }
               } else {
                 // hostAdapter failure responses
-                tffa.Logger.debug('HostAdapter response in FISCCCEBEnrollmentService : ' + responseResult);
+                /* tffa.Logger.debug('HostAdapter response in FISCCCEBEnrollmentService : ' + responseResult);
                 result = new Map<String, Object>{
                   'Status' => CZWTFCConstants.PROCESS_STATUS_FAILURE,
                   'StatusMessage' => invaildResponseMessage
                 };
                 FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.CEB_ENROLLMENT_FAILURE);
-                FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.CEB_ENROLLMENT);
+                FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.CEB_ENROLLMENT);*/
               }
             } else {
               result = new Map<String, Object>{ 'Status' => status, 'StatusMessage' => invaildResponseMessage };

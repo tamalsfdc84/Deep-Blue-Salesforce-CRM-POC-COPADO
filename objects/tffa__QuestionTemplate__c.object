@@ -535,7 +535,7 @@ To access store (global) fields use &apos;store.{{ModelPath}}&apos; e.g. store.S
         <type>Text</type>
     </nameField>
     <pluralLabel>Question Templates</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

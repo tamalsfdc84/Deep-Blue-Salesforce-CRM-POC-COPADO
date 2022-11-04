@@ -2,7 +2,6 @@ public inherited sharing class FISCCTestRepositoryHelper extends tffa.AbstractRe
   public static List<FISCC_Adapter_Configs__mdt> getAdapterConfigMetadata(String strDeveloperName) {
     String q = new tffa.QueryBuilder(FISCC_Adapter_Configs__mdt.SObjectType)
       .selectFields()
-      .build()
       .whereClause('DeveloperName', '=:attr1')
       .withLimit(1)
       .build()
@@ -14,7 +13,6 @@ public inherited sharing class FISCCTestRepositoryHelper extends tffa.AbstractRe
   public static List<FISCC_Charter_Config__mdt> getCharterConfigMetadata1(String DeveloperName) {
     String q = new tffa.QueryBuilder(FISCC_Charter_Config__mdt.SObjectType)
       .selectFields()
-      .build()
       .whereClause('DeveloperName', '=:attr1')
       .withLimit(1)
       .build()

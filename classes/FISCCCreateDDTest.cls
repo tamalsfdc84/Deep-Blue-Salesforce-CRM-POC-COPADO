@@ -49,6 +49,12 @@ public with sharing class FISCCCreateDDTest {
     jointParty.tffa__Type__c = 'INDIVIDUAL';
     insert jointParty;
 
+    tffa__Employment__c emp = new tffa__Employment__c();
+    emp.OccupationType__c = '023';
+    emp.tffa__Title__c = 'RETIRED';
+    emp.tffa__Party__c = jointParty.id;
+    insert emp;
+
     tffa__Employment__c objEmployment = new tffa__Employment__c();
     objEmployment.tffa__Party__c = jointParty.id;
     objEmployment.tffa__EmployerName__c = 'Emp Name';
@@ -140,6 +146,7 @@ public with sharing class FISCCCreateDDTest {
     jointParty3.tffa__PrimaryPhone__c = '12345678901';
     jointParty3.CellPhoneNumber__c = '12345678921';
     jointParty3.tffa__SecondaryPhone__c = '12345678906';
+    jointParty3.IsPhoneNumberMissing__c = true;
     insert jointParty3;
 
     List<tffa__Party__c> partyList = new List<tffa__Party__c>();
@@ -147,83 +154,179 @@ public with sharing class FISCCCreateDDTest {
     partyList.add(p2);
     partyList.add(jointParty2);
 
+    tffa__Address__c objAddress = new tffa__Address__c();
+    objAddress.Name = 'Address Name';
+    objAddress.tffa__Line1__c = 'Line 1';
+    objAddress.tffa__Line2__c = 'Line 2';
+    objAddress.tffa__City__c = 'city';
+    objAddress.tffa__ZipCode__c = '1234';
+    objAddress.tffa__State__c = 'WI';
+    objAddress.tffa__Country__c = 'US';
+    insert objAddress;
+
     String resp = '{"Entity":{"due-diligence-demographics":{"OccpnDesc":26,"CustNbr":"00000063254","FullTime":"U","InqUpdtInd":"U"},"incoming-countriesLst":[],"outgoing-countriesLst":[]},"Metadata":{"MsgLst":[{"Type":"Informational Message","Text":"Success","Severity":"Info","Code":"0"}]}}';
     tffa__Submission__c subone = new tffa__Submission__c(tffa__Brand__c = '118');
     FISCCIntegrationLogService.setSubmissionObj(sub.Id);
 
-    FISCCIntegrationLogService.setIntegrationLog(sub.Id);
+    FISCCIntegrationLogService.setIntegrationLog(sub.id);
 
     FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.UPDATED_CUSTOMER_INFORMATION_FLOW);
     FISCCUpdateCustInfoProvider.updateCustInfo(partyList);
     Test.startTest();
+    FISCCIntegrationLogRepository.getCDDList(new List<Id>{ jointParty3.Id });
+    FISCC_Adapter_Configs__mdt adapterConfig = FISCCIntegrationLogRepository.findAdapterConfig('DepositOrigination');
+    FISCC_Charter_Config__mdt charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode('118');
 
     //create due diligence request
     try {
-      FISCCCreateDueDiligenceExtension.generateRequest(jointParty);
-      FISCCCreateDueDiligenceExtension.generateRequest(jointParty1);
+      FISCCDepositOriginationExtension.createDueDiligenceRequest(jointParty, adapterConfig, charterConfig);
+      FISCCDepositOriginationExtension.createDueDiligenceRequest(jointParty1, adapterConfig, charterConfig);
+      FISCCCustomerDDExtension.getAddressString(objAddress);
     } catch (Exception ex) {
+      tffa.Logger.debug(ex.getMessage());
     }
 
-    //create due diligence response
     try {
-      FISCCCreateDueDiligenceExtension.parseCreateDDResponse(new FISCCCreateDDResponseDTO());
-    } catch (Exception ee) {
+      tffa__Party__c eparty = CZWTFCTestDataRepository.createIndividualPartyWithChildObjects();
+      eparty.tffa__Employments__r[0].tffa__Type__c = 'RETIRED';
+      Object resp1 = FISCCCustomerDDExtension.generateCustomerDDRequest(eparty, adapterConfig, charterConfig);
+      System.assertNotEquals(resp1, null);
+    } catch (Exception ex) {
+      tffa.Logger.debug(ex.getMessage());
+    }
+
+    try {
+      tffa__Party__c eparty = CZWTFCTestDataRepository.createIndividualPartyWithChildObjects();
+      eparty.tffa__Citizenship__c = 'Resident';
+      eparty.tffa__Employments__r[0].tffa__Type__c = 'UNEMPLOYED';
+      Object resp1 = FISCCCustomerDDExtension.generateCustomerDDRequest(eparty, adapterConfig, charterConfig);
+      System.assertNotEquals(resp1, null);
+    } catch (Exception ex) {
+      tffa.Logger.debug(ex.getMessage());
+    }
+
+    try {
+      tffa__Party__c eparty = CZWTFCTestDataRepository.createIndividualPartyWithChildObjects();
+      eparty.tffa__Type__c = 'ORGANIZATION';
+      eparty.tffa__BusinessDescription__c = 'Business Description';
+      FISCCDepositOriginationRequestBaseDTO reDTO = FISCCCustomerDDExtension.generateCustomerDDRequest(
+        eparty,
+        adapterConfig,
+        charterConfig
+      );
+    } catch (Exception ex) {
+      tffa.Logger.debug(ex.getMessage());
     }
 
     //update customer info req and response methods
     try {
-      FISCCDepositOriginationExtension.customerInfoUpdateReq(jointParty3);
       FISCCDepositOriginationExtension.parseCustInfoUpdateResp(new Map<Id, Boolean>());
+      Object resp1 = FISCCDepositOriginationExtension.generatePhnEmailUpdateReq(jointParty3);
+      System.assertNotEquals(resp1, null);
     } catch (Exception exp) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     //update customer info method
     try {
-      FISCCDepositOriginationExtension.sendCustInfo(jointParty3);
+      Object resp1 = FISCCDepositOriginationExtension.sendCustInfo(jointParty3);
+      System.assertNotEquals(resp1, null);
     } catch (Exception exp) {
-    }
-
-    FISCCCreateDDResponseBuilder tstBuild = new FISCCCreateDDResponseBuilder();
-    try {
-      tstBuild.build(resp, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception ee) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
-      tstBuild.parseResponse(new FISCCCreateDDResponseDTO(), new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception ee) {
+      FISCCCustomerDDExtension.generateCustomerDDRequest(
+        new tffa__Party__c(),
+        new FISCC_Adapter_Configs__mdt(),
+        new FISCC_Charter_Config__mdt()
+      );
+    } catch (Exception exp) {
+      System.assertNotEquals(exp.getMessage(), null);
     }
 
-    Test.stopTest();
-  }
-
-  @isTest
-  public static void testCasetwo() {
-    Test.startTest();
-
-    FISCCCreateDDResponseBuilder.testException = true;
-    FISCCCreateDDResponseBuilder tstBuild = new FISCCCreateDDResponseBuilder();
     try {
-      tstBuild.build('', new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
+      FISCCCustomerDDExtension.generateCustomerDDRequest(null, null, null);
+    } catch (Exception exp) {
+      System.assertNotEquals(exp.getMessage(), null);
+    }
+
+    try {
+      FISCCCustomerDDExtension.getAddressString(new tffa__Address__c());
+    } catch (Exception exp) {
+      System.assertNotEquals(exp.getMessage(), null);
+    }
+
+    try {
+      Object resp1 = FISCCCustomerDDExtension.getAddressString(objAddress);
+      System.assertNotEquals(resp1, null);
+    } catch (Exception exp) {
+      tffa.Logger.debug('Inside exception');
+    }
+
+    try {
+      FISCCCustomerDDExtension.setCDDQuestions(new tffa__Party__c(), new FISCCDOCustomerDDRequest());
+    } catch (Exception exp) {
+      System.assertNotEquals(exp.getMessage(), null);
+    }
+
+    try {
+      String s = FISCCCustomerDDExtension.getCddValue('Yes');
+      System.assertEquals(s, 'Y', 'Success');
+    } catch (Exception exp) {
+      tffa.Logger.debug('Inside exception');
+    }
+
+    try {
+      String s = FISCCCustomerDDExtension.getCddValue('No');
+      System.assertEquals(s, 'N', 'Success');
+    } catch (Exception exp) {
+      tffa.Logger.debug('Inside exception');
+    }
+    //ex check
+    try {
+      FISCCCustomerDDExtension.getCddValue(null);
+    } catch (Exception exp) {
+      System.assertNotEquals(exp.getMessage(), null);
+    }
+    //ex check
+    try {
+      FISCCFundingHoldExtension.invokeApiCall(null, null, null, null);
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
-
+    //ex check
     try {
-      tstBuild.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
+      FISCCFundingHoldExtension.generateFundingHoldReq(null, null, null, null);
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
-    FISCCCreateDueDiligenceExtension.testException = true;
+    //ex check
     try {
-      FISCCCreateDueDiligenceExtension.generateRequest(null);
+      FISCCFundingHoldExtension.parseFundHoldResponse(null);
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+    //exp check
+    try {
+      FISCCFundingHoldExtension.getExpDate(null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
     try {
-      FISCCCreateDueDiligenceExtension.parseCreateDDResponse(new FISCCCreateDDResponseDTO());
-    } catch (Exception ee) {
+      Object resp2 = FISCCFundingHoldExtension.getExpDate(app);
+      System.assertEquals(resp2, null);
+    } catch (Exception ex) {
+      tffa.Logger.debug('Inside exception');
     }
 
+    FISCCFundHoldResponseDTO fundHoldResp = new FISCCFundHoldResponseDTO();
+    Object resp1 = FISCCFundingHoldExtension.parseFundHoldResponse(fundHoldResp);
+    System.assertEquals(resp1, true);
+
+    // System.assertEquals('1', '1', 'Success');
     Test.stopTest();
   }
 }

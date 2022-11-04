@@ -13,12 +13,20 @@ global class SubmissionController extends tffa.AbstractController implements tff
 
     }
     @AuraEnabled
+    global static tffa.Response abandon(tffa.Context ctx, String id) {
+        return null;
+    }
     global static tffa.Response cancel(tffa.Context ctx) {
         return null;
     }
     @AuraEnabled
     @RemoteAction
     global static tffa.Response cancel(tffa.Context ctx, String subJson) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response createOrUpdateDisclosureEnvelopes(tffa.Context ctx, String listJson, Map<String,Object> facts) {
         return null;
     }
     @AuraEnabled
@@ -72,6 +80,11 @@ global class SubmissionController extends tffa.AbstractController implements tff
     }
     @AuraEnabled
     @RemoteAction
+    global static tffa.Response fetchDisclosures(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
     global static tffa.Response fetchESignUrl(tffa.Context ctx, String disclosureJson, String factsJson) {
         return null;
     }
@@ -96,7 +109,37 @@ global class SubmissionController extends tffa.AbstractController implements tff
         return null;
     }
     @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateAccountNumbers(tffa.Context ctx, String factsJson) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateDisclosures(tffa.Context ctx, String factsJson) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateEnvelope(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateEnvelopes(tffa.Context ctx, String listJson, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
     global static tffa.Response generateLink(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateSigningURL(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response initializeDocumentSigning(tffa.Context ctx) {
         return null;
     }
     @AuraEnabled
@@ -107,6 +150,11 @@ global class SubmissionController extends tffa.AbstractController implements tff
     @AuraEnabled
     @RemoteAction
     global static tffa.Response onEvent(tffa.Context ctx, Object o) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response process(tffa.Context ctx, String factsJson) {
         return null;
     }
     @AuraEnabled
@@ -200,6 +248,11 @@ global class SubmissionController extends tffa.AbstractController implements tff
     @AuraEnabled
     @RemoteAction
     global static tffa.Response resolveFundingOptions(tffa.Context ctx, String factsJson) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response resolveName(tffa.Context ctx, Map<String,Object> params) {
         return null;
     }
     @AuraEnabled

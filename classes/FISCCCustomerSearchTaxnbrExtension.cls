@@ -53,18 +53,17 @@ public with sharing class FISCCCustomerSearchTaxnbrExtension {
         objFISCCCustomerSearchTaxnbrResponse.customersLst != null &&
         objFISCCCustomerSearchTaxnbrResponse.customersLst.size() > 0
       ) {
-        partyObj.Customer_Number__c = objFISCCCustomerSearchTaxnbrResponse.customersLst[0].CICustRtnNbr;
-
+        /**
+         * Check if last name and dob is also match with fis search record
+         */
+        if (
+          objFISCCCustomerSearchTaxnbrResponse.customersLst[0].SurNme == partyObj.tffa__LastName__c &&
+          objFISCCCustomerSearchTaxnbrResponse.customersLst[0].CIBirthdate == String.valueOf(partyObj.tffa__BirthDate__c)
+        ) {
+          partyObj.Customer_Number__c = objFISCCCustomerSearchTaxnbrResponse.customersLst[0].CICustRtnNbr;
+        }
         if (partyObj.Customer_Number__c != null) {
           partyObj.tffa__IsExistingCustomer__c = true;
-        }
-
-        if (objFISCCCustomerSearchTaxnbrResponse.customersLst[0].SurNme != null) {
-          partyObj.FISLastName__c = objFISCCCustomerSearchTaxnbrResponse.customersLst[0].SurNme;
-        }
-
-        if (objFISCCCustomerSearchTaxnbrResponse.customersLst[0].CIBirthdate != null) {
-          partyObj.FISDob__c = objFISCCCustomerSearchTaxnbrResponse.customersLst[0].CIBirthdate;
         }
       }
       tffa.logger.debug('partyObj updated ==>' + partyObj);

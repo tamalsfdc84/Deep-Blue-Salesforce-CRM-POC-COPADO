@@ -100,6 +100,9 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
       .selectChildObject('PartyXrefs__r')
       .selectFields()
       .build()
+      .selectChildObject('tffa__Disclosures__r')
+      .selectFields()
+      .build()
       .build()
       .toQuery();
     return (List<tffa__Submission__c>) doQuery(q, new List<Object>{});
@@ -132,8 +135,43 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
       .selectFields() /** */
       .selectObject('tffa__Party__r')
       .selectFields() /** */
+      .selectObject('CZLocation__r')
+      .selectFields() /** */
+      .build()
       .build()
       .orderBy('tffa__Primary__c', true) //.orderBy('ID')
+      .build()
+      .whereClause('Id', '=:attr1')
+      .build()
+      .toQuery();
+    //List<tffa__Submission__c> l = Database.query(q);
+    List<tffa__Submission__c> l = (List<tffa__Submission__c>) doQuery(q, new List<Object>{ submissionId });
+    return l.isEmpty() ? null : l[0];
+  }
+
+  /**
+   * @description Get submission record by ID
+   * @param String submissionId
+   * @return tffa__Submission__c
+   */
+  public static tffa__Submission__c findSubmissionByIdwithSortOrder(String submissionId) {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__FundingRequests__r')
+      .selectFields()
+      .build()
+      .selectChildObject('tffa__Applications__r')
+      .selectFields()
+      .build()
+      .selectChildObject('tffa__PartyXrefs__r')
+      .selectFields() /** */
+      .selectObject('tffa__Party__r')
+      .selectFields() /** */
+      .selectObject('CZLocation__r')
+      .selectFields() /** */
+      .build()
+      .build()
+      .orderBy('tffa__SortOrder__c')
       .build()
       .whereClause('Id', '=:attr1')
       .build()
@@ -150,7 +188,6 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
   public static List<tffa__Disclosure__c> getReviewSubmitDisclosures(Id submissionId) {
     String query = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Submission__c', '=: attr1')
       .opAnd()
       .groupStart()
@@ -170,6 +207,33 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
     List<tffa__Disclosure__c> submissionDisclosures = doQuery(
       query,
       new List<Object>{ submissionId, 'INTERNAL_CONTENT', 'TEXT', 'DOCUSIGN', 'Submission_ReviewAndSubmit' }
+    );
+    return submissionDisclosures;
+  }
+
+  public static List<tffa__Disclosure__c> getAppAccOpenedDisclosures(Id submissionId) {
+    String query = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Submission__c', '=: attr1')
+      .opAnd()
+      .groupStart()
+      .whereClause('tffa__Type__c', '=: attr2')
+      .opOR()
+      .whereClause('tffa__Type__c', '=: attr3')
+      .opOR()
+      .whereClause('tffa__Type__c', '=: attr4')
+      .groupEnd()
+      .opAnd()
+      .whereClause('tffa__EventName__c', '=: attr5')
+      .opAnd()
+      .whereClause('tffa__Accepted__c', '= false')
+      .orderBy('tffa__SortOrder__c')
+      .includeInactive()
+      .build()
+      .toQuery();
+    List<tffa__Disclosure__c> submissionDisclosures = doQuery(
+      query,
+      new List<Object>{ submissionId, 'INTERNAL_CONTENT', 'TEXT', 'DOCUSIGN', 'Application_DocumentGeneration' }
     );
     return submissionDisclosures;
   }
@@ -448,7 +512,6 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
   public static List<tffa__Disclosure__c> getAccountDetailsOdDisclosures(Id submissionId) {
     String query = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Submission__c', '=: attr1')
       .opAnd()
       .whereClause('tffa__EventName__c', '=: attr2')
@@ -476,5 +539,126 @@ public inherited sharing class CZWTFCSubmissionRepository extends tffa.AbstractR
       .build()
       .toQuery();
     return (tffa__Submission__c) doQueryOne(q, new List<Object>{ id, 'APPLICANT' });
+  }
+
+  /**
+   * Fetches a submission entity by id.
+   */
+  public static tffa__Submission__c fetchSubmissionbyId(String id) {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .whereClause('Id', '=:attr1')
+      .withLimit(1)
+      .build()
+      .toQuery();
+    return (tffa__Submission__c) doQueryOne(q, new List<Object>{ id });
+  }
+
+  public static List<tffa__Submission__c> fetchSubmissionswithDisc() {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Disclosures__r')
+      .selectFields()
+      .whereClause('tffa__Type__c', '=:attr1')
+      .build()
+      .whereClause('CZDocusignDownloadStatus__c', '!= :attr2')
+      .opAnd()
+      .whereClause('CZSigningStatus__c', '= :attr3')
+      .opAnd()
+      .whereClause('tffa__Status__c', '= :attr4')
+      .opAnd()
+      .whereClause('CZDocusignDownloadRetryCount__c', ' < :attr5')
+      .build()
+      .toQuery();
+    List<tffa__Submission__c> submissionWithDisclosures = doQuery(
+      q,
+      new List<Object>{
+        CZWTFCConstants.DOCUSIGN,
+        CZWTFCConstants.COMPLETED,
+        CZWTFCConstants.SIGNING_COMPLETED,
+        CZWTFCConstants.SUBMITTED,
+        10
+      }
+    );
+    return submissionWithDisclosures;
+  }
+
+  public static List<tffa__Submission__c> fetchSubmissionswithDiscById(List<Id> ids) {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Disclosures__r')
+      .selectFields()
+      .whereClause('tffa__Type__c', '=:attr1')
+      .build()
+      .whereClause('Id', 'In :attr2')
+      .build()
+      .toQuery();
+    List<tffa__Submission__c> submissionWithDisclosures = doQuery(q, new List<Object>{ CZWTFCConstants.DOCUSIGN, ids });
+    return submissionWithDisclosures;
+  }
+
+  public static List<tffa__Submission__c> fetchSubmissionssForFCM(Integer retryCount, List<String> fcmStatusLst) {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Applications__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Status__c', '=:attr1')
+      .opAnd()
+      .whereClause('FCMUploadRetryCount__c', ' < :attr2')
+      .opAnd()
+      .whereClause('FCMUploadStatus__c', 'NOT IN :attr3')
+      .build()
+      .toQuery();
+    return (List<tffa__Submission__c>) doQuery(q, new List<Object>{ CZWTFCConstants.SUBMITTED, retryCount, fcmStatusLst });
+  }
+
+  public static Map<String, List<tffa__Disclosure__c>> fetchEnvsByEnvIds(List<tffa__Disclosure__c> discList) {
+    Set<Id> envIds = new Set<Id>();
+    for (tffa__Disclosure__c d : discList) {
+      envIds.add(d.tffa__Envelope__c);
+    }
+    Map<String, List<tffa__Disclosure__c>> envMap = new Map<String, List<tffa__Disclosure__c>>();
+    String q = new tffa.QueryBuilder(tffa__DisclosureEnvelope__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Disclosures__r')
+      .selectFields()
+      .build()
+      .whereClause('Id', 'In :attr1')
+      .build()
+      .toQuery();
+    List<tffa__DisclosureEnvelope__c> result = doQuery(q, new List<Object>{ envIds });
+    if (!result.isEmpty()) {
+      for (tffa__DisclosureEnvelope__c envObj : result) {
+        envMap.put(envObj.tffa__ExternalId__c, envObj.tffa__Disclosures__r);
+      }
+    }
+    return envMap;
+  }
+
+  /**
+   * @description Get submission record by ID
+   * @param String submissionId
+   * @return tffa__Submission__c
+   */
+  public static tffa__Submission__c findSubmissionByIdForDocusign(String submissionId) {
+    String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__PartyXrefs__r')
+      .selectFields() /** */
+      .selectObject('tffa__Party__r')
+      .selectFields() /** */
+      .selectObject('CZLocation__r')
+      .selectFields() /** */
+      .build()
+      .build()
+      .orderBy('tffa__Primary__c', true) //.orderBy('ID')
+      .build()
+      .whereClause('Id', '=:attr1')
+      .build()
+      .toQuery();
+    //List<tffa__Submission__c> l = Database.query(q);
+    List<tffa__Submission__c> l = (List<tffa__Submission__c>) doQuery(q, new List<Object>{ submissionId });
+    return l.isEmpty() ? null : l[0];
   }
 }

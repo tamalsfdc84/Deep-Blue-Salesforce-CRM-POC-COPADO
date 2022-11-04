@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CLOVER</fullName>
+        <default>false</default>
+        <label>Clover</label>
+    </customValue>
+    <customValue>
+        <fullName>FISERV</fullName>
+        <default>false</default>
+        <label>Monthly</label>
+    </customValue>
+    <customValue>
+        <fullName>NCR</fullName>
+        <default>false</default>
+        <label>NCR</label>
+    </customValue>
+    <customValue>
+        <fullName>FIRST_DATA</fullName>
+        <default>false</default>
+        <label>First Data</label>
+    </customValue>
+    <customValue>
+        <fullName>PAYEAZY</fullName>
+        <default>false</default>
+        <label>Payeazy</label>
+    </customValue>
+    <description>Different merchant services provider</description>
+    <masterLabel>MerchantServicesProvider</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

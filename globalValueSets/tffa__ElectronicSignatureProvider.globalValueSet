@@ -10,6 +10,11 @@
         <default>false</default>
         <label>IMM</label>
     </customValue>
+    <customValue>
+        <fullName>NONE</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
     <description>Lists types of electronic signature providers</description>
     <masterLabel>ElectronicSignatureProvider</masterLabel>
     <sorted>false</sorted>

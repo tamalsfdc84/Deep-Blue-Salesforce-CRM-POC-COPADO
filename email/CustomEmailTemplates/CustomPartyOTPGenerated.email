@@ -225,9 +225,9 @@
                                        <td align="left" class="em_black" style="font-size:13px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
                                           Dear&nbsp;{PartyName},<br/>
                                           <br/>To authenticate your {brandName} application, please log in with the following one-time
-                                          password: <b>{!RelatedTo.tffa__OTP__c}</b>. Do not share this with anyone else.<br/><br/>At {brandName}, we take your account security very seriously. Please note: We will never reach out to you via phone, email or text message and ask you for your password, one-time password, credit card, or bank account number.<br/><br/>If you receive a suspicious email with a link to update your account information, do not
+                                          password: <b>{!RelatedTo.tffa__OTP__c}</b>. Do not share this password with anyone else.<br/><br/>At {brandName}, we take your account security very seriously. Please note: We will never reach out to you via phone, email or text message and ask you for your password, one-time password, credit card, or bank account number.<br/><br/>If you receive a suspicious email with a link to update your account information, do not
                                           click on the link. Instead, report the email to us for investigation.<br/><br/>
-                                          Thank you for choosing to bank with us. If you have any questions, please contact us at {phoneNo} or <a href="mailto:{email}" style="color: #003e7e; text-decoration: underline;">{email}</a>.
+                                          Thank you for choosing the Wintrust Community Banks family. If you have any questions, or did not submit this application, please call us at {phoneNo} or email us at <a href="mailto:{email}" style="color: #003e7e; text-decoration: underline;">{email}</a>.
                                        </td>
                                     </tr>
                                  </table>

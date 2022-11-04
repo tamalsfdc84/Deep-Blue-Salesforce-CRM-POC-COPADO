@@ -1,7 +1,7 @@
 <!--
 Copyright (c) 2019 Terafina Inc
   @Page Name          : environmentConfiguration.page
-  @description     Manage environment configuration
+  Manage environment configuration
 -->
 <apex:page docType="html-5.0"
   title="{!$ObjectType.tffa__EnvironmentConfiguration__c.Label}"
@@ -24,55 +24,63 @@ Copyright (c) 2019 Terafina Inc
       </apex:pageBlockButtons>
       <!-- plaid details -->
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_FIDETAILS}">
-        <apex:inputField value="{!config.tffa__FinancialInstitutionName__c}" id="FinancialInstitutionName"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__FinancialInstitutionShortName__c}" id="FinancialInstitutionShortName"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__InfoUrl__c}" id="InfoUrl"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__IsCreditUnion__c}" id="IsCreditUnion"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__BicCode__c}" id="BicCode"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__RoutingNumber__c}" id="RoutingNumber"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__DefaultSenderEmailAddress__c}" id="DefaultSenderEmailAddress"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__ContactAddress__c}" id="ContactAddress"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__ContactEmail__c}" id="ContactEmail"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__ContactPhone__c}" id="ContactPhone"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__AppleMobileAppUrl__c}" id="AppleMobileAppUrl"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__GoogleMobileAppUrl__c}" id="GoogleMobileAppUrl"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__OnlineBankingUrl__c}" id="OnlineBankingUrl"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__OnlineBankingLoginUrl__c}" id="OnlineBankingLoginUrl"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__OnlineBankingProvider__c}" id="OnlineBankingProvider"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__OnlineBankingEntityId__c}" id="OnlineBankingEntityId"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__BaseUrl__c}" id="BaseUrl"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__FinancialInstitutionName__c}" id="FinancialInstitutionName"></apex:inputField>
+        <apex:inputField value="{!config.tffa__FinancialInstitutionShortName__c}" id="FinancialInstitutionShortName"></apex:inputField>
+        <apex:inputField value="{!config.tffa__InfoUrl__c}" id="InfoUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__IsCreditUnion__c}" id="IsCreditUnion"></apex:inputField>
+        <apex:inputField value="{!config.tffa__BicCode__c}" id="BicCode"></apex:inputField>
+        <apex:inputField value="{!config.tffa__RoutingNumber__c}" id="RoutingNumber"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DefaultSenderEmailAddress__c}" id="DefaultSenderEmailAddress"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DefaultReplyToEmailAddress__c}" id="DefaultReplyToEmailAddress"></apex:inputField>
+        <apex:inputField value="{!config.tffa__ContactAddress__c}" id="ContactAddress"></apex:inputField>
+        <apex:inputField value="{!config.tffa__ContactEmail__c}" id="ContactEmail"></apex:inputField>
+        <apex:inputField value="{!config.tffa__ContactPhone__c}" id="ContactPhone"></apex:inputField>
+        <apex:inputField value="{!config.tffa__AppleMobileAppUrl__c}" id="AppleMobileAppUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__GoogleMobileAppUrl__c}" id="GoogleMobileAppUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__OnlineBankingUrl__c}" id="OnlineBankingUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__OnlineBankingLoginUrl__c}" id="OnlineBankingLoginUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__OnlineBankingProvider__c}" id="OnlineBankingProvider"></apex:inputField>
+        <apex:inputField value="{!config.tffa__OnlineBankingEntityId__c}" id="OnlineBankingEntityId"></apex:inputField>
+        <apex:inputField value="{!config.tffa__BaseUrl__c}" id="BaseUrl"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DefaultCountry__c}" id="DefaultCountry"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DefaultLocale__c}" id="DefaultLocale"></apex:inputField>
       </apex:pageBlockSection>
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_DETAILS}">
-        <apex:inputField value="{!config.tffa__SessionIdleDuration__c}" id="SessionIdleDuration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SessionValidityDuration__c}" id="SessionValidityDuration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SubmissionAbandonmentDuration__c}" id="SubmissionAbandonmentDuration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SubmissionExpirationDuration__c}" id="SubmissionExpirationDuration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxPreviousAddressCount__c}" id="MaxPreviousAddressCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MinAddressHistoryInYears__c}" id="MinAddressHistoryInYears"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxPreviousEmployerCount__c}" id="MaxPreviousEmployerCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxBeneficiaryCount__c}" id="MaxBeneficiaryCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxOtherIncomeCount__c}" id="MaxOtherIncomeCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxIndividualApplicantCount__c}" id="MaxIndividualApplicantCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxOrganizationApplicantCount__c}" id="MaxOrganizationApplicantCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SubmissionReminderSchedule__c}" id="SubmissionReminderSchedule"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__ApplicationRetentionPeriod__c}" id="ApplicationRetentionPeriod"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SubmittedPollingCount__c}" id="SubmittedPollingCount"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__SubmittedPollingIntervalInSeconds__c}" id="SubmittedPollingIntervalInSeconds"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MinorAgeThreshold__c}" id="MinorAgeThreshold"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__NotificationEnabled__c}" id="NotificationEnabled"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__AllowJointCollaboration__c}" id="AllowJointCollaboration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__OTPValidityDuration__c}" id="OTPValidityDuration__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxOTPGenerationRetryCount__c}" id="MaxOTPGenerationRetryCount__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxOTPRetryCount__c}" id="MaxOTPRetryCount__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__MaxOLBAuthenticationRetryCount__c}" id="MaxOLBAuthenticationRetryCount__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__AllowedDisclosureDeliveryType__c}" id="AllowedDisclosureDeliveryType__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnableUXStrategy__c}" id="EnableUXStrategy"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnableBrand__c}" id="EnableBrand"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnableRemoteFunding__c}" id="EnableRemoteFunding"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__ApplicationLinkValidityDuration__c}" id="ApplicationLinkValidityDuration"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__LocationResolutionRange__c}" id="LocationResolutionRange"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__PrequalReminderSchedule__c}" id="PrequalReminderSchedule"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__GenericErrorPage__c}" id="GenericErrorPage"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__SessionIdleDuration__c}" id="SessionIdleDuration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SessionValidityDuration__c}" id="SessionValidityDuration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SubmissionAbandonmentDuration__c}" id="SubmissionAbandonmentDuration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SubmissionExpirationDuration__c}" id="SubmissionExpirationDuration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxPreviousAddressCount__c}" id="MaxPreviousAddressCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MinAddressHistoryInYears__c}" id="MinAddressHistoryInYears"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxPreviousEmployerCount__c}" id="MaxPreviousEmployerCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxBeneficiaryCount__c}" id="MaxBeneficiaryCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxOtherIncomeCount__c}" id="MaxOtherIncomeCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxIndividualApplicantCount__c}" id="MaxIndividualApplicantCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxOrganizationApplicantCount__c}" id="MaxOrganizationApplicantCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxApplicationCount__c}" id="MaxApplicationCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SubmissionReminderSchedule__c}" id="SubmissionReminderSchedule"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DisclosureReminderSchedule__c}" id="DisclosureReminderSchedule"></apex:inputField>
+        <apex:inputField value="{!config.tffa__ApplicationRetentionPeriod__c}" id="ApplicationRetentionPeriod"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SubmittedPollingCount__c}" id="SubmittedPollingCount"></apex:inputField>
+        <apex:inputField value="{!config.tffa__SubmittedPollingIntervalInSeconds__c}" id="SubmittedPollingIntervalInSeconds"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MinorAgeThreshold__c}" id="MinorAgeThreshold"></apex:inputField>
+        <apex:inputField value="{!config.tffa__NotificationEnabled__c}" id="NotificationEnabled"></apex:inputField>
+        <apex:inputField value="{!config.tffa__AllowJointCollaboration__c}" id="AllowJointCollaboration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__OTPValidityDuration__c}" id="OTPValidityDuration__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxOTPGenerationRetryCount__c}" id="MaxOTPGenerationRetryCount__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxOTPRetryCount__c}" id="MaxOTPRetryCount__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxOLBAuthenticationRetryCount__c}" id="MaxOLBAuthenticationRetryCount__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__AllowedDisclosureDeliveryType__c}" id="AllowedDisclosureDeliveryType__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableUXStrategy__c}" id="EnableUXStrategy"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableBrand__c}" id="EnableBrand"></apex:inputField>
+        <apex:inputField value="{!config.tffa__DefaultBrandCode__c}" id="DefaultBrandCode"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableRemoteFunding__c}" id="EnableRemoteFunding"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableConsolidatedFunding__c}" id="EnableConsolidatedFunding"></apex:inputField>
+        <apex:inputField value="{!config.tffa__ApplicationLinkValidityDuration__c}" id="ApplicationLinkValidityDuration"></apex:inputField>
+        <apex:inputField value="{!config.tffa__LocationResolutionRange__c}" id="LocationResolutionRange"></apex:inputField>
+        <apex:inputField value="{!config.tffa__PrequalReminderSchedule__c}" id="PrequalReminderSchedule"></apex:inputField>
+        <apex:inputField value="{!config.tffa__GenericErrorPage__c}" id="GenericErrorPage"></apex:inputField>
+        <apex:inputField value="{!config.tffa__TaxContributionCutoffDate__c}" id="TaxContributionCutoffDate"></apex:inputField>
       </apex:pageBlockSection>
       <!-- recaptcha details -->
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_RECAPTCHA}">
@@ -97,6 +105,8 @@ Copyright (c) 2019 Terafina Inc
           <apex:actionSupport event="onchange" reRender="pb1" />
         </apex:inputField>
 
+        <apex:inputField value="{!config.tffa__ErrorOnGeoFencingThreatLevelHigh__c}" id="ErrorOnGeoFencingThreatLevelHigh__c" rendered="{!config.tffa__EnableGeoFencing__c}"></apex:inputField>
+
         <apex:inputField value="{!config.tffa__SuccessOnGeoFencingCalloutError__c}" id="SuccessOnGeoFencingCalloutError" rendered="{!config.tffa__EnableGeoFencing__c}"></apex:inputField>
 
         
@@ -104,15 +114,15 @@ Copyright (c) 2019 Terafina Inc
 
       <!-- plaid details -->
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_PLAIDDETAILS}">
-        <apex:inputField value="{!config.tffa__EnablePlaidAuth__c}" id="EnablePlaidAuth"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidAuthIdentity__c}" id="EnablePlaidAuthIdentity"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidAuthItemAutoRemove__c}" id="EnablePlaidAuthItemAutoRemove__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidBalance__c}" id="EnablePlaidBalance"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidAssets__c}" id="EnablePlaidAssets"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidLiabilities__c}" id="EnablePlaidLiabilities"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidIdentity__c}" id="EnablePlaidIdentity"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidIncomeVerification__c}" id="EnablePlaidIncomeVerification__c"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnablePlaidDepositSwitch__c}" id="EnablePlaidDepositSwitch__c"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidAuth__c}" id="EnablePlaidAuth"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidAuthIdentity__c}" id="EnablePlaidAuthIdentity"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidAuthItemAutoRemove__c}" id="EnablePlaidAuthItemAutoRemove__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidBalance__c}" id="EnablePlaidBalance"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidAssets__c}" id="EnablePlaidAssets"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidLiabilities__c}" id="EnablePlaidLiabilities"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidIdentity__c}" id="EnablePlaidIdentity"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidIncomeVerification__c}" id="EnablePlaidIncomeVerification__c"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnablePlaidDepositSwitch__c}" id="EnablePlaidDepositSwitch__c"></apex:inputField>
         <apex:inputField value="{!config.tffa__EnablePlaidBankTransfers__c}" id="EnablePlaidBankTransfers__c">
           <apex:actionSupport event="onchange" reRender="pb1" />
          </apex:inputField>
@@ -124,14 +134,22 @@ Copyright (c) 2019 Terafina Inc
       </apex:pageBlockSection>
       <!-- other integration details -->
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_OTHERINTEGRATIONDETAILS}">
-        <apex:inputField value="{!config.tffa__EnableEstatedValuation__c}" id="EnableEstatedValuation"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableEstatedValuation__c}" id="EnableEstatedValuation"></apex:inputField>
         <apex:inputField value="{!config.tffa__EnableIovationDeviceFingerprinting__c}" id="EnableIovation"></apex:inputField>
-        <apex:inputField value="{!config.tffa__EnableCryptoServices__c}" id="EnableCryptoServices"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableCryptoServices__c}" id="EnableCryptoServices"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableMultipleAccountExternalDisclosure__c}" id="EnableMultipleAccountExternalDisclosure"></apex:inputField>
+        <apex:inputField value="{!config.tffa__IncludeAllDisclosuresInEnvelope__c}" id="IncludeAllDisclosuresInEnvelope"></apex:inputField>
+        <apex:inputField value="{!config.tffa__MaxNumberOfDisclosuresInEnvelope__c}" id="MaxNumberOfDisclosuresInEnvelope"></apex:inputField>
+      </apex:pageBlockSection>
+
+      <!-- KYC configuration -->
+      <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_KYC_CONFIGURATION_TITLE}">
+        <apex:inputField value="{!config.tffa__EnableBeneficiaryOFACCheck__c}" id="EnableBeneficiaryOFACCheck"></apex:inputField>
       </apex:pageBlockSection>
 
       <apex:pageBlockSection columns="2" title="{!$Label.tffa__ENVIRONMENT_CONFIGURATION_OTHERDETAILS}">
-        <apex:inputField value="{!config.tffa__Key__c}" id="k1"> </apex:inputField>
-        <apex:inputField value="{!config.tffa__EnableSchemaCaching__c}" id="EnableSchemaCaching"> </apex:inputField>
+        <apex:inputField value="{!config.tffa__Key__c}" id="k1"></apex:inputField>
+        <apex:inputField value="{!config.tffa__EnableSchemaCaching__c}" id="EnableSchemaCaching"></apex:inputField>
         <apex:inputField value="{!config.tffa__EnableExperimentalJsonSerializationApi__c}" id="EnableExperimentalJsonSerializationApi__c">
         </apex:inputField>
       </apex:pageBlockSection>

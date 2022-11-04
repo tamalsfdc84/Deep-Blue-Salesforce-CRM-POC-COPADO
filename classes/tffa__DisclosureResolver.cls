@@ -9,6 +9,9 @@ global virtual class DisclosureResolver {
     global DisclosureResolver() {
 
     }
+    global virtual List<tffa__Disclosure__c> resolveByFacts(Map<String,Object> facts) {
+        return null;
+    }
     global virtual List<tffa__Disclosure__c> resolve(Map<String,Object> facts) {
         return null;
     }

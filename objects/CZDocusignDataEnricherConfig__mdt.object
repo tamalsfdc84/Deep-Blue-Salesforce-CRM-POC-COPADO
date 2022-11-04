@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for datapoints required for Docusign Data Enrichment</description>
+    <label>Docusign Data Enrichment Config</label>
+    <pluralLabel>Docusign Data Enrichment Config</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

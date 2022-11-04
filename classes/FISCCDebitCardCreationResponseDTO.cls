@@ -32,6 +32,7 @@ public with sharing class FISCCDebitCardCreationResponseDTO extends FISCCTransac
     public String CBStAbbr;
     public String NmeEmbossOnCard;
     public String CtryCde;
+    public String OptlLneEmbossOnCard;
   }
 
   public static FISCCDebitCardCreationResponseDTO parse(String json) {

@@ -1,5 +1,5 @@
 public with sharing class FISCCFundingHoldProvider {
-  public static Boolean holdFunds(tffa__Application__c appObj) {
+  public static Boolean holdFunds(tffa__Application__c appObj, String requestType) {
     Object result = null;
     Boolean isSuccess = false;
     String strDeveloperName = 'FundingHold';
@@ -10,10 +10,8 @@ public with sharing class FISCCFundingHoldProvider {
       if (String.isBlank(FISCCIntegrationLogService.auth)) {
         FISCCIntegrationLogService.auth = FISCCGetAccessTokenProvider.processGetAccessToken(charterConfig);
       }
-      if (!Test.isRunningTest()) {
-        FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.FUNDINGHOLD, appObj.Name, true);
-      }
-      isSuccess = FISCCFundingHoldExtension.invokeApiCall(appObj, adapterConfig, charterConfig);
+
+      isSuccess = FISCCFundingHoldExtension.invokeApiCall(appObj, adapterConfig, charterConfig, requestType);
     } catch (Exception ex) {
       tffa.Logger.debug('Exception in FISCCFundingHoldProvider ' + ex.getMessage() + ' Exception :::' + ex.getStackTraceString());
     }

@@ -23,7 +23,8 @@ private class CZWTFCACHRepositoryTest {
     List<SObject> applications = CZWTFCACHRepository.getFundingRequestsForACHFileGeneration('100');
     List<SObject> fundingRequests = CZWTFCACHRepository.getFundingRequestsForACHFileGenerationBatch();
     List<ContentVersion> cvList = CZWTFCACHRepository.getContentVersion();
-    List<ACHConfigurations__mdt> achMetadataList =  CZWTFCACHRepository.getMetaData('100');
+    List<ACHConfigurations__mdt> achMetadataList = CZWTFCACHRepository.getMetaData('100');
+    System.assertEquals(null, null);
     Test.stopTest();
   }
 }

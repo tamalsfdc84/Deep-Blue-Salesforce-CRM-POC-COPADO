@@ -1,7 +1,7 @@
-<apex:page applyBodyTag="false" showHeader="false">
+<apex:page applyBodyTag="false" showHeader="false" controller="tffa.SessionController" action="{!initializeLoadingPage}">
   <head>
-    <link rel="stylesheet" href="{!URLFOR($Resource['sales_styles'], 'styles.css')}">
-    </link>
+    <link rel="stylesheet" href="{!URLFOR(loadingPageStylesUrl, 'styles.css')}"></link>
+    <style>:root { {!JSENCODE(loadingPageCSSVars)} }</style>
   </head>
   <body>
     <div class="tf-spinner-overlay">

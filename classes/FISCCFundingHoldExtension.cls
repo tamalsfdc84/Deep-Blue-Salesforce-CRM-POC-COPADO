@@ -4,13 +4,14 @@ public with sharing class FISCCFundingHoldExtension {
   public static Boolean invokeApiCall(
     tffa__Application__c appObj,
     FISCC_Adapter_Configs__mdt adapterConfig,
-    FISCC_Charter_Config__mdt charterConfig
+    FISCC_Charter_Config__mdt charterConfig,
+    String requestType
   ) {
     FISCCRequestBaseDTO fisccRequestBaseDTO = null;
     Object result = null;
     Boolean isSuccess;
     try {
-      fisccRequestBaseDTO = FISCCFundingHoldExtension.generateFundingHoldReq(appObj, adapterConfig, charterConfig);
+      fisccRequestBaseDTO = FISCCFundingHoldExtension.generateFundingHoldReq(appObj, adapterConfig, charterConfig, requestType);
 
       String dpAcctNbr = adapterConfig.IsEncrypted__c
         ? FISCCCommonHelper.encrypt(appObj.tffa__AccountNumber__c)
@@ -28,15 +29,24 @@ public with sharing class FISCCFundingHoldExtension {
   public static FISCCRequestBaseDTO generateFundingHoldReq(
     tffa__Application__c appObj,
     FISCC_Adapter_Configs__mdt adapterConfig,
-    FISCC_Charter_Config__mdt charterConfig
+    FISCC_Charter_Config__mdt charterConfig,
+    String requestType
   ) {
     tffa.Logger.debug('In generateFundingHoldReq');
     FISCCRequestBaseDTO fisccRequestBaseDTO = null;
     try {
-      fundHoldReq.holds.DPHldExpireDte = FISCCFundingHoldExtension.getExpDate(appObj);
-      fundHoldReq.holds.DPHldAmt = appObj.tffa__Amount__c;
+      if (requestType == FISCCIntegrationConstants.FUNDINGHOLD) {
+        fundHoldReq.holds.DPHldExpireDte = FISCCFundingHoldExtension.getExpDate(appObj);
+        fundHoldReq.holds.DPHldAmt = appObj.tffa__Amount__c;
+        fundHoldReq.holds.DPHldDesc = FISCCIntegrationConstants.FUNDINGHOLD;
+      } else {
+        fundHoldReq.holds.DPHldExpireDte = String.valueOf(appObj.CZLoanHoldExpiry__c);
+        fundHoldReq.holds.DPHldAmt = appObj.CZLoanHoldAmount__c;
+        fundHoldReq.holds.DPHldOvride = 'Y';
+        fundHoldReq.holds.DPHldDesc = FISCCIntegrationConstants.LOANHOLD;
+      }
       fundHoldReq.holds.DPHldTyp = 1;
-      fundHoldReq.holds.DPHldDesc = 'DESC';
+
       fisccRequestBaseDTO = fundHoldReq;
     } catch (Exception ex) {
       tffa.Logger.debug('Exception in generateFundingHoldReq ' + ex.getMessage() + ' Exception :::' + ex.getStackTraceString());

@@ -51,6 +51,18 @@ global class ApexPageUtils {
     global static String getReferer() {
         return null;
     }
+    global static System.PageReference getSalesforceLink(System.PageReference link) {
+        return null;
+    }
+    global static System.PageReference getSalesforceLink(String pageName) {
+        return null;
+    }
+    global static System.PageReference getSiteLink(System.PageReference link) {
+        return null;
+    }
+    global static System.PageReference getSiteLink(String pageName) {
+        return null;
+    }
     global static void setCookie(System.Cookie cookie) {
 
     }

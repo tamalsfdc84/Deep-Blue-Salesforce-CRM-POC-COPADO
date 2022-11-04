@@ -41,6 +41,11 @@ global class FundingController extends tffa.AbstractController implements tffa.I
     }
     @AuraEnabled
     @RemoteAction
+    global static tffa.Response reverse(tffa.Context ctx, String fundingRequestJson, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
     global static tffa.Response revokeVerificationRequest(tffa.Context ctx, String fundingRequestJson) {
         return null;
     }

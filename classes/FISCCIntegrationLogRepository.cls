@@ -2,16 +2,10 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
   public static tffa__Submission__c findSubmissionById(String submissionId) {
     String q = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
       .selectFields()
+      .selectObject('tffa__BrandEntity__r')
+      .selectFields()
+      .build()
       .selectChildObject('tffa__Applications__r')
-      .selectFields()
-      .build()
-      .selectChildObject('tffa__Disclosures__r')
-      .selectFields()
-      .build()
-      .selectChildObject('IntegrationLogs__r')
-      .selectFields()
-      .build()
-      .selectChildObject('tffa__FundingRequests__r')
       .selectFields()
       .build()
       .selectChildObject('tffa__PartyXrefs__r') //Used child relationship name(tffa__SubmissionPartyXref__c)
@@ -41,12 +35,24 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
       .selectChildObject('Identifications__r') /** */
       .selectFields() /** */
       .build() /** */
+      .selectChildObject('tffa__Identifications__r') /** */
+      .selectFields() /** */
+      .build() /** */
       .selectChildObject('tffa__AdditionalPreferences__r') /** */ /** */ /** */ /** */
       .selectFields() /** */ /** */ /** */ /** */
       .build()
       .selectChildObject('tffa__Submissions__r') /** */
       .selectFields() /** */
       .build() /** */
+      .selectChildObject('CZPartyAliases__r') /** */
+      .selectFields() /** */
+      .build() /** */
+      .selectChildObject('tffa__PartyXrefs__r') /** */
+      .selectFields() /** */
+      .selectObject('tffa__RelationCode__r') /** */ /** */
+      .selectFields() /** */ /** */
+      .build() /** */
+      .build()
       .selectChildObject('tffa__Applications__r') /** */
       .selectFields() /** */
       .build() /** */
@@ -57,10 +63,7 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
       .build()
       .whereClause('tffa__IsDeleted__c', '= false')
       .build()
-      .selectChildObject('tffa__RelatedPartyXrefs__r') /** */
-      .selectFields() /** */
-      .build()
-      .selectChildObject('tffa__Incomes__r') /** */
+      .selectObject('CZLocation__r') /** */
       .selectFields() /** */
       .build()
       .selectChildObject('tffa__DueDiligences__r')
@@ -73,6 +76,20 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
     tffa.Logger.debug('Party data ' + q);
     List<tffa__Party__c> party = doQuery(q, new List<Object>{ partyIds });
     return party.isEmpty() ? null : party;
+  }
+
+  public static List<tffa__DueDiligence__c> getCDDList(List<Id> partyId) {
+    String q = new tffa.QueryBuilder(tffa__DueDiligence__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Type__c', '=:attr1')
+      .opAnd()
+      .whereClause('tffa__Party__c', 'In :attr2')
+      .selectChildObject('tffa__Items__r')
+      .selectFields()
+      .build()
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{ 'CDD', partyId });
   }
 
   //Get Account Details with child objects
@@ -92,42 +109,98 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
       .selectFields()
       .withLimit(1)
       .build()
+      .selectChildObject('CZMaxsafeAllocationDetailses__r') /** */
+      .selectFields() /** */
+      .build() /** */
       .selectChildObject('tffa__PartyXrefs__r')
       .selectFields()
+      .selectObject('tffa__ApplicantRole__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Party__r')
+      .selectFields()
+      .build()
+      .orderBy('tffa__Primary__c', true)
       .build()
       .selectChildObject('tffa__AccountPreferences__r')
       .selectFields()
+      .selectObject('tffa__Application__r')
+      .selectFields()
+      .build()
+      .selectObject('PriSavingApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('SecDDAApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('SecSavingApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__AddOnServiceType__c', 'IN :attr1')
       .build()
       .selectChildObject('tffa__LinkedFundingRequests__r')
       .selectFields()
       .whereClause('IsObsolete__c', '= false')
       .opAnd()
-      .whereClause('tffa__Type__c', 'IN :attr1')
+      .whereClause('tffa__Type__c', 'IN :attr2')
       .opAnd()
       .whereClause('tffa__IsDeleted__c', '= false')
       .withLimit(1)
+      .build()
+      .selectChildObject('tffa__LinkedEligibilities__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Location__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
       .build()
       .selectChildObject('tffa__Beneficiaries__r')
       .selectFields()
       .selectObject('tffa__Address__r')
       .selectFields()
       .build()
-      .build()
-      .selectChildObject('tffa__LinkedEligibilities__r')
+      .selectObject('tffa__RelationCode__r')
       .selectFields()
-      //.whereClause('tffa__Code__c', '=:code')
-      // .withLimit(1)
+      .build()
+      .selectObject('CZParty__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectObject('CZLocation__r') /** */
+      .selectFields() /** */
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
       .build()
       //.whereClause('tffa__KYCDecisionOutcome__c', '=:KYCDECISION_OUTCOME_VALUES')
       //.opAnd()
-      .whereClause('Id', '=:attr2')
+      .whereClause('Id', '=:attr3')
       .build()
       .toQuery();
     //tffa.Logger.debug('Application Query :- ' + q);
     List<tffa__Application__c> l = doQuery(
       q,
       new List<Object>{
-        new List<String>{ CZWTFCConstants.FUNDING_TYPE_ACH, CZWTFCConstants.DEBIT_CARD, CZWTFCConstants.INTERNAL_TRANSFER },
+        new List<String>{
+          FISCCIntegrationConstants.OD_FOR_STANDARD_ADDON_TYPE,
+          FISCCIntegrationConstants.CHECK_ORDER,
+          FISCCIntegrationConstants.DBT_TYPE
+        },
+        new List<String>{
+          CZWTFCConstants.FUNDING_TYPE_ACH,
+          CZWTFCConstants.DEBIT_CARD,
+          CZWTFCConstants.INTERNAL_TRANSFER,
+          CZWTFCConstants.BANK_BOX,
+          CZWTFCConstants.PRINT_INVOICE,
+          CZWTFCConstants.WAIVE_FEE,
+          CZWTFCConstants.FUNDING_TYPE_CHECK,
+          CZWTFCConstants.FUNDING_TYPE_WIRE
+        },
         appIds
       }
     );
@@ -208,6 +281,54 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
     // tffa.Logger.debug('query::: ' + query);
     return doQuery(query, new List<Object>{ locationCode });
   }
+
+  public static Map<String, tffa__Location__c> fetchLocationMapByBrand(String brandCode) {
+    Map<String, tffa__Location__c> mp = new Map<String, tffa__Location__c>();
+    String locationCode = brandCode + '%';
+    String query = new tffa.QueryBuilder(tffa__Location__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Code__c', ' like :attr1')
+      .build()
+      .toQuery();
+
+    // tffa.Logger.debug('query::: ' + query);
+    List<tffa__Location__c> locList = doQuery(query, new List<Object>{ locationCode });
+    if (!locList.isEmpty()) {
+      for (tffa__Location__c loc : locList) {
+        mp.put(loc.FISBranchCode__c, loc);
+      }
+    }
+    return mp;
+  }
+
+  public static Map<String, tffa__Location__c> fetchLocationMapByBrandId(String brandId) {
+    Map<String, tffa__Location__c> mp = new Map<String, tffa__Location__c>();
+    List<String> brandLocationId = new List<String>();
+
+    String query = new tffa.QueryBuilder(tffa__BrandLocation__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Brand__c', ' = :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__BrandLocation__c> brandLocList = doQuery(query, new List<Object>{ brandId });
+    if (!brandLocList.isEmpty()) {
+      for (tffa__BrandLocation__c brandLoc : brandLocList) {
+        brandLocationId.add(brandLoc.tffa__Location__c);
+      }
+    }
+
+    String query_1 = new tffa.QueryBuilder(tffa__Location__c.SObjectType).selectFields().whereClause('Id', ' In :attr1').build().toQuery();
+
+    List<tffa__Location__c> locList = doQuery(query_1, new List<Object>{ brandLocationId });
+    if (!locList.isEmpty()) {
+      for (tffa__Location__c loc : locList) {
+        mp.put(loc.FISBranchCode__c, loc);
+      }
+    }
+    return mp;
+  }
+
   public static FISCC_Adapter_Configs__mdt findAdapterConfig(String strDeveloperName) {
     String query = new tffa.QueryBuilder(FISCC_Adapter_Configs__mdt.SObjectType)
       .selectFields()
@@ -294,8 +415,7 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
 
     return doQuery(q, new List<Object>{ parentId });
   }
-
-  public static List<IntegrationLog__c> findLogsBySubmissionAndFlowName(String parentId, String flowName) {
+  public static List<IntegrationLog__c> findLogsBySubmissionAndFlowName(String parentId, List<String> flowNames) {
     String q = new tffa.QueryBuilder(IntegrationLog__c.SObjectType)
       .selectFields()
       .selectChildObject('IntegrationLogs__r')
@@ -303,11 +423,11 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
       .build()
       .whereClause('Submission__c', '=:attr1')
       .opAnd()
-      .whereClause('FlowName__c', '=:attr2')
+      .whereClause('FlowName__c', 'IN :attr2')
       .build()
       .toQuery();
 
-    return doQuery(q, new List<Object>{ parentId, flowName });
+    return doQuery(q, new List<Object>{ parentId, flowNames });
   }
 
   public static List<FISIBSAuthConfig__c> findFisAuthforPassChange() {
@@ -400,12 +520,30 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
     return l.isEmpty() ? null : l[0];
   }
 
-  public static List<tffa__AddOnServiceItem__c> findAddOnServiceItem(Id productId, String serviceType) {
+  public static List<Id> findAddOnServiceChecklistIdsByFacts(String factsName, Map<String, Object> factsMap) {
+    List<Id> checkListIds = new List<Id>();
+    String q = new tffa.QueryBuilder(tffa__AddOnServiceMatrix__c.SObjectType)
+      .selectFields()
+      .whereWithFacts(factsName, factsMap)
+      .orderBy('tffa__SortOrder__c')
+      .build()
+      .toQuery();
+
+    List<tffa__AddOnServiceMatrix__c> resp = (List<tffa__AddOnServiceMatrix__c>) doQuery(q, new List<Object>{});
+    if (resp != null && !resp.isEmpty()) {
+      for (tffa__AddOnServiceMatrix__c addOnServiceMat : resp) {
+        checkListIds.add(addOnServiceMat.tffa__Checklist__c);
+      }
+    }
+    return checkListIds;
+  }
+
+  public static List<tffa__AddOnServiceItem__c> findAddOnServiceItem(List<Id> checkListIds, String serviceType) {
     String q = new tffa.QueryBuilder(tffa__AddOnServiceItem__c.SObjectType)
       .selectFields()
       .selectObject('tffa__Checklist__r')
       .selectFields()
-      .whereClause('tffa__Product__c', '=:attr1')
+      .whereClause('Id', 'In :attr1')
       .build()
       .selectObject('tffa__Service__r')
       .selectFields()
@@ -414,7 +552,39 @@ public with sharing class FISCCIntegrationLogRepository extends tffa.AbstractRep
       .build()
       .toQuery();
 
-    List<tffa__AddOnServiceItem__c> resp = (List<tffa__AddOnServiceItem__c>) doQuery(q, new List<Object>{ productId, serviceType });
+    List<tffa__AddOnServiceItem__c> resp = (List<tffa__AddOnServiceItem__c>) doQuery(q, new List<Object>{ checkListIds, serviceType });
     return resp.isEmpty() ? new List<tffa__AddOnServiceItem__c>() : resp;
+  }
+
+  public static List<tffa__ApplicantRole__c> findAllApplicantRole() {
+    String q = new tffa.QueryBuilder(tffa__ApplicantRole__c.SObjectType).selectFields().build().toQuery();
+
+    List<tffa__ApplicantRole__c> resp = (List<tffa__ApplicantRole__c>) doQuery(q, new List<Object>{});
+    return resp.isEmpty() ? new List<tffa__ApplicantRole__c>() : resp;
+  }
+
+  public static Map<String, tffa__FundingRequest__c> getSDBFundingDetails(List<tffa__Application__c> appList) {
+    List<Id> appIds = new List<Id>();
+    for (tffa__Application__c app : appList) {
+      if (app.tffa__ProductCategory__c == 'SAFE_DEPOSIT_BOX' || app.tffa__ProductCategory__c == 'BUSINESS_SAFE_DEPOSIT_BOX') {
+        appIds.add(app.Id);
+      }
+    }
+    Map<String, tffa__FundingRequest__c> mp = new Map<String, tffa__FundingRequest__c>();
+    String query = new tffa.QueryBuilder(tffa__FundingRequest__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__LinkedApplication__c', 'In :attr1')
+      .opAnd()
+      .whereClause('tffa__Type__c', '= :attr2')
+      .build()
+      .toQuery();
+
+    List<tffa__FundingRequest__c> resp = (List<tffa__FundingRequest__c>) doQuery(query, new List<Object>{ appIds, 'INTERNAL_TRANSFER' });
+    if (resp != null && !resp.isEmpty()) {
+      for (tffa__FundingRequest__c fundReq : resp) {
+        mp.put(fundReq.tffa__LinkedApplication__c + '_' + fundReq.tffa__Purpose__c, fundReq);
+      }
+    }
+    return mp;
   }
 }

@@ -57,6 +57,9 @@ global class SubmissionService extends tffa.AbstractService {
     global static tffa__Submission__c initializeAndCreate() {
         return null;
     }
+    global static tffa__Submission__c initializeDocumentSigning(String id) {
+        return null;
+    }
     global static tffa__Submission__c initialize(Map<String,Object> params) {
         return null;
     }

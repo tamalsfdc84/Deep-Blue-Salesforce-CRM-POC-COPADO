@@ -30,7 +30,6 @@ public with sharing class CZWTFCACHRepository extends tffa.AbstractRepository {
     queryParams.add(name);
     String q = new tffa.QueryBuilder(ContentWorkspace.SObjectType)
       .selectFields()
-      .build()
       .whereClause('Name', '=:attr1')
       .withLimit(1)
       .build()
@@ -49,7 +48,6 @@ public with sharing class CZWTFCACHRepository extends tffa.AbstractRepository {
     queryParams.add(name);
     String q = new tffa.QueryBuilder(ContentFolder.SObjectType)
       .selectFields()
-      .build()
       .whereClause('Name', '=:attr1')
       .withLimit(1)
       .build()
@@ -68,7 +66,6 @@ public with sharing class CZWTFCACHRepository extends tffa.AbstractRepository {
     queryParams.add(docId);
     String q = new tffa.QueryBuilder(ContentFolderMember.SObjectType)
       .selectFields()
-      .build()
       .whereClause('ChildRecordId', '=:attr1')
       .withLimit(1)
       .build()
@@ -202,6 +199,6 @@ public with sharing class CZWTFCACHRepository extends tffa.AbstractRepository {
       .whereClause('tffa__Status__c', '!= :attr3')
       .toQuery();
 
-    return doQuery(query, new List<Object>{CZWTFCConstants.FUNDING_TYPE_ACH,false,ACHConstants.FUNDING_IN_PROGRESS});
+    return doQuery(query, new List<Object>{ CZWTFCConstants.FUNDING_TYPE_ACH, false, ACHConstants.FUNDING_IN_PROGRESS });
   }
 }

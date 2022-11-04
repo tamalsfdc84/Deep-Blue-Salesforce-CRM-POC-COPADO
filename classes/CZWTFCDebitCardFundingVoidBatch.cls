@@ -28,34 +28,35 @@ global with sharing class CZWTFCDebitCardFundingVoidBatch extends tffa.AbstractB
         List<tffa__Submission__c> submissionList = CZWTFCSubmissionRepository.findSubmissionAndAppByIds(new List<String>{ sub.Id });
         if (checkPendingApp(submissionList[0])) {
           boolean doCCDelete = true;
-          for (tffa__FundingRequest__c fundObj : submissionList[0].tffa__FundingRequests__r) {
-            if (fundObj.MultiPartialFlag__c != null && (fundObj.MultiPartialFlag__c).equalsIgnoreCase('N')) {
-              doCCDelete = false;
-              break;
-            }
-          }
-          if (doCCDelete) {
-            isSuccess = CZWTFCConvergeService.ccDeleteConvergeTrans(
-              sub.Id,
-              sub.tffa__FundingRequests__r[0].tffa__TransactionReferenceId__c
-            );
-
-            for (tffa__FundingRequest__c fundObj : sub.tffa__FundingRequests__r) {
-              if (!fundObj.tffa__Status__c.equalsIgnoreCase(CZWTFCConstants.APPROVAL)) {
-                if (isSuccess) {
-                  fundObj.tffa__Status__c = CZWTFCConstants.REVERSED;
-                } else {
-                  fundObj.tffa__Status__c = CZWTFCConstants.REVERSAL_FAILED;
-                  fundObj.ReversalRetryCount__c += 1;
+          for (tffa__FundingRequest__c currentFundingRequest : submissionList[0].tffa__FundingRequests__r) {
+            if (currentFundingRequest.tffa__Status__c == 'IN_PROGRESS' || currentFundingRequest.tffa__Status__c == 'REVERSAL_FAILED') {
+              for (tffa__FundingRequest__c fundObj : submissionList[0].tffa__FundingRequests__r) {
+                // if one transaction with same reference number is processed with multipartial flag as N or reversed, then void is not requried.
+                if (
+                  (fundObj.MultiPartialFlag__c == 'N' ||
+                  fundObj.tffa__Status__c == CZWTFCConstants.REVERSED) &&
+                  currentFundingRequest.Id != fundObj.Id &&
+                  currentFundingRequest.tffa__TransactionReferenceId__c == fundObj.tffa__TransactionReferenceId__c
+                ) {
+                  doCCDelete = false;
+                  break;
                 }
               }
-              fundObjList.add(fundObj);
-            }
-          } else {
-            for (tffa__FundingRequest__c fundObj : sub.tffa__FundingRequests__r) {
-              if (!fundObj.tffa__Status__c.equalsIgnoreCase(CZWTFCConstants.APPROVAL)) {
-                fundObj.tffa__Status__c = CZWTFCConstants.REVERSAL_NOT_REQ;
-                fundObjList.add(fundObj);
+              if (doCCDelete) {
+                isSuccess = CZWTFCConvergeService.ccDeleteConvergeTrans(sub.Id, currentFundingRequest.tffa__TransactionReferenceId__c);
+
+                //if (!fundObj.tffa__Status__c.equalsIgnoreCase(CZWTFCConstants.APPROVAL)) {
+                if (isSuccess) {
+                  currentFundingRequest.tffa__Status__c = CZWTFCConstants.REVERSED;
+                } else {
+                  currentFundingRequest.tffa__Status__c = CZWTFCConstants.REVERSAL_FAILED;
+                  currentFundingRequest.ReversalRetryCount__c += 1;
+                }
+
+                fundObjList.add(currentFundingRequest);
+              } else {
+                currentFundingRequest.tffa__Status__c = CZWTFCConstants.REVERSAL_NOT_REQ;
+                fundObjList.add(currentFundingRequest);
               }
             }
           }

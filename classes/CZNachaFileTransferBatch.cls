@@ -28,12 +28,11 @@ global inherited sharing class CZNachaFileTransferBatch extends tffa.AbstractBat
       Map<String, UploadFileHistory__c> fileMap = new Map<String, UploadFileHistory__c>();
 
       for (UploadFileHistory__c uploadFile : files) {
-        uploadFile.isErrorMailSent__c = false;
         fileMap.put(uploadFile.DocumentId__c, uploadFile);
       }
 
       List<ContentVersion> cvList = ACHFileTransRepository.findCVByDocId(docIds);
-      fileTransferResultDTO = CZNachaFilesTransferService.transferFiles(cvList, fileMap);
+      fileTransferResultDTO = CZMulesoftFileTransferService.transferFiles(cvList, fileMap);
 
       ACHFileTransRepository.save(fileTransferResultDTO.files);
     } catch (exception e) {

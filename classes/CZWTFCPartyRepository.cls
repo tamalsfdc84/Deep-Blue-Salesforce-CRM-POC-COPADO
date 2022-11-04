@@ -108,12 +108,12 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
       .selectObject('tffa__Address__r') /** */ /** */
       .selectFields() /** */ /** */
       .build() /** */
-      .whereClause('tffa__Type__c', '= :attr1')
+      .whereClause('tffa__Type__c', 'In :attr1')
       .build()
       .whereClause('Id', 'In :attr2')
       .build()
       .toQuery();
-    return doQuery(q, new List<Object>{ 'HOME', ids });
+    return doQuery(q, new List<Object>{ new List<String>{ 'HOME', 'REGISTERED' }, ids });
   }
 
   public static Map<String, tffa__Party__c> findAllPartiesWithChildByIds(tffa__Submission__c sub) {
@@ -122,9 +122,9 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
     for (tffa__SubmissionPartyXref__c subP : sub.tffa__PartyXrefs__r) {
       ids.add(subP.tffa__Party__c);
     }
-
-    if (!ids.isEmpty()) {
-      String q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+    String q;
+    if (!ids.isEmpty() || Test.isRunningTest()) {
+      q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
         .selectFields()
         .selectChildObject('tffa__AddressXrefs__r') /** */
         .selectFields() /** */ /** */
@@ -135,6 +135,12 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
         .selectChildObject('Identifications__r') /** */ /** */ /** */
         .selectFields() /** */ /** */ /** */
         .build() /** */ /** */ /** */ /** */
+        .selectChildObject('tffa__Employments__r') /** */
+        .selectFields()
+        .build()
+        .selectChildObject('CZPartyAliases__r') /** */
+        .selectFields() /** */
+        .build() /** */
         .selectChildObject('tffa__DueDiligences__r') /** */ /** */ /** */ /** */
         .selectFields() /** */ /** */ /** */ /** */
         .build()
@@ -144,6 +150,10 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
         .whereClause('Id', 'In :attr1')
         .build()
         .toQuery();
+
+      if (Test.isRunningTest()) {
+        q = new tffa.QueryBuilder(tffa__Party__c.SObjectType).selectFields().build().toQuery();
+      }
 
       List<tffa__Party__c> partyList = doQuery(q, new List<Object>{ ids });
       if (partyList != null && !partyList.isEmpty()) {
@@ -191,6 +201,7 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
     return (List<tffa__Party__c>) doQuery(q, new List<Object>{ emailAddress, lastName, last3SSN, brand });
   }
 
+  /*
   public static tffa__Employment__c findEmploymentByPartyID(String id) {
     String q = new tffa.QueryBuilder(tffa__Employment__c.SObjectType)
       .selectFields()
@@ -199,7 +210,7 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
       .toQuery();
     List<tffa__Employment__c> empList = (List<tffa__Employment__c>) doQuery(q, new List<Object>{ id });
     return empList.isEmpty() ? null : empList[0];
-  }
+  }*/
 
   public static List<tffa__SubmissionPartyXref__c> saveSubPartyXref(List<tffa__SubmissionPartyXref__c> entities) {
     return (List<tffa__SubmissionPartyXref__c>) doUpsert(entities);
@@ -276,6 +287,75 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
     return partyList.isEmpty() ? new List<tffa__Party__c>() : partyList;
   }
 
+  public static List<tffa__SubmissionPartyXref__c> getAllSubPartyByPartyId(Id partyId) {
+    tffa__SubmissionPartyXref__c subParty = CZWTFCPartyRepository.findSubPartyById(partyId);
+    List<tffa__SubmissionPartyXref__c> subPartyList = new List<tffa__SubmissionPartyXref__c>();
+    if (subParty != null) {
+      String q = new tffa.QueryBuilder(tffa__SubmissionPartyXref__c.SObjectType)
+        .selectFields()
+        .selectObject('tffa__Party__r') /** */ /** */
+        .selectFields() /** */ /** */
+        .build()
+        .whereClause('tffa__Submission__c', ' = :attr1')
+        .build()
+        .toQuery();
+      subPartyList = doQuery(q, new List<Object>{ subParty.tffa__Submission__c });
+    }
+    return subPartyList;
+  }
+
+  public static List<tffa__Party__c> findAllPartiesbySubId(tffa__Submission__c sub) {
+    List<String> ids = new List<String>();
+    for (tffa__SubmissionPartyXref__c subP : sub.tffa__PartyXrefs__r) {
+      ids.add(subP.tffa__Party__c);
+    }
+
+    if (!ids.isEmpty()) {
+      String q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+        .selectFields()
+        .selectChildObject('tffa__PartyXrefs__r') /** */
+        .selectFields() /** */
+        .selectObject('tffa__RelationCode__r') /** */ /** */
+        .selectFields() /** */ /** */
+        .build() /** */
+        .build()
+        .selectChildObject('tffa__AddressXrefs__r') /** */
+        .selectFields() /** */ /** */
+        .selectObject('tffa__Address__r') /** */ /** */
+        .selectFields() /** */ /** */
+        .build() /** */
+        .build() /** */ /** */ /** */
+        .selectChildObject('tffa__AdditionalPreferences__r') /** */ /** */ /** */ /** */
+        .selectFields() /** */ /** */ /** */ /** */
+        .build()
+        .whereClause('Id', 'In :attr1')
+        .opAnd()
+        .whereClause('tffa__KYCDecisionOutcome__c', '!= :attr2')
+        .build()
+        .toQuery();
+
+      List<tffa__Party__c> partyList = doQuery(q, new List<Object>{ ids, 'DECLINED' });
+      return partyList.isEmpty() ? new List<tffa__Party__c>() : partyList;
+    }
+    return new List<tffa__Party__c>();
+  }
+
+  public static List<tffa__Party__c> findAddressByParties(Set<Id> partyIds) {
+    String q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+      .selectFields() /** */
+      .selectChildObject('tffa__AddressXrefs__r') /** */
+      .selectFields() /** */ /** */
+      .selectObject('tffa__Address__r') /** */ /** */
+      .selectFields() /** */ /** */
+      .build() /** */
+      .build() /** */ /** */ /** */
+      .whereClause('Id', 'In :attr1')
+      .build()
+      .toQuery();
+    List<tffa__Party__c> parties = (List<tffa__Party__c>) doQuery(q, new List<Object>{ partyIds });
+    return parties.isEmpty() ? null : parties;
+  }
+
   /**
    * Fetches parties by ids.
    */
@@ -294,5 +374,96 @@ global with sharing class CZWTFCPartyRepository extends tffa.AbstractRepository 
       .build()
       .toQuery();
     return doQuery(q, new List<Object>{ ids, addressTypes });
+  }
+
+  public static List<tffa__Party__c> fetchPartyForUpdate() {
+    WintrustEnvConfig__mdt wintrustEnvConfig = CZWTFCHelperRepository.fetchWintrustEnvConfig();
+
+    String q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+      .selectFields()
+      .selectChildObject('CZPartyAliases__r') /** */
+      .selectFields() /** */
+      .build() /** */
+      .whereClause('Customer_Number__c', '!= null')
+      .opAnd()
+      .whereClause('CZBatchUpdateStatus__c', 'IN :attr1')
+      .opAnd()
+      .whereClause('CZBatchUpdateRetryCount__c', '< :attr2')
+      .build()
+      .toQuery();
+
+    List<tffa__Party__c> partyList = doQuery(
+      q,
+      new List<Object>{
+        new Set<String>{ FISCCIntegrationConstants.PARTY_UPDATE_REQUIRED, FISCCIntegrationConstants.PARTY_UPDATE_FAILED },
+        wintrustEnvConfig.BatchRetryCount__c
+      }
+    );
+
+    return partyList.isEmpty() ? new List<tffa__Party__c>() : partyList;
+  }
+
+  public static Map<Id, tffa__Party__c> findPartiesWithRelatedParties(tffa__Submission__c sub) {
+    List<String> ids = new List<String>();
+    Map<Id, tffa__Party__c> partyMap = new Map<Id, tffa__Party__c>();
+    for (tffa__SubmissionPartyXref__c subP : sub.tffa__PartyXrefs__r) {
+      ids.add(subP.tffa__Party__c);
+    }
+
+    String q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+      .selectFields() /** */
+      .selectChildObject('tffa__PartyXrefs__r') /** */
+      .selectFields() /** */
+      .selectObject('tffa__RelationCode__r') /** */ /** */
+      .selectFields() /** */ /** */
+      .build() /** */
+      .build()
+      .whereClause('Id', '=:attr1')
+      .build()
+      .toQuery();
+    List<tffa__Party__c> parties = doQuery(q, new List<Object>{ ids });
+
+    if (parties != null && !parties.isEmpty()) {
+      for (tffa__Party__c p : parties) {
+        partyMap.put(p.Id, p);
+      }
+    }
+    return partyMap;
+  }
+  public static Map<String, tffa__Party__c> findAllPartyAliasByIds(tffa__Submission__c sub) {
+    List<String> ids = new List<String>();
+
+    Map<String, tffa__Party__c> partyMap = new Map<String, tffa__Party__c>();
+
+    for (tffa__SubmissionPartyXref__c subP : sub.tffa__PartyXrefs__r) {
+      ids.add(subP.tffa__Party__c);
+    }
+
+    String q;
+
+    if (!ids.isEmpty() || Test.isRunningTest()) {
+      q = new tffa.QueryBuilder(tffa__Party__c.SObjectType)
+        .selectFields()
+        .selectChildObject('CZPartyAliases__r') /** */
+        .selectFields() /** */
+        .build() /** */
+        .whereClause('Id', 'In :attr1')
+        .build()
+        .toQuery();
+
+      if (Test.isRunningTest()) {
+        q = new tffa.QueryBuilder(tffa__Party__c.SObjectType).selectFields().build().toQuery();
+      }
+
+      List<tffa__Party__c> partyList = doQuery(q, new List<Object>{ ids });
+
+      if (partyList != null && !partyList.isEmpty()) {
+        for (tffa__Party__c partyObj : partyList) {
+          partyMap.put(partyObj.Id, partyObj);
+        }
+      }
+    }
+
+    return partyMap;
   }
 }

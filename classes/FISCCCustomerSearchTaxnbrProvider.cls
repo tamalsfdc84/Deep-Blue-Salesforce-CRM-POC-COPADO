@@ -1,6 +1,6 @@
 public with sharing class FISCCCustomerSearchTaxnbrProvider {
   //Search by Taxbr
-  private static void buildData(String submissionId) {
+  /*private static void buildData(String submissionId) {
     FISCCIntegrationLogService.setSubmissionObj(submissionId);
     if (FISCCIntegrationLogService.submissionObj == null) {
       throw new tffa.ApplicationException(FISCCIntegrationConstants.INVALID_SUBMISSION);
@@ -8,7 +8,7 @@ public with sharing class FISCCCustomerSearchTaxnbrProvider {
 
     FISCCIntegrationLogService.setPartyObjs();
     FISCCIntegrationLogService.setIntegrationLog(submissionId);
-  }
+  }*/
 
   public static tffa__Party__c processSearchByTaxbr(String submissionId, tffa__Party__c partyObj) {
     tffa.logger.debug('inside processSearchByTaxbr');

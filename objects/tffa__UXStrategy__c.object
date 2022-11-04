@@ -883,8 +883,8 @@
     </nameField>
     <pluralLabel>UX Strategies</pluralLabel>
     <searchLayouts>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <listViewButtons>tffa__MassClone</listViewButtons>
         <listViewButtons>tffa__MassDelete</listViewButtons>
         <lookupDialogsAdditionalFields>tffa__Code__c</lookupDialogsAdditionalFields>

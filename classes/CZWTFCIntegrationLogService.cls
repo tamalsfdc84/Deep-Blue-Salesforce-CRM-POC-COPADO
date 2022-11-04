@@ -31,17 +31,21 @@ public abstract class CZWTFCIntegrationLogService {
   }
 
   public static void setIntegrationLog(String submissionId, String flowName) {
+    setIntegrationLog(submissionId, new List<String>{ flowName });
+  }
+
+  public static void setIntegrationLog(String submissionId, List<String> flowNames) {
     subId = submissionId;
     integrationLogMap = new Map<String, IntegrationLog__c>();
     integrationLogItemMap = new Map<String, Map<String, IntegrationLogItem__c>>();
 
     List<IntegrationLog__c> integrationLogsList;
 
-    if (String.isBlank(flowName))
+    if (flowNames == null || flowNames.isEmpty()) {
       integrationLogsList = FISCCIntegrationLogRepository.findLogsBySubmissionId(submissionId);
-    else
-      integrationLogsList = FISCCIntegrationLogRepository.findLogsBySubmissionAndFlowName(submissionId, flowName);
-
+    } else {
+      integrationLogsList = FISCCIntegrationLogRepository.findLogsBySubmissionAndFlowName(submissionId, flowNames);
+    }
     for (IntegrationLog__c apiLogObj : integrationLogsList) {
       integrationLogMap.put(apiLogObj.FlowName__c, apiLogObj);
       Map<String, IntegrationLogItem__c> itemMap = new Map<String, IntegrationLogItem__c>();
@@ -58,7 +62,7 @@ public abstract class CZWTFCIntegrationLogService {
   }
 
   public static void setIntegrationLog(String submissionId) {
-    setIntegrationLog(submissionId, null);
+    setIntegrationLog(submissionId, new List<String>());
   }
 
   public static Boolean isLogNewOrFailed(String flowName) {

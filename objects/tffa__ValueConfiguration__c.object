@@ -405,7 +405,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Value Configurations</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

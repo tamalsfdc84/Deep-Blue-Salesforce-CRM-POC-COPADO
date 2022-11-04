@@ -21,10 +21,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tffa__FullDescription__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>tffa__InfoUrl__c</field>
             </layoutItems>
             <layoutItems>
@@ -32,12 +28,12 @@
                 <field>tffa__SortOrder__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>tffa__IsLending__c</field>
+                <behavior>Edit</behavior>
+                <field>tffa__AllowBeneficiary__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tffa__AllowBeneficiary__c</field>
+                <field>InterestPlanCode__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -50,26 +46,20 @@
                 <field>tffa__Popular__c</field>
             </layoutItems>
             <layoutItems>
-                <emptySpace>true</emptySpace>
-            </layoutItems>
-            <layoutItems>
-                <emptySpace>true</emptySpace>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tffa__ImageName__c</field>
+                <field>tffa__FullDescription__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>tffa__TermUnit__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>tffa__IsBusiness__c</field>
+                <behavior>Edit</behavior>
+                <field>tffa__MaximumQuantity__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tffa__MaximumQuantity__c</field>
+                <field>tffa__Internal__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -175,7 +165,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0R000001sRqh</masterLabel>
+        <masterLabel>00hDS000008lCJn</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -35,6 +35,16 @@ global class ConfigurationController extends tffa.AbstractController implements 
     }
     @AuraEnabled
     @RemoteAction
+    global static tffa.Response getBlocklist(tffa.Context ctx, String code) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response getListOfValues(tffa.Context ctx, String code) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
     global static tffa.Response readAllBoxConfigurations(tffa.Context ctx, Map<String,Object> facts) {
         return null;
     }
@@ -96,6 +106,11 @@ global class ConfigurationController extends tffa.AbstractController implements 
     @AuraEnabled
     @RemoteAction
     global static tffa.Response readEnvironmentConfigurations(tffa.Context ctx, Map<String,Object> queryParams) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response readLookupTable(tffa.Context ctx, String tableCode) {
         return null;
     }
     @AuraEnabled

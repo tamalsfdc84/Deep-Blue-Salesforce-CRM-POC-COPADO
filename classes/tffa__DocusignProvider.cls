@@ -24,4 +24,16 @@ global class DocusignProvider extends tffa.ElectronicSignatureProvider {
     global override tffa__Disclosure__c fetchStatus(tffa__Disclosure__c disclosure, Map<String,Object> facts) {
         return null;
     }
+    global override Map<String,Object> generateEnvelope(Map<String,Object> facts) {
+        return null;
+    }
+    global override Map<String,Object> generateSigningURL(Map<String,Object> facts) {
+        return null;
+    }
+    global override tffa__DisclosureEnvelope__c synchronizeDocuments(Map<String,Object> facts) {
+        return null;
+    }
+    global override tffa__DisclosureEnvelope__c synchronizeStatus(Map<String,Object> facts) {
+        return null;
+    }
 }

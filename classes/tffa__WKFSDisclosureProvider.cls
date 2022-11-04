@@ -9,7 +9,13 @@ global class WKFSDisclosureProvider extends tffa.DisclosureProvider {
     global WKFSDisclosureProvider() {
 
     }
+    global override List<tffa__Disclosure__c> fetchExternalDisclosures(Map<String,Object> facts) {
+        return null;
+    }
     global override List<tffa__Disclosure__c> fetchExternalDisclosures(tffa__Application__c app, Map<String,Object> facts) {
+        return null;
+    }
+    global override List<tffa__Disclosure__c> generateDisclosures(Map<String,Object> facts) {
         return null;
     }
 }

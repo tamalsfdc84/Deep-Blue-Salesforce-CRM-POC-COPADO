@@ -21,7 +21,17 @@ global class SubmissionPartyXrefController extends tffa.AbstractController imple
     }
     @AuraEnabled
     @RemoteAction
+    global static tffa.Response disable(tffa.Context ctx, Map<String,Object> params) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
     global static tffa.Response generateOTP(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response remove(tffa.Context ctx, Map<String,Object> params) {
         return null;
     }
     @AuraEnabled

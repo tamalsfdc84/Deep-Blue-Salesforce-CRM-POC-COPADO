@@ -7,37 +7,91 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>tffa__Application__c.tffa__Claim</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>tffa__Application__c.tffa__Reassign</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>tffa__Application__c.tffa__Enrich</value>
+                            <value>tffa__Application__c.tffa__Edit</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+                                <booleanFilter>(1 OR 2) AND 3</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.tffa__Status__c}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>PROCESSOR_REVIEW</rightValue>
+                                    <rightValue>REVIEW</rightValue>
                                 </criteria>
                                 <criteria>
-                                    <leftValue>{!Record.tffa__ProductCategory__c}</leftValue>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>MORTGAGE</rightValue>
+                                    <rightValue>CREDIT_REVIEW</rightValue>
                                 </criteria>
                                 <criteria>
-                                    <leftValue>{!Record.tffa__ProductCategory__c}</leftValue>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>HELOC</rightValue>
+                                    <rightValue>true</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>tffa__Application__c.tffa__Convert</value>
+                            <value>tffa__Application__c.tffa__Resume</value>
+                            <visibilityRule>
+                                <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>ABANDONED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>SAVED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Reopen</value>
+                            <visibilityRule>
+                                <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>CREDIT_REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Cancel</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>CANCELLED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Completed__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>false</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Convert2</value>
                             <visibilityRule>
                                 <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
                                 <criteria>
@@ -63,7 +117,7 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>tffa__Application__c.tffa__Export</value>
+                            <value>tffa__Application__c.tffa__Enrich2</value>
                             <visibilityRule>
                                 <booleanFilter>1 AND (2 OR 3)</booleanFilter>
                                 <criteria>
@@ -80,6 +134,47 @@
                                     <leftValue>{!Record.tffa__ProductCategory__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>HELOC</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Export2</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>PROCESSOR_REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__ProductCategory__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>MORTGAGE</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__ProductCategory__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>HELOC</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Claim2</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>false</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Application__c.tffa__Reassign2</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -215,38 +310,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>actions</name>
-                    <value>RESUME;REOPEN;CANCEL</value>
-                </componentInstanceProperties>
-                <componentName>tffa:resumeApplication</componentName>
-                <identifier>resumeApplication</identifier>
-                <visibilityRule>
-                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>ABANDONED</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>SAVED</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>true</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentName>tffa:applicationStatus</componentName>
                 <identifier>applicationStatus</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+                    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR (7 AND 8) OR 9)</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.tffa__Submission__r.tffa__Submitted__c}</leftValue>
                         <operator>EQUAL</operator>
@@ -271,6 +338,26 @@
                         <leftValue>{!Record.tffa__CreditDecisionOutcome__c}</leftValue>
                         <operator>NE</operator>
                         <rightValue>COUNTER_OFFER</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__IsDisclosureSigningRequired__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__IsDisclosureSigningRequired__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__IsDisclosureDocumentGenerated__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Status__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>REVIEW</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -308,6 +395,40 @@
                     <criteria>
                         <leftValue>{!Record.tffa__CreditDecisionOutcome__c}</leftValue>
                         <operator>EQUAL</operator>
+                        <rightValue>REVIEW</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>tffa:applicationSignDocuments</componentName>
+                <identifier>applicationSignDocuments</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Submission__r.tffa__Submitted__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Submission__r.tffa__KYCDecisionOutcome__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>APPROVED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Submission__r.tffa__KYCDecisionOutcome__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>DECLINED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__IsDisclosureSigningRequired__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Status__c}</leftValue>
+                        <operator>NE</operator>
                         <rightValue>REVIEW</rightValue>
                     </criteria>
                 </visibilityRule>

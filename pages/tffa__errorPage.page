@@ -16,6 +16,7 @@
   <body>
     <apex:form >
       <apex:variable var="code" value=" {!$CurrentPage.Parameters.code}" />
+      <apex:variable var="message" value=" {!$CurrentPage.Parameters.message}" />
       <div aria-live="assertive" aria-atomic="true" class="tf-toast tf-toast-error toast show w-100">
         <div class="toast-header">
             <span aria-hidden="true" class="me-4 fa-4x fal fa-exclamation-triangle"> </span>
@@ -23,9 +24,9 @@
           </div>
           <div class="toast-body text-start">
             <apex:outputText rendered="{!IF(CONTAINS(code,'INVALID_BRAND'), true, false)}" >
-              <span class="h3">{!$Label.tffa__invalid_brand}</span>
+              <span class="h3">{!message}</span>
             </apex:outputText>
-            <span class="h3">{!$Label.tffa__contact_us_text_label}</span>
+            <span class="h3">{!$Label.tffa__CONTACT_US_TEXT_LABEL}</span>
           </div>
       </div>
     </apex:form>

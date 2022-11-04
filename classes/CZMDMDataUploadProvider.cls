@@ -12,4 +12,11 @@ public inherited sharing class CZMDMDataUploadProvider {
 
     return MDMAccountCreateExtension.createAccount(app);
   }
+  
+  public static String processCustomerUpdate(tffa__Submission__c submission, tffa__Party__c party) {
+    FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.UPDATE_CUSTOMER_MDM);
+    FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.UPDATE_CUSTOMER_MDM, party.name, true);
+
+    return MDMCustomerUpdateExtension.updateCustomer(submission, party);
+  }
 }

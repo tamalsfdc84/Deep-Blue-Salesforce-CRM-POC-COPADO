@@ -12,6 +12,9 @@ global virtual class ValueCalculator extends tffa.AbstractService {
     global virtual Decimal calculate(tffa__Application__c app) {
         return null;
     }
+    global virtual List<tffa__Application__c> calculate(List<tffa__Application__c> apps) {
+        return null;
+    }
     global static tffa.ValueCalculator getInstance() {
         return null;
     }

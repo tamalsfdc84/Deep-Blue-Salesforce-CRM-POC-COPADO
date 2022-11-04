@@ -34,6 +34,10 @@
                 <behavior>Edit</behavior>
                 <field>tffa__FrontPhotoId__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CZIssuingPlace__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

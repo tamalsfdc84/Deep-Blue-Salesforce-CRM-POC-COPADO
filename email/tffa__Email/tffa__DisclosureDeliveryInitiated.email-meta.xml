@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>50.0</apiVersion>
-    <available>true</available>
+    <available>false</available>
     <description>Email for disclosures</description>
     <encodingKey>ISO-8859-1</encodingKey>
     <name>DisclosureDeliveryInitiated</name>
     <packageVersions>
-        <majorNumber>9</majorNumber>
+        <majorNumber>14</majorNumber>
         <minorNumber>0</minorNumber>
         <namespace>tffa</namespace>
     </packageVersions>

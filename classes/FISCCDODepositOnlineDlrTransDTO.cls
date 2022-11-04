@@ -17,5 +17,7 @@ public with sharing class FISCCDODepositOnlineDlrTransDTO extends FISCCRequestBa
     public String DPTxnTrlrDesc3;
     public String DPOvrideInfo;
     public String TxnSecurityInd;
+    public Integer DPRetAcctTxnCde;
+    public Integer HsaTxnCde;
   }
 }

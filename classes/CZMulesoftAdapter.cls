@@ -41,15 +41,31 @@ public with sharing class CZMulesoftAdapter {
         req.setBody(requestBody);
         if (!Test.isRunningTest() && adapterConfig.LogRequest__c) {
           if (adapterConfig.CorrelationId__c) {
-            FISCCIntegrationLogService.setLogItemRequestAndResponse(
+            CZWTFCIntegrationLogService.setLogItemRequestAndResponse(
               'Correlation-Id: ' +
               req.getHeader('X-Correlation-Id') +
+              +' ' +
+              adapterConfig.EndPoint__c +
               ' ' +
               requestBody,
               null
             );
           } else {
-            FISCCIntegrationLogService.setLogItemRequestAndResponse(requestBody, null);
+            CZWTFCIntegrationLogService.setLogItemRequestAndResponse(requestBody, null);
+          }
+        }
+      } else {
+        if (!Test.isRunningTest() && adapterConfig.LogRequest__c) {
+          if (adapterConfig.CorrelationId__c) {
+            CZWTFCIntegrationLogService.setLogItemRequestAndResponse(
+              'Correlation-Id: ' +
+              req.getHeader('X-Correlation-Id') +
+              +' ' +
+              adapterConfig.EndPoint__c,
+              null
+            );
+          } else {
+            CZWTFCIntegrationLogService.setLogItemRequestAndResponse(requestBody, null);
           }
         }
       }
@@ -59,12 +75,12 @@ public with sharing class CZMulesoftAdapter {
       res = h.send(req);
       tffa.Logger.debug('resp ' + res.getBody());
       if (!Test.isRunningTest() && adapterConfig.LogResponse__c) {
-        FISCCIntegrationLogService.setLogItemRequestAndResponse(null, res.getBody());
+        CZWTFCIntegrationLogService.setLogItemRequestAndResponse(null, res.getBody());
       }
     } catch (Exception ex) {
       tffa.Logger.error('Error in CZMulesoftAdapter.invokeAPI ' + ex.getMessage() + ' ' + ex.getStackTraceString());
       if (!Test.isRunningTest() && adapterConfig.LogResponse__c) {
-        FISCCIntegrationLogService.setLogItemRequestAndResponse(null, ex.getMessage());
+        CZWTFCIntegrationLogService.setLogItemRequestAndResponse(null, ex.getMessage());
       }
     } finally {
       tffa.Interaction.close();

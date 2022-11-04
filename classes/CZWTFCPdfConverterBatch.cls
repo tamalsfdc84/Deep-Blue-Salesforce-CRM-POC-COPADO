@@ -15,6 +15,7 @@ global inherited sharing class CZWTFCPdfConverterBatch extends tffa.AbstractBatc
         sub.DisclosureConverted__c = isSuccess;
         subList.add(sub);
       }
+      subList = updateSubStatus(subList);
       CZWTFCSubmissionRepository.save(subList);
     } catch (Exception ex) {
       tffa.Logger.error('Exception msg in CZWTFCPdfConverterBatch execute : ' + ex.getMessage() + ' ' + ex.getStackTraceString());
@@ -24,7 +25,18 @@ global inherited sharing class CZWTFCPdfConverterBatch extends tffa.AbstractBatc
   }
   global void finish(Database.BatchableContext batchableContext) {
     tffa.Logger.debug('CZWTFCPdfConverterBatch finish()');
-    Database.executeBatch(new CZWTFCFCMDocumentUploadBatch(), 1);
+    //Database.executeBatch(new CZWTFCFCMDocumentUploadBatch(), 1);
     tffa.Logger.flush();
+  }
+
+  public static List<tffa__Submission__c> updateSubStatus(List<tffa__Submission__c> subs) {
+    List<tffa__Submission__c> subList = new List<tffa__Submission__c>();
+    for (tffa__Submission__c sub : subList) {
+      tffa__Submission__c subObj = new tffa__Submission__c();
+      subObj.DisclosureConverted__c = sub.DisclosureConverted__c;
+      subObj.Id = sub.Id;
+      subList.add(subObj);
+    }
+    return subList;
   }
 }

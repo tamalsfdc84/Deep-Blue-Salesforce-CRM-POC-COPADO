@@ -3,14 +3,19 @@ private class CZNachaFileTransferBatchTest {
   @isTest
   public static void testCreate() {
     Test.startTest();
+    CZNachaFileTransferBatch obj = new CZNachaFileTransferBatch();
 
     try {
       Test.setMock(HttpCalloutMock.class, new CZWTFCNachaFTMockClass(200));
-      CZNachaFileTransferBatch obj = new CZNachaFileTransferBatch();
       Database.BatchableContext batchableContext;
       tffa__Submission__c sub = new tffa__Submission__c(tffa__Brand__c = '100');
       insert sub;
-      tffa__fundingrequest__c fund = new tffa__fundingrequest__c(tffa__Type__c='ACH',ACHReportGenerated__c= false,tffa__Status__c = 'ACH_FILE_GENERATED',tffa__Submission__c=sub.id);
+      tffa__fundingrequest__c fund = new tffa__fundingrequest__c(
+        tffa__Type__c = 'ACH',
+        ACHReportGenerated__c = false,
+        tffa__Status__c = 'ACH_FILE_GENERATED',
+        tffa__Submission__c = sub.id
+      );
       insert fund;
       UploadFileHistory__c file1 = new UploadFileHistory__c();
       file1.FileName__c = 'Mytestfile';
@@ -31,6 +36,7 @@ private class CZNachaFileTransferBatchTest {
     } catch (Exception e) {
       tffa.Logger.error('Exception Nacha FT batch Test class:' + e.getStackTraceString());
     }
+    System.assertNotEquals(obj, null);
     Test.stopTest();
   }
 }

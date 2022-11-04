@@ -12,6 +12,7 @@ global class AlloyService {
     global static String ALLOY_EXTERNAL_ENTITY_ID;
     global static String ALLOY_EXTERNAL_GROUP_ID;
     global static String ALLOY_REFRESH_CACHE;
+    global static String ALLOY_SANDBOX_USE_WEBHOOKS;
     global static String X_ALLOY_CLIENT_ID;
     global AlloyService() {
 
@@ -64,7 +65,13 @@ global class AlloyService {
     global tffa.AlloyDTO.EvaluationResponse readEvaluation(String entityToken, String evaluationToken) {
         return null;
     }
+    global void removeHeader(String name) {
+
+    }
     global void setBypassFormatter(Boolean value) {
+
+    }
+    global void setHeader(String name, String value) {
 
     }
     global void setRefreshCache(Boolean value) {

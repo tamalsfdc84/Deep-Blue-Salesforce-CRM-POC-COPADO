@@ -19,6 +19,7 @@ global class NotificationDTO extends tffa.AbstractDTO {
     }
     global String primaryEntityId;
     global List<tffa.NotificationDTO.NotificationRecipientDTO> recipients;
+    global String replyToEmailAddress;
     global Boolean saveEmailAsActivity;
     global String subtype;
     global String template;
@@ -38,6 +39,15 @@ global class NotificationDTO extends tffa.AbstractDTO {
 
     }
     global void addFacts(Map<String,Object> facts) {
+
+    }
+    global void addRecipient(QueueSobject queue) {
+
+    }
+    global void addRecipient(User user) {
+
+    }
+    global void addRecipient(tffa__Party__c party) {
 
     }
     global void addRecipient(tffa.NotificationDTO.NotificationRecipientDTO recipient) {

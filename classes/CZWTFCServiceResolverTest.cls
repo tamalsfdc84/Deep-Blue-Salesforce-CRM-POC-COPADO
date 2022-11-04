@@ -36,6 +36,15 @@ public with sharing class CZWTFCServiceResolverTest {
     asm.addChildObject('Items__r', item);
     checklist = (tffa__DisclosureChecklist__c) asm.assemble();
 
+    tffa__Disclosure__c disclosureObj = new tffa__Disclosure__c();
+    disclosureObj.tffa__Submission__c = submissionObj.Id;
+    disclosureObj.tffa__Type__c = 'DOCUSIGN';
+    disclosureObj.tffa__EntityType__c = 'PARTY';
+    disclosureObj.tffa__Code__c = '32311';
+    disclosureObj.tffa__Template__c = '23445';
+    disclosureObj.tffa__EnvelopeId__c = '23445';
+    insert disclosureObj;
+
     tffa__Party__c p = submissionObj.tffa__PartyXrefs__r[0].tffa__Party__r;
     tffa.Context ctx = tffa.Context.get();
     ctx.eventName = 'Submission_ReviewAndSubmit';
@@ -45,11 +54,40 @@ public with sharing class CZWTFCServiceResolverTest {
     facts.put('EventName__c', 'Submission_ReviewAndSubmit');
 
     Test.startTest();
+
+    try {
+      Map<String, Object> mp = new Map<String, Object>();
+      mp.put('Accepted__c', false);
+      mp.put('Submission__c', submissionObj.id);
+      CZDisclosureServiceProvider discServiceProvider = new CZDisclosureServiceProvider();
+      discServiceProvider.deliver(new List<tffa__Disclosure__c>{ disclosureObj }, mp);
+      ctx.eventName = 'ESignConsentDisclosure';
+      discServiceProvider.deliver(new List<tffa__Disclosure__c>{ disclosureObj }, mp);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    try {
+      CZDisclosureServiceProvider discServiceProvider = new CZDisclosureServiceProvider();
+      Map<String, Object> mp = new Map<String, Object>();
+      mp.put('Accepted__c', false);
+      mp.put('Submission__c', submissionObj.id);
+
+      mp.put('Party__c', p.id);
+      discServiceProvider.deliver(new List<tffa__Disclosure__c>{ disclosureObj }, mp);
+      ctx.eventName = 'ESignConsentDisclosure';
+      discServiceProvider.deliver(new List<tffa__Disclosure__c>{ disclosureObj }, mp);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
     try {
       CZWTFCDisclosureResolver ds = new CZWTFCDisclosureResolver();
       ds.resolve(facts);
-      CZWTFCSubmissionRepository.findSubmissionById(submissionObj.Id);
+      Object response = CZWTFCSubmissionRepository.findSubmissionById(submissionObj.Id);
+      System.assertNotEquals(response, null);
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     Test.stopTest();
   }

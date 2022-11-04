@@ -15,11 +15,17 @@ global class SubmissionPartyXrefService extends tffa.AbstractService {
     global static List<tffa__SubmissionPartyXref__c> createOrUpdate(String parentId, List<tffa__SubmissionPartyXref__c> entities) {
         return null;
     }
+    global static void disable(List<tffa__SubmissionPartyXref__c> entities, Map<String,Object> params) {
+
+    }
     global static void generateOTP(Map<String,Object> facts) {
 
     }
     global static List<tffa__SubmissionPartyXref__c> readAll(tffa.QueryContext queryCtx) {
         return null;
+    }
+    global static void remove(List<tffa__SubmissionPartyXref__c> entities, Map<String,Object> params) {
+
     }
     global static tffa__Party__c validateOTP(Map<String,Object> facts) {
         return null;

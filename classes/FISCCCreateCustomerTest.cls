@@ -358,6 +358,46 @@ public inherited sharing class FISCCCreateCustomerTest {
       FISCCGetAccessTokenProvider.processGetAccessToken(charterConfig);
     }
 
+    try {
+      FISCCDepositOriginationResponse dto = new FISCCDepositOriginationResponse();
+      System.assertNotEquals(dto, null);
+      FISCCDepositOriginationResponse.Entity eDto = new FISCCDepositOriginationResponse.Entity();
+      System.assertNotEquals(eDto, null);
+      FISCCDepositOriginationResponse.FISCCDOCustomerDDResponse fDto = new FISCCDepositOriginationResponse.FISCCDOCustomerDDResponse();
+      System.assertNotEquals(fDto, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    // System.assertEquals('1', '1', 'Success');
+    Test.stopTest();
+  }
+
+  @isTest
+  public static void testProcessApplication1() {
+    Test.startTest();
+    String success = '{"Entity":{"control-data":{"CIMoreToBeReturnedInd":"N","CIRequestedResTimes":1,"CICustNbrToStrtSearch":"00000053531","CIKeySSN":999999993},"customersLst":[{"CIPrspctInd":"C","CICurStdAddr1Cde":"S","CIFrstNmeMidInitl":"BUZZ","CICurNmeAddrEffDte":"2020-10-02","CIBirthdate":"1990-01-01","AddrOvrideInd":"N","CICurNmePrcsTme":"09.30.03","ElmntState":"IL","CIDrvrLic":"L123-1010-1010","CICustBnkNbr":889,"CICurStdAddr1Txt":"9801WHIGGINSSUITE7001","CICustTaxNbr":999999993,"ElmntOddEvenInd":1,"CICustRtnNbr":"00000053531","ScndyPhn":8154445715,"CIPrmyPhNbr":3125551212,"ElmntDirection":"W","CtryCde":"USA","CICustEmpltSchl":"TOTHEMOON,INC","CICurStdAddr2Cde":"C","CICurStdNmeCde01":"N","ElmntZip":60018,"CIMothersMdnNme":"INFINITY","CICustTaxCde":"S","CISncDte":"2016-10-22","ElmntHouseNbr":9801,"ElmntSupplAddr":"SUITE7001","CICurStdNme01":"BUZZLIGHTYEAR","SurNme":"LIGHTYEAR","ElmntFrstNme":"BUZZ","CIRecTypInd":"M","CICurStdAddr2Txt":"ROSEMONTIL60018","MktAreaPrcVal":0,"ElmntLstNme":"LIGHTYEAR","ElmntCity":"ROSEMONT","CICustRemarksInd":"N","ElmntStreet":"HIGGINS"},{"CIPrspctInd":"C","CICurStdAddr1Cde":"S","CIFrstNmeMidInitl":"BUZZ11","CICurNmeAddrEffDte":"2020-10-02","CIBirthdate":"1990-01-01","AddrOvrideInd":"N","CICurNmePrcsTme":"09.30.03","ElmntState":"IL","CIDrvrLic":"L123-1010-1010","CICustBnkNbr":889,"CICurStdAddr1Txt":"9801WHIGGINSSUITE7001","CICustTaxNbr":999999993,"ElmntOddEvenInd":1,"CICustRtnNbr":"00000053531","ScndyPhn":8154445715,"CIPrmyPhNbr":3125551212,"ElmntDirection":"W","CtryCde":"USA","CICustEmpltSchl":"TOTHEMOON,INC","CICurStdAddr2Cde":"C","CICurStdNmeCde01":"N","ElmntZip":60018,"CIMothersMdnNme":"INFINITY","CICustTaxCde":"S","CISncDte":"2022-02-22","ElmntHouseNbr":9801,"ElmntSupplAddr":"SUITE7001","CICurStdNme01":"BUZZLIGHTYEAR","SurNme":"LIGHTYEAR","ElmntFrstNme":"BUZZ11","CIRecTypInd":"M","CICurStdAddr2Txt":"Addr2","MktAreaPrcVal":0,"ElmntLstNme":"LIGHTYEAR11","ElmntCity":"ROSEMONT","CICustRemarksInd":"N","ElmntStreet":"HIGGINS"}]},"Metadata":{"MsgLst":[{"Type":"InformationalMessage","Text":"Success","Severity":"Info","Code":"0"}]}}';
+
+    FISCCCreateCustomerEntityResponse respDTO = new FISCCCreateCustomerEntityResponse();
+
+    FISCCCreateCustomerResponseBuilder objFISCCCreateCustomerResponseBuilder = new FISCCCreateCustomerResponseBuilder();
+    objFISCCCreateCustomerResponseBuilder.build(success, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
+    Object resp = objFISCCCreateCustomerResponseBuilder.parseResponse(
+      respDTO,
+      new FISCC_Adapter_Configs__mdt(),
+      new FISCC_Charter_Config__mdt()
+    );
+    System.assertNotEquals(resp, null);
+    Test.stopTest();
+  }
+  @isTest
+  public static void testProcessApplication2() {
+    //covering exceptionlines
+    Test.startTest();
+    FISCCCreateCustomerResponseBuilder objFISCCCreateCustomerResponseBuilder = new FISCCCreateCustomerResponseBuilder();
+    objFISCCCreateCustomerResponseBuilder.build(null, null, null);
+    Object resp = objFISCCCreateCustomerResponseBuilder.parseResponse(null, null, null);
+    System.assertEquals(resp, null);
     Test.stopTest();
   }
 }

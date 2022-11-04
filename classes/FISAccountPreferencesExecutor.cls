@@ -9,102 +9,119 @@ public inherited sharing class FISAccountPreferencesExecutor {
     FISCCMultiKeywordsResponseDTO estmtResult;
     tffa__AccountPreference__c accPref;
     boolean isOdDeficitSuccess = false;
+    tffa__AccountPreference__c estatementAcctPref;
+    tffa__AccountPreference__c odATMAcctPref;
+    tffa__AccountPreference__c odDeficitTransferAcctPref;
 
     try {
+      FISCCIntegrationLogService.setSubmissionObj(String.valueOf(appList[0].tffa__Submission__c));
+      FISCCIntegrationLogService.setPartyObjs();
+      FISCCIntegrationLogService.setIntegrationLog(
+        String.valueOf(appList[0].tffa__Submission__c),
+        FISCCIntegrationConstants.ACCOUNT_PREF_LOG
+      );
+      FISCCIntegrationLogService.setApplicationObjs();
       for (tffa__Application__c app : appList) {
+        if (
+          app.tffa__AccountPurpose__c == FISCCIntegrationConstants.ALLOWED_PURPOSE_DEBIT_CARD ||
+          FISCCIntegrationConstants.SAFE_DEPOSIT_PROD_CATEGORY.contains(app.tffa__ProductCategory__c)
+        ) {
+          app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_NOT_APPLICABLE;
+          app = CZWTFCAppRoutingService.routeApplication(app);
+          resultAppList.add(app);
+          return resultAppList;
+        }
         boolean odProtectionATMPresent = false;
-        boolean estmtFailed = false;
+        boolean keywordsAPISuccess = false;
         boolean odDeficitFailed = false;
         boolean odAtmFailed = false;
         boolean accOpeningPendingDeficit = false;
-
+        estatementAcctPref = null;
+        odATMAcctPref = null;
+        odDeficitTransferAcctPref = null;
         tffa.Logger.debug('FISAccountPreferencesExecutor processAccPrefRequest for app: ==-> ' + app.Id);
         tffa.Logger.debug('app.tffa__AccountPreferences__r ' + app.tffa__AccountPreferences__r);
-        FISCCIntegrationLogService.setSubmissionObj(String.valueOf(app.tffa__Submission__c));
-        FISCCIntegrationLogService.setPartyObjs();
-        FISCCIntegrationLogService.setIntegrationLog(String.valueOf(app.tffa__Submission__c));
-        FISCCIntegrationLogService.setApplicationObjs();
-
-        // if (app.tffa__AccountPreferences__r == null || app.tffa__AccountPreferences__r.isEmpty()) {
-        //   tffa.Logger.debug('OLB enrollment not required for app ' + app.id);
-        //   app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_NOT_APPLICABLE;
-        //   app = CZWTFCAppRoutingService.routeApplication(app);
-        //   resultAppList.add(app);
-        //   break;
-        // }
-
-        if (containService(app.tffa__AccountPreferences__r, FISCCIntegrationConstants.ESTMT_TYPE)) {
-          Integer idx;
-          for (Integer i = 0; i < app.tffa__AccountPreferences__r.size(); i++) {
-            if ((app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c).equalsIgnoreCase(FISCCIntegrationConstants.ESTMT_TYPE)) {
-              idx = i;
-              break;
-            }
-          }
-          if (isOLBEnrolled(app)) {
-            if (FISCCIntegrationLogService.isLogNewOrFailed(FISCCIntegrationConstants.ESTMT_REG + app.Id)) {
-              try {
-                FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.ESTMT_REG + app.Id);
-                FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.ESTMT_REG, app.Id, true);
-                estmtResult = FISAccountPreferenceProvider.processMultiKeywords(app, FISCCIntegrationConstants.ESTMT_TYPE);
-                if (isAPICallSuccess(estmtResult.Metadata.MsgLst)) {
-                  tffa.Logger.debug('FISAccountPreferencesExecutor success');
-                  app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
-                  FISCCIntegrationLogService.setLogItemOk(API_NAME, FISCCIntegrationConstants.ESTMT_REG_SUCCESS);
-                  FISCCIntegrationLogService.setLogOk(FISCCIntegrationConstants.ESTMT_REG_SUCCESS);
-                } else {
-                  tffa.Logger.error('FISAccountPreferencesExecutor failed for app : ' + app.Id);
-                  estmtFailed = true;
-                  FISCCIntegrationLogService.setLogItemFailed(API_NAME, FISCCIntegrationConstants.ESTMT_REG_FAILED);
-                  FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.ESTMT_REG_FAILED);
-                }
-              } catch (Exception ex) {
-                estmtFailed = true;
-                tffa.Logger.debug('exception in processAccPrefRequest in executor ..');
-                FISCCIntegrationLogService.setLogItemFailed(API_NAME, FISCCIntegrationConstants.ESTMT_REG_FAILED);
-                FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.ESTMT_REG_FAILED);
-              }
-            }
-          } else {
-            app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
-            app.tffa__AccountPreferences__r[idx].tffa__Comments__c = 'E-Statement Registration Skipped as OLB is not registrated';
+        for (Integer i = 0; i < app.tffa__AccountPreferences__r.size(); i++) {
+          if ((app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c).equalsIgnoreCase(FISCCIntegrationConstants.ESTMT_TYPE)) {
+            estatementAcctPref = app.tffa__AccountPreferences__r[i];
+          } else if (
+            (app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c)
+              .equalsIgnoreCase(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_TYPE)
+          ) {
+            odDeficitTransferAcctPref = app.tffa__AccountPreferences__r[i];
+          } else if (
+            (app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c).equalsIgnoreCase(FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE)
+          ) {
+            odATMAcctPref = app.tffa__AccountPreferences__r[i];
           }
         }
 
-        if (containService(app.tffa__AccountPreferences__r, FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_TYPE)) {
-          if (eligibleForDeficitTransfer(app.tffa__AccountPreferences__r)) {
+        FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.ACCOUNT_PREF_LOG + app.Name + '-' + app.tffa__AccountNumber__c);
+
+        String keywordReqType = '';
+        if (estatementAcctPref != null) {
+          if (isOLBEnrolled(app)) {
+            keywordReqType = FISCCIntegrationConstants.ESTMT_TYPE;
+          } else {
+            estatementAcctPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+            estatementAcctPref.tffa__Comments__c = 'E-Statement Registration Skipped as OLB is not registrated';
+          }
+        }
+
+        if (odATMAcctPref != null) {
+          keywordReqType = keywordReqType + ',' + FISCCIntegrationConstants.OD_ATM_Y;
+        } else {
+          if (odConfiguredForProduct(app.tffa__Product__r, FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE)) {
+            keywordReqType = keywordReqType + ',' + FISCCIntegrationConstants.OD_ATM_N;
+          }
+        }
+
+        if (app.CZStatusCode1ExpiryDate__c != null || app.CZStatusCode2ExpiryDate__c != null || app.CZStatusCode3ExpiryDate__c != null) {
+          keywordReqType = keywordReqType + ',' + 'StatusCodeExpiry';
+        }
+
+        if (isTypeCertificateAndBranchFlow(app)) {
+          keywordReqType = keywordReqType + ',' + FISCCIntegrationConstants.APY_INFO;
+        }
+
+        //Account Opening Indicator
+        if (
+          app.tffa__AccountPurpose__c != FISCCIntegrationConstants.ALLOWED_PURPOSE_DEBIT_CARD &&
+          !FISCCIntegrationConstants.SAFE_DEPOSIT_PROD_CATEGORY.contains(app.tffa__ProductCategory__c)
+        ) {
+          keywordReqType = keywordReqType + ',' + FISCCIntegrationConstants.ACCOUNT_OPENING_INFO;
+        }
+
+        if (String.isNotBlank(keywordReqType)) {
+          keywordsAPISuccess = processKeywordAPI(app, keywordReqType);
+          if (keywordsAPISuccess) {
+            if (estatementAcctPref != null) {
+              estatementAcctPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+            }
+            if (odATMAcctPref != null) {
+              odATMAcctPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+            }
+          }
+        }
+        if (odDeficitTransferAcctPref != null) {
+          if (eligibleForDeficitTransfer(odDeficitTransferAcctPref)) {
             try {
               if (Test.isRunningTest() && testException) {
                 throw new tffa.ApplicationException('Called through test class');
               }
-              Integer idx;
-
-              for (Integer i = 0; i < app.tffa__AccountPreferences__r.size(); i++) {
-                if (
-                  (app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c)
-                    .equalsIgnoreCase(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_TYPE)
-                ) {
-                  idx = i;
-                  break;
-                }
-              }
-              if (
-                FISCCIntegrationLogService.isLogNewOrFailed(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER + '-' + app.Name + '-' + app.Id)
-              ) {
-                FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER + '-' + app.Name + '-' + app.Id);
-                FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER, app.Id, false);
-
+              String itemLog = FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER, app.Id, false);
+              if (FISCCIntegrationLogService.isLogItemNewOrFailed(itemLog)) {
                 Map<String, String> params = new Map<String, String>();
                 params.put('accNbr', app.tffa__AccountNumber__c);
-                params.put('senderAccNbr', fetchAccountNumberForDeficit(app));
+                params.put('senderAccNbr', fetchAccountNumberForDeficit(odDeficitTransferAcctPref));
                 params.put('custName', getPrimaryPartyFrmtedName(app));
                 isOdDeficitSuccess = FISCCDeficitTransferProvider.transferFundInstructions(params, app.tffa__Brand__c);
                 if (isOdDeficitSuccess) {
-                  app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+                  odDeficitTransferAcctPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
                   FISCCIntegrationLogService.setLogItemOk(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_SUCCESS);
                   FISCCIntegrationLogService.setLogOk(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_SUCCESS);
                 } else {
-                  app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_FAILED;
+                  odDeficitTransferAcctPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_FAILED;
                   odDeficitFailed = true;
                   FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_FAILURE);
                   FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_FAILURE);
@@ -121,41 +138,7 @@ public inherited sharing class FISAccountPreferencesExecutor {
           }
         }
 
-        if (containService(app.tffa__AccountPreferences__r, FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE)) {
-          odAtmFailed = processODProtectionAtm(app, FISCCIntegrationConstants.OD_ATM_Y);
-          Integer idx;
-          for (Integer i = 0; i < app.tffa__AccountPreferences__r.size(); i++) {
-            if (
-              (app.tffa__AccountPreferences__r[i].tffa__AddOnServiceType__c)
-                .equalsIgnoreCase(FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE)
-            ) {
-              idx = i;
-              break;
-            }
-          }
-          if (!odAtmFailed) {
-            app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
-          } else {
-            app.tffa__AccountPreferences__r[idx].tffa__Status__c = CZWTFCConstants.ADDON_STATUS_FAILED;
-          }
-        } else {
-          if (odConfiguredForProduct(app.tffa__Product__c, FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE)) {
-            odProtectionATMPresent = true;
-          } else {
-            odProtectionATMPresent = false;
-            app.CZIsODAtmProcessed__c = true;
-          }
-        }
-
-        if (odProtectionATMPresent) {
-          odAtmFailed = processODProtectionAtm(app, FISCCIntegrationConstants.OD_ATM_N);
-        }
-
-        if (!odAtmFailed) {
-          app.CZIsODAtmProcessed__c = true;
-        }
-
-        if (estmtFailed || odDeficitFailed || odAtmFailed) {
+        if (!keywordsAPISuccess || odDeficitFailed) {
           app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_FAILURE;
           app.AccPrefRetryCount__c = app.AccPrefRetryCount__c + 1;
         } else {
@@ -166,20 +149,49 @@ public inherited sharing class FISAccountPreferencesExecutor {
           app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_PENDING;
         }
 
-        if (
-          !accOpeningPendingDeficit &&
-          !odConfiguredForProduct(app.tffa__Product__c, FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE) &&
-          app.tffa__AccountPreferences__r.isEmpty()
-        ) {
-          app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_NOT_APPLICABLE;
-        }
+        // if (
+        //   !accOpeningPendingDeficit &&
+        //   !odConfiguredForProduct(app.tffa__Product__c, FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE) &&
+        //   app.tffa__AccountPreferences__r.isEmpty()
+        // ) {
+        //   app.AccountPreference__c = CZWTFCConstants.PROCESS_STATUS_NOT_APPLICABLE;
+        // }
         app = CZWTFCAppRoutingService.routeApplication(app);
         resultAppList.add(app);
+        /**
+         * Update tffa__AccountPreference__c
+         */
+        List<tffa__AccountPreference__c> updatedaccPref = new List<tffa__AccountPreference__c>();
+        if (estatementAcctPref != null) {
+          updatedaccPref.add(estatementAcctPref);
+        }
+        if (odATMAcctPref != null) {
+          updatedaccPref.add(odATMAcctPref);
+        }
+        if (odDeficitTransferAcctPref != null) {
+          updatedaccPref.add(odDeficitTransferAcctPref);
+        }
+
+        CZWTFCApplicationRepository.save(updatedaccPref);
       }
     } catch (Exception ex) {
       tffa.Logger.error('Exception in processAccPrefRequest : ' + ex.getMessage() + ' Exception : ' + ex.getStackTraceString());
     }
+
     return resultAppList;
+  }
+
+  private static Boolean isTypeCertificateAndBranchFlow(tffa__Application__c appObj) {
+    if (
+      FISCCIntegrationLogService.submissionObj.tffa__SubmittedChannel__c == FISCCIntegrationConstants.BRANCH &&
+      CZWTFCCommonHelper.isCertificateProduct(appObj) &&
+      appObj.tffa__Status__c == 'FUNDED' &&
+      appObj.tffa__APY__c != null &&
+      appObj.DPTDId__c != null
+    ) {
+      return true;
+    }
+    return false;
   }
   private static Boolean isOLBEnrolled(tffa__Application__c app) {
     Boolean resultStatus = false;
@@ -205,11 +217,20 @@ public inherited sharing class FISAccountPreferencesExecutor {
     return false;
   }
 
-  private static Boolean isAPICallSuccess(List<FISCCMsgListDTO> msgList) {
+  private static Boolean isAPICallSuccess(List<FISCCMsgListDTO> msgList, tffa__Application__c app) {
     Boolean isScuccess = false;
     if (msgList != null && !msgList.isEmpty()) {
       if (('0').equalsIgnoreCase(msgList[0].Code) && ('Success').equalsIgnoreCase(msgList[0].Text)) {
         isScuccess = true;
+
+        for (tffa__AccountPreference__c accPref : app.tffa__AccountPreferences__r) {
+          if (
+            accPref.tffa__AddOnServiceType__c == FISCCIntegrationConstants.ESTMT_TYPE ||
+            accPref.tffa__AddOnServiceType__c == FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE
+          ) {
+            accPref.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+          }
+        }
       }
     }
     return isScuccess;
@@ -240,72 +261,69 @@ public inherited sharing class FISAccountPreferencesExecutor {
     return false;
   }
 
-  public static boolean odConfiguredForProduct(Id productId, String odType) {
-    List<tffa__AddOnServiceItem__c> addOnServiceList = FISCCIntegrationLogRepository.findAddOnServiceItem(productId, odType);
-    if (addOnServiceList.isEmpty()) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-
-  public static boolean processODProtectionAtm(tffa__Application__c app, String reqType) {
-    if (FISCCIntegrationLogService.isLogNewOrFailed(FISCCIntegrationConstants.OD_ATM_TRANSFER + '-' + app.Name + '-' + app.Id)) {
-      FISCCMultiKeywordsResponseDTO odProtectionAtmResult;
-      try {
-        if (Test.isRunningTest() && testException) {
-          throw new tffa.ApplicationException('Called through test class');
-        }
-        FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.OD_ATM_TRANSFER + '-' + app.Name + '-' + app.Id);
-        FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.OD_ATM_TRANSFER_TYPE, app.Id, true);
-
-        odProtectionAtmResult = FISAccountPreferenceProvider.processMultiKeywords(app, reqType);
-
-        if (isAPICallSuccess(odProtectionAtmResult.Metadata.MsgLst)) {
-          FISCCIntegrationLogService.setLogItemOk(FISCCIntegrationConstants.OD_PROTECTION_ATM_SUCCESS);
-          FISCCIntegrationLogService.setLogOk(FISCCIntegrationConstants.OD_PROTECTION_ATM_SUCCESS);
-        } else {
-          FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.OD_PROTECTION_ATM_FAILURE);
-          FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.OD_PROTECTION_ATM_FAILURE);
-          return true;
-        }
-      } catch (Exception ex) {
-        tffa.Logger.error('Exception in od protection atm  : ' + ex.getMessage() + ' Exception : ' + ex.getStackTraceString());
-        FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.OD_PROTECTION_ATM_FAILURE);
-        FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.OD_PROTECTION_ATM_FAILURE);
+  public static boolean odConfiguredForProduct(tffa__Product__c product, String odType) {
+    Map<String, Object> factsMap = new Map<String, Object>();
+    factsMap.put('ProductCategory__c', product.tffa__Category__c);
+    factsMap.put('ProductCode__c', product.tffa__Code__c);
+    factsMap.put('EntityType__c', 'APPLICATION');
+    List<Id> checklistIds = FISCCIntegrationLogRepository.findAddOnServiceChecklistIdsByFacts('tffa__Facts', factsMap);
+    if (checklistIds != null && !checklistIds.isEmpty()) {
+      List<tffa__AddOnServiceItem__c> addOnServiceList = FISCCIntegrationLogRepository.findAddOnServiceItem(checklistIds, odType);
+      if (addOnServiceList.isEmpty()) {
+        return false;
+      } else {
         return true;
       }
     }
     return false;
   }
 
-  public static String fetchAccountNumberForDeficit(tffa__Application__c appObj) {
-    for (tffa__AccountPreference__c accPref : appObj.tffa__AccountPreferences__r) {
-      if ((accPref.tffa__AddOnServiceType__c).equalsIgnoreCase(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_TYPE)) {
-        if (String.isNotBlank(accPref.tffa__AccountNumber__c)) {
-          return accPref.tffa__AccountNumber__c;
-        } else if (String.isNotBlank(accPref.SourceApplication__c)) {
-          tffa__Application__c app = fetchApplication(FISCCIntegrationLogService.applicationObjs, accPref.SourceApplication__c);
-          return app.tffa__AccountNumber__c;
+  public static boolean processKeywordAPI(tffa__Application__c app, String reqType) {
+    String logItem = FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.FIS_KEYWORD_API, app.Id, false);
+    if (FISCCIntegrationLogService.isLogItemNewOrFailed(logItem)) {
+      FISCCMultiKeywordsResponseDTO multiKeywordsResp;
+      try {
+        if (Test.isRunningTest() && testException) {
+          throw new tffa.ApplicationException('Called through test class');
         }
+        multiKeywordsResp = FISAccountPreferenceProvider.processMultiKeywords(app, reqType);
+
+        if (isAPICallSuccess(multiKeywordsResp.Metadata.MsgLst, app)) {
+          FISCCIntegrationLogService.setLogItemOk(FISCCIntegrationConstants.LOG_ITEM_STATUS_SUCCESS);
+        } else {
+          FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.LOG_ITEM_STATUS_FAILURE);
+          return false;
+        }
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in processKeywordAPI  : ' + ex.getMessage() + ' Exception : ' + ex.getStackTraceString());
+        FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.LOG_ITEM_STATUS_FAILURE);
+        return false;
       }
     }
+    return true;
+  }
+
+  public static String fetchAccountNumberForDeficit(tffa__AccountPreference__c accPref) {
+    if (String.isNotBlank(accPref.tffa__AccountNumber__c)) {
+      return accPref.tffa__AccountNumber__c;
+    } else if (String.isNotBlank(accPref.SourceApplication__c)) {
+      tffa__Application__c app = fetchApplication(FISCCIntegrationLogService.applicationObjs, accPref.SourceApplication__c);
+      return app.tffa__AccountNumber__c;
+    }
+
     return '';
   }
 
-  public static boolean eligibleForDeficitTransfer(List<tffa__AccountPreference__c> accList) {
-    for (tffa__AccountPreference__c accPref : accList) {
-      if ((accPref.tffa__AddOnServiceType__c).equalsIgnoreCase(FISCCIntegrationConstants.OD_DEFICIT_TRANSFER_TYPE)) {
-        if (String.isNotBlank(accPref.tffa__AccountNumber__c)) {
-          return true;
-        } else if (String.isNotBlank(accPref.SourceApplication__c)) {
-          tffa__Application__c app = fetchApplication(FISCCIntegrationLogService.applicationObjs, accPref.SourceApplication__c);
-          if ((app.tffa__Status__c).equalsIgnoreCase('ACCOUNT_OPENED') || (app.tffa__Status__c).equalsIgnoreCase('FUNDED')) {
-            return true;
-          }
-        }
+  public static boolean eligibleForDeficitTransfer(tffa__AccountPreference__c accPref) {
+    if (String.isNotBlank(accPref.tffa__AccountNumber__c)) {
+      return true;
+    } else if (String.isNotBlank(accPref.SourceApplication__c)) {
+      tffa__Application__c app = fetchApplication(FISCCIntegrationLogService.applicationObjs, accPref.SourceApplication__c);
+      if ((app.tffa__Status__c).equalsIgnoreCase('ACCOUNT_OPENED') || (app.tffa__Status__c).equalsIgnoreCase('FUNDED')) {
+        return true;
       }
     }
+
     return false;
   }
 

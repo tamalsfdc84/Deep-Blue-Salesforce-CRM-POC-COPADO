@@ -299,7 +299,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Applicant Roles</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -1,42 +1,46 @@
-@SuppressWarnings('PMD.ExcessivePublicCount')
 public with sharing class MDMCustomerCreateRequest {
-
   public MDMCustomerCreateRequest() {
-      this.key = new Key();
-      this.statCd = new StatCd();
-      this.offcrRowid = new OffcrRowid();
-      this.psptIn = new PsptIn();
-      this.cntryCd = new CntryCd();
-      this.bnkCd = new BnkCd();
-      this.brnchCd = new BrnchCd();
-      this.Details = new Details();
-      this.Identifiers = new Identifiers();
-      this.Communication = new Communication();
-      this.Email = new Email();
-      this.Addresses = new Addresses();
-      this.AccountRelationship = new AccountRelationship();
-    }
+    this.key = new Key();
+    this.statCd = new StatCd();
+    this.offcrRowid = new OffcrRowid();
+    this.secOffcrRowid = new SecOffcrRowid();
+    this.psptIn = new PsptIn();
+    this.cntryCd = new CntryCd();
+    this.bnkCd = new BnkCd();
+    this.brnchCd = new BrnchCd();
+    this.Details = new Details();
+    this.Identifiers = new Identifiers();
+    this.Communication = new Communication();
+    this.Email = new Email();
+    this.Addresses = new Addresses();
+    this.AccountRelationship = new AccountRelationship();
+    this.DebitCard = new DebitCard();
+    this.Preference = new Preference();
+  }
 
-    public String rowidObject;
-    public Key key;
-    public String ptyTypCd;
-    public String costCntrNo;
-    public String endDt;
-    public String strtDt;
-    public String ptyNm;
-    public String statChngDt;
-    public StatCd statCd;
-    public OffcrRowid offcrRowid;
-    public PsptIn psptIn;
-    public CntryCd cntryCd;
-    public BnkCd bnkCd;
-    public BrnchCd brnchCd;
-    public Details Details;
-    public Identifiers Identifiers;
-    public Communication Communication;
-    public Email Email;
-    public Addresses Addresses;
-    public AccountRelationship AccountRelationship;
+  public String rowidObject;
+  public Key key;
+  public String ptyTypCd;
+  public String costCntrNo;
+  public String endDt;
+  public String strtDt;
+  public String ptyNm;
+  public String statChngDt;
+  public StatCd statCd;
+  public OffcrRowid offcrRowid;
+  public SecOffcrRowid secOffcrRowid;
+  public PsptIn psptIn;
+  public CntryCd cntryCd;
+  public BnkCd bnkCd;
+  public BrnchCd brnchCd;
+  public Details Details;
+  public Identifiers Identifiers;
+  public Communication Communication;
+  public Email Email;
+  public Addresses Addresses;
+  public AccountRelationship AccountRelationship;
+  public DebitCard DebitCard;
+  public Preference Preference;
 
   public class Key {
     public String sourceKey;
@@ -47,6 +51,10 @@ public with sharing class MDMCustomerCreateRequest {
   }
 
   public class OffcrRowid {
+    public String offcrCd;
+  }
+
+  public class SecOffcrRowid {
     public String offcrCd;
   }
 
@@ -68,10 +76,10 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class Details {
     public Details() {
-      this.item = new List < DetailsItem > ();
+      this.item = new List<DetailsItem>();
     }
 
-    public List < DetailsItem > item;
+    public List<DetailsItem> item;
   }
 
   public class DetailsItem {
@@ -79,7 +87,7 @@ public with sharing class MDMCustomerCreateRequest {
       this.empIn = new EmpIn();
       this.ctznCd = new CtznCd();
       this.statCd = new StatCd();
-      this.occpnCd = new OccpnCd();
+      this.plAdvFlag = new PlAdvFlag();
     }
 
     public String lstNm;
@@ -91,6 +99,26 @@ public with sharing class MDMCustomerCreateRequest {
     public OccpnCd occpnCd;
     public String sfxVl;
     public String midNm;
+    public String orgNm;
+    public String cntctNm;
+    public String naicsCd;
+    public String empCt;
+    public String prefLangVl;
+    public String indsCd;
+    public String annlRev;
+    public String yrOfEstblNo;
+    public PlAdvFlag plAdvFlag;
+    public String empTitle;
+    public String emplrSchlNm;
+    public EmpStatIn empStatIn;
+  }
+
+  public class EmpStatIn{
+    public String lkpCd;
+  }
+
+  public class PlAdvFlag{
+    public String lkpCd;
   }
 
   public class EmpIn {
@@ -107,10 +135,10 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class Identifiers {
     public Identifiers() {
-      this.item = new List < IdentifiersItem > ();
+      this.item = new List<IdentifiersItem>();
     }
 
-    public List < IdentifiersItem > item;
+    public List<IdentifiersItem> item;
   }
 
   public class IdentifiersItem {
@@ -128,21 +156,23 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class Communication {
     public Communication() {
-      this.item = new List < CommunicationItem > ();
+      this.item = new List<CommunicationItem>();
     }
 
-    public List < CommunicationItem > item;
+    public List<CommunicationItem> item;
   }
 
   public class CommunicationItem {
     public CommunicationItem() {
       this.prefFg = new PrefFg();
       this.commcnTypCd = new CommcnTypCd();
+      this.statCd = new StatCd();
     }
 
     public String commcnVl;
     public PrefFg prefFg;
     public CommcnTypCd commcnTypCd;
+    public StatCd statCd;
   }
 
   public class PrefFg {
@@ -155,10 +185,10 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class Email {
     public Email() {
-      this.item = new List < EmailItem > ();
+      this.item = new List<EmailItem>();
     }
 
-    public List < EmailItem > item;
+    public List<EmailItem> item;
   }
 
   public class EmailItem {
@@ -176,9 +206,9 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class Addresses {
     public Addresses() {
-      this.item = new List < AddressesItem > ();
+      this.item = new List<AddressesItem>();
     }
-    public List < AddressesItem > item;
+    public List<AddressesItem> item;
   }
 
   public class AddressesItem {
@@ -211,15 +241,16 @@ public with sharing class MDMCustomerCreateRequest {
     public String zip5Cd;
     public String zip4Cd;
     public String addrLine1Tx;
+    public String addrLine2Tx;
     public CntryCd cntryCd;
   }
 
   public class AccountRelationship {
     public AccountRelationship() {
-      this.item = new List < AccountRelationshipItem > ();
+      this.item = new List<AccountRelationshipItem>();
     }
 
-    public List < AccountRelationshipItem > item;
+    public List<AccountRelationshipItem> item;
   }
 
   public class AccountRelationshipItem {
@@ -284,13 +315,13 @@ public with sharing class MDMCustomerCreateRequest {
 
   public class AccountPreferences {
     public AccountPreferences() {
-      this.item = new List < AccountPreferencesItem > ();
+      this.item = new List<AccountPreferencesItem>();
     }
 
-    public List < AccountPreferencesItem > item;
+    public List<AccountPreferencesItem> item;
   }
 
-  public class AccountPreferencesItem{
+  public class AccountPreferencesItem {
     public AccountPreferencesItem() {
       this.prefTypCd = new PrefTypCd();
       this.prefVl = new PrefVl();
@@ -310,4 +341,74 @@ public with sharing class MDMCustomerCreateRequest {
     public String lkpCd;
   }
 
+  public class DebitCard{
+    public DebitCard(){
+      this.item = new List<DebitCardItem>();
+    }
+    public List<DebitCardItem> item;
+  }
+
+  public class DebitCardItem{
+    public DebitCardItem(){
+      this.prodCtgry = new ProdCtgry();
+      this.prodType = new ProdType();
+      this.statCd = new StatCd();
+      this.DebitCardAccount = new DebitCardAccount();
+    }
+    public String openDt;
+    public String bankLocCd;
+    public String crdNo;
+    public String endDt;
+    public String boClassCode;
+    public ProdCtgry prodCtgry;
+    public ProdType prodType;
+    public StatCd statCd;
+    public DebitCardAccount DebitCardAccount;
+  }
+
+  public class DebitCardAccount{
+    public DebitCardAccount(){
+      this.item = new List<DebitCardAccountItem>();
+    }
+    public List<DebitCardAccountItem> item;
+  }
+
+  public class DebitCardAccountItem{
+    public DebitCardAccountItem(){
+      this.statCd = new StatCd();
+      this.Account = new DAccount();
+    }
+    public String relTypeCode;
+    public String hierarchyCode;
+    public String endDt;
+    public String strtDt;
+    public StatCd statCd;
+    public DAccount Account;
+  }
+
+  public class DAccount{
+    public DAccount(){
+      this.statCd = new StatCd();
+    }
+    public String acctNo;
+    public String boClassCode;
+    public StatCd statCd;
+  }
+
+  public class Preference{
+    public Preference(){
+      this.item = new List<PreferenceItem>();
+    }
+    public List<PreferenceItem> item;
+  }
+
+  public class PreferenceItem{
+    public PreferenceItem(){
+      this.prefTypCd = new PrefTypCd();
+      this.statCd = new StatCd();
+    }
+    public PrefTypCd prefTypCd;
+    public String prefVl;
+    public StatCd statCd;
+  }
 }

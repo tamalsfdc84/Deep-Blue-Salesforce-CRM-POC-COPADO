@@ -12,6 +12,9 @@ global class ApplicationDecisionMatrixService {
     global static List<tffa__ApplicationDecisionMatrix__c> createOrUpdate(List<tffa__ApplicationDecisionMatrix__c> entities) {
         return null;
     }
+    global static List<List<tffa__ApplicationDecisionMatrix__c>> resolveByFactGroups(String fieldSetName, List<Map<String,Object>> factGroups) {
+        return null;
+    }
     global static List<tffa__ApplicationDecisionMatrix__c> resolveByFacts(String fieldSetName, Map<String,Object> facts) {
         return null;
     }

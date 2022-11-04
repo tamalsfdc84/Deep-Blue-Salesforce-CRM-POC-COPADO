@@ -41,7 +41,8 @@
                 <field>tffa__Description__c</field>
             </layoutItems>
             <layoutItems>
-                <emptySpace>true</emptySpace>
+                <behavior>Edit</behavior>
+                <field>CZAvailableInDigital__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -54,6 +55,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>FISBranchCode__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CZSDBSalesTaxPct__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

@@ -31,18 +31,21 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
     //    List<tffa__Party__c> partyDetailList = new List<tffa__Party__c>();
     List<String> ids = new List<String>();
     tffa__DueDiligence__c dueDiligenceVerify;
-    for (tffa__Party__c party : parties) {
-      ids.add(party.Id);
-    }
-    parties = CZWTFCPartyRepository.findAllPartiesByIds(ids);
-    String flowName = parties[0].Name + '-' + FISCCIntegrationConstants.CUSTOMER_API_INQUIRES;
+
     try {
+      for (tffa__Party__c party : parties) {
+        ids.add(party.Id);
+      }
+      FISCCIntegrationLogService.setSubmissionObj((String) params.get('Submission__c'));
+      parties = CZWTFCPartyRepository.findAllPartiesByIds(ids);
+      String flowName = parties[0].Name + '-' + FISCCIntegrationConstants.CUSTOMER_API_INQUIRES;
       CZWTFCIntegrationLogService.setIntegrationLog((String) params.get('Submission__c'), flowName);
+
       tffa__Submission__c submissionObj = CZWTFCSubmissionRepository.findOne((String) params.get('Submission__c'));
 
-      CZWTFCIntegrationLogService.setCurrentLog(flowName);
-      //CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.SEARCH_CUSTOMER, parties[0].name, true);
-      if (!parties[0].IsAuthenticatedCustomer__c) {
+      FISCCIntegrationLogService.setCurrentLog(flowName);
+      //FISCCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.SEARCH_CUSTOMER, parties[0].name, true);
+      if (!parties[0].IsAuthenticatedCustomer__c && submissionObj.tffa__Channel__c == FISCCIntegrationConstants.DIGITAL) {
         parties[0].tffa__IsExistingCustomer__c = false;
         parties[0].IsCrossCharterCustomer__c = false;
         parties[0].IsExceptionPlanRequired__c = true;
@@ -53,14 +56,12 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
         parties[0].FISLastName__c = '';
         parties[0] = searchCustomerInMDM(parties[0]);
       }
-      /*FISCCCustomerSearchTaxnbrProvider.processSearchByTaxbr((String) params.get('Submission__c'), parties[0]);
-        //CZWTFCIntegrationLogService.setLogOk(FISCCIntegrationConstants.SEARCH_CUSTOMER);
 
-        if (parties[0].tffa__IsExistingCustomer__c) {
-          CZWTFCIntegrationLogService.setLogItemOk(FISCCIntegrationConstants.SEARCH_CUSTOMER);
-        } else {
-          CZWTFCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.SEARCH_CUSTOMER);
-        }*/
+      //Update Customer
+      if (parties[0].tffa__IsExistingCustomer__c && submissionObj.tffa__Channel__c == FISCCIntegrationConstants.BRANCH) {
+        parties[0] = FISCCUpdateCustInfoProvider.fetchContactEffDate(parties[0]);
+        parties[0] = FISCCUpdateCustInfoProvider.FetchCustomerInfo(parties[0]);
+      }
 
       for (tffa__Party__c party : parties) {
         if ((party.tffa__IsExistingCustomer__c || party.IsCrossCharterCustomer__c) && !party.IsAuthenticatedCustomer__c) {
@@ -79,7 +80,6 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
             CZWTFCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.OLB_CHECK);
           }
         }
-        // party.tffa__IDAStatus__c = 'PASSED';
       }
 
       //--------------------------------------Alloy------------------------------------------------------------//
@@ -89,31 +89,18 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
         params.put('AUTHENTICATED_CUSTOMER', 'AUTHENTICATED_CUSTOMER');
       }
 
-      CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.DO_IDV_VERIFICATION, parties[0].name, true);
-      params.put('Submission__r', submissionObj);
+      if (parties[0].tffa__Type__c == 'ORGANIZATION' && String.isBlank(parties[0].tffa__KYCDecisionOutcome__c)) {
+        parties[0] = updateOrganizationKYCDetails(parties[0]);
+      } else if (!parties[0].CZIsCIPExempt__c) {
+        CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.DO_IDV_VERIFICATION, parties[0].name, true);
+        params.put('Submission__r', submissionObj);
 
-      CZAlloyIDVServiceProvider alloyIdvProvider = new CZAlloyIDVServiceProvider();
-      parties = alloyIdvProvider.verifyUsingAlloy(parties, params);
-
-      /*
-      partyDetailList[0].tffa__IsExistingCustomer__c = parties[0].tffa__IsExistingCustomer__c;
-      partyDetailList[0].Customer_Number__c = parties[0].Customer_Number__c;
-      partyDetailList[0].IsOLBEnrolled__c = parties[0].IsOLBEnrolled__c;
-      partyDetailList[0].FISDob__c = parties[0].FISDob__c;
-      partyDetailList[0].FISLastName__c = parties[0].FISLastName__c;
-      partyDetailList[0].IsCrossCharterCustomer__c = parties[0].IsCrossCharterCustomer__c;
-      partyDetailList[0].IsExceptionPlanRequired__c = parties[0].IsExceptionPlanRequired__c;
-      partyDetailList[0].CZMDMPartyID__c = parties[0].CZMDMPartyID__c;
-      partyDetailList[0].CZFisHomeNbr__c = parties[0].CZFisHomeNbr__c;
-      partyDetailList[0].CZFisWorkNbr__c = parties[0].CZFisWorkNbr__c;
-      partyDetailList[0].CZFisCellNbr__c = parties[0].CZFisCellNbr__c;
-      partyDetailList[0].CZFisEmail__c = parties[0].CZFisEmail__c;
-      partyDetailList[0].CZFisCustCodes__c = parties[0].CZFisCustCodes__c;
-      partyDetailList[0].CZFisHomeNbrEffDt__c = parties[0].CZFisHomeNbrEffDt__c;
-      partyDetailList[0].CZFisWorkNbrEffDt__c = parties[0].CZFisWorkNbrEffDt__c;
-      partyDetailList[0].CZFisCellNbrEffDt__c = parties[0].CZFisCellNbrEffDt__c;
-      partyDetailList[0].CZFisEmailEffDt__c = parties[0].CZFisEmailEffDt__c;
-*/
+        CZAlloyIDVServiceProvider alloyIdvProvider = new CZAlloyIDVServiceProvider();
+        parties = alloyIdvProvider.verifyUsingAlloy(parties, params);
+      } else {
+        parties[0].tffa__KYCDecisionOutcome__c = FISCCIntegrationConstants.KYC_APPROVED_STATUS;
+        parties[0].tffa__AutoKYCDecisionOutcome__c = FISCCIntegrationConstants.KYC_APPROVED_STATUS;
+      }
       tffa.Logger.debug('In CZIDVServiceProvider Verify CheckPoint Two');
     } catch (Exception ex) {
       tffa.Logger.error(' Exception In IDV Provider' + ex.getMessage() + ' ' + ex.getStackTraceString());
@@ -127,9 +114,25 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
     }
 
     CZWTFCPartyRepository.save(parties);
-    // //fetch without dd
 
-    return parties;
+    return FISCCIntegrationLogRepository.findPartydWithChildObjects(new List<Id>{ parties[0].Id });
+  }
+
+  public static tffa__Party__c updateOrganizationKYCDetails(tffa__Party__c party) {
+    party.tffa__IDVStatus__c = 'REVIEW';
+    party.tffa__KYCDecisionOutcome__c = 'REVIEW';
+    party.tffa__AutoKYCDecisionOutcome__c = 'REVIEW';
+    tffa__DueDiligence__c existingDD = CZWTFCHelperRepository.fetchExistingDueDiligence(party.Id, 'IDV');
+    if (existingDD == null) {
+      tffa__DueDiligence__c dd = new tffa__DueDiligence__c(
+        Name = 'Manual Verification',
+        tffa__Type__c = tffa.DueDiligenceType.IDV.name(),
+        tffa__Party__c = party.Id,
+        tffa__Status__c = 'REVIEW'
+      );
+      WTFCObjectManagerRepository.doUpsertObjects(new List<tffa__DueDiligence__c>{ dd });
+    }
+    return party;
   }
 
   public static tffa__Party__c searchCustomerInMDM(tffa__Party__c partyObj) {
@@ -228,7 +231,7 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
           new Map<String, Object>{
             'Party__c' => idvDD.tffa__Party__c,
             'SourcePartyId__c' => idvDD.tffa__SourcePartyId__c,
-            'Status__c' => 'REVIEW'
+            'Status__c' => new List<String>{ 'REVIEW', 'DECLINED' }
           }
         )
       );

@@ -569,7 +569,7 @@ The questionnaire is classified using facts such as Product, ProductCategory, Ap
         <type>Text</type>
     </nameField>
     <pluralLabel>Questionnaires</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

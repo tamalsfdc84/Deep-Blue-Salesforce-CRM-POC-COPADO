@@ -17,6 +17,24 @@ global virtual class EventExtension {
     global EventExtension() {
 
     }
+    global virtual void afterPost(List<SObject> ol) {
+
+    }
+    global virtual tffa.NotificationDTO createAppNotification(SObject obj) {
+        return null;
+    }
+    global virtual List<tffa.NotificationDTO> createAppNotifications(List<SObject> ol) {
+        return null;
+    }
+    global virtual tffa.NotificationDTO createEmailNotification(SObject obj) {
+        return null;
+    }
+    global virtual List<tffa.NotificationDTO> createEmailNotifications(List<SObject> ol) {
+        return null;
+    }
+    global virtual List<SObject> fetch(List<SObject> objs) {
+        return null;
+    }
     global static tffa.EventExtension getInstance() {
         return null;
     }

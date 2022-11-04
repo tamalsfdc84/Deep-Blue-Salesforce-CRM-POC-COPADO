@@ -1,0 +1,17 @@
+<apex:page docType="html-5.0" controller="CZDocusignRedirectController" action="{!init}" applyBodyTag="false" showHeader="false">
+  <apex:pageMessages />
+  <apex:outputPanel layout="block">
+    <p>Please click on Close</p>
+    <script>
+      const data = { event: "{!JSENCODE(event)}", envelopeId: "{!JSENCODE(envelopeId)}", signerId: "{!JSENCODE(signerId)}" };
+      console.log(data);
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage(data, window.parent.location);
+      }
+      if (window.opener && window.opener !== window) {
+        window.opener.postMessage(data, window.opener.location);
+        window.close();
+      }
+    </script>
+  </apex:outputPanel>
+</apex:page>

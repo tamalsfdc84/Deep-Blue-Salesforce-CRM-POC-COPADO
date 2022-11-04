@@ -344,7 +344,7 @@ Relationship between 2 company type applicants can also be captured such as PARE
         <type>Text</type>
     </nameField>
     <pluralLabel>Party Party Relationships</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>tffa__ValidateRelationCode</fullName>

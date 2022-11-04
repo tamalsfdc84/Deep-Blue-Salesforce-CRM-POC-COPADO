@@ -13,7 +13,14 @@ global inherited sharing class CZMDMDataUploadBatch extends tffa.AbstractBatchJo
       FISCCIntegrationLogService.setSubmissionObj(String.valueOf(submission.Id));
       FISCCIntegrationLogService.setPartyObjs();
       FISCCIntegrationLogService.setApplicationObjs();
-      FISCCIntegrationLogService.setIntegrationLog(String.valueOf(submission.Id));
+      FISCCIntegrationLogService.setIntegrationLog(
+        String.valueOf(submission.Id),
+        new List<String>{
+          FISCCIntegrationConstants.CREATE_CUSTOMER_MDM,
+          FISCCIntegrationConstants.CREATE_ACCOUNT_MDM,
+          FISCCIntegrationConstants.UPDATE_CUSTOMER_MDM
+        }
+      );
       FISCCIntegrationLogService.isBatchSource = true;
 
       CZMDMDataUploadExecutor.processRequest(submission);
@@ -21,14 +28,34 @@ global inherited sharing class CZMDMDataUploadBatch extends tffa.AbstractBatchJo
       tffa.Logger.error('CZMDMDataUploadBatch Exception msg : ' + ex.getMessage() + ' ' + ex.getStackTraceString());
     } finally {
       try {
+        List<tffa__Party__c> parties = new List<tffa__Party__c>();
         if (FISCCIntegrationLogService.partyObjs != null && FISCCIntegrationLogService.partyObjs.size() != 0) {
-          FISCCObjectManagerRepository.doUpsertPartys(FISCCIntegrationLogService.partyObjs);
+          for (tffa__Party__c partyObj : FISCCIntegrationLogService.partyObjs) {
+            tffa__Party__c party = new tffa__Party__c();
+            party.Id = partyObj.Id;
+            party.MDMUploadRetryCount__c = partyObj.MDMUploadRetryCount__c;
+            party.MDMUploadStatus__c = partyObj.MDMUploadStatus__c;
+            party.CZMDMPartyID__c = partyObj.CZMDMPartyID__c;
+            parties.add(party);
+          }
+          if (parties != null && !parties.isEmpty()) {
+            FISCCObjectManagerRepository.doUpsertParties(parties);
+          }
         }
+        List<tffa__Application__c> applications = new List<tffa__Application__c>();
         if (FISCCIntegrationLogService.applicationObjs != null && !FISCCIntegrationLogService.applicationObjs.isEmpty()) {
-          FISCCObjectManagerRepository.doUpsertApplications(FISCCIntegrationLogService.applicationObjs);
+          for (tffa__Application__c appObj : FISCCIntegrationLogService.applicationObjs) {
+            tffa__Application__c app = new tffa__Application__c();
+            app.Id = appObj.Id;
+            app.MDMUploadRetryCount__c = appObj.MDMUploadRetryCount__c;
+            app.MDMUploadStatus__c = appObj.MDMUploadStatus__c;
+            applications.add(app);
+          }
+          if (applications != null && !applications.isEmpty()) {
+            FISCCObjectManagerRepository.doUpsertApplications(applications);
+          }
         }
         FISCCIntegrationLogService.persistIntegationLogs();
-        
       } finally {
         tffa.Interaction.close();
       }
@@ -43,8 +70,10 @@ global inherited sharing class CZMDMDataUploadBatch extends tffa.AbstractBatchJo
   private static String getQuery() {
     List<tffa__Application__c> applicationList = CZWTFCApplicationRepository.findApplicationByMDMStatus();
 
+    // Avoid the application if its a certificate product and DPTDId is missing.
+    // Avoid the application if account is not yet opened.
     for (tffa__Application__c app : applicationList) {
-      if (app.tffa__Product__r.tffa__Category__c == 'CERTIFICATE' && String.isBlank(app.DPTDId__c)) {
+      if ((CZWTFCCommonHelper.isCertificateProduct(app) && String.isBlank(app.DPTDId__c)) || app.CZAccountOpeningDate__c == null) {
         continue;
       }
       subIdSet.add(app.tffa__Submission__c);

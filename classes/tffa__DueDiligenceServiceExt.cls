@@ -21,6 +21,9 @@ global virtual class DueDiligenceServiceExt {
     global virtual List<tffa__DueDiligence__c> postReadAll(tffa.QueryContext queryCtx, List<tffa__DueDiligence__c> entities) {
         return null;
     }
+    global virtual tffa__DueDiligence__c postRefreshStatus(tffa__DueDiligence__c diligence, Map<String,Object> params) {
+        return null;
+    }
     global virtual tffa__DueDiligence__c postUpdateStatus(tffa__DueDiligence__c dueDiligence) {
         return null;
     }

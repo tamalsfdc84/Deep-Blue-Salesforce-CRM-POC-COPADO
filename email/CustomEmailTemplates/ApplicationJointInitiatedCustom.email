@@ -206,11 +206,11 @@ text-indent: -1em; / Normalise space between bullets and text /
            <td align="left" class="em_black" style="font-size:13px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
             Dear&nbsp;{PartyName},<br/>
             <br/>
-            {primaryPartyName} has added you as a co-applicant on an application. When you’re ready to securely complete your application, <u><a alias="click here" conversion="false" data-linkto="http://" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:none;" title="click here">click here</a></u> to continue where you left off.<br/>
+            {primaryPartyName} as a co-applicant on an application. When you’re ready, click <u><a alias="here" conversion="false" data-linkto="http://" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:none;" title="here">here</a></u> to securely complete your application.<br/>
             <br/>
             You will be asked to authenticate your application with a one-time password. This is being sent to you in a separate email.<br/>
             <br/>
-            If you do not complete your application within 2 weeks from today, you’ll need to start the application over again.<br/>
+            If you do not complete your application within 14 business days from today, you’ll need to start the application over again.<br/>
             <br/>
             Thank you for choosing the {brandName} family of banks. If you have any questions, please contact us at {phoneNo} or <a style="color: #003e7e; text-decoration: underline;" href="mailto:{email}">{email}</a>.<br/><br/>
             </td></tr></table></td></tr></table></td></tr></table></td></tr></table>

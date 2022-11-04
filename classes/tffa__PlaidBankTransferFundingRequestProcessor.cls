@@ -12,6 +12,9 @@ global class PlaidBankTransferFundingRequestProcessor extends tffa.FundingReques
     global static tffa.PlaidBankTransferFundingRequestProcessor getInstance() {
         return null;
     }
+    global virtual tffa.PlaidBankTransferDTO.BankTransferCreateRequest populateMetadata(tffa.PlaidBankTransferDTO.BankTransferCreateRequest dto, tffa__FundingRequest__c fundingRequest, Map<String,Object> facts) {
+        return null;
+    }
     global override List<tffa__FundingRequest__c> process(List<tffa__FundingRequest__c> fundingRequests, Map<String,Object> facts) {
         return null;
     }

@@ -3131,7 +3131,7 @@ A party can be an existing customer of the bank or a new prospect.</description>
     <nameField>
         <encryptionScheme>None</encryptionScheme>
         <label>Party Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Parties</pluralLabel>

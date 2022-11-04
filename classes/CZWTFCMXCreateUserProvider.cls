@@ -9,14 +9,17 @@ public with sharing class CZWTFCMXCreateUserProvider {
       CZWTFCMXCreateUserResponseDTO.User user = new CZWTFCMXCreateUserResponseDTO.User();
       //fetch submission
       tffa__Submission__c submissionObj = CZWTFCSubmissionRepository.findSubmissionById(subId);
-      Id primaryPartyID;
+      String primaryPartyID;
 
+      if(params.containsKey('partyId')){
+        primaryPartyID = params.get('partyId');
+      }else{
       //loop over sub party to fetch primary party id.
       for (tffa__SubmissionPartyXref__c partyXref : submissionObj.tffa__PartyXrefs__r) {
-        if (partyXref.tffa__Primary__c) {
+        if (partyXref.tffa__Primary__c && partyXref.tffa__Type__c == FISCCIntegrationConstants.INDIVIDUAL) {
           primaryPartyID = partyXref.tffa__Party__r.id;
         }
-      }
+      }}
 
       // fetch party details
       tffa__Party__c partyObj = CZWTFCPartyRepository.findByIdWithChildObjects(primaryPartyID);

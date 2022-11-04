@@ -123,7 +123,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
 
     String q = new tffa.QueryBuilder(tffa__AccountPreference__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Application__c', 'In :attr1')
       .build()
       .toQuery();
@@ -137,7 +136,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static List<tffa__AdditionalPreference__c> findAdditionalPrefBySub(String subId) {
     String q = new tffa.QueryBuilder(tffa__AdditionalPreference__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Submission__c', '= :attr1')
       .build()
       .toQuery();
@@ -151,7 +149,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static tffa__AddOnService__c findAddOnServiceByCodeandType(String code, String type) {
     String q = new tffa.QueryBuilder(tffa__AddOnService__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Code__c', '= :attr1')
       .opAnd()
       .whereClause('tffa__Type__c', '=:attr2')
@@ -168,7 +165,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static List<tffa__AdditionalPreference__c> findAdditionalPrefByParty(String partyId) {
     String q = new tffa.QueryBuilder(tffa__AdditionalPreference__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Party__c', '= :attr1')
       .build()
       .toQuery();
@@ -182,7 +178,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static List<tffa__Stipulation__c> findStipByParty(String partyId) {
     String q = new tffa.QueryBuilder(tffa__Stipulation__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Party__c', '= :attr1')
       .build()
       .toQuery();
@@ -230,7 +225,6 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static void removeDDByPartyId(String partyId, List<String> typeList) {
     String q = new tffa.QueryBuilder(tffa__DueDiligence__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Party__c', '=:attr1')
       .opAnd()
       .whereClause('tffa__Type__c', 'In :attr2')
@@ -515,9 +509,9 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   }
 
   /**
-   * returns Brand Object
+   * returns tffa__FundingMatrix__c Object
    */
-  public static tffa__FundingMatrix__c fetchfundMatByextId(String externalId, String type, String channel) {
+  public static tffa__FundingMatrix__c fetchfundMatByextId(String externalId, String type, String channel, Decimal sortOrder) {
     String query = new tffa.QueryBuilder(tffa__FundingMatrix__c.SObjectType)
       .selectFields()
       .whereClause('ExternalId__c', '=:attr1')
@@ -525,10 +519,12 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
       .whereClause('tffa__Type__c', '!=:attr2')
       .opAnd()
       .whereClause('tffa__ChannelSet__c', '!=:attr3')
+      .opAnd()
+      .whereClause('tffa__SortOrder__c', '!=:attr4')
       .build()
       .toQuery();
 
-    List<tffa__FundingMatrix__c> fundMatLst = doQuery(query, new List<Object>{ externalId, type, channel });
+    List<tffa__FundingMatrix__c> fundMatLst = doQuery(query, new List<Object>{ externalId, type, channel, sortOrder });
 
     return fundMatLst.isEmpty() ? null : fundMatLst[0];
   }
@@ -835,25 +831,25 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
 
   /**
    * Save promo plan
-   * */
+   * 
   public static void savePromoPlan(List<tffa__PromotionPlan__c> promoPlanList) {
     doUpsert(promoPlanList);
-  }
+  }*/
 
   /**
    * Save Address
-   * */
+   * 
   public static void savesubBrand(List<SubBrand__c> subBrndLst) {
     doUpsert(subBrndLst);
   }
 
   /**
    * Save promo plan
-   * */
+   * *
   public static void saveBrandLoc(List<tffa__BrandLocation__c> brndLocList) {
     doUpsert(brndLocList);
   }
-
+  */
   /**
    * returns tffa__ProductProductXref__c Object
    */
@@ -890,10 +886,16 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
     return respList.isEmpty() ? null : respList[0];
   }
 
-  public static List<tffa__FundingMatrix__c> getFundingMat() {
-    String query = new tffa.QueryBuilder(tffa__FundingMatrix__c.SObjectType).selectFields().build().toQuery();
+  public static List<tffa__FundingMatrix__c> getFundingMat(String channel) {
+    Map<String, Object> mp = new Map<String, Object>();
+    mp.put('Channel__c', channel);
+    String query = new tffa.QueryBuilder(tffa__FundingMatrix__c.SObjectType)
+      .selectFields()
+      .whereWithFacts('VerifyFunding', mp)
+      .build()
+      .toQuery();
     List<tffa__FundingMatrix__c> respList = doQuery(query, new List<Object>{});
-    return respList.isEmpty() ? null : respList;
+    return respList.isEmpty() ? new List<tffa__FundingMatrix__c>() : respList;
   }
 
   /**
@@ -912,13 +914,17 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   public static Set<String> fetchUniqueInterestPlanCodes() {
     Set<String> intPlanCodeSet = new Set<String>();
     String prodTermQuery = new tffa.QueryBuilder(tffa__ProductTerm__c.SObjectType)
-      .selectFields(new List<String>{ 'tffa__InterestPlanCode__c' })
-      .whereClause('tffa__InterestPlanCode__c', '!= null')
+      .selectFields(new List<String>{ 'tffa__InterestPlanCode__c', 'CZFounderInterestPlan__c' })
       .build()
       .toQuery();
     List<tffa__ProductTerm__c> prodTermIntPlanCodeLst = doQuery(prodTermQuery, new List<Object>{});
     for (tffa__ProductTerm__c productTerm : prodTermIntPlanCodeLst) {
-      intPlanCodeSet.add(productTerm.tffa__InterestPlanCode__c);
+      if (!String.isBlank(productTerm.tffa__InterestPlanCode__c)) {
+        intPlanCodeSet.add(productTerm.tffa__InterestPlanCode__c);
+      }
+      if (!String.isBlank(productTerm.CZFounderInterestPlan__c)) {
+        intPlanCodeSet.add(productTerm.CZFounderInterestPlan__c);
+      }
     }
 
     String productQuery = new tffa.QueryBuilder(tffa__Product__c.SObjectType)
@@ -1032,6 +1038,30 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
     return respList.isEmpty() ? null : respList;
   }
 
+  public static List<InterestPlanDetails__c> fetchInterestPlanDetailsOrderByMinBal(String interestPlanCode, String brandCode) {
+    String query = new tffa.QueryBuilder(InterestPlanDetails__c.SObjectType)
+      .selectFields()
+      .whereClause('IntPlnCde__c', '=:attr1')
+      .opAnd()
+      .whereClause('BrandCode__c', '=:attr2')
+      .orderBy('TierMinBal__c')
+      .build()
+      .toQuery();
+    List<InterestPlanDetails__c> respList = doQuery(query, new List<Object>{ interestPlanCode, brandCode });
+    return respList.isEmpty() ? new List<InterestPlanDetails__c>() : respList;
+  }
+
+  public static List<InterestPlanDetails__c> fetchInterestPlanDetailsByBrandCodeOrderByMinBal(String brandCode) {
+    String query = new tffa.QueryBuilder(InterestPlanDetails__c.SObjectType)
+      .selectFields()
+      .whereClause('BrandCode__c', '=:attr1')
+      .orderBy('TierMinBal__c')
+      .build()
+      .toQuery();
+    List<InterestPlanDetails__c> respList = doQuery(query, new List<Object>{ brandCode });
+    return respList.isEmpty() ? new List<InterestPlanDetails__c>() : respList;
+  }
+
   public static MuleSoft_Adapter_Config__mdt fetchMulesoftAdapterConfig(String name) {
     String q = new tffa.QueryBuilder(MuleSoft_Adapter_Config__mdt.SObjectType)
       .selectFields()
@@ -1056,6 +1086,19 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
       .toQuery();
     List<CZTerafinaFisMapping__c> result = (List<CZTerafinaFisMapping__c>) doQuery(q, new List<Object>{ type, fisValue });
     return result.isEmpty() ? null : result[0];
+  }
+
+  /**
+   * Returns List<CZTerafinaFisMapping__c>
+   * Params: type
+   */
+  public static List<CZTerafinaFisMapping__c> getTFndFISMappingByType(String type) {
+    String q = new tffa.QueryBuilder(CZTerafinaFisMapping__c.SObjectType)
+      .selectFields()
+      .whereClause('Type__c', '=:attr1')
+      .build()
+      .toQuery();
+    return (List<CZTerafinaFisMapping__c>) doQuery(q, new List<Object>{ type });
   }
 
   /**
@@ -1098,6 +1141,57 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
     return result.isEmpty() ? null : result[0];
   }
 
+  /**
+   * Fetch Agent Obj by User Id
+   * Params: UserId
+   * Return: tffa__AgentDetail__c
+   */
+  public static tffa__AgentDetail__c getAgentDetailsByUserId(String userId) {
+    String q = new tffa.QueryBuilder(tffa__AgentDetail__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__User__c', '=:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__AgentDetail__c> agentDetailLst = doQuery(q, new List<Object>{ userId });
+
+    return agentDetailLst.isEmpty() ? null : agentDetailLst.get(0);
+  }
+
+  public static List<CZOfficerDetails__c> fetchOfficerDetails(String brandCode) {
+    String q = new tffa.QueryBuilder(CZOfficerDetails__c.SObjectType)
+      .selectFields()
+      .whereClause('BrandCode__c', '=:attr1')
+      .build()
+      .toQuery();
+    List<CZOfficerDetails__c> offDtls = doQuery(q, new List<Object>{ brandCode });
+    return offDtls.isEmpty() ? new List<CZOfficerDetails__c>() : offDtls;
+  }
+
+  public static void deleteOfficerList(List<CZOfficerDetails__c> fetOffDtls) {
+    if (fetOffDtls != null && !fetOffDtls.isEmpty()) {
+      doDelete(fetOffDtls);
+    }
+  }
+
+  public static List<tffa__BrandLocation__c> getBrandLocations() {
+    String query = new tffa.QueryBuilder(tffa__BrandLocation__c.SObjectType)
+      .selectFields()
+      .selectObject('tffa__Brand__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Location__r')
+      .selectFields()
+      .build()
+      .build()
+      .toQuery();
+    List<tffa__BrandLocation__c> listLocation = doQuery(query, new List<Object>{ null });
+    return listLocation;
+  }
+
+  public static void saveLocation(List<tffa__Location__c> brnchLocationLst) {
+    doUpsert(brnchLocationLst);
+  }
   public static List<tffa__Address__c> doUpsertaddress(tffa__Address__c entity) {
     return doUpsert(new List<tffa__Address__c>{ entity });
   }
@@ -1109,5 +1203,417 @@ public inherited sharing class CZWTFCHelperRepository extends tffa.AbstractRepos
   }
   public static List<tffa__Employment__c> doUpsertEmployment(List<tffa__Employment__c> entityLst) {
     return doUpsert(entityLst);
+  }
+
+  public static list<UploadFileHistory__c> save(list<UploadFileHistory__c> entities) {
+    return (list<UploadFileHistory__c>) doUpsert(entities);
+  }
+
+  public static List<UploadFileHistory__c> fetchUploadFileHistory(String applicationId, String type) {
+    String q = new tffa.QueryBuilder(UploadFileHistory__c.SObjectType)
+      .selectFields()
+      .whereClause('FileType__c', '=:attr1')
+      .opAnd()
+      .whereClause('ApplicationID__c', '=:attr2')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{ type, applicationId });
+  }
+
+  public static Map<String, String> fetchApplicantRoleMap() {
+    String q = new tffa.QueryBuilder(tffa__ApplicantRole__c.SObjectType).selectFields().build().toQuery();
+
+    List<tffa__ApplicantRole__c> applicationRoleList = doQuery(q, new List<Object>{});
+    Map<String, String> mp = new Map<String, String>();
+    if (applicationRoleList != null && !applicationRoleList.isEmpty()) {
+      for (tffa__ApplicantRole__c appRole : applicationRoleList) {
+        mp.put(appRole.CZFISRelationshipCode__c, appRole.tffa__Label__c);
+      }
+    }
+    return mp;
+  }
+
+  public static List<tffa__DisclosureParticipant__c> saveDisclosureParticipant(List<tffa__DisclosureParticipant__c> entities) {
+    return (List<tffa__DisclosureParticipant__c>) doUpsert(entities);
+  }
+
+  public static List<tffa__DisclosureItem__c> findParticipants(List<String> itemids) {
+    String q = new tffa.QueryBuilder(tffa__DisclosureItem__c.SObjectType)
+      .selectFields() /** */ /** */
+      .selectChildObject('CZDisclosureParticipantsConfig__r') /** */
+      .selectFields() /** */ /** */
+      .build() /** */
+      .selectObject('Template__r')
+      .selectFields()
+      .build()
+      .whereClause('Id', 'in:attr1')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{ itemids });
+  }
+
+  public static List<tffa__DisclosureChecklist__c> findByFacts(String eventName) {
+    String q = new tffa.QueryBuilder(tffa__DisclosureChecklist__c.SObjectType)
+      .selectFields()
+      .selectChildObject('Items__r')
+      .selectFields()
+      .selectObject('Template__r')
+      .selectFields()
+      .build()
+      .whereClause('Template__r.Disabled__c', '= false')
+      .orderBy('SortOrder__c')
+      .build()
+      .whereClause('tffa__EventName__c', '=:attr1')
+      .opAnd()
+      .whereClause('Disabled__c', '=false')
+      .orderBy('CZSortOrder__c')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{ eventName });
+  }
+
+  public static List<tffa__DisclosureChecklist__c> findByEventName(String eventName) {
+    String query = new tffa.QueryBuilder(tffa__DisclosureMatrix__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__EventName__c', '=:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__DisclosureMatrix__c> discMatrixList = (List<tffa__DisclosureMatrix__c>) doQuery(query, new List<Object>{ eventName });
+
+    List<Id> discChecklistIds = new List<Id>();
+    if (!discMatrixList.isEmpty()) {
+      for (tffa__DisclosureMatrix__c discMatrix : discMatrixList) {
+        discChecklistIds.add(discMatrix.tffa__Checklist__c);
+      }
+
+      String q = new tffa.QueryBuilder(tffa__DisclosureChecklist__c.SObjectType)
+        .selectFields()
+        .selectChildObject('Items__r')
+        .selectFields()
+        .selectObject('Template__r')
+        .selectFields()
+        .build()
+        .whereClause('Template__r.Disabled__c', '= false')
+        .orderBy('SortOrder__c')
+        .build()
+        .whereClause('Id', 'In :attr1')
+        .opAnd()
+        .whereClause('Disabled__c', '=false')
+        .build()
+        .toQuery();
+      return doQuery(q, new List<Object>{ discChecklistIds });
+    }
+    return new List<tffa__DisclosureChecklist__c>();
+  }
+
+  public static List<tffa__DisclosureChecklist__c> findDiscByFacts(String factsName, Map<String, Object> factsMap) {
+    String q = new tffa.QueryBuilder(tffa__DisclosureChecklist__c.SObjectType)
+      .selectFields()
+      .selectChildObject('Items__r')
+      .selectFields()
+      .selectObject('Template__r')
+      .selectFields()
+      .build()
+      .whereClause('Template__r.Disabled__c', '= false')
+      .orderBy('SortOrder__c')
+      .build()
+      .whereWithFacts(factsName, factsMap)
+      .orderBy('CZSortOrder__c')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{});
+  }
+
+  public static List<CZFISHolidayList__c> fetchFISHolidayDetails(String brandCode) {
+    String q = new tffa.QueryBuilder(CZFISHolidayList__c.SObjectType)
+      .selectFields()
+      .whereClause('BrandCode__c', '=:attr1')
+      .build()
+      .toQuery();
+    List<CZFISHolidayList__c> offDtls = doQuery(q, new List<Object>{ brandCode });
+    return offDtls.isEmpty() ? new List<CZFISHolidayList__c>() : offDtls;
+  }
+
+  public static void deleteFISHolidayList(List<CZFISHolidayList__c> holidayDtls) {
+    if (holidayDtls != null && !holidayDtls.isEmpty()) {
+      doDelete(holidayDtls);
+    }
+  }
+  public static Deluxe_Creds__mdt fetchDeluxeConfig(String name) {
+    String q = new tffa.QueryBuilder(Deluxe_Creds__mdt.SObjectType)
+      .selectFields()
+      .whereClause('DeveloperName', '=:attr1')
+      .build()
+      .toQuery();
+    List<Deluxe_Creds__mdt> result = (List<Deluxe_Creds__mdt>) doQuery(q, new List<Object>{ name });
+    return result.isEmpty() ? null : result[0];
+  }
+
+  // fetchUserDetails
+  public static List<User> fetchUserDetails(Set<Id> idList) {
+    String q = new tffa.QueryBuilder(User.SObjectType).selectFields().whereClause('Id', 'In :attr1').build().toQuery();
+    List<User> userList = doQuery(q, new List<Object>{ idList });
+    return userList.isEmpty() ? null : userList;
+  }
+
+  // findByQueueId
+  public static List<Group> findByQueueId(Set<Id> idList) {
+    String q = new tffa.QueryBuilder(Group.SObjectType).selectFields().whereClause('Id', 'In :attr1').build().toQuery();
+    List<Group> queueSobjectList = doQuery(q, new List<Object>{ idList });
+    return queueSobjectList.isEmpty() ? null : queueSobjectList;
+  }
+
+  public static tffa__Location__c fetchLocationByCode(String code) {
+    String query = new tffa.QueryBuilder(tffa__Location__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Code__c', '=:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Location__c> locList = doQuery(query, new List<Object>{ code });
+
+    return locList.isEmpty() ? null : locList[0];
+  }
+
+  public static List<tffa__PartyRelationCode__c> getPartyRelationCode() {
+    String q = new tffa.QueryBuilder(tffa__PartyRelationCode__c.SObjectType).selectFields().build().toQuery();
+
+    return (List<tffa__PartyRelationCode__c>) doQuery(q, new List<Object>{});
+  }
+
+  public static tffa__Questionnaire__c getCDDQuestions() {
+    String query = new tffa.QueryBuilder(tffa__QuestionnaireMatrix__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Type__c', '=:attr1')
+      .opAnd()
+      .whereClause('tffa__PartyType__c', '=:attr2')
+      .build()
+      .toQuery();
+    List<tffa__QuestionnaireMatrix__c> questionMatrixObj = doQuery(query, new List<Object>{ 'CDD', 'ORGANIZATION' });
+    if (questionMatrixObj != null && !questionMatrixObj.isEmpty()) {
+      String q = new tffa.QueryBuilder(tffa__Questionnaire__c.SObjectType).selectFields().whereClause('Id', '=:attr1').build().toQuery();
+
+      List<tffa__Questionnaire__c> queryQuestionObj = doQuery(q, new List<Object>{ questionMatrixObj[0].tffa__Questionnaire__c });
+      if (!queryQuestionObj.isEmpty()) {
+        tffa__Questionnaire__c questionnaireObj = tffa.QuestionnaireService.read(queryQuestionObj[0].Id);
+        return questionnaireObj;
+      }
+    }
+    return null;
+  }
+
+  /**
+   * @description
+   * @param String partyId
+   * @return void
+   **/
+  public static List<String> fetchPartiesWithCDD(List<tffa__Party__c> parties) {
+    List<Id> partyIds = new List<Id>();
+    for (tffa__Party__c p : parties) {
+      partyIds.add(p.Id);
+    }
+    String q = new tffa.QueryBuilder(tffa__DueDiligence__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Party__c', 'In :attr1')
+      .opAnd()
+      .whereClause('tffa__Type__c', '= :attr2')
+      .build()
+      .toQuery();
+    List<tffa__DueDiligence__c> ddList = doQuery(q, new List<Object>{ partyIds, 'CDD' });
+    List<String> partyIdList = new List<String>();
+    for (tffa__DueDiligence__c ddObj : ddList) {
+      partyIdList.add(ddObj.tffa__Party__c);
+    }
+    return partyIdList;
+  }
+
+  /**
+   * Returns List<CZTerafinaFisMapping__c>
+   * Params: type and fis value
+   */
+  public static Map<String, String> getTFndFISMappings(String type, List<String> fisValues) {
+    Map<String, String> mp = new Map<String, String>();
+    String q = new tffa.QueryBuilder(CZTerafinaFisMapping__c.SObjectType)
+      .selectFields()
+      .whereClause('Type__c', '=:attr1')
+      .opAnd()
+      .whereClause('FisValue__c', 'In :attr2')
+      .build()
+      .toQuery();
+    List<CZTerafinaFisMapping__c> result = (List<CZTerafinaFisMapping__c>) doQuery(q, new List<Object>{ type, fisValues });
+    if (!result.isEmpty()) {
+      for (CZTerafinaFisMapping__c tf : result) {
+        mp.put(tf.FisValue__c, tf.TerafinaValue__c);
+      }
+    }
+    return mp;
+  }
+
+  public static List<tffa__DisclosureMatrix__c> findDiscMatrixByFacts(String factsName, Map<String, Object> factsMap) {
+    String q = new tffa.QueryBuilder(tffa__DisclosureMatrix__c.SObjectType)
+      .selectFields()
+      .whereWithFacts(factsName, factsMap)
+      .orderBy('tffa__SortOrder__c')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{});
+  }
+
+  public static Map<Id, tffa__DisclosureChecklist__c> fetchDiscMapUsingMatrix(List<tffa__DisclosureMatrix__c> discMatrixList) {
+    List<Id> discChecklistIds = new List<Id>();
+    for (tffa__DisclosureMatrix__c discMatrix : discMatrixList) {
+      discChecklistIds.add(discMatrix.tffa__Checklist__c);
+    }
+
+    Map<Id, tffa__DisclosureChecklist__c> mp = new Map<Id, tffa__DisclosureChecklist__c>();
+
+    String q = new tffa.QueryBuilder(tffa__DisclosureChecklist__c.SObjectType)
+      .selectFields()
+      .selectChildObject('Items__r')
+      .selectFields()
+      .selectObject('Template__r')
+      .selectFields()
+      .build()
+      .whereClause('Template__r.Disabled__c', '= false')
+      .orderBy('SortOrder__c')
+      .build()
+      .whereClause('Id', 'In :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__DisclosureChecklist__c> discChecklistLst = (List<tffa__DisclosureChecklist__c>) doQuery(
+      q,
+      new List<Object>{ discChecklistIds }
+    );
+    if (!discChecklistLst.isEmpty()) {
+      for (tffa__DisclosureChecklist__c discChecklist : discChecklistLst) {
+        mp.put(discChecklist.Id, discChecklist);
+      }
+    }
+    return mp;
+  }
+
+  public static Map<String, InterestPlanDetails__c> fetchInterestPlanMap(String brandCode) {
+    String q = new tffa.QueryBuilder(InterestPlanDetails__c.SObjectType)
+      .selectFields()
+      .whereClause('BrandCode__c', '=:attr1')
+      .orderBy('TierMaxBal__c', true)
+      .build()
+      .toQuery();
+
+    List<InterestPlanDetails__c> intPlanDtlsList = doQuery(q, new List<Object>{ brandCode });
+    Map<String, InterestPlanDetails__c> interestPlanMap = new Map<String, InterestPlanDetails__c>();
+    List<String> dupPlancodeLst = new List<String>();
+    if (!intPlanDtlsList.isEmpty()) {
+      for (InterestPlanDetails__c intPlan : intPlanDtlsList) {
+        if (!interestPlanMap.containsKey(intPlan.IntPlnCde__c)) {
+          interestPlanMap.put(intPlan.IntPlnCde__c, intPlan);
+        }
+      }
+    }
+    return interestPlanMap;
+  }
+
+  public static List<tffa__DisclosureEnvelope__c> findGeneratedDisclosureEnvs() {
+    String q;
+    if (!Test.isRunningTest()) {
+      q = new tffa.QueryBuilder(tffa__DisclosureEnvelope__c.SObjectType)
+        .selectFields()
+        .whereClause('tffa__Status__c', '= :attr1')
+        .build()
+        .toQuery();
+    } else {
+      q = new tffa.QueryBuilder(tffa__DisclosureEnvelope__c.SObjectType)
+        .selectFields()
+        .whereClause('tffa__Status__c', '= :attr1')
+        .build()
+        .withLimit(1)
+        .toQuery();
+    }
+    return doQuery(q, new List<Object>{ 'GENERATED' });
+  }
+
+  public static List<tffa__Disclosure__c> findDiscsByEnvId(List<Id> envIds) {
+    String q = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType)
+      .selectFields()
+      .selectChildObject('DisclosureParticipants__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Envelope__c', 'In :attr1')
+      .build()
+      .toQuery();
+    //return Database.query(q);
+    return (List<tffa__Disclosure__c>) doQuery(q, new List<Object>{ envIds });
+  }
+
+  /**
+   * returns Brand Object
+   */
+  public static List<tffa__BrandLocation__c> fetchBrandLocByBrandAndLoc(String brandId, String locationId) {
+    String query = new tffa.QueryBuilder(tffa__BrandLocation__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Brand__c', '=:attr1')
+      .opAnd()
+      .whereClause('tffa__Location__c', '=:attr2')
+      .build()
+      .toQuery();
+
+    List<tffa__BrandLocation__c> respList = doQuery(query, new List<Object>{ brandId, locationId });
+
+    return respList.isEmpty() ? null : respList;
+  }
+
+  /**
+   *Fetch Disc env with disc by Sub Id
+   */
+  public static List<tffa__DisclosureEnvelope__c> fetchDiscEnvBySubId(Id subId) {
+    String q = new tffa.QueryBuilder(tffa__DisclosureEnvelope__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Disclosures__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Submission__c', '= :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__DisclosureEnvelope__c> respList = doQuery(q, new List<Object>{ subId });
+
+    return respList.isEmpty() ? null : respList;
+  }
+
+  /**
+   * Fetch Existing DD for Party
+   */
+  public static tffa__DueDiligence__c fetchExistingDueDiligence(String partyId, String ddType) {
+    String q = new tffa.QueryBuilder(tffa__DueDiligence__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Party__c', '= :attr1')
+      .opAnd()
+      .whereClause('tffa__Type__c', '= :attr2')
+      .build()
+      .toQuery();
+    List<tffa__DueDiligence__c> respList = doQuery(q, new List<Object>{ partyId, ddType });
+    return respList.isEmpty() ? null : respList[0];
+  }
+
+  /**
+   * Fetch  Disclosure by sub id which are not accepted yet.
+   */
+  public static List<tffa__Disclosure__c> findDiscBySubId(String subId) {
+    String q = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType)
+      .selectFields()
+      .whereClause('tffa__Submission__c', '=:attr1')
+      .opAnd()
+      .whereClause('tffa__Accepted__c', '=:attr2')
+      .opAnd()
+      .whereClause('tffa__Code__c', 'IN :attr3')
+      .build()
+      .toQuery();
+    //return Database.query(q);
+    return (List<tffa__Disclosure__c>) doQuery(
+      q,
+      new List<Object>{ subId, false, new List<String>{ 'DigitalbankingDisclosure_AllProd_AllBrand', 'ODServicesConsentForm' } }
+    );
   }
 }

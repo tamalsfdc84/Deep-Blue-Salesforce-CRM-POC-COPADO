@@ -534,7 +534,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Account Preferences</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

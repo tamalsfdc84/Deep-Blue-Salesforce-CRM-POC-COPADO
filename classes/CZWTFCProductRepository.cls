@@ -40,7 +40,6 @@ public with sharing class CZWTFCProductRepository extends tffa.AbstractRepositor
 
     String query = new tffa.QueryBuilder(tffa__Product__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Code__c', '=:attr1')
       .build()
       .toQuery();
@@ -50,7 +49,6 @@ public with sharing class CZWTFCProductRepository extends tffa.AbstractRepositor
     if (prod != null && !prod.isEmpty()) {
       String q = new tffa.QueryBuilder(tffa__ProductMatrix__c.SObjectType)
         .selectFields()
-        .build()
         .whereClause('tffa__Product__c', '=:attr1')
         .build()
         .toQuery();
@@ -88,6 +86,58 @@ public with sharing class CZWTFCProductRepository extends tffa.AbstractRepositor
       result = (List<tffa__BrandLocation__c>) doQuery(q, new List<Object>{ brandObj.Id });
     }
     return result.isEmpty() ? new List<tffa__BrandLocation__c>() : result;
+  }
+
+  public static List<tffa__ProductMatrix__c> getAllDigitalProductsMatrix() {
+    Map<String, Object> mp = new Map<String, Object>();
+    mp.put('Channel__c', 'DIGITAL');
+    String q = new tffa.QueryBuilder(tffa__ProductMatrix__c.SObjectType)
+      .selectFields()
+      .whereWithFacts('StateZipValidation', mp)
+      .build()
+      .toQuery();
+
+    List<tffa__ProductMatrix__c> result = (List<tffa__ProductMatrix__c>) doQuery(q, new List<Object>{});
+    return result.isEmpty() ? null : result;
+  }
+
+  public static tffa__Product__c getProductByCode(String prodCode) {
+
+    String query = new tffa.QueryBuilder(tffa__Product__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Terms__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Code__c', '=:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Product__c> prod = (List<tffa__Product__c>) doQuery(query, new List<Object>{ prodCode });
+
+    return prod.isEmpty() ? null : prod[0];
+  }
+
+  public static Map<String, tffa__Product__c> getProductByIds(Set<String> ids) {
+
+    String query = new tffa.QueryBuilder(tffa__Product__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__Terms__r')
+      .selectFields()
+      .build()
+      .whereClause('Id', 'In:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Product__c> prod = (List<tffa__Product__c>) doQuery(query, new List<Object>{ ids });
+
+    Map<String, tffa__Product__c> productMap = new Map<String, tffa__Product__c>();
+    if(!prod.isEmpty()){
+      for(tffa__Product__c product : prod){
+        productMap.put(product.Id, product);
+      }
+    }
+
+    return productMap;
   }
 
   /*

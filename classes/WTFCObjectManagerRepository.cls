@@ -11,4 +11,8 @@ global with sharing class WTFCObjectManagerRepository extends tffa.AbstractRepos
   public static List<sObject> doUpsertObjects(List<sObject> entities) {
     return doUpsert(entities);
   }
+
+  public static void doDeleteObjects(List<sObject> entities) {
+    doDelete(entities);
+  }
 }

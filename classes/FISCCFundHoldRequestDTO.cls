@@ -10,5 +10,6 @@ public with sharing class FISCCFundHoldRequestDTO extends FISCCRequestBaseDTO {
     public Decimal DPHldAmt;
     public Integer DPHldTyp;
     public String DPHldDesc;
+    public String DPHldOvride;
   }
 }

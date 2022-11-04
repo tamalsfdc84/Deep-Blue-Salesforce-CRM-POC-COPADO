@@ -83,6 +83,16 @@ global class ApplicationController extends tffa.AbstractController implements tf
     global static tffa.Response fetchDepositSwitchDetails(tffa.Context ctx, String paramsJson) {
         return null;
     }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response fetchExistingInvestmentPlans(tffa.Context ctx, String appJson, Map<String,Object> facts) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response fetchMerchantServicesDetails(tffa.Context ctx, Map<String,Object> facts) {
+        return null;
+    }
     @RemoteAction
     global static tffa.Response fetchPropertyValuation(tffa.Context ctx, String factsJson) {
         return null;
@@ -96,6 +106,11 @@ global class ApplicationController extends tffa.AbstractController implements tf
     global static tffa.Response fetchRates(tffa.Context ctx, String id, String factsJson) {
         return null;
     }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response generateInvestmentPlanNumber(tffa.Context ctx, String appJson, Map<String,Object> facts) {
+        return null;
+    }
     @RemoteAction
     global static tffa.Response initializeDepositSwitch(tffa.Context ctx, String paramsJson) {
         return null;
@@ -103,6 +118,11 @@ global class ApplicationController extends tffa.AbstractController implements tf
     @AuraEnabled
     @RemoteAction
     global static tffa.Response read(tffa.Context ctx, String id) {
+        return null;
+    }
+    @AuraEnabled
+    @RemoteAction
+    global static tffa.Response readAllAccountPreferences(tffa.Context ctx, String id, Map<String,Object> queryParams) {
         return null;
     }
     @AuraEnabled

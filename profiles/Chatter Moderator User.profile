@@ -279,6 +279,42 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZAPYResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAccNbrGenerationTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZAddCustRelnMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZAlloyIDVServiceProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -287,7 +323,143 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZBrandResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZCommonResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZCustDueDiligenceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZCustomerAliasMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeleteAliasResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeleteCustRelnResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeluxeController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeluxeControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeluxeMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDeluxeService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDepositOriginatorOrgTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDisclosureServiceProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignConstants</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignDocumentBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignDocumentExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignDocumentGenDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignDocumentGenRespDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignDocumentPrefillHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignRedirectController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignReminderHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignRepository</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDocusignTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZDousignReminderBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZFCMContentVersionDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchAliasResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchDocusignDocumentBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchDueDiligenceRespBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchEmailAddressResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchEmailAddressResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchPhoneNbrResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZFetchPhoneNbrResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZHSAAddBeneficiaryExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZHSAAddBeneficiaryReqDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZHSAAddBeneficiaryResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZHSAAddBeneficiaryResponseDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -296,6 +468,50 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZIDVServiceProviderTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRAAddBeneficiaryExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRAAddBeneficiaryReqDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRAAddBeneficiaryResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRAAddBeneficiaryResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRACreateRetirementPlanExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRACreateRetirementPlanReqDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRARetirementPlanResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZIRARetirementPlanResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZInquireCustRelnMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZInquireCustRelnResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZInquireCustomerRelnResponseBuilder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -315,7 +531,35 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZMDMBusinessCustDetailsRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMBusinessCustDetailsResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMBusinessCustDetailsResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMBusinessCustSearchMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMBusinessCustSearchResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMBusinessCustSearchResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZMDMCustomerCreationResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMCustomerUpdateResponseDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -335,6 +579,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZMDMIndSearchMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMIndividualSearchResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMDMIndividualSearchResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZMDMOAuthResponse</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -348,6 +604,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZMulesoftAdapter</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZMulesoftFileTransferService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -372,6 +632,82 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZNachaFilesTransferServiceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZPartyServiceExt</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZPromoCodeResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBAddDeputyRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBAddDeputyRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBAddOwnerRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBAddOwnerRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBVacantBoxDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBVacantBoxResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBVacantBoxResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSDBVacantBoxResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSafeDepositBoxProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZSafeDepositBoxTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZStarterCheckExecutor</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZStarterCheckExecutorTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZStarterCheckReqBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZStarterCheckReqBatchTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZTermDepositRateResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZUpdateCustomerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZUpdatePartyInfoBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -511,11 +847,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZWTFCCustomerAliasExtTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZWTFCDebitCardFundingVoidBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCDisclosureConverterTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDisclosureHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -528,6 +872,38 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCDisclosureResolverTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocuSignProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignAdapter</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignDocumentEnricher</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusignService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCDocusingResult</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -555,6 +931,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZWTFCExistingIRAPlanDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCExistingIRAPlanResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZWTFCFCMDocumentUploadBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -564,6 +948,62 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCFISAccountDetailsResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayBatchMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayBatchTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFISHolidayResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchExistingIRAPlanMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchIRAPlanBeneficiaryMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCFetchSDBTaxRateTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -583,7 +1023,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZWTFCHSAProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZWTFCHelperRepository</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCHolidayDetailsExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -592,6 +1040,54 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCIDAServiceProviderTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAFetchBeneficiaryExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAFetchCustomerPlansExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAFetchPlansDetailsExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanBeneficiaryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanBeneficiaryRespBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanBeneficiaryResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanDetailsResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanDetailsResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAPlanResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCIRAService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -847,6 +1343,34 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCOfficerDetailsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZWTFCPartyEventExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -860,6 +1384,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCPdfConverterBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCPrintRequestDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -883,11 +1411,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CZWTFCResultStatus</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CZWTFCRetryFailedAppBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CZWTFCServiceResolverTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CZWTFCSignersStatusDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1139,7 +1675,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCCreateAliasRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCreateAliasResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCreateAliasResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCCreateBenefCustomerRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCreateCustOrganizationHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1195,11 +1747,75 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCCustAccProfResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustAccRelnExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustAccRelnProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustAccRelnRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustAccRelnResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustAcctRelnResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustNameAddressRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustNameAddressResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustNameUpdateResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustToCustRelnDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustToCustRelnRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustToCustResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerAccProfileResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCCustomerAccountRelationDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCCustomerAccountRelationHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerAliasExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerCreationDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerDDExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1211,11 +1827,31 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCCustomerIndDemoExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCCustomerIndividualRequest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCCustomerIndividualResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerOrganizationResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerSearchExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerSearchResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCCustomerSearchResponseBuilder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1251,6 +1887,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCDOAddSDBDeputyExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDOAddSDBOwnerExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDOCardCreationRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCDOCertificateDepositDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1271,6 +1919,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCDOCustomerDDRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCDOCustomerDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1284,6 +1936,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCDOCustomerIndividualRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDOCustomerOrganizationRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDODebitCardAccRelRequestRequest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1303,6 +1963,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCDODueDiligenceDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCDOGenerateDepositAccNumberExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1316,6 +1980,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCDOMBPassRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDOMultiAccountRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDOOrganizationDemoRequest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1375,6 +2047,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCDebitCardDOMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDebitCardExpediteShippingMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCDebitCardNoGenMockClass</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1408,6 +2088,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCDeficitTransferResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDeleteAliasResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCDemographicsProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1475,11 +2163,43 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCDueDiligenceServiceExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCEstmtRegistrationMockClass</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCEstmtRegistrationTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCExpediteCardDeliveryRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCExpediteCardDeliveryResBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCExpediteCardDeliveryResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCFectchCDDMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCFetchAliasResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCFetchContactInfoExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCFetchDueDiligenceRespDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1511,6 +2231,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCGetAccProfResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCGetAccessTokenDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1531,6 +2255,38 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCGetAccountProfileResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetCustProfResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetCustomerProfileResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetFISHolidayDtlsResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetHolidayEntityResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetIRAPlanBeneficiaryEntityResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetIRAPlansDetailsEntityResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetIRAPlansEntityResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCGetInterestRatesEntityResponse</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1548,6 +2304,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCGetInterestRatesResponseBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetOfficerDetailsEntityResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCGetOfficerDetailsResponseBuilder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1619,6 +2383,22 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FISCCMultiAccDebitCardCreationMockClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCMultiAccDebitCardCreationRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCMultiAccDebitCardCreationResBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCMultiAccDebitCardCreationResDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FISCCMultiKeywordsRequestDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1632,6 +2412,22 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCObjectManagerRepository</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCOrgCustomerRelnExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCOrgCustomerRelnProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCOrganizationDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCOrganizationDemographicsDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1692,6 +2488,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FISCCUpdateCustInfoProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FISCCUpdateCustomerInfoExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3127,6 +3927,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>HTTPCalloutConstants</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>MDMAccountCreateExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -3144,6 +3948,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>MDMCustomerCreateRequest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MDMCustomerUpdateExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MDMCustomerUpdateRequest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -4243,6 +5055,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>WT_TerafinaAPYHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>WT_TerafinaAPYHelper_T</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>WT_TestSetupHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4971,6 +5791,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__AccountTitleResolver</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__AccountingDataProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4984,6 +5808,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__AddOnServiceChecklistService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__AddOnServiceMatrixService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -5299,6 +6127,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__ApplicationProcessorBatchJob</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__ApplicationProcessorFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -5531,6 +6363,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__BlocklistDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__BlocklistService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__BrandRESTService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -5607,6 +6447,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__CSIDepositDocumentRequestMapper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__CSIDisclosureProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -5615,7 +6459,51 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__CSIDocumentRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSIDocumentRequestMapper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSIDocumentResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSIPartnerDataDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__CSIRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSISessionRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSISessionResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSISessionValidationRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSISignatureMetadataResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSITransactionRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSITransactionResponseDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__CSITranslateRequestDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -5991,7 +6879,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__DisclosureDocumentSyncBatchJob</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__DisclosureEnvelopeService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__DisclosureEnvelopeServiceExt</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__DisclosureEventExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__DisclosureMatrixService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6032,6 +6936,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__DisclosureStatus</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__DisclosureSynchronizationBatchJob</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6184,6 +7092,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__EmailTemplateRepository</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__EmbossedNameResolver</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6539,6 +7451,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__HttpCalloutSimulator</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__HttpClient</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -6639,6 +7555,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__InvestmentAccountProvider</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__InvestmentAccountService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__JobController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -6703,6 +7627,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__ListOfValuesDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__ListOfValuesService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__LocationRepository</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -6756,6 +7688,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__MassActionControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__MerchantServicesProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -7055,6 +7991,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__NameDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__NameResolver</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__NameResolverFactory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__Namespace</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -7184,6 +8132,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__PartyAddressXrefServiceExt</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__PartyAgeMatrixService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -7959,6 +8911,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__StipulationMatrixService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__StipulationRepository</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -8032,6 +8988,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__SubmissionLifecycleTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__SubmissionPartyEventExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -8211,6 +9171,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>tffa__WKFSDepositDocumentRequestMapper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__WKFSDepositTransactionDataDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>tffa__WKFSDisclosureProvider</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -8224,6 +9192,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>tffa__WKFSDocumentRequestMapper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tffa__WKFSDocumentRequestMapperFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -40762,6 +41734,24 @@
         <layout>CZConvergeConfiguration__mdt-Converge Configuration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CZDisclosureParticipantConfig__c-Disclosure Participant Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CZDocusignDataEnricherConfig__mdt-Docusign Data Enrichment Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CZMaxsafeAllocationDetails__c-MaxsafeAllocationDetails Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CZOfficerDetails__c-OfficerDetails Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CZPartyAlias__c-PartyAlias Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CZProductCharterConfig__mdt-Product Charter Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CalcProcStepRelationship-Expression Set Step Relationship Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -40904,6 +41894,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>DelegatedAccount-External Managed Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Deluxe_Creds__mdt-Deluxe_Creds Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DistributorAuthorization-Distributor Authorization Layout</layout>
@@ -41694,6 +42687,292 @@
     <layoutAssignments>
         <layout>WorkerCompCoverageClass-Worker Compensation Coverage Class Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AccountPreference__c-tffa__Account Preference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AddOnServiceChecklist__c-tffa__Add On Service Checklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AddOnServiceMatrix__c-tffa__Add On Service Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Address__c-tffa__Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AgentDetail__c-tffa__AgentDetail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicantRoleMatrix__c-tffa__Applicant Role Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicantRole__c-tffa__Applicant Role Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicationPartyXref__c-tffa__ApplicationPartyXref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__CertificateApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__CertificateApplication</layout>
+        <recordType>tffa__Application__c.tffa__CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__ESA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__HSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Beneficiary__c-tffa__Beneficiary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Blocklist__mdt-tffa__Blocklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Brand__c-tffa__Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DepositBoxConfigurationItem__c-tffa__Deposit Box Configuration Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DepositBoxConfiguration__c-tffa__Deposit Box Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureChecklist__c-tffa__Disclosure Checklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureEnvelope__c-tffa__Disclosure Envelope Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureItem__c-tffa__Disclosure Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureMatrix__c-tffa__Disclosure Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Disclosure__c-tffa__Disclosure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingMatrix__c-tffa__Funding Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Debit Card</layout>
+        <recordType>tffa__FundingRequest__c.tffa__DEBIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.BANK_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.PRINT_INVOICE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.WAIVE_FEE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.WIRE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.tffa__CHECK</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Paypal</layout>
+        <recordType>tffa__FundingRequest__c.tffa__PAYPAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Wire</layout>
+        <recordType>tffa__FundingRequest__c.tffa__WIRE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Identification__c-tffa__Identification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ListOfValues__c-tffa__List of Values Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Location__c-tffa__Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyAgeMatrix__c-tffa__Party Age Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyDecisionMatrix__c-tffa__Party Decision Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyPartyXref__c-tffa__Party Party Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Party__c-tffa__Individual</layout>
+        <recordType>tffa__Party__c.tffa__INDIVIDUAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Party__c-tffa__Organization</layout>
+        <recordType>tffa__Party__c.tffa__ORGANIZATION</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ProductTerm__c-tffa__ProductTerm Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__CERTIFICATE</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__CERTIFICATE</layout>
+        <recordType>tffa__Product__c.tffa__CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__HSA</layout>
+        <recordType>tffa__Product__c.tffa__HSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__IRA</layout>
+        <recordType>tffa__Product__c.tffa__IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BROKERAGE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CREDIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_LINE_OF_CREDIT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_REALESTATE_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_SAFE_DEPOSIT_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_TERM_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CREDIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CRYPTO_CUSTODIAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__EDUCATION_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__HELOC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MERCHANT_SERVICES</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MORTGAGE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__PERSONAL_LINE_OF_CREDIT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__PERSONAL_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SAFE_DEPOSIT_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SBA_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__VEHICLE_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__StipulationMatrix__c-tffa__Stipulation Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Submission__c-tffa__Submission Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -41866,6 +43145,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CZDocusignRedirectPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -44109,15 +45392,7 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>ShareFilesWithNetworks</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>ShowCompanyNameAsUserBadge</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewGlobalHeader</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

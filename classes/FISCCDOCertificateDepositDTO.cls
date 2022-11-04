@@ -15,5 +15,14 @@ public with sharing class FISCCDOCertificateDepositDTO extends FISCCRequestBaseD
     public Integer DPTDGLAcctNbrOfst;
     public Integer DPTDGLCstCntrOfst;
     public String DLTNCOvrideErrLvlInd;
+    public String DPTDCurIntRte;
+    public String DPTDIntFreqInd;
+    public String DPTDIntFreq;
+    public String TmeLvlIntExtTypCde;
+    public String TmeLvlIntExtTrsfrAbaNbr;
+    public String DPTDIntTrsfrToAcct;
+    public String DPTDPmtMeth;
+    public Integer DPRetAcctTxnCde;
+    public String DPTDOpenAPY;
   }
 }

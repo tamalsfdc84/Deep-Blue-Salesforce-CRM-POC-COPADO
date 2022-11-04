@@ -385,7 +385,7 @@
     <dashboardType>MyTeamUser</dashboardType>
     <description>Collection of reports relevant to an operational user (banker or agent of bank) dealing with referrals. Reports here mostly depict referral information.</description>
     <isGridLayout>true</isGridLayout>
-    <runningUser>dbath@wintrust.com.wtprod</runningUser>
+    <runningUser>deploy.admin@wintrustbank.com.wtfc</runningUser>
     <textColor>#000000</textColor>
     <title>Referral Operations</title>
     <titleColor>#000000</titleColor>

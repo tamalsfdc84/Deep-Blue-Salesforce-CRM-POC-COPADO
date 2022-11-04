@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DAILY</fullName>
+        <default>false</default>
+        <label>Daily</label>
+    </customValue>
+    <customValue>
+        <fullName>MONTHLY</fullName>
+        <default>false</default>
+        <label>Monthly</label>
+    </customValue>
+    <description>Different Billing Frequency</description>
+    <masterLabel>BillingFrequency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

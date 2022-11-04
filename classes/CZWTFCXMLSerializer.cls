@@ -62,4 +62,53 @@ public with sharing class CZWTFCXMLSerializer {
     }
     return cNodeMap;
   }
+
+  public string serialize(object objectToSerialize) {
+    object deSerialized = JSON.deserializeUntyped(JSON.serialize(objectToSerialize));
+    return !string.isEmpty(rootElement)
+      ? Wrap(rootElement, serialize((Map<string, object>) deSerialized))
+      : serialize((Map<string, object>) deSerialized);
+  }
+
+  private string serialize(Map<string, object> objectMap) {
+    string xmlString = '';
+    for (string key : objectMap.keySet()) {
+      object o = objectMap.get(key);
+      if (o == null) {
+        if (this.SerializeNulls)
+          xmlString += wrap(key, null);
+      } else if (o instanceof List<object>)
+        xmlString += serialize((List<object>) o, key);
+      else if (o instanceof Map<string, object>)
+        xmlString += wrap(key, serialize((Map<string, object>) o));
+      else
+        xmlString += wrap(key, string.valueOf(o));
+    }
+    return xmlString;
+  }
+
+  public string serialize(object objectToSerialize, boolean suppressApexObjectNulls, string addRootElementName) {
+    this.serializeNulls = !suppressApexObjectNulls;
+    this.rootElement = addRootElementName;
+    return serialize(objectToSerialize);
+  }
+
+  private string serialize(List<object> objectList, string key) {
+    string xmlString = '';
+    for (object o : objectList) {
+      if (o instanceof string)
+        xmlString += wrap(key, string.valueOf(o));
+      else if (o instanceof List<object>)
+        xmlString += wrap(key, serialize((List<object>) o, key));
+      else
+        xmlString += wrap(key, serialize((Map<string, object>) o));
+    }
+    return xmlString;
+  }
+
+  private string wrap(string key, string value) {
+    return (string.isNotBlank(value) || serializeNulls)
+      ? ('<' + key + '>' + (string.isBlank(value) ? '' : value) + '</' + key + '>')
+      : value;
+  }
 }

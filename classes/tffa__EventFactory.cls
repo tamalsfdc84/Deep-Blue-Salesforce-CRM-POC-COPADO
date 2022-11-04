@@ -28,6 +28,10 @@ global class EventConfiguration {
         get;
         set;
     }
+    global String defaultReplyToEmailAddress {
+        get;
+        set;
+    }
     global String defaultSenderEmailAddress {
         get;
         set;
@@ -53,6 +57,10 @@ global class EventConfiguration {
         set;
     }
     global Boolean saveEmailAsActivity {
+        get;
+        set;
+    }
+    global Boolean sendEmailToPrimaryContactOnly {
         get;
         set;
     }

@@ -1,4 +1,4 @@
-<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Your {brandName} application" recipientType="User" relatedToType="tffa__Application__c">
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="Documents Required: Your {brandName} application" recipientType="User" relatedToType="tffa__Application__c">
   <messaging:htmlEmailBody >
 <html xmlns="http://www.w3.org/1999/xhtml"
 xmlns:v="urn:schemas-microsoft-com:vml"
@@ -10,7 +10,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 <o:PixelsPerInch>96</o:PixelsPerInch>
 </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<title>Your {brandName} application</title>
+<title>Documents Required: Your {brandName} application</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
@@ -206,9 +206,14 @@ text-indent: -1em; / Normalise space between bullets and text /
            <td align="left" class="em_black" style="font-size:13px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
             Dear&nbsp;{PartyName},<br/>
             <br/>
-            Thank you for your application. We will need some additional information from you so we can finish processing your request.<br/><br/>
-		        You can upload copies of required documents to your account by logging in to your application <u><a alias="here" conversion="false" data-linkto="http://" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:none;" title="here">here</a></u><br/><br/>
-            Thank you for choosing the {brandName} family of banks. If you have any questions, please contact us at {phoneNo} or <a style="color: #003e7e; text-decoration: underline;" href="mailto:{email}">{email}</a>.
+            Thank you for choosing {brandName} family of Wintrust Community Banks. We are looking forward to serving your financial needs. <br/><br/>
+            During a review of your application, it has been determined we need additional documentation in order to process your request. 
+            <br/><br/>
+            {Banker_Comments}
+            <br/><br/>
+		        Please <u><a alias="click here" conversion="false" data-linkto="http://" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:none;" title="click here">click here</a></u> and upload a copy of the required document(s).<br/><br/>
+            If you have any questions, please reach out to {brandName} at <a style="color: #003e7e; text-decoration: underline;" href="mailto:{email}">{email}</a>.<br/><br/>
+            Your confirmation number is {ConfirmationNumber}.
 			</td></tr></table></td></tr></table></td></tr></table></td></tr></table>
 
 <!-- ==// Section 2 Banner Section == --> 

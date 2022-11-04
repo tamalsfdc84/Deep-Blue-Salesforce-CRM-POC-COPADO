@@ -33,7 +33,16 @@ global class DisclosureService extends tffa.AbstractService {
     global static List<tffa__Disclosure__c> fetchStatus(List<tffa__Disclosure__c> entities, Map<String,Object> facts) {
         return null;
     }
+    global static List<tffa__Disclosure__c> fetch(Map<String,Object> facts) {
+        return null;
+    }
+    global static List<tffa__Disclosure__c> generateDisclosures(Map<String,Object> facts) {
+        return null;
+    }
     global static List<tffa__Disclosure__c> readAll(tffa.QueryContext queryCtx) {
+        return null;
+    }
+    global static List<tffa__Disclosure__c> resolveByFacts(Map<String,Object> facts) {
         return null;
     }
     global static List<tffa__Disclosure__c> resolve(Map<String,Object> facts) {

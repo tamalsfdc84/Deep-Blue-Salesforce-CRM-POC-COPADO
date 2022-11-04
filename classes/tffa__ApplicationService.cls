@@ -39,6 +39,9 @@ global class ApplicationService extends tffa.AbstractService {
     global static tffa__Application__c fetchFinancingTable(tffa__Application__c app, Map<String,Object> facts) {
         return null;
     }
+    global static Map<String,Object> fetchMerchantServicesDetails(Map<String,Object> facts) {
+        return null;
+    }
     global static tffa.PropertyDetailsDTO fetchPropertyValuation(Map<String,Object> params) {
         return null;
     }
@@ -66,6 +69,9 @@ global class ApplicationService extends tffa.AbstractService {
     global static tffa__Application__c fetchVehicleValuation(Map<String,Object> params) {
         return null;
     }
+    global static List<tffa__Application__c> generateAccountNumbers(Map<String,Object> facts) {
+        return null;
+    }
     global static tffa__Application__c modify(tffa__Application__c app) {
         return null;
     }
@@ -73,6 +79,9 @@ global class ApplicationService extends tffa.AbstractService {
         return null;
     }
     global static tffa__Application__c parseVehicleIdentityDocument(Map<String,Object> params) {
+        return null;
+    }
+    global static List<tffa__Application__c> processSync(Map<String,Object> facts) {
         return null;
     }
     global static List<tffa__Application__c> process(List<tffa__Application__c> apps, Map<String,Object> facts) {

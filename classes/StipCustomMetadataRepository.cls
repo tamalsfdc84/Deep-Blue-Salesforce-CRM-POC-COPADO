@@ -33,7 +33,6 @@ public with sharing class StipCustomMetadataRepository extends tffa.AbstractRepo
   public static tffa__Stipulation__c getStipulation(string stipulationId) {
     String query = new tffa.QueryBuilder(tffa__Stipulation__c.SObjectType)
       .selectFields()
-      .build()
       .selectObject('tffa__Party__r')
       .selectFields()
       .build()

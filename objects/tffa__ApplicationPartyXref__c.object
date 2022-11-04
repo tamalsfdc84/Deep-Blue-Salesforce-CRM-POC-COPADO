@@ -431,7 +431,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Application Parties</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

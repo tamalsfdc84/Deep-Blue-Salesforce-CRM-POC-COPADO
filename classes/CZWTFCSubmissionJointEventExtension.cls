@@ -10,6 +10,7 @@
  * (Custom Metadata).
  */
 global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.EventExtension {
+  private static tffa__Brand__c brandObj;
   global CZWTFCSubmissionJointEventExtension(string eventName) {
     this.eventName = eventName;
   }
@@ -31,13 +32,19 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
       xref = (tffa__SubmissionPartyXref__c) obj;
     }
     tffa.Logger.debug('in CZWTFCSubmissionJointEventExtension.post for eventname ::' + eventName);
-
+    if (sub != null) {
+      sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(sub.Id);
+      brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
+    } else {
+      sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(xref.tffa__Submission__c);
+    }
+    tffa.Logger.debug('in CZWTFCSubmissionJointEventExtension.post submission ::' + sub);
     //move this to switch case
     if (eventName == 'Submission_Primary_Submitted') {
       processPrimaryApplicantNotifications(sub);
       processJointInitiatedNotifications(sub);
     } else if (eventName == 'Submission_Joint_Abandoned' || eventName == 'Submission_Joint_Saved') {
-      processJointApplicantNotifications(xref);
+      processJointApplicantNotifications(sub, xref);
     }
 
     return obj;
@@ -45,12 +52,11 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
 
   private void processPrimaryApplicantNotifications(tffa__Submission__c sub) {
     // sub = tffa.SubmissionRepository.findByIdWithPartiesAndApplications(sub.Id);
-    sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(sub.Id);
     List<tffa.NotificationDTO> notifications = new List<tffa.NotificationDTO>();
     if (!sub.tffa__PartyXrefs__r.isEmpty()) {
       for (tffa__SubmissionPartyXref__c spx : sub.tffa__PartyXrefs__r) {
         tffa.NotificationDTO.NotificationRecipientDTO[] recipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
-        if (spx.tffa__Primary__c) {
+        if (spx.tffa__IsPresent__c) {
           tffa__Party__c p = spx.tffa__Party__r;
           recipients.add(
             new tffa.NotificationDTO.NotificationRecipientDTO(
@@ -61,7 +67,8 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
               p.tffa__PrimaryPhone__c
             )
           );
-          if (!recipients.isEmpty()) {
+          // 'Application Submitted With Joint Applicant's Information Pending' email send to only individual party.
+          if ((!recipients.isEmpty()) && spx.tffa__Type__c.equalsIgnoreCase('INDIVIDUAL')) {
             tffa.NotificationDTO notif = new tffa.NotificationDTO();
             notif.primaryEntityId = p.Id;
             notif.eventName = eventName;
@@ -82,12 +89,12 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
 
   private void processJointInitiatedNotifications(tffa__Submission__c sub) {
     //sub = tffa.SubmissionRepository.findByIdWithPartiesAndApplications(sub.Id);
-    sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(sub.Id);
+    //sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(sub.Id);
     List<tffa.NotificationDTO> notifications = new List<tffa.NotificationDTO>();
     if (!sub.tffa__PartyXrefs__r.isEmpty()) {
       for (tffa__SubmissionPartyXref__c spx : sub.tffa__PartyXrefs__r) {
         tffa.NotificationDTO.NotificationRecipientDTO[] recipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
-        if (!spx.tffa__Primary__c && !spx.tffa__IsPresent__c) {
+        if (!spx.tffa__IsPresent__c) {
           tffa__Party__c p = spx.tffa__Party__r;
           recipients.add(
             new tffa.NotificationDTO.NotificationRecipientDTO(
@@ -128,10 +135,9 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
   }
 
   @TestVisible
-  private void processJointApplicantNotifications(tffa__SubmissionPartyXref__c spx) {
+  private void processJointApplicantNotifications(tffa__Submission__c sub, tffa__SubmissionPartyXref__c spx) {
     // tffa__Submission__c sub = tffa.SubmissionRepository.findByIdWithPrimaryPartyAndApplications(spx.tffa__Submission__c);
-    tffa__Submission__c sub = new tffa__Submission__c();
-    sub = CZWTFCSubmissionRepository.findSubmissionAndChildObjById(spx.tffa__Submission__c);
+
     List<tffa.NotificationDTO> notifications = new List<tffa.NotificationDTO>();
     tffa.NotificationDTO.NotificationRecipientDTO[] recipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
     tffa.NotificationDTO.NotificationRecipientDTO[] ccRecipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
@@ -201,7 +207,13 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
       when 'Submission_Joint_Initiated', 'Submission_Primary_Submitted' {
         //notif.addFact('PartyName', party.Name);
         suffix = party.tffa__Suffix__c != null ? ' ' + party.tffa__Suffix__c : '';
-        factsMap.put('PartyName', party.tffa__FirstName__c + ' ' + party.tffa__LastName__c + suffix);
+
+        if (party.tffa__Type__c == 'INDIVIDUAL') {
+          factsMap.put('PartyName', party.tffa__FirstName__c + ' ' + party.tffa__LastName__c + suffix);
+        } else {
+          factsMap.put('PartyName', party.tffa__LegalName__c);
+        }
+
         PageReference pageRef = new PageReference(tffa__SiteUrl__c.getOrgDefaults().tffa__Url__c + '/sales');
         pageRef.getParameters().put('q', buildQueryParam(sub, party, true));
         pageRef.getParameters().put('medium', 'email');
@@ -213,7 +225,7 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
 
         //build for addition of facts  Submission_Joint_Initiated / Submission_Primary_Submitted
         tffa.Logger.debug('sub.tffa__Brand__c ::::' + sub.tffa__Brand__c);
-        tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
+
         tffa.Logger.debug('brandObj subjointevnt ::::' + brandObj);
         factsMap.put('brandName', brandObj.Name);
         factsMap.put('phoneNo', brandObj.EmailPhone__c);
@@ -225,15 +237,27 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
         factsMap.put('bankUrl', brandObj.tffa__InfoUrl__c);
         factsMap.put('email', brandObj.tffa__ContactEmail__c);
         tffa__Party__c primaryPartyObj = new tffa__Party__c();
-        if (!sub.tffa__PartyXrefs__r.isEmpty()) {
-          for (tffa__SubmissionPartyXref__c spXref : sub.tffa__PartyXrefs__r) {
-            if (spXref.tffa__Type__c == 'INDIVIDUAL' && (spXref.tffa__Primary__c || spXref.tffa__PrimaryContact__c)) {
-              primaryPartyObj = spXref.tffa__Party__r;
+        if (sub.tffa__Channel__c == FISCCIntegrationConstants.DIGITAL) {
+          if (!sub.tffa__PartyXrefs__r.isEmpty()) {
+            for (tffa__SubmissionPartyXref__c spXref : sub.tffa__PartyXrefs__r) {
+              if (spXref.tffa__Type__c == 'INDIVIDUAL' && (spXref.tffa__Primary__c || spXref.tffa__PrimaryContact__c)) {
+                primaryPartyObj = spXref.tffa__Party__r;
+              }
             }
           }
+          suffix = primaryPartyObj.tffa__Suffix__c != null ? ' ' + primaryPartyObj.tffa__Suffix__c : '';
+          factsMap.put(
+            'primaryPartyName',
+            primaryPartyObj.tffa__FirstName__c +
+            ' ' +
+            primaryPartyObj.tffa__LastName__c +
+            suffix +
+            ' has added you'
+          );
+        } else {
+          factsMap.put('primaryPartyName', 'You have been added ');
         }
-        suffix = primaryPartyObj.tffa__Suffix__c != null ? ' ' + primaryPartyObj.tffa__Suffix__c : '';
-        factsMap.put('primaryPartyName', primaryPartyObj.tffa__FirstName__c + ' ' + primaryPartyObj.tffa__LastName__c + suffix);
+
         if (brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
           String subBrandName = '';
           String commaSeperateSubBrandName = '';
@@ -264,7 +288,7 @@ global inherited sharing class CZWTFCSubmissionJointEventExtension extends tffa.
         suffix = party.tffa__Suffix__c != null ? ' ' + party.tffa__Suffix__c : '';
         factsMap.put('PartyName', party.tffa__FirstName__c + ' ' + party.tffa__LastName__c + suffix);
         tffa.Logger.debug('sub.tffa__Brand__c ::::' + sub.tffa__Brand__c);
-        tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
+        // tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
         tffa.Logger.debug('brandObj subjointevnt ::::' + brandObj);
         factsMap.put('brandName', brandObj.Name);
         factsMap.put('phoneNo', brandObj.EmailPhone__c);

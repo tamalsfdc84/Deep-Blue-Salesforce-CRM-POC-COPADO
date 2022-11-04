@@ -15,11 +15,17 @@ global virtual class SubmissionPartyXrefServiceExt {
     global virtual List<tffa__SubmissionPartyXref__c> postCreateOrUpdate(String parentId, List<tffa__SubmissionPartyXref__c> entities) {
         return null;
     }
+    global virtual void postDisable(List<tffa__SubmissionPartyXref__c> entities, Map<String,Object> params) {
+
+    }
     global virtual List<tffa__SubmissionPartyXref__c> postReadAll(List<tffa__SubmissionPartyXref__c> entities, tffa.QueryContext queryCtx) {
         return null;
     }
     global virtual List<tffa__SubmissionPartyXref__c> postReadAll(tffa.QueryContext queryCtx, List<tffa__SubmissionPartyXref__c> entities) {
         return null;
+    }
+    global virtual void postRemove(List<tffa__SubmissionPartyXref__c> entities, Map<String,Object> params) {
+
     }
     global virtual List<tffa__SubmissionPartyXref__c> preCreateOrUpdate(List<tffa__SubmissionPartyXref__c> entities, Map<String,Object> params) {
         return null;

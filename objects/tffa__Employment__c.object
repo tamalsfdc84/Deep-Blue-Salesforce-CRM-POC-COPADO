@@ -616,7 +616,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Employments</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

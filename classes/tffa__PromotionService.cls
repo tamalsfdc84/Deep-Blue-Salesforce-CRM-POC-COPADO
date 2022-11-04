@@ -9,6 +9,9 @@ global class PromotionService extends tffa.AbstractService {
     global PromotionService() {
 
     }
+    global static tffa__Application__c apply(tffa__Application__c app, Map<String,Object> facts) {
+        return null;
+    }
     global static tffa__Promotion__c create(tffa__Promotion__c promotion) {
         return null;
     }
@@ -28,6 +31,9 @@ global class PromotionService extends tffa.AbstractService {
         return null;
     }
     global static tffa.PageDTO readPage(tffa.QueryContext queryCtx) {
+        return null;
+    }
+    global static tffa__Application__c remove(tffa__Application__c app, Map<String,Object> facts) {
         return null;
     }
     global static List<tffa__PromotionPlan__c> resolvePlansByFacts(String promotionCode, String fieldSetName, Map<String,Object> facts) {

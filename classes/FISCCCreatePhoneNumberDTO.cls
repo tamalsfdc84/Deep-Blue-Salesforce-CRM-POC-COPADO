@@ -4,4 +4,5 @@ public with sharing class FISCCCreatePhoneNumberDTO {
   public String LocalNbr;
   public String AreaCde;
   public String ExpireDte;
+  public String EffDte;
 }

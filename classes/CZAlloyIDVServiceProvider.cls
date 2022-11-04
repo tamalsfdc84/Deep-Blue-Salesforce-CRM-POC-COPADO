@@ -183,7 +183,7 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
       // filter relationships by business owner or authorized signer
       // restrict to business owner to 1
       // restrict to authorized signer to 2
-      if (ppx.tffa__RelationCategory__c == 'BUSINESS_OWNERSHIP' && ownerCount < 1) {
+      if ((ppx.tffa__RelationCodeValue__c == '101' || ppx.tffa__RelationCodeValue__c == '103') && ownerCount < 1) {
         ppXrefs.add(ppx);
         relatedPartyIds.add(ppx.tffa__RelatedParty__c);
         ownerCount++;
@@ -201,7 +201,10 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
         tffa__Party__c relatedParty = partyMap.get(ppx.tffa__RelatedParty__c);
         tffa.AlloyDTO.Representative rep = request.addRepresentative();
         helper.populatePersonDetails(rep, relatedParty);
-        rep.type = ppx.tffa__RelationCategory__c == 'BUSINESS_OWNERSHIP' ? 'principal_owner' : 'authorized_signer';
+        rep.type = (ppx.tffa__RelationCategory__c == '101' ||
+          ppx.tffa__RelationCodeValue__c == '103')
+          ? 'principal_owner'
+          : 'authorized_signer';
         if (!relatedParty.tffa__AddressXrefs__r.isEmpty()) {
           helper.addAddressDetails(rep, relatedParty.tffa__AddressXrefs__r[0].tffa__Address__r, 'primary');
         }
@@ -228,7 +231,12 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
       }
     }
     try {
-      tffa.AlloyService service = new tffa.AlloyService('Alloy_Person');
+      tffa.AlloyService service;
+      if (sub.tffa__Channel__c == FISCCIntegrationConstants.BRANCH) {
+        service = new tffa.AlloyService('Alloy_Branch_Person');
+      } else {
+        service = new tffa.AlloyService('Alloy_Person');
+      }
 
       //Log request
       FISCCIntegrationLogService.setLogItemRequestAndResponse(String.valueOf(request), null);
@@ -258,7 +266,9 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
       } else {
         parseIDAResponse(response, party, diligences);
         if (response.summary != null) {
-          //setAdverseActionFlag(response, party);
+          if (!response.summary.result.equalsIgnoreCase('Success')) {
+            party.CZIsRetryRequired__c = true;
+          }
           parseIDVResponse(response, party, diligences, reports);
           parseOFACResponse(response, party, diligences);
           parseFraudResponse(response, party, diligences);
@@ -266,6 +276,10 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
           parseDebitBureauReport(response, party, diligences, reports);
           parseDeviceResponse(response, party, diligences);
           helper.populateKYCDetails(party, response);
+          if (response.summary.outcome == 'In Branch Manual Review') {
+            party.tffa__KYCDecisionOutcome__c = 'REVIEW';
+            party.tffa__AutoKYCDecisionOutcome__c = 'REVIEW';
+          }
         }
         FISCCIntegrationLogService.setLogItemOk(
           FISCCIntegrationConstants.DO_IDV_VERIFICATION,
@@ -317,9 +331,15 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
       populateRepresentatives(request, party, ppXrefs, facts);
     }
     try {
+      //Log request
+      FISCCIntegrationLogService.setLogItemRequestAndResponse(String.valueOf(request), null);
+
       tffa.AlloyService service = new tffa.AlloyService('Alloy_Business');
       tffa.AlloyDTO.EvaluationResponse response = service.createEvaluation(request);
       addWebhook(service, party);
+
+      //Log Response
+      FISCCIntegrationLogService.setLogItemRequestAndResponse(null, String.valueOf(response));
       if (helper.hasRequiredError(response)) {
         tffa__DueDiligence__c dd = new tffa__DueDiligence__c(
           Name = 'Alloy IDV',
@@ -330,6 +350,9 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
         tffa.DueDiligenceService.rollupDetails(party, dd);
         diligences.add(dd);
       } else if (response.summary != null) {
+        if (!response.summary.result.equalsIgnoreCase('Success')) {
+          party.CZIsRetryRequired__c = true;
+        }
         parseIDVResponse(response, party, diligences, reports);
         parseOFACResponse(response, party, diligences);
         parseFraudResponse(response, party, diligences);
@@ -362,6 +385,10 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
       ? new tffa__DueDiligence__c(Name = 'Alloy IDV', tffa__Type__c = tffa.DueDiligenceType.IDV.name(), tffa__Party__c = party.Id)
       : dd;
     helper.populateEvaluationDetails(dd, response, true);
+    if (response.summary.outcome == 'In Branch Manual Review') {
+      dd.tffa__Status__c = 'REVIEW';
+      dd.tffa__Tags__c = ('Banker Review; ' + dd.tffa__Tags__c).left(255);
+    }
     List<tffa__DueDiligenceItem__c> items = new List<tffa__DueDiligenceItem__c>();
     if (response.matching != null) {
       helper.parseMatchResults(response, items);
@@ -526,7 +553,7 @@ global inherited sharing virtual class CZAlloyIDVServiceProvider extends tffa.Du
           'IDENTITY'
         );
         report.participants.add(new tffa.DocumentParticipantDTO(dd));
-        dd.tffa__ReportName__c = reportName;
+        dd.tffa__ReportName__c = 'Chexsystems Report';
         dd.tffa__ReportUrl__c = Page.tffa__dueDiligenceReport.getUrl();
         reports.add(report);
       }

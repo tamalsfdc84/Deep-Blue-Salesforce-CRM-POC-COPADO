@@ -24,6 +24,12 @@ global class PartyService extends tffa.AbstractService {
     global static List<tffa__Party__c> doDecision(List<tffa__Party__c> parties, Map<String,Object> facts) {
         return null;
     }
+    global static tffa__Party__c doDecision(String id, Map<String,Object> facts) {
+        return null;
+    }
+    global static List<tffa__Party__c> doDueDiligence(List<tffa__Party__c> parties, Map<String,Object> facts) {
+        return null;
+    }
     global static Map<String,Object> fetchAccounts(Map<String,Object> params) {
         return null;
     }

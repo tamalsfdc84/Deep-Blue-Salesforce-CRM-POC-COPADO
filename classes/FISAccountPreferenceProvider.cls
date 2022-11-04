@@ -20,7 +20,12 @@ public inherited sharing class FISAccountPreferenceProvider {
         tffa.Logger.debug('IBSAuth in charter config: ' + charterConfig.IBSAuthorization__c);
       }
 
-      result = (FISCCMultiKeywordsResponseDTO) FISAccountPreferenceExtension.invokemultiKeywordsApi(adapterConfig, charterConfig, type);
+      result = (FISCCMultiKeywordsResponseDTO) FISAccountPreferenceExtension.invokemultiKeywordsApi(
+        adapterConfig,
+        charterConfig,
+        type,
+        app
+      );
     } catch (Exception ex) {
       tffa.Logger.error('Exception in processMultiKeywords : ' + ex.getMessage() + ' Exception :::' + ex.getStackTraceString());
     }

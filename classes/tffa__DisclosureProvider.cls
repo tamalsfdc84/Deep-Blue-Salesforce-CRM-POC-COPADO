@@ -9,13 +9,22 @@ global virtual class DisclosureProvider {
     global DisclosureProvider() {
 
     }
+    global virtual List<tffa__Disclosure__c> fetchExternalDisclosures(Map<String,Object> facts) {
+        return null;
+    }
     global virtual List<tffa__Disclosure__c> fetchExternalDisclosures(tffa__Application__c app, Map<String,Object> facts) {
+        return null;
+    }
+    global virtual List<tffa__Disclosure__c> generateDisclosures(Map<String,Object> facts) {
         return null;
     }
     global static tffa.DisclosureProvider getInstance() {
         return null;
     }
     global static tffa.DisclosureProvider getInstance(String providerName) {
+        return null;
+    }
+    global virtual List<tffa__Disclosure__c> mergeExternalDisclosures(List<tffa__Disclosure__c> disclosures) {
         return null;
     }
 }

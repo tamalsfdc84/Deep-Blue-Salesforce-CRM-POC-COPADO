@@ -99,6 +99,12 @@ global virtual class ApplicationServiceExt {
     global virtual List<tffa__Application__c> preUpdateStatus(List<tffa__Application__c> apps) {
         return null;
     }
+    global virtual void setDefaultAddress(tffa__Application__c app, tffa__Application__c data) {
+
+    }
+    global virtual void setDefaultTINCertifier(tffa__Application__c app, tffa__Application__c data) {
+
+    }
     global virtual tffa__Application__c updateLockStatus(tffa__Application__c app) {
         return null;
     }

@@ -1,6 +1,6 @@
 <!--
   @Page Name          : debugLogConfiguration.page
-  @Description        : debug log configuration page
+  debug log configuration page
 -->
 <apex:page docType="html-5.0" title="{!$ObjectType.tffa__DebugLogConfiguration__c.Label}" standardController="tffa__DebugLog__c" recordSetVar="logs"
   extensions="tffa.DebugLogController" lightningStylesheets="true" action="{!getConfiguration}" showHeader="false" applyHtmlTag="false">

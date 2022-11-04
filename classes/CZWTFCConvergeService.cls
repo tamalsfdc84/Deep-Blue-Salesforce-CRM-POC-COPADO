@@ -10,7 +10,7 @@ public with sharing class CZWTFCConvergeService {
         throw new tffa.ApplicationException('Called through test class');
       }
       FISCCIntegrationLogService.setSubmissionObj(String.valueOf(params.get('SubmissionId')));
-      CZWTFCIntegrationLogService.setIntegrationLog(String.valueOf(params.get('SubmissionId')));
+      FISCCIntegrationLogService.setIntegrationLog(String.valueOf(params.get('SubmissionId')));
 
       CZWTFCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.ELAVONPREAUTH);
       CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.ELAVON, FISCCIntegrationConstants.SESSION_TOKEN, true);

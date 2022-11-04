@@ -9,6 +9,9 @@ global virtual class PartyServiceExt {
     global PartyServiceExt() {
 
     }
+    global virtual Map<String,Object> getFactsForCheckMinor(tffa__Party__c party) {
+        return null;
+    }
     global virtual tffa__Party__c postAuthenticate(tffa__Party__c party, Map<String,Object> params) {
         return null;
     }
@@ -16,6 +19,9 @@ global virtual class PartyServiceExt {
         return null;
     }
     global virtual List<tffa__Party__c> postCreateOrUpdate(List<tffa__Party__c> entities) {
+        return null;
+    }
+    global virtual List<tffa__Party__c> postDoDueDiligence(List<tffa__Party__c> entities, Map<String,Object> facts) {
         return null;
     }
     global virtual tffa__Party__c postModify(tffa__Party__c party) {

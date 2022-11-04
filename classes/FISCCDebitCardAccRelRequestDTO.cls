@@ -1,10 +1,4 @@
-public with sharing class FISCCDebitCardAccRelRequestDTO extends FISCCRequestBaseDTO {
-  public accounts acc;
-  public FISCCDebitCardAccRelRequestDTO() {
-    this.acc = new accounts();
-  }
-
-  public class accounts {
+public with sharing class FISCCDebitCardAccRelRequestDTO {
     public String CIRltApplNbr01;
     public String CIEnt1ToEnt2RltCde;
     public String PriSecRltCde01;
@@ -20,5 +14,4 @@ public with sharing class FISCCDebitCardAccRelRequestDTO extends FISCCRequestBas
     public String AcctNbr;
     public String RmrkLne01;
     public String NAStandardizationOvride;
-  }
 }

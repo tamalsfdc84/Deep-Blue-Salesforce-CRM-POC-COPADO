@@ -15,6 +15,16 @@
         <default>false</default>
         <label>Agent</label>
     </customValue>
+    <customValue>
+        <fullName>BENEFICIARY</fullName>
+        <default>false</default>
+        <label>Beneficiary</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
     <description>Types of disclosure participant</description>
     <masterLabel>DisclosureParticipantType</masterLabel>
     <sorted>false</sorted>

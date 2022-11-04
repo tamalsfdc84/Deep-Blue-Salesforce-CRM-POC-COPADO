@@ -7,7 +7,8 @@
  */
 global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExtension {
   //public string eventName;
-
+  public String productName;
+  public String bankerName;
   global CZWTFCPartyEventExtension(string eventName) {
     this.eventName = eventName;
   }
@@ -36,7 +37,7 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
       )
     );
     if (!recipients.isEmpty()) {
-      tffa.NotificationDTO notif = buildNotification(party, null);
+      tffa.NotificationDTO notif = buildNotification(party, null, eventName);
       notif.recipients = recipients;
       notifications.add(notif);
     }
@@ -52,7 +53,7 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
     return obj;
   }
 
-  private tffa.NotificationDTO buildNotification(tffa__Party__c party, tffa__Application__c applicationObject) {
+  private tffa.NotificationDTO buildNotification(tffa__Party__c party, tffa__Application__c applicationObject, String eventName) {
     Map<String, Object> factsMap = new Map<String, Object>(); //Notification DTO level fact map
     tffa.NotificationDTO notif = new tffa.NotificationDTO();
     List<Id> partyIds = new List<Id>();
@@ -61,7 +62,15 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
     tffa__Submission__c sub = CZWTFCSubmissionRepository.findOne(subPartyXref[0].tffa__Submission__c);
     tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
     String suffix = party.tffa__Suffix__c != null ? ' ' + party.tffa__Suffix__c : '';
-    factsMap.put('PartyName', party.tffa__FirstName__c + ' ' + party.tffa__LastName__c + suffix);
+    User currentUserObj = tffa.UserService.getCurrentUser();
+    tffa__AgentDetail__c agentDetails = CZWTFCHelperRepository.getAgentDetailsByUserId(currentUserObj.Id);
+
+    if (party.tffa__Type__c == 'INDIVIDUAL') {
+      factsMap.put('PartyName', party.tffa__FirstName__c + ' ' + party.tffa__LastName__c + suffix);
+    } else {
+      factsMap.put('PartyName', party.tffa__LegalName__c);
+    }
+
     factsMap.put('otp', party.tffa__OTP__c);
     factsMap.put('brandName', brandObj.Name);
     factsMap.put('phoneNo', brandObj.EmailPhone__c);
@@ -73,6 +82,13 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
     factsMap.put('bankUrl', brandObj.tffa__InfoUrl__c);
     factsMap.put('email', brandObj.tffa__ContactEmail__c);
     factsMap.put('ConfirmationNumber', sub.Name);
+    factsMap.put('BankerName', currentUserObj.Name);
+    factsMap.put('BankerEmail', currentUserObj.Email);
+
+    if (bankerName != null) {
+      factsMap.put('BankerName', bankerName);
+    }
+
     if (brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
       String subBrandName = '';
       boolean updatedfooter = true;
@@ -105,33 +121,54 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
       factsMap.put('footerBrand', ' ');
     }
 
+    String buttonUrl = tffa__SiteUrl__c.getOrgDefaults().tffa__Url__c + PageReference.forResource('ReviewSignDisclosure').getUrl();
+    String url =
+      '<a href="' +
+      party.tffa__Url__c +
+      '&brandCode=' +
+      sub.tffa__Brand__c +
+      '"><img width="100" height="50" align="left" src="' +
+      buttonUrl +
+      '" alt="ReviewSignDisclosure"/></a><br/>';
+    factsMap.put('appTrackerUrl', url);
+    factsMap.put('disclosureDeliveryEmail', party.tffa__Url__c + '&brandCode=' + sub.tffa__Brand__c);
+    tffa.Logger.debug('url ' + url);
+
     if (eventName == 'Party_OTP_Generated') {
       notif.confidential = true;
     } else if (eventName == 'Application_Declined_Adverse' && party.tffa__KYCDecisionOutcome__c == CZWTFCConstants.DECLINED) {
       String products = '';
-      List<String> productNames = new List<String>();
-      if (applicationObject == null && sub.tffa__Applications__r != null && !sub.tffa__Applications__r.isEmpty()) {
-        for (tffa__Application__c app : sub.tffa__Applications__r) {
-          if (app.tffa__Status__c == CZWTFCConstants.DECLINED || app.tffa__Status__c == CZWTFCConstants.COUNTER_OFFER) {
-            productNames.add(app.Name);
+      if (sub.tffa__Channel__c == FISCCIntegrationConstants.DIGITAL) {
+        List<String> productNames = new List<String>();
+        if (applicationObject == null && sub.tffa__Applications__r != null && !sub.tffa__Applications__r.isEmpty()) {
+          for (tffa__Application__c app : sub.tffa__Applications__r) {
+            if (app.tffa__Status__c == CZWTFCConstants.DECLINED || app.tffa__Status__c == CZWTFCConstants.COUNTER_OFFER) {
+              productNames.add(app.Name);
+            }
+          }
+        } else if (applicationObject != null) {
+          productNames.add(applicationObject.Name);
+        }
+
+        if (productNames.size() == 1) {
+          products = products + productNames[0];
+        } else if (productNames.size() > 1) {
+          Integer index = 1;
+          for (String productName : productNames) {
+            if (index != productNames.size()) {
+              products = products + productName + ', ';
+            } else {
+              products = products.substring(0, products.lastIndexOf(', '));
+              products = products + ' And ' + productName;
+            }
+            index++;
           }
         }
-      } else if (applicationObject != null) {
-        productNames.add(applicationObject.Name);
-      }
-
-      if (productNames.size() == 1) {
-        products = products + productNames[0];
-      } else if (productNames.size() > 1) {
-        Integer index = 1;
-        for (String productName : productNames) {
-          if (index != productNames.size()) {
-            products = products + productName + ', ';
-          } else {
-            products = products.substring(0, products.lastIndexOf(', '));
-            products = products + ' And ' + productName;
-          }
-          index++;
+      } else {
+        if (String.isNotBlank(productName)) {
+          products = productName;
+        } else {
+          products = 'products';
         }
       }
       factsMap.put('products', products);
@@ -168,7 +205,7 @@ global inherited sharing class CZWTFCPartyEventExtension extends tffa.EventExten
       )
     );
     if (!recipients.isEmpty()) {
-      tffa.NotificationDTO notif = buildNotification(party, appObj);
+      tffa.NotificationDTO notif = buildNotification(party, appObj, '');
       notif.recipients = recipients;
       notifications.add(notif);
     }

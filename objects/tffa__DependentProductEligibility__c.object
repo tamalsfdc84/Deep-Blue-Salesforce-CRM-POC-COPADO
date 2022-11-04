@@ -309,7 +309,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Dependent Product Eligibilities</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

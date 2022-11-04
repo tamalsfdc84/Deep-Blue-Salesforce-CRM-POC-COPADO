@@ -632,7 +632,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Stipulation Checklists</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

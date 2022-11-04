@@ -17,24 +17,34 @@ global inherited sharing class CZWTFCCardBaseIntegrationBatch extends tffa.Abstr
 
   global void execute(Database.BatchableContext batchableContext, List<SObject> appObjList) {
     List<tffa__Application__c> appList = (List<tffa__Application__c>) appObjList;
-    List<tffa__AccountPreference__c> accPrefList = new List<tffa__AccountPreference__c>();
+    tffa__Application__c appObj = appList[0];
     tffa.Interaction.begin(CZWTFCCardBaseIntegrationBatch.class, 'execute');
     try {
-      appList = FISCCCardBaseIntegrationExecutor.processDebitCardRequest(appList);
-      for (tffa__Application__c app : appList) {
-        if (app.DebitCardIssuanceStatus__c.equalsIgnoreCase(CZWTFCConstants.PROCESS_STATUS_FAILURE))
-          app.DebitCardIssueRetryCount__c = app.DebitCardIssueRetryCount__c + 1;
-        if (app.tffa__AccountPreferences__r != null) {
-          accPrefList.addAll(app.tffa__AccountPreferences__r);
-        }
-        app = CZWTFCAppRoutingService.routeApplication(app);
+      FISCCIntegrationLogService.setSubmissionObj(appObj.tffa__Submission__c);
+      FISCCIntegrationLogService.setPartyObjs();
+      FISCCIntegrationLogService.setApplicationObjs();
+      FISCCIntegrationLogService.setCharterConfig(appObj.tffa__Brand__c);
+      FISCCIntegrationLogService.setIntegrationLog(String.valueOf(appObj.tffa__Submission__c));
+      FISCCIntegrationLogService.auth = FISCCGetAccessTokenProvider.processGetAccessToken(FISCCIntegrationLogService.charterConfig);
+      FISCCIntegrationLogService.isBatchSource = true;
+
+      for (tffa__Application__c app : FISCCIntegrationLogService.applicationObjs) {
+        FISCCIntegrationLogService.applicationObjMap.put(app.Id, app);
       }
-      CZWTFCApplicationRepository.save(appList);
-      CZWTFCApplicationRepository.save(accPrefList);
+
+      for (tffa__Application__c app : FISCCIntegrationLogService.applicationObjs) {
+        if (app.Id == appObj.Id) {
+          FISCCCardBaseIntegrationExecutor.processDebitCardRequest(app);
+        }
+      }
     } catch (Exception e) {
       tffa.Logger.error('Exception in CZWTFCCardBaseIntegrationBatch execute : ==-> ' + e.getMessage() + ' ' + e.getStackTraceString());
     } finally {
-      tffa.Interaction.close();
+      try {
+        FISCCIntegrationLogService.persistData();
+      } finally {
+        tffa.Interaction.close();
+      }
     }
   }
 

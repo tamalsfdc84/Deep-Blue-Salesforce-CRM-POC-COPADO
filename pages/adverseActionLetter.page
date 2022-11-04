@@ -5,14 +5,13 @@
     <style>
       @page {
         size: A4 portrait;
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
       }
 
       .paras {
         padding-top: 30;
-        text-align: justify;
       }
 
       .ChexAddress {
@@ -138,7 +137,6 @@
 
         text-align: center;
         font-size: 14px;
-        padding-left: 5px;
 
       }
 
@@ -210,42 +208,58 @@
     <p class="paras">We are sorry but we are unable to accommodate your request to open a deposit account with our financial institution at
       this time. Our decision was based in whole or in part on information obtained in a report from the consumer reporting
       agencies listed below. This application was denied for
-      <b>Suspected Fraud</b>.</p>
+      <b>Suspected Fraud
+      </b>.</p>
 
-    <p class="paras"> You have a right under the Fair Credit Reporting Act to know the information contained in your files at the consumer
+    <p class="Paras"> You have a right under the Fair Credit Reporting Act to know the information contained in your files at the consumer
       reporting agencies. The reporting agencies played no part in our decision and is unable to supply specific reasons
       why we have denied your request to open a deposit account in our institution. You also have a right to a free copy
       of your reports from the reporting agencies, if you request it no later than 60 days after you receive this notice.
       In addition, if you find that any information contained in the report you receive is inaccurate or incomplete, you
       have the right to dispute the matter with the reporting agency.
     </p>
+    <br/>
     <center>
       <table border="1" width="100%" class="table-bordered">
         <tr>
-          <td width="60%">
-            <nobr>LexisNexis Risk Solutions Consumer Center</nobr>
+          <td width="40%">Chex Systems, Inc.
+            <br/> Attn: Consumer Relations
+            <br/> P.O. Box 583399
+            <br/> Minneapolis, MN 55458
+          </td>
+          <td style="text-align:left;">
+            Telephone: 800-428-9623
+            <br/> Fax: 602-659-2197
+            <br/> Web: www.chexsystems.com
+          </td>
+        </tr>
+
+        <tr>
+          <td>LexisNexis Risk Solutions Consumer Center
             <br/> P.O. Box 105108
             <br/> Atlanta, GA 30348-5108
           </td>
           <td style="text-align:left;">
             Telephone: 1-866-897-8126
             <br/> Lexis Consumer Request Form Link:
-            <a href="https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call%20to%20speak%20to,.documents%40LexisNexis.com">https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call %20to%20speak%20to,.documents%40LexisNexis.com</a>.
+            <a href="https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call%20to%20speak%20t
+                   o,.documents%40LexisNexis.com.">https://consumer.risk.lexisnexis.com/request#:~:text=Please%20call%20to%20speak%20t o,.documents%40LexisNexis.com.
+            </a>
             <br/>
           </td>
         </tr>
 
       </table>
     </center>
-    <br/> If you believe you are a victim of identity theft or fraud, we have provided some resources to assist you:
+    <br/>
+    <p>If you believe you are a victim of identity theft or fraud, we have provided some resources to assist you:</p>
 
     <ul>
-      <li>File an Identity Theft Report with law enforcement.</li>
+      <li>File an Identity Theft Report with law enforcement</li>
       <li>Contact each of the three major credit bureaus – For a free copy of your credit report:
         <a href="www.annualcreditreport.com">www.annualcreditreport.com</a>
       </li>
-      <li>Ask the bureaus to place an extended fraud alert on your credit file (See credit bureaus below).</li>
-      <li>Contact Chex Systems for a copy of your consumer report (See contact information below).</li>
+      <li>Ask the bureaus to place an extended fraud alert on your credit file (See credit bureaus below)</li>
       <li>US Department of Justice Identity theft resource page:
         <a href="https://www.justice.gov/criminal-fraud/identity-theft/identity-theft-and-identity-fraud">https://www.justice.gov/criminal-fraud/identity-theft/identity-theft-and-identity-fraud </a>
       </li>
@@ -264,43 +278,27 @@
         <td style="text-align:left;">
           1-888-Equifax (1-888-378-4329)
           <br/> Web:
-          <a href="https://www.equifax.com">https://www.equifax.com</a>
+          <a href="https://www.equifax.com">https://www.equifax.com </a>
         </td>
       </tr>
 
       <tr>
-        <td>Experian
-          <br/> 955 American Lane
-          <br/> Schaumburg, IL 60173
+        <td>Experian 955 American Lane Schaumburg, IL 60173
         </td>
         <td style="text-align:left;">
           1-888-397-3742
           <br/> Web:
-          <a href="www.experian.com">www.experian.com</a>
+          <a href="www.experian.com">www.experian.com </a>
         </td>
       </tr>
       <tr>
-        <td>Transunion
-          <br/> P.O. Box 2000
+        <td>Transunion P.O. Box 2000
           <br/> Chester, PA 19016-2000
         </td>
         <td style="text-align:left;">
           1-800-916-8800
           <br/> Web:
-          <a href="www.transunion.com">www.transunion.com</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Chex Systems, Inc.
-          <br/>Attn: Consumer Relations
-          <br/>P.O. Box 583399
-          <br/>Minneapolis, MN 55458
-        </td>
-        <td style="text-align:left;">
-          Telephone: 800-428-9623
-          <br/> Fax: 602-659-2197
-          <br/> Web:
-          <a href="www.chexsystems.com">www.chexsystems.com</a>
+          <a href="www.transunion.com">www.transunion.com </a>
         </td>
       </tr>
     </table>

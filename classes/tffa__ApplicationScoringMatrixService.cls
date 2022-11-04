@@ -12,6 +12,9 @@ global class ApplicationScoringMatrixService {
     global static List<tffa__ApplicationScoringMatrix__c> createOrUpdate(List<tffa__ApplicationScoringMatrix__c> entities) {
         return null;
     }
+    global static List<List<tffa__ApplicationScoringMatrix__c>> resolveByFactGroups(String fieldSetName, List<Map<String,Object>> factGroups) {
+        return null;
+    }
     global static List<tffa__ApplicationScoringMatrix__c> resolveByFacts(String fieldSetName, Map<String,Object> facts) {
         return null;
     }

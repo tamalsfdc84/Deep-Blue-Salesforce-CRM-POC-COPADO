@@ -10,7 +10,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 <o:PixelsPerInch>96</o:PixelsPerInch>
 </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<title>Application transferred to you</title>
+<title>{=v(@subject)=}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
@@ -194,7 +194,7 @@ text-indent: -1em; / Normalise space between bullets and text /
           <tr>
            <td align="left" class="em_black" style="font-size:12px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
                   <br/>
-                              <br/>Application {!RelatedTo.Name} has been assigned to you. Please click on the link below to view
+                              <br/>Application {!RelatedTo.Name}({!RelatedTo.SubmissionName__c}) has been assigned to you. Please click on the link below to view
                               the application <br/><br/>
 							  <u><apex:outputLink value="{!$Setup.tffa__EnvironmentConfiguration__c.tffa__BaseUrl__c}/{!RelatedTo.Id}" id="app"> click here</apex:outputLink></u>
                               <br/>

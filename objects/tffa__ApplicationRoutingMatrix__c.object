@@ -649,7 +649,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Application Routing Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>tffa__AgentIsRequired</fullName>

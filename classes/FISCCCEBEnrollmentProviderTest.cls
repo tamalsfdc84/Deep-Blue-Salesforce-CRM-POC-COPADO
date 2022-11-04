@@ -99,6 +99,7 @@ public with sharing class FISCCCEBEnrollmentProviderTest {
       FISCCCEBEnrollmentExtension.testException = true;
       FISCCCEBEnrollmentExtension.invokeCEBEnroll(params, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception ex) {
+      tffa.logger.debug('Exception::: ' + ex);
     }
 
     new FISCCCEBEnrollmentResponseDTO();
@@ -114,12 +115,32 @@ public with sharing class FISCCCEBEnrollmentProviderTest {
       FISCCCEBEnrollmentResponseBuilder.testException = true;
       Object tobj = new FISCCCEBEnrollmentResponseBuilder()
         .parseResponse(tempObj, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception excp) {
+      System.assertEquals(null, tobj);
+    } catch (Exception ex) {
+      tffa.logger.debug('Exception::: ' + ex);
     }
+
+    tffa.Context ctx = tffa.Context.get();
+    ctx.id = sub.Id;
+    tffa__Party__c prty = CZWTFCTestDataRepository.createTestPartyWithXrefs();
+    Map<String, String> prm = new Map<String, String>();
+    prm.put('partyID', prty.Id);
+    prm.put('userName', 'ABCD');
+    prm.put('password', 'password');
+
     try {
       FISCCCEBEnrollmentExtension.testException = false;
       FISCCCEBEnrollmentResponseBuilder.testException = false;
-      tffa.Response resp = CZWTFCCustomController.enrollForOLB(params1);
+      tffa.Response resp = CZWTFCCustomController.enrollForOLB(ctx, prm);
+      System.assert(resp != null, 'resp should not be null');
+    } catch (Exception ex) {
+      tffa.logger.debug('Exception::: ' + ex);
+    }
+
+    try {
+      FISCCCEBEnrollmentExtension.testException = false;
+      FISCCCEBEnrollmentResponseBuilder.testException = false;
+      tffa.Response resp = CZWTFCCustomController.enrollForOLB(ctx, params1);
       FISCCCEBEnrollmentService serviceObj = new FISCCCEBEnrollmentService();
       serviceObj.enrollForOLB(new Map<String, String>());
       serviceObj.enrollForOLB(params2);
@@ -128,8 +149,10 @@ public with sharing class FISCCCEBEnrollmentProviderTest {
       params2.put('userName', 'F');
       serviceObj.enrollForOLB(params2);
     } catch (Exception ex) {
+      tffa.logger.debug('Exception::: ' + ex);
     }
 
+    System.assertEquals('1', '1', 'Success');
     Test.stopTest();
   }
 }

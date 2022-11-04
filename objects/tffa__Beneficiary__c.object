@@ -522,7 +522,7 @@ Designating a beneficiary not only ensures the CD will not have to go through pr
         <type>Text</type>
     </nameField>
     <pluralLabel>Beneficiaries</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

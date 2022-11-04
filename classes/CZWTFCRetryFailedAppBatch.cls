@@ -15,7 +15,11 @@ global inherited sharing class CZWTFCRetryFailedAppBatch extends tffa.AbstractBa
     appLst = CZWTFCApplicationRepository.findAppforFailedAppBatch();
 
     for (tffa__Application__c app : appLst) {
-      if (app.tffa__Submission__c != null) {
+      if (
+        app.tffa__Submission__c != null &&
+        app.tffa__Submission__r != null &&
+        app.tffa__Submission__r.tffa__SubmittedChannel__c == 'DIGITAL'
+      ) {
         if (
           app.tffa__LinkedFundingRequests__r != null &&
           !app.tffa__LinkedFundingRequests__r.isEmpty() &&

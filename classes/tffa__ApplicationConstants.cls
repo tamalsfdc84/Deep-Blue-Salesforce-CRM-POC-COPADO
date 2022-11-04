@@ -10,8 +10,10 @@ global class ApplicationConstants {
     global static String CONTENT_TYPE_BLOB;
     global static String CONTENT_TYPE_JSON;
     global static String ECID;
+    global static String MULTISELECT_DELIMITER;
     global static String X_AUTHORIZATION;
     global static String X_BRAND;
+    global static String X_CONTEXT_ID;
     global static String X_NONCE;
     global static String X_RESPONSE_TIME;
     global static String X_TIMESTAMP;

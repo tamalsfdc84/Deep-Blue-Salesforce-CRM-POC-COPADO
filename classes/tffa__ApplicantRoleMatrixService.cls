@@ -15,6 +15,9 @@ global class ApplicantRoleMatrixService extends tffa.AbstractService {
     global static List<tffa__ApplicantRoleMatrix__c> readAll(tffa.QueryContext qc) {
         return null;
     }
+    global static List<List<tffa__ApplicantRoleMatrix__c>> resolveByFactGroups(String fieldSetName, List<Map<String,Object>> factGroups) {
+        return null;
+    }
     global static List<tffa__ApplicantRoleMatrix__c> resolveByFacts(String fieldSetName, Map<String,Object> facts) {
         return null;
     }

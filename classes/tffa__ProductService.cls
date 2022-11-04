@@ -36,6 +36,9 @@ global class ProductService extends tffa.AbstractService {
     global static tffa__Product__c readBundle(String id) {
         return null;
     }
+    global static tffa.PageDTO readBundlePage(tffa.QueryContext queryCtx) {
+        return null;
+    }
     global static tffa__Product__c readOne(String id) {
         return null;
     }

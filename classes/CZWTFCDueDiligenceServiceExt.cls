@@ -13,24 +13,22 @@ global inherited sharing class CZWTFCDueDiligenceServiceExt extends tffa.DueDili
     tffa.Interaction.begin(CZWTFCDueDiligenceServiceExt.class, 'postUpdateStatus');
 
     try {
-      if (true) {
-        Set<Id> partyIds = new Set<Id>();
+      Set<Id> partyIds = new Set<Id>();
 
-        for (tffa__DueDiligence__c dd : entities) {
-          partyIds.add(dd.tffa__Party__c);
-        }
-
-        List<Id> partyIdLst = new List<Id>(partyIds);
-        List<tffa__Party__c> partyLst = FISCCIntegrationLogRepository.findPartydWithChildObjects(partyIdLst);
-        tffa.PartyService.doDecision(
-          partyLst,
-          new Map<String, Object>{
-            'Type__c' => 'KYC',
-            'CZFraudStatus__c' => partyLst[0].tffa__FraudStatus__c,
-            'CZOFACStatus__c' => partyLst[0].tffa__OFACStatus__c
-          }
-        );
+      for (tffa__DueDiligence__c dd : entities) {
+        partyIds.add(dd.tffa__Party__c);
       }
+
+      List<Id> partyIdLst = new List<Id>(partyIds);
+      List<tffa__Party__c> partyLst = FISCCIntegrationLogRepository.findPartydWithChildObjects(partyIdLst);
+      tffa.PartyService.doDecision(
+        partyLst,
+        new Map<String, Object>{
+          'Type__c' => 'KYC',
+          'CZFraudStatus__c' => partyLst[0].tffa__FraudStatus__c,
+          'CZOFACStatus__c' => partyLst[0].tffa__OFACStatus__c
+        }
+      );
 
       return entities;
     } finally {

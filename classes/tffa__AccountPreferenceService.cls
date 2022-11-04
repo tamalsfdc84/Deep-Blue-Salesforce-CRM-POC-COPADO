@@ -15,4 +15,7 @@ global class AccountPreferenceService extends tffa.AbstractService {
     global static List<tffa__AccountPreference__c> createOrUpdate(String parentId, List<tffa__AccountPreference__c> entities) {
         return null;
     }
+    global static List<tffa__AccountPreference__c> readAll(tffa.QueryContext queryCtx) {
+        return null;
+    }
 }

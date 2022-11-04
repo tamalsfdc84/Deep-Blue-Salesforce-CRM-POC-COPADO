@@ -421,7 +421,7 @@ Examples are Safe Deposit Boxes, Bounce Protection, Online Banking, Direct Depos
         <type>Text</type>
     </nameField>
     <pluralLabel>Add On Services</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

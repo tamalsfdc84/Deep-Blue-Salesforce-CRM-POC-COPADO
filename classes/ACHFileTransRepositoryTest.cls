@@ -10,13 +10,15 @@ private class ACHFileTransRepositoryTest {
     List<Document> documents1 = ACHFileTransRepository.findDocById(docIds);
     List<UploadFileHistory__c> documents2 = ACHFileTransRepository.save(entities);
 
+    System.assertNotEquals(documents2, null);
     Test.stopTest();
   }
 
   @isTest
-  public static void testgetFundingRequestAchfetch(){
-      Test.startTest();
-      CZWTFCACHRepository.getFundingRequestsForACHFileGeneration('1234');
-      Test.stopTest();
+  public static void testgetFundingRequestAchfetch() {
+    Test.startTest();
+    List<SObject> result = CZWTFCACHRepository.getFundingRequestsForACHFileGeneration('1234');
+    System.assertNotEquals(result, null);
+    Test.stopTest();
   }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SELF_ONLY</fullName>
+        <default>false</default>
+        <label>Self-Only</label>
+    </customValue>
+    <customValue>
+        <fullName>FAMILY</fullName>
+        <default>false</default>
+        <label>Family</label>
+    </customValue>
+    <description>Specifies the type of health insurance plan coverage</description>
+    <masterLabel>HealthInsurancePlanCoverageType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

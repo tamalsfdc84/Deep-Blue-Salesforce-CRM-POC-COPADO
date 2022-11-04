@@ -788,7 +788,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Questionnaire Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>tffa__DecisionStrategy</fullName>

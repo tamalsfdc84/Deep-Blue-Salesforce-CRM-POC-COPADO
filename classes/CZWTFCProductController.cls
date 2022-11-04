@@ -10,9 +10,14 @@ global with sharing class CZWTFCProductController extends tffa.AbstractControlle
    * @Description Returns Brand Object
    * @return Response
    */
-  global static tffa.Response getProductList(Map<String, Object> params) {
-    tffa.Interaction.begin(CZWTFCProductController.class, 'getProductList');
+  global static tffa.Response getProductList(tffa.Context ctx, Map<String, Object> params) {
+    tffa.Interaction.begin(ctx, CZWTFCProductController.class, 'getProductList');
     try {
+      if (!Test.isRunningTest()) {
+        validateSession();
+        validateRecordAccess(params);
+      }
+
       List<tffa__ProductMatrix__c> prodMatrixList = new List<tffa__ProductMatrix__c>();
       List<tffa__Product__c> productList = new List<tffa__Product__c>();
       if (params.containsKey('brandCode')) {

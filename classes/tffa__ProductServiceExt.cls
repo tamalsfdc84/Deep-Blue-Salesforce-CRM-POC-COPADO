@@ -30,6 +30,9 @@ global virtual class ProductServiceExt {
     global virtual List<tffa__Product__c> postReadAll(tffa.QueryContext queryCtx, List<tffa__Product__c> entities) {
         return null;
     }
+    global virtual tffa.PageDTO postReadBundlePage(tffa.PageDTO pagedto, tffa.QueryContext queryCtx) {
+        return null;
+    }
     global virtual tffa.PageDTO postReadPage(tffa.PageDTO pagedto, tffa.QueryContext queryCtx) {
         return null;
     }

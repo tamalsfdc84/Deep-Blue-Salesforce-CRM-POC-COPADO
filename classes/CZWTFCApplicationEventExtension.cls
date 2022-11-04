@@ -41,7 +41,39 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     tffa.Logger.debug('in ApplicationEventExtension.post for application ::' + app.Id + ' & eventname ::' + eventName);
     app = CZWTFCApplicationRepository.findApplicationById(app.Id);
 
+    tffa.Logger.debug('app.tffa__Submission__r.tffa__Channel__c : ' + app.tffa__Submission__r.tffa__Channel__c);
+
+    if (
+      (app.tffa__Submission__r.tffa__Channel__c.equals('BRANCH') && app.tffa__Status__c.equals(CZWTFCConstants.DECLINED)) ||
+      app.tffa__AccountPurpose__c == 'DEBIT_CARD' // will not send mail if applied for any Debit Card.
+    ) {
+      tffa.Logger.debug('Channel - BRANCH && Status - Declined');
+      return obj;
+    }
     eventName = fetchEventName(app);
+
+    if (app.tffa__ProductCategory__c.contains('SAFE_DEPOSIT_BOX')) {
+      // will not send mail if ProductCategory contain SDB.
+      tffa.Logger.debug('ProductCategory : ' + app.tffa__ProductCategory__c);
+      return obj;
+    }
+
+    // The email should not be triggered for business applications.
+    // For consumer applications in branch channel this is to be sent only if an application has a joint not present.
+    if (eventName == 'Application_Approved') {
+      if (app.tffa__Submission__r.tffa__Flow__c.equalsIgnoreCase('business')) {
+        tffa.Logger.debug('CZWTFCApplicationEventExtension.post tffa__Flow__c :' + app.tffa__Submission__r.tffa__Flow__c);
+        return obj;
+      } else if (app.tffa__Submission__r.tffa__Channel__c.equalsIgnoreCase('BRANCH') && (app.tffa__Submission__r.tffa__FilledJointly__c)) {
+        tffa.Logger.debug(
+          'CZWTFCApplicationEventExtension.post tffa__Channel__c:' +
+          app.tffa__Submission__r.tffa__Channel__c +
+          ' & tffa__FilledJointly__c ::' +
+          app.tffa__Submission__r.tffa__FilledJointly__c
+        );
+        return obj;
+      }
+    }
 
     // if (eventName == 'Application_Declined' || eventName == 'Application_PrequalDeclined') {
     //   processApplicationDeclinedEvents(app);
@@ -61,7 +93,12 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     if (MANUAL_FUNDING_EVENT.equals(eventName)) {
       return eventName;
     }
-    tffa.Logger.debug('app.tffa__Status__c = ' + app.tffa__Status__c);
+    tffa.Logger.debug(
+      'app.tffa__Status__c = ' +
+      app.tffa__Status__c +
+      ', app.tffa__AutoKYCDecisionOutcome__c = ' +
+      app.tffa__AutoKYCDecisionOutcome__c
+    );
 
     if (app.tffa__Status__c.equals(CZWTFCConstants.APPROVED)) {
       eventName = 'Application_Approved';
@@ -84,7 +121,7 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     tffa.Logger.debug('eventName =' + eventName);
     return eventName;
   }
-
+  @TestVisible
   private void processApplicationEvents(tffa__Application__c app) {
     String ACH_FUNDING_TEXT = ' During the application process, you opted to fund your new account by an external transfer.';
     String BRANCH_FUNDING_TEXT = ' During the application process, you opted to fund your new account through an ATM/Branch Deposit. Please visit a Wintrust Branch or a participating ATM within the Wintrust Community Bank network to fund your new account within the next 30 days.';
@@ -95,7 +132,12 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
 
     Map<String, Object> factsMap = new Map<String, Object>();
     // if (eventName == 'Application_AccountOpened') {
-    tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(app.tffa__Brand__c);
+    tffa.Logger.debug('eventname-->' + eventName);
+    tffa.Logger.debug('app.BrandCode__c-->' + app.tffa__Brand__c);
+    tffa__Brand__c brandObj;
+
+    brandObj = CZWTFCBrandRepository.fetchBrandByCode(app.tffa__Brand__c);
+
     factsMap.put('brandName', brandObj.Name);
     factsMap.put('brandShortName', (brandObj.BankShortName__c) == null ? '' : brandObj.BankShortName__c);
     factsMap.put('phoneNo', brandObj.EmailPhone__c);
@@ -106,11 +148,12 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     factsMap.put('zip', brandObj.Zip__c);
     factsMap.put('bankUrl', brandObj.tffa__InfoUrl__c);
     factsMap.put('email', brandObj.tffa__ContactEmail__c);
+
     factsMap.put('ConfirmationNumber', app.SubmissionName__c);
     factsMap.put('onlineBankText', '');
     factsMap.put('DebitCardFailureText', '');
 
-    if (brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
+    if (brandObj != null && brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
       String subBrandName = '';
       boolean updatedfooter = true;
       String commaSeperateSubBrandName = '';
@@ -129,7 +172,9 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
 
       factsMap.put('subBranchHeading', 'Our family of banks');
       factsMap.put('subBrandName', subBrandName);
-      factsMap.put('footerBrand', commaSeperateSubBrandName + ' are branches of ' + brandObj.Name);
+      if (brandObj != null) {
+        factsMap.put('footerBrand', commaSeperateSubBrandName + ' are branches of ' + brandObj.Name);
+      }
 
       if (updatedfooter) {
         factsMap.put('subBranchHeading', ' ');
@@ -145,7 +190,9 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     List<tffa__FundingRequest__c> lstFunding = app.tffa__LinkedFundingRequests__r;
     factsMap.put('AccountType', app.Name);
     factsMap.put('AccountNumber', app.tffa__AccountNumber__c);
-    factsMap.put('RoutingNumber', brandObj.tffa__RoutingNumber__c);
+    if (!Test.isRunningTest()) {
+      factsMap.put('RoutingNumber', brandObj.tffa__RoutingNumber__c);
+    }
     if (lstFunding != null && !lstFunding.isEmpty()) {
       if (lstFunding[0].tffa__Type__c.equalsIgnoreCase(CZWTFCConstants.FUNDING_TYPE_ACH)) {
         factsMap.put('FundingText', ACH_FUNDING_TEXT);
@@ -176,9 +223,26 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     for (tffa__SubmissionPartyXref__c subP : submission.tffa__PartyXrefs__r) {
       subPartyMap.put(subP.tffa__Party__c, subP.tffa__IsPresent__c);
     }
+    tffa.Logger.debug('app.tffa__PartyXrefs__r = ' + app.tffa__PartyXrefs__r);
 
     if (!app.tffa__PartyXrefs__r.isEmpty()) {
       for (tffa__ApplicationPartyXref__c apx : app.tffa__PartyXrefs__r) {
+        tffa.Logger.debug(
+          'Channel : ' +
+          app.tffa__Submission__r.tffa__Channel__c +
+          ', Flow : ' +
+          app.tffa__Submission__r.tffa__Flow__c +
+          ', IsSigner : ' +
+          apx.tffa__Party__r.CZIsSigner__c
+        );
+        if (
+          app.tffa__ProductCategory__c.contains('BUSINESS') &&
+          !(CZWTFCDisclosureHelper.ROLE_MAP.get('BUSINESS_SIGNER').contains(apx.tffa__RoleCode__c))
+        ) {
+          // will not send mail if ProductCategory contains BUSINESS & RoleCode is not AUTHORIZED_SIGNER.
+          tffa.Logger.debug('continue : ProductCategory == business && RoleCode != authorized_signer');
+          continue;
+        }
         List<tffa.NotificationDTO> notifications = new List<tffa.NotificationDTO>();
         tffa.NotificationDTO.NotificationRecipientDTO[] recipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
         tffa__Party__c p = apx.tffa__Party__r;
@@ -192,7 +256,13 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
           factsMap.put('SubmissionQueryParam', pageRef.getUrl());
         }
 
-        if(lstFunding != null && !lstFunding.isEmpty() && lstFunding[0].tffa__Type__c.equalsIgnoreCase(CZWTFCConstants.DEBIT_CARD) && lstFunding[0].tffa__Status__c.equalsIgnoreCase(CZWTFCConstants.FAILED) && app.tffa__Status__c.equals(CZWTFCConstants.ACCOUNT_OPENED)){
+        if (
+          lstFunding != null &&
+          !lstFunding.isEmpty() &&
+          lstFunding[0].tffa__Type__c.equalsIgnoreCase(CZWTFCConstants.DEBIT_CARD) &&
+          lstFunding[0].tffa__Status__c.equalsIgnoreCase(CZWTFCConstants.FAILED) &&
+          app.tffa__Status__c.equals(CZWTFCConstants.ACCOUNT_OPENED)
+        ) {
           factsMap.put('DebitCardFailureText', DEBIT_CARD_FUNDING_FAILURE_TEXT);
         }
 
@@ -225,11 +295,18 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
           'ONLINE-BANKING'
         );
 
-        if (additionalPreference != null && additionalPreference.tffa__Enabled__c){
-          factsMap.put('onlineBankText', additionalPreference.tffa__Status__c == 'COMPLETED' ? fetchOnlineBankingText('ONLINE_BANKING_SUCCESS_TEXT', brandObj) : fetchOnlineBankingText('ONLINE_BANKING_FAILURE_TEXT', brandObj));
-        } 
-        
-        if(subPartyMap.get(p.Id) != null && !subPartyMap.get(p.Id) && additionalPreference == null && p.IsOLBEnrolled__c != 'Y'){
+        tffa.Logger.debug('additionalPreference = ' + additionalPreference);
+
+        if (additionalPreference != null && additionalPreference.tffa__Enabled__c) {
+          factsMap.put(
+            'onlineBankText',
+            additionalPreference.tffa__Status__c == 'COMPLETED'
+              ? fetchOnlineBankingText('ONLINE_BANKING_SUCCESS_TEXT', brandObj)
+              : fetchOnlineBankingText('ONLINE_BANKING_FAILURE_TEXT', brandObj)
+          );
+        }
+
+        if (subPartyMap.get(p.Id) != null && !subPartyMap.get(p.Id) && additionalPreference == null && p.IsOLBEnrolled__c != 'Y') {
           factsMap.put('onlineBankText', fetchOnlineBankingText('ONLINE_BANKING_JOINT_NOT_PRESENT_TEXT', brandObj));
         }
 
@@ -292,7 +369,7 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
    *
    * @param app
    * @returns `String`
-   */
+   
   private String fetchPrimaryPartyId(tffa__Application__c app) {
     tffa__Party__c primaryParty;
     for (tffa__ApplicationPartyXref__c xref : app.tffa__PartyXrefs__r) {
@@ -305,7 +382,7 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
     }
     return primaryParty.Id;
   }
-
+*/
   public void triggerManualFundingEmailToPrimary(tffa__Application__c app, Map<String, Object> factsMap, tffa__Brand__c brandObj) {
     tffa__Party__c p = new tffa__Party__c();
     if (!app.tffa__PartyXrefs__r.isEmpty()) {
@@ -437,21 +514,28 @@ global inherited sharing class CZWTFCApplicationEventExtension extends tffa.Even
   // }
 
   public String fetchOnlineBankingText(String code, tffa__Brand__c brandObj) {
-
-    if(code == 'ONLINE_BANKING_SUCCESS_TEXT'){
+    tffa.Logger.debug('fetchOnlineBankingText : code = ' + code);
+    if (code == 'ONLINE_BANKING_SUCCESS_TEXT') {
       return '<br/>Congratulations! You have successfully enrolled for Online Banking.  For security purposes, you will receive a separate email with your temporary password and login instructions shortly.<br/>';
-    } else if (code == 'ONLINE_BANKING_FAILURE_TEXT'){
-      return '<br/>There was a system issue and your Online Banking enrollment was not successful.  Please click <a href="' + (String) tffa__EnvironmentConfiguration__c.getOrgDefaults().tffa__OnlineBankingUrl__c + '#pre-auth/self-enrollment'  + '" style="text-decoration:underline;">HERE</a>'+ ' to self-enroll or call us at '+ brandObj.EmailPhone__c +' for assistance. We sincerely apologize for the inconvenience.<br/>';
-    } else if(code == 'ONLINE_BANKING_JOINT_NOT_PRESENT_TEXT'){
+    } else if (code == 'ONLINE_BANKING_FAILURE_TEXT') {
+      return '<br/>There was a system issue and your Online Banking enrollment was not successful.  Please click <a href="' +
+        (String) tffa__EnvironmentConfiguration__c.getOrgDefaults().tffa__OnlineBankingUrl__c +
+        '#pre-auth/self-enrollment' +
+        '" style="text-decoration:underline;">here</a>' +
+        ' to self-enroll or call us at ' +
+        brandObj.EmailPhone__c +
+        ' for assistance. We sincerely apologize for the inconvenience.<br/>';
+    } else if (code == 'ONLINE_BANKING_JOINT_NOT_PRESENT_TEXT') {
       String buttonUrl = tffa__SiteUrl__c.getOrgDefaults().tffa__Url__c + PageReference.forResource('OLBEnroll').getUrl();
 
       return '<br/><p style="font-size:20px;font-weight:bold">Don’t forget!<p/><p>Sign up for online banking.</p><br/> <a href="' +
-      (String) tffa__EnvironmentConfiguration__c.getOrgDefaults().tffa__OnlineBankingUrl__c + '#pre-auth/self-enrollment' +
+        (String) tffa__EnvironmentConfiguration__c.getOrgDefaults().tffa__OnlineBankingUrl__c +
+        '#pre-auth/self-enrollment' +
         '"><img width="100" height="50" align="left" src="' +
         buttonUrl +
         '" alt="Enroll"/></a><br/><br/><br/>';
     }
-    
+
     return '';
   }
 }

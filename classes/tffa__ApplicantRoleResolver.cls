@@ -12,13 +12,13 @@ global virtual class ApplicantRoleResolver extends tffa.AbstractServiceProvider 
     global static tffa.ApplicantRoleResolver getInstance() {
         return null;
     }
-    global virtual List<tffa__ApplicationPartyXref__c> resolveAndSet(List<tffa__Application__c> apps, List<tffa__SubmissionPartyXref__c> partyXrefs) {
+    global virtual List<tffa__ApplicationPartyXref__c> resolveAndSet(List<tffa__Application__c> apps, List<tffa__SubmissionPartyXref__c> spXrefs) {
         return null;
     }
     global virtual List<tffa__ApplicationPartyXref__c> resolveAndSet(tffa__Application__c app) {
         return null;
     }
-    global virtual List<tffa__ApplicationPartyXref__c> resolveAndSet(tffa__Application__c app, List<tffa__ApplicationPartyXref__c> partyXrefs) {
+    global virtual List<tffa__ApplicationPartyXref__c> resolveAndSet(tffa__Application__c app, List<tffa__ApplicationPartyXref__c> spXrefs) {
         return null;
     }
     global virtual List<tffa.ApplicantRoleDTO> resolve(Map<String,Object> facts) {

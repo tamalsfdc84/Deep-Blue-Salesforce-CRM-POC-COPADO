@@ -17,7 +17,7 @@ public with sharing class CZWTFCConvergeAdapter {
       }
 
       if (convergeConfig.LogRequest__c) {
-        FISCCIntegrationLogService.setLogItemRequestAndResponse('Endpoint: ' + req.getEndpoint() + ' Request: ' + requestBody, null);
+        CZWTFCIntegrationLogService.setLogItemRequestAndResponse('Endpoint: ' + req.getEndpoint() + ' Request: ' + requestBody, null);
       }
 
       Http http = new Http();

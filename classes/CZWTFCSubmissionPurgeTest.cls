@@ -186,38 +186,59 @@ public with sharing class CZWTFCSubmissionPurgeTest {
     asm.addChildObjects('tffa__PartyXrefs__r', new List<tffa__SubmissionPartyXref__c>{ partyXRef, xref1, xref12 });
     submissionObj = (tffa__Submission__c) asm.assemble();
 
+    IntegrationLog__c log = new IntegrationLog__c(Submission__c = submissionObj.id, FlowName__c = 'Create Customer FLOW');
+    insert log;
+
+    IntegrationLogItem__c logItems = new IntegrationLogItem__c(
+      Name = 'Test',
+      IntegrationLog__c = log.Id,
+      status__c = 'Failure',
+      ApiName__c = 'Test'
+    );
+    insert logItems;
+
     Test.startTest();
 
     CZWTFCPurgeSubmissionBatch.calledFromTestCls = true;
-    try {
-      Database.executeBatch(new CZWTFCPurgeSubmissionBatch(), 1);
-    } catch (Exception ex) {
-    }
-
-    try {
-      CZWTFCRetryFailedAppBatch.calledFromTestCls = true;
-      Database.executeBatch(new CZWTFCRetryFailedAppBatch(), 1);
-    } catch (Exception ex) {
-    }
 
     CZWTFCPurgeSubmissionHelper.calledFromTestCls = true;
     try {
       CZWTFCPurgeSubmissionHelper.getPurgeSub();
       CZWTFCPurgeSubmissionHelper.deletePartyAndItsChildObj(submissionObj);
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
     try {
       CZWTFCHelperRepository.removeStip(new List<tffa__Stipulation__c>{});
       CZWTFCHelperRepository.removeAddPref(new List<tffa__AdditionalPreference__c>{});
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
     try {
       CZWTFCHelperRepository.removeAddress(new List<tffa__Address__C>{});
       CZWTFCHelperRepository.removePartyAddress(new List<tffa__PartyAddressXref__c>{});
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
+    try {
+      ID batchprocessid = Database.executeBatch(new CZWTFCPurgeSubmissionBatch(), 1);
+      AsyncApexJob aaj = [SELECT Id, Status, JobItemsProcessed, TotalJobItems, NumberOfErrors FROM AsyncApexJob WHERE ID = :batchprocessid];
+      System.assertNotEquals(aaj, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    try {
+      CZWTFCRetryFailedAppBatch.calledFromTestCls = true;
+      ID batchprocessid = Database.executeBatch(new CZWTFCRetryFailedAppBatch(), 1);
+      AsyncApexJob aaj = [SELECT Id, Status, JobItemsProcessed, TotalJobItems, NumberOfErrors FROM AsyncApexJob WHERE ID = :batchprocessid];
+      System.assertNotEquals(aaj, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
     Test.stopTest();
   }
 }

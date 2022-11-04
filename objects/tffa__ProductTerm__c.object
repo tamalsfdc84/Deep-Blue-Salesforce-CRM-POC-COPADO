@@ -425,7 +425,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Financial Product Terms</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

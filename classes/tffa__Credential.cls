@@ -58,6 +58,10 @@ global class Credential {
         get;
         set;
     }
+    global Boolean enableLogging {
+        get;
+        set;
+    }
     global String environmentName {
         get;
         set;
@@ -103,5 +107,8 @@ global class Credential {
     }
     global Credential(tffa__Credential__mdt configuration) {
 
+    }
+    global String getParameter(String key) {
+        return null;
     }
 }

@@ -20,5 +20,6 @@ public with sharing class FISCCDollarTransResponseDTO extends FISCCTransactionRe
     public String AutoOvrideInd;
     public String DPOvrideInfo;
     public Integer TxnSecurityInd;
+    public Integer DPRetAcctTxnCde;
   }
 }

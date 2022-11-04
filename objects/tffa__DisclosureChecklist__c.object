@@ -747,7 +747,7 @@ Disclosures can be grouped together into a checklist so it can be presented usin
         <type>Text</type>
     </nameField>
     <pluralLabel>Disclosure Checklists</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

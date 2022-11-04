@@ -27,6 +27,9 @@ global class SObjectAssembler {
     global SObject get() {
         return null;
     }
+    global static Boolean isObjectSet(SObject obj, Schema.SObjectField field) {
+        return null;
+    }
     global void put(String name, Object value) {
 
     }

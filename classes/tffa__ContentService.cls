@@ -15,6 +15,9 @@ global class ContentService extends tffa.AbstractService {
     global static List<tffa.DocumentParticipantDTO> createOrUpdateParticipants(List<tffa.DocumentParticipantDTO> participants) {
         return null;
     }
+    global static List<ContentVersion> createOrUpdate(List<ContentVersion> contentVersions) {
+        return null;
+    }
     global static List<tffa.DocumentMetadataDTO> createOrUpdate(List<tffa.DocumentMetadataDTO> documents) {
         return null;
     }
@@ -40,6 +43,9 @@ global class ContentService extends tffa.AbstractService {
         return null;
     }
     global static tffa.ContentAssetDTO readPublicContentAsset(Map<String,Object> queryParams) {
+        return null;
+    }
+    global static List<ContentVersion> read(List<String> contentDocumentIds) {
         return null;
     }
     global static List<ContentVersion> read(String entityId, String documentType, String documentSubtype) {

@@ -225,11 +225,11 @@
                                        <td align="left" class="em_black" style="font-size:13px; font-family:Verdana, Geneva, sans-serif; color:#000000; line-height:20px;" valign="top">
                                           Dear&nbsp;{PartyName},<br/>
                                           <br/>
-                                          Thank you for submitting your application with us! We appreciate the opportunity to serve
-                                          your financial needs.<br></br><br/>
+                                          We recently received your completed application for {AccountType}, confirmation number {ConfirmationNumber}.<br/><br/>
+                                          We are currently reviewing your application, you will receive an update within 2-3 business days.<br/><br/>
                                           To view the status of your application, please <u><a alias="click here" href="{SubmissionQueryParam}" style="color:#003e7e;text-decoration:underline;" title="click here">click here</a></u>.<br/>
                                           <br/>
-                                          If you have any questions, or did not submit this application, please call us at {phoneNo}.<br/>
+                                          Thank you for choosing the Wintrust Community Banks family. If you have any questions, or did not submit this application, please call us at {phoneNo} or email us at <a style="color: #003e7e; text-decoration: underline;" href="mailto:{email}">{email}</a>. <br/>
                                           &nbsp;
                                        </td>
                                     </tr>

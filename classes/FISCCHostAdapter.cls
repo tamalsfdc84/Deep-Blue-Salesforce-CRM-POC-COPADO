@@ -21,6 +21,10 @@ public inherited sharing class FISCCHostAdapter {
           requestStr = requestStr.replace(strMapKey, FISCCIntegrationConstants.mapOfHyphenValues.get(strMapKey));
         }
       }
+      if (adapterConfig.DeveloperName.equalsIgnoreCase('GenerateDocumentId')) {
+        requestStr = requestStr.replace('FCMUploadDate', 'date');
+      }
+      tffa.Logger.debug('requestStr : '+ requestStr);
       if (adapterConfig != null && charterConfig != null) {
         if (('DSS').equals(FISCCIntegrationLogService.applicationCode)) {
           hostResponse = FISCCDSSAPICall.execute(requestStr, adapterConfig, charterConfig);
@@ -74,7 +78,7 @@ public inherited sharing class FISCCHostAdapter {
                     !msg.text.contains('null') &&
                     (msg.Severity).equalsIgnoreCase('Error')
                   ) {
-                    FISCCIntegrationConstants.ErrorMessage = FISCCIntegrationConstants.ErrorMessage + '   ' + msg.text;
+                    FISCCIntegrationConstants.ErrorMessage = msg.text;
                     code = code + '  ' + msg.code;
                     tffa.logger.debug(' FISCCIntegrationConstants.ErrorMessage ==> ' + FISCCIntegrationConstants.ErrorMessage);
                   }

@@ -18,7 +18,7 @@ public inherited sharing class FISCCCardBaseIntegrationExtension {
     return result;
   }
 
-  public static Object invokeCardCreation(
+  public static Object invokeGenerateDepositOrigination(
     tffa__party__c partyObj,
     tffa__AccountPreference__c accPref,
     tffa__Application__c appObj,
@@ -28,27 +28,10 @@ public inherited sharing class FISCCCardBaseIntegrationExtension {
     FISCCRequestBaseDTO fisccRequestBaseDTO = null;
     Object result = null;
 
-    fisccRequestBaseDTO = FISCCCardBaseIntegrationHelper.getCardCreationRequest(partyObj, accPref, appObj, charterConfig);
-    tffa.Logger.debug('getCardCreationRequest :: ' + fisccRequestBaseDTO);
+    fisccRequestBaseDTO = FISCCCardBaseIntegrationHelper.getDepositOriginationRequest(partyObj, accPref, appObj, charterConfig);
+    tffa.Logger.debug('getDepositOriginationRequest :: ' + fisccRequestBaseDTO);
     result = FISCCHostAdapter.processHostRequest(fisccRequestBaseDTO, adapterConfig, charterConfig);
-    tffa.Logger.debug('result in invokeCardCreation ==>' + result);
-    return result;
-  }
-
-  public static Object invokeCardToAccRelation(
-    tffa__party__c partyObj,
-    tffa__AccountPreference__c accPref,
-    tffa__Application__c appObj,
-    FISCC_Adapter_Configs__mdt adapterConfig,
-    FISCC_Charter_Config__mdt charterConfig
-  ) {
-    FISCCRequestBaseDTO fisccRequestBaseDTO = null;
-    Object result = null;
-
-    fisccRequestBaseDTO = FISCCCardBaseIntegrationHelper.getCardToCustRelationRequest(partyObj, accPref, appObj);
-    tffa.Logger.debug('getCardToAccRelationRequest :: ' + fisccRequestBaseDTO);
-    result = FISCCHostAdapter.processHostRequest(fisccRequestBaseDTO, adapterConfig, charterConfig);
-    tffa.Logger.debug('result in invokeCardToAccRelation ==>' + result);
+    tffa.Logger.debug('result in invokeGenerateDepositOrigination ==>' + result);
     return result;
   }
 
@@ -66,6 +49,23 @@ public inherited sharing class FISCCCardBaseIntegrationExtension {
     tffa.Logger.debug('getUpdateCustDemographicsRequest :: ' + fisccRequestBaseDTO);
     result = FISCCHostAdapter.processHostRequest(fisccRequestBaseDTO, adapterConfig, charterConfig);
     tffa.Logger.debug('result in invokeupdateCustomerDemographics ==>' + result);
+    return result;
+  }
+
+  public static Object invokeExpediteCardShipping(
+    tffa__party__c partyObj,
+    tffa__AccountPreference__c accPref,
+    tffa__Application__c appObj,
+    FISCC_Adapter_Configs__mdt adapterConfig,
+    FISCC_Charter_Config__mdt charterConfig
+  ) {
+    FISCCRequestBaseDTO fisccRequestBaseDTO = null;
+    Object result = null;
+
+    fisccRequestBaseDTO = FISCCCardBaseIntegrationHelper.getExpediteDeliveryRequest(partyObj, accPref, appObj, charterConfig);
+    tffa.Logger.debug('getExpediteDeliveryRequest :: ' + fisccRequestBaseDTO);
+    result = FISCCHostAdapter.processHostRequest(fisccRequestBaseDTO, adapterConfig, charterConfig);
+    tffa.Logger.debug('result in invokeExpediteCardShipping ==>' + result);
     return result;
   }
 }

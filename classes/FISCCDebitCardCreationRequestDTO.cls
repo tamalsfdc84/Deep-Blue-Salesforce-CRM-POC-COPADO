@@ -1,10 +1,4 @@
-public with sharing class FISCCDebitCardCreationRequestDTO extends FISCCRequestBaseDTO {
-  public CardNew cardNew;
-  public FISCCDebitCardCreationRequestDTO() {
-    this.cardNew = new CardNew();
-  }
-
-  public class CardNew {
+public with sharing class FISCCDebitCardCreationRequestDTO {
     public String CBCrdNbr;
     public String CustNbr;
     public String CBStAbbr;
@@ -22,5 +16,5 @@ public with sharing class FISCCDebitCardCreationRequestDTO extends FISCCRequestB
     public String CBShrtNmeFrst;
     public String CBShrtNmeLst;
     public String CBCrdNmeLne1;
-  }
+    public String OptlLneEmbossOnCard;
 }

@@ -7,12 +7,12 @@ public with sharing class FISCCCustomerEmailHelper {
     FISCCCreateEmailAddressesDTO fisccEmailAddressDTO = new FISCCCreateEmailAddressesDTO();
 
     try {
-      tffa.Logger.debug('Inside createCustomerSearchRequest method');
+      tffa.Logger.debug('Inside customerEmailRequest method');
 
       fisccEmailAddressDTO.ResnCde = FISCCApplicationConstants.RESEND_CODE;
       fisccEmailAddressDTO.EmailAddr = partyObjs[0].tffa__PrimaryEmail__c;
 
-      tffa.logger.debug('partyObjs in createCustomerSearchRequest==>' + partyObjs);
+      tffa.logger.debug('partyObjs in customerEmailRequest==>' + partyObjs);
     } catch (Exception ex) {
       tffa.Logger.error('Exception in customerEmailRequest : ' + ex.getMessage() + ex.getStackTraceString());
       return null;

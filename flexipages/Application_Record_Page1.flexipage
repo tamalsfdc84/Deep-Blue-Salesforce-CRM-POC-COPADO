@@ -4,20 +4,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>tffa__Application__c.tffa__Claim</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>tffa__Application__c.tffa__Reassign</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
@@ -63,38 +49,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>actions</name>
-                    <value>RESUME;REOPEN;CANCEL</value>
-                </componentInstanceProperties>
-                <componentName>tffa:resumeApplication</componentName>
-                <identifier>tffa_resumeApplication</identifier>
-                <visibilityRule>
-                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>ABANDONED</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>SAVED</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>true</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>tffa:applicationKYCDecision</componentName>
+                <componentName>processApplicationKYC</componentName>
                 <identifier>tffa_applicationKYCDecision</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 AND ( 2 OR 3 ) AND 4 AND 5</booleanFilter>
+                    <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.tffa__Submission__r.tffa__Submitted__c}</leftValue>
                         <operator>EQUAL</operator>
@@ -106,19 +64,29 @@
                         <rightValue>REVIEW</rightValue>
                     </criteria>
                     <criteria>
-                        <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>APPROVED</rightValue>
+                        <rightValue>TerafinaBranchManager</rightValue>
                     </criteria>
                     <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>ACCOUNT_OPENED</rightValue>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaRegionalManager</rightValue>
                     </criteria>
                     <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>FUNDED</rightValue>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaBranchUser</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Terafina</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -433,6 +401,87 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>adminFilters</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecordsToDisplay</name>
+                    <value>15</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>tffa__Application__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>CZMaxsafeAllocationDetailses__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>BrandCode__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>IsSelected__c</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Maxsafe Allocation Details</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>BrandCode__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Ascending</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>tffa__Application__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>tffa__LinkedEligibilities__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer12</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

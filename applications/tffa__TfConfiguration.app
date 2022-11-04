@@ -19,10 +19,43 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Terafina Business Configuration</label>
     <navType>Console</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OperationsHome1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>TerafinaBranchManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OperationsHome1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>TerafinaBranchUser</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OperationsHome1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>TerafinaContactCenter</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OperationsHome1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>TerafinaRegionalManager</profile>
+    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>tffa__Product__c</tabs>
     <tabs>tffa__AddOnService__c</tabs>
     <tabs>tffa__AddOnServiceChecklist__c</tabs>
+    <tabs>tffa__AddOnServiceMatrix__c</tabs>
     <tabs>tffa__AgentDetail__c</tabs>
     <tabs>tffa__AllowedAddress__c</tabs>
     <tabs>tffa__ApplicantRole__c</tabs>
@@ -37,12 +70,15 @@
     <tabs>tffa__DepositBoxConfiguration__c</tabs>
     <tabs>tffa__DisclosureChecklist__c</tabs>
     <tabs>tffa__DisclosureTemplate__c</tabs>
+    <tabs>tffa__DisclosureMatrix__c</tabs>
     <tabs>tffa__EducationalInstitutionSpecification__c</tabs>
     <tabs>tffa__FundingMatrix__c</tabs>
+    <tabs>tffa__ListOfValues__c</tabs>
     <tabs>tffa__Location__c</tabs>
     <tabs>tffa__LookupTable__c</tabs>
     <tabs>tffa__Offer__c</tabs>
     <tabs>tffa__OfferMatrix__c</tabs>
+    <tabs>tffa__PartyAgeMatrix__c</tabs>
     <tabs>tffa__PartyDecisionMatrix__c</tabs>
     <tabs>tffa__PartyRelationCode__c</tabs>
     <tabs>tffa__ProductMatrix__c</tabs>
@@ -54,6 +90,7 @@
     <tabs>tffa__ReferralProgramMatrix__c</tabs>
     <tabs>tffa__StipulationChecklist__c</tabs>
     <tabs>tffa__StipulationTemplate__c</tabs>
+    <tabs>tffa__StipulationMatrix__c</tabs>
     <tabs>tffa__UXStrategy__c</tabs>
     <tabs>tffa__ValueConfiguration__c</tabs>
     <tabs>tffa__VehicleSpecification__c</tabs>
@@ -69,6 +106,9 @@
         </mappings>
         <mappings>
             <tab>tffa__AddOnServiceChecklist__c</tab>
+        </mappings>
+        <mappings>
+            <tab>tffa__AddOnServiceMatrix__c</tab>
         </mappings>
         <mappings>
             <tab>tffa__AddOnService__c</tab>
@@ -113,6 +153,9 @@
             <tab>tffa__DisclosureChecklist__c</tab>
         </mappings>
         <mappings>
+            <tab>tffa__DisclosureMatrix__c</tab>
+        </mappings>
+        <mappings>
             <tab>tffa__DisclosureTemplate__c</tab>
         </mappings>
         <mappings>
@@ -120,6 +163,9 @@
         </mappings>
         <mappings>
             <tab>tffa__FundingMatrix__c</tab>
+        </mappings>
+        <mappings>
+            <tab>tffa__ListOfValues__c</tab>
         </mappings>
         <mappings>
             <tab>tffa__Location__c</tab>
@@ -132,6 +178,9 @@
         </mappings>
         <mappings>
             <tab>tffa__Offer__c</tab>
+        </mappings>
+        <mappings>
+            <tab>tffa__PartyAgeMatrix__c</tab>
         </mappings>
         <mappings>
             <tab>tffa__PartyDecisionMatrix__c</tab>
@@ -165,6 +214,9 @@
         </mappings>
         <mappings>
             <tab>tffa__StipulationChecklist__c</tab>
+        </mappings>
+        <mappings>
+            <tab>tffa__StipulationMatrix__c</tab>
         </mappings>
         <mappings>
             <tab>tffa__StipulationTemplate__c</tab>

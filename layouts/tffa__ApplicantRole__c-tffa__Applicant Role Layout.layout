@@ -23,6 +23,10 @@
                 <behavior>Edit</behavior>
                 <field>tffa__Authority__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CZFISRelationshipCode__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -40,6 +44,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>tffa__Disabled__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>tffa__Primary__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

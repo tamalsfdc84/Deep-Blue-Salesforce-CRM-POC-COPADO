@@ -186,11 +186,26 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .selectFields() /** */
       .whereClause('IsObsolete__c', '= false')
       .build()
+      .selectObject('tffa__Submission__r')
+      .selectFields()
+      .selectObject('tffa__BrandEntity__r')
+      .selectFields()
+      .build()
+      .build()
       .selectChildObject('PartyXrefs__r')
       .selectFields()
       .selectObject('tffa__Party__r')
       .selectFields()
       .build()
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectObject('CZLocation__r') /** */
+      .selectFields() /** */
+      .build()
+      .selectObject('tffa__Product__r')
+      .selectFields()
       .build()
       .whereClause('Id', '=:attr1')
       .build()
@@ -235,6 +250,18 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .selectFields()
       .selectChildObject('tffa__AccountPreferences__r')
       .selectFields()
+      .selectObject('PriSavingApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectObject('SecDDAApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('SecSavingApplicationId__r')
+      .selectFields()
+      .build()
       .whereClause('tffa__AddOnServiceType__c', 'IN:attr1')
       .opAnd()
       .whereClause('tffa__Enabled__c', '=:attr2')
@@ -267,6 +294,9 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
 
     String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
       .selectFields()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .build()
       .selectChildObject('tffa__AccountPreferences__r')
       .selectFields()
       .whereClause('tffa__AddOnServiceType__c', 'In :attr1')
@@ -283,9 +313,9 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .build()
       .whereClause('AccountPreference__c', 'IN:attr4')
       .opAnd()
-      .whereClause('tffa__Status__c', 'IN:attr5')
+      .whereClause('AccPrefRetryCount__c', '<:attr5') //5
       .opAnd()
-      .whereClause('AccPrefRetryCount__c', '<:attr6') //5
+      .whereClause('tffa__Status__c', 'IN :attr6')
       .build()
       .toQuery();
 
@@ -300,8 +330,8 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
         true,
         CZWTFCConstants.ADDON_STATUS_COMPLETED,
         FISCCIntegrationConstants.ADDON_SERVICE_PENDING_STATUS_LIST,
-        FISCCIntegrationConstants.ACCT_OPEN_STATUS_LIST,
-        wintrustEnvConfig.BatchRetryCount__c
+        wintrustEnvConfig.BatchRetryCount__c,
+        FISCCIntegrationConstants.ACCT_OPEN_STATUS_LIST
       }
     );
     return applications.isEmpty() ? new List<tffa__Application__c>() : applications;
@@ -316,6 +346,9 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
 
     String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
       .selectFields()
+      .selectObject('tffa__Submission__r')
+      .selectFields()
+      .build()
       .selectChildObject('tffa__LinkedFundingRequests__r')
       .selectFields()
       .whereClause('IsObsolete__c', '= false')
@@ -325,35 +358,15 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .whereClause('tffa__IsDeleted__c', '= false')
       .withLimit(1)
       .build()
-      .whereClause('tffa__Status__c', 'IN:attr2')
+      .whereClause('AccountOpeningStatus__c', '=: attr2')
       .opAnd()
-      .whereClause('tffa__KYCDecisionOutcome__c', '=:attr3')
-      .opAnd()
-      .groupStart()
-      .whereClause('AccountOpeningStatus__c', '=: attr4')
-      .opOr()
-      .groupStart()
-      .whereClause('AccountOpeningStatus__c', '!=: attr5')
-      .opAnd()
-      .whereClause('LastModifiedDate', '<= :attr6')
-      .groupEnd()
-      .groupEnd()
-      .opAnd()
-      .whereClause('AcctOpenRetryCount__c', '<=:attr7')
+      .whereClause('AcctOpenRetryCount__c', '<=:attr3')
       .build()
       .toQuery();
 
     List<tffa__Application__c> applications = (List<tffa__Application__c>) doQuery(
       q,
-      new List<Object>{
-        CZWTFCConstants.FUNDING_TYPE_ACH,
-        FISCCIntegrationConstants.FAILED_APP_STATUS,
-        FISCCIntegrationConstants.KYC_APPROVED_STATUS,
-        CZWTFCConstants.PROCESS_STATUS_FAILURE,
-        CZWTFCConstants.PROCESS_STATUS_SUCCESS,
-        updatedCurrentDate,
-        wintrustEnvConfig.BatchRetryCount__c
-      }
+      new List<Object>{ CZWTFCConstants.FUNDING_TYPE_ACH, CZWTFCConstants.PROCESS_STATUS_FAILURE, wintrustEnvConfig.BatchRetryCount__c }
     );
     return applications.isEmpty() ? new List<tffa__Application__c>() : applications;
   }
@@ -385,9 +398,19 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .build()
       .whereClause('MDMUploadStatus__c', '!=: attr1')
       .opAnd()
+      .groupStart()
       .whereClause('tffa__AccountNumber__c', '!= null')
+      .opOR()
+      .whereClause('tffa__DepositBoxAccountNumber__c', '!= null')
+      .groupEnd()
       .opAnd()
       .whereClause('MDMUploadRetryCount__c', ' < :attr2')
+      .opAnd()
+      .groupStart()
+      .whereClause('tffa__Status__c', '= :attr3')
+      .opOR()
+      .whereClause('AccountOpeningStatus__c', ' = :attr4')
+      .groupEnd()
       .build()
       .toQuery();
 
@@ -395,7 +418,12 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
 
     List<tffa__Application__c> applications = (List<tffa__Application__c>) doQuery(
       q,
-      new List<Object>{ CZWTFCConstants.PROCESS_STATUS_SUCCESS, wintrustEnvConfig.BatchRetryCount__c }
+      new List<Object>{
+        CZWTFCConstants.PROCESS_STATUS_SUCCESS,
+        wintrustEnvConfig.BatchRetryCount__c,
+        'DECLINED',
+        CZWTFCConstants.PROCESS_STATUS_SUCCESS
+      }
     );
 
     return applications.isEmpty() ? new List<tffa__Application__c>() : applications;
@@ -404,6 +432,9 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
   global static List<tffa__ApplicationPartyXref__c> findApplicationPartyById(String applicationId) {
     String q = new tffa.QueryBuilder(tffa__ApplicationPartyXref__c.SObjectType)
       .selectFields()
+      .selectObject('tffa__ApplicantRole__r')
+      .selectFields()
+      .build()
       .selectObject('tffa__Party__r')
       .selectFields()
       .build()
@@ -418,6 +449,9 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
   global static tffa__ApplicationPartyXref__c findApplicationPartyByPartyId(String partyId, String applicationId) {
     String q = new tffa.QueryBuilder(tffa__ApplicationPartyXref__c.SObjectType)
       .selectFields()
+      .selectObject('tffa__ApplicantRole__r')
+      .selectFields()
+      .build()
       .selectObject('tffa__Party__r')
       .selectFields()
       .build()
@@ -438,7 +472,6 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
   public static List<tffa__AccountPreference__c> findAccountPrefByAppIdAndCode(tffa__Application__c app, String code) {
     String q = new tffa.QueryBuilder(tffa__AccountPreference__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Application__c', ' =:attr1')
       .opAnd()
       .whereClause('tffa__Code__c', ' =:attr2')
@@ -463,7 +496,6 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
       .selectObject('tffa__Submission__r')
       .selectFields(new List<String>{ 'Id', 'DisclosureConverted__c' })
       .build()
-      .build()
       .whereClause('tffa__Status__c', ' IN :attr1')
       .opAnd()
       .whereClause('FCMUploadRetryCount__c', ' < :attr2')
@@ -474,5 +506,321 @@ global with sharing class CZWTFCApplicationRepository extends tffa.AbstractRepos
 
     List<tffa__Application__c> listApplication = doQuery(query, new List<Object>{ statusesLst, retryCount, fcmStatusLst });
     return listApplication.isEmpty() ? new List<tffa__Application__c>() : listApplication;
+  }
+
+  public static List<tffa__Application__c> getApplicationByCheck() {
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .build()
+      .whereClause('AccountOpeningStatus__c', '=: attr1')
+      .opAnd()
+      .whereClause('tffa__AccountNumber__c', ' != null')
+      .build()
+      .toQuery();
+
+    return doQuery(q, new List<Object>{ CZWTFCConstants.PROCESS_STATUS_SUCCESS });
+  }
+
+  /**
+   * Fetches an application record with all fields by submission id.
+   */
+  public static List<tffa__Application__c> findApplicationsByIds(list<tffa__Application__c> applicationObjs) {
+    List<Id> appIds = new List<Id>();
+    for (tffa__Application__c appObject : applicationObjs) {
+      appIds.add(appObject.Id);
+    }
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__AccountPreferences__r')
+      .selectFields()
+      .build()
+      .selectChildObject('tffa__Beneficiaries__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__RelationCode__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectChildObject('tffa__LinkedEligibilities__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Location__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectChildObject('tffa__LinkedFundingRequests__r')
+      .selectFields() /** */
+      .whereClause('IsObsolete__c', '= false')
+      .build()
+      .selectChildObject('CZMaxsafeAllocationDetailses__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Submission__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectChildObject('PartyXrefs__r')
+      .selectFields()
+      .selectObject('tffa__Party__r')
+      .selectFields()
+      .build()
+      .build()
+      .whereClause('Id', 'in :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Application__c> applications = doQuery(q, new List<Object>{ appIds });
+    return applications.isEmpty() ? null : applications;
+  }
+
+  /**
+   * Fetches an application record with all fields by submission id.
+   */
+  public static List<tffa__Application__c> findApplicationsByIdsForDocusign(Id subId) {
+    List<Id> appIds = new List<Id>();
+
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__AccountPreferences__r')
+      .selectFields()
+      .build()
+      .selectChildObject('tffa__Beneficiaries__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__RelationCode__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectObject('CZLocation__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .build()
+      // .selectChildObject('tffa__LinkedEligibilities__r')
+      // .selectFields()
+      // .build()
+      // .selectObject('tffa__Location__r')
+      // .selectFields()
+      // .selectObject('tffa__Address__r')
+      // .selectFields()
+      // .build()
+      // .build()
+      // .selectChildObject('tffa__LinkedFundingRequests__r')
+      // .selectFields() /** */
+      // .whereClause('IsObsolete__c', '= false')
+      // .build()
+      .selectChildObject('CZMaxsafeAllocationDetailses__r')
+      .selectFields()
+      .build()
+      // .selectObject('tffa__Submission__r')
+      // .selectFields()
+      // .withLimit(1)
+      // .build()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .selectChildObject('PartyXrefs__r')
+      .selectFields()
+      .selectObject('tffa__Party__r')
+      .selectFields()
+      .build()
+      .build()
+      .whereClause('tffa__Submission__c', '= :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Application__c> applications = doQuery(q, new List<Object>{ subId });
+    return applications.isEmpty() ? null : applications;
+  }
+
+  /**
+   * Fetches an application record with all fields by submission id.
+   */
+  public static List<tffa__Application__c> findApplicationsByIdsForBranchKYC(list<tffa__Application__c> applicationObjs) {
+    List<Id> appIds = new List<Id>();
+    for (tffa__Application__c appObject : applicationObjs) {
+      appIds.add(appObject.Id);
+    }
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .whereClause('Id', 'in :attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Application__c> applications = doQuery(q, new List<Object>{ appIds });
+    return applications.isEmpty() ? null : applications;
+  }
+
+  public static tffa__Application__c findApplicationForTest() {
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType).selectFields().build().toQuery();
+
+    List<tffa__Application__c> application = doQuery(q, new List<Object>{});
+    return application.isEmpty() ? null : application[0];
+  }
+
+  public static List<tffa__Application__c> findBySubmissionId(String submissionId) {
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectChildObject('tffa__AccountPreferences__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Submission__c', '= :attr1')
+      .build()
+      .toQuery();
+    return doQuery(q, new List<Object>{ submissionId });
+  }
+
+  //Get Account Details with child objects with all funding Requests
+  public static List<tffa__Application__c> findAppsWithChildObjects(list<tffa__Application__c> applicationObjs) {
+    List<Id> appIds = new List<Id>();
+    for (tffa__Application__c appObject : applicationObjs) {
+      appIds.add(appObject.Id);
+    }
+    Boolean isObsolete = FISCCIntegrationConstants.ISOBSOLETE_FALSE;
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectObject('tffa__Submission__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .selectObject('tffa__Product__r')
+      .selectFields()
+      .withLimit(1)
+      .build()
+      .selectChildObject('tffa__PartyXrefs__r')
+      .selectFields()
+      .selectObject('tffa__ApplicantRole__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Party__r')
+      .selectFields()
+      .build()
+      .orderBy('tffa__Primary__c', true)
+      .build()
+      .selectChildObject('tffa__AccountPreferences__r')
+      .selectFields()
+      .selectObject('tffa__Application__r')
+      .selectFields()
+      .build()
+      .selectObject('PriSavingApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('SecDDAApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('SecSavingApplicationId__r')
+      .selectFields()
+      .build()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectChildObject('tffa__LinkedFundingRequests__r')
+      .selectFields()
+      .whereClause('IsObsolete__c', '= false')
+      .opAnd()
+      .whereClause('tffa__Type__c', 'IN :attr1')
+      .opAnd()
+      .whereClause('tffa__IsDeleted__c', '= false')
+      .build()
+      .selectChildObject('tffa__Beneficiaries__r')
+      .selectFields()
+      .selectObject('tffa__Address__r')
+      .selectFields()
+      .build()
+      .build()
+      .selectObject('CZLocation__r') /** */
+      .selectFields() /** */
+      .build()
+      //.whereClause('tffa__KYCDecisionOutcome__c', '=:KYCDECISION_OUTCOME_VALUES')
+      //.opAnd()
+      .whereClause('Id', '=:attr2')
+      .build()
+      .toQuery();
+    //tffa.Logger.debug('Application Query :- ' + q);
+    List<tffa__Application__c> l = doQuery(
+      q,
+      new List<Object>{
+        new List<String>{
+          CZWTFCConstants.FUNDING_TYPE_ACH,
+          CZWTFCConstants.DEBIT_CARD,
+          CZWTFCConstants.INTERNAL_TRANSFER,
+          CZWTFCConstants.BANK_BOX,
+          CZWTFCConstants.PRINT_INVOICE,
+          CZWTFCConstants.WAIVE_FEE
+        },
+        appIds
+      }
+    );
+    return l.isEmpty() ? null : l;
+  }
+
+  public static void updateAccountPurpose(String appId, String accountPurpose) {
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields(new List<String>{ 'Id', 'tffa__AccountPurpose__c' })
+      .whereClause('Id', '=:attr1')
+      .build()
+      .toQuery();
+
+    List<tffa__Application__c> applications = doQuery(q, new List<Object>{ appId });
+
+    if (!applications.isEmpty()) {
+      applications[0].tffa__AccountPurpose__c = accountPurpose;
+      save(applications);
+    }
+  }
+
+  public static Map<String, tffa__Application__c> findAllMaxsafeAllocationsByIds(list<tffa__Application__c> applicationObjs) {
+    Map<String, tffa__Application__c> applicationMap = new Map<String, tffa__Application__c>();
+    List<Id> appIds = new List<Id>();
+    for (tffa__Application__c appObject : applicationObjs) {
+      appIds.add(appObject.Id);
+    }
+
+    String q = new tffa.QueryBuilder(tffa__Application__c.SObjectType)
+      .selectFields()
+      .selectChildObject('CZMaxsafeAllocationDetailses__r')
+      .selectFields()
+      .build()
+      .whereClause('Id', 'in :attr1')
+      .build()
+      .toQuery();
+
+    if (Test.isRunningTest()) {
+      q = new tffa.QueryBuilder(tffa__Application__c.SObjectType).selectFields().build().toQuery();
+    }
+
+    List<tffa__Application__c> applicationList = doQuery(q, new List<Object>{ appIds });
+    if (applicationList != null && !applicationList.isEmpty()) {
+      for (tffa__Application__c appObj : applicationList) {
+        applicationMap.put(appObj.Id, appObj);
+      }
+    }
+
+    return applicationMap;
   }
 }

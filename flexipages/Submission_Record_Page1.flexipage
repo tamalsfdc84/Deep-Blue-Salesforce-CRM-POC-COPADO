@@ -12,6 +12,22 @@
                         <valueListItems>
                             <value>Delete</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Submission__c.tffa__Abandon</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>IN_PROGRESS</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -60,14 +76,33 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>retryApplicationOpening</componentName>
+                <identifier>c_retryApplicationOpening</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Submitted__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.CZSigningStatus__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>SIGNING_COMPLETED</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>actions</name>
-                    <value>RESUME;REOPEN;CANCEL</value>
+                    <value>RESUME;CANCEL</value>
                 </componentInstanceProperties>
                 <componentName>tffa:resumeApplication</componentName>
                 <identifier>tffa_resumeApplication</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 OR 2</booleanFilter>
+                    <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6 OR ((7 AND 8)))</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.tffa__Status__c}</leftValue>
                         <operator>EQUAL</operator>
@@ -77,6 +112,95 @@
                         <leftValue>{!Record.tffa__Status__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>SAVED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaBranchManager</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaBranchUser</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaRegionalManager</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaContactCenter</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>tffa:submissionSignDocuments</componentName>
+                <identifier>tffa_submissionSignDocuments</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7 OR 8 OR 9) AND 10</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Status__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>SUBMITTED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>DECLINED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Channel__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>BRANCH</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.CZSigningStatus__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>SIGNING_COMPLETED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaBranchManager</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaRegionalManager</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>TerafinaBranchUser</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Terafina</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.CZIsDebitCardProductSelected__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -209,6 +333,32 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>tffa__Submission__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>tffa__DisclosureEnvelopes__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer1</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

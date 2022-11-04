@@ -27,6 +27,9 @@ global class SObjectMapper {
     global static SObject fromMap(Map<String,Object> obj, Schema.SObjectType token) {
         return null;
     }
+    global static String getPicklistLabel(Schema.SObjectField picklistField, String picklistValue) {
+        return null;
+    }
     global static String serialize(SObject sobj) {
         return null;
     }

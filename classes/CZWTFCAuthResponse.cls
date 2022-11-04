@@ -2,6 +2,7 @@ public with sharing class CZWTFCAuthResponse {
   public CZWTFCAuthResponse() {
     this.custInfo = new CustomerInformation();
     this.accountList = new List<AccountList>();
+    this.cisLst = new List<CustomerCiISRecord>();
   }
 
   public boolean isSuccess;
@@ -9,6 +10,8 @@ public with sharing class CZWTFCAuthResponse {
   public String globalCustomerId;
   public CustomerInformation custInfo;
   public List<AccountList> accountList;
+  public List<CustomerCiISRecord> cisLst;
+  public String type;
 
   public class CustomerInformation {
     public CustomerInformation() {
@@ -23,8 +26,8 @@ public with sharing class CZWTFCAuthResponse {
     public String State;
     public String ZipCode;
     public String Country;
-    public String HomePhoneNo;
-    public String OfficePhoneNo;
+    public String PrimaryPhone;
+    public String SecondaryPhone;
     public String CellPhoneNo;
     public String EmailId;
     public String DateOfBirth;
@@ -47,6 +50,18 @@ public with sharing class CZWTFCAuthResponse {
     public boolean IsKYCRequired;
     public String Suffix;
     public boolean IsOLBEnrolled;
+    public String SecretWord;
+    public String SecretHint;
+    public String PrimaryOficerCode;
+    public String SecondaryOfficerCode;
+    public String CostCenter;
+    public String LocationCode;
+    public Boolean IsEmployee;
+    public Boolean IsFounder;
+    public Boolean HasPlatinumMembership;
+    public Boolean HasJuniorMembership;
+    public String TaxIdType;
+    public String TaxId;
   }
 
   public class AccountList {
@@ -61,6 +76,8 @@ public with sharing class CZWTFCAuthResponse {
     public String RelationshipCode;
     public String AccountBalance;
     public String CharterName;
+    public String relationshipName;
+    public String mdmPartyId;
   }
 
   public class IdentificationDetails {
@@ -69,5 +86,12 @@ public with sharing class CZWTFCAuthResponse {
     public String IssuingStateCode;
     public String ExpirationDate;
     public String IssueDate;
+  }
+
+  public class CustomerCiISRecord {
+    public String cisNbr;
+    public String charterName;
+    public String cisStartDate;
+    public String primaryOfrNbr;
   }
 }

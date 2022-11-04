@@ -45,12 +45,24 @@ public with sharing class CZMDMAuthenticationResponseDTO extends CZMDMResponseBa
     public String emplyTitle;
     public String emplyNme;
     public String suffix;
+    public String isEmp;
+    public String platMemSt;
+    public String taxIdType;
+    public String taxId;
+    public String jrSvrsMbrshpFlag;
   }
 
   public class CustomerRcdLst {
     public String cisNmb;
     public String chrtrCd;
     public String cisStrtDte;
+    public String primOffcrCd;
+    public String scndyOffcrNbr;
+    public String pwdValue;
+    public String pwdQuestion;
+    public String costCntr;
+    public String brnchCd;
+    public String isFounder;
   }
 
   public class AcctLst {

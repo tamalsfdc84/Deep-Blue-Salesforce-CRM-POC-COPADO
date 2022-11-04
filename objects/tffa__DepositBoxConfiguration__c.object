@@ -302,7 +302,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Deposit Box Configurations</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

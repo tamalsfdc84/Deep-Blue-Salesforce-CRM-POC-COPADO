@@ -519,7 +519,7 @@ There can be other parties like Brokers, MLO etc who play a role in the submissi
         <type>Text</type>
     </nameField>
     <pluralLabel>Submission Parties</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

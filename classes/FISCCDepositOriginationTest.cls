@@ -32,9 +32,19 @@ public inherited sharing class FISCCDepositOriginationTest {
     party.CellPhoneNumber__c = '97557854457';
     party.tffa__MothersMaidenName__c = 'Mother Name';
     party.tffa__Suffix__c = 'Jr';
+    party.CZMDMPartyID__c = '123';
     //party.RecordTypeId = TestRepositoryHelper.getPartyRecordType();
     insert party;
     lstParty.add(party);
+
+    tffa__AdditionalPreference__c testprefernce = new tffa__AdditionalPreference__c();
+    testprefernce.Name = 'abc';
+    testprefernce.tffa__Code__c = 'ONLINE-BANKING';
+    testprefernce.tffa__Submission__c = sub1.Id;
+    testprefernce.tffa__Party__c = party.Id;
+    testprefernce.tffa__AddOnServiceType__c = 'ONLINE_BANKING';
+    testprefernce.tffa__Enabled__c = true;
+    insert testprefernce;
 
     tffa__SubmissionPartyXref__c subPartyXref = new tffa__SubmissionPartyXref__c(
       tffa__Party__c = party.id,
@@ -651,7 +661,7 @@ public inherited sharing class FISCCDepositOriginationTest {
         Map<string, String> fundTransferParams = new Map<String, String>();*/
     // List<String> mockConditions = new List<String>{ 'failureEndPoint', 'emptyEndPoint', 'successEndPoint' };
     List<String> mockConditions = new List<String>{ 'successEndPoint' };
-
+    Object resp;
     Test.startTest();
     //set submission obj in factory
     for (String condition : mockConditions) {
@@ -670,17 +680,18 @@ public inherited sharing class FISCCDepositOriginationTest {
 
       FISCCGenerateDepositAccNumberDTO objFISCCGenerateDepositAccNumberDTO = new FISCCGenerateDepositAccNumberDTO();
       FISCCCreateNewDepositAccDTO objFISCCCreateNewDepositAccDTO = new FISCCCreateNewDepositAccDTO();
-      FISCCHostAdapter.processHostRequest(null, null, null);
+      resp = FISCCHostAdapter.processHostRequest(null, null, null);
       FISCCMsgListDTO objFISCCMsgListDTO = new FISCCMsgListDTO();
       // FISCCDepositOriginationProvider.createDepositOrigination(lstParty1,lstCharterConfig1[0]);
 
       //
     }
-    //Test.stopTest();
+    //System.assertEquals('1', '1', 'Success');
 
     // Test.startTest();
     //set submission obj in factory
 
+    System.assertNotEquals(resp, null);
     Test.stopTest();
   }
 
@@ -1222,6 +1233,18 @@ public inherited sharing class FISCCDepositOriginationTest {
 
     insert odAccountPreference;
 
+    tffa__AccountPreference__c card_accountPreference = new tffa__AccountPreference__c(
+      tffa__Application__c = app.id,
+      tffa__Code__c = 'WINTRUST_BANK_CONSUMER_DEBIT_CARD',
+      tffa__Type__c = 'ADD_ON_SERVICE',
+      tffa__Enabled__c = true,
+      tffa__AddOnServiceType__c = 'DEBIT_CARD',
+      tffa__AccountNumber__c = '0009846662',
+      tffa__party__c = lstobjParty2[0].Id
+    );
+
+    insert card_accountPreference;
+
     //tffa__Party__c party = FISCCTestDataRepository.createIndividualPartyWithChildObjects();
     //insert party;
     /*
@@ -1365,11 +1388,49 @@ public inherited sharing class FISCCDepositOriginationTest {
 
       //
     }
-    //Test.stopTest();
+    try {
+      FISCCIntegrationLogService.primaryPartyObj = lstobjParty[0];
+      FISCCIntegrationLogService.partyObjMap = new Map<Id, tffa__Party__c>();
+      FISCCIntegrationLogService.partyObjMap.put(lstobjParty[0].Id, lstobjParty[0]);
+      Boolean flag = FISCCDepositOriginationExtension.invokePendingApplicantCreation(lstobjParty, app1, sub);
+      System.assertEquals(false, flag);
+    } catch (Exception e) {
+      tffa.Logger.debug('Test Execption thrown');
+    }
 
-    // Test.startTest();
-    //set submission obj in factory
+    try {
+      FISCCIntegrationLogService.applicationObjMap.put(app.Id, app);
+      Boolean flag = FISCCCardBaseIntegrationExecutor.getPrimaryAccountStatus(card_accountPreference);
+      System.assertEquals(true, flag);
+    } catch (Exception e) {
+      tffa.Logger.debug('Test Execption thrown');
+    }
 
+    try {
+      app.tffa__Status__c = 'FUNDED';
+      FISCCIntegrationLogService.applicationObjMap = new Map<Id, tffa__Application__c>();
+      FISCCIntegrationLogService.applicationObjMap.put(app.Id, app);
+      FISCCIntegrationLogService.applicationObjMap.put(app1.Id, app1);
+      card_accountPreference.PriSavingApplicationId__c = app1.Id;
+      Boolean flag = FISCCCardBaseIntegrationExecutor.getPrimaryAccountStatus(card_accountPreference);
+      System.assertEquals(true, flag);
+    } catch (Exception e) {
+      tffa.Logger.debug('Test Execption thrown');
+    }
+
+    try {
+      app.tffa__Status__c = 'FUNDED';
+      app1.tffa__Status__c = 'FUNDED';
+      FISCCIntegrationLogService.applicationObjMap = new Map<Id, tffa__Application__c>();
+      FISCCIntegrationLogService.applicationObjMap.put(app.Id, app);
+      FISCCIntegrationLogService.applicationObjMap.put(app1.Id, app1);
+      card_accountPreference.PriSavingApplicationId__c = app1.Id;
+      Boolean flag = FISCCCardBaseIntegrationExecutor.getPrimaryAccountStatus(card_accountPreference);
+      System.assertEquals(false, flag);
+    } catch (Exception e) {
+      tffa.Logger.debug('Test Execption thrown');
+    }
+    System.assertEquals('1', '1', 'Success');
     Test.stopTest();
   }
 
@@ -2040,7 +2101,10 @@ public inherited sharing class FISCCDepositOriginationTest {
 
       FISCCGenerateDepositAccNumberDTO objFISCCGenerateDepositAccNumberDTO = new FISCCGenerateDepositAccNumberDTO();
       FISCCCreateNewDepositAccDTO objFISCCCreateNewDepositAccDTO = new FISCCCreateNewDepositAccDTO();
-      FISCCHostAdapter.processHostRequest(null, null, null);
+      Object resp = FISCCHostAdapter.processHostRequest(null, null, null);
+
+      System.assertNotEquals(resp, null);
+      Test.stopTest();
     }
   }
 
@@ -2083,12 +2147,19 @@ public inherited sharing class FISCCDepositOriginationTest {
 
     Test.startTest();
 
-    Test.setMock(HttpCalloutMock.class, new FISCCFundHoldMockClass());
-    FISCC_Adapter_Configs__mdt adapterConfig = FISCCIntegrationLogRepository.findAdapterConfig('FundingHold');
-    FISCC_Charter_Config__mdt charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode(app5.tffa__Brand__c);
-    FISCCFundingHoldExtension.invokeApiCall(app5, adapterConfig, charterConfig);
-    FISCCFundingHoldProvider.holdFunds(app5);
-    new FISCCFundHoldResponseDTO();
+    try {
+      Test.setMock(HttpCalloutMock.class, new FISCCFundHoldMockClass());
+      FISCC_Adapter_Configs__mdt adapterConfig = FISCCIntegrationLogRepository.findAdapterConfig(FISCCIntegrationConstants.FUNDINGHOLD);
+      FISCC_Charter_Config__mdt charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode(app5.tffa__Brand__c);
+      FISCCFundingHoldExtension.invokeApiCall(app5, adapterConfig, charterConfig, FISCCIntegrationConstants.FUNDINGHOLD);
+      FISCCFundingHoldExtension.generateFundingHoldReq(app5, adapterConfig, charterConfig, FISCCIntegrationConstants.FUNDINGHOLD);
+      Object resp = FISCCFundingHoldProvider.holdFunds(app5, FISCCIntegrationConstants.FUNDINGHOLD);
+      new FISCCFundHoldResponseDTO();
+      System.assertNotEquals(resp, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
     Test.stopTest();
   }
 
@@ -2295,7 +2366,7 @@ public inherited sharing class FISCCDepositOriginationTest {
 
     Test.startTest();
     FISCCIntegrationLogService.setSubmissionObj(sub.Id);
-    CZWTFCIntegrationLogService.setIntegrationLog(sub.Id);
+    CZWTFCIntegrationLogService.setIntegrationLog(sub.id);
     FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.ACCOUNT_OPENING);
     CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.APPROVAL_CCCOMPLETE, app.Id, false);
     Test.setMock(HttpCalloutMock.class, new FISCCDlrTransMockClass());
@@ -2303,9 +2374,10 @@ public inherited sharing class FISCCDepositOriginationTest {
     FISCC_Charter_Config__mdt charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode(app1.tffa__Brand__c);
     FISCCDollarTransactionExtension.testConfigFlow = true;
     FISCCDollarTransactionExtension.invokeApiCall(app1, adapterConfig, charterConfig, 'ACH');
-    FISCCApplicationFundingProvider.processFunding((tffa__Application__c) appasm1.assemble());
-    FISCCApplicationFundingProvider.processFunding((tffa__Application__c) asmapp2.assemble());
     FISCCDollarTransactionExtension.invokeApiCall(apptwo, adapterConfig, charterConfig, 'DEBIT_CARD');
+    FISCCApplicationFundingProvider.processFunding((tffa__Application__c) appasm1.assemble());
+    Object resp = FISCCApplicationFundingProvider.processFunding((tffa__Application__c) asmapp2.assemble());
+    System.assertNotEquals(resp, null);
     Test.stopTest();
   }
 
@@ -2564,7 +2636,7 @@ public inherited sharing class FISCCDepositOriginationTest {
     tffa__Application__c appObjInternal = (tffa__Application__c) asmappInternal.assemble();
     Test.startTest();
     FISCCIntegrationLogService.setSubmissionObj(sub.Id);
-    CZWTFCIntegrationLogService.setIntegrationLog(sub.Id);
+    CZWTFCIntegrationLogService.setIntegrationLog(sub.id);
     FISCCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.ACCOUNT_OPENING);
     CZWTFCIntegrationLogService.setCurrentLogItem(FISCCIntegrationConstants.APPROVAL_CCCOMPLETE, app.Id, false);
     Test.setMock(HttpCalloutMock.class, new FISCCCDDepositMockClass());
@@ -2573,11 +2645,41 @@ public inherited sharing class FISCCDepositOriginationTest {
     FISCCCDDepositCreationExtension.testConfigFlow = true;
     FISCCApplicationFundingProvider.testFlow = true;
 
+    try {
+      app1.tffa__APY__c = 12.21;
+      app1.tffa__AccountNumber__c = '233456';
+      FISCCIntegrationLogService.auth = '1234';
+      FISCCIntegrationLogService.charterConfig = FISCCIntegrationLogRepository.findCharterConfigByBrandCode('118');
+      //Object resp5 = FISCCApplicationFundingProvider.setAPYInFIS(app1);
+      //System.assertNotEquals(resp5, null);
+      FISCC_Adapter_Configs__mdt adapterConfig1 = FISCCIntegrationLogRepository.findAdapterConfig('MultiKeywords');
+      FISAccountPreferenceExtension.invokemultiKeywordsApi(
+        adapterConfig1,
+        FISCCIntegrationLogService.charterConfig,
+        FISCCIntegrationConstants.APY_INFO,
+        app1
+      );
+      Object respstring = FISAccountPreferenceExtension.getAPYValue('2.12');
+      System.assertNotEquals(respstring, null);
+      Object respstring1 = FISAccountPreferenceExtension.getAPYValue('2.1');
+      System.assertNotEquals(respstring1, null);
+      FISCCMsgListDTO dto = new FISCCMsgListDTO();
+      dto.type = '12';
+      dto.Code = '12';
+      dto.Text = '12';
+      dto.Severity = '12';
+      FISCCCommonHelper.isAPICallSuccess(new List<FISCCMsgListDTO>{ dto });
+    } catch (Exception ex) {
+      tffa.Logger.debug('Error thrown ');
+    }
+
     FISCCCDDepositCreationExtension.invokeApiCall(app1, adapterConfig, charterConfig);
     FISCCApplicationFundingProvider.processFunding((tffa__Application__c) appasm1.assemble());
     FISCCApplicationFundingProvider.processFunding((tffa__Application__c) asmapp2.assemble());
     FISCCApplicationFundingProvider.processFunding((tffa__Application__c) asmappCert.assemble());
-    FISCCApplicationFundingProvider.processFunding(CZWTFCApplicationRepository.findApplicationById(appObjInternal.Id));
+    FISCCCDDepositCreationExtension.invokeApiCall(apptwo, adapterConfig, charterConfig);
+    Object resp3 = FISCCApplicationFundingProvider.processFunding(CZWTFCApplicationRepository.findApplicationById(appObjInternal.Id));
+    System.assertNotEquals(resp3, null);
     //  FISCCDollarTransactionExtension.invokeApiCall(app1, adapterConfig, charterConfig);
     FISCCDollarTransactionExtension.invokeApiCall(
       (tffa__Application__c) asmappInternal.assemble(),
@@ -2591,11 +2693,15 @@ public inherited sharing class FISCCDepositOriginationTest {
       charterConfig,
       'INTERNAL_TRANSFER_DESTINATION'
     );
-    FISCCDollarTransactionExtension.maskString('123455667889');
-    FISCCDollarTransactionExtension.maskString('12');
+    //apptwo.tffa__Category__c = CZWTFCConstants.CERTIFICATE;
+    sub.tffa__Channel__c = FISCCIntegrationConstants.BRANCH;
+    Object responseValue = FISCCCommonHelper.isBranchCertificatewithManualFunding(sub, apptwo);
+    System.assertNotEquals(responseValue, null);
+    String resp2 = FISCCDollarTransactionExtension.maskString('123455667889');
+    System.assertEquals(resp2, 'XXXXXXXX7889');
+    String resp1 = FISCCDollarTransactionExtension.maskString('12');
+    System.assertEquals(resp1, '12');
     //FISCCApplicationFundingProvider.doPartial(new List<tffa__Application__c>{ app1, apptwo }, app1.Id);
-    FISCCCDDepositCreationExtension.invokeApiCall(apptwo, adapterConfig, charterConfig);
-
     Test.stopTest();
   }
 
@@ -2612,21 +2718,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       dlrResp.build(resp, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       dlrResp.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
-    }
-
-    FISCCCreateDDResponseBuilder cdDepoResp = new FISCCCreateDDResponseBuilder();
-    //FISIDAResponseBuilder.testException= true;
-    try {
-      cdDepoResp.build(resp, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception e) {
-    }
-    try {
-      cdDepoResp.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     FISCCFundHoldResponseBuilder fundHoldResp = new FISCCFundHoldResponseBuilder();
@@ -2634,10 +2731,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       fundHoldResp.build(resp, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       fundHoldResp.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     FISCCDepositCreationResponseBuilder depoResp = new FISCCDepositCreationResponseBuilder();
@@ -2645,10 +2744,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       depoResp.build(resp, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       depoResp.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     FISCCDepositCreationResponseBuilder depoResp1 = new FISCCDepositCreationResponseBuilder();
@@ -2656,10 +2757,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       depoResp1.build('', new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       depoResp1.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     FISCCDollarTransResponseBuilder dlrResp1 = new FISCCDollarTransResponseBuilder();
@@ -2667,21 +2770,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       dlrResp1.build('', new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       dlrResp1.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
-    }
-
-    FISCCCreateDDResponseBuilder cdDepoResp1 = new FISCCCreateDDResponseBuilder();
-    FISCCCreateDDResponseBuilder.testException = true;
-    try {
-      cdDepoResp1.build('', new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception e) {
-    }
-    try {
-      cdDepoResp1.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
-    } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     FISCCFundHoldResponseBuilder fundHoldResp1 = new FISCCFundHoldResponseBuilder();
@@ -2689,10 +2783,12 @@ public inherited sharing class FISCCDepositOriginationTest {
     try {
       fundHoldResp1.build('', new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
     try {
       fundHoldResp1.parseResponse(null, new FISCC_Adapter_Configs__mdt(), new FISCC_Charter_Config__mdt());
     } catch (Exception e) {
+      System.assertNotEquals(e.getMessage(), null);
     }
 
     Test.stopTest();
@@ -2722,7 +2818,11 @@ public inherited sharing class FISCCDepositOriginationTest {
     application.tffa__Product__c = product1.id;
     application.tffa__Submission__c = submissionObj.id;
     application.tffa__ProductCode__c = '20234';
-
+    application.CZCity__c = 'abcd';
+    application.CZState__c = 'abcde';
+    application.CZZipCode__c = '1234567';
+    application.CZLine2__c = 'abcde';
+    application.CZLine1__c = 'abcde';
     insert application;
 
     applicationobjs.add(application);
@@ -2854,6 +2954,10 @@ public inherited sharing class FISCCDepositOriginationTest {
     List<tffa__Party__c> partyList = new List<tffa__Party__c>();
     partyList.add(partyObj);
     partyList.add(jointParty);
+    partyList.add(jointParty);
+    partyList.add(jointParty);
+    partyList.add(partyObj);
+    partyList.add(partyObj);
 
     List<tffa__Party__c> partyList1 = new List<tffa__Party__c>();
     partyList1.add(partyObj);
@@ -2891,17 +2995,39 @@ public inherited sharing class FISCCDepositOriginationTest {
       false
     );
 
-    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList, partyObj, address1, new FISCCDepositNameAddressDTO(), true);
+    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList, partyObj, application, new FISCCDepositNameAddressDTO(), true);
 
-    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList, partyObj, address2, new FISCCDepositNameAddressDTO(), false);
+    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList, partyObj, application, new FISCCDepositNameAddressDTO(), false);
 
-    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList1, partyObj, address1, new FISCCDepositNameAddressDTO(), true);
+    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList1, partyObj, application, new FISCCDepositNameAddressDTO(), true);
 
-    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList1, partyObj, address2, new FISCCDepositNameAddressDTO(), false);
+    FISCCDepositNameAddressHelper.fillPartyAndAddressDetails(partyList1, partyObj, application, new FISCCDepositNameAddressDTO(), false);
 
     address1.tffa__Line2__c = 'AddressTest';
     FISCCCustomerAccountRelationHelper.fillAddress(partyList1, address1, new FISCCCustomerAccountRelationDTO());
-    FISCCDepositNameAddressHelper.fillAddress(partyList1, address1, new FISCCDepositNameAddressDTO());
+    FISCCDepositNameAddressHelper.fillAddress(partyList1, application, new FISCCDepositNameAddressDTO());
+
+    application.CZTitle1__c = '12345';
+    application.CZTitle2__c = '12345';
+    application.CZTitle3__c = '12345';
+    application.CZTitle4__c = '12345';
+    application.CZTitle5__c = '12345';
+    update application;
+    FISCCDepositNameAddressHelper.fillAccountTitle(application, new FISCCDepositNameAddressDTO());
+    FISCCCustomerAccountRelationHelper.fillAccountTitle(application, new FISCCCustomerAccountRelationDTO());
+    Object resp;
+    try {
+      resp = FISCCDepositOriginationExtension.createCustomerAccountRelationRequest(
+        partyList,
+        applicationobjs,
+        new FISCC_Adapter_Configs__mdt(),
+        new FISCC_Charter_Config__mdt()
+      );
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
+    System.assertNotEquals(resp, null);
     Test.stopTest();
   }
 
@@ -2912,8 +3038,10 @@ public inherited sharing class FISCCDepositOriginationTest {
 
     Test.setMock(HttpCalloutMock.class, new FISCCCDDepositMockClass());
 
+    //Error block
     Object testObj;
-    FISCCDollarTransactionExtension.parseDollarTransResponse(testObj);
+    Object resp = FISCCDollarTransactionExtension.parseDollarTransResponse(testObj);
+    System.assertEquals(resp, null);
     Test.stopTest();
   }
 }

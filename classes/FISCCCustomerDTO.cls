@@ -18,7 +18,9 @@ public with sharing class FISCCCustomerDTO {
   public String CIScndyPhNbr;
   public String CIMobilePhNbr;
   public String CICustEmploymentSchool;
+  public String DupTaxNbrOverride;
   public String CIPrmyOffcrNbr;
+  public String CIScndyOffcrNbr;
   public String CIMothersMaidenNme;
   public String CIOccpnCde;
   public String CIRmrkLine1Txt;
@@ -32,6 +34,12 @@ public with sharing class FISCCCustomerDTO {
   public String CIPIDIssLoc1;
   public String CIPIDIssDte1;
   public String CIPIDExpDte1;
+  public String CIPIDTyp2;
+  public String CIPIDNbr2;
+  public String CIPIDIssEnt2;
+  public String CIPIDIssLoc2;
+  public String CIPIDIssDte2;
+  public String CIPIDExpDte2;
   public String CIRmrkRvwDte;
   public String CIRmrkKywrdText;
   //
@@ -105,6 +113,22 @@ public with sharing class FISCCCustomerDTO {
   public String CIPPwd;
   public String CIPPwdQuestion;
   public String CISinceDte;
-
+  public String CIW8Ind;
+  public String CIW8Dte;
   public String NAStandardizationOvride;
+  public String CICustCde1;
+  public String CICustCde2;
+  public String CICustCde3;
+  public String CICustCde4;
+  public String CICustCde5;
+  public String CICustCde6;
+  public String CICustCde7;
+  public String CICustCde8;
+  public String CICustCde9;
+  public String CICustCde10;
+  public String CICustCde11;
+  public String CICustCde12;
+  public String CICustCde13;
+  public String CICustCde14;
+  public String CICustCde15;
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A blocklist is a list of items in a set that are not accepted. Depending on the nature of the set, a blocklist may be used to exclude certain SSN(s), TIN(s) or ITIN(s) from the application. This list is exclusionary, confirming that the value being tested is not acceptable.</description>
+    <label>Blocklist</label>
+    <pluralLabel>Blocklists</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

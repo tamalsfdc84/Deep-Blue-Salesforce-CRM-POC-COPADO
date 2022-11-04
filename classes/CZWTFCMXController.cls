@@ -36,6 +36,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
 
       if (!Test.isRunningTest()) {
         validateSession();
+        validateRecordAccess(params);
       }
       tffa.Logger.debug('Inside generateMxUrl');
 
@@ -43,6 +44,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
         ctx.id = params.get('subId');
       }
 
+      //FISCCIntegrationLogService.setSubmissionObj((String) ctx.id);
       CZWTFCIntegrationLogService.setIntegrationLog((String) ctx.id);
 
       CZWTFCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.MXINTEGRATION);
@@ -81,6 +83,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
       Map<String, String> param = params.clone();
       if (!Test.isRunningTest()) {
         validateSession();
+        validateRecordAccess(params);
       }
       tffa.Logger.debug('Inside openNexusSession');
 
@@ -88,6 +91,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
         ctx.id = params.get('subId');
       }
 
+      //FISCCIntegrationLogService.setSubmissionObj((String) ctx.id);
       CZWTFCIntegrationLogService.setIntegrationLog((String) ctx.id);
 
       CZWTFCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.MXINTEGRATION);
@@ -125,12 +129,14 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
       Map<String, String> param = params.clone();
       if (!Test.isRunningTest()) {
         validateSession();
+        validateRecordAccess(params);
       }
 
       if (Test.isRunningTest() && setSubForTest) {
         ctx.id = params.get('subId');
       }
 
+      //FISCCIntegrationLogService.setSubmissionObj((String) ctx.id);
       CZWTFCIntegrationLogService.setIntegrationLog((String) ctx.id);
 
       tffa.Logger.debug('Inside checkVerificationStatus');
@@ -164,6 +170,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
       Map<String, String> param = params.clone();
       if (!Test.isRunningTest()) {
         validateSession();
+        validateRecordAccess(params);
       }
 
       if (Test.isRunningTest() && setSubForTest) {
@@ -172,6 +179,7 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
 
       tffa.Logger.debug('Inside fetchAccountDetails');
 
+      //FISCCIntegrationLogService.setSubmissionObj((String) ctx.id);
       CZWTFCIntegrationLogService.setIntegrationLog((String) ctx.id);
 
       CZWTFCIntegrationLogService.setCurrentLog(FISCCIntegrationConstants.MXINTEGRATION);
@@ -229,12 +237,14 @@ global with sharing class CZWTFCMXController extends tffa.AbstractController imp
       Map<String, String> param = params.clone();
       if (!Test.isRunningTest()) {
         validateSession();
+        validateRecordAccess(params);
       }
 
       if (Test.isRunningTest() && setSubForTest) {
         ctx.id = params.get('subId');
       }
 
+      //FISCCIntegrationLogService.setSubmissionObj((String) ctx.id);
       CZWTFCIntegrationLogService.setIntegrationLog((String) ctx.id);
 
       tffa.Logger.debug('Inside fetchMicroDepositAccount');

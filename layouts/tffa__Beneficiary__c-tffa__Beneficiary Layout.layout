@@ -21,7 +21,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tffa__Ssn__c</field>
+                <field>tffa__NationalIdentifierType__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -38,6 +38,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>tffa__RelationCodeName__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>tffa__Last4NationalIdentifierValue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>tffa__PrimaryPhone__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -68,6 +76,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Customer_Number__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CZDesignation__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>tffa__MiddleName__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -107,7 +123,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h54000003m9QU</masterLabel>
+        <masterLabel>00h0t000004U5TQ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

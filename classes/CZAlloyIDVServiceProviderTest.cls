@@ -189,6 +189,7 @@ public class CZAlloyIDVServiceProviderTest {
     try {
       new CZIDVServiceProvider().verify(new List<tffa__Party__c>{ jointParty }, params);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     provider.verifyUsingAlloy(new List<tffa__Party__c>{ jointParty1 }, params);
@@ -198,6 +199,7 @@ public class CZAlloyIDVServiceProviderTest {
     try {
       provider.verifyOrganization(jointParty, allDiligences, allReports, params);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     String responseJson =
@@ -264,51 +266,76 @@ public class CZAlloyIDVServiceProviderTest {
     tffa.AlloyDTO.EvaluationResponse response = (tffa.AlloyDTO.EvaluationResponse) new tffa.AlloyDTO.EvaluationResponse()
       .deserialize(responseJson);
     try {
-      provider.parseIDVResponse(response, jointParty1, allDiligences, allReports);
+      jointParty1.tffa__Type__c = 'INDIVIDUAL';
+      upsert jointParty1;
+      List<tffa__Party__c> pList = FISCCIntegrationLogRepository.findPartydWithChildObjects(new List<Id>{ jointParty1.Id });
+      provider.parseIDVResponse(response, pList[0], allDiligences, allReports);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       response.matching = null;
       provider.parseIDVResponse(response, jointParty1, allDiligences, allReports);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseOFACResponse(response, jointParty1, allDiligences);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseFraudResponse(response, jointParty1, allDiligences);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseDebitBureauResponse(response, jointParty1, allDiligences);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseIDAResponse(response, jointParty1, allDiligences);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseDebitBureauReport(response, jointParty1, allDiligences, allReports);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.parseDeviceResponse(response, jointParty1, allDiligences);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
     try {
       provider.addWebhook(new tffa.AlloyService(), jointParty1);
     } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
     }
 
+    try {
+      jointParty1.tffa__LastName__c = 'test';
+      jointParty1.tffa__NationalIdentifierValue__c = '12345678';
+      jointParty1.tffa__BrandCode__c = '118';
+      upsert jointParty1;
+      Test.setMock(HttpCalloutMock.class, new CZMDMIndSearchMockClass());
+      Object resp = CZIDVServiceProvider.searchCustomerInMDM(jointParty1);
+      System.assertNotEquals(resp, null);
+    } catch (Exception ex) {
+      tffa.Logger.debug('Test Execption thrown');
+    }
+
+    //  System.assertEquals('1', '1', 'Success');
     Test.stopTest();
   }
 
@@ -414,19 +441,26 @@ public class CZAlloyIDVServiceProviderTest {
     facts.put('review', review);
     Test.startTest();
     try {
-      idvProv.refreshStatus(new List<tffa__DueDiligence__c>{ dueDiligence }, facts);
+      Object resp = idvProv.refreshStatus(new List<tffa__DueDiligence__c>{ dueDiligence }, facts);
+      System.assertNotEquals(resp, null);
     } catch (Exception ex) {
-    }
-
-    try {
-      idvProv.updateStatus(new List<tffa__DueDiligence__c>{ dueDiligence }, facts);
-    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
 
     try {
       idvProv.pushStatusUpdate(dueDiligence, jointParty);
+      // System.assertNotEquals(resp, null);
     } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
     }
+
+    try {
+      Object resp = idvProv.updateStatus(new List<tffa__DueDiligence__c>{ dueDiligence }, facts);
+      System.assertNotEquals(resp, null);
+    } catch (Exception ex) {
+      System.assertNotEquals(ex.getMessage(), null);
+    }
+
     Test.stopTest();
   }
 }

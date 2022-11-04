@@ -15,6 +15,9 @@ global class Logger {
     global static void debug(String message, Object trace) {
 
     }
+    global static void debug(String message, List<Object> params) {
+
+    }
     global static void error(Object message) {
 
     }

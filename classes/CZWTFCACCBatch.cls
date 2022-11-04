@@ -37,7 +37,6 @@ global with sharing class CZWTFCACCBatch extends tffa.AbstractBatchJob implement
   private static String getQuery() {
     String query = new tffa.QueryBuilder(tffa__Submission__c.SObjectType)
       .selectFields()
-      .build()
       .whereClause('tffa__Status__c', '= :status')
       .opAnd()
       .whereClause('IsAccTransferred__c', '= false')

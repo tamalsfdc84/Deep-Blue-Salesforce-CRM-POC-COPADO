@@ -14,8 +14,10 @@ global virtual class ApplicantRoleDTO extends tffa.AbstractDTO implements System
     global String id;
     global String label;
     global Integer maximumAllowed;
+    global Integer minimumAllowed;
     global String name;
     global List<tffa.ApplicantRoleDTO.EntityDTO> parties;
+    global Boolean primary;
     global Boolean required;
     global Integer sortOrder;
     global ApplicantRoleDTO() {

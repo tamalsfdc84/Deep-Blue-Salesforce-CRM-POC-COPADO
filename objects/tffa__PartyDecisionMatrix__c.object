@@ -418,7 +418,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Party Decision Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>tffa__DecisionStrategy</fullName>

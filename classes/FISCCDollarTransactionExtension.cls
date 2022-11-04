@@ -34,6 +34,15 @@ public with sharing class FISCCDollarTransactionExtension {
               if (fisErrorCodeList.contains(msg.Code)) {
                 containsFisErrorCode = true;
               }
+              if (
+                msg.text != null &&
+                !msg.text.contains('previous function error') &&
+                !msg.text.contains('null') &&
+                (msg.Severity).equalsIgnoreCase('Error') &&
+                !containsFisErrorCode
+              ) {
+                FISCCIntegrationConstants.ErrorMessage = msg.text;
+              }
             }
           } else {
             isSuccess = true;
@@ -77,7 +86,6 @@ public with sharing class FISCCDollarTransactionExtension {
     FundingAccountDetails__mdt fundingAccDetail;
     if (appObject != null) {
       if (Test.isRunningTest() && testConfigFlow) {
-        //TODO Jitendra
         fundingAccDetail = FISCCIntegrationLogRepository.findFundingAccDetails(reqType, '118');
       }
       if (!Test.isRunningTest()) {
@@ -133,6 +141,27 @@ public with sharing class FISCCDollarTransactionExtension {
 
       if (fundingAccDetail.TransactionType__c == 'CREDIT') {
         requestDto.depositOnlineDollarTrans.AutoOvrideInd = '3';
+
+        if (
+          (appObject.tffa__ProductCategory__c.equalsIgnoreCase(CZWTFCConstants.IRA) ||
+          appObject.tffa__ProductCategory__c.equalsIgnoreCase(CZWTFCConstants.HSA)) &&
+          String.isNotBlank(appObject.tffa__InvestmentContributionType__c)
+        ) {
+          CZTerafinaFisMapping__c tfFisInvestmentContributionTypeMap = CZTerafinaFisMapping__c.getValues(
+            'ICT_HSA_' + appObject.tffa__InvestmentContributionType__c
+          );
+          if (appObject.tffa__ProductCategory__c.equalsIgnoreCase(CZWTFCConstants.IRA) && tfFisInvestmentContributionTypeMap != null) {
+            requestDto.depositOnlineDollarTrans.DPRetAcctTxnCde = Test.isRunningTest()
+              ? 0
+              : Integer.valueOf(tfFisInvestmentContributionTypeMap.FisValue__c);
+          } else if (
+            appObject.tffa__ProductCategory__c.equalsIgnoreCase(CZWTFCConstants.HSA) && tfFisInvestmentContributionTypeMap != null
+          ) {
+            requestDto.depositOnlineDollarTrans.HsaTxnCde = Test.isRunningTest()
+              ? 0
+              : Integer.valueOf(tfFisInvestmentContributionTypeMap.FisValue__c);
+          }
+        }
       } else if (fundingAccDetail.TransactionType__c == 'DEBIT' && dpOverrideCode != null) {
         requestDto.depositOnlineDollarTrans.DPOvrideInfo = dpOverrideCode;
         if (txnInd != 0) {

@@ -29,14 +29,15 @@ private class ACHFileGenSchedulerTest {
   @isTest
   static void test1() {
     Test.StartTest();
-    // ACHFileGenBatch aps = new ACHFileGenBatch();
-    //Test.setMock(HttpCalloutMock.class, new MoveItServiceResponseGenerator());
-    Database.executeBatch(new ACHFileGenBatch());
-    //aps.start();
+    Id batchJobId = Database.executeBatch(new ACHFileGenBatch(), 50);
+    AsyncApexJob aaj = [SELECT Id, Status, JobItemsProcessed, TotalJobItems, NumberOfErrors FROM AsyncApexJob WHERE ID =: batchJobId ];
+    
+    System.assertNotEquals(aaj, null);    
     Test.stopTest();
   }
   @isTest
   static void test4() {
+    Test.startTest();
     ACHBatch ab = new ACHBatch();
     ab.getBatchControl();
     ACHBatchHeaderRecord headerrecord = new ACHBatchHeaderRecord('Dummy');
@@ -56,6 +57,7 @@ private class ACHFileGenSchedulerTest {
     ACHDocumentDTO ad = new ACHDocumentDTO();
     ad.getFileHeader();
     ad.getFillerRecs();
+    ad.getFileControl();
 
     ACHEntryDetailRecord adr = new ACHEntryDetailRecord();
     adr.setAddendaRec(new ACHAddendaRecord());
@@ -104,10 +106,8 @@ private class ACHFileGenSchedulerTest {
     ACHFileDTO achdata = new ACHFileDTO(ACHFileType.ACH, apps, '118');
     ACHFileBuilder afb = new ACHFileBuilder(achdata);
     afb.buildACHFile();
-    //afb.insertIntoDocument('basic_data', 'basic_Description', 'ACH_File_Name', '001');
-
-    //update the test class when SDV is complete
-    //afb.logACHFileInfo('exception');
+    System.assertNotEquals(afb, null);
+    Test.stopTest();
   }
   @isTest
   static void test3() {
@@ -123,6 +123,7 @@ private class ACHFileGenSchedulerTest {
     arb.getPartyName('person', 'legalname');
     arb.getUniqueCount();
     arb.getLastNumber(0);
+    System.assertNotEquals(arb, null);
     Test.stopTest();
   }
   /* @isTest
@@ -143,19 +144,115 @@ private class ACHFileGenSchedulerTest {
   }*/
 
   @isTest
-  static void test5() {
-    // String q = new tffa.QueryBuilder(tffa__FundingRequest__c.SObjectType).selectFields().build().build().toQuery();
-
-    //Test.StartTest();
-    //CZFFSBApplicationRepository.logACHFileInfo('ach');
-    //Test.StopTest();
-  }
-  @isTest
   static public void test6() {
     ACHFileDTO achdata;
     ACHFileBuilder acfb = new ACHFileBuilder(achdata);
     Test.StartTest();
     acfb.logACHFileInfo('ach');
-    Test.StopTest();
+    System.assertNotEquals(acfb, null);
+    Test.stopTest();
+  }
+
+  @isTest
+  static public void test7() {
+    ACHBatchControlRecord abcr = new ACHBatchControlRecord();
+    abcr.setTotalBatchCreditAmount(10.00);
+    abcr.setMsgAuthCode('authmsg');
+    abcr.setReservedField('');
+
+    ACHEntryDetailRecord adr = new ACHEntryDetailRecord();
+    adr.setAddendaRec(new ACHAddendaRecord());
+    adr.getRecordString();
+    adr.setAchFileName('dummy');
+    adr.getAchFileName();
+    adr.setPcbAcctNo('dummypcb');
+    adr.getPcbAcctNo();
+    adr.setProductName('dummyProdName');
+    adr.getProductName();
+    adr.setAddendaRec(null);
+    adr.getAddendaRec();
+    adr.setTraceNo('dummytraceno');
+    adr.getRecStrForCreditFile('dummyRescType');
+
+    ACHFileControlRecord acr = new ACHFileControlRecord();
+    acr.setReservedField('');
+    acr.setBatchCount(1);
+    acr.setBlockCount(8);
+    acr.setEntryCount(1);
+    acr.setEntryHash(3);
+    acr.setTotalFileDebitAmount(100.00);
+    acr.setTotalFileCreditAmount(100.00);
+    acr.setTotalFileDebitRecords(10);
+    acr.setTotalFileCreditRecords(11);
+
+    ACHFileHeaderRecord ahr = new ACHFileHeaderRecord();
+    ahr.setPriorityCode('pc');
+    ahr.setRecordSize('10');
+    ahr.setBlockingFactor('10');
+    ahr.setFormatCode('10');
+    ahr.setImmediateDestination('abc');
+    ahr.setImmdiateOrigin('xyz');
+    ahr.setFileCreationDate('01-01-2000');
+    ahr.setFileCreationTime('12232512');
+    ahr.setFileIdModifier('qwe');
+    ahr.setImmediateDestinationName('a');
+    ahr.setImmediateOriginName('b');
+    ahr.setRefCode('test');
+
+    ACHBatch ab = new ACHBatch();
+    ACHBatchHeaderRecord headerrecord = new ACHBatchHeaderRecord('Dummy');
+    List<ACHEntryDetailRecord> batchEntries = new List<ACHEntryDetailRecord>();
+    batchEntries.add(adr);
+    ab.setBatchHeader(headerrecord);
+    ab.setBatchEntries(batchEntries);
+    ab.setBatchControl(abcr);
+    ab.getBatchHeader();
+    ab.getBatchString();
+    ab.getBatchControl();
+    ACHFillerRecords afr = new ACHFillerRecords(1);
+    afr.getRecordString();
+    String fundingStatus = 'IN_PROGRESS';
+    String query = new tffa.QueryBuilder(tffa__FundingRequest__c.SObjectType)
+      .selectFields()
+      .selectObject('tffa__LinkedApplication__r')
+      .selectFields()
+      .build()
+      .whereClause('tffa__Status__c', '= :fundingStatus')
+      .toQuery();
+    List<tffa__FundingRequest__c> apps = Database.query(query);
+    ACHFileDTO achdata = new ACHFileDTO(ACHFileType.ACH, apps, '118');
+    ACHFileBuilder afb = new ACHFileBuilder(achdata);
+    ACHDocumentDTO doc = new ACHDocumentDTO();
+    ACHDocumentBuilder adb = new ACHDocumentBuilder(achdata);
+
+    List<ACHBatch> batches = new List<ACHBatch>();
+    batches.add(ab);
+    doc.setFileHeader(ahr);
+    doc.setFileControl(acr);
+    doc.setFillerRecs(afr);
+    doc.setBatches(batches);
+    doc.getFileHeader();
+    doc.getFillerRecs();
+    ACHCreditFileBuilder acb = new ACHCreditFileBuilder(doc);
+    String creditFileStr = acb.buildCreditFile();
+    string genMsg = 'File Generated Successfully';
+    string achFileStr = doc.getACHDocumentString();
+
+    Test.StartTest();
+
+    afb.createFilesAndNotify(doc, 'achFileStr', 'creditFileStr', 'genMsg');
+
+    System.assertNotEquals(afb, null);
+    Test.stopTest();
+  }
+
+  @isTest
+  static public void test8() {
+    ACHFileDTO achdata;
+    ACHFileBuilder acfb = new ACHFileBuilder(achdata);
+    Test.StartTest();
+    acfb.buildACHFile();
+    System.assertNotEquals(acfb, null);
+    Test.stopTest();
   }
 }

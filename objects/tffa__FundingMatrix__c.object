@@ -474,7 +474,7 @@ Each record is a rule consisting of facts - channel, product, productCategory, e
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Funding Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

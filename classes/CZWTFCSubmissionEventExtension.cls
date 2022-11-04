@@ -69,10 +69,26 @@ global inherited sharing class CZWTFCSubmissionEventExtension extends tffa.Event
   private void processSubmissionNotifications(List<tffa__Submission__c> subs) {
     // support transient submissions
     List<tffa.NotificationDTO> notifications = new List<tffa.NotificationDTO>();
+    Boolean reviewMailFlag;
     for (tffa__Submission__c sub : subs) {
       try {
         sub = sub.Id == null ? sub : CZWTFCSubmissionRepository.findSubmissionAndChildObjById(sub.Id);
-        if (sub.tffa__SubmittedChannel__c == 'BRANCH' && eventList.contains(eventName)) {
+
+        reviewMailFlag = false;
+
+        // The email should not be triggered for business applications.
+        // For consumer applications in branch channel this is to be sent only if an application has a joint not present.
+        if (
+          sub.tffa__Channel__c.equalsIgnoreCase('BRANCH') &&
+          eventName == 'Submission_Submitted' &&
+          sub.tffa__KYCDecisionOutcome__c == 'REVIEW'
+        ) {
+          if (sub.tffa__Flow__c.equalsIgnoreCase('consumer') && (!sub.tffa__FilledJointly__c)) {
+            reviewMailFlag = true;
+          }
+        }
+
+        if (sub.tffa__SubmittedChannel__c == 'BRANCH' && eventList.contains(eventName) && (!reviewMailFlag)) {
           return;
         }
 
@@ -102,10 +118,9 @@ global inherited sharing class CZWTFCSubmissionEventExtension extends tffa.Event
             for (tffa__Application__c app : sub.tffa__Applications__r) {
               /* for account opened cases .. email will be sent from Submission Executor */
               tffa.Logger.debug(app.Id + ' Submission_Submitted called : ' + app.tffa__Status__c);
-              //for joint applicant not present scenario only decline email should be triggered from here,approved mail is not req as per bank request.
               if (
-                (sub.tffa__FilledJointly__c || app.tffa__Status__c.equals(CZWTFCConstants.DECLINED)) &&
-                (!app.tffa__Status__c.equals(CZWTFCConstants.ACCOUNT_OPENED) && !app.tffa__Status__c.equals(CZWTFCConstants.FUNDED))
+                (sub.tffa__FilledJointly__c &&
+                (app.tffa__Status__c.equals(CZWTFCConstants.DECLINED) || app.tffa__Status__c.equals(CZWTFCConstants.REVIEW)))
               ) {
                 System.enqueueJob(new CZWTFCInvokeEmailService(app));
               }
@@ -232,6 +247,13 @@ global inherited sharing class CZWTFCSubmissionEventExtension extends tffa.Event
 
     tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(sub.tffa__Brand__c);
 
+    String accType = '';
+    for (tffa__Application__c app : sub.tffa__Applications__r) {
+      accType = app.Name + ', ' + accType;
+    }
+    accType = accType.substring(0, accType.length() - 2);
+    tffa.Logger.debug('CZWTFCSubmissionEventExtension.processSubmissionNotifications accType : ' + accType);
+
     factsMap.put('brandName', brandObj.Name);
     factsMap.put('phoneNo', brandObj.EmailPhone__c);
     factsMap.put('logoUrl', brandObj.EmailHeaderLogoUrl__c);
@@ -241,6 +263,8 @@ global inherited sharing class CZWTFCSubmissionEventExtension extends tffa.Event
     factsMap.put('zip', brandObj.Zip__c);
     factsMap.put('bankUrl', brandObj.tffa__InfoUrl__c);
     factsMap.put('email', brandObj.tffa__ContactEmail__c);
+    factsMap.put('ConfirmationNumber', sub.Name);
+    factsMap.put('AccountType', accType); //  app.Name
     if (brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
       String subBrandName = '';
       boolean updatedfooter = true;

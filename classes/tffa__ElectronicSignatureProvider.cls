@@ -24,7 +24,19 @@ global virtual class ElectronicSignatureProvider extends tffa.AbstractServicePro
     global virtual tffa__Disclosure__c fetchStatus(tffa__Disclosure__c disclosure, Map<String,Object> facts) {
         return null;
     }
+    global virtual Map<String,Object> generateEnvelope(Map<String,Object> facts) {
+        return null;
+    }
+    global virtual Map<String,Object> generateSigningURL(Map<String,Object> facts) {
+        return null;
+    }
     global static tffa.ElectronicSignatureProvider getInstance(String providerName) {
+        return null;
+    }
+    global virtual tffa__DisclosureEnvelope__c synchronizeDocuments(Map<String,Object> facts) {
+        return null;
+    }
+    global virtual tffa__DisclosureEnvelope__c synchronizeStatus(Map<String,Object> facts) {
         return null;
     }
 }

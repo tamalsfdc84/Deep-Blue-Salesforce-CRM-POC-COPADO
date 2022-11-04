@@ -7,5 +7,7 @@ public with sharing class FISCCMultiKeywordsRequestDTO extends FISCCRequestBaseD
   public class Keywords {
     public String DPKywrdCde;
     public String DPKywrdVal;
+    public String DPKywrdSegId;
+    public Integer DPTxnCde;
   }
 }

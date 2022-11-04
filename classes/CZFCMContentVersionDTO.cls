@@ -6,9 +6,11 @@ public with sharing class CZFCMContentVersionDTO {
     this.ContentVersionId = '';
     this.Title = '';
     this.PartyId = '';
-    this.DisclosureCode = '';
+    this.ApplicationId = '';
+    this.DocumentCode = '';
+    this.EntityId = '';
     this.URL = '';
-    this.DeveoperName = '';
+    this.DeveloperName = '';
   }
 
   public String PathOnClient;
@@ -16,9 +18,11 @@ public with sharing class CZFCMContentVersionDTO {
   public String ContentVersionId;
   public String Title;
   public String PartyId;
-  public String DisclosureCode;
+  public String ApplicationId;
+  public String DocumentCode;
+  public String EntityId;
   public String URL;
-  public String DeveoperName;
+  public String DeveloperName;
   public Id ContentDocumentId;
   public Integer contentSize;
 

@@ -441,7 +441,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Product Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -7,7 +7,7 @@ public inherited sharing class CZNCRD3PartyAuthenticationProvider {
 
       tffa.NCRD3Service service = new tffa.NCRD3Service();
 
-      FISCCIntegrationLogService.setLogItemRequestAndResponse(String.valueOf(requestDto), null);
+      CZWTFCIntegrationLogService.setLogItemRequestAndResponse(String.valueOf(requestDto), null);
 
       try {
         service.registerUser(requestDto);
@@ -17,6 +17,7 @@ public inherited sharing class CZNCRD3PartyAuthenticationProvider {
       }
     } catch (Exception ex) {
       tffa.logger.error(' exception ::: ' + ex.getStackTraceString() + ' Message ::: ' + ex.getMessage());
+      CZWTFCIntegrationLogService.setLogItemRequestAndResponse(null, ex.getMessage());
     }
 
     return 'FAILURE';
@@ -58,5 +59,5 @@ public inherited sharing class CZNCRD3PartyAuthenticationProvider {
     }
 
     return dto;
-  } 
+  }
 }

@@ -6,6 +6,8 @@ methods, variables, and properties.
 To enable code to compile, all methods return null.
 */
 global virtual class FundingOptionDTO {
+    global String allowedAccountCategory;
+    global Boolean allowNewAccounts;
     global tffa.EntityDTO application;
     global Decimal maxAmount;
     global Decimal minAmount;

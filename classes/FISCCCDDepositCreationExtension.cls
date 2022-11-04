@@ -42,28 +42,89 @@ public with sharing class FISCCCDDepositCreationExtension {
         fundingAccDetail = FISCCIntegrationLogRepository.findFundingAccDetails('ACH', '118');
       }
       String reqType;
-      if (appObj.tffa__LinkedFundingRequests__r[0].tffa__Type__c == CZWTFCConstants.INTERNAL_TRANSFER) {
+      if (
+        appObj.tffa__LinkedFundingRequests__r[0].tffa__Type__c == CZWTFCConstants.INTERNAL_TRANSFER &&
+        !FISCCCommonHelper.isBranchCertificatewithManualFunding(FISCCIntegrationLogService.submissionObj, appObj)
+      ) {
         if (appObj.tffa__Brand__c == appObj.tffa__LinkedFundingRequests__r[0].CZSourceAccountBrand__c) {
           reqType = 'INTERNAL_TRANSFER_CD';
         } else {
           reqType = CZWTFCConstants.INTERNAL_TRANSFER_DESTINATION;
         }
-      } else {
+      } else if (!FISCCCommonHelper.isBranchCertificatewithManualFunding(FISCCIntegrationLogService.submissionObj, appObj)) {
         reqType = appObj.tffa__LinkedFundingRequests__r[0].tffa__Type__c;
       }
-      if (!Test.isRunningTest()) {
+      if (!Test.isRunningTest() && reqType != null) {
         fundingAccDetail = FISCCIntegrationLogRepository.findFundingAccDetails(reqType, appObj.tffa__Brand__c);
       }
       requestDto.account.DPTDTxnTyp = FISCCIntegrationConstants.DPTDTxnTyp;
       requestDto.account.DPTDIssAmt = String.valueof(appObj.tffa__LinkedFundingRequests__r[0].tffa__Amount__c);
       requestDto.account.DPTDTerm = String.valueof(appObj.tffa__Term__c);
+      requestDto.account.DPTDTermInd = FISCCCommonHelper.fetchTermUnit(appObj.tffa__TermUnit__c);
+
       if (appObj.InterestPlanCode__c != null && !String.isBlank(appObj.InterestPlanCode__c)) {
         tffa.Logger.debug('Interest Plan Code ' + appObj.InterestPlanCode__c);
         requestDto.account.DPTDIntPln = appObj.InterestPlanCode__c;
       }
-      requestDto.account.DPTDTermInd = FISCCIntegrationConstants.DPTDTermInd;
-      requestDto.account.DPTDGLAcctNbrOfst = Integer.valueOf(fundingAccDetail.GLAccountNumber__c);
-      requestDto.account.DPTDGLCstCntrOfst = Integer.valueOf(Integer.valueOf(fundingAccDetail.GLCostCenter__c));
+
+      if (FISCCIntegrationLogService.submissionObj.tffa__SubmittedChannel__c == FISCCIntegrationConstants.BRANCH || Test.isRunningTest()) {
+        if (appObj.tffa__TermDepositRate__c != 0) {
+          requestDto.account.DPTDCurIntRte = String.valueOf(appObj.tffa__TermDepositRate__c);
+        }
+        if (String.isNotBlank(appObj.tffa__InterestPayoutFrequency__c)) {
+          if (appObj.tffa__InterestPayoutFrequency__c == 'MONTHLY') {
+            requestDto.account.DPTDIntFreqInd = 'M';
+            requestDto.account.DPTDIntFreq = '1';
+          } else if (appObj.tffa__InterestPayoutFrequency__c == 'QUARTERLY') {
+            requestDto.account.DPTDIntFreqInd = 'M';
+            requestDto.account.DPTDIntFreq = '3';
+          } else if (appObj.tffa__InterestPayoutFrequency__c == 'ANNUALLY') {
+            requestDto.account.DPTDIntFreqInd = 'C';
+            requestDto.account.DPTDIntFreq = '1';
+          } else if (appObj.tffa__InterestPayoutFrequency__c == 'DAILY') {
+            requestDto.account.DPTDIntFreqInd = 'D';
+            requestDto.account.DPTDIntFreq = '1';
+          } else if (appObj.tffa__InterestPayoutFrequency__c == 'AT_MATURITY') {
+            requestDto.account.DPTDIntFreqInd = requestDto.account.DPTDTermInd;
+            requestDto.account.DPTDIntFreq = requestDto.account.DPTDTerm;
+          }
+        }
+        if (String.isNotBlank(appObj.tffa__InterestPayoutMode__c)) {
+          requestDto.account.DPTDPmtMeth = FISCCIntegrationConstants.INTEREST_PAYOUT.containsKey(appObj.tffa__InterestPayoutMode__c)
+            ? FISCCIntegrationConstants.INTEREST_PAYOUT.get(appObj.tffa__InterestPayoutMode__c)
+            : null;
+
+          if (requestDto.account.DPTDPmtMeth == 'X' || requestDto.account.DPTDPmtMeth == 'T') {
+            requestDto.account.DPTDIntTrsfrToAcct = appObj.CZInterestPayoutAccountNumber__c;
+            requestDto.account.TmeLvlIntExtTrsfrAbaNbr = appObj.CZInterestPayoutRoutingNumber__c;
+            if (
+              appObj.tffa__InterestPayoutMode__c == CZWTFCConstants.INTERNAL_TRANSFER &&
+              appObj.CZInterestPayoutCharterCode__c != appObj.tffa__Brand__c
+            ) {
+              tffa__Brand__c brand = FISCCIntegrationLogService.brandMap.get(appObj.CZInterestPayoutCharterCode__c);
+              requestDto.account.TmeLvlIntExtTrsfrAbaNbr = brand.tffa__RoutingNumber__c;
+            }
+          }
+          if (requestDto.account.DPTDPmtMeth == 'X') {
+            requestDto.account.TmeLvlIntExtTypCde = 'D';
+          }
+        }
+      }
+      if (fundingAccDetail != null) {
+        requestDto.account.DPTDGLAcctNbrOfst = Integer.valueOf(fundingAccDetail.GLAccountNumber__c);
+        requestDto.account.DPTDGLCstCntrOfst = Integer.valueOf(Integer.valueOf(fundingAccDetail.GLCostCenter__c));
+      }
+      if (
+        appObj.tffa__ProductCategory__c.equalsIgnoreCase(CZWTFCConstants.IRA) &&
+        String.isNotBlank(appObj.tffa__InvestmentContributionType__c)
+      ) {
+        CZTerafinaFisMapping__c tfFisInvestmentContributionTypeMap = CZTerafinaFisMapping__c.getValues(
+          'ICT_IRA_' + appObj.tffa__InvestmentContributionType__c
+        );
+        if (tfFisInvestmentContributionTypeMap != null) {
+          requestDto.account.DPRetAcctTxnCde = Test.isRunningTest() ? 0 : Integer.valueOf(tfFisInvestmentContributionTypeMap.FisValue__c);
+        }
+      }
       //requestDto.account.DLTNCOvrideErrLvlInd = '3';
     }
     return requestDto;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EXISTING_CUSTOMER</fullName>
+        <default>false</default>
+        <label>Existing Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICANT_NOT_AVAILABLE</fullName>
+        <default>false</default>
+        <label>Applicant Not Available</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>A list of possible reasons for overriding document signing status.</description>
+    <masterLabel>DisclosureEnvelopeOverrideReason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

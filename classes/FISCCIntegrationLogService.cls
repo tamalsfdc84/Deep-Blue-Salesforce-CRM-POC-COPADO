@@ -10,6 +10,22 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
   public static FISCC_Charter_Config__mdt charterConfig { get; set; }
   public static tffa__Brand__c brandObj { get; set; }
+  public static List<Date> holidayList { get; set; }
+
+  public static Map<Id, tffa__Party__c> partyObjMap { get; set; }
+
+  public static tffa__Party__c primaryPartyObj { get; set; }
+
+  public static Map<Id, tffa__Application__c> applicationObjMap { get; set; }
+
+  public static Map<Id, List<tffa__DueDiligence__c>> cddObjMap { get; set; }
+
+  public static List<UploadFileHistory__c> uploadFileHistoryObjList { get; set; }
+
+  public static Map<String, tffa__ApplicantRole__c> applicantRoleMap { get; set; }
+  public static Map<String, tffa__Brand__c> brandMap { get; set; }
+
+  public static Map<String, tffa__FundingRequest__c> SDB_Funding_Details_MAP { get; set; }
 
   public static String auth;
   public static String tempAuth;
@@ -32,25 +48,74 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
   public static void setBrandObj(String brandCode) {
     brandObj = CZWTFCBrandRepository.fetchBrandByCode(brandCode);
+    brandMap = CZWTFCBrandRepository.fetchBrandCodeAndBrandInfo();
+    holidayList = CZWTFCBrandRepository.fetchBrandHolidays(brandCode);
   }
 
   public static void setSubmissionObj(String submissionId) {
     submissionObj = FISCCIntegrationLogRepository.findSubmissionById(submissionId);
-    if (submissionObj != null)
+    if (submissionObj != null) {
       setCharterConfig(submissionObj.tffa__Brand__c);
-    setBrandObj(submissionObj.tffa__Brand__c);
+      setBrandObj(submissionObj.tffa__Brand__c);
+    }
   }
 
   public static void setApplicationObjs() {
+    applicationObjMap = new Map<Id, tffa__Application__c>();
+    applicantRoleMap = new Map<String, tffa__ApplicantRole__c>();
     applicationObjs = FISCCIntegrationLogRepository.findApplicationWithChildObjects(submissionObj.tffa__Applications__r);
+    List<tffa__ApplicantRole__c> applicantRoleList = FISCCIntegrationLogRepository.findAllApplicantRole();
+    if (!applicantRoleList.isEmpty()) {
+      for (tffa__ApplicantRole__c appRole : applicantRoleList) {
+        applicantRoleMap.put(appRole.tffa__Code__c, appRole);
+      }
+    }
+    if (FISCCCommonHelper.containsSDBProduct(applicationObjs)) {
+      SDB_Funding_Details_MAP = FISCCIntegrationLogRepository.getSDBFundingDetails(applicationObjs);
+    }
   }
 
   public static void setPartyObjs() {
     List<Id> partyIds = new List<id>();
+    List<Id> orgIds = new List<id>();
     for (tffa__SubmissionPartyXref__c partyXrefObj : submissionObj.tffa__PartyXrefs__r) {
       partyIds.add(partyXrefObj.tffa__Party__c);
     }
     partyObjs = FISCCIntegrationLogRepository.findPartydWithChildObjects(partyIds);
+    partyObjMap = new Map<Id, tffa__Party__c>();
+    if (partyObjs != null && !partyObjs.isEmpty()) {
+      for (tffa__Party__c partyobject : partyObjs) {
+        partyObjMap.put(partyobject.Id, partyobject);
+        if (partyobject.tffa__Type__c == FISCCIntegrationConstants.ORGANIZATION) {
+          orgIds.add(partyobject.Id);
+        }
+      }
+    }
+
+    if (orgIds != null && !orgIds.isEmpty()) {
+      cddObjMap = new Map<Id, List<tffa__DueDiligence__c>>();
+      List<tffa__DueDiligence__c> ddLst = FISCCIntegrationLogRepository.getCDDList(orgIds);
+      if (ddLst != null && !ddLst.isEmpty()) {
+        for (tffa__DueDiligence__c ddObj : ddLst) {
+          if (cddObjMap.containsKey(ddObj.tffa__party__c)) {
+            cddObjMap.get(ddObj.tffa__party__c).add(ddObj);
+          } else {
+            cddObjMap.put(ddObj.tffa__party__c, new List<tffa__DueDiligence__c>{ ddObj });
+          }
+        }
+      }
+    }
+
+    tffa.logger.debug('partyObjs in FISCCIntegrationLogRepository ==>' + partyObjs);
+  }
+
+  public static void setUploadFileHistory(List<UploadFileHistory__c> uploadFileHistory) {
+    tffa.logger.debug('uploadFileHistory in FISCCIntegrationLogRepository ==>' + uploadFileHistory);
+    if (uploadFileHistoryObjList == null && !Test.isRunningTest()) {
+      uploadFileHistoryObjList = new List<UploadFileHistory__c>();
+    }
+    uploadFileHistoryObjList.addAll(uploadFileHistory);
+    tffa.logger.debug('uploadFileHistoryObjList in FISCCIntegrationLogRepository ==>' + uploadFileHistoryObjList);
   }
 
   public static tffa__Submission__c fetchSubmissionById(String submissionId) {
@@ -59,24 +124,56 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
   public static void persistData() {
     tffa.Logger.debug('Before Persist : Submission obj ::: ' + json.serialize(FISCCIntegrationLogService.submissionObj));
-    tffa.Logger.debug('Before Persist : applicationObjs::: ' + json.serialize(FISCCIntegrationLogService.applicationObjs));
-    tffa.Logger.debug('Before Persist : setPartyObjs ::: ' + json.serialize(FISCCIntegrationLogService.partyObjs));
+    // tffa.Logger.debug('Before Persist : applicationObjs::: ' + json.serialize(FISCCIntegrationLogService.applicationObjs));
     List<tffa__Beneficiary__c> benefList = new List<tffa__Beneficiary__c>();
     List<tffa__ApplicationPartyXref__c> appPartyLst = new List<tffa__ApplicationPartyXref__c>();
     List<tffa__AccountPreference__c> accPrefObjLst = new List<tffa__AccountPreference__c>();
     List<tffa__FundingRequest__c> fundingReqList = new List<tffa__FundingRequest__c>();
+    Set<tffa__Party__c> partyUpdatedLst = new Set<tffa__Party__c>();
     List<tffa__AdditionalPreference__c> additionalPreferenceList = new List<tffa__AdditionalPreference__c>();
+    List<tffa__PartyPartyXref__c> partyXrefList = new List<tffa__PartyPartyXref__c>();
+    List<Id> partyIdLst = new List<Id>();
     //upsert party in salesforce
-    if (FISCCIntegrationLogService.partyObjs != null && FISCCIntegrationLogService.partyObjs.size() != 0) {
-      FISCCObjectManagerRepository.doUpsertPartys(FISCCIntegrationLogService.partyObjs);
-
-      for(tffa__Party__c partyObj : FISCCIntegrationLogService.partyObjs){
-        for(tffa__AdditionalPreference__c additionalPreference : partyObj.tffa__AdditionalPreferences__r){
+    if (
+      FISCCIntegrationLogService.partyObjMap != null &&
+      FISCCIntegrationLogService.partyObjMap.values() != null &&
+      FISCCIntegrationLogService.partyObjMap.size() != 0
+    ) {
+      for (tffa__Party__c partyObj : FISCCIntegrationLogService.partyObjMap.values()) {
+        for (tffa__AdditionalPreference__c additionalPreference : partyObj.tffa__AdditionalPreferences__r) {
           additionalPreferenceList.add(additionalPreference);
+        }
+        if (
+          partyObj.tffa__Type__c == FISCCIntegrationConstants.ORGANIZATION &&
+          partyObj.tffa__PartyXrefs__r != null &&
+          !partyObj.tffa__PartyXrefs__r.isEmpty()
+        ) {
+          partyXrefList.addAll(partyObj.tffa__PartyXrefs__r);
+        }
+        if (String.isBlank(partyObj.CZBatchUpdateStatus__c)) {
+          partyObj.CZBatchUpdateStatus__c = FISCCIntegrationConstants.PARTY_UPDATE_REQUIRED;
         }
       }
 
-      FISCCObjectManagerRepository.doUpsertAdditionalPrefObj(additionalPreferenceList);
+      try {
+        FISCCObjectManagerRepository.doUpsertParties(FISCCIntegrationLogService.partyObjMap.values());
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertParties: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
+      try {
+        FISCCObjectManagerRepository.doUpsertAdditionalPrefObj(additionalPreferenceList);
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertAdditionalPrefObj: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
+      if (!partyXrefList.isEmpty()) {
+        try {
+          FISCCObjectManagerRepository.updateRecords(partyXrefList);
+        } catch (Exception ex) {
+          tffa.Logger.error('Exception in PersistLog.partyXrefList: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+        }
+      }
+
+      // tffa.Logger.debug('Before Persist : party objs::: ' + json.serialize(FISCCIntegrationLogService.partyObjMap.values()));
     }
 
     tffa.Logger.debug('party updated');
@@ -88,7 +185,11 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
     //upsert account
     if (FISCCIntegrationLogService.applicationObjs != null && !FISCCIntegrationLogService.applicationObjs.isEmpty()) {
-      FISCCObjectManagerRepository.doUpsertApplications(FISCCIntegrationLogService.applicationObjs);
+      try {
+        FISCCObjectManagerRepository.doUpsertApplications(FISCCIntegrationLogService.applicationObjs);
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertApplications: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
     }
     tffa.Logger.debug('Applications updated');
     if (FISCCIntegrationLogService.applicationObjs != null && !FISCCIntegrationLogService.applicationObjs.isEmpty()) {
@@ -99,6 +200,15 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
         if (applicationObject.tffa__PartyXrefs__r != null && !applicationObject.tffa__PartyXrefs__r.isEmpty()) {
           appPartyLst.addAll(applicationObject.tffa__PartyXrefs__r);
+          tffa.Logger.debug('appPartyLst ' + appPartyLst);
+          /*for (tffa__ApplicationPartyXref__c partyAppObj : applicationObject.tffa__PartyXrefs__r) {
+            if (!partyIdLst.contains(partyAppObj.tffa__party__r.Id) && String.isNotBlank(partyAppObj.tffa__party__r.Customer_Number__c)) {
+              partyUpdatedLst.add(partyAppObj.tffa__party__r);
+              partyIdLst.add(partyAppObj.tffa__party__r.Id);
+            }
+          }
+          tffa.Logger.debug('PartyLst ' + partyUpdatedLst);
+          FISCCObjectManagerRepository.doUpsertParties(new List<tffa__Party__c>(partyUpdatedLst));*/
         }
 
         if (applicationObject.tffa__LinkedFundingRequests__r != null && !applicationObject.tffa__LinkedFundingRequests__r.isEmpty()) {
@@ -107,13 +217,19 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
 
         if (
           (applicationObject.tffa__Status__c == CZWTFCConstants.ACCOUNT_OPENED ||
-          applicationObject.tffa__Status__c == CZWTFCConstants.FUNDED) &&
+          applicationObject.tffa__Status__c == CZWTFCConstants.FUNDED ||
+          (applicationObject.tffa__AccountPurpose__c == 'DEBIT_CARD' &&
+          applicationObject.tffa__Status__c == 'COMPLETED')) &&
           applicationObject.tffa__AccountPreferences__r != null &&
           !applicationObject.tffa__AccountPreferences__r.isEmpty()
         ) {
           for (tffa__AccountPreference__c accPrefObj : applicationObject.tffa__AccountPreferences__r) {
             if (FISCCIntegrationConstants.OD_FOR_STANDARD_ADDON_TYPE == accPrefObj.tffa__AddOnServiceType__c) {
               accPrefObj.tffa__Status__c = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+              accPrefObjLst.add(accPrefObj);
+            }
+
+            if (FISCCIntegrationConstants.DBT_TYPE == accPrefObj.tffa__AddOnServiceType__c) {
               accPrefObjLst.add(accPrefObj);
             }
           }
@@ -132,30 +248,63 @@ public with sharing class FISCCIntegrationLogService extends CZWTFCIntegrationLo
     }
 
     if (benefList != null && !benefList.isEmpty()) {
-      FISCCObjectManagerRepository.doUpsertBeneficiarys(benefList);
-      tffa.Logger.debug('Beneficiary updated updated');
+      try {
+        FISCCObjectManagerRepository.doUpsertBeneficiarys(benefList);
+        tffa.Logger.debug('Beneficiary updated updated');
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertBeneficiarys: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
     }
 
     if (appPartyLst != null && !appPartyLst.isEmpty()) {
-      FISCCObjectManagerRepository.doApplicationPartyReq(appPartyLst);
-      tffa.Logger.debug('ApplicationPartyXref updated');
+      try {
+        FISCCObjectManagerRepository.doApplicationPartyReq(appPartyLst);
+        tffa.Logger.debug('ApplicationPartyXref updated');
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doApplicationPartyReq: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
     }
 
     if (fundingReqList != null && !fundingReqList.isEmpty()) {
-      FISCCObjectManagerRepository.doUpsertFundingReq(fundingReqList);
-      tffa.Logger.debug('fundingReqList updated updated');
+      try {
+        FISCCObjectManagerRepository.doUpsertFundingReq(fundingReqList);
+        tffa.Logger.debug('fundingReqList updated updated');
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertFundingReq: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
     }
 
     if (accPrefObjLst != null && !accPrefObjLst.isEmpty()) {
-      FISCCObjectManagerRepository.doUpsertAccountPrefObj(accPrefObjLst);
-      tffa.Logger.debug('AccountPreference updated');
+      try {
+        FISCCObjectManagerRepository.doUpsertAccountPrefObj(accPrefObjLst);
+        tffa.Logger.debug('AccountPreference updated' + accPrefObjLst);
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertAccountPrefObj: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
     }
 
-    persistIntegationLogs();
+    if (uploadFileHistoryObjList != null && !uploadFileHistoryObjList.isEmpty()) {
+      try {
+        FISCCObjectManagerRepository.doUpsertuploadFileHistoryObj(uploadFileHistoryObjList);
+        tffa.Logger.debug('uploadFileHistoryObjList updated' + uploadFileHistoryObjList);
+      } catch (Exception ex) {
+        tffa.Logger.error('Exception in PersistLog.doUpsertuploadFileHistoryObj: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+      }
+    }
+
+    try {
+      persistIntegationLogs();
+    } catch (Exception ex) {
+      tffa.Logger.error('Exception in PersistLog.persistIntegationLogs: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+    }
     //--- Update Submission
 
-    FISCCObjectManagerRepository.doUpsertSubmission(FISCCIntegrationLogService.submissionObj);
-    tffa.Logger.debug('Submission updated');
+    try {
+      FISCCObjectManagerRepository.doUpsertSubmission(submissionObj);
+      tffa.Logger.debug('Submission updated');
+    } catch (Exception ex) {
+      tffa.Logger.error('Exception in PersistLog.doUpsertSubmission: ' + ex.getMessage() + ' ' + ex.getStackTraceString());
+    }
   }
 
   /**

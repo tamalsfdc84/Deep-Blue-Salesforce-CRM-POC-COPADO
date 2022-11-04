@@ -90,6 +90,10 @@
     </customSettingAccesses>
     <customSettingAccesses>
         <enabled>true</enabled>
+        <name>CZFCMDocumenTypes__c</name>
+    </customSettingAccesses>
+    <customSettingAccesses>
+        <enabled>true</enabled>
         <name>CZTerafinaFisMapping__c</name>
     </customSettingAccesses>
     <customSettingAccesses>
@@ -1799,6 +1803,15 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>TF Configurations Read Only</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CZOfficerDetails__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

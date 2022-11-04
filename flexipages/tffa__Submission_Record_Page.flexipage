@@ -7,10 +7,98 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
+                            <value>tffa__Submission__c.tffa__Edit</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>SUBMITTED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__CreditDecisionOutcome__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>REVIEW</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Delete</value>
+                            <value>tffa__Submission__c.tffa__Resume</value>
+                            <visibilityRule>
+                                <booleanFilter>1 OR 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>ABANDONED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>SAVED</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Submission__c.tffa__Reopen</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>SUBMITTED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__CreditDecisionOutcome__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>REVIEW</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Submission__c.tffa__Cancel</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>CANCELLED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>COMPLETED</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__IsOwnedByCurrentUser__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>tffa__Submission__c.tffa__Abandon</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.tffa__Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>IN_PROGRESS</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -60,29 +148,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>actions</name>
-                    <value>RESUME;REOPEN;CANCEL</value>
-                </componentInstanceProperties>
-                <componentName>tffa:resumeApplication</componentName>
-                <identifier>resumeApplication</identifier>
-                <visibilityRule>
-                    <booleanFilter>1 OR 2</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>ABANDONED</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.tffa__Status__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>SAVED</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentName>tffa:submissionKYCDecision</componentName>
                 <identifier>submissionKYCDecision</identifier>
                 <visibilityRule>
@@ -96,6 +161,30 @@
                         <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>REVIEW</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>tffa:submissionSignDocuments</componentName>
+                <identifier>submissionSignDocuments</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.tffa__Submitted__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>APPROVED</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.tffa__HasExternalDisclosures__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -238,6 +327,32 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>tffa__Submission__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>tffa__DisclosureEnvelopes__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer12</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

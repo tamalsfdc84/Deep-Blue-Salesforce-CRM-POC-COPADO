@@ -16,6 +16,7 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
     String submissionId = null;
     Boolean allPartiesPresent = true;
     Boolean allPartiesCompleted = true;
+    Boolean partyDecisionCompleted = true;
 
     List<tffa__Application__c> modifiedApps = new List<tffa__Application__c>();
     tffa.Interaction.begin(CZWTFCApplicationDecisionProvider.class, 'doDecision');
@@ -25,27 +26,66 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
       if (Test.isRunningTest()) {
         submissionObj = testSubmissionObj;
       }
-      applicationObjs = FISCCIntegrationLogRepository.findApplicationWithChildObjects(submissionObj.tffa__Applications__r);
+      if (submissionObj.tffa__channel__c == FISCCIntegrationConstants.BRANCH) {
+        applicationObjs = CZWTFCApplicationRepository.findApplicationsByIdsForBranchKYC(submissionObj.tffa__Applications__r);
+      } else {
+        applicationObjs = CZWTFCApplicationRepository.findApplicationsByIds(submissionObj.tffa__Applications__r);
+      }
       for (tffa__SubmissionPartyXref__c partyXref : submissionObj.tffa__PartyXrefs__r) {
         tffa.logger.debug('partyXref:' + partyXref);
         if (!partyXref.tffa__IsPresent__c)
           allPartiesPresent = false;
         if (STATUS_INCOMPLETE.equalsIgnoreCase(partyXref.tffa__Status__c))
           allPartiesCompleted = false;
+
+        if (
+          submissionObj.tffa__channel__c == FISCCIntegrationConstants.BRANCH &&
+          String.isBlank(partyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c)
+        ) {
+          partyDecisionCompleted = false;
+        }
       }
 
-      if (!allPartiesCompleted) {
+      if (!allPartiesPresent && !partyDecisionCompleted) {
         tffa.logger.error('Since all parties have not completed their part, we will not go ahead with decisioning');
+        //Clr existing kyc details and update status
+        for (tffa__Application__c app : applicationObjs) {
+          app.tffa__AutoKYCDecisionOutcome__c = '';
+          app.tffa__KYCDecisionOutcome__c = '';
+          app.tffa__Status__c = 'IN_PROGRESS';
+        }
+        CZWTFCApplicationRepository.save(applicationObjs);
         return applicationObjs;
       }
+      if (submissionObj.tffa__channel__c == FISCCIntegrationConstants.BRANCH) {
+        setAdverseActionNoticeFlag(submissionObj);
+        return setApplicationStatus(submissionObj, applicationObjs);
+      }
+      List<tffa__Party__c> partyList = null;
       CZWTFCApplicationDecisionProvider.setPartyMap(submissionObj);
       List<String> appOutcomes = new List<String>();
       for (tffa__Application__c app : applicationObjs) {
+        partyList = new List<tffa__Party__c>();
         tffa.Logger.debug('Before tffa__Application__c doDecision ::: ' + app);
-        app = doDecision(app, new Map<String, Object>(facts), submissionObj);
-        //app = CZWTFCAppRoutingService.routeApplication(app);
+        app = doDecision(app, new Map<String, Object>(facts), submissionObj, partyList);
         appOutcomes.add(app.tffa__AutoKYCDecisionOutcome__c);
         modifiedApps.add(app);
+      }
+
+      //Generate Acc Number for Cross sell products
+      try {
+        if (!CZWTFCCommonHelper.checkAcctNbrCreationCompleted(modifiedApps) && submissionObj.tffa__CreatedChannel__c == 'BRANCH') {
+          //FISCCCommonHelper.setFISBranchPrimaryOffcrAndCostCenter(modifiedApps, partyList);
+          FISCCIntegrationLogService.setSubmissionObj(submissionObj.Id);
+          FISCCIntegrationLogService.setIntegrationLog(submissionObj.Id);
+          CZAccNbrGenerationProvider.generateAccountNbr(modifiedApps);
+          CZWTFCIntegrationLogService.persistIntegationLogs();
+        }
+      } catch (Exception ex) {
+        tffa.Logger.debug('Exception in Acc nbr generation ' + ex.getMessage());
+      }
+      if (partyList != null) {
+        partyList = CZWTFCPartyRepository.save(partyList);
       }
       CZWTFCApplicationRepository.save(modifiedApps);
       //tffa.ApplicationAssigner appAssigner = new tffa.ApplicationAssigner();
@@ -73,15 +113,115 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
     return modifiedApps;
   }
 
-  public static tffa__Application__c doDecision(tffa__Application__c app, Map<String, Object> facts, tffa__Submission__c submissionObj) {
+  public static void setAdverseActionNoticeFlag(tffa__Submission__c sub) {
     List<tffa__Party__c> partyList = new List<tffa__Party__c>();
+    try {
+      if (sub != null && !sub.tffa__PartyXrefs__r.isEmpty()) {
+        for (tffa__SubmissionPartyXref__c subParty : sub.tffa__PartyXrefs__r) {
+          if (subParty.tffa__Party__r.tffa__KYCDecisionOutcome__c == STATUS_DECLINE && !subParty.tffa__IsPresent__c) {
+            subParty.tffa__Party__r.tffa__AdverseActionNoticeRequired__c = true;
+            partyList.add(subParty.tffa__Party__r);
+          }
+        }
+      }
+      if (!partyList.isEmpty()) {
+        WTFCObjectManagerRepository.doUpsertObjects(partyList);
+      }
+    } catch (Exception ex) {
+      tffa.Logger.error('Exception In setAdverseActionNotice' + ex.getMessage() + ' ' + ex.getStackTraceString());
+    }
+  }
+
+  public static List<tffa__Application__c> setApplicationStatus(tffa__Submission__c sub, List<tffa__Application__c> apps) {
+    Boolean partyApprovedPresent = false;
+    Boolean businessApprovedPresent = false;
+    Map<Id, tffa__Party__c> partyMap = CZWTFCPartyRepository.findPartiesWithRelatedParties(sub);
+
+    for (tffa__SubmissionPartyXref__c subPartyXref : sub.tffa__PartyXrefs__r) {
+      if (
+        subPartyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c == STATUS_APPROVE &&
+        subPartyXref.tffa__Party__r.tffa__Type__c == FISCCIntegrationConstants.ORGANIZATION
+      ) {
+        if (partyMap.containsKey(subPartyXref.tffa__Party__r.Id) && isOwnerApproved(subPartyXref.tffa__Party__r.Id, partyMap)) {
+          businessApprovedPresent = true;
+        }
+      }
+
+      if (
+        subPartyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c == STATUS_APPROVE &&
+        subPartyXref.tffa__Party__r.tffa__Type__c == FISCCIntegrationConstants.INDIVIDUAL
+      ) {
+        partyApprovedPresent = true;
+      }
+    }
+
+    for (tffa__Application__c app : apps) {
+      if (!app.tffa__Product__r.tffa__IsBusiness__c) {
+        if (partyApprovedPresent) {
+          app.tffa__AutoKYCDecisionOutcome__c = STATUS_APPROVE;
+          app.tffa__KYCDecisionOutcome__c = STATUS_APPROVE;
+          app.tffa__Status__c = STATUS_APPROVE;
+        } else {
+          app.tffa__AutoKYCDecisionOutcome__c = STATUS_DECLINE;
+          app.tffa__KYCDecisionOutcome__c = STATUS_DECLINE;
+          app.tffa__Status__c = STATUS_DECLINE;
+        }
+      }
+
+      if (app.tffa__Product__r.tffa__IsBusiness__c) {
+        if (businessApprovedPresent) {
+          app.tffa__AutoKYCDecisionOutcome__c = STATUS_APPROVE;
+          app.tffa__KYCDecisionOutcome__c = STATUS_APPROVE;
+          app.tffa__Status__c = STATUS_APPROVE;
+        } else {
+          app.tffa__AutoKYCDecisionOutcome__c = STATUS_DECLINE;
+          app.tffa__KYCDecisionOutcome__c = STATUS_DECLINE;
+          app.tffa__Status__c = STATUS_DECLINE;
+        }
+      }
+
+      if (app.tffa__AccountPurpose__c == 'DEBIT_CARD') {
+        app.tffa__AutoKYCDecisionOutcome__c = STATUS_APPROVE;
+        app.tffa__KYCDecisionOutcome__c = STATUS_APPROVE;
+        app.tffa__Status__c = STATUS_APPROVE;
+      }
+    }
+
+    sub = updateSubmissionKYCStatus(sub, apps);
+    CZWTFCApplicationRepository.save(apps);
+    return apps;
+  }
+
+  public static boolean isOwnerApproved(Id partyId, Map<Id, tffa__Party__c> partyMap) {
+    tffa__Party__c party = partyMap.get(partyId);
+    for (tffa__PartyPartyXref__c partyXref : party.tffa__PartyXrefs__r) {
+      if (
+        partyMap.containsKey(partyXref.tffa__RelatedParty__c) &&
+        (partyXref.tffa__RelationCodeValue__c == '101' ||
+        partyXref.tffa__RelationCodeValue__c == '103')
+      ) {
+        tffa__Party__c relatedParty = partyMap.get(partyXref.tffa__RelatedParty__c);
+        if (relatedParty.tffa__KYCDecisionOutcome__c != STATUS_APPROVE) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  public static tffa__Application__c doDecision(
+    tffa__Application__c app,
+    Map<String, Object> facts,
+    tffa__Submission__c submissionObj,
+    List<tffa__Party__c> partyList
+  ) {
     boolean allPartiesPresent = true;
     // if KYC decision was overridden, skip performing a decision
     if (app.tffa__KYCDecisionOverridden__c) {
       return app;
     }
     List<tffa__ApplicationDecisionMatrix__c> appDMatrixList = new List<tffa__ApplicationDecisionMatrix__c>();
-    for (tffa__SubmissionPartyXref__c partyXref : submissionObj.tffa__PartyXrefs__r) {
+    for (tffa__ApplicationPartyXref__c partyXref : app.tffa__PartyXrefs__r) {
       tffa__Party__c party = partyXref.tffa__party__r;
       facts = fetchFacts(partyXref, app);
       tffa.Logger.debug('doDecision fetched facts :: ' + facts);
@@ -106,11 +246,16 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
       // party.tffa__AdverseActionNoticeRequired__c = adm.tffa__AdverseActionNoticeRequired__c;
       partyList.add(party);
 
-      if (!partyXref.tffa__IsPresent__c && allPartiesPresent) {
-        allPartiesPresent = false;
+      for (tffa__SubmissionPartyXref__c subPartyXref : submissionObj.tffa__PartyXrefs__r) {
+        if (partyXref.tffa__Party__c == subPartyXref.tffa__Party__c) {
+          if (!subPartyXref.tffa__IsPresent__c && allPartiesPresent) {
+            allPartiesPresent = false;
+            break;
+          }
+        }
       }
     }
-    partyList = CZWTFCPartyRepository.save(partyList);
+
     Integer worstPartyIndex = getWorstPartyIndex(appDMatrixList);
     // updating application fields after decisioning
     if (appDMatrixList != null) {
@@ -152,10 +297,12 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
           appDMatrixList.get(worstPartyIndex).tffa__Description__c;
       }
     }
+
     return app;
   }
 
-  private static Map<String, Object> fetchFacts(tffa__SubmissionPartyXref__c partyXref, tffa__Application__c app) {
+  @TestVisible
+  private static Map<String, Object> fetchFacts(tffa__ApplicationPartyXref__c partyXref, tffa__Application__c app) {
     Map<String, Object> facts = new Map<String, Object>();
     tffa__Party__c party = partyXref.tffa__Party__r;
     facts.put('Product__c', app.tffa__Product__r.Id);
@@ -239,6 +386,23 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
     return worstPartyIndex;
   }
 
+  global override tffa__Submission__c updateDecision(tffa__Submission__c sub, Map<String, Object> facts) {
+    List<tffa__Application__c> apps = sub.tffa__Applications__r;
+    if (apps.isEmpty()) {
+      apps = CZWTFCApplicationRepository.findBySubmissionId(sub.Id);
+      for (tffa__Application__c app : apps) {
+        app.tffa__KYCDecisionOutcome__c = sub.tffa__KYCDecisionOutcome__c;
+        app.tffa__KYCApprovalReason__c = sub.tffa__KYCApprovalReason__c;
+        app.tffa__KYCDeclinedReason__c = sub.tffa__KYCDeclinedReason__c;
+        app.tffa__KYCDecisionOverrideComments__c = sub.tffa__KYCDecisionOverrideComments__c;
+      }
+    }
+    apps = updateDecision(apps, facts);
+    sub = FISCCIntegrationLogRepository.findSubmissionById(sub.Id);
+    sub = (tffa__Submission__c) tffa.SObjectAssembler.set(sub, 'Applications__r', apps);
+    return sub;
+  }
+
   public static tffa__Submission__c updateSubmissionKYCStatus(tffa__Submission__c sub, List<tffa__Application__c> appList) {
     String submissionDecOutcome;
     Boolean reviewFlag = false;
@@ -269,9 +433,14 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
     tffa.Logger.debug('Inside updateDecision');
     tffa.Interaction.begin(CZWTFCApplicationDecisionProvider.class, 'updateDecision');
     List<tffa__Application__c> appList = new List<tffa__Application__c>();
-    tffa__Submission__c subObj = new tffa__Submission__c();
+    tffa__Submission__c subObj;
+    if (facts.containsKey('Submission__c')) {
+      subObj = FISCCIntegrationLogRepository.findSubmissionById((String) facts.get('Submission__c'));
+    }
     try {
-      if (apps.isEmpty()) {
+      if (apps.isEmpty() && subObj != null) {
+        apps = CZWTFCApplicationRepository.findApplicationWithChildObjsBySubId(subObj);
+      } else if (apps.isEmpty()) {
         return apps;
       }
       Boolean flgAdverseActionNoticeSent = false;
@@ -302,19 +471,23 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
           loadedApp.Name = app.Name;
         }
         app = loadedApp;
+
         tffa.Logger.debug('app.tffa__KYCDecisionOutcome__c  : ' + app.tffa__KYCDecisionOutcome__c);
         tffa.Logger.debug('app.tffa__KYCDeclinedReason__c : ' + app.tffa__KYCDeclinedReason__c);
 
         //apps = new List<tffa__Application__c>{ app };
 
-        subObj = CZWTFCSubmissionRepository.findOne(app.tffa__Submission__c);
+        // subObj = CZWTFCSubmissionRepository.findOne(app.tffa__Submission__c);
 
         if (STATUS_APPROVE.equalsIgnoreCase(app.tffa__KYCDecisionOutcome__c)) {
           try {
             if (facts.containsKey('IsCounterOffer__c') && !flgAdverseActionNoticeSent) {
               tffa__Submission__c submissionObj = CZWTFCSubmissionRepository.findSubmissionById(app.tffa__Submission__c);
               for (tffa__SubmissionPartyXref__c partyXref : submissionObj.tffa__PartyXrefs__r) {
-                if (partyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c.equals(CZWTFCConstants.DECLINED)) {
+                if (
+                  partyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c.equals(CZWTFCConstants.DECLINED) &&
+                  submissionObj.tffa__SubmittedChannel__c == FISCCIntegrationConstants.DIGITAL
+                ) {
                   new CZWTFCPartyEventExtension('Application_Declined_Adverse').post(partyXref.tffa__Party__r);
                   flgAdverseActionNoticeSent = true;
                 }
@@ -324,9 +497,12 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
             tffa.Logger.debug(' Exception in advAction block: ' + ex.getStackTraceString());
           }
           app.tffa__Status__c = STATUS_APPROVE;
+          app = CZWTFCAppRoutingService.routeApplication(app);
           app = CZWTFCApplicationRepository.save(new List<tffa__Application__c>{ app })[0];
-          if ((subObj.tffa__Status__c).equalsIgnoreCase('SUBMITTED')) {
-            processSubmission(app.tffa__Submission__c);
+          if (
+            (subObj.tffa__Status__c).equalsIgnoreCase('SUBMITTED') && subObj.tffa__SubmittedChannel__c == FISCCIntegrationConstants.DIGITAL
+          ) {
+            processSubmission(app.tffa__Submission__c, app.Id);
           }
         } else if (STATUS_DECLINE.equalsIgnoreCase(app.tffa__KYCDecisionOutcome__c)) {
           app.tffa__Status__c = STATUS_DECLINE;
@@ -340,7 +516,10 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
           if (!facts.containsKey('IsCounterOffer__c') && !flgAdverseActionNoticeSent) {
             tffa__Submission__c submissionObj = CZWTFCSubmissionRepository.findSubmissionById(app.tffa__Submission__c);
             for (tffa__SubmissionPartyXref__c partyXref : submissionObj.tffa__PartyXrefs__r) {
-              if (partyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c.equals(CZWTFCConstants.DECLINED)) {
+              if (
+                partyXref.tffa__Party__r.tffa__KYCDecisionOutcome__c.equals(CZWTFCConstants.DECLINED) &&
+                submissionObj.tffa__SubmittedChannel__c == FISCCIntegrationConstants.DIGITAL
+              ) {
                 new CZWTFCPartyEventExtension('Application_Declined_Adverse').sendAdverseActionMail(partyXref.tffa__Party__r, app);
                 flgAdverseActionNoticeSent = true;
               }
@@ -363,11 +542,11 @@ global with sharing class CZWTFCApplicationDecisionProvider extends tffa.Applica
   }
 
   @future(callout=true)
-  public static void processSubmission(Id id) {
+  public static void processSubmission(Id id, Id appId) {
     tffa.Interaction.begin(CZWTFCApplicationDecisionProvider.class, 'processSubmission');
     try {
       FISCCIntegrationLogService.isBatchSource = true;
-      FISCCSubmissionExecutor.processApplication(id);
+      FISCCSubmissionExecutor.processApplication(id, appId);
     } catch (Exception ex) {
       tffa.Logger.error(' Exception msg : ' + ex.getMessage() + ' ' + ex.getStackTraceString());
     } finally {

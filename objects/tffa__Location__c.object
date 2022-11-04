@@ -419,7 +419,7 @@ A location&apos;s segments represent its target audience.</description>
         <type>Text</type>
     </nameField>
     <pluralLabel>Locations (branch)</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

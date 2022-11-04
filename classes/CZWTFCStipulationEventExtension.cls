@@ -17,16 +17,21 @@ global inherited sharing class CZWTFCStipulationEventExtension extends tffa.Even
   }
 
   global override Object post(Object obj) {
-    tffa.Logger.error('post - CZWTFCStipulationEventExtension');
+    tffa.Logger.debug('post - CZWTFCStipulationEventExtension');
     // this.eventName = 'Submission_Saved';
-    if (!(obj instanceof tffa__Stipulation__c)) {
+    List<tffa__Stipulation__c> stiLst = new List<tffa__Stipulation__c>();
+    tffa__Stipulation__c stip = new tffa__Stipulation__c();
+
+    if (obj instanceof List<tffa__Stipulation__c>) {
+      stiLst = (List<tffa__Stipulation__c>) obj;
+    } else if (obj instanceof tffa__Stipulation__c) {
+      stiLst.add((tffa__Stipulation__c) obj);
+    } else {
       tffa.Logger.error('Input is not of type tffa__Stipulation__c');
       return obj;
     }
 
-    List<tffa__Stipulation__c> stip1 = (List<tffa__Stipulation__c>) obj;
-    //tffa__Stipulation__c stip = (tffa__Stipulation__c) obj;
-    tffa__Stipulation__c stip = stip1.get(0);
+    stip = stiLst.get(0);
     String stipId = stip.id;
 
     tffa__Stipulation__c stipulation = StipCustomMetadataRepository.getStipulation(stipId);
@@ -39,13 +44,21 @@ global inherited sharing class CZWTFCStipulationEventExtension extends tffa.Even
     if (stipulation.tffa__Application__c != null) {
       String status = stipulation.tffa__Status__c;
       String emailid = stipulation.tffa__Party__r.tffa__PrimaryEmail__c;
-      // String subStatus = sub.tffa__State__c;
+      String userId = stipulation.CreatedById;
+      User owner = CZDocusignRepository.fetchUserDetails(userId);
+      tffa.Logger.debug('CZWTFCStipulationEventExtension.post : userId = ' + userId + ', owner =' + owner);
       tffa.Logger.debug('status = ' + status);
+
+      if (status == 'UPLOADED' && stipulation.tffa__Submission__c != null) {
+        tffa__Submission__c sub = CZWTFCSubmissionRepository.findOne(stipulation.tffa__Submission__c);
+        if (sub.tffa__Status__c != 'SUBMITTED') {
+          return obj;
+        }
+      }
+
       switch on status {
         when 'UPLOADED' {
           eventName = 'Stipulation_Uploaded';
-          //emailid = stipulation.CreatorEmail__c;
-          tffa.Logger.debug('emailid ' + emailid + ' & eventname ::' + eventName);
         }
         when 'APPROVED' {
           eventName = 'Stipulation_Approved';
@@ -70,15 +83,27 @@ global inherited sharing class CZWTFCStipulationEventExtension extends tffa.Even
       tffa.NotificationDTO.NotificationRecipientDTO[] recipients = new List<tffa.NotificationDTO.NotificationRecipientDTO>{};
       // tffa__Party__c p = spx.tffa__Party__r;
 
-      recipients.add(
-        new tffa.NotificationDTO.NotificationRecipientDTO(
-          tffa.NotificationDTO.NotificationRecipientType.PARTY,
-          stipulation.tffa__Party__r.Id,
-          stipulation.tffa__Party__r.Name,
-          emailid,
-          stipulation.tffa__Party__r.tffa__PrimaryPhone__c
-        )
-      );
+      if (status == 'UPLOADED') {
+        recipients.add(
+          new tffa.NotificationDTO.NotificationRecipientDTO(
+            tffa.NotificationDTO.NotificationRecipientType.USER,
+            owner.Id,
+            owner.Name,
+            owner.Email,
+            owner.Phone
+          )
+        );
+      } else {
+        recipients.add(
+          new tffa.NotificationDTO.NotificationRecipientDTO(
+            tffa.NotificationDTO.NotificationRecipientType.PARTY,
+            stipulation.tffa__Party__r.Id,
+            stipulation.tffa__Party__r.Name,
+            emailid,
+            stipulation.tffa__Party__r.tffa__PrimaryPhone__c
+          )
+        );
+      }
       if (!recipients.isEmpty()) {
         tffa.NotificationDTO notif = new tffa.NotificationDTO();
         notif = buildNotification(stipulation);
@@ -108,7 +133,19 @@ global inherited sharing class CZWTFCStipulationEventExtension extends tffa.Even
     app = CZWTFCApplicationRepository.findApplicationById(appid);
     tffa__Brand__c brandObj = CZWTFCBrandRepository.fetchBrandByCode(app.tffa__Brand__c);
     String suffix = stipulation.tffa__Party__r.tffa__Suffix__c != null ? ' ' + stipulation.tffa__Party__r.tffa__Suffix__c : '';
-    factsMap.put('PartyName', stipulation.tffa__Party__r.tffa__FirstName__c + ' ' + stipulation.tffa__Party__r.tffa__LastName__c + suffix);
+
+    if (stipulation.tffa__Party__r.tffa__Type__c == 'INDIVIDUAL') {
+      factsMap.put(
+        'PartyName',
+        stipulation.tffa__Party__r.tffa__FirstName__c +
+        ' ' +
+        stipulation.tffa__Party__r.tffa__LastName__c +
+        suffix
+      );
+    } else {
+      factsMap.put('PartyName', stipulation.tffa__Party__r.tffa__LegalName__c);
+    }
+
     factsMap.put('brandName', brandObj.Name);
     factsMap.put('phoneNo', brandObj.EmailPhone__c);
     factsMap.put('logoUrl', brandObj.EmailHeaderLogoUrl__c);
@@ -118,11 +155,16 @@ global inherited sharing class CZWTFCStipulationEventExtension extends tffa.Even
     factsMap.put('zip', brandObj.Zip__c);
     factsMap.put('bankUrl', brandObj.tffa__InfoUrl__c);
     factsMap.put('email', brandObj.tffa__ContactEmail__c);
+    factsMap.put('ConfirmationNumber', app.SubmissionName__c);
+    factsMap.put('Banker_Comments', stipulation.tffa__Comments__c);
+    factsMap.put('Rejected_Comments', stipulation.tffa__RejectedComments__c);
     if (!Test.isRunningTest()) {
       PageReference pageRef = new PageReference(tffa__SiteUrl__c.getOrgDefaults().tffa__Url__c + '/apptracker');
       pageRef.getParameters().put('brandCode', app.tffa__Brand__c);
       pageRef.getParameters().put('Id', stipulation.tffa__Party__r.Id);
       factsMap.put('SubmissionQueryParam', pageRef.getUrl());
+      tffa__EnvironmentConfiguration__c config = tffa__EnvironmentConfiguration__c.getOrgDefaults();
+      factsMap.put('StipulationUploadClickHereURL', config.tffa__BaseUrl__c + '/' + stipulation.tffa__Party__r.Id);
     }
     if (brandObj.subBrand__r != null && !brandObj.subBrand__r.isEmpty()) {
       String subBrandName = '';

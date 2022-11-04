@@ -6,6 +6,13 @@
             <componentInstance>
                 <componentName>tffa:userAgentDetails</componentName>
                 <identifier>tffa_userAgentDetails</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Terafina</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -36,6 +43,13 @@
             <componentInstance>
                 <componentName>tffa:startApplication</componentName>
                 <identifier>tffa_startApplication</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Terafina</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>

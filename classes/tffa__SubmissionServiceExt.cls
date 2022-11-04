@@ -39,6 +39,9 @@ global virtual class SubmissionServiceExt {
     global virtual tffa__Submission__c postGenerateLink(tffa__Submission__c submission, Map<String,Object> facts) {
         return null;
     }
+    global virtual tffa__Submission__c postInitializeDocumentSigning(tffa__Submission__c submission) {
+        return null;
+    }
     global virtual tffa__Submission__c postInitialize(tffa__Submission__c submission, Map<String,Object> params) {
         return null;
     }

@@ -1,6 +1,6 @@
 <!--
   @Page Name          : performanceLogConfiguration.page
-  @Description        :  performance log configuration page
+  performance log configuration page
  -->
 <apex:page docType="html-5.0" title="{!$ObjectType.tffa__PerformanceLogConfiguration__c.Label}" standardController="tffa__PerformanceLog__c"
   recordSetVar="logs" extensions="tffa.PerformanceLogController" lightningStylesheets="true" action="{!getConfiguration}" showHeader="false"

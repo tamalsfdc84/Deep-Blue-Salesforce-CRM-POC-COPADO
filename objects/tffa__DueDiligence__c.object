@@ -624,7 +624,7 @@ Tracks due diligence status for the given provider.</description>
         <type>Text</type>
     </nameField>
     <pluralLabel>Due Diligences</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

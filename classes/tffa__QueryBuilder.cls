@@ -24,6 +24,9 @@ global class QueryBuilder {
     global tffa.QueryBuilder groupStart() {
         return null;
     }
+    global tffa.QueryBuilder includeInactive() {
+        return null;
+    }
     global tffa.QueryBuilder opAnd() {
         return null;
     }
@@ -67,6 +70,9 @@ global class QueryBuilder {
         return null;
     }
     global tffa.QueryBuilder whereClause(Map<String,Object> queryParams) {
+        return null;
+    }
+    global tffa.QueryBuilder whereTrue(String fieldName) {
         return null;
     }
     global tffa.QueryBuilder whereWithFacts(String fieldSetName, List<Map<String,Object>> fieldSetValues) {

@@ -13,21 +13,16 @@
     <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
-    <customWebAddresses>
-        <certificate>Accounts_Wintrust_CA_2022_June</certificate>
-        <domainName>accounts.wintrust.com</domainName>
-        <primary>false</primary>
-    </customWebAddresses>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
-    <inactiveIndexPage>WintrustMaintenance</inactiveIndexPage>
+    <inactiveIndexPage>InMaintenance</inactiveIndexPage>
     <indexPage>sales</indexPage>
     <masterLabel>wtfcui</masterLabel>
-    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <redirectToCustomDomain>true</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
-    <siteAdmin>salesforcecrmcenterofexcellence@wintrust.com.integration</siteAdmin>
+    <siteAdmin>deploy.admin@wintrustbank.com.wtfc</siteAdmin>
     <siteGuestRecordDefaultOwner>salesforcecrmcenterofexcellence@wintrust.com.integration</siteGuestRecordDefaultOwner>
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>

@@ -45,6 +45,7 @@ public class ACHFileBuilder {
     }
   }
 
+  @TestVisible
   private UploadFileHistory__c insertIntoACHFile(
     ACHDocumentDTO doc,
     Integer totalFileRecNo,
@@ -95,6 +96,7 @@ public class ACHFileBuilder {
     return af;
   }
 
+  @TestVisible
   private void createFilesAndNotify(ACHDocumentDTO doc, String achFileStr, String creditFileStr, String genMsg) {
     if (doc.getFileControl().getEntryCount() > 0) {
       Integer totalFileRecNo = String.isNotBlank(achFileStr) ? (achFileStr.countMatches(ACHConstants.ACH_NEWLINE_CHAR) + 1) : 0;
@@ -134,6 +136,7 @@ public class ACHFileBuilder {
     }
   }
 
+  @TestVisible
   private String insertIntoDocument(String fileData, String description, String fileName, String documentLinkId) {
     tffa.Logger.debug('Start inserting into document');
     ACHContentHelper upd = new ACHContentHelper();

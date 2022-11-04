@@ -19,7 +19,8 @@ private class CZNachaFilesTransferServiceTest {
     cvList.add(cv);
     Map<String, UploadFileHistory__c> fileMap = new Map<String, UploadFileHistory__c>();
     fileMap.put(cv.ContentDocumentId, oo);
-    ojb = CZNachaFilesTransferService.transferFiles(cvList, fileMap);
+    ojb = CZMulesoftFileTransferService.transferFiles(cvList, fileMap);
+    System.assertNotEquals(ojb, null);
     Test.stopTest();
   }
 
@@ -42,7 +43,8 @@ private class CZNachaFilesTransferServiceTest {
     cvList.add(cv);
     Map<String, UploadFileHistory__c> fileMap = new Map<String, UploadFileHistory__c>();
     fileMap.put(cv.ContentDocumentId, oo);
-    ojb = CZNachaFilesTransferService.transferFiles(cvList, fileMap);
+    ojb = CZMulesoftFileTransferService.transferFiles(cvList, fileMap);
+    System.assertNotEquals(ojb, null);
     Test.stopTest();
   }
 
@@ -65,7 +67,8 @@ private class CZNachaFilesTransferServiceTest {
     cvList.add(cv);
     Map<String, UploadFileHistory__c> fileMap = new Map<String, UploadFileHistory__c>();
     fileMap.put(cv.ContentDocumentId, oo);
-    ojb = CZNachaFilesTransferService.transferFiles(cvList, fileMap);
+    ojb = CZMulesoftFileTransferService.transferFiles(cvList, fileMap);
+    System.assertNotEquals(ojb, null);
     Test.stopTest();
   }
 }

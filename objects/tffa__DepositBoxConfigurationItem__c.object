@@ -366,7 +366,7 @@ Captures the safe deposit box configurations associated with the product.</descr
         <type>Text</type>
     </nameField>
     <pluralLabel>Deposit Box Configuration Items</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

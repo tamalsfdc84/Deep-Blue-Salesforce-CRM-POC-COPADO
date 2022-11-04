@@ -291,7 +291,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Questionnaire Outcomes</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>tffa__ProductIsRequired</fullName>

@@ -7,8 +7,8 @@ public with sharing class FISCCDOGenerateDepositAccNumberExtension {
   ) {
     FISCCGenerateDepositAccNumberDTO fisccGenerateDepositAccountNumberDTO = new FISCCGenerateDepositAccNumberDTO();
     try {
-      fisccGenerateDepositAccountNumberDTO.DPAcctBrnch = Integer.valueOf(appObj.FISBranchCode__c);
-      fisccGenerateDepositAccountNumberDTO.DPAcctTyp = Integer.valueOf(appObj.tffa__Product__r.tffa__Code__c);
+      fisccGenerateDepositAccountNumberDTO.DPAcctBrnch = appObj.FISBranchCode__c;
+      fisccGenerateDepositAccountNumberDTO.DPAcctTyp = appObj.tffa__Product__r.tffa__Code__c;
       fisccGenerateDepositAccountNumberDTO.GenDPApplID = FISCCIntegrationConstants.GenDPApplID;
     } catch (Exception ex) {
       tffa.Logger.error('Exception in createDepositAccountNumberRequest : ' + ex.getMessage() + ex.getStackTraceString());

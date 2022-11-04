@@ -24,7 +24,8 @@ public with sharing class CZWTFCDisclosureConverterTest {
     Test.startTest();
     Database.executeBatch(new CZWTFCPdfConverterBatch());
     CZWTFCGenDisclosurePdfProvider genDiscPdf = new CZWTFCGenDisclosurePdfProvider();
-    genDiscPdf.generateDisclosurePdf((tffa__Submission__c) asmSub.assemble());
+    Object resp = genDiscPdf.generateDisclosurePdf((tffa__Submission__c) asmSub.assemble());
+    System.assertNotEquals(resp, null);
     Test.stopTest();
   }
 }

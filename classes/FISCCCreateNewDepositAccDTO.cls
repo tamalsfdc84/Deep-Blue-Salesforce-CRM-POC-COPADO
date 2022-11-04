@@ -2,7 +2,6 @@ public with sharing class FISCCCreateNewDepositAccDTO {
   public FISCCCreateNewDepositAccDTO() {
   }
   public String DPAcctNbrNewAcct;
-  //public String AcctNbr;
   public Integer DPBrnch;
   public Integer DPAcctTyp;
   public String DPAcctNme;
@@ -12,6 +11,7 @@ public with sharing class FISCCCreateNewDepositAccDTO {
   public Integer DPCstCntr;
   public String DPTrckCde;
   public Integer DPPrmyOffcr;
+  public Integer DPScndyOffcr;
   public Integer DPIntPln;
   public String DPDPCat;
   public Long DPNmeAndAddrBusPh;
@@ -24,4 +24,8 @@ public with sharing class FISCCCreateNewDepositAccDTO {
   public String CIRmrkMaintSrcInd;
   public Date DPBirthdate;
   public Integer DPExcpPlnNbr;
+  public String DPRetPlnNbr;
+  public Integer DPRetPlnTyp;
+  public String DPTrsfrAcctNbr;
+  public String DPIntPmtMeth;
 }

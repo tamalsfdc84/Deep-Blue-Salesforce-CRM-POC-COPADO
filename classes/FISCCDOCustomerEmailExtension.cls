@@ -7,7 +7,7 @@ public with sharing class FISCCDOCustomerEmailExtension {
     FISCCRequestBaseDTO fisccRequestBaseDTO = null;
     FISCCDepositOriginationRequestBaseDTO fisccDepositOriginationRequestBaseDTO = null;
     try {
-      tffa.Logger.debug('Inside createCustomerSearchRequest method');
+      tffa.Logger.debug('Inside customerEmailRequest method');
       FISCCCreateEmailAddressesDTO objFISCCCreateEmailAddressesDTO = new FISCCCreateEmailAddressesDTO();
       List<FISCCCreateEmailAddressesDTO> lstFISCCCreateEmailAddressesDTO = new List<FISCCCreateEmailAddressesDTO>();
       FISCCDOCustomerEmailRequest objFISCCDOCustomerEmailRequest = new FISCCDOCustomerEmailRequest();

@@ -39,6 +39,23 @@ public with sharing class CZWTFCProductService {
         prodMatrixList = CZWTFCProductRepository.getAllProductsMatrix();
       }
 
+      String channel = params.containsKey('channel') ? (String) params.get('channel') : null;
+      List<tffa__ProductMatrix__c> prodMatrixupdatedList = new List<tffa__ProductMatrix__c>();
+      if (channel != null) {
+        for (tffa__ProductMatrix__c prodMatrix : prodMatrixList) {
+          if (prodMatrix.tffa__ChannelSet__c == null) {
+            prodMatrixupdatedList.add(prodMatrix);
+          } else if (prodMatrix.tffa__ChannelSet__c.contains(channel)) {
+            prodMatrixupdatedList.add(prodMatrix);
+          }
+        }
+      }
+
+      if (!prodMatrixupdatedList.isEmpty()) {
+        prodMatrixList.clear();
+        prodMatrixList = prodMatrixupdatedList;
+      }
+
       if (String.isNotBlank(stateCode)) {
         updatedprodMatrixList = validateStateAndZip(prodMatrixList, zipcode, stateCode);
       } else {
@@ -70,15 +87,33 @@ public with sharing class CZWTFCProductService {
   public static List<tffa__Product__c> readProducts(List<tffa__ProductMatrix__c> prodMatrix, Map<String, Object> paramMap) {
     List<tffa__Product__c> productList = new List<tffa__Product__c>();
     List<String> ids = new List<String>();
+    Map<Id, List<tffa__ProductMatrix__c>> prodMatMap = new Map<Id, List<tffa__ProductMatrix__c>>();
+    String channel;
+    if (paramMap.containsKey('channel')) {
+      channel = (String) paramMap.get('channel');
+    }
 
     for (tffa__ProductMatrix__c prodMat : prodMatrix) {
       ids.add(prodMat.tffa__Product__c);
+      if (channel == 'BRANCH') {
+        if (prodMatMap.containsKey(prodMat.tffa__Product__c)) {
+          List<tffa__ProductMatrix__c> prodM = prodMatMap.get(prodMat.tffa__Product__c);
+          prodM.add(prodMat);
+          prodMatMap.put(prodMat.tffa__Product__c, prodM);
+        } else {
+          prodMatMap.put(prodMat.tffa__Product__c, new List<tffa__ProductMatrix__c>{ prodMat });
+        }
+      }
     }
 
     Map<String, Object> params = new Map<String, Object>();
     params.put('Id', ids);
     tffa.QueryContext qc = new tffa.QueryContext(params);
     productList = tffa.ProductService.readAll(qc);
+    if (channel == 'BRANCH') {
+      setProductMatrix(productList, prodMatMap);
+    }
+    //Map<String, InterestPlanDetails__c> interestPlanMap = CZWTFCHelperRepository.fetchInterestPlanMap(submission.tffa__Brand__c);
     if (wintrustEnvConfig.InterestRateAutomation__c || Test.isRunningTest()) {
       for (tffa__Product__c product : productList) {
         if (product.InterestPlanCode__c != null) {
@@ -134,8 +169,41 @@ public with sharing class CZWTFCProductService {
         }
       }
     }
+    fetchInterestRateDetails(productList, (String) paramMap.get('brandCode'));
     // productList = CZWTFCProductRepository.readAllProducts(ids);
     return productList;
+  }
+
+  public static void fetchInterestRateDetails(List<tffa__Product__c> productList, String brandCode) {
+    Map<String, InterestPlanDetails__c> interestPlanMap = CZWTFCHelperRepository.fetchInterestPlanMap(brandCode);
+    for (tffa__Product__c prod : productList) {
+      if (
+        prod.tffa__Category__c == 'CERTIFICATE' ||
+        prod.tffa__Category__c == 'BUSINESS_CERTIFICATE' ||
+        (prod.tffa__Category__c == 'IRA' &&
+        prod.tffa__AllowedInvestmentAccountType__c != null &&
+        prod.tffa__AllowedInvestmentAccountType__c == 'CERTIFICATE')
+      ) {
+        for (tffa__ProductTerm__c pdTerm : prod.tffa__Terms__r) {
+          if (interestPlanMap.containsKey(pdTerm.tffa__InterestPlanCode__c)) {
+            pdTerm.tffa__Rate__c = interestPlanMap.get(pdTerm.tffa__InterestPlanCode__c).InterestRate__c;
+          }
+          if (interestPlanMap.containsKey(pdTerm.CZFounderInterestPlan__c)) {
+            pdTerm.CZFounderInterestRate__c = interestPlanMap.get(pdTerm.CZFounderInterestPlan__c).InterestRate__c;
+          }
+        }
+      }
+    }
+  }
+
+  public static void setProductMatrix(List<tffa__Product__c> products, Map<Id, List<tffa__ProductMatrix__c>> prodMatMap) {
+    for (Integer indx = 0; indx < products.size(); indx++) {
+      if (prodMatMap.containsKey(products[indx].Id)) {
+        tffa.SObjectAssembler prodObjAssembler = new tffa.SObjectAssembler(products[indx]);
+        prodObjAssembler.setChildObjects('Matrices__r', prodMatMap.get(products[indx].Id));
+        products.set(indx, (tffa__Product__c) prodObjAssembler.assemble());
+      }
+    }
   }
 
   private static Map<String, Object> getAPYToDisplay(String interestPlanCode, String brandCode) {

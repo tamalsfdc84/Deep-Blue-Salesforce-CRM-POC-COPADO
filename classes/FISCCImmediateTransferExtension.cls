@@ -71,6 +71,7 @@ public with sharing class FISCCImmediateTransferExtension {
       }
     } catch (Exception ex) {
       tffa.Logger.debug('Exception in FISCCImmediateTransferExtension ' + ex.getMessage() + ' Exception :::' + ex.getStackTraceString());
+      return false;
     }
 
     return isSuccess;
@@ -97,19 +98,28 @@ public with sharing class FISCCImmediateTransferExtension {
       }
     }
 
-    Datetime startDate = appObject.CZAccountOpeningDate__c;
-    String dayOfWeek = appObject.CZAccountOpeningDate__c.format('EEEE');
-    if (dayOfWeek.equalsIgnoreCase('Saturday')) {
-      startDate = appObject.CZAccountOpeningDate__c + 2;
-    } else if (dayOfWeek.equalsIgnoreCase('Sunday')) {
-      startDate = appObject.CZAccountOpeningDate__c + 1;
+    Date startDate = appObject.CZAccountOpeningDate__c;
+    while (isHoliday(startDate)) {
+      startDate = startDate + 1;
     }
 
-    requestDTO.immediatetransfers.FMTrsfrDte = startDate.format(FISCCIntegrationConstants.MDM_DATE_FORMAT);
+    requestDTO.immediatetransfers.FMTrsfrDte = CZWTFCCommonHelper.formatDate(startDate, FISCCIntegrationConstants.MDM_DATE_FORMAT);
 
     requestDTO.immediatetransfers.FMLogTyp = 'L';
     return requestDTO;
     //Check if existing Constants in IntConst Class
+  }
+
+  public static Boolean isHoliday(Date inputDate) {
+    String dayOfWeek = DateTime.newInstance(inputDate, Time.newInstance(0, 0, 0, 0)).format('EEEE');
+    if (dayOfWeek.equalsIgnoreCase('Saturday') || dayOfWeek.equalsIgnoreCase('Sunday')) {
+      return true;
+    }
+
+    if (FISCCIntegrationLogService.holidayList != null && FISCCIntegrationLogService.holidayList.contains(inputDate)) {
+      return true;
+    }
+    return false;
   }
 
   public static FISCCImmediateTransResponseDTO parseImmediateTransResponse(Object response) {

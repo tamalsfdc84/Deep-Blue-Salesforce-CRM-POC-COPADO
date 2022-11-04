@@ -433,7 +433,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Addresses</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

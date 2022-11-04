@@ -1,23 +1,30 @@
 public inherited sharing class FCMIntegrationExecutor {
   public static List<UploadFileHistory__c> updatedUploadHistoryList = new List<UploadFileHistory__c>();
   public static Boolean errorFlag = false;
-  public static Set<String> fcmFileExtension = new Set<String>{ 'jpg', 'jpeg', 'png', 'pdf' };
+  public static Boolean apiLimitFlag = false;
+  public static Set<String> fcmFileExtension = new Set<String>{ 'jpg', 'jpeg', 'png', 'pdf', 'bmp', 'gif', 'tif', 'tiff', 'xls', 'xlsx', 'msg', 'doc', 'docx' };
   public static Map<String, tffa__Party__c> partyMap = new Map<String, tffa__Party__c>();
 
-  public static tffa__Application__c processRequest(tffa__Application__c app) {
+  public static tffa__Submission__c processRequest(tffa__Submission__c sub) {
     try {
-      tffa.Logger.debug('Submission : ' + app.tffa__Submission__c);
+      tffa.Logger.debug('Submission : ' + sub);
 
       FISCCIntegrationLogService.applicationCode = 'FCM';
-      FISCCIntegrationLogService.setSubmissionObj(String.valueOf(app.tffa__Submission__c));
-      FISCCIntegrationLogService.setIntegrationLog(String.valueOf(app.tffa__Submission__c));
+      FISCCIntegrationLogService.setSubmissionObj(String.valueOf(sub.Id));
+      FISCCIntegrationLogService.setIntegrationLog(String.valueOf(sub.Id));
+      FISCCIntegrationLogService.setApplicationObjs();
+      apiLimitFlag = false;
+      // Create Application map
+      for(tffa__Application__c application : FISCCIntegrationLogService.applicationObjs){
+        FISCCIntegrationLogService.applicationObjMap.put(application.Id, application);
+      }
 
       // Fetch Auth token
       FISCCIntegrationLogService.auth = FISCCGetAccessTokenProvider.processGetAccessToken(FISCCIntegrationLogService.charterConfig);
 
       if (String.isEmpty(FISCCIntegrationLogService.auth) && !Test.isRunningTest()) {
         errorFlag = true;
-        return app;
+        return sub;
       }
 
       // Fetch Entity Auth Token
@@ -27,36 +34,39 @@ public inherited sharing class FCMIntegrationExecutor {
 
       if (String.isEmpty(FISCCIntegrationLogService.entityAuthToken) && !Test.isRunningTest()) {
         errorFlag = true;
-        return app;
+        return sub;
       }
-      List<UploadFileHistory__c> uploadHistoryList = FCMHelperRepository.fetchFCMFileHistory(app.id);
 
+      // Fetch upload file history based on submisison Id
+      List<UploadFileHistory__c> uploadHistoryList = FCMHelperRepository.fetchFCMFileHistory(FISCCIntegrationLogService.submissionObj.Id);
+
+      // Create a map of upload file history with combination of docId, appId and partyId
       Map<String, UploadFileHistory__c> fileHistoryMap = new Map<String, UploadFileHistory__c>();
       for (UploadFileHistory__c obj : uploadHistoryList) {
-        fileHistoryMap.put(obj.DocumentId__c + (obj.CZPartyID__c == null ? '' : obj.CZPartyID__c), obj);
+        fileHistoryMap.put(obj.DocumentId__c + (obj.ApplicationID__c == null ? '' : obj.ApplicationID__c) + (obj.CZPartyID__c == null ? '' : obj.CZPartyID__c), obj);
       }
 
       tffa.Logger.debug('fileHistoryMap : ' + fileHistoryMap);
 
-      // Get all uploaded images by party
-      List<CZFCMContentVersionDTO> tempContentVersionList = getContentVersions(new List<Id>{ String.valueOf(app.tffa__Submission__c) });
+      // Get all eligible documents for upload
+      List<CZFCMContentVersionDTO> disclosureContent = new List<CZFCMContentVersionDTO>();
+      disclosureContent = FCMHelperRepository.findContentVersionBySubmissionId(FISCCIntegrationLogService.submissionObj);
 
+      // Remove unsupported file extension format data and remove the files which is not needed to upload
       List<CZFCMContentVersionDTO> contentVersionList = new List<CZFCMContentVersionDTO>();
-      for (CZFCMContentVersionDTO cv : tempContentVersionList) {
+      for (CZFCMContentVersionDTO cv : disclosureContent) {
         if (fcmFileExtension.contains(cv.FileExtension)) {
+          if(String.isNotBlank(cv.DocumentCode)){
+            CZFCMDocumenTypes__c docType = CZFCMDocumenTypes__c.getValues(cv.DocumentCode);
+            if(docType != null && !docType.IsUploadRequired__c){
+              continue;
+            }
+          }
           contentVersionList.add(cv);
         }
       }
 
-      // Get all Disclosures (PDF)
-      List<CZFCMContentVersionDTO> disclosureContent = FCMHelperRepository.findContentVersionBySubmissionId(
-        new List<Id>{ String.valueOf(app.tffa__Submission__c) }
-      );
-
-      if (contentVersionList != null && disclosureContent != null) {
-        contentVersionList.addAll(disclosureContent);
-      }
-
+      //Fetch all party present in the DTO
       Set<String> partyIds = new Set<String>();
       for (CZFCMContentVersionDTO cvDTO : contentVersionList) {
         if (cvDTO.PartyId != null && String.isNotBlank(cvDTO.PartyId)) {
@@ -64,22 +74,34 @@ public inherited sharing class FCMIntegrationExecutor {
         }
       }
 
-      for (tffa__Party__c party : CZWTFCPartyRepository.fetchPartyByIds(partyIds)) {
-        partyMap.put(party.Id, party);
+      //Create Party Map
+      if(partyIds != null && partyIds.size() > 0){
+        for (tffa__Party__c party : CZWTFCPartyRepository.fetchPartyByIds(partyIds)) {
+          partyMap.put(party.Id, party);
+        }
       }
-
+      
       tffa.Logger.debug('contentVersionList : ' + contentVersionList);
 
       if (contentVersionList != null && fileHistoryMap != null) {
         for (CZFCMContentVersionDTO cv : contentVersionList) {
-          UploadFileHistory__c uploadFileHistory = fileHistoryMap.get(cv.ContentVersionId + cv.PartyId);
+
+          // File callout is more than 90 break.
+          if (Limits.getCallouts() > 90) {
+            apiLimitFlag = true;
+            break;
+          }
+
+          UploadFileHistory__c uploadFileHistory = fileHistoryMap.get(cv.ContentVersionId + (cv.ApplicationId != null ? cv.ApplicationId : '') + (cv.PartyId != null ? cv.PartyId : ''));
 
           if (uploadFileHistory == null) {
             uploadFileHistory = new UploadFileHistory__c();
-            uploadFileHistory.ApplicationID__c = app.id;
-            uploadFileHistory.SubmissionID__c = String.valueOf(app.tffa__Submission__c);
-            uploadFileHistory.BrandCode__c = app.tffa__Brand__c;
-            uploadFileHistory.FileName__c = cv.PathOnClient;
+            if(String.isNotBlank(cv.ApplicationId)){
+              uploadFileHistory.ApplicationID__c = cv.ApplicationId;
+            }
+            uploadFileHistory.SubmissionID__c = FISCCIntegrationLogService.submissionObj.Id;
+            uploadFileHistory.BrandCode__c = FISCCIntegrationLogService.submissionObj.tffa__Brand__c;
+            uploadFileHistory.FileName__c = FISCCIntegrationLogService.submissionObj.tffa__Channel__c == 'DIGITAL' ? cv.PathOnClient : cv.Title;
             uploadFileHistory.FileExt__c = cv.FileExtension;
             uploadFileHistory.FileType__c = 'FCM';
             uploadFileHistory.DocumentId__c = cv.ContentVersionId;
@@ -92,6 +114,7 @@ public inherited sharing class FCMIntegrationExecutor {
             continue;
           }
 
+          // If file Size is above max limit skip that file
           if (cv.contentSize > FISCCIntegrationConstants.MAX_ALLOWED_FILE_SIZE) {
             uploadFileHistory.FileTransferStatus__c = CZWTFCConstants.PROCESS_STATUS_FAILURE;
             uploadFileHistory.FileTransferStatusMessage__c = 'File size too large. Cannot transfer';
@@ -100,15 +123,17 @@ public inherited sharing class FCMIntegrationExecutor {
           }
 
           try {
+            // If FCM document id is empty generate a Id
             if (String.isEmpty(uploadFileHistory.FCMDocumentId__c)) {
               uploadFileHistory.FCMDocumentId__c = FCMDocumentProvider.generateFCMDocumentId(
-                app,
+                FISCCIntegrationLogService.applicationObjMap.get(uploadFileHistory.ApplicationID__c),
                 cv,
                 partyMap.get(uploadFileHistory.CZPartyID__c),
                 FISCCIntegrationLogService.charterConfig
               );
             }
 
+            // If FCM documnet id generation failed set FileTransferStatus__c to Failure else upload the file
             if (String.isEmpty(uploadFileHistory.FCMDocumentId__c)) {
               // document id generation failed
               errorFlag = true;
@@ -129,55 +154,28 @@ public inherited sharing class FCMIntegrationExecutor {
       }
     } catch (Exception ex) {
       tffa.Logger.error('Exception in FCMIntegrationExecutor :' + ex.getMessage() + ' :: ' + ex.getStackTraceString());
+      errorFlag = true;
     } finally {
       // Update or Insert Upload file history record
       if (updatedUploadHistoryList != null) {
         FCMHelperRepository.save(updatedUploadHistoryList);
       }
 
-      // Update application level FCMUploadStatus__c to sucess only when all files are uploade sucessfully.
+      // Update submission level FCMUploadStatus__c to sucess only when all files are uploade sucessfully.
       if (errorFlag) {
-        app.FCMUploadStatus__c = CZWTFCConstants.PROCESS_STATUS_FAILURE;
-        app.FCMUploadRetryCount__c++;
+        sub.FCMUploadStatus__c = CZWTFCConstants.PROCESS_STATUS_FAILURE;
+        sub.FCMUploadRetryCount__c++;
       } else {
-        app.FCMUploadStatus__c = CZWTFCConstants.PROCESS_STATUS_SUCCESS;
+        sub.FCMUploadStatus__c = CZWTFCConstants.PROCESS_STATUS_SUCCESS;
+      }
+
+      if(apiLimitFlag){
+        sub.FCMUploadStatus__c = CZWTFCConstants.PROCESS_STATUS_IN_PROGRESS;
       }
 
       FISCCIntegrationLogService.persistIntegationLogs();
     }
 
-    return app;
-  }
-
-  /**
-   * Get all content versions by submissionid
-   */
-  public static List<CZFCMContentVersionDTO> getContentVersions(List<Id> idList) {
-    List<ContentDocumentLink> cdlList = FCMHelperRepository.findCDLinkByIdList(idList);
-
-    List<Id> contentdocumentids = new List<Id>();
-    for (ContentDocumentLink cdl : cdlList) {
-      if (cdl.ContentDocumentId != null) {
-        contentdocumentids.add(cdl.ContentDocumentId);
-      }
-    }
-
-    List<ContentVersion> contentVerList = FCMHelperRepository.findCVdataByDocId(contentdocumentids);
-
-    List<CZFCMContentVersionDTO> contentVersionDTOList = new List<CZFCMContentVersionDTO>();
-    for (ContentVersion cv : contentVerList) {
-      CZFCMContentVersionDTO dto = new CZFCMContentVersionDTO();
-
-      dto.ContentVersionId = (String) cv.Id;
-      dto.Title = (String) cv.Title;
-      dto.FileExtension = (String) cv.FileExtension;
-      dto.PathOnClient = (String) cv.PathOnClient;
-      dto.PartyId = '';
-      dto.contentSize = cv.contentSize;
-
-      contentVersionDTOList.add(dto);
-    }
-
-    return contentVersionDTOList;
+    return sub;
   }
 }
