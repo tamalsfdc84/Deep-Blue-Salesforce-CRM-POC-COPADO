@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Stage Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Stage Trackings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>WT_Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Started --></label>
+        <name>WT_Date_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified User --></label>
+        <name>WT_Modified_User__c</name>
+        <relationshipLabel><!-- Opportunity Stage Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Stage --></label>
+        <name>WT_New_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>WT_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Stage Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Stage --></label>
+        <name>WT_Previous_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Duration(in Minutes) --></label>
+        <name>WT_Stage_Duration_in_Minutes__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Stage Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

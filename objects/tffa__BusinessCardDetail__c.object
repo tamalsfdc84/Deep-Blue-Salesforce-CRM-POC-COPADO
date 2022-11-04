@@ -529,7 +529,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Business Card Details</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

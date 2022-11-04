@@ -1,0 +1,66 @@
+<template>
+    <!-- TODO: RENAME THE CLASS -->
+    <div class="content-wrapper">
+        <template if:false={isLoading}>    
+            <template if:false={shouldShowSearchResult}>
+                <div class="faq_splitSection">
+                    <!-- Top section -->
+                    <div class="faq_splitSection__topNav">                       
+                        <!-- drop down nav goes here -->
+                        <c-w-t_-f-a-q-mobile-navigation category-id={categoryId}></c-w-t_-f-a-q-mobile-navigation>       
+                    </div>
+                    <div class="faq_splitSection__body">
+                        <!-- left side sub nav -->
+                        <c-w-t_-f-a-q-left-nav category-id={categoryId}></c-w-t_-f-a-q-left-nav>
+                        <div class="faq_splitSection__body__right">
+                            <!-- right side title and head-->
+                            <div>
+                                <div><a  href={backUrl} class="faq_splitSection__topNav__helpCenter">
+                                    <div>
+                                        <div class="navArrow left"></div>
+                                    </div>
+                                    <p>Help Center</p>
+                                </a></div>
+                                <div class="faq_splitSection__topNav__title">
+                                    <!-- <h2>{title}</h2> -->
+                                    <h2><lightning-formatted-rich-text class="" value={title}></lightning-formatted-rich-text></h2>
+                                    <h3>{subTitle}</h3>
+                                </div>
+                            </div>
+                            <!-- right side sub nav -->
+                            <div class="faq_splitSection__body__right__subNav">
+                                <ul>
+                                    <template if:true={listArticle}>
+                                        <template for:each={listArticle} for:item="articleItem">
+                                            <li key={articleItem.ArticleUrl} data-id={articleItem.ArticleUrl} class="faq_splitSection__body__right__subNav__block">
+                                                <a data-id={articleItem.ArticleUrl} href={articleItem.ArticleRedirectUrl}>
+                                                    <p>{articleItem.ArticleQuestion}</p>
+                                                    <!-- <lightning-formatted-rich-text class="" value={articleItem.ArticleQuestion}></lightning-formatted-rich-text> -->
+                                                    <div class="smallArrow right"></div>
+                                                </a>
+                                            </li>
+                                        </template>
+                                    </template>
+                                </ul>
+                            </div>
+                            <div class="faq_splitSection__footer">
+                                <div class="faq_splitSection__footer--placeholder"></div>
+                                <template if:true={hasMoreResults}>
+                                    <div class="faq_splitSection__footer__button">
+                                        <p onclick={handleLoadMoreClick}>Load More Results</p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>                        
+                    </div>                
+            </div>
+        </template>
+        <template if:true={shouldShowSearchResult}>
+                <!-- TODO: Add the search results component -->
+        </template>
+    </template>
+    <template if:true={isLoading}>
+        <lightning-spinner variant="brand" alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+    </div>
+</template>

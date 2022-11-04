@@ -360,7 +360,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Stipulation Templates</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -414,7 +414,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Collateral Arrangement Configuration Mat</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

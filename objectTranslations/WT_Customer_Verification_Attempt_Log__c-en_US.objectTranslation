@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Verification Attempt Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Verification Attempt Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Id --></label>
+        <name>WT_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempt Type --></label>
+        <name>WT_Attempt_Type__c</name>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation><!-- Send --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify</masterLabel>
+            <translation><!-- Verify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Verification Attempted --></label>
+        <name>WT_Date_Verification_Attempted__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

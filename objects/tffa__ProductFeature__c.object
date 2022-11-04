@@ -414,7 +414,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Financial  Product Features</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

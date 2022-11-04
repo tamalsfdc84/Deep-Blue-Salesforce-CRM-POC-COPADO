@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Recipient_Email__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Recipient_Email</label>
+        <required>true</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <label>Weekly Metric Recipient</label>
+    <pluralLabel>Weekly Metric Recipients</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

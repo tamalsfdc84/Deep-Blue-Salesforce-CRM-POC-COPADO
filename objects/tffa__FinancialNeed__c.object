@@ -538,7 +538,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Financial Needs</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -977,7 +977,7 @@ public with sharing virtual class CZWTFCDocusignDocumentEnricher {
 
     // Avoid beneficiary info to be added for IRA product type in signature card
     if (
-      appObj.tffa__ProductCategory__c == FISCCIntegrationConstants.IRA_PRODUCT_CATEGORY &&
+      (appObj.tffa__ProductCategory__c == FISCCIntegrationConstants.IRA_PRODUCT_CATEGORY || appObj.tffa__ProductCategory__c == FISCCIntegrationConstants.HSA_PRODUCT_CATEGORY) &&
       docusignRepo.currentDisclosure.tffa__Code__c == 'CONSIGNCARD'
     ) {
       return;

@@ -234,7 +234,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>DisclosureParticipantsConfig</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

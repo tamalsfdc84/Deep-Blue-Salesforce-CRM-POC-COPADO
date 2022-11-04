@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Account Alerts</label>
+            <name>Account_Alerts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Account Number</label>
+            <name>account_number</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Accounts</label>
+            <name>accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Add Assets to Personal Finance</label>
+            <name>Add_Assets_to_Personal_Finance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Alert Delivery</label>
+            <name>Alert_Delivery</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Alerts</label>
+            <name>Alerts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Bill Pay</label>
+            <name>Bill_Pay</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Bill Payment</label>
+            <name>Bill_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cancel a transfer</label>
+            <name>Cancel_a_transfer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cancel Bill Payment</label>
+            <name>Cancel_Bill_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cancel Stop Payment</label>
+            <name>Cancel_Stop_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cancel Zelle</label>
+            <name>Cancel_Zelle</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Card Lock</label>
+            <name>Card_Lock</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Card Locked</label>
+            <name>card_locked</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Change Password</label>
+            <name>Change_Password</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Delete Alerts</label>
+            <name>Delete_Alerts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Delete E-Bill</label>
+            <name>delete_e_bill</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Device Support</label>
+            <name>Device_support</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Display Name</label>
+            <name>display_name</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Download Transaction History</label>
+            <name>Download_Transaction_History</name>
+        </dataCategory>
+        <dataCategory>
+            <label>E-Bill</label>
+            <name>e_bill</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Edit Personal Finance Transaction</label>
+            <name>Edit_Personal_Finance_Transaction</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Email Address Change</label>
+            <name>Email_Address_Change</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Enroll</label>
+            <name>Enroll</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Enrollment</label>
+            <name>Enrollment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>E-statement Enrollment</label>
+            <name>E_statement_enrollment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Expendieted Bill Pay</label>
+            <name>Expendieted_Bill_Pay</name>
+        </dataCategory>
+        <dataCategory>
+            <label>External Transfer</label>
+            <name>External_Transfer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Face ID</label>
+            <name>Face_ID</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Facial Recognition</label>
+            <name>Facial_Recognition</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fast Transfer</label>
+            <name>Fast_Transfer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Feedback on Insight</label>
+            <name>Feedback_on_Insight</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Insights</label>
+            <name>Financial_Insights</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Insights Generated</label>
+            <name>Financial_Insights_Generated</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Wellness</label>
+            <name>Financial_Wellness</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Find Secure Messages</label>
+            <name>Find_Secure_Messages</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Forgot Password</label>
+            <name>forgot_password</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Forgot User Name</label>
+            <name>forgot_user_name</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Help</label>
+            <name>Help</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Hide Account Personal Finance</label>
+            <name>Hide_Account_Personal_Finance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Hide Accounts</label>
+            <name>hide_accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Historical Transactions</label>
+            <name>Historical_Transactions</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Image of Checks</label>
+            <name>Image_of_Checks</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Internal Fund Transfers</label>
+            <name>Internal_Fund_Transfers</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Joint Account Card Lock</label>
+            <name>Joint_Account_Card_Lock</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Lock Or Unlock Card</label>
+            <name>lock_or_unlock_card</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Login</label>
+            <name>Login</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Log-in support</label>
+            <name>Log_in_support</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Lost Phone</label>
+            <name>lost_phone</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Lost Tablet</label>
+            <name>lost_tablet</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Missing Accounts</label>
+            <name>missing_accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile App</label>
+            <name>mobile_app</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile Deposit</label>
+            <name>Mobile_Deposit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile Deposit Check Disposal</label>
+            <name>Mobile_Deposit_Check_Disposal</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile Deposit Issues</label>
+            <name>Mobile_Deposit_Issues</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile Deposit Limits</label>
+            <name>Mobile_Deposit_Limits</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mobile Payments Card Locked</label>
+            <name>Mobile_Payments_Card_Locked</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Money Transfer</label>
+            <name>Money_Transfer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Multiple Bills</label>
+            <name>Multiple_Bills</name>
+        </dataCategory>
+        <dataCategory>
+            <label>New Secure Message</label>
+            <name>New_Secure_Message</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Nickname</label>
+            <name>nickname</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Onine Documents</label>
+            <name>Onine_Documents</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Online Accounts</label>
+            <name>Online_Accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Online Documents</label>
+            <name>Online_Documents</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Outside the US Check Deposit</label>
+            <name>Outside_the_US_Check_Deposit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Password</label>
+            <name>password</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Password Recovery</label>
+            <name>password_recovery</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Pay Bills</label>
+            <name>Pay_Bills</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Payee</label>
+            <name>Payee</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance</label>
+            <name>Personal_Finance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Account Issues</label>
+            <name>Personal_Finance_Account_Issues</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Budgets</label>
+            <name>Personal_Finance_Budgets</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Categories</label>
+            <name>Personal_Finance_Categories</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Fix</label>
+            <name>Personal_Finance_Fix</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Safety</label>
+            <name>Personal_Finance_Safety</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Personal Finance Transaction</label>
+            <name>Personal_Finance_Transaction</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Phone Number Change</label>
+            <name>Phone_Number_Change</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Quick Glance</label>
+            <name>Quick_Glance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Quick Glance Accounts</label>
+            <name>Quick_Glance_Accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Recurring Payment</label>
+            <name>Recurring_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Recurring Transfers</label>
+            <name>Recurring_Transfers</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Routing Number</label>
+            <name>routing_number</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Running Balance</label>
+            <name>Running_Balance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Running vs Available Balance</label>
+            <name>Running_vs_Available_Balance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Scheduled Transfer</label>
+            <name>Scheduled_Transfer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Search for Payment</label>
+            <name>Search_for_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Secure Messages</label>
+            <name>Secure_Messages</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Send Money with Zelle</label>
+            <name>Send_Money_with_Zelle</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Show Accounts</label>
+            <name>show_accounts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Sign-up</label>
+            <name>Sign_up</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Specific Transaction</label>
+            <name>specific_transaction</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Spending Wheel</label>
+            <name>Spending_Wheel</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stolen Phone</label>
+            <name>stolen_phone</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stolen Tablet</label>
+            <name>stolen_tablet</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stop Payment</label>
+            <name>Stop_Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stop Payment Bill Pay</label>
+            <name>Stop_Payment_Bill_Pay</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stop Payment Fee</label>
+            <name>Stop_Payment_Fee</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Tax Forms</label>
+            <name>Tax_Forms</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Touch ID</label>
+            <name>Touch_ID</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>FAQ</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

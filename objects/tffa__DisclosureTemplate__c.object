@@ -589,7 +589,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Disclosure Templates</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

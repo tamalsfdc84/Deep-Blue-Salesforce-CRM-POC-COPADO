@@ -1,0 +1,328 @@
+<template>
+    <lightning-card>
+    <div if:true={isLoaded}>
+        <lightning-spinner alternative-text="Loading..." variant="brand">
+        </lightning-spinner>
+    </div>
+    <div class="slds-box">
+        <div class="slds-var-m-bottom_large">
+            <div
+                class="custom-width-heading custom-bottom-border-heading slds-p-bottom_x-small slds-var-m-bottom_small">
+                <span class="fontClass">
+                    CI Seeks Board Member
+                </span>
+            </div>
+            <div class="slds-var-p-around_large">
+                <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId} onsubmit={handleSubmit}
+                    onsuccess={showSuccessMessage} onerror={showErrorMessage}>
+                    <lightning-messages></lightning-messages>
+
+                    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical-align-center"
+                        key={fieldDetail.fieldApiName}>
+
+                        <!-- Tabular Data START -->
+                        <div class="slds-col slds-size_3-of-12 custom-padding border-around">
+                            <span>Name</span>
+                        </div>
+                        <div class="slds-col slds-size_8-of-12 slds-p-vertical_xx-small border-around">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <div class="custom-padding-output-fields">
+                                    <lightning-output-field field-name="WT_CI_Board_Member_Name__c"
+                                        variant="label-hidden">
+                                    </lightning-output-field>
+                                </div>
+                            </template>
+                            <template if:false={showPencilIconAndDisableFields}>
+                                <lightning-input-field field-name="WT_CI_Board_Member_Name__c" variant="label-hidden"
+                                    class="fields-to-reset" disabled={showPencilIconAndDisableFields}>
+                                </lightning-input-field>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                    alternative-text="Click to Edit" title="Edit" size="x-small"
+                                    onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 custom-padding border-around">
+                            <span>Current Term</span>
+                        </div>
+                        <div
+                            class="slds-col slds-size_8-of-12 slds-p-vertical_xx-small border-around custom-padding-output-fields">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <div class="custom-padding-output-fields">
+                                    <lightning-output-field field-name="WT_Location__c" variant="label-hidden">
+                                    </lightning-output-field>
+                                </div>
+                            </template>
+                            <template if:false={showPencilIconAndDisableFields}>
+                                <lightning-input-field field-name="WT_Location__c" variant="label-hidden"
+                                    class="fields-to-reset" disabled={showPencilIconAndDisableFields}>
+                                </lightning-input-field>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                    alternative-text="Click to Edit" title="Edit" size="x-small"
+                                    onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 custom-padding border-around">
+                            <span>Location</span>
+                        </div>
+                        <div
+                            class="slds-col slds-size_8-of-12 slds-p-vertical_xx-small border-around custom-padding-output-fields">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <div class="custom-padding-output-fields">
+                                    <lightning-output-field field-name="WT_Term__c" variant="label-hidden">
+                                    </lightning-output-field>
+                                </div>
+                            </template>
+                            <template if:false={showPencilIconAndDisableFields}>
+                                <lightning-input-field field-name="WT_Term__c" variant="label-hidden"
+                                    class="fields-to-reset" disabled={showPencilIconAndDisableFields}>
+                                </lightning-input-field>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            <template if:true={showPencilIconAndDisableFields}>
+                                <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                    alternative-text="Click to Edit" title="Edit" size="x-small"
+                                    onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                            </template>
+                        </div>
+                        <!-- Tabular Data END -->
+                        <!--FIELD 1 START-->
+                        <div class={sldsClassesForCheckboxFields}>
+                            <div class="slds-grid slds-nowrap slds-grid_vertical-align-center custom-bottom-padding slds-grid_align-spread">
+                                <div class="slds-col slds-size_8-of-12 slds-m-top_medium zero-right-and-left-padding">
+                                    <span>CI Donation CRA Eligible</span>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <lightning-input-field field-name="WT_CI_Donation_CRA_Eligible__c"
+                                        variant="label-hidden" class="fields-to-reset"
+                                        disabled={showPencilIconAndDisableFields}>
+                                    </lightning-input-field>
+
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <template if:true={showPencilIconAndDisableFields}>
+                                        <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                            alternative-text="Click to Edit" title="Edit" size="x-small"
+                                            onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FIELD 1 END-->
+                        <!--FIELD 2 START-->
+                        <div class="slds-col slds-size_2-of-12 custom-padding-empty-column zero-right-and-left-padding">
+                        </div>
+                        <div class={sldsClassesForCheckboxFields}>
+                            <div
+                                class="slds-grid slds-nowrap slds-grid_vertical-align-center custom-bottom-padding slds-grid_align-spread">
+                                <div class="slds-col slds-size_8-of-12 slds-m-top_medium zero-right-and-left-padding">
+                                    <span>CI Funded Organization</span>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <lightning-input-field field-name="WT_CI_Funded_Organization__c"
+                                        variant="label-hidden" class="fields-to-reset"
+                                        disabled={showPencilIconAndDisableFields}>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <template if:true={showPencilIconAndDisableFields}>
+                                        <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                            alternative-text="Click to Edit" title="Edit" size="x-small"
+                                            onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FIELD 2 END-->
+                        <!--FIELD 3 START-->
+                        <div class={sldsClassesForCheckboxFields}>
+                            <div class="slds-grid slds-nowrap slds-grid_vertical-align-center custom-bottom-padding slds-grid_align-spread">
+                                <div class="slds-col slds-size_8-of-12 slds-m-top_medium zero-right-and-left-padding">
+                                    <span>CI Volunteer Opportunities</span>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <lightning-input-field field-name="WT_CI_Volunteer_Opportunities__c"
+                                        variant="label-hidden" class="fields-to-reset"
+                                        disabled={showPencilIconAndDisableFields}>
+                                    </lightning-input-field>
+
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <template if:true={showPencilIconAndDisableFields}>
+                                        <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                            alternative-text="Click to Edit" title="Edit" size="x-small"
+                                            onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FIELD 3 END-->
+                        <!--FIELD 4 START-->
+                        <div class="slds-col slds-size_2-of-12 custom-padding-empty-column zero-right-and-left-padding">
+                        </div>
+                        <div class={sldsClassesForCheckboxFields}>
+                            <div
+                                class="slds-grid slds-nowrap slds-grid_vertical-align-center custom-bottom-padding slds-grid_align-spread">
+                                <div class="slds-col slds-size_8-of-12 slds-m-top_medium zero-right-and-left-padding">
+                                    <span>CI Seeks Board Member</span>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <lightning-input-field field-name="WT_CI_Seeks_Board_Member__c"
+                                        variant="label-hidden" class="fields-to-reset"
+                                        disabled={showPencilIconAndDisableFields}>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12 slds-m-top_medium">
+                                    <template if:true={showPencilIconAndDisableFields}>
+                                        <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                            alternative-text="Click to Edit" title="Edit" size="x-small"
+                                            onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FIELD 4 END-->
+                        <!--FIELD 5 START-->
+                        <div class={sldsClassesForTextBoxField}>
+                            <div class="slds-grid slds-nowrap slds-grid_vertical-align-center slds-p-top_x-small slds-grid_align-spread">
+                                <template if:true={showPencilIconAndDisableFields}>
+                                    <template if:true={ciMIsssionField}>
+                                        <div
+                                            class="slds-col slds-size_3-of-12 custom-padding-non-tabular-fields zero-right-and-left-padding">
+                                            <span>CI Mission</span>
+                                        </div>
+                                        <div
+                                            class="slds-col slds-size_8-of-12 custom-padding-value custom-font-size-value">
+                                            <span>{ciMIsssionField}</span>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-12">
+                                            <template if:true={showPencilIconAndDisableFields}>
+                                                <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                                    alternative-text="Click to Edit" title="Edit" size="x-small"
+                                                    onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                            </template>
+                                        </div>
+                                    </template>
+                                    <template if:false={ciMIsssionField}>
+                                        <div
+                                            class="slds-col slds-size_11-of-12 custom-padding-non-tabular-fields zero-right-and-left-padding">
+                                            <span>CI Mission</span>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-12">
+                                            <template if:true={showPencilIconAndDisableFields}>
+                                                <lightning-icon icon-name="utility:edit" class="edit-pencil-customlabel"
+                                                    alternative-text="Click to Edit" title="Edit" size="x-small"
+                                                    onclick={showAllFieldsAndHidePencilIcon}></lightning-icon>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template if:false={showPencilIconAndDisableFields}>
+                                    <div
+                                        class="slds-col slds-size_3-of-12 custom-padding-non-tabular-fields zero-right-and-left-padding">
+                                        <span>CI Mission</span>
+                                    </div>
+                                    <div class="slds-col slds-size_8-of-12">
+                                        <lightning-input-field field-name="WT_CI_Mission__c" variant="label-hidden"
+                                            class="fields-to-reset" disabled={showPencilIconAndDisableFields}>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-12">
+
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-var-m-top_medium">
+                        <template if:false={showPencilIconAndDisableFields}>
+                            <div class="slds-grid slds-gutters slds-grid_align-center">
+                                <div class="slds-col slds-size_2-of-12">
+                                    <lightning-button variant="brand" type="submit" label="Save"></lightning-button>
+                                </div>
+                                <div class="slds-col slds-size_2-of-12">
+                                    <lightning-button variant="brand-outline" label="Cancel" onclick={resetFields}>
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-record-edit-form>
+            </div>
+        </div>
+        <!--Section 3 Starts-->
+        <div class="slds-grid slds-wrap slds-m-top_large slds-m-bottom_small slds-p-bottom_x-small custom-bottom-border-heading">
+            <div class="slds-col slds-size_3-of-12">
+                <span class="fontClass2">
+                    CI Funding History
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-12">
+                <lightning-button-icon icon-name="utility:add" alternative-text="Add Icon" size="small"
+                    title="Create Funding History" onclick={openModal}></lightning-button-icon>
+            </div>
+            <div class="slds-col slds-size_1-of-12">
+            </div>
+        </div>
+        <template if:true={isModalOpen}>
+            <!-- Modal/Popup Box LWC starts here -->
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box LWC header here -->
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                                size="small"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">New CI Funding History
+                        </h2>
+                    </header>
+
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <h3 class="slds-section__title slds-theme--shade">
+                            <span class="slds-p-horizontal--small">Information</span>
+                        </h3>
+                        <lightning-record-edit-form object-api-name="WT_CI_Funding_History__c" onsuccess={handleSuccess}>
+                            <lightning-messages></lightning-messages>
+                            <div class="slds-m-around_medium">
+                                <lightning-input-field field-name='RecordTypeId'></lightning-input-field>
+                                <lightning-input-field field-name='WT_Account__c' value={recordId}>
+                                </lightning-input-field>
+                                <lightning-input-field field-name='WT_Funding_Amount__c'></lightning-input-field>
+                                <lightning-input-field field-name='WT_Date_of_Payment__c'></lightning-input-field>
+                                <lightning-input-field field-name='WT_Split_Payment__c'></lightning-input-field>
+                                <div class="slds-m-top_medium">
+                                    <lightning-button variant="brand" type="submit" name="save" label="Save">
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </lightning-record-edit-form>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+        <div class="widthStyle">
+            <template if:true={isData}>
+                <lightning-datatable data={fundingList} columns={column} key-field="id" hide-checkbox-column="true"
+                    onrowaction={handleRowActions}>
+                </lightning-datatable>
+                <div class="slds-m-top--small slds-text-align--center">
+                    <a onclick={navigateRelatedListView}>View All</a>
+                </div>
+            </template>
+        </div>
+    </div>
+</lightning-card>
+</template>

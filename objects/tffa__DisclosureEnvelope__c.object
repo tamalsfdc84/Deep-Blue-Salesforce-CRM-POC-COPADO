@@ -397,7 +397,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Disclosure Envelopes</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

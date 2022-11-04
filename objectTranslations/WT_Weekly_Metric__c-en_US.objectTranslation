@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Weekly Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Weekly Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Number of Househol Created Last Run --></label>
+        <name>WT_Acc_household_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RelationshipCeated Last Run --></label>
+        <name>WT_Acc_relationship_grp_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Relationship Groups Created --></label>
+        <name>WT_Account_Relationship_Groups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts Created Last Run --></label>
+        <name>WT_Accounts_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts Created --></label>
+        <name>WT_Accounts_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Users Since Last Run --></label>
+        <name>WT_Active_Users_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Active Users-SF License Last Run --></label>
+        <name>WT_Active_Users_With_SF_License_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Users with SF License --></label>
+        <name>WT_Active_Users_With_SF_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Users --></label>
+        <name>WT_Active_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Bus Acc Cust Created Last Run --></label>
+        <name>WT_Bus_Acc_Cust_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Bus Acc Prosp Created Last Run --></label>
+        <name>WT_Bus_Acc_Prosp_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Business Acc Customer Created --></label>
+        <name>WT_Business_Account_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Business Acc Prospect Created --></label>
+        <name>WT_Business_Account_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Cases Created Since Last Run --></label>
+        <name>WT_Cases_Created_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Cases Created --></label>
+        <name>WT_Cases_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Comm Action Plan Since Last Run --></label>
+        <name>WT_Commercial_Action_Plan_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Commercial Action Plans Create --></label>
+        <name>WT_Commercial_Action_Plans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Events Created Since Last Run --></label>
+        <name>WT_Events_Created_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Events Created --></label>
+        <name>WT_Events_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Households Created --></label>
+        <name>WT_Households__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Newly Created Users logged In --></label>
+        <name>WT_Newly_Created_Users_logged_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp Lost Since Last Run --></label>
+        <name>WT_Opp_Lost_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Other Activities Since Last Run --></label>
+        <name>WT_Other_Activities_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Other Activities Created --></label>
+        <name>WT_Other_Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Pers Acc Cust Created Last Run --></label>
+        <name>WT_Person_Acc_Cust_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Per Acc Prosp Created Last Run --></label>
+        <name>WT_Person_Acc_Prosp_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Person Acc Customer Created --></label>
+        <name>WT_Person_Account_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Person Acc Propspect Created --></label>
+        <name>WT_Person_Account_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Phone Calls Created --></label>
+        <name>WT_Phone_Calls_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Phone Calls Created Last Run --></label>
+        <name>WT_Phone_Calls_Since_Created_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Ref Qualified-Converted Last Run --></label>
+        <name>WT_Ref_Qualified_Converted_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals Created Last Run --></label>
+        <name>WT_Referrals_Created_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals Created --></label>
+        <name>WT_Referrals_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals Qualified-Converted --></label>
+        <name>WT_Referrals_Qualified_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals Qualified Last Run --></label>
+        <name>WT_Referrals_Qualified_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals Qualified --></label>
+        <name>WT_Referrals_Qualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Retail Action Plan Since Last Run --></label>
+        <name>WT_Retail_Action_Plan_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Retail Action Plans Created --></label>
+        <name>WT_Retail_Action_Plans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Opp Created Last Run --></label>
+        <name>WT_Sales_Opp_Created_Since_last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp Won Since Last Run --></label>
+        <name>WT_Sales_Opp_Won_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Opportunities Created --></label>
+        <name>WT_Sales_Opportunities_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Opportunities Lost --></label>
+        <name>WT_Sales_Opportunities_Lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Opportunities Won --></label>
+        <name>WT_Sales_Opportunities_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Users Logged In Since Last Run --></label>
+        <name>WT_Users_Logged_In_Since_Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Users Logged In --></label>
+        <name>WT_Users_Logged_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Walk In Created Since Last Run --></label>
+        <name>WT_Walk_Ins_Created_Since_last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Walk Ins Created --></label>
+        <name>WT_Walk_Ins_Created__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

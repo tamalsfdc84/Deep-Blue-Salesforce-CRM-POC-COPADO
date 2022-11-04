@@ -1,0 +1,24 @@
+.custom-color {
+    background-color: white;  
+    border-left-color: #7f8de1;  
+    border-left-width: thick;
+}
+:host {
+    --sds-c-card-color-background: #f7f9fb;
+}
+.slds-modal__container {
+    max-width: 70rem !important;
+    width: 70% !important;
+}
+.customHolder{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.type-badge{
+    --sds-c-badge-font-size: xx-small;
+    
+}

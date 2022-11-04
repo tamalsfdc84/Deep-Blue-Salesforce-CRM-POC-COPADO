@@ -1,0 +1,49 @@
+<template>
+    <div class="faq__question">
+        <div class="faq__question--headline">
+            <h2>Still Have a Question?</h2>
+        </div>
+        <div class="faq__question__row">
+            <a class="faq__question__row--block" href="https://www.wintrust.com/contact-us.html">
+                <img src={askAQuestionIcon}>
+                <h3>Ask a question / feedback</h3>
+            </a>
+            <a class="faq__question__row--block"  onclick={openLetsTalk}>
+                <img src={customerSupportIcon}>
+                <h3>Customer Support</h3>
+            </a>
+            <a class="faq__question__row--block" href="https://www.wintrust.com/content/wintrust/en/findus.html">
+                <img src={findUsIcon}>
+                <h3>Find us</h3>
+            </a>
+        </div>
+    </div>
+    <!-- Lets talk modal -->
+    <div class="faq__blackout hide"></div>
+    <div class="faq__letsTalk hidden">
+        <div class="faq__letsTalk__header">
+            <div class="faq__letsTalk__header__holder">
+                <h1>OUR COMMUNITY BANKS CUSTOMER SUPPORT</h1>
+                <div class="faq__letsTalk__header__holder--close"  onclick={closeLetsTalk}></div>
+            </div>
+        </div>
+        <div class="faq__letsTalk__body">
+            <div class="faq__letsTalk__body__head">
+                <h2>Let's Talk</h2>
+                <p>Ask us a question, give us some feedback or give us a ring to talk. We’re available outside normal lobby hours to take your call, <b>Monday through Friday, 7 a.m. to 8 p.m.</b> and <b>Saturday, 7 a.m. to 5 p.m. Central time.</b></p>
+            </div>
+            <div class="faq__letsTalk__body__list">
+                <ul>
+                    <template if:true={listBankInformation}>
+                        <template for:each={listBankInformation} for:item="bankItem">
+                            <li key={bankItem.BankName}>
+                                <p>{bankItem.BankName}</p>
+                                <a href={bankItem.BankPhoneNumberLink}>{bankItem.BankPhoneNumber}</a>
+                            </li>
+                        </template>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,152 @@
+<template>
+    <!-- footer nav -->
+    <div class="faq__footerNav">
+        <div  class="faq__footerNav--row">
+            <div class="faq__footerNav__column">
+                <div class="faq__footerNav__column__title">
+                    <p>About</p>
+                    <div class="faq__footerNav__column__title--greenLine"></div>
+                </div>
+                <div class="faq__footerNav__column__about">
+                    <p>We are a family of locally run community banks.</p>
+                </div>
+                <div class="faq__footerNav__column__links">
+                    <p><a href="https://www.wintrust.com/our-story.html">OUR STORY</a></p>
+                    <p><a href="https://www.wintrust.com/findus.html">LOCATIONS</a></p>
+                    <p><a href="https://www.wintrust.com/careers.html">CAREERS</a></p>
+                    <p><a href="https://www.wintrust.com/lp/2020/diversity-inclusion.html">DIVERSITY & INCLUSION</a></p>
+                    <p><a href="https://www.wintrust.com/findus/locations.html">WINTRUST COMMUNITY BANKS</a></p>
+                </div>
+            </div>
+            <div class="faq__footerNav__column">
+                <div class="faq__footerNav__column__title">
+                    <p>Get in Touch</p>
+                    <div class="faq__footerNav__column__title--greenLine"></div>
+                </div>
+                <div class="faq__footerNav__column__about">
+                    <p>We are always here to answer your questions.</p>
+                </div>
+                <div class="faq__footerNav__column__links">
+                    <p><a href="https://www.wintrust.com/contact-us.html">CONTACT US</a></p>
+                    <p><a href="https://www.wintrust.com/find-expert.html">FIND AN EXPERT</a></p>
+                    <div class="faq__footerNav__column__links--socialRow">
+                        <a href="https://www.linkedin.com/company/wintrust-financial-corporation" target="_blank"><img src={linkedinIcon}></a>
+                        <a href="https://www.facebook.com/wintrust" target="_blank"><img src={facebookIcon}></a>
+                        <a href="https://twitter.com/wintrust" target="_blank"><img src={twitterIcon}></a>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__footerNav__column">
+                <div class="faq__footerNav__column__title">
+                    <p>Find an Event</p>
+                    <div class="faq__footerNav__column__title--greenLine"></div>
+                </div>
+                <div class="faq__footerNav__column__about">
+                    <p>We’re proud to go above and beyond banking to offer events just for you.</p>
+                </div>
+                <div class="faq__footerNav__column__links">
+                    <p><a href="https://www.wintrust.com/events.html">EVENTS</a></p>
+                </div>
+            </div>
+            <div class="faq__footerNav__column">
+                <div class="faq__footerNav__column__title">
+                    <p>Additional Resources</p>
+                    <div class="faq__footerNav__column__title--greenLine"></div>
+                </div>
+                <div class="faq__footerNav__column__about">
+                    <p>Find additional information about how to stay in control of your information and security.   </p>
+                </div>
+                <div class="faq__footerNav__column__links">
+                    <p><a href="https://www.wintrust.com/privacy-policy.html">PRIVACY POLICY</a></p>
+                    <p><a href="https://www.wintrust.com/privacy-policy/ca-consumer-privacy-notice.html">CALIFORNIA CONSUMER PRIVACY NOTICE</a></p>
+                    <p><a href="https://www.wintrust.com/security.html">SECURITY</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Smaller view footer Nav -->
+    <div class="faq__footerNav__small">
+        <div class="faq__footerNav__small__row">
+            <div class="faq__footerNav__small__row__main">
+                <h4>About</h4>
+                <div class="faq__footerNav__small__row__main--plus faq_about" onclick={openAboutNav}>
+                    <div class="plus--vertical closed"></div>
+                    <div class="plus--horizontal"></div>
+                 </div>
+            </div>
+            <template if:true={showMobileAbout}>
+                <div class="faq__footerNav__small__row__sub--space"></div>
+                <div class="faq__footerNav__small__row__sub">
+                    <ul>
+                        <li><a href="https://www.wintrust.com/our-story.html">OUR STORY</a></li>
+                        <li><a href="https://www.wintrust.com/findus.html">LOCATIONS</a></li>
+                        <li><a href="https://www.wintrust.com/careers.html">CAREERS</a></li>
+                        <li><a href="https://www.wintrust.com/lp/2020/diversity-inclusion.html">DIVERSITY & INCLUSION</a></li>
+                        <li><a href="https://www.wintrust.com/findus/locations.html">WINTRUST COMMUNITY BANKS</a></li>
+                    </ul>
+                </div>
+            </template>
+</div>
+<div class="faq__footerNav__small__row">
+    <div class="faq__footerNav__small__row__main">
+        <h4>Get in Touch</h4>
+        <div class="faq__footerNav__small__row__main--plus faq_touch" onclick={openTouchNav}>
+            <div class="plus--vertical closed"></div>
+            <div class="plus--horizontal"></div>
+        </div>
+    </div>
+    <template if:true={showMobileGetInTouch}>
+        <div class="faq__footerNav__small__row__sub--space"></div>
+        <div class="faq__footerNav__small__row__sub">
+            <ul>
+                <li><a href="https://www.wintrust.com/contact-us.html">CONTACT US</a></li>
+                <li><a href="https://www.wintrust.com/find-expert.html">FIND AN EXPERT</a></li>
+                <div class="faq__footerNav__small__row__sub--row">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/wintrust-financial-corporation" target="_blank"><img src={linkedinIcon}></a></li>
+                        <li><a href="https://www.facebook.com/wintrust" target="_blank"><img src={facebookIcon}></a></li>
+                        <li><a href="https://twitter.com/wintrust" target="_blank"><img src={twitterIcon}></a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </template>
+</div>
+<div class="faq__footerNav__small__row">
+    <div class="faq__footerNav__small__row__main">
+        <h4>Find an Event</h4>
+        <div class="faq__footerNav__small__row__main--plus faq_events" onclick={openEventsNav}>
+            <div class="plus--vertical closed"></div>
+            <div class="plus--horizontal"></div>
+        </div>
+    </div>
+    <template if:true={showMobileEvents}>
+        <div class="faq__footerNav__small__row__sub--space"></div>
+        <div class="faq__footerNav__small__row__sub">
+            <ul>
+                <li><a href="https://www.wintrust.com/events.html">EVENTS</a></li>
+            </ul>
+        </div>
+    </template>
+</div>
+<div class="faq__footerNav__small__row">
+    <div class="faq__footerNav__small__row__main">
+        <h4>Additional Resources</h4>
+        <div class="faq__footerNav__small__row__main--plus faq_resources" onclick={openResourcesNav}>
+            <div class="plus--vertical closed"></div>
+            <div class="plus--horizontal"></div>
+        </div>
+    </div>
+    <template if:true={showMobileResources}>
+        <div class="faq__footerNav__small__row__sub--space"></div>
+        <div class="faq__footerNav__small__row__sub">
+            <ul>
+                <li><a href="https://www.wintrust.com/privacy-policy.html">PRIVACY POLICY</a></li>
+                <li><a href="https://www.wintrust.com/privacy-policy/ca-consumer-privacy-notice.html">CALIFORNIA CONSUMER PRIVACY NOTICE</a></li>
+                <li><a href="https://www.wintrust.com/security.html">SECURITY</a></li>
+            </ul>
+        </div>
+    </template>
+</div>
+</div>
+</template>

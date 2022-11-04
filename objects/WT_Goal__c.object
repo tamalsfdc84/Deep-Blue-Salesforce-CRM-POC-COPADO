@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to hold all the goals assigned to any given user in the system</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>WT_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_BB_CB_Scorecard_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>BB/CB Scorecard Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>$ Change in FIS Outstanding</fullName>
+                    <default>false</default>
+                    <label>$ Change in FIS Outstanding</label>
+                </value>
+                <value>
+                    <fullName>$ International Fee</fullName>
+                    <default>false</default>
+                    <label>$ International Fee</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Fees</fullName>
+                    <default>false</default>
+                    <label>$ Loan Fees</label>
+                </value>
+                <value>
+                    <fullName>$ New CRE Commitments</fullName>
+                    <default>false</default>
+                    <label>$ New CRE Commitments</label>
+                </value>
+                <value>
+                    <fullName>$ New Demand Accounts (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ New Demand Accounts (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ New Demand Accounts (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ New Demand Accounts (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ New Int Bearing Accounts (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ New Int Bearing Accounts (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ New Int Bearing Accounts (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ New Int Bearing Accounts (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ New Loan Commitments (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ New Loan Commitments (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ New Loan Commitments (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ New Loan Commitments (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ New Loan Outstandings (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ New Loan Outstandings (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ New Loan Outstandings (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ New Loan Outstandings (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ New SBA Loans</fullName>
+                    <default>false</default>
+                    <label>$ New SBA Loans</label>
+                </value>
+                <value>
+                    <fullName>$ TM Fees</fullName>
+                    <default>false</default>
+                    <label>$ TM Fees</label>
+                </value>
+                <value>
+                    <fullName># Face Calls Attended</fullName>
+                    <default>false</default>
+                    <label># Face Calls Attended</label>
+                </value>
+                <value>
+                    <fullName># Joint TM Calls</fullName>
+                    <default>false</default>
+                    <label># Joint TM Calls</label>
+                </value>
+                <value>
+                    <fullName># New Relationships</fullName>
+                    <default>false</default>
+                    <label># New Relationships</label>
+                </value>
+                <value>
+                    <fullName># Phone Calls</fullName>
+                    <default>false</default>
+                    <label># Phone Calls</label>
+                </value>
+                <value>
+                    <fullName># Qualified Referrals</fullName>
+                    <default>false</default>
+                    <label># Qualified Referrals</label>
+                </value>
+                <value>
+                    <fullName>% Calls in LMI HM Census Tracts</fullName>
+                    <default>false</default>
+                    <label>% Calls in LMI HM Census Tracts</label>
+                </value>
+                <value>
+                    <fullName>% In/Out Ratio of New Loans</fullName>
+                    <default>false</default>
+                    <label>% In/Out Ratio of New Loans</label>
+                </value>
+                <value>
+                    <fullName>% of New Loans in LMI/HM Census Tracts</fullName>
+                    <default>false</default>
+                    <label>% of New Loans in LMI/HM Census Tracts</label>
+                </value>
+                <value>
+                    <fullName>% Prospect Calling Coverage</fullName>
+                    <default>false</default>
+                    <label>% Prospect Calling Coverage</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>Total $ DDA</fullName>
+                    <default>false</default>
+                    <label>Total $ DDA</label>
+                </value>
+                <value>
+                    <fullName>Total $ Int Bearing</fullName>
+                    <default>false</default>
+                    <label>Total $ Int Bearing</label>
+                </value>
+                <value>
+                    <fullName>Total $ Outstanding Loan Portfolio</fullName>
+                    <default>false</default>
+                    <label>Total $ Outstanding Loan Portfolio</label>
+                </value>
+                <value>
+                    <fullName>Total # Business Loans</fullName>
+                    <default>false</default>
+                    <label>Total # Business Loans</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_CRE_Scorecard_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>CRE Scorecard Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName># Calls Made</fullName>
+                    <default>false</default>
+                    <label># Calls Made</label>
+                </value>
+                <value>
+                    <fullName># New Relationships</fullName>
+                    <default>false</default>
+                    <label># New Relationships</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Commitments (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Commitments (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Commitments (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Commitments (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Fees</fullName>
+                    <default>false</default>
+                    <label>$ Loan Fees</label>
+                </value>
+                <value>
+                    <fullName>$ New TM Analysis Revenue</fullName>
+                    <default>false</default>
+                    <label>$ New TM Analysis Revenue</label>
+                </value>
+                <value>
+                    <fullName>$ Deposit Balance Growth (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Deposit Balance Growth (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Deposit Balance Growth (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Deposit Balance Growth (FIS)</label>
+                </value>
+                <value>
+                    <fullName># Swap Closed</fullName>
+                    <default>false</default>
+                    <label># Swap Closed</label>
+                </value>
+                <value>
+                    <fullName>$ Swap Fees</fullName>
+                    <default>false</default>
+                    <label>$ Swap Fees</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Date_From__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>From</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WT_Date_Last_In_Progress_Rolled_Up__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Rolled Up Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WT_Date_To__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WT_Goal_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Goal Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual Goal</fullName>
+                    <default>false</default>
+                    <label>Individual Goal</label>
+                </value>
+                <value>
+                    <fullName>Hub Goal</fullName>
+                    <default>false</default>
+                    <label>Hub Goal</label>
+                </value>
+                <value>
+                    <fullName>LOB Goal</fullName>
+                    <default>false</default>
+                    <label>LOB Goal</label>
+                </value>
+                <value>
+                    <fullName>Team Goal</fullName>
+                    <default>false</default>
+                    <label>Team Goal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Goal_Metric__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Goal Metric</label>
+        <referenceTo>WT_Goal_Metric__c</referenceTo>
+        <relationshipLabel>Goals</relationshipLabel>
+        <relationshipName>Goals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Goal_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Goal Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Goals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_In_Progress__c</fullName>
+        <externalId>false</externalId>
+        <label>In-Progress</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_MM_Scorecard_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>MM Scorecard Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName># Calls Made</fullName>
+                    <default>false</default>
+                    <label># Calls Made</label>
+                </value>
+                <value>
+                    <fullName># New Relationships</fullName>
+                    <default>false</default>
+                    <label># New Relationships</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Commitments (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Commitments (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Commitments (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Commitments (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Fees</fullName>
+                    <default>false</default>
+                    <label>$ Loan Fees</label>
+                </value>
+                <value>
+                    <fullName>$ Demand Balance Growth (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Demand Balance Growth (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Demand Balance Growth (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Demand Balance Growth (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Int Bearing Balance Growth (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Int Bearing Balance Growth (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Int Bearing Balance Growth (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Int Bearing Balance Growth (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ New TM Analysis Revenue</fullName>
+                    <default>false</default>
+                    <label>$ New TM Analysis Revenue</label>
+                </value>
+                <value>
+                    <fullName># International Referrals (Trade and FX)</fullName>
+                    <default>false</default>
+                    <label># International Referrals (Trade and FX)</label>
+                </value>
+                <value>
+                    <fullName>$ International Fees (Trade and FX)</fullName>
+                    <default>false</default>
+                    <label>$ International Fees (Trade and FX)</label>
+                </value>
+                <value>
+                    <fullName># Leasing Referrals</fullName>
+                    <default>false</default>
+                    <label># Leasing Referrals</label>
+                </value>
+                <value>
+                    <fullName>$ Lease Fundings</fullName>
+                    <default>false</default>
+                    <label>$ Lease Fundings</label>
+                </value>
+                <value>
+                    <fullName># SBA Referrals</fullName>
+                    <default>false</default>
+                    <label># SBA Referrals</label>
+                </value>
+                <value>
+                    <fullName>$ SBA Amount (amount staying on Wintrust books)</fullName>
+                    <default>false</default>
+                    <label>$ SBA Amount (amount staying on Wintrust books)</label>
+                </value>
+                <value>
+                    <fullName># Swap Referrals</fullName>
+                    <default>false</default>
+                    <label># Swap Referrals</label>
+                </value>
+                <value>
+                    <fullName>$ Swap Fees</fullName>
+                    <default>false</default>
+                    <label>$ Swap Fees</label>
+                </value>
+                <value>
+                    <fullName># Wealth Services Referrals</fullName>
+                    <default>false</default>
+                    <label># Wealth Services Referrals</label>
+                </value>
+                <value>
+                    <fullName>$ Wealth Services Investment Fees</fullName>
+                    <default>false</default>
+                    <label>$ Wealth Services Investment Fees</label>
+                </value>
+                <value>
+                    <fullName># Corporate Credit Card Referrals</fullName>
+                    <default>false</default>
+                    <label># Corporate Credit Card Referrals</label>
+                </value>
+                <value>
+                    <fullName>$ Corporate Credit Card Revenue Share</fullName>
+                    <default>false</default>
+                    <label>$ Corporate Credit Card Revenue Share</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WT_Parent_Goal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Goal</label>
+        <referenceTo>WT_Goal__c</referenceTo>
+        <relationshipLabel>Goals</relationshipLabel>
+        <relationshipName>Goals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WT_Percentage_Achieved__c</fullName>
+        <externalId>false</externalId>
+        <label>Percentage To Goal</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>WT_RowNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>RowNumber</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_Run_Rate_To_Goal__c</fullName>
+        <externalId>false</externalId>
+        <label>Run Rate To Goal</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>WT_Should_Roll_Up_From_Child__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Roll Up From Child</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WT_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_WS_Scorecard_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>WS Scorecard Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>$ Won Investment Fees</fullName>
+                    <default>false</default>
+                    <label>$ Won Investment Fees</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Loan Originations - Outstandings (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Loan Originations - Outstandings (FIS)</label>
+                </value>
+                <value>
+                    <fullName>$ Deposit Balance Growth (CRM)</fullName>
+                    <default>false</default>
+                    <label>$ Deposit Balance Growth (CRM)</label>
+                </value>
+                <value>
+                    <fullName>$ Deposit Balance Growth (FIS)</fullName>
+                    <default>false</default>
+                    <label>$ Deposit Balance Growth (FIS)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Goal</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>WT_Goal_Metric__c</columns>
+        <columns>WT_Actual__c</columns>
+        <columns>WT_Target__c</columns>
+        <columns>WT_Goal_Owner__c</columns>
+        <columns>WT_Goal_Level__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Goals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>GoalMetricsRequired</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(WT_Should_Roll_Up_From_Child__c = False,ISBLANK(WT_Goal_Metric__c))</errorConditionFormula>
+        <errorDisplayField>WT_Goal_Metric__c</errorDisplayField>
+        <errorMessage>GoalMetrics is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Goal_Access_New</fullName>
+        <active>false</active>
+        <description>This validation Rule is to through an error message when the user other than WT Business Admin trys to create/update goal record.</description>
+        <errorConditionFormula>AND($Profile.Name !=&quot;WT Business Administrator&quot;,ISNEW())</errorConditionFormula>
+        <errorMessage>The user does not have access to enter the goal.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WT_Goal_Access_Update</fullName>
+        <active>false</active>
+        <description>This Rules is to throw an error message when the user other than WT Business Admin tries to create new Goal record.</description>
+        <errorConditionFormula>AND($Profile.Name !=&quot;WT Business Administrator&quot;,
+$Profile.Name !=&quot;System Administrator&quot;,
+OR(ISCHANGED( WT_Actual__c),
+ISCHANGED( WT_CRE_Scorecard_Category__c),
+ISCHANGED( WT_BB_CB_Scorecard_Category__c),
+ISCHANGED( WT_Date_From__c),
+ISCHANGED( WT_Goal_Level__c),
+ISCHANGED( WT_Goal_Metric__c),
+ISCHANGED( WT_Goal_Owner__c),
+ISCHANGED( WT_In_Progress__c),
+ISCHANGED( WT_Date_Last_In_Progress_Rolled_Up__c),
+ISCHANGED( WT_MM_Scorecard_Category__c),
+ISCHANGED( Name),
+ISCHANGED( WT_Parent_Goal__c),
+ISCHANGED( WT_Percentage_Achieved__c),
+ISCHANGED( WT_Should_Roll_Up_From_Child__c),
+ISCHANGED( WT_Run_Rate_To_Goal__c),
+ISCHANGED( WT_Target__c),
+ISCHANGED( WT_Date_To__c),
+ISCHANGED( WT_WS_Scorecard_Category__c)
+))</errorConditionFormula>
+        <errorMessage>The user does not have access to update the goal</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Calculate_Goal_Actual</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Calculate Goal Results</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/flow/Calculate_Goal_Info?GoalId={!WT_Goal__c.Id}&amp;retURL=/lightning/r/WT_Goal__c/{!WT_Goal__c.Id}/view</url>
+    </webLinks>
+</CustomObject>

@@ -62,7 +62,10 @@ public inherited sharing class FCMGenerateDocumentIdExtension {
 
       if(String.isNotBlank(contentVersionDTO.DocumentCode)){
         CZFCMDocumenTypes__c docType = CZFCMDocumenTypes__c.getValues(contentVersionDTO.DocumentCode);
-        request.dtype = docType.DocumentType__c;
+
+        if(docType != null){
+          request.dtype = docType.DocumentType__c;
+        }
 
         if(docType != null && docType.IsCustomerlevelDoc__c && party != null){
           accountObj.account = party.tffa__NationalIdentifierValue__c != null ? party.tffa__NationalIdentifierValue__c : party.Customer_Number__c;

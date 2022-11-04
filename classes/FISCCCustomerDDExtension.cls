@@ -30,6 +30,16 @@ public with sharing class FISCCCustomerDDExtension {
 
       if (partyObj.tffa__Type__c == FISCCIntegrationConstants.INDIVIDUAL && partyObj.tffa__Citizenship__c == CZWTFCConstants.RESIDENT) {
         baseddReq.dueDiligenceReq.dueDiligenceDemographics.RsdntPrsn = 'Y';
+        if (partyObj.tffa__CountryOfCitizenship__c != null) {
+          CZTerafinaFisMapping__c tfFisCountryOfCitizenMap = CZTerafinaFisMapping__c.getValues(
+            'AddressCountry' +
+            '_' +
+            partyObj.tffa__CountryOfCitizenship__c
+          );
+          if (tfFisCountryOfCitizenMap != null) {
+            baseddReq.dueDiligenceReq.dueDiligenceDemographics.CntryCtznshp = tfFisCountryOfCitizenMap.FisValue__c;
+          }
+        }
       }
       /* tffa__Address__c addressObj;
       if (partyObj.tffa__AddressXrefs__r != null && partyObj.tffa__AddressXrefs__r.size() > 1) {

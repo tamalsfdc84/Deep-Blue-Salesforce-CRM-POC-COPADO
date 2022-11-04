@@ -1,0 +1,169 @@
+<template>
+    <lightning-card variant="narrow" icon-name="standard:household" title={titleHeader}>
+        <lightning-button label="Edit" slot="actions" onclick={handleEditGroup}></lightning-button>
+        <br />
+        <lightning-record-view-form object-api-name={objectApiName} record-id={recordId}>
+            <header class="slds-grid slds-grid_align-space slds-text-heading--label">
+                <lightning-output-field variant="standard" field-name={totalFinancialAccountField}>
+                </lightning-output-field>
+                <lightning-output-field variant="standard" field-name={startDateField}></lightning-output-field>
+                <lightning-output-field variant="standard" field-name={firstDateOfContactField}>
+                </lightning-output-field>
+                <lightning-output-field variant="standard" field-name={lastDateOfContactField}>
+                </lightning-output-field>
+            </header>
+        </lightning-record-view-form>
+        <br />
+        <div class="slds-p-horizontal_small">
+            <div class="slds-grid slds-wrap">
+                <template if:true={isLoading}>
+                    <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+                </template>
+                <template for:each={recordsList} for:item="record">
+                    <div class="slds-col slds-size_1-of-2 slds-p-left_small slds-p-top_small" key={record.Id}>
+                        <c-w-t_-relationship-group_-tile-l-w-c related-account={record} onbutton={handleTileButton}>
+                        </c-w-t_-relationship-group_-tile-l-w-c>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+    <template if:true={isModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="panel slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={handleCloseModal}>
+                        <lightning-icon icon-name="utility:close" variant="inverse" alternative-text="Close"
+                            size="small">
+                        </lightning-icon>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Edit Relationship</h2>
+                </header>
+                <template if:true={isModalLoading}>
+                    <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+                </template>
+                <div class="slds-modal__content slds-p-around_medium" style="max-height:450px;">
+                    <h3 class="slds-section__title slds-theme_shade slds-text-heading_medium">
+                        <span class="slds-truncate slds-p-horizontal_small">
+                            <lightning-icon icon-name="utility:chevrondown" size="x-small"></lightning-icon>
+                            {labelBadge}
+                        </span>
+                    </h3>
+                    <div class="slds-p-top_small">
+                        <table class="slds-table slds-table_cell-buffer slds-text-heading_small slds-no-row-hover"
+                            aria-label=" hovers">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Member Name">Member Name</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Type">Type</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Account Role">Account Role</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Start Date">Start Date</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Active">Primary Member</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Close"></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={recordsList} for:item="record">
+                                    <tr class="slds-hint-parent" key={record.Id}>
+                                        <td data-label="Member Name">
+                                            <div class="slds-truncate" title={record.WT_RelatedAccount__r.Name}>
+                                                <lightning-icon icon-name="standard:account_info" size="small">
+                                                </lightning-icon>
+                                                &nbsp;<a href="#">{record.WT_RelatedAccount__r.Name}</a>
+                                            </div>
+                                        </td>
+                                        <td data-label="Type">
+                                            <div class="slds-truncate"
+                                                title={record.WT_RelatedAccount__r.RecordType.Name}>
+                                                {record.WT_RelatedAccount__r.RecordType.Name} </div>
+                                        </td>
+                                        <td data-label="Account Role">
+                                            <div class="slds-truncate" title={record.WT_Roles__c}>
+                                                {record.WT_Roles__c}</div>
+                                        </td>
+                                        <td data-label="Start Date">
+                                            <div class="slds-truncate" title={record.WT_StartDate__c}>
+                                                {record.WT_StartDate__c}</div>
+                                        </td>
+                                        <td data-label="Active">
+                                            <div class="slds-truncate" title={record.WT_Active__c}>
+                                                <lightning-input type="toggle" data-field="Primary" label="Primary"
+                                                    name={record.Id} checked={record.WT_Primary__c}
+                                                    variant="label-hidden">
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td data-label="Close">
+                                            <lightning-button variant="base" label=" X " value={record.Id}
+                                                title="Delete Relationship" onclick={handleDeleteRelation}
+                                                class="slds-m-left_x-small"></lightning-button>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                        <span class="slds-text-color_error">{errorMessage}</span>
+                    </div>
+                    <br />
+                    <template if:true={isAddRow}>
+                        <lightning-record-edit-form object-api-name={objectApiNames} density="comfy"
+                            onsubmit={handleRowSubmit} onerror={handleRowError} onload={handleRowLoad}
+                            onsuccess={handleRowSuccess}>
+                            <lightning-messages></lightning-messages>
+                            <template if:true={isRowLoading}>
+                                <div class="customHolder">
+                                    <lightning-spinner size="small" alternative-text="Loading" variant="brand">
+                                    </lightning-spinner>
+                                </div>
+                            </template>
+                            <template if:false={isRowLoading}>
+                                <div class="slds-grid slds-grid_align-space slds-p-around_medium">
+                                    <lightning-input-field field-name="WT_Account__c" value={recordId}
+                                        class="slds-hide"> </lightning-input-field>
+                                    <div class="slds-size_4-of-12">
+                                        <lightning-input-field required field-name={relatedAccountField}>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_4-of-12">
+                                        <lightning-input-field field-name="WT_Roles__c"> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-12 slds-align_absolute-center">
+                                        <lightning-input type="toggle" onchange={handleRowActive} label="Primary Member"
+                                            variant="label-stacked" checked={isRowActive}></lightning-input>
+                                    </div>
+                                    <lightning-input-field class="slds-hide" value={isRowActive}
+                                        field-name="WT_Primary__c"> </lightning-input-field>
+                                    <div class=" slds-size_2-of-12 slds-align_absolute-center">
+                                        <lightning-button variant="brand" icon-name="utility:check" label="Save"
+                                            type="submit"> </lightning-button>
+                                    </div>
+                                </div>
+                            </template>
+                        </lightning-record-edit-form>
+                    </template>
+                    
+                    <lightning-button label="Add Row" icon-name="utility:add" onclick={handleAddRow}></lightning-button>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button class="slds-m-top_small" onclick={handleSaveModal} variant="brand" label="Save">
+                    </lightning-button> &nbsp;&nbsp;&nbsp;
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

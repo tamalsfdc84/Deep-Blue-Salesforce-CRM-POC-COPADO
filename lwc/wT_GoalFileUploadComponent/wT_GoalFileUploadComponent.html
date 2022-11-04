@@ -1,0 +1,70 @@
+<template>
+    <lightning-card class = "slds-text-align_center" title="Goal File Upload" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+         <lightning-input type="file" label="Attachment" accept={acceptedCSVFormats} onchange={openFileUpload}></lightning-input>
+        </div>
+        <p>Note: Please upload .csv file format</p>
+        <template if:true={fileData}> 
+            <p>{fileData.fileName}</p>
+        </template>
+        <br></br>
+        <lightning-button variant = "brand" disabled={isDisable} label="Submit" title="Submit" onclick={handleClick} 
+        class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant = "brand" label="Cancel" title="Cancel" onclick={returnToMainPage} 
+        class="slds-m-left_x-small"></lightning-button>
+
+    </lightning-card>
+   <template if:true={displayRecords}>
+    <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-box slds-theme_default">
+        <lightning-layout>
+            <lightning-layout-item>
+                <div class="slds-p-around_medium slds-grid">
+                    <p><lightning-formatted-text value="Total records to process : &nbsp;"></lightning-formatted-text></p>
+                    <p> {countOfRecordsToProcess}</p>
+                </div>   
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item>
+                <div class="slds-p-around_medium slds-grid">
+                    <p><lightning-formatted-text value="Total records processed successfully : &nbsp;"></lightning-formatted-text></p> 
+                    <div if:true={isLoading} class="slds-spinner_inline spinner-padding">
+                      <div class = "loadSpinner">
+                        <lightning-spinner variant="brand" 
+                                           alternative-text="Loading"    
+                                           size="small">
+                        </lightning-spinner>
+                      </div>
+                    </div>
+                    <p>{countOfRecordsProcessedSuccessfully}</p>
+                </div>
+            </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout>
+            <lightning-layout-item>
+                <div class="slds-p-around_medium slds-grid">
+                    <p><lightning-formatted-text value="Total records failed to process : &nbsp;"></lightning-formatted-text></p> 
+                    <div if:true={isLoading} class="slds-spinner_inline spinner-padding">
+                        <div class = "loadSpinner">
+                            <lightning-spinner variant="brand" 
+                                            alternative-text="Loading"     
+                                            size="small">
+                            </lightning-spinner>
+                        </div>
+                    </div>
+                    <p>{countOfRecordsFailedToProcess}</p>
+                </div>
+            </lightning-layout-item>
+    </lightning-layout>
+    </div>
+   </template>
+    <div>
+        <template if:true={showFailureRecords}>
+            <h2> Failures</h2>
+            <lightning-datatable data={listOfGoalImportLog} 
+                                columns={columns} 
+                                key-field="Id">
+            </lightning-datatable>
+        </template>
+    </div> 
+</template>

@@ -1,0 +1,38 @@
+<template>
+    <div class="faq__search">
+        <h1>Customer support</h1>
+        <div class="faq__search__searchBar">
+            <div class="faq__search__searchBar__iconBox">
+                <!-- icon -->
+                <lightning-icon icon-name="utility:search" alternative-text="Search" title="Search" size="x-small"></lightning-icon>
+            </div>
+            <div class="faq__search__searchBar__inputBox">
+                <input class="faq__search__searchBar--input" placeholder="Search With Keywords" onchange={handleSearchOnChange} onkeyup={handleSearchKeyup} onfocusout={handleSearchFocusOut}
+                    onfocusin={handleSearchFocusIn} onkeypress={handleSearchKeyPress}>
+                <div class="faq__search__searchBar__inputBox--recommended">
+                    <template if:true={listAutoSuggestResult}>
+                        <ul>
+                            <template for:each={listAutoSuggestResult} for:item="autoSuggestItem">
+                                <li key={autoSuggestItem.ArticleId} class="faq__search__searchBar__inputBox__recommended-li" data-id={autoSuggestItem.RedirectUrl} onclick={handleAutoSuggestClick}>
+                                    <a>{autoSuggestItem.ArticleTitle}</a>
+                                </li>
+                            </template>
+                        </ul>
+                    </template>                  
+                </div>
+            </div>
+            <div class="faq__search__searchBar--button" onclick={searchClicked}>Search</div>
+        </div>
+        <template if:true={hasTrendingTopics}>
+            <div class="faq__search__trendingTopics">
+                <div class="faq__search__trendingTopics--main">Trending Topics:</div>
+                <div class="faq__search__trendingTopics__slider">
+                    <!-- populate with trending topics -->
+                    <template for:each={listTrendingTopic} for:item="trendingTopic">
+                        <div key={trendingTopic.ItemKey} class="faq__search__trendingTopics__slider--option"><a href={trendingTopic.RedirectUrl}>{trendingTopic.TopicName}</a></div>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </div>
+ </template>

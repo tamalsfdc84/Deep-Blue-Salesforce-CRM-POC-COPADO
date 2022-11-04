@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$FinServ__RelatedAccount__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <columns>
+        <field>Lead$FinServ__ReferredByUser__c</field>
+    </columns>
+    <columns>
+        <field>Lead$FinServ__ReferredByUser__c.WT_Line_of_Business__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Referred_To__c</field>
+    </columns>
+    <columns>
+        <field>Lead$WT_Referred_To__c.WT_Line_of_Business__c</field>
+    </columns>
+    <description>List of Referrals made by LFBT individuals.</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead$FinServ__ReferredByUser__c.WT_Charter__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Lake Forest</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$FinServ__ReferredByUser__c.WT_Line_of_Business__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Retail</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LFBT Referrals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WT_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Lead$WT_Date_Referred__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lead$FinServ__ConversionDateTime__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

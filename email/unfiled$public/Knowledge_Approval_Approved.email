@@ -1,0 +1,4 @@
+Your Knowledge Article {!Knowledge__kav.Title} is approved.
+
+Approval Comments - 
+{!ApprovalRequest.Comments}

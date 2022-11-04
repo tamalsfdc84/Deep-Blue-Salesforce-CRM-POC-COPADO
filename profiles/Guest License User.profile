@@ -38340,6 +38340,292 @@
     <layoutAssignments>
         <layout>WorkerCompCoverageClass-Worker Compensation Coverage Class Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AccountPreference__c-tffa__Account Preference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AddOnServiceChecklist__c-tffa__Add On Service Checklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AddOnServiceMatrix__c-tffa__Add On Service Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Address__c-tffa__Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__AgentDetail__c-tffa__AgentDetail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicantRoleMatrix__c-tffa__Applicant Role Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicantRole__c-tffa__Applicant Role Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ApplicationPartyXref__c-tffa__ApplicationPartyXref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__CertificateApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__CertificateApplication</layout>
+        <recordType>tffa__Application__c.tffa__CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__BUSINESS_SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__DepositApplication</layout>
+        <recordType>tffa__Application__c.tffa__SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__ESA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__HSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Application__c-tffa__InvestmentApplication</layout>
+        <recordType>tffa__Application__c.tffa__IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Beneficiary__c-tffa__Beneficiary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Blocklist__mdt-tffa__Blocklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Brand__c-tffa__Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DepositBoxConfigurationItem__c-tffa__Deposit Box Configuration Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DepositBoxConfiguration__c-tffa__Deposit Box Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureChecklist__c-tffa__Disclosure Checklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureEnvelope__c-tffa__Disclosure Envelope Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureItem__c-tffa__Disclosure Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__DisclosureMatrix__c-tffa__Disclosure Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Disclosure__c-tffa__Disclosure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingMatrix__c-tffa__Funding Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Debit Card</layout>
+        <recordType>tffa__FundingRequest__c.tffa__DEBIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.BANK_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.PRINT_INVOICE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.WAIVE_FEE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.WIRE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__FundingRequest Layout</layout>
+        <recordType>tffa__FundingRequest__c.tffa__CHECK</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Paypal</layout>
+        <recordType>tffa__FundingRequest__c.tffa__PAYPAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__FundingRequest__c-tffa__Wire</layout>
+        <recordType>tffa__FundingRequest__c.tffa__WIRE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Identification__c-tffa__Identification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ListOfValues__c-tffa__List of Values Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Location__c-tffa__Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyAgeMatrix__c-tffa__Party Age Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyDecisionMatrix__c-tffa__Party Decision Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__PartyPartyXref__c-tffa__Party Party Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Party__c-tffa__Individual</layout>
+        <recordType>tffa__Party__c.tffa__INDIVIDUAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Party__c-tffa__Organization</layout>
+        <recordType>tffa__Party__c.tffa__ORGANIZATION</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__ProductTerm__c-tffa__ProductTerm Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__CERTIFICATE</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__CERTIFICATE</layout>
+        <recordType>tffa__Product__c.tffa__CERTIFICATE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__HSA</layout>
+        <recordType>tffa__Product__c.tffa__HSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__IRA</layout>
+        <recordType>tffa__Product__c.tffa__IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BROKERAGE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_CREDIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_IRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_LINE_OF_CREDIT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_REALESTATE_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_SAFE_DEPOSIT_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__BUSINESS_TERM_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CHECKING</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CREDIT_CARD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__CRYPTO_CUSTODIAL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__EDUCATION_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__HELOC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MERCHANT_SERVICES</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MONEY_MARKET</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__MORTGAGE</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__PERSONAL_LINE_OF_CREDIT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__PERSONAL_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SAFE_DEPOSIT_BOX</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SAVINGS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__SBA_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Product__c-tffa__Product Layout</layout>
+        <recordType>tffa__Product__c.tffa__VEHICLE_LOAN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__StipulationMatrix__c-tffa__Stipulation Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tffa__Submission__c-tffa__Submission Layout</layout>
+    </layoutAssignments>
     <pageAccesses>
         <apexPage>AnswersHome</apexPage>
         <enabled>false</enabled>

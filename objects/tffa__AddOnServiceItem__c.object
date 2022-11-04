@@ -345,7 +345,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Add On Service Items</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

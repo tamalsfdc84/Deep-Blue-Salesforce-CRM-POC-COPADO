@@ -35,7 +35,7 @@ public with sharing class FISCCOrgCustomerRelnExtension {
               FISCCCommonHelper.setErrormessageInSub();
               FISCCIntegrationLogService.setLogItemFailed(FISCCIntegrationConstants.CUST_TO_CUST_CREATION_RELN_FAILURE);
               isRelnCreationSuccess = false;
-              break;
+              throw new tffa.ApplicationException('Customer to Customer Relationship API Failed.');
             }
             FISCCOrgCustomerRelnExtension.customerToCustomerRelnCreated = new List<Id>();
           }

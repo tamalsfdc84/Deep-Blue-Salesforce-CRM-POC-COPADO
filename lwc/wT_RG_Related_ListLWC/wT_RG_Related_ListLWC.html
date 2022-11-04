@@ -1,0 +1,58 @@
+<template>
+    <lightning-card title={titleName} icon-name={iconName}>
+        <div if:true={isRecordExist}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title={field1}>{field1}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Activity Date">Activity Date</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Assigned To">Assigned To</div>
+                        </th>
+
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title={field3}>Related To</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="isTask">Task</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={listRecords} for:item="rec">
+                        <tr key={rec.Id} class="slds-hint-parent">
+                            <td data-label={field1}>
+                                <div class="slds-truncate"> <a href={rec.urlId}>{rec.Subject}</a> </div>
+                            </td>
+                            <td data-label={field1}>
+                                <div class="slds-truncate"> {rec.ActivityDate}</div>
+                            </td>
+                            <td data-label={field1}>
+                                <div class="slds-truncate"> <a href={rec.AssignedToId}>{rec.AssignedToName}</a> </div>
+                            </td>
+                
+                            <td data-label={field3}>
+                                <div class="slds-truncate"><a href={rec.urlRelatedId}>{rec.RelatedName}</a> </div>
+                            </td>
+                            <td data-label="isTask">
+                                <div class="slds-truncate">
+                                    <lightning-input disabled type="checkbox" checked={rec.isTask}
+                                        variant="label-hidden" label="isTask"></lightning-input>
+                                </div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <!--div slot="footer">
+            <a class="slds-card__footer-action" href="#">View All
+              <span class="slds-assistive-text">Activities</span>
+            </a>
+        </div-->
+    </lightning-card>
+</template>

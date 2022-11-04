@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>hpatel1@wintrust.com</contactEmail>
+    <label>List View Export</label>
+    <oauthConfig>
+        <callbackUrl>https://wintrustbank.my.salesforce.com/services/authcallback/List_View_Export</callbackUrl>
+        <consumerKey>3MVG9wy_WnyGrHdMP7omhiICO9cNIqxFtL86xLj.lfsnKBQCaUwLV73HF.dS2PKJMaOWa5JYrh5Kt3TABu8uN</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

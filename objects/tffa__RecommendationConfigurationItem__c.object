@@ -322,7 +322,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Recommendation Configuration Items</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

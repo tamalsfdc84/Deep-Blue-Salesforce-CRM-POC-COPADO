@@ -490,7 +490,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Application Scoring Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

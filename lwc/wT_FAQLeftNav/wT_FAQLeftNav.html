@@ -1,0 +1,18 @@
+<template>
+    <div class="faq_splitSection__body__left">
+        <ul>
+            <li class="faq_splitSection__body__left--head">PRODUCTS & SERVICES</li>
+            <!-- Template in option here -->
+            <template if:true={listCategory}>
+                <template for:each={listCategory} for:item="categoryItem">
+                    <template if:true={categoryItem.IsActive}>
+                        <li class="activeNav" data-id={categoryItem.CategoryRedirectUrl} key={categoryItem.CategoryName}><a href={categoryItem.CategoryRedirectUrlPath}>{categoryItem.CategoryName}</a></li>
+                    </template>
+                    <template if:false={categoryItem.IsActive}>
+                        <li data-id={categoryItem.CategoryRedirectUrl} key={categoryItem.CategoryName}><a href={categoryItem.CategoryRedirectUrlPath}>{categoryItem.CategoryName}</a></li>    
+                    </template>                
+                </template>
+            </template>
+        </ul>
+    </div>
+</template>

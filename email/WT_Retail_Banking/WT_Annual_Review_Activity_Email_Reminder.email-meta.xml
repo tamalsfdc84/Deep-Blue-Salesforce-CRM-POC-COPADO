@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <available>true</available>
+    <description>Email Reminder for the Annual Review Activity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Annual Review Activity Email Reminder</name>
+    <style>none</style>
+    <subject>Upcoming Appointment.</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,287 @@
+.faq__search {
+    width: 100%;
+    height: fit-content;
+    background-color: #003E7E;
+    padding: 36px 46px 24px 46px;
+}
+
+.faq__search>h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 0 24px 0;
+    text-transform: uppercase;
+    font-family: "Agenda Semibold";
+}
+
+.faq__search__searchBar {
+    height: 50px;
+    width: 676px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+.faq__search__searchBar__iconBox {
+    display: none;
+}
+
+.faq__search__searchBar__inputBox {
+    display: flex;
+    flex-direction: column;
+    width: 502px;
+    margin: 0 20px 0 0;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    position: relative;
+    border-radius: 7px;
+}
+
+.faq__search__searchBar__inputBox--recommended {
+    height: fit-content;
+    min-height: 7px;
+    width: 502px;
+    position: relative;
+    background-color: #ffffff;
+    border-bottom: 1px solid #C4CED4;
+    border-right: 1px solid #C4CED4;
+    border-left: 1px solid #C4CED4;
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    top: 42px;
+    z-index: 3;
+}
+
+.input-error{
+    border-top: 3px solid red !important;
+    border-right: 3px solid red !important;
+    border-left: 3px solid red !important;
+}
+
+.auto-suggest-error{
+    border-bottom: 3px solid red !important;
+    border-right: 3px solid red !important;
+    border-left: 3px solid red !important;
+}
+
+.faq__search__searchBar__inputBox__recommended-li {
+    display: block;
+    cursor: pointer;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.faq__search__searchBar__inputBox__recommended-li:hover {
+    background-color: #ebebeb;
+}
+
+.shadow {
+    box-shadow: inset 0px 9px 6px #00000029, 0px 6px 6px #00000041;
+}
+
+.faq__search__searchBar__inputBox--recommended>ul {
+    background-color: #ffffff;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.faq__search__searchBar__inputBox--recommended>ul>li {
+    padding: 15px 20px;
+    height: 50px;
+}
+
+.faq__search__searchBar__inputBox--recommended>ul>li>a {
+    text-decoration: none;
+    color: #263357;
+}
+
+.faq__search__searchBar--input {
+    height: 43px;
+    width: 502px;
+    font-size: 16px;
+    text-indent: 20px;
+    border-radius: 7px 7px 0px 0px;
+    border: none;
+    padding-top: 7px;
+    border-top: 1px solid #C4CED4;
+    border-right: 1px solid #C4CED4;
+    border-left: 1px solid #C4CED4;
+}
+
+.faq__search__searchBar--input:focus-visible,
+.faq__search__searchBar--input:focus {
+    outline: none;
+}
+
+.faq__search__searchBar--button {
+    height: 50px;
+    border: 3px solid #FFFFFF;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 40px;
+    width: 148px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Agenda Semibold";
+}
+
+.faq__search__trendingTopics {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    justify-content: center;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+}
+
+.faq__search__trendingTopics--main {
+    line-height: 28px;
+    margin: 0 7px 0 0;
+    text-transform: uppercase;
+    min-width: 116px;
+}
+
+.faq__search__trendingTopics__slider {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    overflow-x: overlay;
+}
+
+.faq__search__trendingTopics__slider--option {
+    height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 6px 16px;
+    line-height: 16px;
+    margin: 0 5px;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    white-space: nowrap;
+}
+
+.faq__search__trendingTopics__slider--option>a {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    text-decoration: none;
+}
+
+.faq__search__searchBar--recommended {
+    display: none;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 980px) {
+    .faq__search__trendingTopics {
+        flex-direction: column;
+    }
+    .faq__search__trendingTopics--main {
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto 6px auto;
+    }
+    .faq__search__trendingTopics__slider {
+        width: 100%;
+        justify-content: left;
+        max-width: 730px;
+        margin: 0 auto 0 auto;
+    }
+    .faq__search__trendingTopics__slider--option:nth-child(1) {
+        margin: 0 5px 0 0;
+    }
+    .faq__search__trendingTopics__slider--option:last-child {
+        margin: 0 0 0 5px;
+    }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
+    /* mobile title */
+    .faq__search>h1 {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    /* mobile search */
+    .faq__search__searchBar__inputBox {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+    .faq__search__searchBar {
+        width: 100%;
+        position: relative;
+    }
+    .faq__search__searchBar__iconBox {
+        display: block;
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        top: 16px;
+        z-index: 4;
+    }
+    .faq__search__searchBar__inputBox--recommended {
+        width: 100%;
+    }
+    .faq__search__searchBar--input {
+        width: 100%;
+        margin: 0 0 0 0;
+        text-indent: 40px;
+        padding-top: 7px;
+    }
+    .faq__search__searchBar--button {
+        display: none;
+    }
+    .faq__search__trendingTopics__slider {
+        height: 43px;
+    }
+    .faq__search__trendingTopics--main {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 980px) {
+    .faq__search {
+        padding: 36px 0px 19px 0px;
+    }
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 767px) {
+    .faq__search {
+        padding: 33px 38px 19px 38px;
+    }
+    .faq__search>h1 {
+        margin: 0 0 32px 0;
+    }
+    .faq__search__searchBar__inputBox {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+    .faq__search__searchBar__iconBox {
+        left: calc(10% + 15px);
+    }
+    .faq__search__searchBar {
+        margin: 0 auto 23px auto;
+    }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 499px) {
+    .faq__search {
+        padding: 30px 16px 17px 16px;
+    }
+    .faq__search>h1 {
+        margin: 0 0 15px 0;
+    }
+    .faq__search__searchBar__inputBox {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    .faq__search__searchBar__iconBox {
+        left: calc(5% + 15px);
+    }
+    .faq__search__searchBar {
+        margin: 0 auto 26px auto;
+    }
+}

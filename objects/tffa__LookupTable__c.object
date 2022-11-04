@@ -263,7 +263,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Lookup Tables</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

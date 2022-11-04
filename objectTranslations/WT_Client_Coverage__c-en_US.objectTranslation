@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Coverages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Classification --></label>
+        <name>WT_Account_Classification__c</name>
+        <picklistValues>
+            <masterLabel>C = Customer</masterLabel>
+            <translation><!-- C = Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1 = Top Priority Customer</masterLabel>
+            <translation><!-- C1 = Top Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2 = Medium Priority Customer</masterLabel>
+            <translation><!-- C2 = Medium Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3 = Established Customer</masterLabel>
+            <translation><!-- C3 = Established Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4 = Customer - PPP Onboarding</masterLabel>
+            <translation><!-- C4 = Customer - PPP Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ = Middle Market (Revenue $10MM to $260MM)</masterLabel>
+            <translation><!-- NQ = Middle Market (Revenue $10MM to $260MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ0 = Companies with Unknown Revenue</masterLabel>
+            <translation><!-- NQ0 = Companies with Unknown Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQBB = Companies with Revenue $1.00MM to $9.99MM)</masterLabel>
+            <translation><!-- NQBB = Companies with Revenue $1.00MM to $9.99MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQSB = Companies with Revenue under $1MM</masterLabel>
+            <translation><!-- NQSB = Companies with Revenue under $1MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P1 = Proposing within 6 months/Top Prospect</masterLabel>
+            <translation><!-- P1 = Proposing within 6 months/Top Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2 = Proposing in 6-12 months</masterLabel>
+            <translation><!-- P2 = Proposing in 6-12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3 = Proposing outside 12 months</masterLabel>
+            <translation><!-- P3 = Proposing outside 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4 = Other</masterLabel>
+            <translation><!-- P4 = Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5 = PPP Lead</masterLabel>
+            <translation><!-- P5 = PPP Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X1 = EdFAC</masterLabel>
+            <translation><!-- X1 = EdFAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X2 = Bankrupt/Out of Business</masterLabel>
+            <translation><!-- X2 = Bankrupt/Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X3 = Industry Excluded</masterLabel>
+            <translation><!-- X3 = Industry Excluded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- All Other Lines of Business --></label>
+        <name>WT_All_Other_Lines_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Time Period Type --></label>
+        <name>WT_Coverage_Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period</masterLabel>
+            <translation><!-- Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Include Annual Review --></label>
+        <name>WT_Include_Annual_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include CRA Calls --></label>
+        <name>WT_Include_CRA_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include CRA Events --></label>
+        <name>WT_Include_CRA_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Emails --></label>
+        <name>WT_Include_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Events --></label>
+        <name>WT_Include_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Standard Calls --></label>
+        <name>WT_Include_Standard_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Tasks --></label>
+        <name>WT_Include_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include WFG Calls --></label>
+        <name>WT_Include_WFG_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lines of Business --></label>
+        <name>WT_Lines_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>ABL</masterLabel>
+            <translation><!-- ABL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agricultural Lending</masterLabel>
+            <translation><!-- Agricultural Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Banking</masterLabel>
+            <translation><!-- Business Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE</masterLabel>
+            <translation><!-- CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Advantage</masterLabel>
+            <translation><!-- Community Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Banking</masterLabel>
+            <translation><!-- Community Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Impact</masterLabel>
+            <translation><!-- Community Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Lending</masterLabel>
+            <translation><!-- Consumer Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Center</masterLabel>
+            <translation><!-- Contact Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Funds</masterLabel>
+            <translation><!-- Government Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAD - Managed Assets Division</masterLabel>
+            <translation><!-- MAD - Managed Assets Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Practice Group</masterLabel>
+            <translation><!-- Professional Practice Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Role</masterLabel>
+            <translation><!-- Support Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndication/Capital Markets</masterLabel>
+            <translation><!-- Syndication/Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management, Wealth - Chicago Trust</masterLabel>
+            <translation><!-- Treasury Management, Wealth - Chicago Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Great Lakes Advisors</masterLabel>
+            <translation><!-- Wealth - Great Lakes Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth - Wintrust Investments</masterLabel>
+            <translation><!-- Wealth - Wintrust Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Management, Wealth Services</masterLabel>
+            <translation><!-- Wealth Management, Wealth Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Funds Group</masterLabel>
+            <translation><!-- Wintrust Funds Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wintrust Receivables Finance</masterLabel>
+            <translation><!-- Wintrust Receivables Finance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Months --></label>
+        <name>WT_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Classification --></label>
+        <name>WT_Relationship_Classification__c</name>
+        <picklistValues>
+            <masterLabel>C = Customer</masterLabel>
+            <translation><!-- C = Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1 = Top Priority Customer</masterLabel>
+            <translation><!-- C1 = Top Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2 = Medium Priority Customer</masterLabel>
+            <translation><!-- C2 = Medium Priority Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3 = Established Customer</masterLabel>
+            <translation><!-- C3 = Established Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4 = Customer - PPP Onboarding</masterLabel>
+            <translation><!-- C4 = Customer - PPP Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ = Middle Market (Revenue $10MM to $260MM)</masterLabel>
+            <translation><!-- NQ = Middle Market (Revenue $10MM to $260MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQ0 = Companies with Unknown Revenue</masterLabel>
+            <translation><!-- NQ0 = Companies with Unknown Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQBB = Companies with Revenue $1.00MM to $9.99MM)</masterLabel>
+            <translation><!-- NQBB = Companies with Revenue $1.00MM to $9.99MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQSB = Companies with Revenue under $1MM</masterLabel>
+            <translation><!-- NQSB = Companies with Revenue under $1MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P1 = Proposing within 6 months/Top Prospect</masterLabel>
+            <translation><!-- P1 = Proposing within 6 months/Top Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2 = Proposing in 6-12 months</masterLabel>
+            <translation><!-- P2 = Proposing in 6-12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3 = Proposing outside 12 months</masterLabel>
+            <translation><!-- P3 = Proposing outside 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4 = Other</masterLabel>
+            <translation><!-- P4 = Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5 = PPP Lead</masterLabel>
+            <translation><!-- P5 = PPP Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X1 = EdFAC</masterLabel>
+            <translation><!-- X1 = EdFAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X2 = Bankrupt/Out of Business</masterLabel>
+            <translation><!-- X2 = Bankrupt/Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X3 = Industry Excluded</masterLabel>
+            <translation><!-- X3 = Industry Excluded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Activities Required --></label>
+        <name>WT_Total_Number_of_Activities_Required__c</name>
+    </fields>
+    <layouts>
+        <layout>WT Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rules --></label>
+            <section>Rules</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WT Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rules --></label>
+            <section>Rules</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account --></label>
+        <name>WT_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Relationship --></label>
+        <name>WT_Relationship</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

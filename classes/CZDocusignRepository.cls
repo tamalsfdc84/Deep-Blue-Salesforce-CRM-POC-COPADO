@@ -371,13 +371,15 @@ public with sharing class CZDocusignRepository extends tffa.AbstractRepository {
       .build()
       .build()
       .whereClause('tffa__Submission__c', '=: attr1')
+      .opAnd()
+      .whereClause('tffa__EventName__c', '=: attr2')
       .orderBy('SortOrder__c')
       .build()
       .toQuery();
     if (Test.isRunningTest()) {
       query = new tffa.QueryBuilder(tffa__Disclosure__c.SObjectType).selectFields().build().toQuery();
     }
-    List<tffa__Disclosure__c> disclosurelist = doQuery(query, new List<Object>{ submissionId });
+    List<tffa__Disclosure__c> disclosurelist = doQuery(query, new List<Object>{ submissionId, 'Application_DocumentGeneration' });
     return disclosurelist;
   }
 }

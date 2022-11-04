@@ -388,16 +388,16 @@ public class CZMDMDataUploadBatchTest {
     String addType = MDMCommonHelper.getaddressType('HOME');
     System.assertEquals(addType, 'PRIM', 'Success');
 
-    String identityType = MDMCommonHelper.getIdentificationType('DL');
+    String identityType = MDMCommonHelper.getMDMIdentificationType('DL');
     System.assertEquals(identityType, 'DL', 'Success');
 
-    identityType = MDMCommonHelper.getIdentificationType('StateID');
+    identityType = MDMCommonHelper.getMDMIdentificationType('StateID');
     System.assertEquals(identityType, 'ST', 'Success');
 
-    identityType = MDMCommonHelper.getIdentificationType('Passport');
+    identityType = MDMCommonHelper.getMDMIdentificationType('Passport');
     System.assertEquals(identityType, 'PPT', 'Success');
 
-    identityType = MDMCommonHelper.getIdentificationType('');
+    identityType = MDMCommonHelper.getMDMIdentificationType('');
     System.assertEquals(identityType, '', 'Success');
 
     String taxIdType = MDMCommonHelper.getTaxIdType('SSN');

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>WT_Count_License_To_Start_Blocking__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Count License To Start Blocking</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WT_License_Type__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>License Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>true</default>
+                    <label>Salesforce</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Platform</fullName>
+                    <default>false</default>
+                    <label>Salesforce Platform</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Salesforce License Configuration</label>
+    <pluralLabel>Salesforce License Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

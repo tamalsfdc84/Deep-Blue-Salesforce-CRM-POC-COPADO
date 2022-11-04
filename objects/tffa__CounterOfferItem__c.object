@@ -309,7 +309,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Counter Offer Items</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>CustomProductCategoryCheck</fullName>

@@ -90,6 +90,10 @@
     </customSettingAccesses>
     <customSettingAccesses>
         <enabled>true</enabled>
+        <name>CZFCMDocumenTypes__c</name>
+    </customSettingAccesses>
+    <customSettingAccesses>
+        <enabled>true</enabled>
         <name>CZTerafinaFisMapping__c</name>
     </customSettingAccesses>
     <customSettingAccesses>

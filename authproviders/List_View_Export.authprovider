@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>3MVG9JEx.BE6yifM.GfQEMcTtwcR8vBvCMRhMP9Ww7DQSu7t_T9DzwxjItcqkiPPXJ58U8UbYH3wIUWU228.y</consumerKey>
+    <consumerSecret>puiRwx5+hU6za0xtLQ8dWSE0nshKgDXVeEXgoWIcVYEjD80LCO+pP+EtRh7ikWKDp9gP4SP9XW5MeA6mkSjWtHBBGPdiC2rX</consumerSecret>
+    <defaultScopes>api refresh_token offline_access full</defaultScopes>
+    <friendlyName>List View Export</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+</AuthProvider>

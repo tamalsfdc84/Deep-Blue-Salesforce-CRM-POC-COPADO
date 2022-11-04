@@ -1,0 +1,26 @@
+<template>
+  <div class="faq__pagination">
+    <div class="faq__pagination__row">
+      <button class="button align_previous_Button pagination--previous deactivated" disabled={disablePreviousButton} onclick={previousClickButtonHandler}>
+        <div class="navArrowLeft left"></div>
+     </button>
+      <div class="faq__pagination__row__center">
+        <template for:each={pageList} for:item="pageNo">
+          <div class="faq__pagination__row__center--item" key={pageNo.no}>
+            <a  class={pageNo.variant} data-id={pageNo.no} onclick={handlePageClick}>
+              <template if:true={pageNo.less}>
+                0{pageNo.no}
+              </template>
+              <template if:false={pageNo.less}>
+                {pageNo.no}
+              </template>
+            </a>
+          </div>
+        </template>
+      </div>
+      <button class="button align_next_Button pagination--next" disabled={disableNextButton} onclick={nextClickButtonHandler}>
+        <div class="navArrowRight right"></div>
+      </button>
+    </div>
+  </div>
+</template>

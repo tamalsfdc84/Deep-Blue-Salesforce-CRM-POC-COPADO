@@ -1,0 +1,38 @@
+<template>
+    <div class={getContainerElementClass}>
+        <!-- <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <lightning-input
+                    type="toggle"
+                    label="Mutli entry lookup"
+                    checked={isMultiEntry}
+                    onchange={handleLookupTypeChange}
+                ></lightning-input>
+            </div>
+            <div class="slds-col" if:true={isMultiEntry}>
+                <lightning-input
+                    type="number"
+                    label="Max selected items"
+                    min="1"
+                    value={maxSelectionSize}
+                    onchange={handleMaxSelectionSizeChange}
+                    required
+                ></lightning-input>
+            </div>
+        </div> -->
+
+        <c-w-t_-utility_-lookup-base
+            selection={initialSelection}
+            errors={errors}
+            onsearch={handleLookupSearch}
+            onselectionchange={handleLookupSelectionChange}
+            label="User"
+            placeholder={placeholder}
+            is-multi-entry={isMultiEntry}
+            new-record-options={newRecordOptions}
+            query-name={queryName}
+            required
+        >
+        </c-w-t_-utility_-lookup-base>
+    </div>
+</template>

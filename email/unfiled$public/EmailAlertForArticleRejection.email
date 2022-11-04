@@ -1,0 +1,11 @@
+Article Name: {!Knowledge__kav.Title}
+
+Article: {!Knowledge__kav.UrlName}
+
+Approval Record: <a href="'https://wintrustbank--wtdev.lightning.force.com/lightning/r/ProcessInstanceWorkitem/{!Workitem.ID}/view'"></a>
+
+Submitted by: {!Knowledge__kav.CreatedBy}
+
+Rejected By: {!ApprovalRequest.Process_Approver}
+
+Rejected Comments: {!ApprovalRequest.Comments}

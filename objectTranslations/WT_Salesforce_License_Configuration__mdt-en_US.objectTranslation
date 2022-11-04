@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Salesforce License Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Salesforce License Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Count License To Start Blocking --></label>
+        <name>WT_Count_License_To_Start_Blocking__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Type --></label>
+        <name>WT_License_Type__c</name>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Platform</masterLabel>
+            <translation><!-- Salesforce Platform --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,107 @@
+.fontClass
+{
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;  
+}
+.widthStyle
+{
+    width: auto;
+}
+td 
+{
+    border:1px solid rgb(229, 229, 229);
+    text-align: center;
+}
+.border-around 
+{
+    border: 1px solid rgba(128, 128, 128, 0.39); /* Gray Color */
+    border-radius: 5px;
+}
+.edit-pencil-customlabel
+{
+    --lwc-colorTextIconDefault: #DDDBDA;
+    cursor: pointer;   
+    float: right;
+}
+.custom-padding 
+{
+    padding: 10.25px 16px;
+}
+.custom-left-padding 
+{
+    padding-left: 18px;
+}
+.custom-left-padding-modified 
+{
+    padding-left: 14px;
+}
+
+.custom-bottom-border 
+{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+.custom-font-size-value
+{
+    font-size: 14px;
+}
+.custom-padding-non-tabular-fields 
+{
+    padding: 10px 16px 10px 3px;
+}
+.custom-padding-value 
+{
+    padding: 9.25px 16px;
+}
+.custom-bottom-border-heading 
+{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+}
+.custom-width-heading 
+{
+    width: 100%;
+}
+.custom-padding-output-fields 
+{
+    padding: 5px 16px;
+}
+.custom-bottom-border-non-tabular-fields 
+{
+    border-bottom : 1px solid rgba(128, 128, 128, 0.39);
+}
+.custom-bottom-padding 
+{
+    padding: 6px 0px;
+}
+.custom-padding-empty-column
+{
+    padding: 0 5px;
+}
+.zero-right-and-left-padding 
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.fontClass2
+{
+    font-size: 16px;     
+}
+.container 
+{}   
+.child 
+{  
+    float: left;
+    width: 80%;     
+}  
+.child2 {
+    
+    float: left;
+}
+.custom-bottom-border1
+{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+.marginClass{
+    margin-right:50px
+}

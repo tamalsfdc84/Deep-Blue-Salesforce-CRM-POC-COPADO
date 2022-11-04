@@ -76,14 +76,6 @@ public with sharing class MDMCustomerCreateExtension {
       : party.tffa__LegalName__c;
     request.statChngDt = startDate.formatGMT(FISCCIntegrationConstants.MDM_DATE_FORMAT);
 
-    request.offcrRowid.offcrCd =
-      FISCCIntegrationLogService.brandObj.CIPrmyOffcrNbr__c +
-      '|' +
-      MDMCommonHelper.getBrandCode(party.tffa__BrandCode__c);
-
-    // as secOffcrRowid is mandatory field, in digital flow for primary and secondary same values were passed
-    request.secOffcrRowid.offcrCd = request.offcrRowid.offcrCd;
-
     Boolean isDebitCardProduct = false;
     for (tffa__Application__c app : FISCCIntegrationLogService.applicationObjs) {
       if (app.tffa__AccountPurpose__c == 'DEBIT_CARD') {
@@ -114,6 +106,14 @@ public with sharing class MDMCustomerCreateExtension {
       if (party.CZPartyAliases__r != null && party.CZPartyAliases__r.size() > 0 && !isDebitCardProduct) {
         request.Preference = getAliasDetails(party);
       }
+    } else {
+      request.offcrRowid.offcrCd =
+        FISCCIntegrationLogService.brandObj.CIPrmyOffcrNbr__c +
+        '|' +
+        MDMCommonHelper.getBrandCode(party.tffa__BrandCode__c);
+
+      // as secOffcrRowid is mandatory field, in digital flow for primary and secondary same values were passed
+      // request.secOffcrRowid.offcrCd = request.offcrRowid.offcrCd;
     }
 
     request.bnkCd.locCd = MDMCommonHelper.getBrandCode(party.tffa__BrandCode__c);
@@ -223,7 +223,7 @@ public with sharing class MDMCustomerCreateExtension {
     List<MDMCustomerCreateRequest.IdentifiersItem> items = new List<MDMCustomerCreateRequest.IdentifiersItem>();
 
     for (tffa__Identification__c identification : party.tffa__Identifications__r) {
-      String identityType = MDMCommonHelper.getIdentificationType(identification.tffa__Type__c);
+      String identityType = MDMCommonHelper.getMDMIdentificationType(identification.tffa__Type__c);
       if (String.isNotBlank(identityType) && identification.tffa__IdentificationNumber__c != null) {
         MDMCustomerCreateRequest.IdentifiersItem item = new MDMCustomerCreateRequest.IdentifiersItem();
         item.idntyTypCd.idntyTypCd = identityType;
@@ -467,7 +467,7 @@ public with sharing class MDMCustomerCreateExtension {
       MDMCustomerCreateRequest.PreferenceItem item = new MDMCustomerCreateRequest.PreferenceItem();
       item.prefTypCd.prefTypCd = 'PTY|ALIASNAME';
       item.statCd.lkpCd = 'STATUS|A';
-      item.prefVl = alias.AliasFirstName__c + (alias.AliasLastName__c != null ? alias.AliasLastName__c : '');
+      item.prefVl = alias.AliasFirstName__c + (alias.AliasLastName__c != null ? ' ' + alias.AliasLastName__c : '');
       preference.item.add(item);
     }
 

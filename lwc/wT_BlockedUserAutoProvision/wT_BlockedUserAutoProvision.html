@@ -1,0 +1,53 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon class="slds-m-right_x-large" icon-name="action:password_unlock" size="x-small"></lightning-icon>
+            Blocked User Queue
+            <lightning-button-icon class="slds-m-left_xx-large" icon-name="utility:refresh" 
+                alternative-text="Refresh" title="Refresh" onclick={refreshComponentData}></lightning-button-icon>
+        </h3>    
+        <div class="slds-m-bottom_x-large slds-m-top_x-small">
+            <template if:true={licenseUsageData}>
+                <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item class="slds-border_right slds-border_bottom slds-border_top" size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                            <div class="header-column">
+                                <p class="field-title" title="Total Salesforce License">Active Salesforce License Count</p>
+                                <p>{licenseUsageData.CountUsedSalesforceLicenseUser}</p>
+                            </div>
+                        </lightning-layout-item>
+                        <lightning-layout-item class="slds-border_right slds-border_bottom slds-border_top" size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                            <div class="header-column">
+                                <p class="field-title" title="Total Salesforce Platform License">Active Salesforce Platform License Count</p>
+                                <p>{licenseUsageData.CountUsedSalesforcePlatformLicenseUser}</p>
+                            </div>
+                        </lightning-layout-item>
+                        <template for:each={listProfileLicenseUsageResponseModel} for:item="profileItem">
+                            <lightning-layout-item key={profileItem.ProfileName} class="slds-border_right slds-border_bottom slds-border_top" size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                <div class="header-column">
+                                    <p class="field-title" title={profileItem.ProfileName}>Active {profileItem.ProfileName}</p>
+                                    <p>{profileItem.CountActiveUser}</p>
+                                </div>
+                            </lightning-layout-item>
+                        </template>
+                    </lightning-layout>
+                </div>
+            </template>
+        </div>        
+        <div class="slds-p-around_medium">
+            <template if:true={blockedUserData}>
+                <lightning-datatable
+                    columns={blockedUserColumns}
+                    data={blockedUserData}
+                    key-field="AutoProvisionedBlockedUserId"
+                    onrowaction={handleRowAction}
+                    hide-checkbox-column="true"
+                >
+                </lightning-datatable>
+            </template>
+        </div>      
+        <template if:true={shouldShowSpinner}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

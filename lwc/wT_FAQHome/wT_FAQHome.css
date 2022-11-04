@@ -1,0 +1,406 @@
+/* Css reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start of css */
+
+
+/* .faq--blueline {
+    height: 15px;
+    width: 100%;
+    background-color: #003E7E;
+}
+
+.faq__headline {
+    height: 144px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__headline__top {
+    height: 58px;
+    width: 100%;
+    max-width: 1025px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto 15px auto;
+}
+
+.faq__headline__top--logo {
+    height: 58px;
+    width: 250px;
+    background-color: aqua;
+}
+
+.faq__headline__top__quick {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq__headline__top__quick__option {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 2px 0px 0px 20px;
+}
+
+.faq__headline__top__quick__option--logo {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+
+.faq__headline__top__quick__option>p {
+    color: #003E7E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+}
+
+.faq__headline__bottom {
+    width: 100%;
+    height: 40px;
+    max-width: 1025px;
+    margin: 32px auto 10px auto;
+}
+
+.faq__headline__bottom__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq__headline__bottom__nav__option {}
+
+.faq__headline__bottom__nav__option>p {
+    color: #003E7E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.faq__search {
+    width: 100%;
+    height: 190px;
+    background-color: #003E7E;
+    padding: 36px 0 24px 0;
+}
+
+.faq__search>h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 0 24px 0;
+    text-transform: uppercase;
+}
+
+.faq__search__searchBar {
+    height: 50px;
+    width: 676px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+}
+
+.faq__search__searchBar--input {
+    height: 44px;
+    width: 502px;
+    margin: 0 20px 0 0;
+    border-radius: 7px;
+    font-size: 16px;
+    text-indent: 20px;
+}
+
+.faq__search__searchBar--button {
+    height: 44px;
+    border: 3px solid #FFFFFF;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 44px;
+    width: 148px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.faq__search__trendingTopics {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    margin: 36px auto 38px auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.faq__search__trendingTopics--main {
+    line-height: 28px;
+    margin: 0 7px 0 0;
+    text-transform: uppercase;
+}
+
+.faq__search__trendingTopics--option {
+    height: 16px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 6px 18px;
+    line-height: 16px;
+    margin: 0 5px;
+} */
+
+
+/* FAQ body styles */
+
+.faq__section {
+    width: 100%;
+    max-width: 1045px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 42px 0 40px 0;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: 300px;
+}
+
+.faq__section__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 41px 0;
+    width: 100%;
+    max-width: 1025px;
+}
+
+.faq__section__title>h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #263357;
+    margin: 0 0 15px 0;
+    font-family: "Agenda Semibold";
+}
+
+.faq__section__title>h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #777777;
+    font-family: "Agenda";
+}
+
+.faq__section__option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.faq__section__option__block {
+    height: 170px;
+    width: 328px;
+    border: 1px solid #C4CED4;
+    padding: 30px 20px 25px 20px;
+    margin: 0 10px 20px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.faq__section__option__block>img {
+    height: 75px;
+    width: 75px;
+}
+
+.faq__section__option__block>p {
+    font-size: 24px;
+    color: #000000;
+    margin: 0 0 12px 0;
+    height: 28px;
+    line-height: 28px;
+    font-family: "Agenda";
+    font-weight: 700;
+}
+
+.faq__section__option__block--line {
+    height: 3px;
+    width: 48px;
+    background-color: #1C81AF;
+}
+
+
+/* Table Screen Size  701~1075 */
+
+@media only screen and (min-device-width: 696px) and (max-device-width: 1092px) {
+    .faq__section {
+        width: 100%;
+        max-width: 696px;
+        margin: 0 auto 0 auto;
+        justify-content: center;
+    }
+    .faq__section__option {
+        width: 100%;
+        max-width: 608px;
+        margin: 0 auto 0 auto;
+        justify-content: left;
+    }
+    .faq__section__option__block {
+        width: 284px;
+        height: 170px;
+        padding: 22px 0 25px 11px;
+    }
+}
+
+
+/* Mobile Screen Size 320~700 */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 695px) {
+    .faq__section__option {
+        width: 100%;
+        max-width: 301px;
+        margin: 0 auto 0 auto;
+    }
+    .faq__section__option__block {
+        width: 301px;
+        height: 170px;
+        padding: 22px 0 25px 11px;
+    }
+}

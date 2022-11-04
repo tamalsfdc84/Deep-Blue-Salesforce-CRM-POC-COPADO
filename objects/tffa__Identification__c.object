@@ -468,7 +468,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Identifications</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -153,9 +153,9 @@
                 <visibilityRule>
                     <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7 OR 8 OR 9) AND 10</booleanFilter>
                     <criteria>
-                        <leftValue>{!Record.tffa__Submitted__c}</leftValue>
+                        <leftValue>{!Record.tffa__Status__c}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>true</rightValue>
+                        <rightValue>SUBMITTED</rightValue>
                     </criteria>
                     <criteria>
                         <leftValue>{!Record.tffa__KYCDecisionOutcome__c}</leftValue>

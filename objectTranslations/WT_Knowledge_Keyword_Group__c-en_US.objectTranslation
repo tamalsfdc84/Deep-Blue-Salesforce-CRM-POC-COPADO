@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge Keyword Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge Keyword Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Correctly Spelled Keyword --></label>
+        <name>WT_Correctly_Spelled_Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 10 --></label>
+        <name>WT_Hypernym_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 1 --></label>
+        <name>WT_Hypernym_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 2 --></label>
+        <name>WT_Hypernym_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 3 --></label>
+        <name>WT_Hypernym_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 4 --></label>
+        <name>WT_Hypernym_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 5 --></label>
+        <name>WT_Hypernym_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 6 --></label>
+        <name>WT_Hypernym_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 7 --></label>
+        <name>WT_Hypernym_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 8 --></label>
+        <name>WT_Hypernym_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hypernym 9 --></label>
+        <name>WT_Hypernym_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 10 --></label>
+        <name>WT_Misspelling_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 1 --></label>
+        <name>WT_Misspelling_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 2 --></label>
+        <name>WT_Misspelling_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 3 --></label>
+        <name>WT_Misspelling_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 4 --></label>
+        <name>WT_Misspelling_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 5 --></label>
+        <name>WT_Misspelling_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 6 --></label>
+        <name>WT_Misspelling_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 7 --></label>
+        <name>WT_Misspelling_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 8 --></label>
+        <name>WT_Misspelling_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misspelling 9 --></label>
+        <name>WT_Misspelling_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Word --></label>
+        <name>WT_Stop_Word__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 10 --></label>
+        <name>WT_Synonym_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 1 --></label>
+        <name>WT_Synonym_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 2 --></label>
+        <name>WT_Synonym_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 3 --></label>
+        <name>WT_Synonym_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 4 --></label>
+        <name>WT_Synonym_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 5 --></label>
+        <name>WT_Synonym_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 6 --></label>
+        <name>WT_Synonym_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 7 --></label>
+        <name>WT_Synonym_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 8 --></label>
+        <name>WT_Synonym_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synonym 9 --></label>
+        <name>WT_Synonym_9__c</name>
+    </fields>
+    <layouts>
+        <layout>Hypernym Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Misspelling Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Stop Word Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Synonym Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Hypernyms --></label>
+        <name>WT_Hypernyms</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Misspellings --></label>
+        <name>WT_Misspellings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stop Words --></label>
+        <name>WT_Stop_Words</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Synonyms --></label>
+        <name>WT_Synonyms</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

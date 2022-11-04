@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DBSFCRM-373</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>WT_Blank_Letterhead</letterhead>
+    <name>Equifax</name>
+    <style>freeForm</style>
+    <subject>Case Sent To MyHR Queue Has Been Re-directed To You For Action</subject>
+    <textOnly>Hello,
+
+We have received this e-mail below which is requiring your department’s assistance. Please review. If this is not something your department handles, let us know.  Otherwise, we will assume it is being taken care of on your end.
+
+{!Case.WT_Contact_Date__c} – {!Case.WT_Contact_Method__c}
+
+{!Case.WT_Employee__c} - {!Case.00N4C000001oyVB} - {!Case.WT_BankEntity__c}
+
+{!Case.WT_Topic__c} - {!Case.WT_Action__c}
+
+Thank you,
+MYHR
+MYHR@Wintrust.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

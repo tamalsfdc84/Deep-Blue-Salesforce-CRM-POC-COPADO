@@ -488,7 +488,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Disclosure Participants</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

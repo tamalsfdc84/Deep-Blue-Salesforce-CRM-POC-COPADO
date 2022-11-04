@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Product Partner</fullName>
+        <default>false</default>
+        <label>Product Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Share Credit</fullName>
+        <default>false</default>
+        <label>Share Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Processor</fullName>
+        <default>false</default>
+        <label>Processor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Analyst</fullName>
+        <default>false</default>
+        <label>Credit Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manager</fullName>
+        <default>false</default>
+        <label>Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Closer</fullName>
+        <default>false</default>
+        <label>Closer</label>
+    </standardValue>
+</StandardValueSet>

@@ -19,11 +19,11 @@ public inherited sharing class FISCCExpediteCardDeliveryResponseDTO extends FISC
     public String ExpAddr2;
     public String ExpAddr3;
     public String ExpCountry;
-    public Integer ExpedCardFeeInd;
-    public Integer WaiveReissCrdFee;
-    public Integer ReissCrdWaiveReason;
-    public Integer NewPrefix;
-    public Integer ProdID;
-    public Integer UseReissCrdStk;
+    public String ExpedCardFeeInd;
+    public String WaiveReissCrdFee;
+    public String ReissCrdWaiveReason;
+    public String NewPrefix;
+    public String ProdID;
+    public String UseReissCrdStk;
   }
 }

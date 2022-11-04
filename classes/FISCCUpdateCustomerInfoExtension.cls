@@ -135,6 +135,9 @@ public with sharing class FISCCUpdateCustomerInfoExtension {
       individualDemo.individualDemographics.CIScndyOffcrNbr = partyObj.CZSecondaryOfficer__c;
       individualDemo.individualDemographics.CICstCntrNbr = partyObj.CostCenter__c;
 
+      individualDemo.individualDemographics.CIPPwd = partyObj.SecretWord__c;
+      individualDemo.individualDemographics.CIPPwdQuestion = partyObj.SecretWordHint__c;
+
       if (String.isNotBlank(partyObj.tffa__NationalIdentifierValue__c)) {
         individualDemo.individualDemographics.DupTaxNbrOverride = 'Y';
         individualDemo.individualDemographics.CICustTaxNbr = partyObj.tffa__NationalIdentifierValue__c;

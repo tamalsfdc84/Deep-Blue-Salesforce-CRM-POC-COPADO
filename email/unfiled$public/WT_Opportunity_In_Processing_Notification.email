@@ -1,0 +1,8 @@
+The following opportunity has been assigned to you. <br/><br/>
+
+Opportunity Name: {!Opportunity.Name} <br/>
+Submitted By: {!Opportunity.OwnerFullName} <br/>
+Product: {!Opportunity.WT_Product__r} <br/><br/>
+
+You can view the details of this opportunity using the link below:<br/>
+{!Opportunity.Link}

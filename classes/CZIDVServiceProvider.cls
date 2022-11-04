@@ -231,7 +231,7 @@ global with sharing class CZIDVServiceProvider extends tffa.DueDiligenceServiceP
           new Map<String, Object>{
             'Party__c' => idvDD.tffa__Party__c,
             'SourcePartyId__c' => idvDD.tffa__SourcePartyId__c,
-            'Status__c' => 'REVIEW'
+            'Status__c' => new List<String>{ 'REVIEW', 'DECLINED' }
           }
         )
       );

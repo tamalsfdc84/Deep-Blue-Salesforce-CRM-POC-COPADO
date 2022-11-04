@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Company Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Company Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Information Type --></label>
+        <name>WT_Information_Type__c</name>
+        <picklistValues>
+            <masterLabel>Building Ownership Notes</masterLabel>
+            <translation><!-- Building Ownership Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Expenditure Plan</masterLabel>
+            <translation><!-- Capital Expenditure Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Issues</masterLabel>
+            <translation><!-- Current Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Notes</masterLabel>
+            <translation><!-- Customer Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>History/Background Notes</masterLabel>
+            <translation><!-- History/Background Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hobbies or Special Interests</masterLabel>
+            <translation><!-- Hobbies or Special Interests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import Export Notes</masterLabel>
+            <translation><!-- Import Export Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Notes</masterLabel>
+            <translation><!-- Industry Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFP Affiliations</masterLabel>
+            <translation><!-- NFP Affiliations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niche Market Data Notes</masterLabel>
+            <translation><!-- Niche Market Data Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risks in Business</masterLabel>
+            <translation><!-- Risks in Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Succession Plan Notes</masterLabel>
+            <translation><!-- Succession Plan Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplier Notes</masterLabel>
+            <translation><!-- Supplier Notes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>WT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>WT_Related_To__c</name>
+        <relationshipLabel><!-- Company Informations --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Company Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Weekly Metric</name>
+    <style>none</style>
+    <subject>Deep Blue CRM Weekly Metrics</subject>
+    <textOnly>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional //EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:o=&quot;urn:schemas-microsoft-com:office:office&quot; xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot;&gt;
+&lt;head&gt;
+&lt;!--[if gte mso 9]&gt;&lt;xml&gt;&lt;o:OfficeDocumentSettings&gt;&lt;o:AllowPNG/&gt;&lt;o:PixelsPerInch&gt;96&lt;/o:PixelsPerInch&gt;&lt;/o:OfficeDocumentSettings&gt;&lt;/xml&gt;&lt;![endif]--&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+&lt;meta content=&quot;width=device-width&quot; name=&quot;viewport&quot;/&gt;
+&lt;!--[if !mso]&gt;&lt;!--&gt;
+&lt;meta content=&quot;IE=edge&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;!--[if !mso]&gt;&lt;!--&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		table,
+		td,
+		tr {
+			vertical-align: top;
+			border-collapse: collapse;
+		}
+
+		* {
+			line-height: inherit;
+		}
+
+		a[x-apple-data-detectors=true] {
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+	&lt;/style&gt;
+&lt;style id=&quot;media-query&quot; type=&quot;text/css&quot;&gt;
+		@media (max-width: 700px) {
+
+			.block-grid,
+			.col {
+				min-width: 320px !important;
+				max-width: 100% !important;
+				display: block !important;
+			}
+
+			.block-grid {
+				width: 100% !important;
+			}
+
+			.col {
+				width: 100% !important;
+			}
+
+			.col_cont {
+				margin: 0 auto;
+			}
+
+			img.fullwidth,
+			img.fullwidthOnMobile {
+				max-width: 100% !important;
+			}
+
+			.no-stack .col {
+				min-width: 0 !important;
+				display: table-cell !important;
+			}
+
+			.no-stack.two-up .col {
+				width: 50% !important;
+			}
+
+			.no-stack .col.num2 {
+				width: 16.6% !important;
+			}
+
+			.no-stack .col.num3 {
+				width: 25% !important;
+			}
+
+			.no-stack .col.num4 {
+				width: 33% !important;
+			}
+
+			.no-stack .col.num5 {
+				width: 41.6% !important;
+			}
+
+			.no-stack .col.num6 {
+				width: 50% !important;
+			}
+
+			.no-stack .col.num7 {
+				width: 58.3% !important;
+			}
+
+			.no-stack .col.num8 {
+				width: 66.6% !important;
+			}
+
+			.no-stack .col.num9 {
+				width: 75% !important;
+			}
+
+			.no-stack .col.num10 {
+				width: 83.3% !important;
+			}
+
+			.video-block {
+				max-width: none !important;
+			}
+
+			.mobile_hide {
+				min-height: 0px;
+				max-height: 0px;
+				max-width: 0px;
+				display: none;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide {
+				display: block !important;
+				max-height: none !important;
+			}
+		}
+	&lt;/style&gt;
+&lt;style id=&quot;icon-media-query&quot; type=&quot;text/css&quot;&gt;
+		@media (max-width: 700px) {
+			.icons-inner {
+				text-align: center;
+			}
+
+			.icons-inner td {
+				margin: 0 auto;
+			}
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;clean-body&quot; style=&quot;margin: 0; padding: 0; -webkit-text-size-adjust: 100%; background-color: #FFFFFF;&quot;&gt;
+&lt;!--[if IE]&gt;&lt;div class=&quot;ie-browser&quot;&gt;&lt;![endif]--&gt;
+&lt;table bgcolor=&quot;#FFFFFF&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;nl-container&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; min-width: 320px; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td style=&quot;word-break: break-word; vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;background-color:#FFFFFF&quot;&gt;&lt;![endif]--&gt;
+&lt;div style=&quot;background-color:transparent;&quot;&gt;
+&lt;div class=&quot;block-grid&quot; style=&quot;min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: transparent;&quot;&gt;
+&lt;div style=&quot;border-collapse: collapse;display: table;width: 100%;background-color:transparent;&quot;&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color:transparent;&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:680px&quot;&gt;&lt;tr class=&quot;layout-full-width&quot; style=&quot;background-color:transparent&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;td align=&quot;center&quot; width=&quot;680&quot; style=&quot;background-color:transparent;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;&quot; valign=&quot;top&quot;&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;&quot;&gt;&lt;![endif]--&gt;
+&lt;div class=&quot;col num12&quot; style=&quot;min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;&quot;&gt;
+&lt;div class=&quot;col_cont&quot; style=&quot;width:100% !important;&quot;&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;div style=&quot;border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;&quot;&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;25&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 25px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;25&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div align=&quot;center&quot; class=&quot;img-container center fixedwidth&quot; style=&quot;padding-right: 0px;padding-left: 0px;&quot;&gt;
+&lt;!--[if mso]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr style=&quot;line-height:0px&quot;&gt;&lt;td style=&quot;padding-right: 0px;padding-left: 0px;&quot; align=&quot;center&quot;&gt;&lt;![endif]--&gt;&lt;img align=&quot;center&quot; alt=&quot;Company Logo&quot; border=&quot;0&quot; class=&quot;center fixedwidth&quot; src=&quot;https://www.wintrust.com/content/dam/wintrust/logos/wintrust/wintrust-big.png&quot; style=&quot;text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 136px; display: block;&quot; title=&quot;Company Logo&quot; width=&quot;136&quot;/&gt;
+&lt;!--[if mso]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;25&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 25px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;25&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--[if mso]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 15px; font-family: Tahoma, sans-serif&quot;&gt;&lt;![endif]--&gt;
+&lt;div style=&quot;color:#3f3a7d;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:15px;padding-left:10px;&quot;&gt;
+&lt;div class=&quot;txtTinyMce-wrapper&quot; style=&quot;line-height: 1.5; font-size: 12px; color: #3f3a7d; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 18px;&quot;&gt;
+&lt;p style=&quot;margin: 0; font-size: 38px; line-height: 1.5; word-break: break-word; text-align: center; mso-line-height-alt: 57px; margin-top: 0; margin-bottom: 0;&quot;&gt;&lt;span style=&quot;font-size: 38px;&quot;&gt;&lt;strong&gt;Weekly Metrics&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--[if mso]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 1px solid #BBBBBB; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;15&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 15px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;15&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div style=&quot;font-size:16px;text-align:center;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&quot;&gt;
+&lt;style&gt;
+													table.customTable {
+														width: 100%;
+														background-color: #FFFFFF;
+														border-collapse: collapse;
+														border-width: 2px;
+														border-color: #D8E1F8;
+														border-style: solid;
+														color: #000000;
+													}
+
+													table.customTable td,
+													table.customTable th {
+														border-width: 2px;
+														border-color: #D8E1F8;
+														border-style: solid;
+														padding: 5px;
+													}
+
+													table.customTable thead {
+														background-color: #D3DDF8;
+													}
+
+													table.customTable td {
+														text-align: left;
+													}
+												&lt;/style&gt;
+&lt;table class=&quot;customTable&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Past Week&lt;/th&gt;
+&lt;th&gt;Salesforce Total&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;th&gt; User Information&lt;/th&gt;
+&lt;tr&gt;
+&lt;td&gt;# Active users&lt;/td&gt;
+&lt;td&gt;{!WT_Weekly_Metric__c.WT_Active_Users__c} &lt;/td&gt;
+&lt;td&gt;{!WT_Weekly_Metric__c.WT_Number_of_Unique_Login_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# New Logins&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_New_Logins_Yesterday__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_New_Logins_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Calls Logged&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Calls_Logged_Yesterday__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Call_Logged_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Walk Ins Logged&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Walk_Ins_Yesterday__c} &lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Walk_Ins_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Calls Scheduled&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Calls_Scheduled_Yesterday__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Calls_Scheduled_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of On-boarding Action Plans Initiated&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Action_Plans_Yesterday__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Number_of_Action_Plans_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Submitted By Retail&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Retail_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Retail_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Submitted By Wealth&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Wealth_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Wealth_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Submitted By Mortgage&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Mortgage_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Submitted_By_Mortgage_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified By Retail&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Retail_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Retail_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified By Wealth&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Wealth_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Wealth_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified By Mortgage&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Mortgage_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Qualified_By_Mortgage_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified-Converted By Retail&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Retail_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Retail_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified-Converted By Wealth&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Wealth_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Wealth_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# of Referrals Qualified-Converted By Mortgage&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Mortgage_YDA__c}&lt;/td&gt;
+&lt;td&gt;{!WT_Daily_Metric__c.WT_Referrals_Converted_By_Mortgage_Today__c}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;15&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 15px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;15&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;/div&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&quot;background-color:transparent;&quot;&gt;
+&lt;div class=&quot;block-grid&quot; style=&quot;min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: transparent;&quot;&gt;
+&lt;div style=&quot;border-collapse: collapse;display: table;width: 100%;background-color:transparent;&quot;&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color:transparent;&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:680px&quot;&gt;&lt;tr class=&quot;layout-full-width&quot; style=&quot;background-color:transparent&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;td align=&quot;center&quot; width=&quot;680&quot; style=&quot;background-color:transparent;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;&quot; valign=&quot;top&quot;&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;&quot;&gt;&lt;![endif]--&gt;
+&lt;div class=&quot;col num12&quot; style=&quot;min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;&quot;&gt;
+&lt;div class=&quot;col_cont&quot; style=&quot;width:100% !important;&quot;&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;div style=&quot;border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;&quot;&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;25&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 25px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;25&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&quot;mobile_hide&quot;&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td class=&quot;divider_inner&quot; style=&quot;word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;&quot; valign=&quot;top&quot;&gt;
+&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;divider_content&quot; height=&quot;5&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 5px; width: 100%;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td height=&quot;5&quot; style=&quot;word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;&quot; valign=&quot;top&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;/div&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&quot;background-color:transparent;&quot;&gt;
+&lt;div class=&quot;block-grid&quot; style=&quot;min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: transparent;&quot;&gt;
+&lt;div style=&quot;border-collapse: collapse;display: table;width: 100%;background-color:transparent;&quot;&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color:transparent;&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:680px&quot;&gt;&lt;tr class=&quot;layout-full-width&quot; style=&quot;background-color:transparent&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;td align=&quot;center&quot; width=&quot;680&quot; style=&quot;background-color:transparent;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;&quot; valign=&quot;top&quot;&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;&quot;&gt;&lt;![endif]--&gt;
+&lt;div class=&quot;col num12&quot; style=&quot;min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;&quot;&gt;
+&lt;div class=&quot;col_cont&quot; style=&quot;width:100% !important;&quot;&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;div style=&quot;border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;&quot;&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+&lt;tr style=&quot;vertical-align: top;&quot; valign=&quot;top&quot;&gt;
+&lt;td align=&quot;center&quot; style=&quot;word-break: break-word; vertical-align: top; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; text-align: center;&quot; valign=&quot;top&quot;&gt;
+&lt;!--[if vml]&gt;&lt;table align=&quot;left&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot; style=&quot;display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if !vml]&gt;&lt;!--&gt;
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;icons-inner&quot; role=&quot;presentation&quot; style=&quot;table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;&quot; valign=&quot;top&quot;&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;!--[if (!mso)&amp;(!IE)]&gt;&lt;!--&gt;
+&lt;/div&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--[if (IE)]&gt;&lt;/div&gt;&lt;![endif]--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

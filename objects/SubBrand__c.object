@@ -208,7 +208,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>SubBrands</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

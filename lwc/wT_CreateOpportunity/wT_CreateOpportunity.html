@@ -1,0 +1,733 @@
+<template>    
+    <article class="slds-card slds-card_boundary">
+        <div class="slds-grid slds-page-header forceRelatedListCardHeader">
+            <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                <div class="slds-media__figure stencil slds-avatar slds-avatar_small">
+                    <div style="background-color: #FCB95B" class="extraSmall forceEntityIcon">
+                        <span class="uiImage">
+                            <lightning-icon icon-name="standard:opportunity" alternative-text={componentTitle} title={componentTitle}></lightning-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <p class="slds-card__header-link baseCard__header-title-container">
+                            <span title="Opportunity Team Member" class="slds-truncate slds-m-right--xx-small">
+                                {componentTitle}
+                            </span>
+                        </p>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <template if:false={shouldShowNewOpportunityCreationForm}>
+                        <button class="slds-button slds-button_neutral" onclick={handleNewButtonClick}>New</button>
+                    </template>
+                  </div>
+            </header>
+        </div>
+        <template if:true={shouldShowNewOpportunityCreationForm}>
+            <lightning-record-edit-form object-api-name="Opportunity" record-type-id={newOpportunityRecordTypeId} onsuccess={handleSuccess} onerror={handleError}> 
+            <div class="slds-card__body slds-card__body_inner">                        
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="6" padding="around-small">
+                        <div>
+                            <lightning-input-field name="AccountId" field-name="AccountId" onchange={handleAccountIdChange} value={recordId} required></lightning-input-field>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6" padding="around-small">
+                        <div>
+                            <lightning-combobox
+                                name="Product"
+                                label="Product"
+                                value=""
+                                placeholder="Select Product"
+                                options={listProduct}
+                                onchange={handleProductChange}
+                                variant="label-inline"
+                                required
+                            ></lightning-combobox>
+                            <lightning-input-field name="WT_Product__c" field-name="WT_Product__c" class="slds-hide"></lightning-input-field>
+                            <lightning-input-field name="WT_Record_Type_Name__c" field-name="WT_Record_Type_Name__c" class="slds-hide"></lightning-input-field>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+                <!--Step 2
+                    Will be shown only if Account and Product fields have values
+                -->                
+                <template if:true={shouldShowStep2}>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Deposit -->
+                    <template if:true={isDepositRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>                            
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div class="slds-form-element slds-form-element_horizontal">
+                                    <label class="slds-form-element__label" for="WT_Involves_any_of_the_product_partner__c">Does this deal involve any of the following product partners?</label>
+                                    <lightning-input-field id="WT_Involves_any_of_the_product_partner__c" name="WT_Involves_any_of_the_product_partner__c" 
+                                    field-name="WT_Involves_any_of_the_product_partner__c"
+                                    variant="label-hidden" onchange={handleInvolvesProductPartnerChange}></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = TM -->
+                    <template if:true={isTMLoanRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div class="slds-form-element slds-form-element_horizontal">
+                                    <label class="slds-form-element__label" for="WT_TMIS_Add_on_Products__c"># of Add-on Products</label>
+                                    <lightning-input-field id="WT_TMIS_Add_on_Products__c" name="WT_TMIS_Add_on_Products__c" 
+                                    field-name="WT_TMIS_Add_on_Products__c"
+                                    variant="label-hidden"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Investment -->
+                    <template if:true={isInvestmentRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Investment_Fee__c" field-name="WT_Investment_Fee__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = International -->
+                    <template if:true={isInternationalRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_International_Fee__c" field-name="WT_International_Fee__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Leasing -->
+                    <template if:true={isLeasingRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Initial_Amount_Drawn__c" field-name="WT_Initial_Amount_Drawn__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Leasing_PV_Rent__c" field-name="WT_Leasing_PV_Rent__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Leasing_PV_Residual__c" field-name="WT_Leasing_PV_Residual__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Leasing_Rate__c" field-name="WT_Leasing_Rate__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Leasing_Team_in_months__c" field-name="WT_Leasing_Team_in_months__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Letter Of Credit -->
+                    <template if:true={isLetterOfCreditRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Loan -->
+                    <template if:true={isLoanRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Initial_Amount_Drawn__c" field-name="WT_Initial_Amount_Drawn__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Y1_Avg_Expected_Balance__c" field-name="WT_Y1_Avg_Expected_Balance__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>                            
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div class="slds-form-element slds-form-element_horizontal">
+                                    <label class="slds-form-element__label" for="WT_Involves_any_of_the_product_partner__c2">Does this deal involve any of the following product partners?</label>
+                                    <lightning-input-field id="WT_Involves_any_of_the_product_partner__c2" name="WT_Involves_any_of_the_product_partner__c" 
+                                    field-name="WT_Involves_any_of_the_product_partner__c"
+                                    variant="label-hidden" onchange={handleInvolvesProductPartnerChange}></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Easy Access Loan -->
+                    <template if:true={isEasyAccessLoanRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Initial_Amount_Drawn__c" field-name="WT_Initial_Amount_Drawn__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Y1_Avg_Expected_Balance__c" field-name="WT_Y1_Avg_Expected_Balance__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>                            
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div class="slds-form-element slds-form-element_horizontal">
+                                    <label class="slds-form-element__label" for="WT_Involves_any_of_the_product_partner__c3">Does this deal involve any of the following product partners?</label>
+                                    <lightning-input-field id="WT_Involves_any_of_the_product_partner__c3" name="WT_Involves_any_of_the_product_partner__c" 
+                                    field-name="WT_Involves_any_of_the_product_partner__c"
+                                    variant="label-hidden" onchange={handleInvolvesProductPartnerChange}></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If RecordType = Other -->
+                    <template if:true={isOtherLoanRecordType}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Opportunity_Owner_Flow__c" field-name="WT_Opportunity_Owner_Flow__c" value={currentUserId} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_New_Dollar__c" field-name="WT_New_Dollar__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Fee__c" field-name="WT_Fee__c" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="StageName" field-name="StageName" value={defaultStageValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Probability__c" field-name="WT_Probability__c" value={defaultProbabilityValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="CloseDate" field-name="CloseDate" required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+
+
+
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If ABL is selected-->
+                    <template if:true={shouldShowABLQuestions}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_ABL_Component__c" field-name="WT_ABL_Component__c"
+                                    value={ablComponentValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If Franchise is selected-->
+                    <template if:true={shouldShowFranchiseQuestions}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Franchise_Component__c" field-name="WT_Franchise_Component__c"
+                                    value={franchiseComponentValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Franchise_Type__c" field-name="WT_Franchise_Type__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If SBA is selected-->
+                    <template if:true={shouldShowSBAQuestions}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_SBA_Component__c" field-name="WT_SBA_Component__c"
+                                    value={sbaComponentValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_SBA_Type__c" field-name="WT_SBA_Type__c"
+                                    value={sbaTypeValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="Amount" field-name="Amount"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If Swap is selected-->
+                    <template if:true={shouldShowSwapQuestions}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Swap_Component__c" field-name="WT_Swap_Component__c"
+                                    value={swapComponentValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Swap_Fee__c" field-name="WT_Swap_Fee__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- ----------------------------------------------------------------------------------- -->
+                    <!-- If Syndication is selected-->
+                    <template if:true={shouldShowSyndicationQuestions}>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Syndication_Component__c" field-name="WT_Syndication_Component__c"
+                                    value={syndicationComponentValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Syndication_WTFC_Role__c" field-name="WT_Syndication_WTFC_Role__c"
+                                    value={syndicationWtfcRoleValue} required></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Syndication_Target_Sale__c" field-name="WT_Syndication_Target_Sale__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" padding="around-small">
+                                <div>
+                                    <lightning-input-field name="WT_Syndication_Fee__c" field-name="WT_Syndication_Fee__c"></lightning-input-field>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                </template>
+                <!--Modal Box Start-->
+                <template if:true={showWarningModal}>
+                    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="modalSection slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                        <header class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                                <lightning-icon variant="inverse" onclick={closeModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                            </button>                                
+                            <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                                <lightning-icon size="small" title="Warning!" icon-name="utility:warning" alternative-text="Warning!"></lightning-icon>                                                   
+                                Warning!</h2>
+                        </header>
+                        <template if:true={isFeeInvalid}>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            Please review and confirm that <b>Fee $</b> is accurate. 
+                        </div>
+                        </template>
+                        <template if:true={isInitialAmountDrawnInvalid}>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                            Please review and confirm that <b>Initial Amount Drawn</b> is accurate. As a reminder, this figure should reflect the anticipated outstanding amount within 30 days of closing.
+                        </div>
+                        </template>
+                        <template if:true={isEstimatedCloseDateAndProbabilityInvalid}>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+                            Please review and confirm that <b>Estimated Close Date</b> and <b>Probability %</b> are accurate.
+                        </div>
+                        </template>
+                        <footer class="slds-modal__footer">
+                            <lightning-button label="Cancel" onclick={closeModal}></lightning-button>
+                            &nbsp;
+                            <lightning-button variant="brand" label="Save" onclick={saveModal}></lightning-button>
+                        </footer>
+                        </div>
+                    </section>
+                    <div class="backdropDiv slds-backdrop slds-backdrop_open"></div>
+                </template>
+                <!--Modal Box end-->            
+            </div>
+            <footer class="slds-card__footer" style="min-height: 35px;">
+                <div class="slds-var-m-top_medium">                
+                    <template if:false={shouldDisableCreateButton}>
+                        <lightning-button variant="neutral" label="Cancel" style="margin-right: 10px;" onclick={handleCancelClick}> </lightning-button>
+                        <lightning-button variant="brand" type="submit" label="Create" onclick={handleSubmit}>
+                        </lightning-button>
+                    </template>
+                    <template if:true={shouldDisableCreateButton}>
+                        <div style="position: relative;">
+                            <lightning-spinner variant="brand" alternative-text="Loading" size="small"></lightning-spinner>
+                        </div>
+                    </template>                        
+                </div>
+            </footer>
+        </lightning-record-edit-form>
+    </template>
+    </article>
+</template>

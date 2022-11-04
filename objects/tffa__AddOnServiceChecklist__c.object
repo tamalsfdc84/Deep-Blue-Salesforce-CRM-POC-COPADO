@@ -515,7 +515,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Add On Service Checklists</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -1552,7 +1552,7 @@ This field will be updated on the state transition the application in the origin
         <type>Text</type>
     </nameField>
     <pluralLabel>Application Facts</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

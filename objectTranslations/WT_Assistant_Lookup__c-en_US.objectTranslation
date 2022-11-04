@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assistant Lookup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assistant Lookups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assisting User --></label>
+        <name>WT_Assisting_User__c</name>
+        <relationshipLabel><!-- Assistant Lookups (Assisting User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assisting Workstream --></label>
+        <name>WT_Assisting_Workstream__c</name>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User To Assist --></label>
+        <name>WT_User_To_Assist__c</name>
+        <relationshipLabel><!-- Assistant Lookups (User To Assist) --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

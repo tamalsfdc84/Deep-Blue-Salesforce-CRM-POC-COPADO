@@ -1,0 +1,78 @@
+<template>
+    <!-- TODO: CHANGE CLASS NAME -->
+    <div class="content-wrapper">
+        <template if:false={isLoading}>
+            <template if:false={shouldShowSearchResult}>
+                <div class="faq_splitSection">
+                    <!-- Top section -->
+                    <div class="faq_splitSection__topNav">
+                        <c-w-t_-f-a-q-mobile-navigation is-article-page="true"></c-w-t_-f-a-q-mobile-navigation>                        
+                    </div>
+                    <div class="faq_splitSection__body">
+                        <!-- left side sub nav -->
+                        <c-w-t_-f-a-q-left-nav category-name={categoryName}></c-w-t_-f-a-q-left-nav>
+                         <!-- right side article-->
+                        <div class="faq_splitSection__body__right">
+                            <div>
+                                <div><a href={backUrl} class="faq_splitSection__topNav__helpCenter">
+                                    <div>
+                                        <div class="navArrow left"></div>
+                                    </div>
+                                    <p class="back-category-name">{categoryName}</p>
+                                </a></div>
+                            </div>
+                            <div class="faq__article">
+                                <div class="faq__article--title">
+                                    <lightning-formatted-rich-text class="" value={articleQuestion}></lightning-formatted-rich-text>
+                                </div>
+                                <div class="faq__article--body">
+                                    <lightning-formatted-rich-text class="" value={articleAnswer}></lightning-formatted-rich-text>
+                                </div>
+                                <div class="faq__article__helpfulRow">
+                                    <div class="faq__article__helpfulRow__body helpfulThankyou hidden">
+                                        <p>Thank you for your feedback!</p>
+                                    </div>
+                                    <div class="faq__article__helpfulRow__body helpfulRate">
+                                        <p>Was this answer helpful?</p>
+                                        <div class="faq__article__helpfulRow__body--icon" onclick={rateArticleUp}>
+                                            <img src={yesIcon} width = "18" height = "18">
+                                        </div>
+                                        <div class="faq__article__helpfulRow__body--split"></div>
+                                        <div class="faq__article__helpfulRow__body--icon" onclick={rateArticleDown}>
+                                            <img src={noIcon} width = "18" height = "18">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq__article__backRow">
+                                    <div class="faq__article__backRow__backButton" onclick={handleBackClick}>
+                                        <div class="smallArrow left"></div>
+                                        <p>back</p>
+                                    </div>
+                                </div>
+                                <div class="faq__article__additionalPages">
+                                    <h2>Additional Pages</h2>
+                                    <ul>
+                                        <li><a>Search and compare credit cards</a></li>
+                                        <li><a>Wintrust: Service that manage your account - Wintrust Bank, N.A.</a></li>
+                                        <li><a>Wintrust Card Benefits: Credit Cards benefits for Wintrust Bank N.A. customers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <template if:true={hasDisclaimer}>
+                        <div class="faq_splitSection__disclaimer">
+                            <lightning-formatted-rich-text class="" value={articleDisclaimer}></lightning-formatted-rich-text>
+                        </div>
+                    </template>
+</div>
+</template>
+<template if:true={shouldShowSearchResult}>
+                <!-- TODO: Add the search results component -->
+            </template>
+</template>
+<template if:true={isLoading}>
+            <lightning-spinner variant="brand" alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+</div>
+</template>

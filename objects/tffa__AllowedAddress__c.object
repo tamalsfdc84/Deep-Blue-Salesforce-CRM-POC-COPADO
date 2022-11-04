@@ -455,7 +455,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Allowed Addresses</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

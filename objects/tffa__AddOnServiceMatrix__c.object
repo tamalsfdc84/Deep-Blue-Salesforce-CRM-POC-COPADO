@@ -501,7 +501,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Add On Service Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

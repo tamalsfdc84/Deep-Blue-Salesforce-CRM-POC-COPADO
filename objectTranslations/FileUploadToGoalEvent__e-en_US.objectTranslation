@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FileUploadToGoalEvent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FileUploadToGoalEvents</value>
+    </caseValues>
+    <fields>
+        <label><!-- JobId --></label>
+        <name>JobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfRecords --></label>
+        <name>NumberOfRecords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Failure Record --></label>
+        <name>WT_Count_of_Failure_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Success Record --></label>
+        <name>WT_Count_of_Success_Record__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -28,7 +28,7 @@ public with sharing class FISCCCustomerAliasExtension {
             aliasName = partyAliasObj.AliasFirstName__c;
           }
           if (String.isNotBlank(partyAliasObj.AliasLastName__c)) {
-            aliasName = aliasName + partyAliasObj.AliasLastName__c;
+            aliasName = aliasName + ' ' + partyAliasObj.AliasLastName__c;
           }
           aliasLst.add(aliasName);
         }

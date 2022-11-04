@@ -178,44 +178,46 @@ public inherited sharing class FISCCCardBaseIntegrationExecutor {
             }
 
             // Expedite card delivery
-            ExpediteCardLogKey = FISCCIntegrationLogService.setCurrentLogItem(
-              FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE,
-              accPref.Id,
-              false
-            );
-            if (
-              (FISCCIntegrationLogService.isLogItemNewOrFailed(ExpediteCardLogKey) &&
-              FISCCIntegrationLogService.isLogItemOk(cardCustDemographicsLogKey) &&
-              accPref.CZDebitCardIssueMethod__c == 'EXPEDITE_SHIPPING') || Test.isRunningTest()
-            ) {
-              try {
-                tffa.Logger.debug('Expedite card delivery logic started for accPref :' + accPref.Id);
-                isSuccess = FISCCCardBaseIntegrationProvider.generateExpediteDeliveryReq(accPref, partyObj, app);
-                tffa.Logger.debug('cardCustDemographicsResult isSuccess : ' + isSuccess);
-                if (isSuccess) {
-                  FISCCIntegrationLogService.setLogItemOk(
-                    FISCCIntegrationConstants.DCARDEXPEDITEDELIVERY_API_NAME,
-                    FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE_SUCCESS
-                  );
-                  FISCCIntegrationLogService.setLogOk(FISCCIntegrationConstants.DEBIT_CARD_SUCCESS);
-                  accPrefStatus = CZWTFCConstants.ADDON_STATUS_COMPLETED;
-                } else {
+            if((FISCCIntegrationLogService.isLogItemOk(cardCustDemographicsLogKey) &&
+            accPref.CZDebitCardIssueMethod__c == 'EXPEDITE_SHIPPING') || Test.isRunningTest()){
+              ExpediteCardLogKey = FISCCIntegrationLogService.setCurrentLogItem(
+                FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE,
+                accPref.Id,
+                false
+              );
+
+              if (
+                (FISCCIntegrationLogService.isLogItemNewOrFailed(ExpediteCardLogKey) || Test.isRunningTest())
+              ) {
+                try {
+                  tffa.Logger.debug('Expedite card delivery logic started for accPref :' + accPref.Id);
+                  isSuccess = FISCCCardBaseIntegrationProvider.generateExpediteDeliveryReq(accPref, partyObj, app);
+                  tffa.Logger.debug('cardCustDemographicsResult isSuccess : ' + isSuccess);
+                  if (isSuccess) {
+                    FISCCIntegrationLogService.setLogItemOk(
+                      FISCCIntegrationConstants.DCARDEXPEDITEDELIVERY_API_NAME,
+                      FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE_SUCCESS
+                    );
+                    FISCCIntegrationLogService.setLogOk(FISCCIntegrationConstants.DEBIT_CARD_SUCCESS);
+                    accPrefStatus = CZWTFCConstants.ADDON_STATUS_COMPLETED;
+                  } else {
+                    FISCCIntegrationLogService.setLogItemFailed(
+                      FISCCIntegrationConstants.DCARDEXPEDITEDELIVERY_API_NAME,
+                      FISCCIntegrationConstants.ErrorMessage
+                    );
+                    FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.DEBIT_CARD_FAILURE);
+                    accPrefStatus = CZWTFCConstants.ADDON_STATUS_FAILED;
+                  }
+                  tffa.Logger.debug('cardCustDemographicsResult isAPICallSuccess : ' + isSuccess);
+                } catch (Exception ex) {
                   FISCCIntegrationLogService.setLogItemFailed(
                     FISCCIntegrationConstants.DCARDEXPEDITEDELIVERY_API_NAME,
-                    FISCCIntegrationConstants.ErrorMessage
+                    (FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE_FAILURE +
+                    ' exception : ' +
+                    ex.getMessage())
                   );
                   FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.DEBIT_CARD_FAILURE);
-                  accPrefStatus = CZWTFCConstants.ADDON_STATUS_FAILED;
                 }
-                tffa.Logger.debug('cardCustDemographicsResult isAPICallSuccess : ' + isSuccess);
-              } catch (Exception ex) {
-                FISCCIntegrationLogService.setLogItemFailed(
-                  FISCCIntegrationConstants.DCARDEXPEDITEDELIVERY_API_NAME,
-                  (FISCCIntegrationConstants.DEBIT_CARD_EXPEDITE_FAILURE +
-                  ' exception : ' +
-                  ex.getMessage())
-                );
-                FISCCIntegrationLogService.setLogFailed(FISCCIntegrationConstants.DEBIT_CARD_FAILURE);
               }
             }
 
@@ -243,6 +245,8 @@ public inherited sharing class FISCCCardBaseIntegrationExecutor {
               }
             }
           }
+        } else {
+          isSuccess = true;
         }
       }
 

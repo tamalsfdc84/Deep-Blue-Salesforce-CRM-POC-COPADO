@@ -245,7 +245,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>PartyAlias</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

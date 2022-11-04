@@ -348,7 +348,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Party Age Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

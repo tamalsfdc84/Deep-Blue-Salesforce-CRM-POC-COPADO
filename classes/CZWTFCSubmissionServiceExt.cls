@@ -1142,7 +1142,7 @@ global inherited sharing class CZWTFCSubmissionServiceExt extends tffa.Submissio
             isSigningPending = true;
           }
         }
-        if (!isSigningPending) {
+        if (!isSigningPending && discEnv.tffa__Status__c != 'VOIDED') {
           discEnv.tffa__Status__c = 'COMPLETED';
         }
       }

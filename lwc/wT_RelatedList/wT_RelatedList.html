@@ -1,0 +1,56 @@
+<template>
+    <template if:true={state.showRelatedList}>
+        <c-w-t_-related-list-delete-pop-up
+            onrefreshdata={handleRefreshData}>
+        </c-w-t_-related-list-delete-pop-up>
+
+        <lightning-layout class="slds-m-top_x-small">
+            <article class="slds-card lightning-card">
+                <div class="slds-card__header slds-grid slds-theme_shade">
+                  <header class="slds-media slds-media_center slds-has-flexi-truncate ">
+                    <div class="slds-media__figure slds-p-left_small">
+                        <lightning-icon icon-name={state.iconName} size="small"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                      <h2 class="slds-card__header-title">
+                        <a class="slds-card__header-link" onclick={handleGotoRelatedList}>{state.title}</a>
+                      </h2>
+                    </div>
+                    <div class="slds-no-flex slds-p-around_small">
+                        <lightning-button-icon icon-name="utility:refresh"
+                                               alternative-text="Refresh"
+                                               onclick={handleRefreshData}>
+                        </lightning-button-icon>    
+                    </div>
+                  </header>
+                </div>
+                <template if:true={hasRecords}>
+                    <div class="slds-scrollable" style="max-height:350px;">
+                        <template if:true={isLoaded}>
+                            <div class="spinner">
+                                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                            </div>
+                        </template> 
+                        <template if:false={isLoaded}>
+                            <lightning-datatable class="related-list"
+                                                onrowaction={handleRowAction}
+                                                columns={state.columns}
+                                                data={state.records}
+                                                key-field="Id"
+                                                show-row-number-column="true"
+                                                hide-checkbox-column="true"
+                                                default-sort-direction={defaultSortDirection}
+                                                sorted-direction={sortDirection}
+                                                sorted-by={sortedBy}
+                                                onsort={onHandleSort}>
+                            </lightning-datatable> 
+                        </template>  
+                    </div>
+                    <footer class="slds-card__footer">
+                        <a onclick={handleGotoRelatedList}>View All</a>
+                    </footer>                            
+                </template>
+              </article>                       
+        </lightning-layout>
+    </template>                                    
+</template>

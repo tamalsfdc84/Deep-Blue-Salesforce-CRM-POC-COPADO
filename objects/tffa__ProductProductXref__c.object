@@ -334,7 +334,7 @@ In product bundle use case, it captures relationship between  a financial produc
         <type>Text</type>
     </nameField>
     <pluralLabel>Related Products</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

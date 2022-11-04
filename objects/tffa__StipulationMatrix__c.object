@@ -728,7 +728,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Stipulation Matrices</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

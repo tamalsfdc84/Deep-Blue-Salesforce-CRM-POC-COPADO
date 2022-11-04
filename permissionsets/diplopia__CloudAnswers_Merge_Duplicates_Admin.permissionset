@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>diplopia__CloudAnswers_Potential_Duplicates_Admin</name>
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CloudAnswers Merge Duplicates Admin</label>
+</PermissionSet>

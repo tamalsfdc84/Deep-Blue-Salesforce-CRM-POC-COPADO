@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge Search Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge Search Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Knowledge --></label>
+        <name>WT_Knowledge__c</name>
+        <relationshipLabel><!-- Knowledge Search Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Search Term --></label>
+        <name>WT_Search_Term__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

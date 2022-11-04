@@ -529,7 +529,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Agent Details</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <webLinks>

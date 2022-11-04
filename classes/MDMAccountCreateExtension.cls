@@ -91,10 +91,14 @@ public with sharing class MDMAccountCreateExtension {
     request.boClassCode = isSDBProduct ? 'OTHER' : 'DEPOSIT';
     request.openDt = request.statChngDt;
 
-    request.offcrRowid.offcrCd =
-      FISCCIntegrationLogService.brandObj.CIPrmyOffcrNbr__c +
-      '|' +
-      MDMCommonHelper.getBrandCode(app.tffa__Brand__c);
+    if (FISCCIntegrationLogService.submissionObj.tffa__Channel__c == CZWTFCConstants.BRANCH) {
+      request.offcrRowid.offcrCd = app.CZPrimaryOfficer__c + '|' + MDMCommonHelper.getBrandCode(app.tffa__Brand__c);
+    } else {
+      request.offcrRowid.offcrCd =
+        FISCCIntegrationLogService.brandObj.CIPrmyOffcrNbr__c +
+        '|' +
+        MDMCommonHelper.getBrandCode(app.tffa__Brand__c);
+    }
     request.statCd.lkpCd = isSDBProduct ? 'ACCTSTAT|RENTED' : 'ACCTSTAT|O';
     request.bnkCd.locCd = MDMCommonHelper.getBrandCode(app.tffa__Brand__c);
     request.brnchCd.locCd = MDMCommonHelper.getBrandCode(app.tffa__Brand__c) + '|' + app.FISBranchCode__c;
